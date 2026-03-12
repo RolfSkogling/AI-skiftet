@@ -1,72 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>När kostnaden går mot noll — AI-skiftet</title>
-<meta content="Essä om kostnadsfall, automatisering och varför fördelningsfrågan blir avgörande i en billigare ekonomi." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>När kostnader pressas ned — AI-skiftet</title>
+  <meta name="description" content="Essä om hur fallande kostnader i energi, beräkning och automation kan förändra ekonomin utan att automatiskt skapa rättvisa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="site-nav">
-<div class="container-wide">
-<a class="site-nav__logo" href="index.html">AI-skiftet</a>
-<button aria-label="Meny" class="nav-toggle" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
-<span></span><span></span><span></span>
-</button>
-<div class="site-nav__links">
-<a href="index.html#essaer">Essäer</a>
-<a href="index.html#om">Om</a>
-<a href="kallor.html">Källor</a>
-</div>
-</div>
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essaer">Essäer</a>
+      <a href="index.html#om">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+  </div>
 </nav>
+
 <header class="article-header">
-<div class="container">
-<a class="article-header__back" href="index.html">← Tillbaka</a>
-<h1>När kostnaden går mot noll: Varför överflöd är matematik, inte politik<sup><a href="#note-1">[1]</a></sup></h1>
-<p class="article-meta">Essä · Rolf Skogling</p>
-</div>
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Tillbaka</a>
+    <h1>När kostnader pressas ned: överflöd som riktning, inte löfte</h1>
+    <p class="article-meta">Essä · Rolf Skogling</p>
+  </div>
 </header>
 <article class="article-body">
-<div class="container">
-<p>Det finns en tanke som återkommer i många framtidsdiskussioner om AI, energi och automatisering: att vissa grundläggande kostnader kan fortsätta falla så snabbt att stora delar av ekonomin måste organiseras på nya sätt. Det är en viktig tanke. Men den blir svag om den uttrycks som ödesbestämd visshet. Det mer hållbara argumentet är villkorat: om flera kostnadskurvor fortsätter nedåt samtidigt, och om systemen runt omkring dem också byggs ut, då ökar sannolikheten för ett samhälle där vissa basala nyttigheter blir mycket billigare än i dag.</p>
-<p>Det är i den meningen jag använder ordet överflöd. Inte som ett löfte om gratis allt, utan som en riktning där marginalkostnader i vissa domäner pressas så långt ned att fördelningsfrågan blir viktigare än själva produktionsfrågan.<sup><a href="#note-4">[4]</a></sup></p>
-<h2>Tre kurvor som kan förändra spelplanen</h2>
-<p>Den första handlar om energi. Sol, vind, lagring och styrning har redan pressat kostnader i stor skala, även om nät, tillstånd, råvaror och systemintegration sätter tydliga begränsningar. Den andra handlar om beräkning och automatisering: bättre modeller, billigare inferens, mer verktygsanvändning och mer autonoma arbetsflöden gör att kognitivt arbete kan produceras billigare per enhet. Den tredje handlar om industriella processer inom exempelvis livsmedel, material och transport, där data, robotik och AI kan sänka kostnader, jämna ut kvalitet och minska svinn.<sup><a href="#note-3">[3]</a></sup><sup><a href="#note-2">[2]</a></sup></p>
+  <div class="container">
+    
+<p>Det finns en återkommande tanke i många framtidsdiskussioner om AI, energi och automatisering: att vissa kostnader kan fortsätta falla så snabbt att delar av ekonomin börjar bete sig annorlunda. Det är en viktig tanke. Men den skrivs ofta för slarvigt.</p>
+<p>Jag tror att vi bör tala om överflöd som en riktning, inte som ett löfte. Inte som ”gratis allt”, utan som en utveckling där marginalkostnader i vissa domäner pressas så långt ned att gamla antaganden om pris, tillgång och arbete börjar bli mindre stabila.<sup><a href="#note-1">[1]</a></sup></p>
+
+<h2>Tre kurvor som spelar roll</h2>
+<p>Den första gäller energi. Förnybar el och lagring har pressat kostnader kraftigt, även om nät, tillstånd, finansiering, råvaror och systemintegration fortfarande sätter tydliga begränsningar.<sup><a href="#note-2">[2]</a></sup></p>
+<p>Den andra gäller beräkning och AI. I vissa användningsfall blir modellen bättre samtidigt som tillgången blir billigare och enklare att integrera i arbetsflöden. Det sänker kostnaden för att utföra delar av kognitivt arbete.</p>
+<p>Den tredje gäller automation. När bättre mjukvara, maskinseende, robotik och planering kopplas ihop kan behovet av mänskliga timmar per producerad enhet minska i fler sektorer än tidigare.</p>
 <p>Ingen av dessa kurvor går till bokstavlig noll. Men de behöver inte göra det för att få stora samhällseffekter. Det räcker att de faller långt nog för att ändra incitament, affärsmodeller och maktförhållanden.</p>
-<h2>Frikopplingen mellan arbete och produktion</h2>
-<p>Den centrala mekanismen är att produktion i växande grad kan ske med mindre mänsklig arbetsinsats per producerad enhet. Det gäller redan i många digitala produkter och börjar nu gälla delar av det kognitiva arbetet. När samma logik gradvis rör sig in i fler fysiska processer uppstår en spänning i det gamla arbete-för-lön-systemet.</p>
-<p>Vår ekonomi är fortfarande organiserad kring att människor säljer arbete för att få köpkraft. Om värdeskapandet i högre grad flyttas till modeller, maskiner och kapitalintensiv infrastruktur uppstår en enkel men obekväm fråga: hur ska efterfrågan hållas uppe om en mindre del av befolkningen behövs i samma typ av lönearbete som tidigare?</p>
-<h2>Överflöd är inte samma sak som rättvis fördelning</h2>
-<p>Här blir många framtidsbilder för enkla. Lägre produktionskostnader leder inte automatiskt till bred välfärd. De kan lika gärna leda till att en mycket stor del av värdet koncentreras till dem som äger modellerna, nätverken, datacentren, energisystemen eller distributionsplattformarna.</p>
-<p>Det betyder att överflöd och ojämlikhet inte är varandras motsatser. De kan växa samtidigt. Konsumenter kan få billigare tjänster samtidigt som ekonomisk och politisk makt koncentreras uppåt. Det är därför den verkliga frågan inte är om tekniken kan skapa mer med mindre, utan hur ägande, tillgång och fördelning ska organiseras när den gör det.</p>
-<h2>Dalen mellan här och där</h2>
-<p>Mellan dagens ekonomi och ett eventuellt framtida överflöd ligger en besvärlig övergång. Jag tänker på den som en dal snarare än som en linjär upptrappning. Under en sådan period kan flera saker inträffa samtidigt: arbetsinnehåll förändras snabbare än omställningssystemen hinner med, desinformation blir billigare och mer övertygande, och vinster från automatisering koncentreras innan institutionerna hinner svara.</p>
-<p>Det är därför jag är mer intresserad av navigeringen än av visionen. Den långsiktiga möjligheten är verklig nog för att tas på allvar. Men vägen dit kan bli socialt och politiskt brutal om vi går in i den med gårdagens institutionsdesign.</p>
-<h2>Varför detta inte bara är teknik eller ideologi</h2>
-<p>En del av utvecklingen drivs av teknik och kostnadskurvor. Men slutsatserna är inte förutbestämda av matematiken ensam. Samma tekniska bas kan bära väldigt olika samhällsmodeller beroende på lagstiftning, konkurrenspolitik, beskattning, ägarformer och offentlig kapacitet.</p>
-<p>Det gör att diskussionen måste föras i två led samtidigt. Först: vilka kostnadsfall och produktionsskiften är faktiskt plausibla? Sedan: vilka institutioner behövs om de inträffar? Det ena utan det andra blir antingen teknikmystik eller tom politik.</p>
-<h2>Navigeringen</h2>
-<p>Det jag tror att Sverige behöver är inte en utopi om gratis allt, utan ett nytt språk för en ekonomi där vissa basala nyttigheter kan bli mycket billigare samtidigt som fördelningsfrågan blir svårare. Vi behöver tänka på energi, beräkning, data och automatisering som samhällsbärande infrastruktur. Vi behöver diskutera hur vinster från produktivitetslyft kan komma fler till del. Och vi behöver göra det innan systemen låser sig kring ett fåtal ägare.</p>
-<p>Överflöd, i den meningen jag använder ordet, är därför inte ett löfte. Det är en möjlighet med hårda villkor. Tekniken kan öppna dörren. Men vilket samhälle som står på andra sidan avgörs fortfarande av mänskliga beslut.</p>
-<section class="article-endnotes"><h2>Källnoter</h2><p>Underlag till kostnads- och omställningsresonemanget.</p><ol><li id="note-1">Uttrycket “mot noll” används i essän som riktning för marginalkostnad i vissa domäner, inte som bokstavligt nollpris. För bakgrund om sjunkande kostnader i energi och lagring, se IEA och IRENA. <a href="https://www.iea.org/reports/batteries-and-secure-energy-transitions/executive-summary">IEA</a>; <a href="https://www.irena.org/News/pressreleases/2025/Jul/91-Percent-of-New-Renewable-Projects-Now-Cheaper-Than-Fossil-Fuels-Alternatives">IRENA</a>.</li><li id="note-2">IEA, <em>Batteries and Secure Energy Transitions</em>; IEA, <em>Global battery markets are growing strongly – and so are the supply risks</em>; IRENA, kostnadsgenomgång 2025. <a href="https://www.iea.org/reports/batteries-and-secure-energy-transitions/executive-summary">IEA 1</a>; <a href="https://www.iea.org/commentaries/global-battery-markets-are-growing-strongly-and-so-are-the-supply-risks">IEA 2</a>; <a href="https://www.irena.org/News/pressreleases/2025/Jul/91-Percent-of-New-Renewable-Projects-Now-Cheaper-Than-Fossil-Fuels-Alternatives">IRENA</a>.</li><li id="note-3">Stanford HAI, <em>AI Index Report 2025</em>, särskilt kapitlen om investering, användning och sjunkande inferenskostnader. <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">AI Index</a>.</li><li id="note-4">Fördelnings- och institutionsdelen i essän är normativ analys. Som bakgrund till arbetsmarknadens exponering, se IMF och ILO. <a href="https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity">IMF</a>; <a href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update">ILO</a>.</li></ol></section><p class="author-sig">Rolf Skogling arbetar dagligen med AI i skarpa produktionsmiljöer och skriver om AI-skiftets konsekvenser på AI-skiftet.se.</p>
-</div>
+
+<h2>Varför lägre kostnad inte automatiskt ger rättvisa</h2>
+<p>Här går många resonemang fel. Lägre produktionskostnader leder inte i sig till bred välfärd. De kan lika gärna leda till att värdet koncentreras hos dem som äger modellerna, infrastrukturen, energin, datan och distributionskanalerna.</p>
+<p>Det är därför diskussionen om överflöd inte främst är en fråga om teknikoptimism eller teknikpessimism. Den är en fråga om institutioner. Vem äger kapaciteten? Hur fördelas vinsterna? Vilka bastjänster säkras gemensamt? Vilka kostnader faller faktiskt för hushållen och vilka stannar i mellanled?</p>
+
+<h2>Dalen mellan knapphet och större kapacitet</h2>
+<p>Även om flera kostnadskurvor fortsätter nedåt är övergången sannolikt stökig. Gamla jobb kan pressas innan nya trygghetssystem finns på plats. Vissa varor och tjänster kan bli billigare samtidigt som bostäder, mark, nätkapacitet, råvaror och kompetens fortfarande är knappa. Det går därför att få mer teknisk produktionskapacitet utan att människor omedelbart upplever mer trygghet.</p>
+<p>Det är också därför det är klokt att skriva mindre om ”slutet på ekonomin” och mer om hur ekonomins tyngdpunkt kan förskjutas. I vissa domäner kan prispressen bli stor. I andra förblir knappheten hård. Samhällsbilden blir sannolikt ojämn, inte ren.</p>
+
+<h2>Vad som faktiskt kan sägas redan nu</h2>
+<p>Vi kan med rimlig säkerhet säga att snabbare kostnadsfall inom energi, beräkning och vissa typer av automation kan ge större materiell kapacitet. Vi kan också säga att ett strikt lönecentrerat försörjningssystem blir mer ansträngt om produktionen i högre grad frikopplas från mänskliga timmar.</p>
+<p>Det vi ännu inte kan säga med samma säkerhet är hur snabbt detta går, vilka sektorer som påverkas mest först och hur vinsterna kommer att fördelas. Därför bör vi undvika både teknoutopiska slagord och defensiv förnekelse.</p>
+
+<h2>Vilka frågor som borde stå i centrum</h2>
+<p>Den mer seriösa frågan är alltså inte om ”överflöd” automatiskt kommer. Den seriösa frågan är hur samhället bör agera om större produktionskapacitet faktiskt blir möjlig samtidigt som fördelningen blir ojämn.</p>
+<p>Då hamnar fem saker i centrum: energi och nät, ägande av AI- och automationsinfrastruktur, tillgång till data, former för omfördelning och utbyggnad av bastjänster. Om dessa frågor hanteras väl kan snabbare kostnadsfall bli en faktisk samhällsvinst. Hanteras de illa kan samma teknik förstärka både ojämlikhet och misstro.</p>
+
+<section class="article-endnotes">
+  <h2>Källnoter</h2>
+  <p>Essän beskriver överflöd som en möjlig riktning under vissa villkor, inte som en säker prognos.</p>
+  <ol>
+    <li id="note-1">För bred teknisk och ekonomisk kontext, se <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">Stanford AI Index 2025</a> och <a href="https://www.imf.org/en/news/articles/2026/02/03/sp-md-leveraging-artificial-intelligence-and-enhancing-countries-preparedness">IMF:s tal om AI och produktivitet 2026</a>.</li>
+    <li id="note-2">Energi- och batterikurvor: <a href="https://www.iea.org/reports/batteries-and-secure-energy-transitions">IEA: Batteries and Secure Energy Transitions</a>, <a href="https://www.iea.org/commentaries/global-battery-markets-are-growing-strongly-and-so-are-the-supply-risks">IEA battery commentary 2026</a>, <a href="https://www.irena.org/News/pressreleases/2025/Jul/91-Percent-of-New-Renewable-Projects-Now-Cheaper-Than-Fossil-Fuels-Alternatives">IRENA 2025</a> och <a href="https://www.irena.org/-/media/Files/IRENA/Agency/Presentations/Socioeconomic-impact/2025/Sep/IRENAInsights_RPGC2024.pdf">IRENA cost report 2024/2025</a>.</li>
+  </ol>
+</section>
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i arbete med AI i skarpa verksamheter.</p>
+
+  </div>
 </article>
+
 <nav class="article-nav">
-<div class="container" style="display:flex; justify-content:space-between;">
-<a href="agi.html">← Föregående</a>
-<a href="turbulenta-aren.html">Nästa →</a>
-</div>
+  <div class="container" style="display:flex; justify-content:space-between;">
+    <a href="agi.html">← Föregående</a>
+    <a href="turbulenta-aren.html">Nästa →</a>
+  </div>
 </nav>
+
+
 <footer class="site-footer">
-<div class="container">
-<p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
-</div>
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
+  </div>
 </footer>
+
 </body>
 </html>

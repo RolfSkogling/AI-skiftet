@@ -1,69 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Varför AI inte är Excel — AI-skiftet</title>
-<meta content="Essä om varför AI bör förstås som automation av tillämpad kognition, inte som ännu ett IT-verktyg." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varför AI inte är Excel — AI-skiftet</title>
+  <meta name="description" content="Essä om varför AI bör förstås som stöd i tillämpat kognitivt arbete, inte som ännu ett vanligt it-verktyg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="site-nav">
-<div class="container-wide">
-<a class="site-nav__logo" href="index.html">AI-skiftet</a>
-<button aria-label="Meny" class="nav-toggle" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
-<span></span><span></span><span></span>
-</button>
-<div class="site-nav__links">
-<a href="index.html#essaer">Essäer</a>
-<a href="index.html#om">Om</a>
-<a href="kallor.html">Källor</a>
-</div>
-</div>
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essaer">Essäer</a>
+      <a href="index.html#om">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+  </div>
 </nav>
+
 <header class="article-header">
-<div class="container">
-<a class="article-header__back" href="index.html">← Tillbaka</a>
-<h1>Varför AI inte är Excel: Om skillnaden mellan beräkning och tänkande</h1>
-<p class="article-meta">Essä · Rolf Skogling</p>
-</div>
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Tillbaka</a>
+    <h1>Varför AI inte är Excel: om skillnaden mellan regelautomation och kognitivt arbete</h1>
+    <p class="article-meta">Essä · Rolf Skogling</p>
+  </div>
 </header>
 <article class="article-body">
-<div class="container">
-<p>Det vanligaste misstaget i samtalet om AI är att behandla tekniken som ännu ett digitalt verktyg. Som Excel fast kraftfullare. Som ett system som gör samma saker som tidigare, bara snabbare och billigare.</p>
-<p>Det är missvisande. Inte därför att jämförelsen är helt värdelös, utan därför att den döljer den avgörande skillnaden: traditionell mjukvara automatiserade främst fasta regler och definierade arbetssteg. AI automatiserar en växande del av det tillämpade kognitiva arbete som tidigare krävde mänsklig tolkning.<sup><a href="#note-1">[1]</a></sup></p>
-<h2>Beräkning och tillämpad kognition</h2>
-<p>Datorn förändrade ekonomin genom att automatisera beräkning, registrering, lagring och kommunikation. Kalkylblad, databaser, ordbehandling och affärssystem gjorde arbetet snabbare, mer skalbart och mindre felbenäget. Det var ett enormt skifte, men gränsen var fortfarande tydlig: människan stod för tolkningen, prioriteringen och omdömet; systemet stod för exekveringen.</p>
-<p>AI flyttar på den gränsen. Moderna modeller kan sammanfatta, analysera, formulera, jämföra alternativ, skriva fungerande kod, föreslå experiment och anpassa sitt svar efter mål och sammanhang. De gör inte allt detta perfekt, men de gör det tillräckligt bra för att förändra arbetsinnehållet i yrken som länge betraktats som skyddade.<sup><a href="#note-2">[2]</a></sup></p>
-<p>Det viktiga här är inte om systemen "tänker" på exakt samma sätt som människor. Det viktiga är att de funktionellt klarar uppgifter som arbetsmarknaden tidigare betalade människor för att utföra. Det räcker långt för att göra skillnad i företag, myndigheter och professioner.<sup><a href="#note-3">[3]</a></sup></p>
-<h2>"Men den förstår ju inte på riktigt"</h2>
-<p>Invändningen är välbekant: AI förstår inte, den mönstermatchar bara. Filosofiskt kan det vara en viktig distinktion. Praktiskt räcker den inte som tröst.</p>
-<p>Om ett system kan läsa igenom ett avtal, peka ut riskpunkter, föreslå omformuleringar och göra det snabbare än en junior jurist, då spelar det mindre roll för organisationen om vi beskriver processen som "förståelse", "inlärd representation" eller "avancerad mönstermatchning". Arbetsuppgiften har ändå förändrats. Det är därför diskussionen behöver flytta från ontologi till kapacitet.</p>
-<p>Det betyder inte att medvetande- eller AGI-frågan är oviktig. Den är bara en separat fråga. Jag går djupare in på den i essän om <a href="agi.html">AGI och vad det faktiskt innebär</a>. För samhällsförberedelsen räcker det just nu att konstatera att systemen blir bredare, billigare och mer användbara i snabb takt.<sup><a href="#note-4">[4]</a></sup></p>
-<h2>Vad detta betyder i praktiken</h2>
-<p>När vi inför ett kalkylblad inför vi ett verktyg. När vi inför AI inför vi ofta något som beter sig mer som en digital medarbetare: den behöver instruktioner, avgränsningar, kvalitetskontroll, återkoppling och tydligt ansvar. Den kan leverera stor effekt, men bara om någon tar ansvar för hur den används.</p>
-<p>Det är därför AI inte bör sorteras under samma mentala kategori som tidigare IT-investeringar. Konsekvenserna är bredare. Rekrytering förändras. Juniora roller pressas. Ledningsspann kan förändras. Kraven på domänkunskap och kontrollmekanismer ökar samtidigt som vissa flaskhalsar försvinner.</p>
-<h2>Vad samtalet behöver nu</h2>
-<p>Om AI bara vore ett bättre Excel skulle uppgiften vara enkel: lite utbildning, några nya processer, en gradvis omställning. Men det är inte det som håller på att hända. Det vi ser är att fler och fler delar av kvalificerat kunskapsarbete blir tekniskt möjliga att automatisera, först delvis och sedan allt mer systematiskt.</p>
-<p>Det kräver ett bättre språk än det offentliga samtalet ofta använder idag. Mindre teknikmagi. Mindre filosofisk dimma. Mer precision. AI är inte magi, men det är heller inte bara vanlig digitalisering. Det är en ny kategori av produktionskapacitet som verkar i det kognitiva lagret av ekonomin.</p>
-<p>Det är därför det är så viktigt att förstå skillnaden. Den som tror att detta bara är Excel på steroider kommer att planera därefter. Och den planen kommer att vara för liten.</p>
-<section class="article-endnotes"><h2>Källnoter</h2><p>Noterna nedan stöder den bredare arbetsmarknads- och kapacitetsbilden; själva kärnargumentet i essän är analytiskt.</p><ol><li id="note-1">Anthropic, <em>Anthropic Economic Index</em> (2026) beskriver hur generativ AI redan används i ett brett spektrum av arbetsuppgifter; Stanford HAI, <em>AI Index Report 2025</em> visar samtidigt snabbt stigande organisationsanvändning. <a href="https://www.anthropic.com/economic-index">Anthropic</a>; <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">Stanford HAI</a>.</li><li id="note-2">Internationella arbetsorganisationen (ILO), <em>Generative AI and jobs: A 2025 update</em> betonar att många yrken transformeras snarare än försvinner direkt. <a href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update">ILO</a>.</li><li id="note-3">PwC, <em>The Fearless Future: 2025 Global AI Jobs Barometer</em>, om produktivitet, lönepremier och snabbare kompetensskiften i AI-exponerade yrken. <a href="https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html">PwC</a>.</li><li id="note-4">Stanford HAI, <em>AI Index Report 2025</em>; PwC, <em>AI Jobs Barometer 2025</em>. <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">AI Index</a>; <a href="https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html">PwC</a>.</li></ol></section><p class="author-sig">Rolf Skogling arbetar dagligen med AI i skarpa produktionsmiljöer och skriver om AI-skiftets konsekvenser på AI-skiftet.se.</p>
-</div>
+  <div class="container">
+    
+<p>Det vanligaste misstaget i samtalet om AI är att behandla tekniken som ännu ett digitalt verktyg. Som Excel, fast snabbare. Som ett effektivare lager ovanpå samma arbetslogik som tidigare.</p>
+<p>Jämförelsen är delvis begriplig men i grunden otillräcklig. Traditionell mjukvara automatiserade framför allt fasta regler, definierade arbetssteg och välstrukturerade dataflöden. Generativ AI och närliggande modeller automatiserar i stället en växande del av sådant arbete som tidigare krävde tolkning, språkförståelse, sammanfattning, jämförelse, kodstöd och annan tillämpad kognitiv bearbetning.<sup><a href="#note-1">[1]</a></sup></p>
+
+<h2>Från regelautomation till tolkning</h2>
+<p>Kalkylblad, databaser och affärssystem var enormt viktiga därför att de gjorde beräkning, registrering och uppföljning snabbare och mer skalbar. Men människan stod fortfarande tydligt för själva tolkningen: att väga alternativ, skriva första utkast, läsa mellan raderna, formulera hypoteser och översätta oklara problem till användbara nästa steg.</p>
+<p>Det är just här AI flyttar gränsen. Moderna modeller kan formulera sammanfattningar, skriva fungerande första kodutkast, jämföra alternativ, föreslå experiment, strukturera ostrukturerat material och anpassa sitt svar efter mål och sammanhang. De gör inte detta felfritt, men de gör det ofta tillräckligt bra för att ändra hur arbetet delas mellan människa och system.<sup><a href="#note-2">[2]</a></sup></p>
+
+<h2>Funktion före filosofi</h2>
+<p>En vanlig invändning lyder: ”Men modellen förstår ju inte på riktigt.” Filosofiskt kan det vara en viktig fråga. Praktiskt är den inte avgörande för organisationen som ska bestämma hur arbetet ska göras.</p>
+<p>Om ett system på ett användbart sätt kan gå igenom en kravspecifikation, hitta oklarheter, föreslå omformuleringar, skriva testfall och hjälpa en erfaren människa att komma snabbare fram till ett beslut, då har arbetsuppgiften redan förändrats. Den förändringen blir inte mindre verklig av att vi fortsätter diskutera om systemet ”egentligen” förstår eller bara approximera mönster.<sup><a href="#note-3">[3]</a></sup></p>
+<p>Det betyder inte att filosofiska frågor saknar värde. Det betyder att de inte behöver vara lösta för att teknikens samhällseffekter ska bli stora. För planering räcker det långt att fråga: vilka uppgifter kan systemen hantera tillräckligt väl för att ändra rollfördelning, produktivitet och krav på kvalitetssäkring?</p>
+
+<h2>Vad detta förändrar i organisationer</h2>
+<p>När en organisation köper ett kalkylprogram köper den ett verktyg. När den inför AI inför den ofta något som mer liknar ett kvalificerat förstastöd: ett system som behöver instruktioner, avgränsning, verifiering, feedback och tydligt ansvar.</p>
+<p>Det får följder. Juniora arbetsuppgifter kan tunnas ut eller komprimeras. Seniora personer kan få större hävstång. Kraven på domänkunskap, datakvalitet och granskningsförmåga ökar samtidigt som vissa flaskhalsar försvinner. Därför är AI inte bara en it-fråga. Det är en organisationsfråga och i förlängningen en arbetsmarknadsfråga.</p>
+
+<h2>Vad jämförelsen med Excel ändå lär oss</h2>
+<p>Det finns samtidigt något nyttigt i Excel-jämförelsen: även ett mycket kraftfullt verktyg blir först verkligt värdefullt när verksamheten lär sig hur det ska användas. AI skapar inte automatiskt goda beslut. Fel instruktioner, dålig data, svag domänkunskap och otydligt ansvar ger fortfarande dåliga resultat.</p>
+<p>Den viktiga skillnaden är alltså inte att gamla verktyg var enkla och AI är magi. Skillnaden är att AI verkar högre upp i arbetskedjan, närmare språk, bedömning och problemlösning. Därför blir konsekvenserna bredare när tekniken fungerar — och kostnaderna högre när den används slarvigt.</p>
+
+<h2>Planeringsfrågan</h2>
+<p>Om AI bara vore ännu ett kontorsverktyg skulle uppgiften vara begränsad: några utbildningar, några nya rutiner och gradvis anpassning. Men när tekniken börjar påverka själva innehållet i kvalificerat arbete måste även planeringen bli större.</p>
+<p>Det är därför jag menar att AI inte är Excel. Inte därför att liknelsen är dum, utan därför att den gör skiftet mindre än det är. Den som planerar som om detta vore vanlig digitalisering kommer sannolikt att bygga för lite, utbilda för snävt och reagera för sent.</p>
+
+<section class="article-endnotes">
+  <h2>Källnoter</h2>
+  <p>Essän är framför allt begreppslig. Källorna nedan stöder beskrivningen av hur AI används i arbetsuppgifter och hur dess ekonomiska betydelse diskuteras i forsknings- och policyunderlag.</p>
+  <ol>
+    <li id="note-1">För användning av generativ AI i arbetsuppgifter, se <a href="https://www.anthropic.com/economic-index">Anthropic Economic Index</a> och <a href="https://www.anthropic.com/research/economic-index-primitives">Economic primitives</a>.</li>
+    <li id="note-2">Översikter över kapacitetsutveckling och diffusion: <a href="https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf">Stanford HAI, AI Index Report 2025</a> och <a href="https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html">PwC Global AI Jobs Barometer 2025</a>.</li>
+    <li id="note-3">För arbetsmarknads- och uppgiftsperspektiv, se <a href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update">ILO 2025 update</a>, <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">WEF Future of Jobs 2025</a> och <a href="https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity">IMF</a>.</li>
+  </ol>
+</section>
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i arbete med AI i skarpa verksamheter.</p>
+
+  </div>
 </article>
+
 <nav class="article-nav">
-<div class="container" style="display:flex; justify-content:space-between;">
-<a href="debattartikel.html">← Föregående</a>
-<a href="fabriksgolvet.html">Nästa →</a>
-</div>
+  <div class="container" style="display:flex; justify-content:space-between;">
+    <a href="debattartikel.html">← Föregående</a>
+    <a href="fabriksgolvet.html">Nästa →</a>
+  </div>
 </nav>
+
+
 <footer class="site-footer">
-<div class="container">
-<p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
-</div>
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
+  </div>
 </footer>
+
 </body>
 </html>

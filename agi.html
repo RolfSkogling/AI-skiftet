@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AGI och vad det faktiskt innebär — AI-skiftet</title>
-<meta content="Essä om AGI som planeringsfråga: definitioner, osäkra tidslinjer och varför förberedelse ändå behövs." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGI och vad det faktiskt innebär — AI-skiftet</title>
+  <meta name="description" content="Essä om AGI som prestationsprofil, hög osäkerhet och planeringsfråga — utan science fiction-retorik.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="site-nav">
-<div class="container-wide">
-<a class="site-nav__logo" href="index.html">AI-skiftet</a>
-<button aria-label="Meny" class="nav-toggle" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
-<span></span><span></span><span></span>
-</button>
-<div class="site-nav__links">
-<a href="index.html#essaer">Essäer</a>
-<a href="index.html#om">Om</a>
-<a href="kallor.html">Källor</a>
-</div>
-</div>
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essaer">Essäer</a>
+      <a href="index.html#om">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+  </div>
 </nav>
+
 <header class="article-header">
-<div class="container">
-<a class="article-header__back" href="index.html">← Tillbaka</a>
-<h1>AGI och vad det faktiskt innebär: Bortom buzzwords och science fiction</h1>
-<p class="article-meta">Essä · Rolf Skogling</p>
-</div>
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Tillbaka</a>
+    <h1>AGI och vad det faktiskt innebär: kapacitet, osäkerhet och beredskap</h1>
+    <p class="article-meta">Essä · Rolf Skogling</p>
+  </div>
 </header>
 <article class="article-body">
-<div class="container">
-<p>Begreppet AGI dyker upp allt oftare i AI-debatten men används sällan med precision. För vissa betyder det science fiction. För andra betyder det nästan vad som helst som känns imponerande. Inget av det hjälper. Om AGI ska vara ett användbart begrepp måste vi tala om det som en planeringsfråga: vilken sorts kapacitet syftar vi på, hur osäkra är tidslinjerna och vilka konsekvenser skulle följa om systemen blir mer generella än i dag?</p>
-<h2>Vad AGI är — och inte är</h2>
-<p>AGI bör inte förstås som ett magiskt ögonblick då en maskin "vaknar". Det mer användbara sättet att tala om AGI är som en prestationsprofil: system som kan klara ett brett spektrum av kognitiva uppgifter på en nivå som gör dem allmänt användbara i olika miljöer, inte bara i en enda smal domän.<sup><a href="#note-1">[1]</a></sup></p>
-<p>Det betyder också att AGI inte är samma sak som medvetande. Ett system kan vara mycket generellt och mycket kapabelt utan att vi vet något säkert om subjektiv upplevelse. Den filosofiska frågan är viktig, men den bör inte blandas ihop med den operativa frågan om samhällseffekt.</p>
-<p>Dagens modeller är ännu inte där fullt ut. De är starka på mycket, svaga på annat, känsliga för kontextskiften och fortfarande beroende av mänsklig styrning. Men de är klart mer generella än tidigare generationers AI. Det är därför AGI inte längre är ett rent hypotetiskt ämne för forskningsseminarier. Det har blivit en rimlig planeringsfråga för institutioner som försöker förstå vart tekniken kan vara på väg.</p>
-<h2>Var forskningen står</h2>
-<p>De senaste åren har flera utvecklingslinjer börjat mötas: större och bredare språkmodeller, bättre verktygsanvändning, längre kontext, multimodalitet, agentiska arbetsflöden och mer intresse för system som kan agera i den fysiska världen. Var och en av dessa linjer är viktig. Tillsammans gör de att systemen blir användbara i fler typer av arbete.<sup><a href="#note-2">[2]</a></sup></p>
-<p>Samtidigt finns tydliga begränsningar. Modeller kan fortfarande vara sköra, blanda ihop säkerhet och självsäkerhet, misslyckas med långsiktigt robust planering och fallera i situationer som kräver pålitlig verklighetsförankring. Just därför är det missvisande både att säga att AGI redan är här och att avfärda hela frågan som hype. Vi befinner oss snarare i ett mellanläge där generaliteten ökar snabbare än institutionerna hinner anpassa sig.</p>
-<h2>Tidslinjer under osäkerhet</h2>
-<p>Den ärliga hållningen är att ingen vet när system som rimligen kan kallas AGI uppstår. Ledande forskare och företagsledare ger mycket olika svar. Vissa talar om några få år, andra om ett eller flera decennier, och vissa menar att dagens angreppssätt inte räcker hela vägen.</p>
-<p>Det viktiga är därför inte att låtsas ha en exakt kalender. Det viktiga är att förstå att osäkerheten i sig är ett styrningsproblem. Om tidslinjen är kort har vi ont om tid. Om tidslinjen är längre behöver vi ändå bygga institutioner, kompetens och omställningskapacitet långt i förväg. I båda fallen talar mycket för att förberedelse är billigare än överraskning.</p>
-<h2>Den automatiserade feedback-loopen</h2>
-<p>En anledning till att AGI-frågan blivit mer brådskande är möjligheten till en återkopplingsloop där bättre AI hjälper till att utveckla ännu bättre AI. Den typen av loop behöver inte vara dramatisk eller fullständig för att få effekt. Det räcker att system i växande grad kan bidra till kod, forskning, experimentdesign, utvärdering och optimering.<sup><a href="#note-3">[3]</a></sup></p>
-<p>Om sådana loopar blir mer praktiskt användbara kan tidslinjerna krympa, även utan något enskilt "genombrott". Det är ett starkt skäl till att tänka i scenarier snarare än att låsa sig vid ett enda antagande.</p>
-<h2>Medvetandefrågan är separat men inte trivial<sup><a href="#note-4">[4]</a></sup></h2>
-<p>Det finns också en djupare fråga som ofta drar mycket uppmärksamhet: kan avancerade AI-system ha någon form av subjektiv upplevelse? Min uppfattning är att frågan bör behandlas med större intellektuell försiktighet än vad både optimister och skeptiker ibland gör.</p>
-<p>Vi vet för lite för att slå fast särskilt mycket. Men vi vet också tillräckligt lite för att inte helt kunna avfärda frågan. Det är därför klokt att hålla två tankar i huvudet samtidigt: vi ska inte bygga samhällsplanering på ogrundade påståenden om maskinmedvetande, men vi ska heller inte behandla frågan som löjlig bara för att den är svår.</p>
-<p>För den praktiska AI-politiken räcker det dock långt att konstatera att medvetande inte behöver vara avgjort för att systemens samhällseffekter ska vara stora.</p>
+  <div class="container">
+    
+<p>Begreppet AGI används ofta som om alla redan menade samma sak. Det gör de inte. För vissa är AGI ett science fiction-ögonblick där en maskin ”vaknar”. För andra är det bara ett marknadsföringsord för nästa modellgeneration. Båda synsätten gör diskussionen sämre.</p>
+<p>Det mest användbara sättet att tala om AGI är i stället som en prestationsprofil: system som kan hantera ett brett spektrum av kognitiva uppgifter på hög nivå, i många domäner, med relativt liten specialanpassning och med växande grad av självständig problemlösning.<sup><a href="#note-1">[1]</a></sup></p>
+
+<h2>Ett arbetsbegrepp, inte ett magiskt ögonblick</h2>
+<p>Det här synsättet har en fördel. Det flyttar diskussionen från mystik till kapacitet. Man kan då fråga: hur generellt är systemet, hur robust är det, hur mycket mänsklig styrning krävs, hur väl klarar det nya miljöer och hur farligt blir det om det får större autonomi?</p>
+<p>Det betyder också att AGI inte behöver vara en knivskarp punkt i tiden. Det kan vara en övergång där system successivt blir bredare, mer agentiska och mer användbara i fler typer av arbete. Det gör frågan mindre dramatisk i formen — men inte mindre viktig i praktiken.</p>
+
+<h2>Vad som talar för snabbare framsteg</h2>
+<p>Det finns goda skäl att ta snabbare utveckling på allvar. De senaste åren har flera utvecklingslinjer börjat samverka: starkare basmodeller, bättre verktygsanvändning, längre kontext, multimodalitet, bättre finjustering, billigare tillgång och mer agentiska arbetsflöden. Det gör systemen mer generella än de var för bara kort tid sedan.<sup><a href="#note-2">[2]</a></sup></p>
+<p>Det är också rimligt att anta att AI i viss mån kan snabba upp AI-utveckling genom bättre kodstöd, forskningsassistans och snabbare experimentcykler. Den mekanismen ska inte romantiseras, men den bör inte heller ignoreras.</p>
+
+<h2>Vad som fortfarande bromsar</h2>
+<p>Samtidigt finns tydliga begränsningar. Dagens modeller kan vara sköra, självsäkra på fel sätt, dåliga på långsiktig robust planering och känsliga för miljöskiften. De är fortfarande beroende av mänsklig avgränsning, granskning och ansvar i många verkliga arbetsflöden.</p>
+<p>Det är därför falsk precision är farlig. Att säga att AGI ”kommer 2028” eller ”inte kommer på decennier” låter tydligt men bygger ofta på mer säkerhet än underlaget bär. Den rimliga hållningen är i stället att utvecklingen är osäker, men att intervallet för seriösa scenarier är tillräckligt nära för att vara en planeringsfråga redan nu.<sup><a href="#note-3">[3]</a></sup></p>
+
+<h2>Tidslinjer utan låtsad säkerhet</h2>
+<p>Jag tror därför att AGI bör behandlas ungefär som andra högpåverkande osäkerheter. Man behöver inte veta exakt när ett skifte inträffar för att förbereda sig för det. Man planerar inte elnät, försvar eller sjukvård bara för normalfallet. Man planerar också för variation, felmoder och scenarier som kan bli avgörande om de inträffar.</p>
+<p>Det svagare scenariot — där AGI dröjer men modellerna ändå blir stadigt mer generella och mer användbara — räcker redan i sig för att motivera seriös beredskap i företag, utbildning och stat.</p>
+
+<h2>Medvetandefrågan är en annan fråga</h2>
+<p>En stor del av den offentliga fascinationen kring AGI glider snabbt över i frågan om medvetande. Kan avancerade AI-system ha subjektiv upplevelse? Det är en legitim forskningsfråga, men den bör hållas isär från den mer praktiska frågan om kapacitet och samhällseffekt.</p>
+<p>Det finns seriös forskning som menar att frågan inte bör avfärdas slarvigt. Men det finns inget robust skäl att bygga dagens policy eller företagsplanering på att maskinmedvetande redan är etablerat. För den praktiska samhällsdebatten räcker det långt att konstatera att system kan bli mycket kraftfulla utan att medvetandefrågan behöver vara avgjord.<sup><a href="#note-4">[4]</a></sup></p>
+
 <h2>Varför AGI spelar roll redan nu</h2>
-<p>Det kan verka märkligt att diskutera AGI innan vi vet om eller när det uppstår. Men det är så man hanterar andra stora risker och kapacitetsskiften också. Man väntar inte tills infrastrukturen är överbelastad innan man planerar utbyggnad. Man väntar inte tills krisen är här innan man bygger beredskap.</p>
-<p>Om systemen blir mer generella än i dag påverkar det arbetsmarknaden, maktbalansen mellan företag och stater, militär kapacitet, forskningshastighet, utbildning och institutionell legitimitet. Även det svagare scenariot — där AGI dröjer men generalistmodeller fortsätter förbättras snabbt — räcker för att motivera seriös förberedelse.</p>
-<h2>Att tänka som en ingenjör</h2>
-<p>Jag är inte AI-forskare. Jag kommer från ingenjörs- och industrivärlden. Där finns en vana som jag tycker saknas i delar av AI-debatten: man dimensionerar inte bara för normalfallet. Man tittar också på variation, felmoder och extrema utfall.</p>
-<p>Det är ungefär så AGI bör behandlas. Inte som en trosfråga, utan som ett scenario med hög osäkerhet och potentiellt mycket hög påverkan. Det räcker inte att antingen håna idén eller förkunna den som redan uppfylld. Det som behövs är planering som tar osäkerheten på allvar.</p>
-<section class="article-endnotes"><h2>Källnoter</h2><p>Källnoter till definitioner, tidslinjeosäkerhet, säkerhet och medvetandefrågan.</p><ol><li id="note-1">Google DeepMind, <em>Levels of AGI for Operationalizing Progress on the Path to AGI</em> (2023/2024). <a href="https://arxiv.org/abs/2311.02462">arXiv</a>.</li><li id="note-2">RAND, <em>Pivots and Pathways on the Road to Artificial General Intelligence Futures</em> (2025), om osäkerhet, definitioner och möjliga utvecklingsvägar. <a href="https://www.rand.org/pubs/perspectives/PEA4178-1.html">RAND</a>.</li><li id="note-3">Google DeepMind, <em>An Approach to Technical AGI Safety and Security</em> (2025) samt översiktsartikeln <em>Taking a responsible path to AGI</em>. <a href="https://arxiv.org/abs/2504.01849">Paper</a>; <a href="https://deepmind.google/blog/taking-a-responsible-path-to-agi/">Översikt</a>.</li><li id="note-4">Butlin m.fl., <em>Identifying indicators of consciousness in AI systems</em> (Trends in Cognitive Sciences, 2025). Noten används här för att markera att medvetandefrågan är forskningsmässigt öppen men metodiskt behandlingsbar. <a href="https://www.sciencedirect.com/science/article/pii/S1364661325002864">Artikel</a>.</li></ol></section><p class="author-sig">Rolf Skogling arbetar dagligen med AI i skarpa produktionsmiljöer och skriver om AI-skiftets konsekvenser på AI-skiftet.se.</p>
-</div>
+<p>Skälet att skriva om AGI nu är alltså inte att påstå att målet redan är uppnått. Skälet är att AGI som möjlighet påverkar hur vi bör tänka om säkerhet, styrning, arbetsmarknad, geopolitik och ansvar.</p>
+<p>Den som vill vara seriös behöver kunna hålla två tankar i huvudet samtidigt: vi vet inte när eller om en viss tröskel passeras, men osäkerheten i sig är tillräckligt stor och konsekvenserna tillräckligt betydande för att motivera förberedelse.</p>
+
+<section class="article-endnotes">
+  <h2>Källnoter</h2>
+  <p>Källorna nedan används för definitioner, osäkerhet, säkerhet och den separata medvetandefrågan.</p>
+  <ol>
+    <li id="note-1"><a href="https://deepmind.google/research/publications/66938/">Google DeepMind: Levels of AGI for Operationalizing Progress on the Path to AGI</a>.</li>
+    <li id="note-2">Se <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">Stanford HAI, AI Index 2025</a> för kapacitetsutveckling och <a href="https://deepmind.google/blog/taking-a-responsible-path-to-agi/">Google DeepMind: Taking a responsible path to AGI</a> för ett industriperspektiv på utveckling och risk.</li>
+    <li id="note-3">För scenariotänkande och osäkerhet, se <a href="https://www.rand.org/pubs/perspectives/PEA4178-1.html">RAND: Pivots and Pathways on the Road to AGI Futures</a> och <a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026">International AI Safety Report 2026</a>.</li>
+    <li id="note-4">För den separata forskningsdiskussionen om AI och medvetande, se <a href="https://www.sciencedirect.com/science/article/pii/S1364661325002864">Butlin m.fl., Identifying indicators of consciousness in AI systems</a>.</li>
+  </ol>
+</section>
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i arbete med AI i skarpa verksamheter.</p>
+
+  </div>
 </article>
+
 <nav class="article-nav">
-<div class="container" style="display:flex; justify-content:space-between;">
-<a href="politiken-missar.html">← Föregående</a>
-<a href="overflod.html">Nästa →</a>
-</div>
+  <div class="container" style="display:flex; justify-content:space-between;">
+    <a href="politiken-missar.html">← Föregående</a>
+    <a href="overflod.html">Nästa →</a>
+  </div>
 </nav>
+
+
 <footer class="site-footer">
-<div class="container">
-<p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
-</div>
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
+  </div>
 </footer>
+
 </body>
 </html>
