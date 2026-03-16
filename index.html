@@ -9,6 +9,61 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero-actions{
+      display:flex;
+      gap:0.85rem;
+      flex-wrap:wrap;
+      margin-top:1.15rem;
+    }
+    .cta-btn--secondary{
+      background:transparent;
+      color:inherit;
+      border:1px solid currentColor;
+    }
+    .featured-main{
+      display:block;
+      margin:0 0 2rem;
+      padding:1.5rem;
+      border-radius:24px;
+      text-decoration:none;
+      color:inherit;
+      background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));
+      border:1px solid rgba(22,50,79,0.12);
+      box-shadow:0 18px 42px rgba(19,31,48,0.08);
+    }
+    .featured-main__label{
+      display:inline-block;
+      margin-bottom:0.55rem;
+      font-size:0.8rem;
+      font-weight:700;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:#16324f;
+    }
+    .featured-main__title{
+      margin:0;
+      font-size:clamp(1.8rem,3vw,2.8rem);
+      line-height:1.1;
+    }
+    .featured-main__subtitle{
+      margin:0.45rem 0 0;
+      font-size:1.05rem;
+      font-weight:600;
+      color:#2f3744;
+    }
+    .featured-main__excerpt{
+      max-width:72ch;
+      margin:0.9rem 0 0;
+    }
+    .featured-main__read{
+      margin-top:1rem;
+      font-weight:700;
+      color:#16324f;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -19,6 +74,7 @@
       <span></span><span></span><span></span>
     </button>
     <div class="site-nav__links">
+      <a href="index.html#huvudessa">Huvudessä</a>
       <a href="index.html#essaer">Essäer</a>
       <a href="index.html#om">Om</a>
       <a href="kallor.html">Källor</a>
@@ -29,8 +85,23 @@
 <section class="hero">
   <div class="container">
     <h1>AI förändrar redan hur arbete, organisationer och institutioner fungerar.</h1>
-    <p class="subtitle">AI-skiftet samlar essäer från ett industrinära perspektiv: vad tekniken redan gör, vilka antaganden som håller, vilka som inte håller och hur Sverige kan förbereda sig mer proportionerligt.</p>
-    <a href="#essaer" class="cta-btn">Läs essäerna</a>
+    <p class="subtitle">AI-skiftet samlar en längre huvudessä och kortare essäer från ett industrinära perspektiv: vad tekniken redan gör, vilka antaganden som håller, vilka som inte håller och hur Sverige kan förbereda sig mer proportionerligt.</p>
+    <div class="hero-actions">
+      <a href="#huvudessa" class="cta-btn">Läs huvudessän</a>
+      <a href="#essaer" class="cta-btn cta-btn--secondary">Se de kortare essäerna</a>
+    </div>
+  </div>
+</section>
+
+<section class="hero" id="huvudessa">
+  <div class="container-wide">
+    <a href="civilisationsskiftet.html" class="featured-main">
+      <div class="featured-main__label">Huvudessä</div>
+      <h2 class="featured-main__title">Civilisationsskiftet</h2>
+      <div class="featured-main__subtitle">AI, robotik och vägen från arbetssamhälle till en ekonomi av överflöd</div>
+      <div class="featured-main__excerpt">En längre syntes om varför AI, billig energi, automation och nya produktionsformer tillsammans pressar fram ett nytt samhällskontrakt. Texten binder ihop de kortare essäerna och placerar AI-skiftet i ett större civilisatoriskt sammanhang.</div>
+      <div class="featured-main__read">Läs huvudessän &rarr;</div>
+    </a>
   </div>
 </section>
 
@@ -44,8 +115,8 @@
     </a>
     -->
 
-    <h2>Åtta essäer om AI-skiftet</h2>
-    <p class="section-intro">Från fabriksgolvet till policy, AGI, omställning och mening. Texterna kombinerar industrinära erfarenhet, scenarioanalys och samhällsresonemang. De är inte exakta prognoser, men de är skrivna för att vara prövbara.</p>
+    <h2>Åtta kortare essäer om AI-skiftet</h2>
+    <p class="section-intro">Efter huvudessän finns här åtta kortare fördjupningar om fabriksgolvet, policy, AGI, omställning och mening. Texterna kombinerar industrinära erfarenhet, scenarioanalys och samhällsresonemang. De är inte exakta prognoser, men de är skrivna för att vara prövbara.</p>
 
     <div class="essay-grid">
       <a href="inte-excel.html" class="essay-card">
