@@ -42,6 +42,7 @@
       border-bottom: 1px solid var(--border);
     }
     .site-nav .container-wide {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -54,6 +55,15 @@
       text-decoration: none;
       letter-spacing: 0.02em;
     }
+    .site-nav__toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.25rem;
+      color: var(--text);
+    }
+    .site-nav__toggle svg { display: block; }
     .site-nav__links {
       display: flex;
       gap: 1.25rem;
@@ -116,35 +126,8 @@
       padding: 0 0 4rem;
     }
     .essay-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
-      gap: 2rem;
-      align-items: start;
-    }
-    .essay-toc {
-      position: sticky;
-      top: 5.25rem;
-      background: rgba(255,255,255,0.78);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 1.25rem 1.15rem;
-      backdrop-filter: blur(8px);
-    }
-    .essay-toc h2 {
-      margin: 0 0 0.75rem;
-      font-size: 0.92rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .essay-toc ol {
-      margin: 0;
-      padding-left: 1.15rem;
-    }
-    .essay-toc li + li { margin-top: 0.45rem; }
-    .essay-toc a {
-      color: var(--text);
-      text-decoration: none;
+      max-width: 780px;
+      margin: 0 auto;
     }
     .essay-article {
       background: var(--surface);
@@ -230,15 +213,23 @@
       text-align: center;
     }
     .site-footer a { color: inherit; }
-    @media (max-width: 920px) {
-      .essay-layout { grid-template-columns: 1fr; }
-      .essay-toc { position: static; }
-    }
     @media (max-width: 680px) {
-      .site-nav .container-wide {
+      .site-nav__toggle { display: block; }
+      .site-nav__links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+        padding: 0.75rem 1.25rem;
+        gap: 0.6rem;
+        z-index: 30;
       }
+      .site-nav__links.open { display: flex; }
       .essay-hero { padding-top: 2.5rem; }
       .essay-hero__wrap, .essay-article { border-radius: 22px; }
     }
@@ -249,11 +240,14 @@
 <nav class="site-nav">
   <div class="container-wide">
     <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="site-nav__toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('open')">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
     <div class="site-nav__links">
       <a href="index.html">Startsida</a>
-      <a href="index.html#huvudessa">Huvudessä</a>
-      <a href="index.html#essaer">Korta essäer</a>
-      <a href="kallor.html">Källor</a>
+      <a href="index.html#huvudessa">Huvudess&#xE4;</a>
+      <a href="index.html#essaer">Korta ess&#xE4;er</a>
+      <a href="kallor.html">K&#xE4;llor</a>
     </div>
   </div>
 </nav>
@@ -279,17 +273,6 @@
 <main class="essay-shell">
   <div class="container-wide">
     <div class="essay-layout">
-      <aside class="essay-toc">
-        <h2>Innehåll</h2>
-        <ol>
-          <li><a href="#inledning">Ett lugnande mantra</a></li>
-          <li><a href="#historiefallan">Historiefällan och hästens öde</a></li>
-          <li><a href="#marginalkostnad">När kostnaderna går mot noll</a></li>
-          <li><a href="#tidsfallan">Tidsfällan: varför 15 år är imorgon</a></li>
-          <li><a href="#avslutning">Dags att vakna</a></li>
-        </ol>
-      </aside>
-
       <article class="essay-article">
         <section class="essay-lead" id="inledning">
           <blockquote>"AI kommer inte att ta ditt jobb. En människa som använder AI kommer att göra det."</blockquote>
@@ -362,5 +345,14 @@
   </div>
 </footer>
 
+<script>
+document.addEventListener('click', function(e) {
+  var links = document.querySelector('.site-nav__links');
+  var toggle = document.querySelector('.site-nav__toggle');
+  if (links.classList.contains('open') && !links.contains(e.target) && !toggle.contains(e.target)) {
+    links.classList.remove('open');
+  }
+});
+</script>
 </body>
 </html>
