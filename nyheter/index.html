@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyheter — AI-skiftet</title>
+  <meta name="description" content="Dagliga nyheter om AI, fysisk AI, infrastruktur, kvantdatorer, modeller, forskning, arbetsmarknad och reglering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f3ef;
+      --surface: #ffffff;
+      --text: #1f2430;
+      --muted: #5b6474;
+      --accent: #16324f;
+      --accent-2: #9e6b3a;
+      --border: rgba(22, 50, 79, 0.12);
+      --shadow: 0 18px 45px rgba(19, 31, 48, 0.08);
+      --shadow-sm: 0 4px 12px rgba(19, 31, 48, 0.06);
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.72;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(246, 243, 239, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-nav .container {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+      padding: 0.95rem 0;
+    }
+    .site-nav__logo {
+      font-weight: 700; color: var(--accent);
+      text-decoration: none; letter-spacing: 0.02em;
+      font-size: 1.1rem;
+    }
+    .site-nav__links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .site-nav__links a {
+      text-decoration: none; color: var(--muted);
+      font-weight: 500; font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+    .site-nav__links a:hover,
+    .site-nav__links a.active { color: var(--accent); text-decoration: none; }
+    .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+    .news-hero { padding: 3.5rem 0 2rem; }
+    .news-hero h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 800; font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .news-hero p { color: var(--muted); font-size: 1.05rem; max-width: 640px; }
+    .news-filter {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      padding: 1.5rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .filter-tag {
+      padding: 0.35rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.82rem; font-weight: 500;
+      color: var(--muted); background: transparent;
+      cursor: pointer; transition: all 0.2s;
+      font-family: inherit;
+    }
+    .filter-tag:hover, .filter-tag.active {
+      background: var(--accent); color: #fff;
+      border-color: var(--accent);
+    }
+    .news-list { padding-bottom: 4rem; }
+    .news-date-group { margin-bottom: 2.5rem; }
+    .news-date {
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--accent-2); text-transform: uppercase;
+      letter-spacing: 0.06em; margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-2);
+      display: inline-block;
+    }
+    .news-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .news-card:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
+    .news-card__tags { display: flex; gap: 0.4rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .news-card__tag {
+      font-size: 0.7rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 0.15rem 0.55rem; border-radius: 100px;
+      background: rgba(22, 50, 79, 0.07); color: var(--accent);
+    }
+    .news-card__tag--fysisk-ai { background: rgba(158, 107, 58, 0.12); color: #7a5025; }
+    .news-card__tag--hardvara { background: rgba(30, 120, 70, 0.1); color: #1a6b3c; }
+    .news-card__tag--kvant { background: rgba(120, 50, 160, 0.1); color: #6b2d99; }
+    .news-card__tag--forskning { background: rgba(22, 50, 79, 0.08); color: var(--accent); }
+    .news-card__tag--arbetsmarknad { background: rgba(180, 60, 40, 0.1); color: #993322; }
+    .news-card__tag--reglering { background: rgba(60, 60, 60, 0.08); color: #444; }
+    .news-card__tag--debatt { background: rgba(200, 130, 20, 0.12); color: #8a5a10; }
+    .news-card__tag--modeller { background: rgba(20, 100, 180, 0.1); color: #1060a0; }
+    .news-card__tag--infrastruktur { background: rgba(100, 80, 160, 0.1); color: #5540a0; }
+    .news-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; line-height: 1.4; }
+    .news-card h3 a { color: var(--text); }
+    .news-card h3 a:hover { color: var(--accent); text-decoration: none; }
+    .news-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+    .news-card__source { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; opacity: 0.7; }
+    .news-card__source a { color: var(--muted); }
+    .news-card__source a:hover { color: var(--accent); }
+    .news-archive-link { text-align: center; padding: 2rem 0 4rem; }
+    .news-archive-link a { font-weight: 600; color: var(--accent); font-size: 0.95rem; }
+    .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; font-size: 0.82rem; color: var(--muted); }
+    @media (max-width: 640px) {
+      .news-card { padding: 1rem 1.15rem; }
+      .site-nav__links { gap: 0.75rem; }
+      .site-nav__links a { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="site-nav__logo">AI-skiftet</a>
+    <div class="site-nav__links">
+      <a href="../index.html">Startsida</a>
+      <a href="../index.html#essaer">Essäer</a>
+      <a href="index.html" class="active">Nyheter</a>
+      <a href="../kallor.html">Källor</a>
+    </div>
+  </div>
+</nav>
+<header class="news-hero">
+  <div class="container">
+    <h1>Nyheter</h1>
+    <p>Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt. Kuraterat och kommenterat.</p>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="news-filter" id="newsFilter">
+      <button class="filter-tag active" data-filter="alla">Alla</button>
+      <button class="filter-tag" data-filter="modeller">Modeller</button>
+      <button class="filter-tag" data-filter="forskning">Forskning</button>
+      <button class="filter-tag" data-filter="fysisk-ai">Fysisk AI</button>
+      <button class="filter-tag" data-filter="hardvara">Hårdvara</button>
+      <button class="filter-tag" data-filter="infrastruktur">Infrastruktur</button>
+      <button class="filter-tag" data-filter="kvant">Kvant</button>
+      <button class="filter-tag" data-filter="arbetsmarknad">Arbetsmarknad</button>
+      <button class="filter-tag" data-filter="reglering">Reglering</button>
+      <button class="filter-tag" data-filter="debatt">Debatt</button>
+    </div>
+    <div class="news-list" id="newsList">
+      <div class="news-date-group" data-date="2026-03-29">
+        <div class="news-date">29 mars 2026</div>
+        <div class="news-card" data-tags="modeller">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+          <h3><a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">Tre frontiermodeller på en vecka: GPT-5.4, Gemini 3.1 Ultra och Grok 4.20</a></h3>
+          <p>Mars 2026 blev en modellrusning utan motstycke — OpenAI släppte GPT-5.4 den 17:e, Google följde med Gemini 3.1 Ultra den 20:e och xAI avslutade med Grok 4.20 den 22:a. Tempot signalerar att den kommersiella kapplöpningen nu drivs av veckor, inte månader.</p>
+          <div class="news-card__source">Källa: <a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">devFlokers</a></div>
+        </div>
+        <div class="news-card" data-tags="fysisk-ai">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+          <h3><a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">Google DeepMind och Agile Robots integrerar Gemini Robotics i industrirobotar</a></h3>
+          <p>Google DeepMind inleder samarbete med Agile Robots för att bädda in Gemini Robotics-modeller direkt i robotarmar för tillverkning och logistik. Det är ytterligare ett steg mot att foundation models inte bara resonerar — de styr fysiska system i realtid.</p>
+          <div class="news-card__source">Källa: <a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">CNBC</a></div>
+        </div>
+        <div class="news-card" data-tags="modeller">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+          <h3><a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">Alibaba Qwen 3.5: 9B-modell slår OpenAI:s gpt-oss-120B på utvalda benchmarks</a></h3>
+          <p>Alibabas Qwen-team släppte sin 3.5 Small-serie med modeller från 0.8B till 9B parametrar, designade för att köras på laptops och mobiler. Att en 9B-modell överträffar en 120B-modell på vissa uppgifter visar hur snabbt effektiviteten ökar — storleksöverlägsenhet är inte längre självklar.</p>
+          <div class="news-card__source">Källa: <a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">MEAN CEO Blog</a></div>
+        </div>
+        <div class="news-card" data-tags="infrastruktur">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+          <h3><a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">MCP-standarden når 97 miljoner installationer — agentinfrastruktur blir mainstream</a></h3>
+          <p>Anthropics Model Context Protocol (MCP) har gått från experimentellt protokoll till de facto-standard för AI-agenter, med 97 miljoner installationer i mars. Varje stor AI-leverantör levererar nu MCP-kompatibla verktyg, vilket skapar en gemensam infrastruktur för agentstyrning.</p>
+          <div class="news-card__source">Källa: <a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">Digital Applied</a></div>
+        </div>
+        <div class="news-card" data-tags="kvant">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--kvant">Kvant</span></div>
+          <h3><a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Kvantdatorer flyttar in i datacenter — hybridarkitekturer tar form</a></h3>
+          <p>Vid AI Expo Taiwan 2026 presenterades hur kvantdatorer nu integreras med klassisk HPC i hybrida datacenterarkitekturer, med 2028 som förväntad tipping point. Maybell Quantums ColdCloud-plattform kyler ner på timmar istället för dagar och drar 90 % mindre el — ett genombrott för praktisk kvantinfrastruktur.</p>
+          <div class="news-card__source">Källa: <a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Digitimes</a></div>
+        </div>
+        <div class="news-card" data-tags="reglering">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Reglering</span></div>
+          <h3><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU-rådet enas om "Digital Omnibus on AI" — nya tidslinjer för högrisk-AI</a></h3>
+          <p>EU-rådets förhandlingsposition från 13 mars förlänger tidsfristen för AI-system som redan finns på marknaden — leverantörer av generativa system får till februari 2027 att uppfylla transparenskraven i Artikel 50. Det är ett pragmatiskt erkännande av att implementering tar tid, men signalerar att regleringen nu konkretiseras på allvar.</p>
+          <div class="news-card__source">Källa: <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU-rådet</a></div>
+        </div>
+        <div class="news-card" data-tags="modeller">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+          <h3><a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">OpenAI lägger tyst ner Sora API — videogenerering i skala "ekonomiskt ohållbart"</a></h3>
+          <p>OpenAI meddelade den 24 mars att Sora-API:et stängs med 30 dagars varsel. Det officiella skälet: ohållbar ekonomi vid videogenerering i stor skala. Beslutet ifrågasätter hela affärsmodellen för generativ video och visar att compute-kostnader fortfarande sätter hårda gränser.</p>
+          <div class="news-card__source">Källa: <a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">Labla.org</a></div>
+        </div>
+        <div class="news-card" data-tags="arbetsmarknad">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+          <h3><a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">EU AI Act klassar HR-system som högrisk — ny verklighet för arbetsgivare</a></h3>
+          <p>Med EU AI Act:s fulla tillämpning i augusti 2026 klassas AI-system för rekrytering, befordran och prestationsutvärdering som högrisk. Företag som använder AI-drivna screening-verktyg, intervjuschemaläggare eller performance management måste nu genomföra riskbedömningar och säkerställa mänsklig tillsyn.</p>
+          <div class="news-card__source">Källa: <a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">Reworked</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="news-archive-link"><a href="#">← Äldre nyheter</a></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 AI-skiftet · Rolf Skogling</div>
+</footer>
+<script>
+const filterBtns = document.querySelectorAll('.filter-tag');
+const newsCards = document.querySelectorAll('.news-card');
+const dateGroups = document.querySelectorAll('.news-date-group');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    newsCards.forEach(card => {
+      card.style.display = (filter === 'alla' || card.dataset.tags.includes(filter)) ? '' : 'none';
+    });
+    dateGroups.forEach(group => {
+      const visible = group.querySelectorAll('.news-card:not([style*="display: none"])');
+      group.style.display = visible.length ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
