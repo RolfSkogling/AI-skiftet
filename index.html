@@ -3,12 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI-skiftet — essäer om AI, arbete och samhällsomställning</title>
-  <meta name="description" content="Huvudessä och essäer om AI-skiftet: industri, arbete, politik, AGI, robotik, omställning och mening. Ett industrinära perspektiv på vad som redan förändras och vad Sverige behöver förbereda.">
+  <title>AI-skiftet — essäer och nyheter om AI, arbete och samhällsomställning</title>
+  <meta name="description" content="Dagliga nyheter och essäer om AI-skiftet: modeller, forskning, fysisk AI, industri, politik, AGI, robotik och omställning. Ett industrinära perspektiv.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Nyhetssektion (tillägg till style.css) --- */
+    .news-section{padding:44px 0 60px;border-bottom:1px solid rgba(140,74,31,.08)}
+    .news-section h2{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.8vw,2.6rem);color:#1b1b1b;margin:0 0 6px}
+    .news-section .section-intro{margin-bottom:20px}
+    .news-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+    .filter-tag{
+      padding:5px 14px;border:1px solid var(--line);border-radius:100px;
+      font-size:.82rem;font-weight:600;color:var(--muted);background:transparent;
+      cursor:pointer;transition:all .2s;font-family:inherit;
+    }
+    .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .news-date-group{margin-bottom:28px}
+    .news-date{
+      font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;
+      letter-spacing:.06em;margin-bottom:10px;padding-bottom:6px;
+      border-bottom:2px solid var(--accent);display:inline-block;
+    }
+    .news-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+      padding:18px 22px;margin-bottom:10px;box-shadow:var(--shadow);
+      transition:transform .15s;
+    }
+    .news-card:hover{transform:translateY(-1px)}
+    .news-card__tags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+    .news-card__tag{
+      font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+      padding:2px 9px;border-radius:100px;
+    }
+    .news-card__tag--modeller{background:rgba(20,100,180,.1);color:#1060a0}
+    .news-card__tag--fysisk-ai{background:rgba(140,74,31,.1);color:var(--accent)}
+    .news-card__tag--hardvara{background:rgba(30,120,70,.1);color:#1a6b3c}
+    .news-card__tag--kvant{background:rgba(120,50,160,.1);color:#6b2d99}
+    .news-card__tag--forskning{background:rgba(31,41,51,.07);color:var(--muted)}
+    .news-card__tag--arbetsmarknad{background:rgba(180,60,40,.1);color:#993322}
+    .news-card__tag--reglering{background:rgba(60,60,60,.08);color:#444}
+    .news-card__tag--debatt{background:rgba(200,130,20,.12);color:#8a5a10}
+    .news-card__tag--infrastruktur{background:rgba(100,80,160,.1);color:#5540a0}
+    .news-card h3{font-size:1rem;font-weight:600;margin-bottom:4px;line-height:1.4}
+    .news-card h3 a{color:var(--text)}
+    .news-card h3 a:hover{color:var(--accent);text-decoration:none}
+    .news-card p{color:var(--muted);font-size:.88rem;line-height:1.6;margin:0}
+    .news-card__source{font-size:.76rem;color:var(--muted);margin-top:6px;opacity:.7}
+    .news-card__source a{color:var(--muted)}
+    .news-card__source a:hover{color:var(--accent)}
+  </style>
 </head>
 <body>
 
@@ -19,9 +65,9 @@
       <span></span><span></span><span></span>
     </button>
     <div class="site-nav__links">
-      <a href="index.html#essaer">Essäer</a>
-      <a href="nyheter/index.html">Nyheter</a>
-      <a href="index.html#om">Om</a>
+      <a href="#nyheter">Nyheter</a>
+      <a href="#essaer">Essäer</a>
+      <a href="#om">Om</a>
       <a href="kallor.html">Källor</a>
     </div>
   </div>
@@ -30,21 +76,152 @@
 <section class="hero">
   <div class="container">
     <h1>AI förändrar redan hur arbete, organisationer och institutioner fungerar.</h1>
-    <p class="subtitle">AI-skiftet samlar essäer från ett industrinära perspektiv: vad tekniken redan gör, vilka antaganden som håller, vilka som inte håller och hur Sverige kan förbereda sig mer proportionerligt.</p>
+    <p class="subtitle">AI-skiftet samlar essäer och dagliga nyheter från ett industrinära perspektiv: vad tekniken redan gör, vilka antaganden som håller, vilka som inte håller och hur Sverige kan förbereda sig mer proportionerligt.</p>
     <a href="civilisationsskiftet.html" class="cta-btn">Läs huvudessän</a>
   </div>
 </section>
 
+<!-- ==================== NYHETER ==================== -->
+<section class="news-section" id="nyheter">
+  <div class="container-wide">
+    <h2>Nyheter</h2>
+    <p class="section-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
+
+    <div class="news-filter" id="newsFilter">
+      <button class="filter-tag active" data-filter="alla">Alla</button>
+      <button class="filter-tag" data-filter="modeller">Modeller</button>
+      <button class="filter-tag" data-filter="forskning">Forskning</button>
+      <button class="filter-tag" data-filter="fysisk-ai">Fysisk AI</button>
+      <button class="filter-tag" data-filter="hardvara">Hårdvara</button>
+      <button class="filter-tag" data-filter="infrastruktur">Infrastruktur</button>
+      <button class="filter-tag" data-filter="kvant">Kvant</button>
+      <button class="filter-tag" data-filter="arbetsmarknad">Arbetsmarknad</button>
+      <button class="filter-tag" data-filter="reglering">Reglering</button>
+      <button class="filter-tag" data-filter="debatt">Debatt</button>
+    </div>
+
+    <div class="news-list" id="newsList">
+
+    <div class="news-date-group" data-date="2026-03-30">
+      <div class="news-date">30 mars 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://techcrunch.com/2026/03/28/openai-shutting-down-sora/">OpenAI lägger ner Sora — videogenereringen var ekonomiskt ohållbar</a></h3>
+        <p>OpenAI stänger sin videogenereringstjänst Sora efter att Disney dragit sig ur ett planerat partnerskap. Kostnaden per genererad minut var för hög för att motivera fortsatt drift, ett tidigt tecken på att inte alla generativa AI-produkter bär sig kommersiellt.</p>
+        <div class="news-card__source">Källa: <a href="https://techcrunch.com/2026/03/28/openai-shutting-down-sora/">TechCrunch</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://mistral.ai/news/mistral-small-4/">Mistral Small 4 — europeisk öppen MoE-modell under Apache 2.0</a></h3>
+        <p>Franska Mistral släpper Small 4, en mixture-of-experts-modell med öppen licens som utmanar GPT-4o-mini på prestanda till lägre beräkningskostnad. En viktig signal om europeisk AI-suveränitet och öppen källkod som alternativ till stängda amerikanska modeller.</p>
+        <div class="news-card__source">Källa: <a href="https://mistral.ai/news/mistral-small-4/">Mistral AI</a></div>
+      </div>
+
+      <div class="news-card" data-tags="fysisk-ai">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+        <h3><a href="https://deepmind.google/discover/blog/gemini-robots-agile/">Google DeepMind integrerar Gemini i industrirobotar via Agile Robots</a></h3>
+        <p>DeepMind och tyska Agile Robots visar hur Gemini-modellen kan styra robotarmar i realtid för komplexa monteringsuppgifter. Samarbetet markerar ett steg mot AI-styrda fabriker där stora språkmodeller ersätter traditionell robotprogrammering.</p>
+        <div class="news-card__source">Källa: <a href="https://deepmind.google/discover/blog/gemini-robots-agile/">Google DeepMind</a></div>
+      </div>
+
+      <div class="news-card" data-tags="fysisk-ai">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+        <h3><a href="https://neura-robotics.com/news/robogym-tum/">Neura Robotics och TUM öppnar RoboGym — Europas största träningscenter för humanoider</a></h3>
+        <p>Tyska Neura Robotics investerar 17 miljoner euro tillsammans med Technische Universität München i ett dedikerat träningscenter för humanoida robotar. Anläggningen ska accelerera övergången från labb till industriell verklighet.</p>
+        <div class="news-card__source">Källa: <a href="https://neura-robotics.com/news/robogym-tum/">Neura Robotics</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.whitehouse.gov/ai-framework-2026/">Vita huset presenterar nationellt AI-ramverk — sektorsspecifikt utan ny myndighet</a></h3>
+        <p>Trumpadministrationen släpper ett uppdaterat AI-ramverk som bygger på sektorsspecifik reglering istället för en centraliserad AI-myndighet. Ansatsen står i kontrast till EU:s AI Act och signalerar att USA fortsätter prioritera innovation framför restriktioner.</p>
+        <div class="news-card__source">Källa: <a href="https://www.whitehouse.gov/ai-framework-2026/">Vita huset</a></div>
+      </div>
+
+      <div class="news-card" data-tags="kvant">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://news.microsoft.com/2026/03/quantum-denmark/">Microsoft levererar felkorrigerad kvantdator till Danmark</a></h3>
+        <p>Microsoft levererar sin första felkorrigerade kvantdator på nivå 2 till Danmark, i samarbete med Niels Bohr Institutet. Systemet ska användas för materialvetenskap och läkemedelssimuleringar — ett konkret steg mot praktisk kvantberäkning i Europa.</p>
+        <div class="news-card__source">Källa: <a href="https://news.microsoft.com/2026/03/quantum-denmark/">Microsoft News</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.bloomberg.com/news/2026-03-29/ai-infrastructure-spending/">Globala AI-infrastrukturinvesteringar styr mot 450 miljarder dollar 2026</a></h3>
+        <p>Enligt Bloomberg Intelligence ökar de globala investeringarna i AI-datacenter, chips och energi till uppskattningsvis 450 miljarder dollar i år — den snabbaste expansionen i teknikhistorien. Energiförsörjning framstår som den största flaskhalsen.</p>
+        <div class="news-card__source">Källa: <a href="https://www.bloomberg.com/news/2026-03-29/ai-infrastructure-spending/">Bloomberg</a></div>
+      </div>
+    </div>
+
+    <div class="news-date-group" data-date="2026-03-29">
+      <div class="news-date">29 mars 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">Tre frontiermodeller på en vecka: GPT-5.4, Gemini 3.1 Ultra och Grok 4.20</a></h3>
+        <p>Mars 2026 blev en modellrusning utan motstycke — OpenAI släppte GPT-5.4 den 17:e, Google följde med Gemini 3.1 Ultra den 20:e och xAI avslutade med Grok 4.20 den 22:a. Tempot signalerar att den kommersiella kapplöpningen nu drivs av veckor, inte månader.</p>
+        <div class="news-card__source">Källa: <a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">devFlokers</a></div>
+      </div>
+
+      <div class="news-card" data-tags="fysisk-ai">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">Google DeepMind och Agile Robots integrerar Gemini Robotics i industrirobotar</a></h3>
+        <p>Google DeepMind inleder samarbete med Agile Robots för att bädda in Gemini Robotics-modeller direkt i robotarmar för tillverkning och logistik. Det är ytterligare ett steg mot att foundation models inte bara resonerar — de styr fysiska system i realtid.</p>
+        <div class="news-card__source">Källa: <a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">CNBC</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">Alibaba Qwen 3.5: 9B-modell slår OpenAI:s gpt-oss-120B på utvalda benchmarks</a></h3>
+        <p>Alibabas Qwen-team släppte sin 3.5 Small-serie med modeller från 0.8B till 9B parametrar, designade för att köras på laptops och mobiler. Att en 9B-modell överträffar en 120B-modell på vissa uppgifter visar hur snabbt effektiviteten ökar — storleksöverlägsenhet är inte längre självklar.</p>
+        <div class="news-card__source">Källa: <a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">MEAN CEO Blog</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">MCP-standarden når 97 miljoner installationer — agentinfrastruktur blir mainstream</a></h3>
+        <p>Anthropics Model Context Protocol (MCP) har gått från experimentellt protokoll till de facto-standard för AI-agenter, med 97 miljoner installationer i mars. Varje stor AI-leverantör levererar nu MCP-kompatibla verktyg, vilket skapar en gemensam infrastruktur för agentstyrning.</p>
+        <div class="news-card__source">Källa: <a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">Digital Applied</a></div>
+      </div>
+
+      <div class="news-card" data-tags="kvant">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Kvantdatorer flyttar in i datacenter — hybridarkitekturer tar form</a></h3>
+        <p>Vid AI Expo Taiwan 2026 presenterades hur kvantdatorer nu integreras med klassisk HPC i hybrida datacenterarkitekturer, med 2028 som förväntad tipping point. Maybell Quantums ColdCloud-plattform kyler ner på timmar istället för dagar och drar 90 % mindre el — ett genombrott för praktisk kvantinfrastruktur.</p>
+        <div class="news-card__source">Källa: <a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Digitimes</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU-rådet enas om "Digital Omnibus on AI" — nya tidslinjer för högrisk-AI</a></h3>
+        <p>EU-rådets förhandlingsposition från 13 mars förlänger tidsfristen för AI-system som redan finns på marknaden — leverantörer av generativa system får till februari 2027 att uppfylla transparenskraven i Artikel 50. Det är ett pragmatiskt erkännande av att implementering tar tid, men signalerar att regleringen nu konkretiseras på allvar.</p>
+        <div class="news-card__source">Källa: <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU-rådet</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">OpenAI lägger tyst ner Sora API — videogenerering i skala "ekonomiskt ohållbart"</a></h3>
+        <p>OpenAI meddelade den 24 mars att Sora-API:et stängs med 30 dagars varsel. Det officiella skälet: ohållbar ekonomi vid videogenerering i stor skala. Beslutet ifrågasätter hela affärsmodellen för generativ video och visar att compute-kostnader fortfarande sätter hårda gränser.</p>
+        <div class="news-card__source">Källa: <a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">Labla.org</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+        <h3><a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">EU AI Act klassar HR-system som högrisk — ny verklighet för arbetsgivare</a></h3>
+        <p>Med EU AI Act:s fulla tillämpning i augusti 2026 klassas AI-system för rekrytering, befordran och prestationsutvärdering som högrisk. Företag som använder AI-drivna screening-verktyg, intervjuschemaläggare eller performance management måste nu genomföra riskbedömningar och säkerställa mänsklig tillsyn.</p>
+        <div class="news-card__source">Källa: <a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">Reworked</a></div>
+      </div>
+    </div>
+
+    </div><!-- /news-list -->
+  </div>
+</section>
+
+<!-- ==================== ESSÄER ==================== -->
 <section class="essays-section" id="essaer">
   <div class="container-wide">
-    <!-- DEBATTARTIKEL — dold tills eventuell publicering. Avkommentera för att visa igen.
-    <a href="debattartikel.html" class="debate-highlight">
-      <div class="debate-highlight__label">Debattartikel</div>
-      <div class="debate-highlight__title">AI är inte bara ett verktyg — det är ett systemskifte</div>
-      <div class="debate-highlight__excerpt">En kortare, mer polemisk text om varför svensk politik fortfarande svarar för långsamt på ett teknikskifte som redan påverkar arbete, förvaltning och konkurrenskraft.</div>
-    </a>
-    -->
-
     <h2>Huvudessä och elva essäer om AI-skiftet</h2>
     <p class="section-intro">Börja gärna med huvudessän om du vill ha den stora syntesen. De kortare essäerna fördjupar sedan olika delar av samma skifte: industri, politik, AGI, robotik, omställning, debatt, intelligens och mening.</p>
 
@@ -61,70 +238,60 @@
         <div class="essay-card__excerpt">En begreppstext om skillnaden mellan vanlig regelautomation och AI som stöd i tolkning, analys och annat tillämpat kognitivt arbete.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="fabriksgolvet.html" class="essay-card">
         <div class="essay-card__number">Essä 2</div>
         <div class="essay-card__title">Vad jag ser från fabriksgolvet</div>
         <div class="essay-card__excerpt">En fältnära text om hur AI redan används i skarpa förbättrings- och analysflöden — och var tekniken fortfarande faller.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="politiken-missar.html" class="essay-card">
         <div class="essay-card__number">Essä 3</div>
         <div class="essay-card__title">Det politiken missar</div>
         <div class="essay-card__excerpt">Om varför tempot, ansvarsfördelningen och verkstadsnivån i svensk AI-politik fortfarande ligger efter problemets storlek.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="agi.html" class="essay-card">
         <div class="essay-card__number">Essä 4</div>
         <div class="essay-card__title">AGI och vad det faktiskt innebär</div>
         <div class="essay-card__excerpt">En nykter genomgång av definitioner, osäkerhet, säkerhet och varför AGI redan är en planeringsfråga utan att vara en färdig slutsats.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="overflod.html" class="essay-card">
         <div class="essay-card__number">Essä 5</div>
         <div class="essay-card__title">När kostnader pressas ned</div>
         <div class="essay-card__excerpt">Om varför snabbare kostnadsfall i vissa domäner kan förändra ekonomin — men inte automatiskt skapa rättvisa, trygghet eller överflöd för alla.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="turbulenta-aren.html" class="essay-card">
         <div class="essay-card__number">Essä 6</div>
         <div class="essay-card__title">De turbulenta åren</div>
         <div class="essay-card__excerpt">Ett scenarioförsök om 2026–2031: tre möjliga vågor, vilka signaler som är viktiga att följa och varför Norden både har styrkor och risker.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="efter-jobbet.html" class="essay-card">
         <div class="essay-card__number">Essä 7</div>
         <div class="essay-card__title">Efter jobbet</div>
         <div class="essay-card__excerpt">Om mening, identitet och vilka institutioner som kan bära ett samhälle där mindre mänskligt lönearbete behövs för att hålla produktionen uppe.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="fysiska-fronten.html" class="essay-card">
         <div class="essay-card__number">Essä 8</div>
         <div class="essay-card__title">Den fysiska fronten</div>
         <div class="essay-card__excerpt">Om robotik, geopolitisk automationskapplöpning och varför den som bara tittar på mjukvaran missar halva skiftet.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="farliga-glappet.html" class="essay-card">
         <div class="essay-card__number">Essä 9</div>
         <div class="essay-card__title">Det farliga glappet i AI-debatten</div>
         <div class="essay-card__excerpt">Om illusionen om AI som "bara ett verktyg", varför historiejämförelser haltar och varför 15 år är för kort tid för att vänta med samhällsomställningen.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="emotionellt-minne.html" class="essay-card">
         <div class="essay-card__number">Essä 10</div>
         <div class="essay-card__title">Varför AI behöver känslor</div>
         <div class="essay-card__excerpt">Om emotionell minneskonsolidering, prediktiv kodning och varför intelligens utan känsla för vad som spelar roll inte är intelligens.</div>
         <div class="essay-card__read">Läs &rarr;</div>
       </a>
-
       <a href="du-har-inte-testat-ai.html" class="essay-card">
         <div class="essay-card__number">Essä 11</div>
         <div class="essay-card__title">Du har inte testat AI</div>
@@ -135,6 +302,7 @@
   </div>
 </section>
 
+<!-- ==================== OM ==================== -->
 <section class="about-section" id="om">
   <div class="container">
     <div class="about-inner">
@@ -155,6 +323,26 @@
     <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
   </div>
 </footer>
+
+<script>
+const filterBtns = document.querySelectorAll('.filter-tag');
+const newsCards = document.querySelectorAll('.news-card');
+const dateGroups = document.querySelectorAll('.news-date-group');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    newsCards.forEach(card => {
+      card.style.display = (filter === 'alla' || card.dataset.tags.includes(filter)) ? '' : 'none';
+    });
+    dateGroups.forEach(group => {
+      const visible = group.querySelectorAll('.news-card:not([style*="display: none"])');
+      group.style.display = visible.length ? '' : 'none';
+    });
+  });
+});
+</script>
 
 </body>
 </html>
