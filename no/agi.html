@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGI og hva det faktisk innebærer — AI-skiftet</title>
+  <meta name="description" content="Essay om AGI som prestasjonsprofil, høy usikkerhet og planleggingsspørsmål — uten science fiction-retorikk.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/agi.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/agi.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/agi.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/agi.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essays">Essays</a>
+      <a href="index.html#om">Om</a>
+      <a href="kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../agi.html" lang="sv">SV</a>
+      <a href="../en/agi.html" lang="en">EN</a>
+      <a href="agi.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Tilbake</a>
+    <h1>AGI og hva det faktisk innebærer: kapasitet, usikkerhet og beredskap</h1>
+    <p class="article-meta">Essay · Rolf Skogling</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Begrepet AGI brukes ofte som om alle allerede mente det samme. Det gjør de ikke. For noen er AGI et science fiction-øyeblikk der en maskin "våkner". For andre er det bare et markedsføringsord for neste modellgenerasjon. Begge synspunktene gjør diskusjonen dårligere.</p>
+<p>Den mest brukbare måten å snakke om AGI på er i stedet som en prestasjonsprofil: systemer som kan håndtere et bredt spekter av kognitiv oppgaver på høyt nivå, innenfor mange domener, med relativt lite spesialtilpasning og med økende grad av selvstendig problemløsing.<sup><a href="#note-1">[1]</a></sup></p>
+
+<h2>Et arbeidsbegrep, ikke et magisk øyeblikk</h2>
+<p>Denne tilnærmingen har en fordel. Den flytter diskusjonen fra mystikk til kapasitet. Man kan da spørre: hvor generelt er systemet, hvor robust er det, hvor mye menneskelig oversikt kreves, hvor godt håndterer det nye miljøer og hvor farlig blir det hvis det får større autonomi?</p>
+<p>Det betyr også at AGI ikke trenger å være et knivskarp punkt i tiden. Det kan være en overgang der systemer gradvis blir bredere, mer agentiske og mer nyttige i flere typer arbeid. Det gjør spørsmålet mindre dramatisk i form — men ikke mindre viktig i praksis.</p>
+
+<h2>Hva som taler for raskere framgang</h2>
+<p>Det finnes gode grunner til å ta raskere utvikling alvorlig. De siste årene har flere utviklingslinjer begynt å arbeide sammen: sterkere basismodeller, bedre verktøybruk, lengre kontekst, multimodalitet, bedre finjustering, billigere tilgang og mer agentiske arbeidsflyter. Dette gjør systemene mer generelle enn de var for bare kort tid siden.<sup><a href="#note-2">[2]</a></sup></p>
+<p>Det er også rimelig å anta at AI til en viss grad kan akselerere AI-utvikling gjennom bedre kodestøtte, forskningsassistanse og raskere eksperimentelle sykler. Denne mekanismen skal ikke romantiseres, men den bør heller ikke ignoreres.</p>
+
+<h2>Hva som fortsatt bremser</h2>
+<p>Samtidig finnes det klare begrensninger. Dagens modeller kan være skjøre, overselvsikre på feil måter, dårlige på langsiktig robust planlegging og følsomme for miljøskifter. De er fortsatt avhengig av menneskelig avgrensning, gransking og ansvar i mange virkelige arbeidsflyter.</p>
+<p>Det er derfor falsk presisjon er farlig. Å si at AGI "kommer i 2028" eller "ikke på tiår" høres klart ut, men bygger ofte på mer sikkerhet enn underlaget tillater. Den rimelige holdningen er i stedet at utviklingen er usikker, men at intervallet for seriøse scenarier er nær nok til å være et planleggingsspørsmål allerede nå.<sup><a href="#note-3">[3]</a></sup></p>
+
+<h2>Tidslinjer uten falsk sikkerhet</h2>
+<p>Jeg tror derfor at AGI bør behandles omtrent som andre høykonsekvens-usikkerheter. Du trenger ikke å vite nøyaktig når et skifte inntreffer for å forberede deg på det. Du planlegger ikke strømnett, forsvar eller helsevesen bare for normalfallet. Du planlegger også for variasjon, feilmåter og scenarier som kan bli avgjørende hvis de inntreffer.</p>
+<p>Det svakere scenarioet — der AGI utsettes, men modellene blir likevel stadig mer generelle og mer nyttige — er allerede i seg selv nok til å rettferdiggjøre seriøs beredskap i virksomheter, utdanning og regjering.</p>
+
+<h2>Bevissthetsspørsmålet er et annet spørsmål</h2>
+<p>En stor del av den offentlige fascinasjonen rundt AGI glir raskt over i spørsmålet om bevissthet. Kan avanserte AI-systemer ha subjektiv opplevelse? Det er et legitimt forskningsspørsmål, men det bør holdes atskilt fra det mer praktiske spørsmålet om kapasitet og samfunnsmessig virkning.</p>
+<p>Det finnes seriøs forskning som mener spørsmålet ikke bør avvises slurvete. Men det finnes ingen robust grunn til å bygge dagens politikk eller bedriftsplanlegging på antagelsen om at maskinbevissthet allerede er etablert. For praktisk offentlig debatt er det nok å merke at systemer kan bli meget kraftfull uten at bevissthetsspørsmålet må være avgjort.<sup><a href="#note-4">[4]</a></sup></p>
+
+<h2>Hvorfor AGI betyr noe allerede nå</h2>
+<p>Grunnen til å skrive om AGI nå er derfor ikke å påstå at målet allerede er nådd. Grunnen er at AGI som mulighet påvirker hvordan vi bør tenke om sikkerhet, styring, arbeidsmarked, geopolitikk og ansvar.</p>
+<p>Den som vil være seriøs, må holde to tanker i hodet samtidig: vi vet ikke når eller om en viss grenseverdi passeres, men usikkerheten i seg selv er stor nok og konsekvensene betydelige nok til å rettferdiggjøre forberedelse.</p>
+
+<section class="article-endnotes">
+  <h2>Kildenoter</h2>
+  <p>Kildene nedenfor brukes for definisjoner, usikkerhet, sikkerhet og det separate bevissthetsspørsmålet.</p>
+  <ol>
+    <li id="note-1"><a href="https://deepmind.google/research/publications/66938/">Google DeepMind: Levels of AGI for Operationalizing Progress on the Path to AGI</a>.</li>
+    <li id="note-2">Se <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report">Stanford HAI, AI Index 2025</a> for kapasitetsutvikling og <a href="https://deepmind.google/blog/taking-a-responsible-path-to-agi/">Google DeepMind: Taking a responsible path to AGI</a> for et industriperspektiv på utvikling og risiko.</li>
+    <li id="note-3">For scenariotanker og usikkerhet, se <a href="https://www.rand.org/pubs/perspectives/PEA4178-1.html">RAND: Pivots and Pathways on the Road to AGI Futures</a> og <a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026">International AI Safety Report 2026</a>.</li>
+    <li id="note-4">For den separate forskningsdiskusjonen om AI og bevissthet, se <a href="https://www.sciencedirect.com/science/article/pii/S1364661325002864">Butlin et al., Identifying indicators of consciousness in AI systems</a>.</li>
+  </ol>
+</section>
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ut fra et industrinært og praktisk perspektiv, med utgangspunkt i arbeid med AI i virkelige virksomheter.</p>
+
+  </div>
+</article>
+
+<nav class="article-nav">
+  <div class="container" style="display:flex; justify-content:space-between;">
+    <a href="politiken-missar.html">← Forrige</a>
+    <a href="overflod.html">Neste →</a>
+  </div>
+</nav>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Kilder</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

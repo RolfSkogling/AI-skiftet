@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-skiftet — essays og daglige nyheter om AI, arbeid og samfunnsomstilling</title>
+  <meta name="description" content="Daglig dekning og essays om AI-skiftet: modeller, forskning, fysisk AI, industri, politikk, AGI, robotikk og omstilling. Et industrinært perspektiv.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/index.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/index.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* --- Nyhetssektion (tillegg til style.css) --- */
+    .news-section{padding:44px 0 60px;border-bottom:1px solid rgba(140,74,31,.08)}
+    .news-section h2{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.8vw,2.6rem);color:#1b1b1b;margin:0 0 6px}
+    .news-section .section-intro{margin-bottom:20px}
+    .news-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+    .filter-tag{
+      padding:5px 14px;border:1px solid var(--line);border-radius:100px;
+      font-size:.82rem;font-weight:600;color:var(--muted);background:transparent;
+      cursor:pointer;transition:all .2s;font-family:inherit;
+    }
+    .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .news-date-group{margin-bottom:28px}
+    .news-date{
+      font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;
+      letter-spacing:.06em;margin-bottom:10px;padding-bottom:6px;
+      border-bottom:2px solid var(--accent);display:inline-block;
+    }
+    .news-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+      padding:18px 22px;margin-bottom:10px;box-shadow:var(--shadow);
+      transition:transform .15s;
+    }
+    .news-card:hover{transform:translateY(-1px)}
+    .news-card__tags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+    .news-card__tag{
+      font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+      padding:2px 9px;border-radius:100px;
+    }
+    .news-card__tag--modeller{background:rgba(20,100,180,.1);color:#1060a0}
+    .news-card__tag--fysisk-ai{background:rgba(140,74,31,.1);color:var(--accent)}
+    .news-card__tag--hardvara{background:rgba(30,120,70,.1);color:#1a6b3c}
+    .news-card__tag--kvant{background:rgba(120,50,160,.1);color:#6b2d99}
+    .news-card__tag--forskning{background:rgba(31,41,51,.07);color:var(--muted)}
+    .news-card__tag--arbetsmarknad{background:rgba(180,60,40,.1);color:#993322}
+    .news-card__tag--reglering{background:rgba(60,60,60,.08);color:#444}
+    .news-card__tag--debatt{background:rgba(200,130,20,.12);color:#8a5a10}
+    .news-card__tag--infrastruktur{background:rgba(100,80,160,.1);color:#5540a0}
+    .news-card h3{font-size:1rem;font-weight:600;margin-bottom:4px;line-height:1.4}
+    .news-card h3 a{color:var(--text)}
+    .news-card h3 a:hover{color:var(--accent);text-decoration:none}
+    .news-card p{color:var(--muted);font-size:.88rem;line-height:1.6;margin:0}
+    .news-card__source{font-size:.76rem;color:var(--muted);margin-top:6px;opacity:.7}
+    .news-card__source a{color:var(--muted)}
+    .news-card__source a:hover{color:var(--accent)}
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="#nyheter">Nyheter</a>
+      <a href="#essays">Essays</a>
+      <a href="#om">Om</a>
+      <a href="kilder.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../index.html" lang="sv">SV</a>
+      <a href="../en/index.html" lang="en">EN</a>
+      <a href="index.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>AI endrer allerede hvordan arbeid, organisasjoner og institusjoner fungerer.</h1>
+    <p class="subtitle">AI-skiftet samler essays og daglige nyheter fra et industrinært perspektiv: hva teknologien allerede gjør, hvilke antagelser som holder, hvilke som ikke holder, og hvordan Norge kan forberede seg mer proporsjonal.</p>
+    <a href="civilisationsskiftet.html" class="cta-btn">Les hovedessayen</a>
+  </div>
+</section>
+
+<!-- ==================== NYHETER ==================== -->
+<section class="news-section" id="nyheter">
+  <div class="container-wide">
+    <h2>Nyheter</h2>
+    <p class="section-intro">Daglig dekning av AI-utvikling — modeller, forskning, fysisk AI, maskinvare, kvantedatamaskiner, arbeidsmarked, regulering og debatt.</p>
+
+    <div class="news-filter" id="newsFilter">
+      <button class="filter-tag active" data-filter="alla">Alle</button>
+      <button class="filter-tag" data-filter="modeller">Modeller</button>
+      <button class="filter-tag" data-filter="forskning">Forskning</button>
+      <button class="filter-tag" data-filter="fysisk-ai">Fysisk AI</button>
+      <button class="filter-tag" data-filter="hardvara">Maskinvare</button>
+      <button class="filter-tag" data-filter="infrastruktur">Infrastruktur</button>
+      <button class="filter-tag" data-filter="kvant">Kvante</button>
+      <button class="filter-tag" data-filter="arbetsmarknad">Arbeid</button>
+      <button class="filter-tag" data-filter="reglering">Regulering</button>
+      <button class="filter-tag" data-filter="debatt">Debatt</button>
+    </div>
+
+    <div class="news-list" id="newsList">
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-07                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-07">
+      <div class="news-date">7. april 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026">DeepSeek V4 lanseres på Huawei Ascend — en billion parametrar, million-tokens kontekst, 0,30 dollar per million tokens</a></h3>
+        <p>Kinesiske DeepSeek lanserer V4, en Mixture-of-Experts-modell med cirka en billion parametrar og bare 37 milliardar aktive per token. Modellen har et kontekstvindu på 1 million tokens via en ny "Engram"-arkitektur for betinget minnehåndtering, og oppnår 97 prosent Needle-in-a-Haystack-presisjon på millionsskala. Reuters bekreftet den 4. april at V4 kjøres på Huaweis Ascend 950PR-chip — samme silisium som ByteDance og Alibaba bestiller. Prissetjing på 0,30 dollar per million tokens underbygg amerikanske frontiermodeller dramatisk og viser at eksportkontroller driver fram eit parallelt kinesisk AI-økosystem raskare enn Washington forutsåtte.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026">NxCode</a>, <a href="https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/">Dataconomy</a>, <a href="https://www.geeky-gadgets.com/deepseek-v4-benchmarks-leak/">Geeky Gadgets</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://winbuzzer.com/2026/04/04/utah-tests-a-tightly-limited-ai-path-for-psychiatric-refills-xcxwbn/">Utah utvider AI-reseptfornyelse til psykofarmaka — Legion Health får grønt lys i delstatens sandkasse</a></h3>
+        <p>Den 3. april godkjende Utahs regulerande sandkasse Legion Healths AI-chatbot for å sjølvstendig fornye reseptar på 15 lavarisiko psykofarmaka — ei utvidelse av piloten som starta i januar med Doctronic og 190 vanlege legemiddel for kroniske tilstandar. Programmet er ettårig og krev menneskeleg lekarkontroll av dei første 1 250 føresegnader før breiare utrulling. Kontrollerte stoff, ADHD-legemiddel og injeksjonar er framleis unnateke. Utah sementerer dermed sin posisjon som den mest eksperimentelle delstaten i USA for AI i direkte pasientomsorga — og presedenset vil bli gransket av kvar delstat som vurderer liknande sandkassar.</p>
+        <div class="news-card__source">Kjelde: <a href="https://winbuzzer.com/2026/04/04/utah-tests-a-tightly-limited-ai-path-for-psychiatric-refills-xcxwbn/">WinBuzzer</a>, <a href="https://www.quarles.com/newsroom/publications/utah-authorizes-ai-based-prescription-renewals">Quarles &amp; Brady</a>, <a href="https://www.mobihealthnews.com/news/utah-allows-ai-renew-prescription-drugs-autonomously">MobiHealthNews</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://artificialintelligenceact.eu/implementation-timeline/">Fire månader til EU AI Act-fristen — Digital Omnibus skaper usikkerheit om høgrisiko-system</a></h3>
+        <p>Den 2. august 2026 træder hovuddelen av EUs AI Act i kraft: transparenskrava i artikkel 50 (merking av AI-generert innhald og deepfakes), bøteordninga og kravet om at kvar medlemsstat har minst ein operativ AI-sandkasse etter artikkel 57. Samtidig går trilogenforhandlingar om Kommisjonens "Digital Omnibus"-pakke, som foreslår at høgrisiko-systems reglar skal villkoradast av at harmoniserte tekniske standardar finst — noko som kunne skjuve dei til desember 2027 eller august 2028. For norske og svenska bedrifter inneber usikkerheita at etterleving-arbeidet må planleggast for båe scenario parallelt.</p>
+        <div class="news-card__source">Kjelde: <a href="https://artificialintelligenceact.eu/implementation-timeline/">Artificial Intelligence Act EU</a>, <a href="https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance/">Kennedys Law</a>, <a href="https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks">Legal Nodes</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm">Neuro-symbolsk hybrid kutt AI-energiforbruk 100x — og aukar nøyaktigheit</a></h3>
+        <p>Ein forskargruppe publiserte den 5. april ein studie som kombinerer nevralnett med menneskelikt symbolsk resonnement og rapporterer opptil 100 gonger mindre energiforbruk samstundes med høgare nøyaktigheit på fleire benchmark. Resultatet peiker mot at den rette skaleringa — fleire parametar og meir reknekapasitet — ikkje er den eina vegen framover. Om resultata held i uavhengig reproduksjon kan det endra økonomien for datasentar og gjera avansert sluttføring mogleg på edge-maskinvare. Arbeidet sit i same bølge som Googles TurboQuant: båe søkjer effektivitet i arkitekturen i stad for brutto-watt.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm">ScienceDaily</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-06                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-06">
+      <div class="news-date">6. april 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google utgir Gemma 4 under Apache 2.0 — open modell rangerast tredje globalt</a></h3>
+        <p>Google lanserte den 2. april Gemma 4, si til no mest mogleg open modellfamilie — og for første gong under Apache 2.0-lisens. Familien omfattar fire modellar: E2B og E4B for edge-einingar (telefon, Raspberry Pi), ein 26B Mixture-of-Experts og ein 31B Dense som rangerast tredje på Arena AI sin tekstlederboard. Med kontekstvindu opp til 256K tokens, innebygd bilete- og lydforståing og støtte for 140+ språk rettar Gemma 4 seg mot agentiske arbeidsflytjar og offline-kodegenerering. E-modellane aktiverar berre 2–4 milliardar parametar ved slutføring, noko som sparar RAM og batteri. Lanseringa er eit strategisk svar på kinesiske open modellar som Qwen og DeepSeek.</p>
+        <div class="news-card__source">Kjelde: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google Blog</a>, <a href="https://9to5google.com/2026/04/02/google-gemma-4/">9to5Google</a>, <a href="https://www.theregister.com/2026/04/02/googles_gemma_4_open_weights/">The Register</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Googles TurboQuant komprimerer AI-minne 6x utan kvalitetstap — presentert på ICLR 2026</a></h3>
+        <p>Google Research presenterer TurboQuant på ICLR 2026, ein to-stegs algoritme som komprimerer KV-hurtiglager i store språkmodellar frå 16 til 3 bits per verdi — ein seksfald reduksjon utan målbar kvalitetstap. Første steget, PolarQuant, roterer vektorar med ein tilfeldig ortogonal transformasjon som jamnar ut energien og fjerner utliggjarar. Andre steget, Quantized Johnson-Lindenstrauss (QJL), reduserer resterande residualfeil til ein einaste forteiknbit per dimensjon. På Nvidia H100 leverer 4-bits TurboQuant 8x raskare attention-berekning samanlikna med ukomprimerte 32-bits baseline. Implikasjonen: modellar med millionar tokens i kontekst blir praktisk køyrbar utan proporsjonal GPU-minneauke.</p>
+        <div class="news-card__source">Kjelde: <a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google Research</a>, <a href="https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/">TechCrunch</a>, <a href="https://www.hpcwire.com/bigdatawire/2026/04/01/googles-turboquant-marks-a-fundamental-shift-in-how-ai-systems-scale/">BigDATAwire</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Maskinvare</span></div>
+        <h3><a href="https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026">Goldman Sachs: AI driv 49 prosent vekst i halvledarinntekter — over 700 milliardar dollar i Q4</a></h3>
+        <p>Goldman Sachs spår at globale halvledarinntekter veks 49 prosent innan utgangen av 2026, drivet av AI-relatert maskinvareettersp. AI-relaterte maskinvareinntekter kan nå over 700 milliardar dollar alt i fjerde kvartal. AI-relatert investering i US nasjonalrekneskapen ligg no på 325 milliardar dollar (1,1 prosent av BNP) over 2022-nivå. Goldman Sachs estimerer at AI-bedrifter kan investera meir enn 500 milliardar dollar i løpet av 2026 — den raskaste kapitalekspansjonen i teknikhistoria. Halvledarsektoren er posisjonert som den primære nytegodaren av den globale AI-investeringsbølga.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026">Goldman Sachs</a>, <a href="https://www.aninews.in/news/business/ai-led-demand-to-drive-sharp-surge-in-semiconductor-revenues-goldman-sachs20260405145721/">ANI News</a>, <a href="https://www.businessworld.in/article/ai-to-lift-global-semiconductor-revenues-nearly-50-by-2026e-goldman-sachs-600880">BW Businessworld</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://www.axios.com/2026/04/03/california-national-testing-ground-ai-rules">California blir de facto nasjonal AI-standard — Kvite hus vil stoppe delstatsreglar</a></h3>
+        <p>California fremdyrkar på fleire frontar som USA sin tyngste AI-regulator. Newsoms direktiv frå 30. mars, fleire pågåande lovforslag om transparens, algoritmediskrimunsjon og AI-generert innhald — og delstaten sin storleik gjer at teknikfirma allereie behandlar Californias reglar som ein nasjonal standard. Samstundes driv Trump-administrasjonen fram eit føderalt ramverk eksplisitt meint å erstatte delstatsreglar. Spenning mellom delstats- og føderalt nivå definerer no retninga på amerikansk AI-regulering. Colorados AI-diskrimineringslag træder i kraft i juni 2026, og 15 fleire delstatar har AI-lovgiving under forberedelse.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.axios.com/2026/04/03/california-national-testing-ground-ai-rules">Axios</a>, <a href="https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html">Wilson Sonsini</a>, <a href="https://www.softwareimprovementgroup.com/blog/us-ai-legislation-overview/">SIG</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-03                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-03">
+      <div class="news-date">3. april 2026</div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-04-02/doj-to-appeal-court-order-halting-trump-s-ban-on-anthropic-ai">DOJ anker retten-avgjerd — Trumps forbod mot Anthropic i føderale institusjonar held fram</a></h3>
+        <p>Justisdepartementet melde den 2. april at det appelerer føderalt dommar Rita Lin sitt vedtak om å blokkera Trump-administrasjonen sitt forbod mot Anthropic sin Claude i statssystem. Lin kalla forbodet "orwellsk" og sa det kunne "lamslå" selskapet. Bakgrunn: Anthropic nekta å fjerna sikkerheitsvaktiar — inkludert eit forbod mot massovervaking av amerikanske borgarar — frå brukarvilkåra sine for Pentagon. Trump kritiserte Anthropic offentleg i februar. Rettsaken vil bli eit presedens for forholdet mellom AI-bedrifter sine verdiar og statleg innkjøp.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.bloomberg.com/news/articles/2026-04-02/doj-to-appeal-court-order-halting-trump-s-ban-on-anthropic-ai">Bloomberg</a>, <a href="https://www.washingtonpost.com/business/2026/04/02/ai-pentagon-anthropic-claude-hegseth-trump/012f64be-2eb3-11f1-aac2-f56b5ccad184_story.html">Washington Post</a>, <a href="https://www.cbsnews.com/news/anthropic-ruling-judge-trump-pentagon-ai/">CBS News</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/">Anthropic leak Claude Code sin heile kjeldekode via npm — supply chain-angrep følgde innan timar</a></h3>
+        <p>Ein feilkonfigurert npm-release av Claude Code versjon 2.1.88 eksponerte nærast 2 000 TypeScript-filer og 512 000 linjer med kode — inkludert LLM-anroplogikk, verktøykjeder, feature-flaggar for "persistent assistant" og fjernkontroll via telefon. Repository-et fekk 84 000 stjerner på GitHub før Anthropic drog attende pakken og kalla hendinga "ein pakkefeily forårska av menneskeleg feil". Verre: mellom 00:21 og 03:29 UTC den 31. mars vart ein trojansk versjon av HTTP-klienten axios distribuert via same oppdatering — eit supply chain-angrep som ramte alle som installerte Claude Code under det vindauget. Det er Anthropic sin andre sikkerheitshending på ein veke, etter Mythos-leaken.</p>
+        <div class="news-card__source">Kjelde: <a href="https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/">Fortune</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-01/anthropic-accidentally-releases-source-code-for-claude-ai-agent">Bloomberg</a>, <a href="https://cybernews.com/security/anthropic-claude-code-source-leak/">Cybernews</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://www.globenewswire.com/news-release/2026/04/02/3267726/0/en/Fotor-s-Joint-Research-Accepted-by-ICLR-2026-Advancing-Its-Agent-s-Multimodal-Reasoning.html">ICLR 2026: Web-CogReasoner viser AI-agenter som navigerer nettet via rein pikselperpsjon</a></h3>
+        <p>Fotor sin og fleire universitet sitt felles forskingspapir "Web-CogReasoner" vart godteken som konferansebidrag på ICLR 2026. Ramverket let AI-agenter navigera nettsider, skrivebordsprogram og mobilappar ved å tolka skjerminnahld visuelt — utan å stola på underliggande HTML-kode. Ved hjelp av "Knowledge-driven Chain of Thought" og Web-CogDataset (basert på 14 virkelige nettsider) viser modellen sterkare generalisering enn kodeavhengige metodar. Resultatet peikar mot ein framtid der AI-agenter samverkar med digitale system på same måten mennesker gjer: ved å sjå og resonnera.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.globenewswire.com/news-release/2026/04/02/3267726/0/en/Fotor-s-Joint-Research-Accepted-by-ICLR-2026-Advancing-Its-Agent-s-Multimodal-Reasoning.html">GlobeNewsWire</a>, <a href="https://encord.com/iclr-2026/">Encord (ICLR 2026-trendar)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbeid</span></div>
+        <h3><a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">Noreg halkar etter i AI-kappløpet — berre 37 prosent kjenner seg bekvem med teknologien</a></h3>
+        <p>EY sin siste globale spørjeundersøking viser at norske organisasjonar har lågare AI-mogning og svakare leiingsengasjement enn det nordiske snittet, trass i ambisøse nasjonale mål. Berre 37 prosent av norske kjenner seg bekvem med AI (globalt: 49 prosent), og 61 prosent seier dei ikkje har fått nokon AI-opplæring dei siste seks månadane. Samstundes rapporterer SSB om mangel på over 61 000 kvalifiserte tilsette, og for første gong er AI-kompetanse vanskelegare å rekruttera enn tradisjonell IT-kompetanse. Gapet mellom strategisk ambisjon og operativ røynd veks.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">EY Sverige</a>, <a href="https://www.dagensteknik.se/sverige-halkar-efter-grannlanderna-i-den-nordiska-ai-kapplopningen/">Dagens Teknik</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://www.gov.ca.gov/2026/03/30/as-trump-rolls-back-protections-governor-newsom-signs-first-of-its-kind-executive-order-to-strengthen-ai-protections-and-responsible-use/">Newsom slår attende — California krev AI-sikkerheitssertifisering uavhengig av Washington</a></h3>
+        <p>Kalifornias guvernør Gavin Newsom signerte den 30. mars direktiv N-5-26, som krev at AI-bedrifter som vil gjera affærer med delstaten sertifiserer sine sikringsåtgerder mot misbruk, bias og brot på borgerrettar. Direktivet etablerer eit AI-styringsstyre og pålegg delstatsinstitusjoner å gjennomføra sikkerheit-, privacy- og bias-revisjoner i AI-innkjøp. I eit direkte signal til Trump-administrasjonen melde Newsom at Kalifornien heretter sjølvstendig granskar føderale risikoklassifikasjonar av AI-bedrifter — eit klart svar på Pentagon sitt svartelistemark av Anthropic.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.gov.ca.gov/2026/03/30/as-trump-rolls-back-protections-governor-newsom-signs-first-of-its-kind-executive-order-to-strengthen-ai-protections-and-responsible-use/">Guvernørkontoret</a>, <a href="https://calmatters.org/politics/2026/04/newsom-moves-for-california-ai-startups/">CalMatters</a>, <a href="https://www.lw.com/en/insights/california-assumes-role-as-lead-us-regulator-of-ai">Latham &amp; Watkins</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/">Microsoft investerer 5,5 milliardar dollar i Singapore — AI-opplæring for 200 000 studentar</a></h3>
+        <p>Microsoft kunngjorde den 1. april ein investering på 5,5 milliardar dollar i Singapore over fem år (fram til 2029) for sky- og AI-infrastruktur, cybersikkerheit og styringsramverk. Som del av investeringa får over 200 000 universitetsstudent gratis tilgang til Microsoft 365 med Copilot i tolv månader. Singapore sin AI-hub-ambisjon har allereie trekja til seg Apple, Google og AWS — Microsoft si investering sementerer bysstaten som Søraust-Asia sin tyngste AI-klynge. Investeringa si storleik plasserer ho i same liga som Microsoft sine investeringar i USA og Europa.</p>
+        <div class="news-card__source">Kjelde: <a href="https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/">Microsoft News</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-01/microsoft-pledges-5-5-billion-ai-investment-in-singapore">Bloomberg</a>, <a href="https://finance.yahoo.com/sectors/technology/articles/microsoft-track-invest-5-5-075818914.html">Yahoo Finance/WSJ</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-02                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-02">
+      <div class="news-date">2. april 2026</div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round">OpenAI stengjer historiisk finansieringskrundse — 122 milliardar dollar ved 852 milliardar i verdivurdering</a></h3>
+        <p>OpenAI har avslutta den største private finansieringskrundsen i teknikhistoria: 122 milliardar dollar, med Amazon (50 milliardar), Nvidia (30 milliardar) og SoftBank (30 milliardar) som hovudinvesterarar. Selskapet genererer no 2 milliardar dollar i månadslege inntekter og har over 900 millionar vekentleg aktive brukarar. Ein stor del av Amazon si investering — 35 milliardar — er villkorada av at OpenAI blir børsnotert eller oppnår AGI. Pengane skal finansiera reknekapsitet, multi-cloud-partnarskap og ein samla "AI-superapp".</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round">Bloomberg</a>, <a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">CNBC</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Maskinvare</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-03-31/nvidia-invests-2-billion-in-marvell-announces-partnership">Nvidia investerer 2 milliardar dollar i Marvell — NVLink Fusion skal einast GPU og tilpassa silisium</a></h3>
+        <p>Nvidia kunngjorde ein strategisk investering på 2 milliardar dollar i Marvell Technology for å utvikla "NVLink Fusion" — ein plattform som integrerer Marvell sine semi-tilpassa AI-akseleratorar direkte i Nvidia sin høghastigheits-samband. Partnerskapet omfattar òg silisium fotonikk, som bruker lys i stad for koppar for dataoversending. Marvell si aksje steg 11 prosent. Avtalen markerer ein kursendring: Nvidia vel å integrera tilpassa silisium i stad for å konkurrera med det.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.bloomberg.com/news/articles/2026-03-31/nvidia-invests-2-billion-in-marvell-announces-partnership">Bloomberg</a>, <a href="https://www.nextplatform.com/connect/2026/03/31/the-2-billion-nvidia-deal-with-marvell-is-about-a-lot-more-than-nvlink-fusion/5213790">The Next Platform</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Maskinvare</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/27/bytedance-alibaba-planning-to-order-huaweis-new-ai-chip-reuters.html">Huawei sin 950PR-chip vinnar ByteDance og Alibaba — Kina sin AI-kiselkappløp akselererer</a></h3>
+        <p>Huawei sin nye AI-chip Ascend 950PR har bestått kundetestar og ByteDance og Alibaba planlegg storebestellingar, rapporterer Reuters. Chipet, prisa ved cirka 50 000 yuan (6 900 dollar) per kort, er betydeleg meir CUDA-kompatibelt enn forgjengaren 910C. Huawei planlegg å leverera 750 000 einingar i år, med masseprodustrion frå april. Lanseringa samstundes med at USA sin eksportkontrollar kraftig grenser Nvidia sin sal i Kina — og viser at teknisk isolering driv fram heimelege alternativ raskare enn venta.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.cnbc.com/2026/03/27/bytedance-alibaba-planning-to-order-huaweis-new-ai-chip-reuters.html">CNBC/Reuters</a>, <a href="https://beijingtimes.com/business/2026/03/28/huaweis-new-ai-chip-gains-traction-with-bytedance-and-alibaba-amidst-nvidia-restrictions/">Beijing Times</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
+        <h3><a href="https://kjk.com/2026/04/01/how-the-federal-ai-regulation-push-could-impact-your-business/">TRUMP AMERICA AI Act — konkret lovforslag tek form i Kongressen</a></h3>
+        <p>Senator Marsha Blackburn (R-TN) presenterte den 18. mars utkastet til TRUMP AMERICA AI Act, den mest konkrete føderale AI-lovgivinga til no. Forslaget byggjer på Kvite hus sitt ramverk med sju søylor — barneskjerming, immaterielle rettigheter, datasenter-løyve, sensur-forbod, innovasjonsfremjande, arbeidskraftopplæring og føderalt forkjøpsrett mot delstatslovar. Kalifornias AI Transparency Act, som trådde i kraft 1. januar, kunne bli den første delstatslova som blir satt til sides om forslaget vedtakast.</p>
+        <div class="news-card__source">Kjelde: <a href="https://kjk.com/2026/04/01/how-the-federal-ai-regulation-push-could-impact-your-business/">KJK</a>, <a href="https://drata.com/blog/artificial-intelligence-regulations-state-and-federal-ai-laws-2026">Drata</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-01                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-01">
+      <div class="news-date">1. april 2026</div>
+
+      <div class="news-card" data-tags="industri">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--industri">Industri</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html">Oracle sparkar opp til 30 000 tilsette — omdirigerer milliardar til AI-datasentar</a></h3>
+        <p>Oracle starta den 31. mars det analytikarar kallar selskapet sitt største masseoppseiing nokonsinne. Investeringsbank TD Cowen estimerer at mellom 20 000 og 30 000 stillingar — cirka 18 prosent av den globale arbeidskrafta — blir påverka. Tilsette i USA, India, Kanada og Mexico fekk oppseiingsvarsel via e-post kl. 06:00 lokal tid, utan varsel frå HR. Formål: frigjera 8–10 milliardar dollar i pengestrøm for å finansiera ein AI-infrastruktur-satsing estimert til 156 milliardar dollar.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html">CNBC</a>, <a href="https://thenextweb.com/news/oracle-layoffs-march-2026">The Next Web</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politikk</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html">Trump-administrasjonen vil ha føderale AI-lov — delstatsreglar skal setast til sides</a></h3>
+        <p>Kvite hus presenterte den 20. mars eit nasjonalt AI-ramverk med seks lovforslagspunkter: barnevernslingar på nett, effektivisert løyvgiving for datasentar, immaterielle rettighetereglar for treningsdata, forbod mot politisk sensur i AI-system, innovasjonsfremjande tiltak og arbeidskraftopplæring. Ramverket oppfordrar Kongressen til å vedtaka ein einande føderale AI-lov som erstatter delstatsreglering — eit forslag som vender å utløysa hard politisk debatt.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.whitehouse.gov/releases/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/">Kvite hus</a>, <a href="https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html">CNBC</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politikk</span></div>
+        <h3><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU effektiverer AI Act — Parlamentet godkjenner Digital Omnibus-endringar</a></h3>
+        <p>EU-rådet antok den 13. mars sin forhandlingsposisjon for å effektivisera implementeringa av AI-forordninga, og Europaparlamentet godkjende endringane den 26. mars. Nye tidslinjer blir foreslåtte: sjølstendige høgrisiko-AI-system får frist desember 2027, og innbygde system august 2028. Rådet legg òg til ein ny forbod mot AI-generert seksuelt materiale utan samtykke og mot material som avbildar overgreip mot barn. Neste trilog er planlagd til 28. april.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU-rådet</a>, <a href="https://www.gamingtechlaw.com/2026/03/eu-ai-act-update-parliament-approves-digital-omnibus-changes/">GamingTechLaw</a></div>
+      </div>
+
+      <div class="news-card" data-tags="agenter">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--agenter">Agenter</span></div>
+        <h3><a href="https://www.arturmarkus.com/anthropics-model-context-protocol-hits-97-million-installs-on-march-25-mcp-transitions-from-experimental-to-foundation-layer-for-agentic-ai/">MCP passerer 97 millionar installasjonar — agent-standard blir industristandard</a></h3>
+        <p>Anthropic sin Model Context Protocol (MCP) nådde 97 millionar månadlege SDK-nedlastingar den 25. mars — den snøraste adoptionshastigheta for nokon AI-infrastruktur-standard. Frå 2 millionar ved lansering i november 2024 til industristandard på 16 månader. OpenAI, Google DeepMind, Cohere og Mistral har alle integrert MCP-støtte, og økosystemet omfattar no over 5 800 servrar. I desember 2025 donerte Anthropic protokollen til Agentic AI Foundation under Linux Foundation.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.arturmarkus.com/anthropics-model-context-protocol-hits-97-million-installs-on-march-25-mcp-transitions-from-experimental-to-foundation-layer-for-agentic-ai/">AI Unfiltered</a>, <a href="https://www.digitalapplied.com/blog/mcp-97-million-downloads-model-context-protocol-mainstream">Digital Applied</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politikk</span></div>
+        <h3><a href="https://www.regeringen.se/pressmeddelanden/2026/02/sveriges-forsta-heltackande-ai-strategi-ska-ge-en-topp-tio-placering/">Noreg sin AI-strategi: effektivt ramverk for topp-10-plassering — men held det?</a></h3>
+        <p>Regjeringa presenterte i februar Noreg sin første nasjonale AI-strategi med målet om å nå topp 10 globalt. Innsats for sju fokusområdar, inkludert suverane språkmodellar, AI-verksstad for offentleg sektor og kompetansesikring. Satsinga er Noreg sin største AI-investering nokonsinne, men falner internasjonal — Frankrike sin AI-budget er 1,5 milliardar euro, Storbritannia sin 900 millionar pund. Ifølgje EY kjenner berre 37 prosent av nordmenn seg bekvem med AI, samanlikna med 49 prosent globalt.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.regeringen.se/pressmeddelanden/2026/02/sveriges-forsta-heltackande-ai-strategi-ska-ge-en-topp-tio-placering/">Regjeringa.se</a>, <a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">EY Sverige</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-03-31                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-03-31">
+      <div class="news-date">31. mars 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Anthropic Mythos leak — "stegvis endring" i kapasitet vekkar cybersikkerheitslarm</a></h3>
+        <p>Ein konfigurasjonsfeil eksponerte nærast 3 000 opublikerte assettar på Anthropic sin blogg, inkludert detaljar om Claude Mythos (internt "Capybara") — ein modell som ifølgje selskapet representerer "a step change" i prestasjon samanlikna med Opus 4.6. Mythos viser dramatisk høgare resultat på koding, akademisk resonnement og cybersikkerheit, men interne dokument varslar om at modellen raskt kan identifisera og utnyttja sårbarheidar — ein potensiell akselerator for cyberrustingskappløpet.</p>
+        <div class="news-card__source">Kjelde: <a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Fortune</a>, <a href="https://fortune.com/2026/03/27/anthropic-leaked-ai-mythos-cybersecurity-risk/">Fortune (cybersikkerheit)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">Mistral sikrar 830 millionar dollar for AI-datasenter utanfor Paris</a></h3>
+        <p>Fransk Mistral held opp 830 millionar dollar i gjeldfinansiering frå sju bankar — BNP Paribas, Crédit Agricole, HSBC og MUFG mellom dei — for å bygga eit datasenter med 13 800 Nvidia GB300-GPU:ar i Bruyères-le-Châtel. Kapasitet: 44 MW, driftstart Q2 2026. Selskapet siktar på 200 MW total kapasitet i Europa innan utgangen av 2027, inkludert ein planlagd anlegg i Noreg. Det tydlegaste teiknet til no på at europeisk AI-infrastruktur no er bankbar.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">CNBC</a>, <a href="https://www.bloomberg.com/news/articles/2026-03-30/ai-startup-mistral-raises-830-million-in-data-center-debt-rush">Bloomberg</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">Apple destillerer Googles Gemini til on-device-modellar for neste Siri</a></h3>
+        <p>Apple har fått "full tilgang" til Gemini i Googles datasentar og brukar modellen for destillering — å skapa mindre, oppgåvespecifikke modellar som kan køyrast lokalt på iPhone. Avtalen, verdt cirka ein milliard dollar per år, driv Apple sin Siri-overhaul (Project Campos) med kontekstmedviten, app-over-gripande AI. iOS 27 planlegg òg "Extensions" som let brukarar koppla inn Claude, Gemini eller ChatGPT som alternative AI-assistentar.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">MacRumors</a>, <a href="https://9to5mac.com/2026/03/25/new-details-on-apple-google-ai-deal-revealed-including-gemini-changes-report/">9to5Mac</a></div>
+      </div>
+
+      <div class="news-card" data-tags="debatt">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Jensen Huang: "Eg trur vi har oppnådd AGI" — definisjonen splittar industrien</a></h3>
+        <p>Nvidia sin administrerande direktør sa i Lex Fridman si podkast at AGI allereie er her — definert som AI som kan starta og driva eit milliardbedrift. Mark Gubrud, fysikaren som mynta omgrepet på 90-talet, held med i sak men ikkje i implikasjon. Kritikarer invender at Huang si definisjon er skreddarsydd for å sella GPU:ar. Debatten blottlegg at "AGI" manglar ein felles definisjon, noko som gjer kvar påstand om å ha oppnådd det til eit retorisk i stad for vitskapeleg spørsmål.</p>
+        <div class="news-card__source">Kjelde: <a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Fortune</a>, <a href="https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-claims-agi-has-been-achieved-can-create-billion-dollar-businesses-172225126.html">Yahoo Finance</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbeid</span></div>
+        <h3><a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Humanoid robotar kan kosta 13 000 dollar innan 2035 — Bank of America spår 3 milliardar einingar</a></h3>
+        <p>Bank of America Institute kalkulerer at materialkostnad for ein humanoid robot fell frå 35 000 dollar (2025) til 13 000–17 000 dollar 2035 — i paritet med ein bil. Bankens langtidsfrognose: 3 milliardar humanoidar i drift år 2060, fleire enn verda si bilar per capita. Sifferen er spekulativ, men peikar mot eit arbeidsmarked der fysisk automatisering ikkje lenger blir grensa av kostnad men av regulering og integrasjon.</p>
+        <div class="news-card__source">Kjelde: <a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Fortune</a>, <a href="https://fortune.com/2026/03/13/bank-of-america-humanoid-robot-forecast-3-billion-2060/">Fortune (frognose)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://lexfridman.com/jensen-huang-transcript/">Donald Knuth publiserer "Claude Cycles" — analyserer AI-åtferd frå Stanford sitt perspektiv</a></h3>
+        <p>Legenden innan datavitskap, Donald Knuth ved Stanford, publiserte ein ny arbeidsoppgåve som granskar Claude sin åtferdsmønster i resonnement og kodegenerering. At ein av disiplinens grunnleggjarar heldt seg til å dissekera AI-modellar sin logikk signalerer at frontier-modellar sin kognitiv eigenskapar no er eit seriøst forskingsemne — ikkje berre eit produktspørsmål.</p>
+        <div class="news-card__source">Kjelde: <a href="https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/">The Neuron</a></div>
+      </div>
+    </div>
+
+    </div><!-- /news-list -->
+  </div>
+</section>
+
+<!-- ==================== ESSAYS ==================== -->
+<section class="essays-section" id="essays">
+  <div class="container-wide">
+    <h2>Hovudessay og elleve essays om AI-skiftet</h2>
+    <p class="section-intro">Start gjerne med hovudessayen om du vil ha den store syntesen. Dei kortare essaya fordjupar så fleire delar av same skifte: industri, politikk, AGI, robotikk, omstilling, debatt, intelligens og meining.</p>
+
+    <a href="civilisationsskiftet.html" class="debate-highlight">
+      <div class="debate-highlight__label">Hovudessay</div>
+      <div class="debate-highlight__title">Sivilisasjonsskiftet</div>
+      <div class="debate-highlight__excerpt">Ein lengre syntese om kvifor AI ikkje berre endrår verktøy og yrke, men pressar fram ein ny økonomisk, sosial og eksistensiell kontrakt.</div>
+    </a>
+
+    <div class="essay-grid">
+      <a href="inte-excel.html" class="essay-card">
+        <div class="essay-card__number">Essay 1</div>
+        <div class="essay-card__title">Hvorfor AI ikke er Excel</div>
+        <div class="essay-card__excerpt">Ein konsepttekst om skilnaden mellom vanleg regelautomatisering og AI som støtte i tolking, analyse og anna brukt kognitivt arbeid.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="fabriksgolvet.html" class="essay-card">
+        <div class="essay-card__number">Essay 2</div>
+        <div class="essay-card__title">Det jeg ser fra fabrikkgulvet</div>
+        <div class="essay-card__excerpt">Ein feltnær tekst om korleis AI allereie blir brukt i skarpe forbetrings- og analyseflytjar — og der teknologien framleis fell.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="politiken-missar.html" class="essay-card">
+        <div class="essay-card__number">Essay 3</div>
+        <div class="essay-card__title">Det politikken misser</div>
+        <div class="essay-card__excerpt">Om kvifor tempot, ansvarsfordeling og verkstadsnivå i norsk AI-politikk framleis ligg etter problemets storleik.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="agi.html" class="essay-card">
+        <div class="essay-card__number">Essay 4</div>
+        <div class="essay-card__title">AGI og hva det faktisk innebærer</div>
+        <div class="essay-card__excerpt">Ein nykter gjennomgang av definisjonar, usikkerheit, sikkerheit og kvifor AGI allereie er eit planleggingsspørsmål utan å vera ein ferdig konklusjon.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="overflod.html" class="essay-card">
+        <div class="essay-card__number">Essay 5</div>
+        <div class="essay-card__title">Når kostnader presses ned</div>
+        <div class="essay-card__excerpt">Om kvifor raskare kostnadsfallet i visse domener kan endra økonomien — men ikkje automatisk skapa rettferd, tryggheit eller overflod for alle.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="turbulenta-aren.html" class="essay-card">
+        <div class="essay-card__number">Essay 6</div>
+        <div class="essay-card__title">De turbulente årene</div>
+        <div class="essay-card__excerpt">Eit scenario-forsøk for 2026–2031: tre moglege bølger, kva signal som er viktige å følgja og kvifor Norden både har styrkar og risiko.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="efter-jobbet.html" class="essay-card">
+        <div class="essay-card__number">Essay 7</div>
+        <div class="essay-card__title">Etter jobben</div>
+        <div class="essay-card__excerpt">Om meining, identitet og kva institusjonar som kan bera eit samfunn der mindre menneskelig lønarbeid trengs for å halda produksjonen oppe.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="fysiska-fronten.html" class="essay-card">
+        <div class="essay-card__number">Essay 8</div>
+        <div class="essay-card__title">Den fysiske fronten</div>
+        <div class="essay-card__excerpt">Om robotikk, geopolitisk automationskapplöp og kvifor den som berre tittar på programvaren missar halvparten av skiftet.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="farliga-glappet.html" class="essay-card">
+        <div class="essay-card__number">Essay 9</div>
+        <div class="essay-card__title">Det farlige gapet i AI-debatten</div>
+        <div class="essay-card__excerpt">Om illusjonen av AI som "berre eit verktøy", kvifor historiejamføringer haltar og kvifor 15 år er for kort tid for å venta med samfunnsomsilling.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="emotionellt-minne.html" class="essay-card">
+        <div class="essay-card__number">Essay 10</div>
+        <div class="essay-card__title">Hvorfor AI trenger følelser</div>
+        <div class="essay-card__excerpt">Om emosjonelt vekta minnekonsolidering, prediktiv koding og kvifor intelligens utan kjensle for kva som spelar rolle ikkje er intelligens.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+      <a href="du-har-inte-testat-ai.html" class="essay-card">
+        <div class="essay-card__number">Essay 11</div>
+        <div class="essay-card__title">Du har ikke testet AI</div>
+        <div class="essay-card__excerpt">Om kløfta mellom gratisversjonen og AI sin fulle kapasitet — og kvilar den som testa demoversjon ikkje veit kva han ikkje veit.</div>
+        <div class="essay-card__read">Les →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OM ==================== -->
+<section class="about-section" id="om">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>Om AI-skiftet</h2>
+        <p>AI-skiftet er eit uavhengig essayprosjekt om korleis AI endrår arbeid, industri, politikk og samfunn.</p>
+        <p>Perspektivet er medvitt industrinært. Tekstane kjem ikkje primært frå seminarrom eller allmenn trendspaning, men frå arbeid i skarpe produksjonsmiljø, forbetringsprosjekt og diskusjonar om kva teknologien faktisk endrår når kvalitet, økonomi og ansvar spelar rolle.</p>
+        <p>Ambisjonen er dobbel: å heiva nivået i den norske AI-debatten og å gjera resonnementa meir testbare. Difor skil tekstane seg så langt som mogleg mellom observasjon, inferens, scenario og normativt forslag, og kvar essay har egne källenotar.</p>
+        <p><strong>Rolf Skogling</strong> — mekanisk ingeniør og konsulent innan industriell optimalisering. Arbeitar med AI i skarpe verksemd innan nordisk og europeisk tilverkingsindustri.</p>
+        <p><a href="kilder.html">Kilder og samlad referansestad →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kilder.html">Kilder</a></p>
+  </div>
+</footer>
+
+<script>
+const filterBtns = document.querySelectorAll('.filter-tag');
+const newsCards = document.querySelectorAll('.news-card');
+const dateGroups = document.querySelectorAll('.news-date-group');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    newsCards.forEach(card => {
+      card.style.display = (filter === 'alla' || card.dataset.tags.includes(filter)) ? '' : 'none';
+    });
+    dateGroups.forEach(group => {
+      const visible = group.querySelectorAll('.news-card:not([style*="display: none"])');
+      group.style.display = visible.length ? '' : 'none';
+    });
+  });
+});
+</script>
+
+</body>
+</html>
