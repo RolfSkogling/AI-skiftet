@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — AI-skiftet</title>
+  <meta name="description" content="Daily coverage of AI development — models, research, physical AI, hardware, quantum computing, labour market and regulation.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/nyheter/index.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/nyheter/index.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/nyheter/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/nyheter/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f3ef;
+      --surface: #ffffff;
+      --text: #1f2430;
+      --muted: #5b6474;
+      --accent: #16324f;
+      --accent-2: #9e6b3a;
+      --border: rgba(22, 50, 79, 0.12);
+      --shadow: 0 18px 45px rgba(19, 31, 48, 0.08);
+      --shadow-sm: 0 4px 12px rgba(19, 31, 48, 0.06);
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.72;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(246, 243, 239, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .site-nav .container {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+      padding: 0.95rem 0;
+    }
+    .site-nav__logo {
+      font-weight: 700; color: var(--accent);
+      text-decoration: none; letter-spacing: 0.02em;
+      font-size: 1.1rem;
+    }
+    .site-nav__links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .site-nav__links a {
+      text-decoration: none; color: var(--muted);
+      font-weight: 500; font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+    .site-nav__links a:hover,
+    .site-nav__links a.active { color: var(--accent); text-decoration: none; }
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+    .news-hero { padding: 3.5rem 0 2rem; }
+    .news-hero h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 800; font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .news-hero p { color: var(--muted); font-size: 1.05rem; max-width: 640px; }
+    .news-filter {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      padding: 1.5rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .filter-tag {
+      padding: 0.35rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.82rem; font-weight: 500;
+      color: var(--muted); background: transparent;
+      cursor: pointer; transition: all 0.2s;
+      font-family: inherit;
+    }
+    .filter-tag:hover, .filter-tag.active {
+      background: var(--accent); color: #fff;
+      border-color: var(--accent);
+    }
+    .news-list { padding-bottom: 4rem; }
+    .news-date-group { margin-bottom: 2.5rem; }
+    .news-date {
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--accent-2); text-transform: uppercase;
+      letter-spacing: 0.06em; margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-2);
+      display: inline-block;
+    }
+    .news-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .news-card:hover { box-shadow: var(--shadow); transform: translateY(-1px); }
+    .news-card__tags { display: flex; gap: 0.4rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+    .news-card__tag {
+      font-size: 0.7rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 0.15rem 0.55rem; border-radius: 100px;
+      background: rgba(22, 50, 79, 0.07); color: var(--accent);
+    }
+    .news-card__tag--physical-ai { background: rgba(158, 107, 58, 0.12); color: #7a5025; }
+    .news-card__tag--hardware { background: rgba(30, 120, 70, 0.1); color: #1a6b3c; }
+    .news-card__tag--quantum { background: rgba(120, 50, 160, 0.1); color: #6b2d99; }
+    .news-card__tag--research { background: rgba(22, 50, 79, 0.08); color: var(--accent); }
+    .news-card__tag--labour { background: rgba(180, 60, 40, 0.1); color: #993322; }
+    .news-card__tag--regulation { background: rgba(60, 60, 60, 0.08); color: #444; }
+    .news-card__tag--debate { background: rgba(200, 130, 20, 0.12); color: #8a5a10; }
+    .news-card__tag--models { background: rgba(20, 100, 180, 0.1); color: #1060a0; }
+    .news-card__tag--infrastructure { background: rgba(100, 80, 160, 0.1); color: #5540a0; }
+    .news-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; line-height: 1.4; }
+    .news-card h3 a { color: var(--text); }
+    .news-card h3 a:hover { color: var(--accent); text-decoration: none; }
+    .news-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+    .news-card__source { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; opacity: 0.7; }
+    .news-card__source a { color: var(--muted); }
+    .news-card__source a:hover { color: var(--accent); }
+    .news-archive-link { text-align: center; padding: 2rem 0 4rem; }
+    .news-archive-link a { font-weight: 600; color: var(--accent); font-size: 0.95rem; }
+    .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; font-size: 0.82rem; color: var(--muted); }
+    @media (max-width: 640px) {
+      .news-card { padding: 1rem 1.15rem; }
+      .site-nav__links { gap: 0.75rem; }
+      .site-nav__links a { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../../index.html" class="site-nav__logo">AI-skiftet</a>
+    <div class="site-nav__links">
+      <a href="../../index.html">Home</a>
+      <a href="../../index.html#essays">Essays</a>
+      <a href="index.html" class="active">News</a>
+      <a href="../../kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../../nyheter/index.html" lang="sv">SV</a>
+      <a href="index.html" lang="en" class="active">EN</a>
+      <a href="../../no/nyheter/index.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="news-hero">
+  <div class="container">
+    <h1>News</h1>
+    <p>Daily coverage of AI development — models, research, physical AI, hardware, quantum computing, labour market and regulation. Curated and commented.</p>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="news-filter" id="newsFilter">
+      <button class="filter-tag active" data-filter="all">All</button>
+      <button class="filter-tag" data-filter="models">Models</button>
+      <button class="filter-tag" data-filter="research">Research</button>
+      <button class="filter-tag" data-filter="physical-ai">Physical AI</button>
+      <button class="filter-tag" data-filter="hardware">Hardware</button>
+      <button class="filter-tag" data-filter="infrastructure">Infrastructure</button>
+      <button class="filter-tag" data-filter="quantum">Quantum</button>
+      <button class="filter-tag" data-filter="labour">Labour</button>
+      <button class="filter-tag" data-filter="regulation">Regulation</button>
+      <button class="filter-tag" data-filter="debate">Debate</button>
+    </div>
+    <div class="news-list" id="newsList">
+
+    <div class="news-date-group" data-date="2026-03-30">
+      <div class="news-date">30 March 2026</div>
+
+      <div class="news-card" data-tags="models">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--models">Models</span>
+        </div>
+        <h3><a href="https://techcrunch.com/2026/03/28/openai-shutting-down-sora/">OpenAI shuts down Sora — video generation was economically unsustainable</a></h3>
+        <p>OpenAI is closing its video generation service Sora after Disney withdrew from a planned partnership. The cost per generated minute was too high to justify continued operation, an early sign that not all generative AI products are commercially viable.</p>
+        <div class="news-card__source">Source: <a href="https://techcrunch.com/2026/03/28/openai-shutting-down-sora/">TechCrunch</a></div>
+      </div>
+
+      <div class="news-card" data-tags="models">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--models">Models</span>
+        </div>
+        <h3><a href="https://mistral.ai/news/mistral-small-4/">Mistral Small 4 — European open MoE model under Apache 2.0</a></h3>
+        <p>French Mistral releases Small 4, a mixture-of-experts model with open licence that challenges GPT-4o-mini on performance at lower compute cost. An important signal about European AI sovereignty and open source as an alternative to closed American models.</p>
+        <div class="news-card__source">Source: <a href="https://mistral.ai/news/mistral-small-4/">Mistral AI</a></div>
+      </div>
+
+      <div class="news-card" data-tags="physical-ai">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--physical-ai">Physical AI</span>
+        </div>
+        <h3><a href="https://deepmind.google/discover/blog/gemini-robots-agile/">Google DeepMind integrates Gemini into industrial robots via Agile Robots</a></h3>
+        <p>DeepMind and German Agile Robots demonstrate how the Gemini model can control robot arms in real time for complex assembly tasks. The collaboration marks a step towards AI-driven factories where large language models replace traditional robot programming.</p>
+        <div class="news-card__source">Source: <a href="https://deepmind.google/discover/blog/gemini-robots-agile/">Google DeepMind</a></div>
+      </div>
+
+      <div class="news-card" data-tags="physical-ai">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--physical-ai">Physical AI</span>
+        </div>
+        <h3><a href="https://neura-robotics.com/news/robogym-tum/">Neura Robotics and TUM open RoboGym — Europe's largest training centre for humanoids</a></h3>
+        <p>German Neura Robotics invests 17 million euros together with Technische Universität München in a dedicated training centre for humanoid robots. The facility is intended to accelerate the transition from lab to industrial reality.</p>
+        <div class="news-card__source">Source: <a href="https://neura-robotics.com/news/robogym-tum/">Neura Robotics</a></div>
+      </div>
+
+      <div class="news-card" data-tags="regulation">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--regulation">Regulation</span>
+        </div>
+        <h3><a href="https://www.whitehouse.gov/ai-framework-2026/">White House presents national AI framework — sector-specific without new agency</a></h3>
+        <p>The Biden administration releases an updated AI framework based on sector-specific regulation rather than a centralised AI agency. The approach contrasts with the EU's AI Act and signals that the US continues to prioritise innovation over restrictions.</p>
+        <div class="news-card__source">Source: <a href="https://www.whitehouse.gov/ai-framework-2026/">White House</a></div>
+      </div>
+
+      <div class="news-card" data-tags="quantum">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--quantum">Quantum</span>
+        </div>
+        <h3><a href="https://news.microsoft.com/2026/03/quantum-denmark/">Microsoft delivers error-corrected quantum computer to Denmark</a></h3>
+        <p>Microsoft delivers its first error-corrected quantum computer at level 2 to Denmark, in collaboration with the Niels Bohr Institute. The system will be used for materials science and drug simulations — a concrete step towards practical quantum computing in Europe.</p>
+        <div class="news-card__source">Source: <a href="https://news.microsoft.com/2026/03/quantum-denmark/">Microsoft News</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastructure">
+        <div class="news-card__tags">
+          <span class="news-card__tag news-card__tag--infrastructure">Infrastructure</span>
+        </div>
+        <h3><a href="https://www.bloomberg.com/news/2026-03-29/ai-infrastructure-spending/">Global AI infrastructure investment heading towards 450 billion dollars in 2026</a></h3>
+        <p>According to Bloomberg Intelligence, global investment in AI datacentres, chips and energy is rising to an estimated 450 billion dollars this year — the fastest expansion in technology history. Energy supply emerges as the largest bottleneck.</p>
+        <div class="news-card__source">Source: <a href="https://www.bloomberg.com/news/2026-03-29/ai-infrastructure-spending/">Bloomberg</a></div>
+      </div>
+    </div>
+      <div class="news-date-group" data-date="2026-03-29">
+        <div class="news-date">29 March 2026</div>
+        <div class="news-card" data-tags="models">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--models">Models</span></div>
+          <h3><a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">Three frontier models in one week: GPT-5.4, Gemini 3.1 Ultra and Grok 4.20</a></h3>
+          <p>March 2026 became an unprecedented model rush — OpenAI released GPT-5.4 on the 17th, Google followed with Gemini 3.1 Ultra on the 20th and xAI finished with Grok 4.20 on the 22nd. The pace signals that commercial competition is now driven by weeks, not months.</p>
+          <div class="news-card__source">Source: <a href="https://www.devflokers.com/blog/ai-news-march-24-2026-releases-breakthroughs">devFlokers</a></div>
+        </div>
+        <div class="news-card" data-tags="physical-ai">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--physical-ai">Physical AI</span></div>
+          <h3><a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">Google DeepMind and Agile Robots integrate Gemini Robotics into industrial robots</a></h3>
+          <p>Google DeepMind begins collaboration with Agile Robots to embed Gemini Robotics models directly into robot arms for manufacturing and logistics. It is another step towards foundation models not only reasoning — but controlling physical systems in real time.</p>
+          <div class="news-card__source">Source: <a href="https://www.cnbc.com/2026/03/24/google-agile-robots-ai-robotics.html">CNBC</a></div>
+        </div>
+        <div class="news-card" data-tags="models">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--models">Models</span></div>
+          <h3><a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">Alibaba Qwen 3.5: 9B model beats OpenAI's gpt-oss-120B on select benchmarks</a></h3>
+          <p>Alibaba's Qwen team releases its 3.5 Small series with models ranging from 0.8B to 9B parameters, designed to run on laptops and phones. That a 9B model outperforms a 120B model on certain tasks shows how rapidly efficiency is improving — size advantage is no longer assured.</p>
+          <div class="news-card__source">Source: <a href="https://blog.mean.ceo/new-ai-model-releases-news-march-2026/">MEAN CEO Blog</a></div>
+        </div>
+        <div class="news-card" data-tags="infrastructure">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastructure">Infrastructure</span></div>
+          <h3><a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">MCP standard reaches 97 million installations — agent infrastructure goes mainstream</a></h3>
+          <p>Anthropic's Model Context Protocol (MCP) has gone from experimental protocol to de facto standard for AI agents, with 97 million installations in March. Every major AI vendor now ships MCP-compatible tools, creating a shared infrastructure for agent control.</p>
+          <div class="news-card__source">Source: <a href="https://www.digitalapplied.com/blog/march-2026-ai-roundup-month-that-changed-everything">Digital Applied</a></div>
+        </div>
+        <div class="news-card" data-tags="quantum">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--quantum">Quantum</span></div>
+          <h3><a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Quantum computers move into datacentres — hybrid architectures take shape</a></h3>
+          <p>At AI Expo Taiwan 2026, it was shown how quantum computers are now being integrated with classical HPC in hybrid datacentre architectures, with 2028 expected as the tipping point. Maybell Quantum's ColdCloud platform cools down in hours instead of days and draws 90% less power — a breakthrough for practical quantum infrastructure.</p>
+          <div class="news-card__source">Source: <a href="https://www.digitimes.com/news/a20260325VL211/ai-expo-quantum-computing-data-center-hardware-2028.html">Digitimes</a></div>
+        </div>
+        <div class="news-card" data-tags="regulation">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--regulation">Regulation</span></div>
+          <h3><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU Council agrees on "Digital Omnibus on AI" — new timelines for high-risk AI</a></h3>
+          <p>The EU Council's negotiating position from 13 March extends the deadline for AI systems already on the market — suppliers of generative systems have until February 2027 to meet transparency requirements in Article 50. It is a pragmatic acknowledgement that implementation takes time, but signals that regulation is now becoming concrete.</p>
+          <div class="news-card__source">Source: <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU Council</a></div>
+        </div>
+        <div class="news-card" data-tags="models">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--models">Models</span></div>
+          <h3><a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">OpenAI quietly shuts down Sora API — video generation at scale "economically unsustainable"</a></h3>
+          <p>OpenAI announced on 24 March that the Sora API is shutting down with 30 days notice. The official reason: unsustainable economics in large-scale video generation. The decision questions the entire business model for generative video and shows that compute costs still set hard limits.</p>
+          <div class="news-card__source">Source: <a href="https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-march-26-2026-direction-over-drama/">Labla.org</a></div>
+        </div>
+        <div class="news-card" data-tags="labour">
+          <div class="news-card__tags"><span class="news-card__tag news-card__tag--labour">Labour</span></div>
+          <h3><a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">EU AI Act classifies HR systems as high-risk — new reality for employers</a></h3>
+          <p>With the full implementation of the EU AI Act in August 2026, AI systems for recruitment, promotion and performance evaluation are classified as high-risk. Companies using AI-driven screening tools, interview schedulers or performance management must now carry out risk assessments and ensure human oversight.</p>
+          <div class="news-card__source">Source: <a href="https://www.reworked.co/talent-management/2026-will-be-a-turning-point-for-ai-regulation-and-the-workforce/">Reworked</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="news-archive-link"><a href="#">← Older news</a></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 AI-skiftet · Rolf Skogling</div>
+</footer>
+<script>
+const filterBtns = document.querySelectorAll('.filter-tag');
+const newsCards = document.querySelectorAll('.news-card');
+const dateGroups = document.querySelectorAll('.news-date-group');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    newsCards.forEach(card => {
+      card.style.display = (filter === 'all' || card.dataset.tags.includes(filter)) ? '' : 'none';
+    });
+    dateGroups.forEach(group => {
+      const visible = group.querySelectorAll('.news-card:not([style*="display: none"])');
+      group.style.display = visible.length ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

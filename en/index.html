@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-skiftet — essays and daily news on AI, labour and societal transformation</title>
+  <meta name="description" content="Daily coverage and essays on the AI shift: models, research, physical AI, industry, politics, AGI, robotics and transformation. An industry-near perspective.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/index.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/index.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* --- News section (additions to style.css) --- */
+    .news-section{padding:44px 0 60px;border-bottom:1px solid rgba(140,74,31,.08)}
+    .news-section h2{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.8vw,2.6rem);color:#1b1b1b;margin:0 0 6px}
+    .news-section .section-intro{margin-bottom:20px}
+    .news-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+    .filter-tag{
+      padding:5px 14px;border:1px solid var(--line);border-radius:100px;
+      font-size:.82rem;font-weight:600;color:var(--muted);background:transparent;
+      cursor:pointer;transition:all .2s;font-family:inherit;
+    }
+    .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .news-date-group{margin-bottom:28px}
+    .news-date{
+      font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;
+      letter-spacing:.06em;margin-bottom:10px;padding-bottom:6px;
+      border-bottom:2px solid var(--accent);display:inline-block;
+    }
+    .news-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+      padding:18px 22px;margin-bottom:10px;box-shadow:var(--shadow);
+      transition:transform .15s;
+    }
+    .news-card:hover{transform:translateY(-1px)}
+    .news-card__tags{display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+    .news-card__tag{
+      font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+      padding:2px 9px;border-radius:100px;
+    }
+    .news-card__tag--modeller{background:rgba(20,100,180,.1);color:#1060a0}
+    .news-card__tag--fysisk-ai{background:rgba(140,74,31,.1);color:var(--accent)}
+    .news-card__tag--hardvara{background:rgba(30,120,70,.1);color:#1a6b3c}
+    .news-card__tag--kvant{background:rgba(120,50,160,.1);color:#6b2d99}
+    .news-card__tag--forskning{background:rgba(31,41,51,.07);color:var(--muted)}
+    .news-card__tag--arbetsmarknad{background:rgba(180,60,40,.1);color:#993322}
+    .news-card__tag--reglering{background:rgba(60,60,60,.08);color:#444}
+    .news-card__tag--debatt{background:rgba(200,130,20,.12);color:#8a5a10}
+    .news-card__tag--infrastruktur{background:rgba(100,80,160,.1);color:#5540a0}
+    .news-card h3{font-size:1rem;font-weight:600;margin-bottom:4px;line-height:1.4}
+    .news-card h3 a{color:var(--text)}
+    .news-card h3 a:hover{color:var(--accent);text-decoration:none}
+    .news-card p{color:var(--muted);font-size:.88rem;line-height:1.6;margin:0}
+    .news-card__source{font-size:.76rem;color:var(--muted);margin-top:6px;opacity:.7}
+    .news-card__source a{color:var(--muted)}
+    .news-card__source a:hover{color:var(--accent)}
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="#news">News</a>
+      <a href="#essays">Essays</a>
+      <a href="#about">About</a>
+      <a href="sources.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../index.html" lang="sv">SV</a>
+      <a href="index.html" lang="en" class="active">EN</a>
+      <a href="../no/index.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>AI is already changing how work, organisations and institutions function.</h1>
+    <p class="subtitle">AI-skiftet brings together essays and daily news from an industry-near perspective: what the technology is already doing, which assumptions hold, which don't, and how Sweden can prepare more proportionally.</p>
+    <a href="civilisationsskiftet.html" class="cta-btn">Read the main essay</a>
+  </div>
+</section>
+
+<!-- ==================== NEWS ==================== -->
+<section class="news-section" id="news">
+  <div class="container-wide">
+    <h2>News</h2>
+    <p class="section-intro">Daily coverage of AI development — models, research, physical AI, hardware, quantum computers, labour market, regulation and debate.</p>
+
+    <div class="news-filter" id="newsFilter">
+      <button class="filter-tag active" data-filter="alla">All</button>
+      <button class="filter-tag" data-filter="modeller">Models</button>
+      <button class="filter-tag" data-filter="forskning">Research</button>
+      <button class="filter-tag" data-filter="fysisk-ai">Physical AI</button>
+      <button class="filter-tag" data-filter="hardvara">Hardware</button>
+      <button class="filter-tag" data-filter="infrastruktur">Infrastructure</button>
+      <button class="filter-tag" data-filter="kvant">Quantum</button>
+      <button class="filter-tag" data-filter="arbetsmarknad">Labour</button>
+      <button class="filter-tag" data-filter="reglering">Regulation</button>
+      <button class="filter-tag" data-filter="debatt">Debate</button>
+    </div>
+
+    <div class="news-list" id="newsList">
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-04-07                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-07">
+      <div class="news-date">7 April 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Models</span></div>
+        <h3><a href="https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026">DeepSeek V4 launches on Huawei Ascend — one trillion parameters, million-token context, 0.30 dollars per million tokens</a></h3>
+        <p>Chinese DeepSeek rolls out V4, a Mixture-of-Experts model with approximately one trillion parameters and only 37 billion active per token. The model has a context window of 1 million tokens via a new "Engram" architecture for conditional memory management, reaching 97 per cent Needle-in-a-Haystack accuracy at million scale. Reuters confirmed on 4 April that V4 runs on Huawei's Ascend 950PR chip — the same silicon that ByteDance and Alibaba order. Pricing at 0.30 dollars per million tokens dramatically undercuts US frontier models and shows that export controls are driving forward a parallel Chinese AI ecosystem faster than Washington foresaw.</p>
+        <div class="news-card__source">Source: <a href="https://www.nxcode.io/resources/news/deepseek-v4-release-specs-benchmarks-2026">NxCode</a>, <a href="https://dataconomy.com/2026/03/16/deepseek-v4-and-tencents-new-hunyuan-model-to-launch-in-april/">Dataconomy</a>, <a href="https://www.geeky-gadgets.com/deepseek-v4-benchmarks-leak/">Geeky Gadgets</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://winbuzzer.com/2026/04/04/utah-tests-a-tightly-limited-ai-path-for-psychiatric-refills-xcxwbn/">Utah expands AI prescription renewal to psychiatric pharmaceuticals — Legion Health gets green light in state sandbox</a></h3>
+        <p>On 3 April, Utah's regulatory sandbox approved Legion Health's AI chatbot for independently renewing prescriptions for 15 low-risk psychiatric medications — an expansion of the pilot that began in January with Doctronic and 190 common drugs for chronic conditions. The programme is one year long and requires human physician oversight of the first 1,250 requests before broader rollout. Controlled substances, ADHD medications and injections remain exempt. Utah thus cements its position as the most experimental US state for AI in direct patient care — and the precedent will be scrutinised by every state considering similar sandboxes.</p>
+        <div class="news-card__source">Source: <a href="https://winbuzzer.com/2026/04/04/utah-tests-a-tightly-limited-ai-path-for-psychiatric-refills-xcxwbn/">WinBuzzer</a>, <a href="https://www.quarles.com/newsroom/publications/utah-authorizes-ai-based-prescription-renewals">Quarles &amp; Brady</a>, <a href="https://www.mobihealthnews.com/news/utah-allows-ai-renew-prescription-drugs-autonomously">MobiHealthNews</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://artificialintelligenceact.eu/implementation-timeline/">Four months to EU AI Act deadline — Digital Omnibus creates uncertainty about high-risk systems</a></h3>
+        <p>On 2 August 2026, the main body of the EU AI Act comes into force: transparency requirements in Article 50 (marking AI-generated content and deepfakes), the fine regime and the requirement that every member state has at least one operational AI sandbox per Article 57. At the same time, trilog negotiations are ongoing on the Commission's "Digital Omnibus" package, which proposes that high-risk systems' obligations be conditional on harmonised technical standards being in place — which could push them to December 2027 or August 2028. For Swedish and Norwegian companies, the uncertainty means compliance work must be planned for both scenarios in parallel.</p>
+        <div class="news-card__source">Source: <a href="https://artificialintelligenceact.eu/implementation-timeline/">Artificial Intelligence Act EU</a>, <a href="https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance/">Kennedys Law</a>, <a href="https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks">Legal Nodes</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Research</span></div>
+        <h3><a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm">Neuro-symbolic hybrid cuts AI energy use 100x — and raises accuracy</a></h3>
+        <p>A research group published on 5 April a study combining neural networks with human-like symbolic reasoning and reports up to 100-fold reductions in energy consumption alongside higher accuracy on multiple benchmarks. The result points to the straight scaling curve — more parameters and more compute — not being the only way forward. If the results hold in independent reproduction, it could change the economics of datacentres and make advanced inference possible on edge hardware. The work sits in the same wave as Google's TurboQuant: both seek efficiency in architecture rather than gross watts.</p>
+        <div class="news-card__source">Source: <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm">ScienceDaily</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-04-06                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-06">
+      <div class="news-date">6 April 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Models</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google releases Gemma 4 under Apache 2.0 — open model ranks third globally</a></h3>
+        <p>Google launched on 2 April Gemma 4, its most capable open model family to date — and for the first time under Apache 2.0 licence. The family spans four models: E2B and E4B for edge devices (phones, Raspberry Pi), a 26B Mixture-of-Experts and a 31B Dense ranking third on Arena AI's text leaderboard. With context windows up to 256K tokens, built-in image and audio understanding and support for 140+ languages, Gemma 4 targets agentic workflows and offline code generation. The E models activate only 2–4 billion parameters at inference, saving RAM and battery. The launch is a strategic response to Chinese open models like Qwen and DeepSeek.</p>
+        <div class="news-card__source">Source: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google Blog</a>, <a href="https://9to5google.com/2026/04/02/google-gemma-4/">9to5Google</a>, <a href="https://www.theregister.com/2026/04/02/googles_gemma_4_open_weights/">The Register</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Research</span></div>
+        <h3><a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google's TurboQuant compresses AI memory 6x without quality loss — presented at ICLR 2026</a></h3>
+        <p>Google Research presents TurboQuant at ICLR 2026, a two-step algorithm that compresses the KV cache in large language models from 16 to 3 bits per value — a sixfold reduction without measurable quality loss. The first step, PolarQuant, rotates vectors with a random orthogonal transformation that evens out energy and removes outliers. The second step, Quantised Johnson-Lindenstrauss (QJL), reduces remaining residual error to a single sign bit per dimension. On Nvidia H100, 4-bit TurboQuant delivers 8x faster attention computation versus uncompressed 32-bit baselines. The implication: models with millions of tokens in context become practical to run without proportional GPU memory increase.</p>
+        <div class="news-card__source">Source: <a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google Research</a>, <a href="https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/">TechCrunch</a>, <a href="https://www.hpcwire.com/bigdatawire/2026/04/01/googles-turboquant-marks-a-fundamental-shift-in-how-ai-systems-scale/">BigDATAwire</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Hardware</span></div>
+        <h3><a href="https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026">Goldman Sachs: AI drives 49 per cent growth in semiconductor revenue — over 700 billion dollars in Q4</a></h3>
+        <p>Goldman Sachs forecasts that global semiconductor revenue grows by 49 per cent by end of 2026, driven by AI-related hardware demand. AI-related hardware revenue could exceed 700 billion dollars by the fourth quarter. AI-related investment in the US national accounts now stands at 325 billion dollars (1.1 per cent of GDP) above 2022 levels. Goldman Sachs estimates AI companies could invest more than 500 billion dollars during 2026 — the fastest capital expansion in tech history. The semiconductor sector is positioned as the primary beneficiary of the global AI investment wave.</p>
+        <div class="news-card__source">Source: <a href="https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026">Goldman Sachs</a>, <a href="https://www.aninews.in/news/business/ai-led-demand-to-drive-sharp-surge-in-semiconductor-revenues-goldman-sachs20260405145721/">ANI News</a>, <a href="https://www.businessworld.in/article/ai-to-lift-global-semiconductor-revenues-nearly-50-by-2026e-goldman-sachs-600880">BW Businessworld</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://www.axios.com/2026/04/03/california-national-testing-ground-ai-rules">California becomes de facto national AI standard — White House wants to stop state rules</a></h3>
+        <p>California advances on multiple fronts as the USA's heaviest AI regulator. Newsom's executive order from 30 March, multiple ongoing bills on transparency, algorithmic discrimination and AI-generated content — and the state's size mean tech companies already treat California's rules as a national standard. Meanwhile, the Trump administration is driving a federal framework explicitly meant to replace state AI laws. The tension between state and federal level now defines the direction of American AI regulation. Colorado's AI discrimination law comes into force in June 2026, and a further 15 states have AI legislation under preparation.</p>
+        <div class="news-card__source">Source: <a href="https://www.axios.com/2026/04/03/california-national-testing-ground-ai-rules">Axios</a>, <a href="https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html">Wilson Sonsini</a>, <a href="https://www.softwareimprovementgroup.com/blog/us-ai-legislation-overview/">SIG</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-04-03                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-03">
+      <div class="news-date">3 April 2026</div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-04-02/doj-to-appeal-court-order-halting-trump-s-ban-on-anthropic-ai">DOJ appeals court ruling — Trump's ban on Anthropic in federal agencies continues</a></h3>
+        <p>The Justice Department announced on 2 April that it is appealing federal judge Rita Lin's decision to block the Trump administration's ban on Anthropic's Claude in government systems. Lin called the ban "Orwellian" and said it could "hamstring" the company. Background: Anthropic refused to remove safety guardrails — including a ban on mass surveillance of American citizens — from its terms of service for the Pentagon. Trump criticised Anthropic publicly in February. The legal case will become a precedent for the relationship between AI companies' values and government procurement.</p>
+        <div class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-04-02/doj-to-appeal-court-order-halting-trump-s-ban-on-anthropic-ai">Bloomberg</a>, <a href="https://www.washingtonpost.com/business/2026/04/02/ai-pentagon-anthropic-claude-hegseth-trump/012f64be-2eb3-11f1-aac2-f56b5ccad184_story.html">Washington Post</a>, <a href="https://www.cbsnews.com/news/anthropic-ruling-judge-trump-pentagon-ai/">CBS News</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Models</span></div>
+        <h3><a href="https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/">Anthropic leaked Claude Code's entire source code via npm — supply chain attack followed within hours</a></h3>
+        <p>A misconfigured npm release of Claude Code version 2.1.88 exposed nearly 2,000 TypeScript files and 512,000 lines of code — including LLM call logic, tool chains, feature flags for "persistent assistant" and remote control via phone. The repository got 84,000 stars on GitHub before Anthropic pulled the package and called the incident "a packaging mistake caused by human error". Worse: between 00:21 and 03:29 UTC on 31 March, a trojanised version of the HTTP client axios was distributed via the same update — a supply chain attack that hit everyone who installed Claude Code during that window. It is Anthropic's second security incident in a week, after the Mythos leak.</p>
+        <div class="news-card__source">Source: <a href="https://fortune.com/2026/03/31/anthropic-source-code-claude-code-data-leak-second-security-lapse-days-after-accidentally-revealing-mythos/">Fortune</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-01/anthropic-accidentally-releases-source-code-for-claude-ai-agent">Bloomberg</a>, <a href="https://cybernews.com/security/anthropic-claude-code-source-leak/">Cybernews</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Research</span></div>
+        <h3><a href="https://www.globenewswire.com/news-release/2026/04/02/3267726/0/en/Fotor-s-Joint-Research-Accepted-by-ICLR-2026-Advancing-Its-Agent-s-Multimodal-Reasoning.html">ICLR 2026: Web-CogReasoner shows AI agents navigating the web via pure pixel perception</a></h3>
+        <p>Fotor's and several universities' joint research paper "Web-CogReasoner" was accepted as a conference contribution at ICLR 2026. The framework lets AI agents navigate webpages, desktop software and mobile apps by interpreting screen content visually — without relying on underlying HTML code. Using "Knowledge-driven Chain of Thought" and the Web-CogDataset (based on 14 real websites), the model shows stronger generalisation than code-dependent methods. The result points to a future where AI agents interact with digital systems the same way humans do: by seeing and reasoning.</p>
+        <div class="news-card__source">Source: <a href="https://www.globenewswire.com/news-release/2026/04/02/3267726/0/en/Fotor-s-Joint-Research-Accepted-by-ICLR-2026-Advancing-Its-Agent-s-Multimodal-Reasoning.html">GlobeNewsWire</a>, <a href="https://encord.com/iclr-2026/">Encord (ICLR 2026 trends)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Labour</span></div>
+        <h3><a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">Sweden falls behind in AI race — only 37 per cent feel comfortable with the technology</a></h3>
+        <p>EY's latest global survey shows that Swedish organisations have lower AI maturity and weaker leadership engagement than the Nordic average, despite ambitious national targets. Only 37 per cent of Swedes feel comfortable with AI (globally: 49 per cent), and 61 per cent say they have received no AI training in the past six months. Meanwhile, Statistics Sweden reports a shortage of over 61,000 qualified staff, and for the first time AI competence is harder to recruit than traditional IT skills. The gap between strategic ambition and operational reality is growing.</p>
+        <div class="news-card__source">Source: <a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">EY Sverige</a>, <a href="https://www.dagensteknik.se/sverige-halkar-efter-grannlanderna-i-den-nordiska-ai-kapplopningen/">Dagens Teknik</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://www.gov.ca.gov/2026/03/30/as-trump-rolls-back-protections-governor-newsom-signs-first-of-its-kind-executive-order-to-strengthen-ai-protections-and-responsible-use/">Newsom pushes back — California requires AI safety certification independent of Washington</a></h3>
+        <p>California Governor Gavin Newsom signed on 30 March executive order N-5-26, which requires AI companies wanting to do business with the state to certify their safeguards against misuse, bias and violations of civil rights. The order establishes an AI governance council and requires state agencies to carry out security, privacy and bias audits in AI procurement. In a direct signal to the Trump administration, Newsom announced that California will henceforth independently assess federal risk classifications of AI companies — a clear response to the Pentagon's blacklisting of Anthropic.</p>
+        <div class="news-card__source">Source: <a href="https://www.gov.ca.gov/2026/03/30/as-trump-rolls-back-protections-governor-newsom-signs-first-of-its-kind-executive-order-to-strengthen-ai-protections-and-responsible-use/">Governor's Office</a>, <a href="https://calmatters.org/politics/2026/04/newsom-moves-for-california-ai-startups/">CalMatters</a>, <a href="https://www.lw.com/en/insights/california-assumes-role-as-lead-us-regulator-of-ai">Latham & Watkins</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastructure</span></div>
+        <h3><a href="https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/">Microsoft invests 5.5 billion dollars in Singapore — AI training for 200,000 students</a></h3>
+        <p>Microsoft announced on 1 April an investment of 5.5 billion dollars in Singapore over five years (until 2029) for cloud and AI infrastructure, cybersecurity and governance frameworks. As part of the investment, over 200,000 university students get free access to Microsoft 365 with Copilot for twelve months. Singapore's AI hub ambitions have already attracted Apple, Google and AWS — Microsoft's investment cements the city-state as Southeast Asia's heaviest AI cluster. The investment's scale places it in the same league as Microsoft's investments in the USA and Europe.</p>
+        <div class="news-card__source">Source: <a href="https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/">Microsoft News</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-01/microsoft-pledges-5-5-billion-ai-investment-in-singapore">Bloomberg</a>, <a href="https://finance.yahoo.com/sectors/technology/articles/microsoft-track-invest-5-5-075818914.html">Yahoo Finance/WSJ</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-04-02                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-02">
+      <div class="news-date">2 April 2026</div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastructure</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round">OpenAI closes historic funding round — 122 billion dollars at 852 billion valuation</a></h3>
+        <p>OpenAI has completed the largest private funding round in tech history: 122 billion dollars, with Amazon (50 billion), Nvidia (30 billion) and SoftBank (30 billion) as lead investors. The company now generates 2 billion dollars in monthly revenue and has over 900 million weekly active users. A large part of Amazon's investment — 35 billion — is conditional on OpenAI going public or achieving AGI. The money will finance compute infrastructure, multi-cloud partnerships and a unified "AI superapp".</p>
+        <div class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round">Bloomberg</a>, <a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">CNBC</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Hardware</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-03-31/nvidia-invests-2-billion-in-marvell-announces-partnership">Nvidia invests 2 billion dollars in Marvell — NVLink Fusion to unite GPU and custom silicon</a></h3>
+        <p>Nvidia announced a strategic investment of 2 billion dollars in Marvell Technology to develop "NVLink Fusion" — a platform integrating Marvell's semi-customised AI accelerators directly into Nvidia's high-speed interconnect. The partnership also covers silicon photonics, which uses light instead of copper for data transfer. Marvell's stock rose 11 per cent. The deal marks a course change: Nvidia chooses to integrate custom silicon rather than compete with it.</p>
+        <div class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-03-31/nvidia-invests-2-billion-in-marvell-announces-partnership">Bloomberg</a>, <a href="https://www.nextplatform.com/connect/2026/03/31/the-2-billion-nvidia-deal-with-marvell-is-about-a-lot-more-than-nvlink-fusion/5213790">The Next Platform</a></div>
+      </div>
+
+      <div class="news-card" data-tags="hardvara">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--hardvara">Hardware</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/27/bytedance-alibaba-planning-to-order-huaweis-new-ai-chip-reuters.html">Huawei's 950PR chip wins ByteDance and Alibaba — China's AI silicon race accelerates</a></h3>
+        <p>Huawei's new AI chip Ascend 950PR has passed customer tests and ByteDance and Alibaba plan large orders, Reuters reports. The chip, priced at approximately 50,000 yuan (6,900 dollars) per card, is significantly more CUDA-compatible than its predecessor 910C. Huawei plans to deliver 750,000 units this year, with mass production from April. The launch coincides with US export controls severely limiting Nvidia's sales in China — and shows that technological isolation is driving domestic alternatives faster than expected.</p>
+        <div class="news-card__source">Source: <a href="https://www.cnbc.com/2026/03/27/bytedance-alibaba-planning-to-order-huaweis-new-ai-chip-reuters.html">CNBC/Reuters</a>, <a href="https://beijingtimes.com/business/2026/03/28/huaweis-new-ai-chip-gains-traction-with-bytedance-and-alibaba-amidst-nvidia-restrictions/">Beijing Times</a></div>
+      </div>
+
+      <div class="news-card" data-tags="reglering">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulation</span></div>
+        <h3><a href="https://kjk.com/2026/04/01/how-the-federal-ai-regulation-push-could-impact-your-business/">TRUMP AMERICA AI Act — concrete legislative proposal takes shape in Congress</a></h3>
+        <p>Senator Marsha Blackburn (R-TN) presented on 18 March the draft discussion of the TRUMP AMERICA AI Act, the most concrete federal AI legislation to date. The proposal builds on the White House framework with seven pillars — child protection, intellectual property, data centre licensing, anti-censorship, innovation promotion, workforce training and federal right of first refusal against state laws. California's AI Transparency Act, which came into force 1 January, could become the first state law preempted if the proposal passes.</p>
+        <div class="news-card__source">Source: <a href="https://kjk.com/2026/04/01/how-the-federal-ai-regulation-push-could-impact-your-business/">KJK</a>, <a href="https://drata.com/blog/artificial-intelligence-regulations-state-and-federal-ai-laws-2026">Drata</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-04-01                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-01">
+      <div class="news-date">1 April 2026</div>
+
+      <div class="news-card" data-tags="industri">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--industri">Industry</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html">Oracle lays off up to 30,000 employees — redirects billions to AI datacentres</a></h3>
+        <p>Oracle began on 31 March what analysts call the company's largest mass layoff ever. Investment bank TD Cowen estimates between 20,000 and 30,000 positions — roughly 18 per cent of the global workforce — are affected. Employees in the USA, India, Canada and Mexico received redundancy notices via email at 06:00 local time, without warning from HR. Purpose: to free up 8–10 billion dollars in cash flow to finance an AI infrastructure investment estimated at 156 billion dollars.</p>
+        <div class="news-card__source">Source: <a href="https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html">CNBC</a>, <a href="https://thenextweb.com/news/oracle-layoffs-march-2026">The Next Web</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politics</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html">Trump administration wants federal AI law — state rules to be overridden</a></h3>
+        <p>The White House presented on 20 March a national AI framework with six legislative proposals: protection of children online, streamlined licensing for data centres, intellectual property rules for training data, ban on political censorship in AI systems, innovation promotion and workforce training. The framework urges Congress to adopt a unified federal AI law replacing state regulation — a proposal expected to trigger fierce political debate.</p>
+        <div class="news-card__source">Source: <a href="https://www.whitehouse.gov/releases/2026/03/president-donald-j-trump-unveils-national-ai-legislative-framework/">White House</a>, <a href="https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html">CNBC</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politics</span></div>
+        <h3><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU streamlines AI Act — Parliament approves Digital Omnibus changes</a></h3>
+        <p>The EU Council adopted on 13 March its negotiating position to streamline the implementation of the AI Regulation, and the European Parliament approved the changes on 26 March. New timelines are proposed: standalone high-risk AI systems get deadline December 2027, and embedded systems August 2028. The Council also adds a new prohibition on AI-generated sexual material without consent and on material depicting child abuse. The next trilog is planned for 28 April.</p>
+        <div class="news-card__source">Source: <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/03/13/council-agrees-position-to-streamline-rules-on-artificial-intelligence/">EU Council</a>, <a href="https://www.gamingtechlaw.com/2026/03/eu-ai-act-update-parliament-approves-digital-omnibus-changes/">GamingTechLaw</a></div>
+      </div>
+
+      <div class="news-card" data-tags="agenter">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--agenter">Agents</span></div>
+        <h3><a href="https://www.arturmarkus.com/anthropics-model-context-protocol-hits-97-million-installs-on-march-25-mcp-transitions-from-experimental-to-foundation-layer-for-agentic-ai/">MCP passes 97 million installations — agent standard becomes industry norm</a></h3>
+        <p>Anthropic's Model Context Protocol (MCP) reached 97 million monthly SDK downloads on 25 March — the fastest adoption rate for any AI infrastructure standard. From 2 million at launch in November 2024 to industry standard in 16 months. OpenAI, Google DeepMind, Cohere and Mistral have all integrated MCP support, and the ecosystem now spans over 5,800 servers. In December 2025 Anthropic donated the protocol to the Agentic AI Foundation under the Linux Foundation.</p>
+        <div class="news-card__source">Source: <a href="https://www.arturmarkus.com/anthropics-model-context-protocol-hits-97-million-installs-on-march-25-mcp-transitions-from-experimental-to-foundation-layer-for-agentic-ai/">AI Unfiltered</a>, <a href="https://www.digitalapplied.com/blog/mcp-97-million-downloads-model-context-protocol-mainstream">Digital Applied</a></div>
+      </div>
+
+      <div class="news-card" data-tags="politik">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--politik">Politics</span></div>
+        <h3><a href="https://www.regeringen.se/pressmeddelanden/2026/02/sveriges-forsta-heltackande-ai-strategi-ska-ge-en-topp-tio-placering/">Sweden's AI strategy: 479 MSEK for top 10 placement — but is it enough?</a></h3>
+        <p>The Government presented in February Sweden's first national AI strategy with the target of reaching top 10 globally. Budget: 479 million kronor for seven focus areas, including sovereign language models, AI workshop for public sector and competence supply. The investment is Sweden's largest AI investment ever, but pales internationally — France's AI budget is 1.5 billion euros, the UK's 900 million pounds. According to EY, only 37 per cent of Swedes feel comfortable with AI, compared to 49 per cent globally.</p>
+        <div class="news-card__source">Source: <a href="https://www.regeringen.se/pressmeddelanden/2026/02/sveriges-forsta-heltackande-ai-strategi-ska-ge-en-topp-tio-placering/">Government.se</a>, <a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">EY Sverige</a></div>
+      </div>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- DAILY POST: 2026-03-31                       -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-03-31">
+      <div class="news-date">31 March 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Models</span></div>
+        <h3><a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Anthropic Mythos leaked — "step change" in capacity triggers cybersecurity alarm</a></h3>
+        <p>A configuration error exposed nearly 3,000 unpublished assets on Anthropic's blog, including details about Claude Mythos (internally "Capybara") — a model that according to the company represents "a step change" in performance versus Opus 4.6. Mythos shows dramatically higher results on coding, academic reasoning and cybersecurity, but internal documents warn that the model can quickly identify and exploit vulnerabilities — a potential accelerator for cyber arms race.</p>
+        <div class="news-card__source">Source: <a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Fortune</a>, <a href="https://fortune.com/2026/03/27/anthropic-leaked-ai-mythos-cybersecurity-risk/">Fortune (cybersecurity)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="infrastruktur">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastructure</span></div>
+        <h3><a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">Mistral secures 830 million dollars for AI data centre outside Paris</a></h3>
+        <p>French Mistral raises 830 million dollars in debt financing from seven banks — BNP Paribas, Crédit Agricole, HSBC and MUFG among them — to build a data centre with 13,800 Nvidia GB300 GPUs in Bruyères-le-Châtel. Capacity: 44 MW, operational Q2 2026. The company aims for 200 MW total capacity in Europe by end of 2027, including a planned facility in Sweden. The clearest sign yet that European AI infrastructure is now bankable.</p>
+        <div class="news-card__source">Source: <a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">CNBC</a>, <a href="https://www.bloomberg.com/news/articles/2026-03-30/ai-startup-mistral-raises-830-million-in-data-center-debt-rush">Bloomberg</a></div>
+      </div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Models</span></div>
+        <h3><a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">Apple distils Google Gemini into on-device models for next Siri</a></h3>
+        <p>Apple has gained "full access" to Gemini in Google's datacentres and uses the model for distillation — creating smaller, task-specific models that can run locally on iPhone. The deal, valued at approximately one billion dollars per year, drives Apple's Siri overhaul (Project Campos) with context-aware, cross-app AI. iOS 27 also plans "Extensions" letting users plug in Claude, Gemini or ChatGPT as alternative AI assistants.</p>
+        <div class="news-card__source">Source: <a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">MacRumors</a>, <a href="https://9to5mac.com/2026/03/25/new-details-on-apple-google-ai-deal-revealed-including-gemini-changes-report/">9to5Mac</a></div>
+      </div>
+
+      <div class="news-card" data-tags="debatt">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--debatt">Debate</span></div>
+        <h3><a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Jensen Huang: "I believe we have achieved AGI" — definition splits the industry</a></h3>
+        <p>Nvidia's CEO said in Lex Fridman's podcast that AGI is already here — defined as AI that can start and run a billion-dollar company. Mark Gubrud, the physicist who coined the term in the 90s, agrees in substance but not implication. Critics argue Huang's definition is tailored to sell GPUs. The debate exposes that "AGI" lacks a shared definition, making every claim to have achieved it a rhetorical rather than scientific question.</p>
+        <div class="news-card__source">Source: <a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Fortune</a>, <a href="https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-claims-agi-has-been-achieved-can-create-billion-dollar-businesses-172225126.html">Yahoo Finance</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Labour</span></div>
+        <h3><a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Humanoid robots could cost 13,000 dollars by 2035 — Bank of America forecasts 3 billion units</a></h3>
+        <p>Bank of America Institute calculates that material cost for a humanoid robot falls from 35,000 dollars (2025) to 13,000–17,000 dollars 2035 — at parity with a car. The bank's long-term forecast: 3 billion humanoids in operation by 2060, more than the world's cars per capita. The figure is speculative, but points to a labour market where physical automation is no longer limited by cost but by regulation and integration.</p>
+        <div class="news-card__source">Source: <a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Fortune</a>, <a href="https://fortune.com/2026/03/13/bank-of-america-humanoid-robot-forecast-3-billion-2060/">Fortune (forecast)</a></div>
+      </div>
+
+      <div class="news-card" data-tags="forskning">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Research</span></div>
+        <h3><a href="https://lexfridman.com/jensen-huang-transcript/">Donald Knuth publishes "Claude Cycles" — analyses AI behaviour from Stanford perspective</a></h3>
+        <p>Legend of computer science, Donald Knuth at Stanford, published a new paper examining Claude's behaviour patterns in reasoning and code generation. That one of the discipline's founders devotes himself to dissecting AI models' logic signals that frontier models' cognitive properties are now serious research subject — not just a product question.</p>
+        <div class="news-card__source">Source: <a href="https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/">The Neuron</a></div>
+      </div>
+    </div>
+
+    </div><!-- /news-list -->
+  </div>
+</section>
+
+<!-- ==================== ESSAYS ==================== -->
+<section class="essays-section" id="essays">
+  <div class="container-wide">
+    <h2>Main essay and eleven essays on the AI shift</h2>
+    <p class="section-intro">Begin with the main essay if you want the broad synthesis. The shorter essays then deepen different parts of the same shift: industry, politics, AGI, robotics, transformation, debate, intelligence and meaning.</p>
+
+    <a href="civilisationsskiftet.html" class="debate-highlight">
+      <div class="debate-highlight__label">Main essay</div>
+      <div class="debate-highlight__title">The civilisational shift</div>
+      <div class="debate-highlight__excerpt">A longer synthesis on why AI is not just changing tools and professions, but pressing forward a new economic, social and existential contract.</div>
+    </a>
+
+    <div class="essay-grid">
+      <a href="inte-excel.html" class="essay-card">
+        <div class="essay-card__number">Essay 1</div>
+        <div class="essay-card__title">Why AI is not Excel</div>
+        <div class="essay-card__excerpt">A conceptual text on the difference between ordinary rule automation and AI as support in interpretation, analysis and other applied cognitive work.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="fabriksgolvet.html" class="essay-card">
+        <div class="essay-card__number">Essay 2</div>
+        <div class="essay-card__title">What I see from the factory floor</div>
+        <div class="essay-card__excerpt">A field-based text on how AI is already being used in sharp improvement and analysis flows — and where the technology still falls short.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="politiken-missar.html" class="essay-card">
+        <div class="essay-card__number">Essay 3</div>
+        <div class="essay-card__title">What policy misses</div>
+        <div class="essay-card__excerpt">On why the tempo, responsibility distribution and workshop level in Swedish AI policy still lags behind the problem's scale.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="agi.html" class="essay-card">
+        <div class="essay-card__number">Essay 4</div>
+        <div class="essay-card__title">AGI and what it actually means</div>
+        <div class="essay-card__excerpt">A sober overview of definitions, uncertainty, safety and why AGI is already a planning question without being a finished conclusion.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="overflod.html" class="essay-card">
+        <div class="essay-card__number">Essay 5</div>
+        <div class="essay-card__title">When costs are pressed down</div>
+        <div class="essay-card__excerpt">On why faster cost falls in certain domains can reshape the economy — but do not automatically create justice, security or abundance for all.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="turbulenta-aren.html" class="essay-card">
+        <div class="essay-card__number">Essay 6</div>
+        <div class="essay-card__title">The turbulent years</div>
+        <div class="essay-card__excerpt">A scenario attempt for 2026–2031: three possible waves, which signals matter and why the North has both strengths and risks.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="efter-jobbet.html" class="essay-card">
+        <div class="essay-card__number">Essay 7</div>
+        <div class="essay-card__title">After work</div>
+        <div class="essay-card__excerpt">On meaning, identity and which institutions can bear a society where less human wage labour is needed to keep production going.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="fysiska-fronten.html" class="essay-card">
+        <div class="essay-card__number">Essay 8</div>
+        <div class="essay-card__title">The physical front</div>
+        <div class="essay-card__excerpt">On robotics, geopolitical automation race and why the one who only watches software misses half the shift.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="farliga-glappet.html" class="essay-card">
+        <div class="essay-card__number">Essay 9</div>
+        <div class="essay-card__title">The dangerous gap in the AI debate</div>
+        <div class="essay-card__excerpt">On the illusion of AI as "just a tool", why historical comparisons limp and why 15 years is too short a time to wait for societal transformation.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="emotionellt-minne.html" class="essay-card">
+        <div class="essay-card__number">Essay 10</div>
+        <div class="essay-card__title">Why AI needs emotions</div>
+        <div class="essay-card__excerpt">On emotionally weighted memory consolidation, predictive coding and why intelligence without feeling for what matters is not intelligence.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+      <a href="du-har-inte-testat-ai.html" class="essay-card">
+        <div class="essay-card__number">Essay 11</div>
+        <div class="essay-card__title">You haven't tested AI</div>
+        <div class="essay-card__excerpt">On the chasm between the free version and AI's full capacity — and why the one who tested the demo version does not know what they do not know.</div>
+        <div class="essay-card__read">Read →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>About AI-skiftet</h2>
+        <p>AI-skiftet is an independent essay project on how AI is changing work, industry, politics and society.</p>
+        <p>The perspective is deliberately industry-near. The texts do not primarily come from seminar rooms or general trend-spotting, but from work in sharp production environments, improvement projects and conversations about what the technology is actually changing when quality, economy and responsibility matter.</p>
+        <p>The ambition is twofold: to raise the level of the Swedish AI debate and to make the arguments more testable. Therefore the texts distinguish as far as possible between observation, inference, scenario and normative proposal, and each essay has its own source notes.</p>
+        <p><strong>Rolf Skogling</strong> — mechanical engineer and consultant in industrial optimisation. Works with AI in sharp operations within Nordic and European manufacturing industry.</p>
+        <p><a href="sources.html">Sources and reference page →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="sources.html">Sources</a></p>
+  </div>
+</footer>
+
+<script>
+const filterBtns = document.querySelectorAll('.filter-tag');
+const newsCards = document.querySelectorAll('.news-card');
+const dateGroups = document.querySelectorAll('.news-date-group');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    newsCards.forEach(card => {
+      card.style.display = (filter === 'alla' || card.dataset.tags.includes(filter)) ? '' : 'none';
+    });
+    dateGroups.forEach(group => {
+      const visible = group.querySelectorAll('.news-card:not([style*="display: none"])');
+      group.style.display = visible.length ? '' : 'none';
+    });
+  });
+});
+</script>
+
+</body>
+</html>

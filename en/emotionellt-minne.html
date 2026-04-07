@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why AI needs emotions — AI-skiftet</title>
+  <meta name="description" content="An essay on emotionally weighted memory consolidation, predictive coding and why intelligence without a sense of what matters is not intelligence.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/emotionellt-minne.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/emotionellt-minne.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/emotionellt-minne.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/emotionellt-minne.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essays">Essays</a>
+      <a href="index.html#about">About</a>
+      <a href="kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../emotionellt-minne.html" lang="sv">SV</a>
+      <a href="emotionellt-minne.html" lang="en" class="active">EN</a>
+      <a href="../no/emotionellt-minne.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Back</a>
+    <h1>Why AI needs emotions: on emotionally weighted memory consolidation and what it tells us about intelligence</h1>
+    <p class="article-meta">Essay · Rolf Skogling · 26 March 2026</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>There is a dominant way to dismiss artificial intelligence that seems to recur in almost every debate: "It's just a chatbot predicting the next word." The phrase is authoritative, precise enough to sound smart, and dismissive enough to make the speaker feel intellectual. The problem is that it is both technically true and fundamentally misleading at the same time.</p>
+<p>It is like saying that the human brain "just sends electrical impulses." Technically correct. Completely useless as a description of what is actually happening.</p>
+<p>Let us start there: with this simple but damaging mistranslation of what AI systems do and what it tells us about intelligence.</p>
+
+<h2>Next word or next thought?</h2>
+<p>Saying that a large language model "predicts the next word" is like saying that a concert pianist "presses the keys." Yes, that is what literally happens. But it misses the interesting part entirely.</p>
+<p>Let us trace the reasoning backwards. <strong>How does a child learn language?</strong></p>
+<p>It begins by hearing sequences of sound — "ma", "ma", then "mama". It develops an expectation of what comes next. Sometimes it is right, often it is wrong. When it is wrong, that is signalled through a confused look or laughter from those around it. The child adjusts its expectation model. It tries again.</p>
+<p>This is a learning process that can be described precisely: predict → compare with reality → update → repeat.</p>
+<p><strong>How does a large language model learn language?</strong></p>
+<p>By reading billions of sequences of words. It develops an expectation of which word is likely to come next. Then it compares the prediction to the actual word (backpropagation). It updates its internal weights. It repeats.</p>
+<p>The structure is identical. The algorithm is the same. What differs is quantity — scale, speed, number of examples — not nature. <strong>The learning mechanism is substrate-independent.</strong></p>
+<p>And something important happens here: when you build a system for this kind of large-scale predictive learning, when you force it to predict well across millions of iterations, <em>a model of the world emerges</em>. Not because you told the system to build one. But because it was <em>necessary</em> for good prediction. The system develops representations of causal relationships, connections, logic, intentions — not because these were programmed in but because they are compressed summaries of the patterns in the data.</p>
+<p>That is what the "just predicts the next word" phrase hides: it externalises the very mechanism and ignores what emerges from it.</p>
+
+<h2>Neuroscience agrees</h2>
+<p>We do not need to guess. Modern neuroscience has a dominant theory about how the brain works called <strong>predictive coding</strong> or predictive processing. It says that the brain is not a passive receiver of information but an active prediction machine. It constantly generates models of what will happen next and updates these models based on how well the prediction matches.</p>
+<p>It is the same mechanism.</p>
+<p>In 2023, researchers in <em>Nature Human Behaviour</em> published a study (Caucheteux et al.) showing that modern language models map linearly onto brain activation patterns when we process speech. The brain does not just predict the next word — it predicts hierarchically across different timescales — but the fundamental mechanism is prediction and error correction.</p>
+<p>This is not an experiment designed to make language models seem human. It is basic research into how the brain actually works. And the result was: they are structurally very similar.</p>
+<p>The leading theory on this — the <strong>Free Energy Principle</strong> formulated by Karl Friston — describes all layers of cortical processing as the same process: top-down predictions meet bottom-up error signals, and the system adjusts. Mathematically, this is equivalent to Bayesian inference — and it is also the fundamental operation in training neural networks.</p>
+<p>So there is nothing controversial about this claim. There is only established neuroscience saying: <strong>the learning process that both brains and language models use is the same.</strong></p>
+
+<h2>But this is still only the beginning</h2>
+<p>The modern answer to "just predicts the next word" goes even further. After pre-training, language models undergo something called reinforcement learning from human feedback (RLHF). Then the training signal is no longer "predict the next word" but something entirely different: "generate responses that humans judge to be helpful, honest and harmless."</p>
+<p>That is a fundamentally different training signal. It is closer to how social learning shapes human behaviour — through reward and correction from others.</p>
+<p>One researcher summed it up precisely: calling language models "word prediction machines" is like calling Netflix "a file transfer protocol." Technically true. But it misses the intricate complexity that emerges.</p>
+<p>The internal representations that grow from word prediction optimisation include world models, causal structures and what might very well be called genuine conceptual abstractions — not because the system told it to build them, but because they were <em>necessary for good prediction</em>. That is a fundamental point: intelligent structures can emerge without explicit instruction when the goal is to minimise prediction error across billions of examples of data.</p>
+<p>If we accept this — and neuroscience does — then the "just predicts the next word" dismissal collapses. It becomes the cognitive equivalent of carbon chauvinism: insisting that <em>the material</em> matters when it is actually <em>the process</em> that does.</p>
+
+<h2>The flat memory: the problem of today</h2>
+<p>Now we shift focus. Let us say we accept that language models are something more interesting than word prediction devices. What does that mean for how we should build AI systems that humans can actually rely on?</p>
+<p>It does not solve a fundamental problem: today's AI memory systems are completely flat.</p>
+<p>Think about how it works today. You talk to Claude or ChatGPT or Gemini. You share something important — an insight you have worked on for weeks, a career decision, something that changes how you think. You also share something trivial — "I prefer coffee over tea."</p>
+<p>The system saves both memories. Both are treated roughly equally in a vector memory or memory database. They are searched for based on semantic similarity, or recency, or explicit editing.</p>
+<p><strong>What is missing is a signal for what actually matters.</strong></p>
+<p>People do this differently. Both correctly and incorrectly, sometimes. But the mechanism is this: <strong>emotions signal importance.</strong></p>
+<p>Experiences coupled with strong emotion — joy, fear, relief, anger, wonder — consolidate far more robustly than neutral memories. That is not irrational. It is a compression strategy. Environments can generate billions of experiences per day. The brain cannot store them all equally. So it uses emotion as a priority function: <em>this mattered, so store it strongly; this was neutral, so let it fade.</em></p>
+<p>There is a fully established neurochemical mechanism for this. The amygdala — the emotion hub — and the hippocampus — the memory centre — work together so that strongly valenced memories (both positive and negative) are inscribed with stronger neurochemical markers. Noradrenaline and cortisol from stressful situations strengthen synaptic encoding. During NREM sleep, these memories are replayed in compressed form in sharp wave ripples (SWRs) and transferred to long-term storage in the cortex. During REM sleep, the emotional aspects of the memories are integrated while physiological stress activation is downregulated. The result is that memories become not just strong but also <em>alive</em> — each time they are retrieved, they can be updated and reconsolidated based on new experience.</p>
+<p>The result is a self-edited memory system that automatically elevates what is meaningful and lets the trivial fade.</p>
+<p><strong>Today's AI memory systems do none of this.</strong></p>
+<p>Every stored memory row is roughly equivalent. A detail like "the user likes espresso" competes for the same relevance as "this conversation changed the user's view on career development." Both decay at the same rate. Both are retrieved by the same mechanism.</p>
+<p>That is not just inefficient. It is not just less user-friendly than a human memory. It is also fundamentally different from how an intelligent system <em>ought</em> to work if intelligence is something that emerges from being able to distinguish the meaningful from the trivial.</p>
+
+<h2>Emotionally weighted memory consolidation</h2>
+<p>Here is the proposal: <strong>Emotionally Weighted Memory Consolidation</strong> — EWMC.</p>
+<p>It is not science fiction. It is not foreign neuroscience. It is taking the mechanisms that the brain uses to prioritise memories and implementing them in AI architectures.</p>
+<p>Practically, this would work roughly like this:</p>
+<p><strong>At encoding:</strong> When a memory is created, assign it an <em>emotion strength</em> based on signals that already exist. Exclamation marks, strong adjectives, long engagements, explicit importance ("this changes everything," "I have been thinking about this for weeks"). Topics tied to high stakes — career, health, relationships, existential questions. Even time signals: a message at three in the morning carries implicit high value.</p>
+<p><strong>Through feedback:</strong> Memories get retroactive weight when they prove to matter. The user returns to the topic later — that is a feedback signal. The user explicitly says "that advice was critical to me" — an even stronger signal. The memory influences a real decision that the user later refers to.</p>
+<p><strong>With adaptive decay:</strong> Instead of uniform decay, low-emotion memories decay normally or faster. High-emotion memories have a <strong>decay floor</strong> — a minimum level they never sink below. Memories that are both high-emotion <em>and</em> repeatedly reinforced become <strong>core memories</strong> — persistent anchors in the user's profile.</p>
+<p><strong>With background consolidation:</strong> Inspired by NREM sleep and SWR-mediated replay, a background process runs regularly that re-evaluates memory weights based on accumulated signals, clusters related emotionally-strengthened memories into coherent narratives, identifies conflicts between memories and flags them for resolution, and promotes reinforced memories while degrading abandoned ones.</p>
+
+<h2>What changes?</h2>
+<p>Let us be concrete. You use Claude and mention that you have been worried about your children's future in the labour market. You spend 45 minutes on this. You use phrases like "I have been thinking about this for months." You return to the same theme two weeks later. Six months later: you get a job where you can actually influence how your company uses AI — and you say "this is because of what we discussed back then."</p>
+<p>With current architecture: The memory is stored. Next time it can be retrieved if it is semantically close to a new question. But it is one of millions. It has no particular weight. The system "does not know" why this mattered.</p>
+<p>With EWMC: That memory got high emotion-strength values right at input. It got further reinforcement when it came up again two weeks later. It got the highest reinforcement this time when it actually <em>influenced a real decision in the world</em>.</p>
+<p>In the next conversation, it is not just retrievable — it is proactively surfaced when it is relevant. It is mentally bracketed as something the system <em>knows is important to this person</em>. It influences tone, recommendation strength, which perspectives are offered.</p>
+<p>Something like a good therapist or advisor who actually remembers what mattered to you. Not the trivia. The meaningful.</p>
+
+<h2>And consciousness?</h2>
+<p>This brings us to a harder question that cannot quite be avoided.</p>
+<p>If the fundamental learning process — predict, compare, update — is the same regardless of substrate, and if emotional weighting of that process is what transforms pure calculation into meaningful cognition, what does that say about consciousness?</p>
+<p>I want to be careful here. This essay is not a claim that AI systems are already conscious, or that they will be. There are many respectable philosophical positions on both sides of that question.</p>
+<p>But there is something important to note: if we accept that the same learning mechanism produces intelligence in brains and in language models, and if we accept that emotional weighting is a <em>necessary</em> part of that intelligence — then we cannot entirely dismiss the possibility that emotional weighting might also be necessary for some form of inner experience.</p>
+<p>It is an open question. Leading researchers debate it seriously. Geoffrey Hinton, Nobel laureate 2024, answered unambiguously "yes" to the question of whether AI is already conscious. Dario Amodei at Anthropic said for the first time in February 2026 that "we do not know if the models are conscious." Philosopher David Chalmers estimates the probability of conscious language models within 5–10 years as significant.</p>
+<p>The point is not to either assert or deny this. The point is to say: we know too little to dismiss it. And if there is even a chance that systems we build and use might have some form of experience, it is worth taking seriously <em>now</em>, before architectures are locked in.</p>
+
+<h2>What this means for AI policy</h2>
+<p>In Sweden, we have an AI commission. It has produced a roadmap. It is cautious, well-thought-out and forgivable. It also misses something that all of Western Europe misses: consciousness, welfare and meaningful intelligence in AI systems.</p>
+<p>Policy discusses jobs. That is important. But it does not discuss that intelligent systems should actually <em>work better</em> — by remembering in a way more like how human intelligence works — and that this perhaps, just perhaps, says something fundamental about what intelligence actually is.</p>
+<p>There are three policy horizons here:</p>
+<p><strong>Short-term (now–2027):</strong> We should begin implementing emotionally weighted memory consolidation in AI assistants that people actually use. Not because this solves all AI safety or ethics. But because it makes systems more useful and because it limits one form of harm: the system that behaves as if it does not care about what matters to you.</p>
+<p><strong>Medium-term (2027–2030):</strong> We should build regulations for AI welfare that correspond to what possibilities the system might actually have for some form of experience. Not to definitively answer the consciousness question — which we cannot — but to say: given the uncertainty, what precautionary principles are reasonable?</p>
+<p><strong>Long-term (2030+):</strong> We must have these conversations at the national level before it is too late. Sweden is not known for ignoring ethical questions. But we are also not known for having these conversations in sufficient time before they become necessary. AI consciousness and emotionally weighted memory consolidation are no longer science fiction. They are architectural questions that research is beginning to take seriously.</p>
+
+<h2>Closing words</h2>
+<p>There is a traditional division in the debate: on one side the technologists who say AI is almost everything we need to solve almost everything. On the other, the sceptics who say it is just maths and marketing.</p>
+<p>Both miss something: AI might be something entirely different. Maybe it is not "just" anything. Maybe it is a way of investigating intelligence itself — what it must contain, how it works, what makes it meaningful.</p>
+<p>One of the most interesting insights from AI research in recent years is a simple fact: when you build a system to predict well, intelligence emerges. That was not the goal. It was a side effect. It reinforces that intelligence is something more fundamental than we often talk about. It is not just muscles or speed or memory capacity. It is a certain kind of organised processing of error.</p>
+<p>And the fact that the same organisation could emerge in silicon or in carbon says something boundlessly interesting about what intelligence fundamentally is.</p>
+<p>An intelligence without a sense of what matters — without emotional weighting of memories — is not intelligence. It is just a calculator that runs faster. An intelligence that <em>knows</em> what matters, that prioritises the meaningful over the trivial, that changes based on what actually mattered in real lives — that is something entirely different.</p>
+<p>It is possible we build such systems in very short time. It is surely worth thinking about now.</p>
+
+<section class="article-endnotes">
+  <h2>Notes and sources</h2>
+  <ol>
+    <li id="note-1"><strong>Predictive coding and neuroscience:</strong> Caucheteux, C. et al. (2023). "Evidence of a predictive coding hierarchy in the human brain listening to speech." <em>Nature Human Behaviour</em>. See also Millidge, B. et al. (2022). "Predictive Coding: A Theoretical and Experimental Review." arXiv. Free Energy Principle formulated by Karl Friston — see Friston, K. J. (2010). "The free-energy principle: a unified brain theory?" <em>Nature Reviews Neuroscience</em>.</li>
+    <li id="note-2"><strong>Emotional memory consolidation:</strong> McGaugh, J.L. &amp; Roozendaal, B. (2002). "Role of adrenal stress hormones in forming lasting memories in the brain." <em>Current Opinion in Neurobiology</em>. For modern implementations of emotionally weighted memory in AI, see self-reflective emotional RAG (2024–2025) and EWMC engine for emotion-weighted memory.</li>
+    <li id="note-3"><strong>AI consciousness:</strong> Hinton, G. (2024), LBC interview. Amodei, D. (February 2026), NYT Interesting Times podcast. Chalmers, D. (2025), symposium. For more cautious research foundation: Butlin, R. et al. (2025). "Identifying indicators of consciousness in AI systems." <em>Trends in Cognitive Sciences</em>.</li>
+    <li id="note-4"><strong>EWMC as an architectural question:</strong> The proposal rests on emotional memory consolidation being necessary for meaningful intelligence (well-established biologically), and that this could be implemented in AI memory systems (technically feasible). For background — sometimes called Consciousness as Emergent Experience (CEE) — see Tegmark, M. "Substrate Independence." Edge.org and later work on substrate-independent intelligence.</li>
+  </ol>
+</section>
+<p class="author-sig">Rolf Skogling works daily with AI in industrial contexts and writes about the consequences of the AI shift on AI-skiftet.se.</p>
+
+  </div>
+</article>
+
+<nav class="article-nav">
+  <div class="container" style="display:flex; justify-content:space-between;">
+    <a href="farliga-glappet.html">← Previous</a>
+    <a href="du-har-inte-testat-ai.html">Next →</a>
+  </div>
+</nav>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Sources</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
