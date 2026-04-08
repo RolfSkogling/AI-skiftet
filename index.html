@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI-skiftet — essäer och nyheter om AI, arbete och samhällsomställning</title>
   <meta name="description" content="Dagliga nyheter och essäer om AI-skiftet: modeller, forskning, fysisk AI, industri, politik, AGI, robotik och omställning. Ett industrinära perspektiv.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/index.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/index.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -54,6 +58,12 @@
     .news-card__source{font-size:.76rem;color:var(--muted);margin-top:6px;opacity:.7}
     .news-card__source a{color:var(--muted)}
     .news-card__source a:hover{color:var(--accent)}
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
   </style>
 </head>
 <body>
@@ -69,6 +79,11 @@
       <a href="#essaer">Essäer</a>
       <a href="#om">Om</a>
       <a href="kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="index.html" lang="sv" class="active">SV</a>
+      <a href="en/index.html" lang="en">EN</a>
+      <a href="no/index.html" lang="nb">NO</a>
     </div>
   </div>
 </nav>
