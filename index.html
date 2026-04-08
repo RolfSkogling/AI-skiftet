@@ -9,18 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/index.html">
-  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/index.html">
-  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/index.html">
-  <style>
-    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
-    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
-    .lang-switcher a.active{background:#8c4a1f;color:#fff}
-    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
-    .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-    .site-nav__links{margin-left:0}
-  </style>
   <style>
     /* --- Nyhetssektion (tillägg till style.css) --- */
     .news-section{padding:44px 0 60px;border-bottom:1px solid rgba(140,74,31,.08)}
@@ -82,12 +70,6 @@
       <a href="#om">Om</a>
       <a href="kallor.html">Källor</a>
     </div>
-    <div class="lang-switcher">
-      <a href="#" lang="sv" class="active">SV</a>
-      <a href="en/index.html" lang="en">EN</a>
-      <a href="no/index.html" lang="nb">NO</a>
-    </div>
-
   </div>
 </nav>
 
@@ -119,6 +101,35 @@
     </div>
 
     <div class="news-list" id="newsList">
+
+    <!-- ============================================ -->
+    <!-- DAGLIG POST: 2026-04-08                      -->
+    <!-- ============================================ -->
+    <div class="news-date-group" data-date="2026-04-08">
+      <div class="news-date">8 april 2026</div>
+
+      <div class="news-card" data-tags="modeller">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.anthropic.com/glasswing">Anthropic lanserar Project Glasswing — Claude Mythos Preview hittar tusentals zero-days men släpps inte publikt</a></h3>
+        <p>Anthropic presenterade den 7 april Project Glasswing, ett cybersäkerhetsinitiativ tillsammans med AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, Microsoft och Nvidia samt ett fyrtiotal organisationer som underhåller kritisk infrastruktur. I centrum står Claude Mythos Preview — en frontiermodell som enligt Anthropic är "långt före alla andra AI-modeller i cyberkapacitet" och som redan har identifierat tusentals tidigare okända zero-day-sårbarheter i alla stora operativsystem och webbläsare. Bland fynden finns en 27 år gammal bugg i OpenBSD och en 16 år gammal bugg i FFmpeg som automatiserade tester missat efter fem miljoner körningar. På SWE-bench Verified når Mythos 93,9 procent (mot 80,8 för Opus 4.6). Modellen kommer inte göras allmänt tillgänglig — Anthropic varnar för att kommande modeller av samma klass kan utnyttja sårbarheter snabbare än försvararna hinner med, och vill utveckla skyddsmekanismer innan bredare release.</p>
+        <div class="news-card__source">Källa: <a href="https://www.anthropic.com/glasswing">Anthropic</a>, <a href="https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/">Fortune</a>, <a href="https://www.cnbc.com/2026/04/07/anthropic-claude-mythos-ai-hackers-cyberattacks.html">CNBC</a>, <a href="https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/">TechCrunch</a></div>
+      </div>
+
+      <div class="news-card" data-tags="debatt">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://openai.com/index/industrial-policy-for-the-intelligence-age/">OpenAI föreslår Public Wealth Fund, robotskatt och 32-timmarsvecka i policypapper om superintelligensens tidsålder</a></h3>
+        <p>OpenAI släppte den 6 april det trettonsidiga dokumentet "Industrial Policy for the Intelligence Age: Ideas to Keep People First" — ett förslag till hur samhället bör navigera övergången mot superintelligens, presenterat som startpunkt för diskussion snarare än färdiga rekommendationer. Bland de konkreta förslagen finns en Public Wealth Fund där stater och AI-bolag gemensamt investerar i AI-driven tillväxt och fördelar avkastningen till medborgarna, samt en omläggning av skattebasen från löner mot kapital- och bolagsvinster inklusive avgifter kopplade till användning av "automatiserade arbetare". På arbetsmarknadssidan föreslås statligt finansierade piloter med 32-timmars arbetsvecka utan löneavdrag och portabla förmånssystem frikopplade från enskilda arbetsgivare. Dokumentet kräver också en ny styrningsstruktur för frontier-AI med incidentrapportering i flygsäkerhetens anda och internationell koordinering. Kritiker som Gizmodo kallar visionen "vag" — förslagen är ambitiösa men saknar finansieringsdetaljer och konkreta mandat.</p>
+        <div class="news-card__source">Källa: <a href="https://openai.com/index/industrial-policy-for-the-intelligence-age/">OpenAI</a>, <a href="https://www.bloomberg.com/news/articles/2026-04-06/openai-advocates-electric-grid-safety-net-spending-for-new-ai-era">Bloomberg</a>, <a href="https://qz.com/openai-robot-taxes-public-wealth-fund-ai-jobs">Quartz</a>, <a href="https://thenextweb.com/news/openai-robot-taxes-wealth-fund-superintelligence-policy">The Next Web</a></div>
+      </div>
+
+      <div class="news-card" data-tags="arbetsmarknad">
+        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+        <h3><a href="https://www.prnewswire.com/news-releases/ai-agents-force-rethink-of-saas-pricing-and-improve-customer-experiences-302734934.html">Automation Anywhere: AI-agenter löser 80 procent av IT-supportärenden — sparar storbolag över 5 miljoner dollar om året</a></h3>
+        <p>Automation Anywhere rapporterade den 6 april att AI-agenter nu i snitt autonomt löser över 80 procent av medarbetarnas IT-supportärenden i mer än 70 företagsimplementationer som bolaget analyserat. Enligt rapporten kan detta minska licenskostnaderna för IT Service Management med upp till 50 procent och spara stora företag mer än 5 miljoner dollar per år. Samtalsvolymerna till servicedesk sjunker med 50 procent och de första AI-agenterna levererar värde inom åtta veckor. Siffrorna kommer från leverantören själv och bör läsas försiktigt, men signalerar en strukturell förskjutning: prissättningen för enterprise-mjukvara — som i decennier baserats på antal användarlicenser — utmanas när agenter tar över ärendetyper som tidigare krävde mänsklig handläggare. För svenska IT-avdelningar och BPO-branschen innebär det att omställningen från "sätesmodell" till "utfallsmodell" accelererar redan under 2026.</p>
+        <div class="news-card__source">Källa: <a href="https://www.prnewswire.com/news-releases/ai-agents-force-rethink-of-saas-pricing-and-improve-customer-experiences-302734934.html">PR Newswire</a>, <a href="https://techedgeai.com/automation-anywheres-ai-agents-cut-itsm-licensing-by-up-to-50-and-resolve-more-than-80-of-requests/">TechEdge AI</a></div>
+      </div>
+
+    </div>
 
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-04-07                      -->
@@ -319,55 +330,6 @@
         <div class="news-card__source">Källa: <a href="https://www.regeringen.se/pressmeddelanden/2026/02/sveriges-forsta-heltackande-ai-strategi-ska-ge-en-topp-tio-placering/">Regeringen.se</a>, <a href="https://www.ey.com/sv_se/newsroom/2026/03/sverige-ligger-fortsatt-efter-ai-anvandning">EY Sverige</a></div>
       </div>
 
-    </div>
-
-    <!-- ============================================ -->
-    <!-- DAGLIG POST: 2026-03-31                      -->
-    <!-- ============================================ -->
-    <div class="news-date-group" data-date="2026-03-31">
-      <div class="news-date">31 mars 2026</div>
-
-      <div class="news-card" data-tags="modeller">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Anthropic Mythos läckt — "stegvis förändring" i kapacitet väcker cybersäkerhetslarm</a></h3>
-        <p>En konfigurationsmiss exponerade nästan 3 000 opublicerade tillgångar på Anthropics blogg, däribland detaljer om Claude Mythos (internt "Capybara") — en modell som enligt bolaget representerar "a step change" i prestanda jämfört med Opus 4.6. Mythos visar dramatiskt högre resultat på kodning, akademiskt resonemang och cybersäkerhet, men interna dokument varnar för att modellen snabbt kan identifiera och utnyttja sårbarheter — en potentiell accelerator för cyberkapprustning.</p>
-        <div class="news-card__source">Källa: <a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/">Fortune</a>, <a href="https://fortune.com/2026/03/27/anthropic-leaked-ai-mythos-cybersecurity-risk/">Fortune (cybersäkerhet)</a></div>
-      </div>
-
-      <div class="news-card" data-tags="infrastruktur">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
-        <h3><a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">Mistral säkrar 830 miljoner dollar för AI-datacenter utanför Paris</a></h3>
-        <p>Franska Mistral tar upp 830 miljoner dollar i skuldfinansiering från sju banker — BNP Paribas, Crédit Agricole, HSBC och MUFG bland dem — för att bygga ett datacenter med 13 800 Nvidia GB300-GPU:er i Bruyères-le-Châtel. Kapacitet: 44 MW, driftstart Q2 2026. Bolaget siktar på 200 MW total kapacitet i Europa till slutet av 2027, inklusive en planerad anläggning i Sverige. Det tydligaste tecknet hittills på att europeisk AI-infrastruktur nu är bankbar.</p>
-        <div class="news-card__source">Källa: <a href="https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html">CNBC</a>, <a href="https://www.bloomberg.com/news/articles/2026-03-30/ai-startup-mistral-raises-830-million-in-data-center-debt-rush">Bloomberg</a></div>
-      </div>
-
-      <div class="news-card" data-tags="modeller">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">Apple destillerar Googles Gemini till on-device-modeller för nästa Siri</a></h3>
-        <p>Apple har fått "fullständig tillgång" till Gemini i Googles datacenter och använder modellen för destillering — att skapa mindre, uppgiftsspecifika modeller som kan köras lokalt på iPhone. Avtalet, värt uppskattningsvis en miljard dollar per år, driver Apples Siri-överhalning (Project Campos) med kontextmedveten, appöverskridande AI. iOS 27 planerar även "Extensions" som låter användare koppla in Claude, Gemini eller ChatGPT som alternativa AI-assistenter.</p>
-        <div class="news-card__source">Källa: <a href="https://www.macrumors.com/2026/03/25/apple-google-gemini-distill-models/">MacRumors</a>, <a href="https://9to5mac.com/2026/03/25/new-details-on-apple-google-ai-deal-revealed-including-gemini-changes-report/">9to5Mac</a></div>
-      </div>
-
-      <div class="news-card" data-tags="debatt">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--debatt">Debatt</span></div>
-        <h3><a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Jensen Huang: "Jag tror att vi har uppnått AGI" — definitionen splittrar branschen</a></h3>
-        <p>Nvidias vd sa i Lex Fridmans podd att AGI redan är här — definierat som AI som kan starta och driva ett miljardbolag. Mark Gubrud, fysikern som myntade begreppet på 90-talet, håller med i sak men inte i implikation. Kritiker invänder att Huangs definition är skräddarsydd för att sälja GPU:er. Debatten blottlägger att "AGI" saknar en gemensam definition, vilket gör varje påstående om att det uppnåtts till en retorisk snarare än vetenskaplig fråga.</p>
-        <div class="news-card__source">Källa: <a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/">Fortune</a>, <a href="https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-claims-agi-has-been-achieved-can-create-billion-dollar-businesses-172225126.html">Yahoo Finance</a></div>
-      </div>
-
-      <div class="news-card" data-tags="arbetsmarknad">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
-        <h3><a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Humanoida robotar kan kosta 13 000 dollar 2035 — Bank of America spår 3 miljarder enheter</a></h3>
-        <p>Bank of America Institute beräknar att materialkostnaden för en humanoid robot faller från 35 000 dollar (2025) till 13 000–17 000 dollar 2035 — i paritet med en bil. Bankens långtidsprognos: 3 miljarder humanoider i drift år 2060, fler än världens bilar per capita. Siffran är spekulativ, men pekar mot en arbetsmarknad där fysisk automation inte längre begränsas av kostnad utan av reglering och integration.</p>
-        <div class="news-card__source">Källa: <a href="https://fortune.com/2026/03/25/ai-robots-cost-13000-by-2035-what-that-means-for-cfos/">Fortune</a>, <a href="https://fortune.com/2026/03/13/bank-of-america-humanoid-robot-forecast-3-billion-2060/">Fortune (prognos)</a></div>
-      </div>
-
-      <div class="news-card" data-tags="forskning">
-        <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://lexfridman.com/jensen-huang-transcript/">Donald Knuth publicerar "Claude Cycles" — analyserar AI-beteende från Stanfords perspektiv</a></h3>
-        <p>Legendaren inom datavetenskap, Donald Knuth vid Stanford, publicerade en ny uppsats som granskar Claudes beteendemönster i resonemang och kodgenerering. Att en av disciplinens grundare ägnar sig åt att dissekera AI-modellers logik signalerar att frontier-modellernas kognitiva egenskaper nu är ett seriöst forskningsämne — inte bara en produktfråga.</p>
-        <div class="news-card__source">Källa: <a href="https://www.theneuron.ai/ai-news-digests/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-march-28-29-2026/">The Neuron</a></div>
-      </div>
     </div>
 
     </div><!-- /news-list -->
