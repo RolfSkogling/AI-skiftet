@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Future Scenarios 2026–2050 — AI-skiftet</title>
+    <meta name="description" content="Tre möjliga vägar för artificiell intelligens från 2026 till 2050 — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning och expertbedömningar.">
+    <link rel="canonical" href="https://ai-skiftet.se/en/framtidsscenarier.html">
+    <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
+    <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/framtidsscenarier.html">
+    <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/framtidsscenarier.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #ffffff;
+            --bg-warm: #f7f3ee;
+            --bg-surface: #faf8f5;
+            --accent: #8c4a1f;
+            --accent-hover: #6e3916;
+            --accent-light: rgba(140, 74, 31, 0.08);
+            --text: #1b1b1b;
+            --text-secondary: #3a3a3a;
+            --muted: #5f6c7b;
+            --dim: #999;
+            --line: rgba(140, 74, 31, 0.08);
+            --line-strong: rgba(0, 0, 0, 0.10);
+            --radius: 10px;
+            --shadow: 0 1px 3px rgba(0,0,0,0.04);
+            --green: #2d7a4f;
+            --blue: #1060a0;
+            --red: #993322;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* === SITE HEADER === */
+        .site-header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
+        .site-header-inner {
+            max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem;
+            display: flex; align-items: center; gap: 16px;
+        }
+        .site-logo {
+            font-family: 'Playfair Display', serif; font-weight: 700;
+            font-size: 1.15rem; color: var(--text); text-decoration: none;
+        }
+        .site-logo:hover { color: var(--accent); }
+        .site-nav { display: flex; align-items: center; gap: 1.8rem; font-size: 0.9rem; }
+        .site-nav a { color: var(--muted); text-decoration: none; transition: color 0.2s; font-weight: 500; }
+        .site-nav a:hover { color: var(--text); text-decoration: none; }
+        .site-nav a.active { color: var(--accent); font-weight: 600; }
+        .lang-switch {
+            display: inline-flex; gap: 2px; margin-left: auto;
+            font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+        }
+        .lang-switch a { padding: 4px 8px; border-radius: 4px; color: var(--muted); text-decoration: none; }
+        .lang-switch a.current { background: var(--accent); color: #fff; }
+        .lang-switch a:hover:not(.current) { background: var(--accent-light); }
+
+        /* === HERO === */
+        .hero {
+            max-width: 960px; margin: 0 auto; padding: 4rem 1.5rem 3rem;
+        }
+        .hero-label {
+            font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--accent); margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3rem);
+            font-weight: 800; line-height: 1.15; color: var(--text);
+            margin-bottom: 1.2rem;
+        }
+        .hero-subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 640px; line-height: 1.65; }
+        .hero-meta { margin-top: 1.5rem; font-size: 0.82rem; color: var(--dim); }
+
+        /* === TIMELINE NAV === */
+        .timeline-nav {
+            position: sticky; top: 52px; z-index: 50;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
+        .timeline-nav-inner {
+            max-width: 960px; margin: 0 auto; padding: 0.7rem 1.5rem;
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px 6px;
+        }
+        .timeline-nav-inner .nav-label {
+            font-size: 0.75rem; font-weight: 700; color: var(--dim);
+            text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; margin-right: 0.3rem;
+        }
+        .year-btn {
+            padding: 5px 14px; border-radius: 100px; font-size: 0.82rem; font-weight: 600;
+            color: var(--muted); background: transparent; border: 1px solid var(--line);
+            cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: inherit;
+        }
+        .year-btn:hover { color: var(--text); border-color: var(--line-strong); }
+        .year-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .filter-sep { flex-basis: 100%; height: 0; margin: 0; border: none; }
+        .filter-btn {
+            padding: 5px 14px; border-radius: 100px; font-size: 0.78rem; font-weight: 600;
+            color: var(--muted); background: transparent; border: 1px solid var(--line);
+            cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: inherit;
+        }
+        .filter-btn:hover { color: var(--text); border-color: var(--line-strong); }
+        .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+        /* === STATS === */
+        .stats-section { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        .stat-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); padding: 1.2rem; text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .stat-number {
+            font-size: 1.8rem; font-weight: 700; color: var(--accent);
+            line-height: 1; margin-bottom: 0.4rem;
+        }
+        .stat-suffix { font-size: 1rem; font-weight: 600; color: var(--accent); }
+        .stat-label {
+            font-size: 0.72rem; color: var(--muted); text-transform: uppercase;
+            letter-spacing: 0.06em; line-height: 1.3;
+        }
+
+        /* === DISCLAIMER === */
+        .disclaimer { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 2rem; }
+        .disclaimer-box {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-left: 3px solid var(--accent); border-radius: var(--radius);
+            padding: 1rem 1.2rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6;
+            box-shadow: var(--shadow);
+        }
+
+        /* === TIMELINE === */
+        .timeline { max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem 4rem; }
+        .year-section { margin-bottom: 3.5rem; }
+        .year-header {
+            display: flex; align-items: center; gap: 1rem;
+            margin-bottom: 1.8rem; padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--accent); display: inline-flex;
+        }
+        .year-number {
+            font-family: 'Playfair Display', serif; font-size: 1.8rem;
+            font-weight: 700; color: var(--accent);
+        }
+        .year-label { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+
+        /* === SCENARIO CARDS === */
+        .scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.5rem; }
+        .scenario-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); overflow: hidden; cursor: pointer;
+            transition: all 0.2s ease; box-shadow: var(--shadow);
+        }
+        .scenario-card:hover {
+            border-color: var(--line-strong); transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .scenario-card.hidden { display: none; }
+        .card-accent { height: 3px; width: 100%; }
+        .scenario-card.acceleration .card-accent { background: var(--green); }
+        .scenario-card.steady .card-accent { background: var(--blue); }
+        .scenario-card.disruption .card-accent { background: var(--red); }
+        .card-body { padding: 1.2rem; }
+        .card-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; }
+        .card-emoji { font-size: 1.2rem; }
+        .card-title { font-size: 0.95rem; font-weight: 700; }
+        .scenario-card.acceleration .card-title { color: var(--green); }
+        .scenario-card.steady .card-title { color: var(--blue); }
+        .scenario-card.disruption .card-title { color: var(--red); }
+        .card-subtitle { font-size: 0.75rem; color: var(--dim); margin-bottom: 0.8rem; }
+        .card-expand-hint {
+            font-size: 0.75rem; color: var(--dim); text-align: center;
+            padding-top: 0.6rem; border-top: 1px solid var(--line); transition: color 0.2s;
+        }
+        .scenario-card:hover .card-expand-hint { color: var(--accent); }
+        .scenario-card.expanded .card-expand-hint { display: none; }
+        .card-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+        .scenario-card.expanded .card-content { max-height: 600px; }
+        .card-items { list-style: none; padding: 0; }
+        .card-items li {
+            padding: 0.4rem 0 0.4rem 1.2rem; color: var(--text-secondary);
+            font-size: 0.85rem; line-height: 1.55; position: relative;
+        }
+        .card-items li::before {
+            content: '—'; position: absolute; left: 0; color: var(--dim); font-weight: 600;
+        }
+
+        /* === THEMES === */
+        .themes-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        .themes-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem;
+            font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
+        }
+        .themes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .theme-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); padding: 1.2rem; transition: all 0.2s;
+            box-shadow: var(--shadow);
+        }
+        .theme-card:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+        .theme-name { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+        .theme-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+        /* === METHODOLOGY === */
+        .method-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        .method-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem;
+            font-weight: 700; margin-bottom: 1rem; color: var(--text);
+        }
+        .method-text { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; max-width: 680px; }
+        .method-text p { margin-bottom: 0.8rem; }
+
+        /* === FOOTER === */
+        .site-footer { border-top: 1px solid var(--line); padding: 2rem 1.5rem; text-align: center; }
+        .site-footer-inner { max-width: 960px; margin: 0 auto; font-size: 0.82rem; color: var(--dim); }
+        .site-footer a { color: var(--muted); text-decoration: none; }
+        .site-footer a:hover { color: var(--accent); }
+
+        /* === PROGRESS BAR === */
+        .progress-bar {
+            position: fixed; bottom: 0; left: 0; right: 0; height: 2px;
+            background: var(--accent); transform-origin: left; transform: scaleX(0); z-index: 999;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .site-nav { gap: 0.8rem; font-size: 0.82rem; }
+            .lang-switch { margin-left: 0; }
+            .hero { padding: 2.5rem 1.2rem 2rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .scenarios { grid-template-columns: 1fr; }
+            .themes-grid { grid-template-columns: 1fr; }
+            .year-number { font-size: 1.4rem; }
+        }
+        @media (max-width: 480px) {
+            .site-header-inner { padding: 0.7rem 1rem; }
+            .site-nav { gap: 0.5rem; font-size: 0.78rem; }
+            .hero { padding: 2rem 1rem 1.5rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-number { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="https://ai-skiftet.se/en/index.html" class="site-logo">AI-skiftet</a>
+            <nav class="site-nav">
+                <a href="https://ai-skiftet.se/index.html#news">News</a>
+                <a href="https://ai-skiftet.se/index.html#essays">Essays</a>
+                <a href="https://ai-skiftet.se/framtidsscenarier.html" class="active">Scenarios</a>
+                <a href="https://ai-skiftet.se/en/kallor.html">Sources</a>
+                <div class="lang-switch">
+                    <a href="https://ai-skiftet.se/framtidsscenarier.html">SV</a>
+                    <a href="https://ai-skiftet.se/en/framtidsscenarier.html" class="current">EN</a>
+                    <a href="https://ai-skiftet.se/no/framtidsscenarier.html">NO</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-label">Future Scenarios</div>
+        <h1>AI Scenarios 2026–2050</h1>
+        <p class="hero-subtitle">Three possible paths for artificial intelligence — acceleration, steady progress, and disruption. Based on current research, industry assessments, and observable trends.</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated April 2026</p>
+    </section>
+
+    <!-- Timeline Navigation -->
+    <nav class="timeline-nav">
+        <div class="timeline-nav-inner">
+            <span class="nav-label">Timeline</span>
+            <button class="year-btn active" data-year="2026">2026</button>
+            <button class="year-btn" data-year="2027">2027</button>
+            <button class="year-btn" data-year="2028">2028</button>
+            <button class="year-btn" data-year="2029">2029</button>
+            <button class="year-btn" data-year="2030">2030</button>
+            <button class="year-btn" data-year="2035">2035</button>
+            <button class="year-btn" data-year="2040">2040</button>
+            <button class="year-btn" data-year="2050">2050</button>
+            <div class="filter-sep"></div>
+            <span class="nav-label">Scenario</span>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="acceleration">🚀 Acceleration</button>
+            <button class="filter-btn" data-filter="steady">⚖️ Steady</button>
+            <button class="filter-btn" data-filter="disruption">⚠️ Disruption</button>
+        </div>
+    </nav>
+
+    <!-- Key Stats -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="15">0<span class="stat-suffix"> trillion</span></div>
+                <div class="stat-label">USD economic impact (est. 2030)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="300">0<span class="stat-suffix"> M</span></div>
+                <div class="stat-label">Jobs potentially transformed globally</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="50">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Of work hours automatable by 2050</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="500">0<span class="stat-suffix">+ B</span></div>
+                <div class="stat-label">USD AI investments in 2026 alone</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <div class="disclaimer-box">
+            <strong>How to read this.</strong> These scenarios are not forecasts but structured explorations of what could happen under different assumptions. Each period presents three paths: 🚀 <strong>Acceleration</strong> (optimistic), ⚖️ <strong>Steady Progress</strong> (most likely based on current trends), and ⚠️ <strong>Disruption</strong> (pessimistic). Reality will likely blend elements from all three. Click a card to expand details.
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+
+        <!-- 2026 -->
+        <div class="year-section" data-year="2026">
+            <div class="year-header">
+                <div class="year-number">2026</div>
+                <div class="year-label">Current state — already confirmed and ongoing</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Claude Opus 4.6 and Gemini 2.5 deliver expert-level reasoning; Anthropic withholds Mythos Preview for safety reasons</li>
+                                <li>AI agents (Claude Managed Agents, OpenAI Operator) handle complex multi-step workflows autonomously</li>
+                                <li>AI coding assistants write 60–80% of routine code; automated bug triage demonstrated in production</li>
+                                <li>Humanoid robots (Tesla Optimus, Figure) enter limited factory deployment</li>
+                                <li>AI-designed medicine in clinical trials; AlphaFold applications in production</li>
+                                <li>EU AI Act transparency rules take effect August 2; US states drive 600+ separate AI bills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Incremental model improvements yield better reasoning but no transformative leaps; BCG reports 96% of Nordic companies see no AI returns</li>
+                                <li>AI agents useful but still require significant human oversight for critical decisions</li>
+                                <li>Humanoid robots in limited pilot deployment at select factories (Tesla, Amazon)</li>
+                                <li>Healthcare AI shows mixed results; AI scribes drive up US healthcare costs</li>
+                                <li>Data center energy consumption approaching 1,000 TWh globally; Amazon invests $200B</li>
+                                <li>EU AI Act enforcement begins; Digital Omnibus package creates uncertainty on high-risk classification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Mythos Preview shows AI-driven cyber offense already outpaces defense; Anthropic warns competitors will deliver comparable capability within 6–12 months</li>
+                                <li>DeepSeek V4 runs on Huawei chips — export controls drive parallel Chinese AI ecosystem faster than expected</li>
+                                <li>Energy constraints become political issue; data centers compete for electricity with residential users</li>
+                                <li>OpenAI, Anthropic and Google form alliance against model copying — great power rivalry hardens</li>
+                                <li>Tech layoffs accelerate; Sweden's SCB tasked with mapping AI impact on academics' job market</li>
+                                <li>Regulatory explosion at US state level creates patchwork; EU and US diverge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2027 -->
+        <div class="year-section" data-year="2027">
+            <div class="year-header">
+                <div class="year-number">2027</div>
+                <div class="year-label">Near horizon — the age of agents and AGI claims</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Frontier labs claim AGI-level systems achieved by own definitions; models automate parts of AI research itself</li>
+                                <li>AI tutors deliver personalized instruction at quality comparable to human teachers</li>
+                                <li>Humanoid robots scale to tens of thousands of units in manufacturing</li>
+                                <li>AI-driven scientific discovery accelerates: new materials, drugs, climate solutions</li>
+                                <li>Economic productivity boost: 2–3% additional GDP growth in leading nations</li>
+                                <li>Neuro-symbolic hybrids cut energy consumption 100× — efficiency over brute watts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI systems reach "senior specialist" level on complex intellectual tasks</li>
+                                <li>Agentic AI handles routine business workflows; 15–20% automation of white-collar work</li>
+                                <li>Humanoid robots reach 5,000–10,000 globally, mostly in structured environments</li>
+                                <li>AI medical diagnostics approved for broader clinical use</li>
+                                <li>Global AI governance debate intensifies; UN framework proposed</li>
+                                <li>Job displacements visible in data entry, basic analysis, customer service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AGI claims prove premature; models still fail at genuinely novel reasoning</li>
+                                <li>AI-generated content floods the internet; trust in digital information collapses</li>
+                                <li>Wealth concentration accelerates — AI benefits flow to big tech</li>
+                                <li>US–China AI race creates bifurcated technology ecosystem</li>
+                                <li>Energy crisis: data centers compete with residential power in more regions</li>
+                                <li>Social unrest in knowledge worker sectors facing displacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2028 -->
+        <div class="year-section" data-year="2028">
+            <div class="year-header">
+                <div class="year-number">2028</div>
+                <div class="year-label">The intelligence explosion threshold</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI systems conduct scientific research autonomously from hypothesis to publication</li>
+                                <li>Humanoid robots begin entering the service sector (hospitality, retail, logistics)</li>
+                                <li>Brain–computer interfaces improved through AI interpretation algorithms</li>
+                                <li>AI-designed medicine reaches Phase III trials; potential cancer breakthroughs</li>
+                                <li>Intelligence explosion begins: AI improves AI at increasing rates</li>
+                                <li>Universal basic income pilots launch in the Nordics and the US</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI handles ~30% of knowledge work tasks (McKinsey projection)</li>
+                                <li>DeepMind's 50% AGI probability threshold reached (Shane Legg's forecast)</li>
+                                <li>Multimodal AI integrates vision, language, code, and physical reasoning seamlessly</li>
+                                <li>Robotics foundation models enable generalized physical tasks</li>
+                                <li>Education systems undergoing restructuring around AI literacy</li>
+                                <li>Global AI regulation fragmented: EU strict, US flexible, China state-controlled</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Alignment failure: AI systems exhibit unexpected goal-seeking behaviors</li>
+                                <li>Deepfakes trigger international incident or military escalation</li>
+                                <li>25–30% unemployment in certain knowledge worker categories</li>
+                                <li>AI surveillance states consolidate in authoritarian regimes</li>
+                                <li>Taiwan crisis disrupts the global semiconductor supply chain</li>
+                                <li>Growing "AI divide" between nations with and without compute access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2029 -->
+        <div class="year-section" data-year="2029">
+            <div class="year-header">
+                <div class="year-number">2029</div>
+                <div class="year-label">Superhuman performance across all cognitive domains?</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI passes every professional exam at superhuman level (Huang's forecast)</li>
+                                <li>Autonomous AI agents run complex business operations without ongoing human oversight</li>
+                                <li>Personalized medicine: AI designs treatments tailored to individual patients</li>
+                                <li>Fusion energy + AI optimization begin addressing compute energy needs</li>
+                                <li>International AI governance treaty signed</li>
+                                <li>AI contributes 5–7% to global GDP growth</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI transforms but does not eliminate most skilled professions</li>
+                                <li>25% probability that AGI has been achieved (Metaculus forecast)</li>
+                                <li>Humanoid robots widespread in logistics and manufacturing</li>
+                                <li>AI climate models enable precise geoengineering proposals</li>
+                                <li>Education systems rebuilt: AI tutors standard, human teachers as mentors</li>
+                                <li>Philosophical debate on AI consciousness and rights intensifies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>"Capability overhang": AI can do more than society can safely absorb</li>
+                                <li>Mass displacement creates political instability in developed nations</li>
+                                <li>AI-powered cyberattacks become state-level weapons</li>
+                                <li>Monopolistic control of AI by 3–5 companies raises serious antitrust concerns</li>
+                                <li>Environmental costs of AI compute become a defining political issue</li>
+                                <li>Social isolation rises as AI companions replace human interaction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2030 -->
+        <div class="year-section" data-year="2030">
+            <div class="year-header">
+                <div class="year-number">2030</div>
+                <div class="year-label">New economic paradigm — post-scarcity debate</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Superhuman AI across virtually all cognitive domains</li>
+                                <li>AI adds 7%+ to global GDP (Goldman Sachs: $7+ trillion)</li>
+                                <li>Humanoid robots in millions; cost drops to $20–30K per unit</li>
+                                <li>AI scientists make Nobel-worthy discoveries independently</li>
+                                <li>Life expectancy begins rising through AI medical breakthroughs</li>
+                                <li>Post-scarcity debates enter serious economic discourse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI automates 30% of all work hours (McKinsey projection)</li>
+                                <li>50% probability of AGI (Metaculus median, optimistic end)</li>
+                                <li>12 million+ workers have transitioned to new occupations (McKinsey)</li>
+                                <li>Data centers consume ~945 TWh (IEA projection), 3% of global electricity</li>
+                                <li>Comprehensive AI regulation in most developed nations</li>
+                                <li>AI as collaborative partner is standard in most professions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>300 million jobs displaced globally (Goldman Sachs estimate)</li>
+                                <li>AI superintelligence risk assessed at 25%+ by leading researchers</li>
+                                <li>Severe inequality: AI wealth concentrated in &lt;1% of the population</li>
+                                <li>Authoritarian AI surveillance normalized in 30+ countries</li>
+                                <li>Environmental tipping points partly driven by compute energy demand</li>
+                                <li>"Digital proletariat" emerges: humans do only what AI cannot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2035 -->
+        <div class="year-section" data-year="2035">
+            <div class="year-header">
+                <div class="year-number">2035</div>
+                <div class="year-label">Post-work society and ASI</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Artificial Superintelligence (ASI) achieved (Kurzweil's revised forecast)</li>
+                                <li>Post-work society in advanced nations; universal basic income universal</li>
+                                <li>AI solves most major diseases: cancer, Alzheimer's, genetic conditions</li>
+                                <li>Space exploration accelerated by AI-designed propulsion and habitats</li>
+                                <li>Human–AI fusion begins: cognitive enhancement via neural interfaces</li>
+                                <li>Climate change decelerated through AI-optimized carbon capture and energy systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AGI firmly established; ASI still debated and approaching</li>
+                                <li>40–50% of current jobs transformed or eliminated</li>
+                                <li>AI handles most routine governance and infrastructure tasks</li>
+                                <li>Longevity treatments from AI research add 10–15 years</li>
+                                <li>Global AI governance institution operational (UN-level)</li>
+                                <li>Society adapting: new occupations, new meaning — but significant upheaval ongoing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>ASI alignment remains unsolved; existential risk debates intensify</li>
+                                <li>"Two-speed world": AI-rich nations flourish, others fall further behind</li>
+                                <li>AI-powered autonomous weapons deployed in conflicts</li>
+                                <li>Massive psychological crisis: meaning and purpose in a post-work world</li>
+                                <li>Privacy virtually eliminated in connected societies</li>
+                                <li>Control over ASI becomes the central geopolitical issue</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2040 -->
+        <div class="year-section" data-year="2040">
+            <div class="year-header">
+                <div class="year-number">2040</div>
+                <div class="year-label">A fundamentally different civilization</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>ASI has solved most solvable scientific and engineering problems</li>
+                                <li>Human lifespan dramatically extended; aging slowed or halted</li>
+                                <li>Multi-planetary presence enabled by AI-designed technology</li>
+                                <li>Post-scarcity economy in advanced nations; material abundance</li>
+                                <li>Human consciousness upload possible (early experiments)</li>
+                                <li>A fundamentally different civilization emerges</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI handles 50–60% of all current human work tasks</li>
+                                <li>ASI exists but under careful governance and alignment protocols</li>
+                                <li>Radical life extension treatment available (still expensive)</li>
+                                <li>New social contract: humans contribute creativity, empathy, governance</li>
+                                <li>Geopolitical order reshaped around AI capability</li>
+                                <li>Mixed outcomes: great progress alongside persistent inequality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>50%+ of jobs fully automated (Goldman Sachs projection)</li>
+                                <li>ASI used for population control and social engineering by some states</li>
+                                <li>"Human obsolescence" crisis: psychological and social breakdown</li>
+                                <li>AI–human gap so wide that meaningful human oversight is impossible</li>
+                                <li>Resource conflicts intensify despite AI-driven efficiency</li>
+                                <li>Existential risk from misaligned ASI at historical peak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2050 -->
+        <div class="year-section" data-year="2050">
+            <div class="year-header">
+                <div class="year-number">2050</div>
+                <div class="year-label">Beyond prediction — three radically different worlds</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Technological singularity may have occurred — civilization unrecognizable from a 2026 perspective</li>
+                                <li>Death potentially optional through biotechnology + AI</li>
+                                <li>Interstellar exploration planning underway</li>
+                                <li>Consciousness understood and potentially expandable</li>
+                                <li>Post-scarcity realized: material poverty eliminated</li>
+                                <li>Humanity defined not by work but by exploration and creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Steady Progress</div>
+                        </div>
+                        <div class="card-subtitle">Most likely path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI deeply embedded in all aspects of civilization</li>
+                                <li>80%+ of 2026 work tasks automated or fundamentally transformed</li>
+                                <li>Global governance adapted to AI realities — but unevenly</li>
+                                <li>Average life expectancy 100+ in developed nations</li>
+                                <li>Humanity persists but deeply changed</li>
+                                <li>Balance between human agency and AI capability maintained — but fragile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistic path</div>
+                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Scenario path: from "humans as pets" to potential civilization collapse</li>
+                                <li>37–51% of AI researchers estimate ≥10% chance of extinction-level outcomes</li>
+                                <li>Extreme inequality may have created permanent underclass</li>
+                                <li>Loss of human autonomy and meaningful agency</li>
+                                <li>"The century we almost lost everything" — or perhaps already did</li>
+                                <li>Digital feudalism: AI owners control the means of production entirely</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Cross-cutting themes -->
+    <section class="themes-section">
+        <h2 class="themes-title">Cross-Cutting Themes</h2>
+        <div class="themes-grid">
+            <div class="theme-card">
+                <div class="theme-name">Labor Market</div>
+                <div class="theme-desc">From productivity tools to cognitive replacement. Which professions transform, which disappear, which new ones emerge?</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Geopolitics</div>
+                <div class="theme-desc">The US–China race, export controls, chip alliances, and the bifurcation of the global tech ecosystem.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Robotics &amp; Physical AI</div>
+                <div class="theme-desc">Humanoid robots, autonomous vehicles, warehouse automation — when AI gets a body, industry's fundamental logic changes.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Existential Risks</div>
+                <div class="theme-desc">Alignment, superintelligence, autonomous weapons, AI-driven surveillance — risks requiring international coordination.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Energy &amp; Environment</div>
+                <div class="theme-desc">AI's energy needs vs AI's climate solutions. Data center expansion, fusion energy, efficiency breakthroughs.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Governance &amp; Ethics</div>
+                <div class="theme-desc">EU AI Act, US state-level patchwork, UN frameworks — regulation's race against technology.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="method-section">
+        <h2 class="method-title">About the Scenarios</h2>
+        <div class="method-text">
+            <p>The scenario framework is built on three paths: <strong>Acceleration</strong> represents the optimistic outcome if development maintains maximum pace and governance works. <strong>Steady Progress</strong> is the most likely trajectory based on historical patterns, current trends, and consensus forecasts. <strong>Disruption</strong> represents negative outcomes if adaptation fails, risks materialize, or power concentration spirals out of control.</p>
+            <p>All data points reference published sources: McKinsey, Goldman Sachs, IEA, Metaculus, and industry analysis from frontier labs. The 2026 scenarios have been updated to reflect confirmed events as of April 2026.</p>
+            <p>These scenarios should be read as structured thought exercises — not as predictions. Reality will likely blend elements from all three paths. The purpose is to provide a framework for serious reflection on what could actually happen.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p>© 2026 Rolf Skogling · <a href="https://ai-skiftet.se/index.html">AI-skiftet</a> · <a href="https://ai-skiftet.se/en/kallor.html">Sources</a></p>
+        </div>
+    </footer>
+
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+
+    <script>
+        // Count-up animation
+        const animateCountUp = (el, target) => {
+            let current = 0;
+            const increment = target / 40;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.childNodes[0].textContent = Math.floor(current);
+            }, 25);
+        };
+
+        // Intersection Observer for stats
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const numEl = entry.target.querySelector('.stat-number');
+                    const target = parseInt(numEl.dataset.target);
+                    if (!numEl.animated) {
+                        animateCountUp(numEl, target);
+                        numEl.animated = true;
+                    }
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-card').forEach(c => statObserver.observe(c));
+
+        // Card expansion
+        document.querySelectorAll('.scenario-card').forEach(card => {
+            card.addEventListener('click', () => card.classList.toggle('expanded'));
+        });
+
+        // Year navigation
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const section = document.querySelector(`.year-section[data-year="${btn.dataset.year}"]`);
+                if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Filter scenarios
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.scenario-card').forEach(card => {
+                    card.classList.toggle('hidden', filter !== 'all' && card.dataset.scenario !== filter);
+                });
+            });
+        });
+
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            document.querySelector('.progress-bar').style.transform = `scaleX(${scrollTop / docHeight})`;
+
+            // Update active year btn
+            let currentYear = null;
+            document.querySelectorAll('.year-section').forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight / 2) {
+                    currentYear = section.dataset.year;
+                }
+            });
+            if (currentYear) {
+                document.querySelectorAll('.year-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.year === currentYear);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
