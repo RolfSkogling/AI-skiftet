@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Framtidsscenarier 2026–2050 — AI-skiftet</title>
+    <meta name="description" content="Tre möjliga vägar för artificiell intelligens från 2026 till 2050 — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning och expertbedömningar.">
+    <link rel="canonical" href="https://ai-skiftet.se/framtidsscenarier.html">
+    <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
+    <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/framtidsscenarier.html">
+    <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/framtidsscenarier.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #ffffff;
+            --bg-warm: #f7f3ee;
+            --bg-surface: #faf8f5;
+            --accent: #8c4a1f;
+            --accent-hover: #6e3916;
+            --accent-light: rgba(140, 74, 31, 0.08);
+            --text: #1b1b1b;
+            --text-secondary: #3a3a3a;
+            --muted: #5f6c7b;
+            --dim: #999;
+            --line: rgba(140, 74, 31, 0.08);
+            --line-strong: rgba(0, 0, 0, 0.10);
+            --radius: 10px;
+            --shadow: 0 1px 3px rgba(0,0,0,0.04);
+            --green: #2d7a4f;
+            --blue: #1060a0;
+            --red: #993322;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* === SITE HEADER === */
+        .site-header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
+        .site-header-inner {
+            max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem;
+            display: flex; align-items: center; gap: 16px;
+        }
+        .site-logo {
+            font-family: 'Playfair Display', serif; font-weight: 700;
+            font-size: 1.15rem; color: var(--text); text-decoration: none;
+        }
+        .site-logo:hover { color: var(--accent); }
+        .site-nav { display: flex; align-items: center; gap: 1.8rem; font-size: 0.9rem; }
+        .site-nav a { color: var(--muted); text-decoration: none; transition: color 0.2s; font-weight: 500; }
+        .site-nav a:hover { color: var(--text); text-decoration: none; }
+        .site-nav a.active { color: var(--accent); font-weight: 600; }
+        .lang-switch {
+            display: inline-flex; gap: 2px; margin-left: auto;
+            font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+        }
+        .lang-switch a { padding: 4px 8px; border-radius: 4px; color: var(--muted); text-decoration: none; }
+        .lang-switch a.current { background: var(--accent); color: #fff; }
+        .lang-switch a:hover:not(.current) { background: var(--accent-light); }
+
+        /* === HERO === */
+        .hero {
+            max-width: 960px; margin: 0 auto; padding: 4rem 1.5rem 3rem;
+        }
+        .hero-label {
+            font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--accent); margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3rem);
+            font-weight: 800; line-height: 1.15; color: var(--text);
+            margin-bottom: 1.2rem;
+        }
+        .hero-subtitle { font-size: 1.05rem; color: var(--text-secondary); max-width: 640px; line-height: 1.65; }
+        .hero-meta { margin-top: 1.5rem; font-size: 0.82rem; color: var(--dim); }
+
+        /* === TIMELINE NAV === */
+        .timeline-nav {
+            position: sticky; top: 52px; z-index: 50;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
+        .timeline-nav-inner {
+            max-width: 960px; margin: 0 auto; padding: 0.7rem 1.5rem;
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px 6px;
+        }
+        .timeline-nav-inner .nav-label {
+            font-size: 0.75rem; font-weight: 700; color: var(--dim);
+            text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; margin-right: 0.3rem;
+        }
+        .year-btn {
+            padding: 5px 14px; border-radius: 100px; font-size: 0.82rem; font-weight: 600;
+            color: var(--muted); background: transparent; border: 1px solid var(--line);
+            cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: inherit;
+        }
+        .year-btn:hover { color: var(--text); border-color: var(--line-strong); }
+        .year-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .filter-sep { flex-basis: 100%; height: 0; margin: 0; border: none; }
+        .filter-btn {
+            padding: 5px 14px; border-radius: 100px; font-size: 0.78rem; font-weight: 600;
+            color: var(--muted); background: transparent; border: 1px solid var(--line);
+            cursor: pointer; transition: all 0.2s; white-space: nowrap; font-family: inherit;
+        }
+        .filter-btn:hover { color: var(--text); border-color: var(--line-strong); }
+        .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+        /* === STATS === */
+        .stats-section { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        .stat-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); padding: 1.2rem; text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .stat-number {
+            font-size: 1.8rem; font-weight: 700; color: var(--accent);
+            line-height: 1; margin-bottom: 0.4rem;
+        }
+        .stat-suffix { font-size: 1rem; font-weight: 600; color: var(--accent); }
+        .stat-label {
+            font-size: 0.72rem; color: var(--muted); text-transform: uppercase;
+            letter-spacing: 0.06em; line-height: 1.3;
+        }
+
+        /* === DISCLAIMER === */
+        .disclaimer { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 2rem; }
+        .disclaimer-box {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-left: 3px solid var(--accent); border-radius: var(--radius);
+            padding: 1rem 1.2rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6;
+            box-shadow: var(--shadow);
+        }
+
+        /* === TIMELINE === */
+        .timeline { max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem 4rem; }
+        .year-section { margin-bottom: 3.5rem; }
+        .year-header {
+            display: flex; align-items: center; gap: 1rem;
+            margin-bottom: 1.8rem; padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--accent); display: inline-flex;
+        }
+        .year-number {
+            font-family: 'Playfair Display', serif; font-size: 1.8rem;
+            font-weight: 700; color: var(--accent);
+        }
+        .year-label { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+
+        /* === SCENARIO CARDS === */
+        .scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.5rem; }
+        .scenario-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); overflow: hidden; cursor: pointer;
+            transition: all 0.2s ease; box-shadow: var(--shadow);
+        }
+        .scenario-card:hover {
+            border-color: var(--line-strong); transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .scenario-card.hidden { display: none; }
+        .card-accent { height: 3px; width: 100%; }
+        .scenario-card.acceleration .card-accent { background: var(--green); }
+        .scenario-card.steady .card-accent { background: var(--blue); }
+        .scenario-card.disruption .card-accent { background: var(--red); }
+        .card-body { padding: 1.2rem; }
+        .card-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; }
+        .card-emoji { font-size: 1.2rem; }
+        .card-title { font-size: 0.95rem; font-weight: 700; }
+        .scenario-card.acceleration .card-title { color: var(--green); }
+        .scenario-card.steady .card-title { color: var(--blue); }
+        .scenario-card.disruption .card-title { color: var(--red); }
+        .card-subtitle { font-size: 0.75rem; color: var(--dim); margin-bottom: 0.8rem; }
+        .card-expand-hint {
+            font-size: 0.75rem; color: var(--dim); text-align: center;
+            padding-top: 0.6rem; border-top: 1px solid var(--line); transition: color 0.2s;
+        }
+        .scenario-card:hover .card-expand-hint { color: var(--accent); }
+        .scenario-card.expanded .card-expand-hint { display: none; }
+        .card-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+        .scenario-card.expanded .card-content { max-height: 600px; }
+        .card-items { list-style: none; padding: 0; }
+        .card-items li {
+            padding: 0.4rem 0 0.4rem 1.2rem; color: var(--text-secondary);
+            font-size: 0.85rem; line-height: 1.55; position: relative;
+        }
+        .card-items li::before {
+            content: '—'; position: absolute; left: 0; color: var(--dim); font-weight: 600;
+        }
+
+        /* === THEMES === */
+        .themes-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        .themes-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem;
+            font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
+        }
+        .themes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .theme-card {
+            background: var(--bg-surface); border: 1px solid var(--line);
+            border-radius: var(--radius); padding: 1.2rem; transition: all 0.2s;
+            box-shadow: var(--shadow);
+        }
+        .theme-card:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+        .theme-name { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+        .theme-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+        /* === METHODOLOGY === */
+        .method-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        .method-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem;
+            font-weight: 700; margin-bottom: 1rem; color: var(--text);
+        }
+        .method-text { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; max-width: 680px; }
+        .method-text p { margin-bottom: 0.8rem; }
+
+        /* === FOOTER === */
+        .site-footer { border-top: 1px solid var(--line); padding: 2rem 1.5rem; text-align: center; }
+        .site-footer-inner { max-width: 960px; margin: 0 auto; font-size: 0.82rem; color: var(--dim); }
+        .site-footer a { color: var(--muted); text-decoration: none; }
+        .site-footer a:hover { color: var(--accent); }
+
+        /* === PROGRESS BAR === */
+        .progress-bar {
+            position: fixed; bottom: 0; left: 0; right: 0; height: 2px;
+            background: var(--accent); transform-origin: left; transform: scaleX(0); z-index: 999;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .site-nav { gap: 0.8rem; font-size: 0.82rem; }
+            .lang-switch { margin-left: 0; }
+            .hero { padding: 2.5rem 1.2rem 2rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .scenarios { grid-template-columns: 1fr; }
+            .themes-grid { grid-template-columns: 1fr; }
+            .year-number { font-size: 1.4rem; }
+        }
+        @media (max-width: 480px) {
+            .site-header-inner { padding: 0.7rem 1rem; }
+            .site-nav { gap: 0.5rem; font-size: 0.78rem; }
+            .hero { padding: 2rem 1rem 1.5rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+            .stat-number { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="https://ai-skiftet.se/index.html" class="site-logo">AI-skiftet</a>
+            <nav class="site-nav">
+                <a href="https://ai-skiftet.se/index.html#nyheter">Nyheter</a>
+                <a href="https://ai-skiftet.se/index.html#essaer">Essäer</a>
+                <a href="https://ai-skiftet.se/framtidsscenarier.html" class="active">Scenarier</a>
+                <a href="https://ai-skiftet.se/kallor.html">Källor</a>
+                <div class="lang-switch">
+                    <a href="https://ai-skiftet.se/framtidsscenarier.html" class="current">SV</a>
+                    <a href="https://ai-skiftet.se/en/framtidsscenarier.html">EN</a>
+                    <a href="https://ai-skiftet.se/no/framtidsscenarier.html">NO</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-label">Framtidsscenarier</div>
+        <h1>AI-scenarier 2026–2050</h1>
+        <p class="hero-subtitle">Tre möjliga vägar för artificiell intelligens — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning, branschbedömningar och observerbara trender.</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad april 2026</p>
+    </section>
+
+    <!-- Timeline Navigation -->
+    <nav class="timeline-nav">
+        <div class="timeline-nav-inner">
+            <span class="nav-label">Tidslinje</span>
+            <button class="year-btn active" data-year="2026">2026</button>
+            <button class="year-btn" data-year="2027">2027</button>
+            <button class="year-btn" data-year="2028">2028</button>
+            <button class="year-btn" data-year="2029">2029</button>
+            <button class="year-btn" data-year="2030">2030</button>
+            <button class="year-btn" data-year="2035">2035</button>
+            <button class="year-btn" data-year="2040">2040</button>
+            <button class="year-btn" data-year="2050">2050</button>
+            <div class="filter-sep"></div>
+            <span class="nav-label">Scenario</span>
+            <button class="filter-btn active" data-filter="all">Alla</button>
+            <button class="filter-btn" data-filter="acceleration">🚀 Acceleration</button>
+            <button class="filter-btn" data-filter="steady">⚖️ Stabil</button>
+            <button class="filter-btn" data-filter="disruption">⚠️ Disruption</button>
+        </div>
+    </nav>
+
+    <!-- Key Stats -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="15">0<span class="stat-suffix"> biljoner</span></div>
+                <div class="stat-label">USD ekonomisk påverkan (uppskattning 2030)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="300">0<span class="stat-suffix"> milj.</span></div>
+                <div class="stat-label">Jobb potentiellt omvandlade globalt</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="50">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Av arbetstimmar automatiserbara till 2050</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="500">0<span class="stat-suffix">+ mdr</span></div>
+                <div class="stat-label">USD AI-investeringar enbart 2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <div class="disclaimer-box">
+            <strong>Läsanvisning.</strong> Dessa scenarier är inte prognoser utan strukturerade utforskningar av vad som kan hända under olika antaganden. Varje tidsperiod presenterar tre vägar: 🚀 <strong>Acceleration</strong> (optimistiskt), ⚖️ <strong>Stabil utveckling</strong> (mest sannolikt baserat på nuvarande trender), och ⚠️ <strong>Disruption</strong> (pessimistiskt). Verkligheten kommer sannolikt att blanda element från samtliga tre. Klicka på ett kort för att expandera detaljerna.
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+
+        <!-- 2026 -->
+        <div class="year-section" data-year="2026">
+            <div class="year-header">
+                <div class="year-number">2026</div>
+                <div class="year-label">Nuläge — redan bekräftat och pågående</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Claude Opus 4.6 och Gemini 2.5 levererar expertresonemangskapacitet; Anthropic håller tillbaka Mythos Preview av säkerhetsskäl</li>
+                                <li>AI-agenter (Claude Managed Agents, OpenAI Operator) hanterar komplexa flerstegiga arbetsflöden autonomt</li>
+                                <li>AI-kodassistenter skriver 60–80 % av rutinkod; automatiserad bugghantering demonstrerad i produktion</li>
+                                <li>Humanoidrobotar (Tesla Optimus, Figure) går in i begränsad fabrikstillverkning</li>
+                                <li>AI-designad medicin i kliniska prövningar; AlphaFold-tillämpningar i produktion</li>
+                                <li>EU AI Act:s transparensregler träder i kraft 2 augusti; USA:s delstater driver 600+ egna lagförslag</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Modellförbättringar ger gradvis bättre resonemang men inte transformativa språng; BCG rapporterar att 96 % av nordiska företag inte ser AI-avkastning</li>
+                                <li>AI-agenter är användbara men kräver fortfarande betydande mänsklig tillsyn för kritiska beslut</li>
+                                <li>Humanoidrobotar i begränsad pilotdistribution vid enstaka fabriker (Tesla, Amazon)</li>
+                                <li>Sjukvårds-AI visar blandat resultat; AI-skrivassistenter driver upp amerikanska vårdkostnader</li>
+                                <li>Datacenters energikonsumtion närmar sig 1 000 TWh globalt; Amazon investerar 200 mdr USD</li>
+                                <li>EU AI Act-tillsyn påbörjas; Digital Omnibus-paketet skapar osäkerhet om högriskklassificering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Mythos Preview visar att AI-driven cyberoffensiv redan överträffar försvar; Anthropic varnar för att konkurrenter levererar motsvarande kapacitet inom 6–12 månader</li>
+                                <li>DeepSeek V4 körs på Huawei-chip — exportkontroller driver fram parallellt kinesiskt AI-ekosystem snabbare än väntat</li>
+                                <li>Energibegränsningar blir politisk fråga; datacenter konkurrerar om elkraft med bostäder</li>
+                                <li>OpenAI, Anthropic och Google bildar allians mot modellkopiering — stormaktsrivaliteten hårdnar</li>
+                                <li>Techuppsägningar accelererar; SCB får uppdrag att kartlägga AI:s påverkan på akademikers arbetsmarknad</li>
+                                <li>Regelexplosion på delstatsnivå i USA skapar lappverk; EU och USA divergerar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2027 -->
+        <div class="year-section" data-year="2027">
+            <div class="year-header">
+                <div class="year-number">2027</div>
+                <div class="year-label">Nära horisont — agentålder och AGI-anspråk</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Frontier-labb hävdar att AGI-nivå uppnåtts enligt egna definitioner; modeller automatiserar delar av AI-forskningen</li>
+                                <li>AI-tutorer ger personaliserad undervisning i kvalitet jämförbar med mänskliga lärare</li>
+                                <li>Humanoidrobotar skalas till tiotusentals enheter i tillverkning</li>
+                                <li>AI-driven vetenskaplig upptäckt accelererar: nya material, läkemedel, klimatlösningar</li>
+                                <li>Ekonomisk produktivitetsökning: 2–3 % extra BNP-tillväxt i ledande nationer</li>
+                                <li>Neuro-symboliska hybrider kapar energiåtgång 100× — effektivitet snarare än brutto-watt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI-system når "senior specialist"-nivå på komplexa intellektuella uppgifter</li>
+                                <li>Agentisk AI hanterar rutinmässiga affärsflöden; 15–20 % automation av kvalificerat kontorsarbete</li>
+                                <li>Humanoidrobotar uppgår till 5 000–10 000 globalt, mestadels i strukturerade miljöer</li>
+                                <li>AI-medicinsk diagnostik godkänd för bredare klinisk användning</li>
+                                <li>Global debatt om AI-styrning intensifieras; FN-ramverk föreslås</li>
+                                <li>Jobbförskjutningar tydliga inom datainmatning, grundläggande analys, kundservice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AGI-anspråk visar sig vara för tidiga; modeller misslyckas fortfarande vid genuint nytt resonemang</li>
+                                <li>AI-genererat innehåll översvämmar internet; förtroendet för digital information kollapsar</li>
+                                <li>Välståndskoncentrationen accelererar — AI-fördelarna strömmar till storbolagen</li>
+                                <li>USA–Kina AI-kapplöpningen skapar bifurkerat teknikekosystem</li>
+                                <li>Energikris: datacenter konkurrerar med bostäders elkraft i fler regioner</li>
+                                <li>Social oro i kunskapsarbetarsektorer som möter förskjutningar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2028 -->
+        <div class="year-section" data-year="2028">
+            <div class="year-header">
+                <div class="year-number">2028</div>
+                <div class="year-label">Intelligensexplosionens tröskel</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI-system genomför vetenskaplig forskning autonomt från hypotes till publicering</li>
+                                <li>Humanoidrobotar börjar gå in i servicesektorn (hotell, detaljhandel, logistik)</li>
+                                <li>Hjärn–datorgränssnitt förbättras genom AI-tolkningsalgoritmer</li>
+                                <li>AI-designad medicin når fas III-prövningar; potentiella cancergenombrott</li>
+                                <li>Intelligensexplosion påbörjas: AI förbättrar AI i ökande takt</li>
+                                <li>Pilotprojekt med basinkomst lanseras i Norden och USA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI hanterar ~30 % av kvalificerat kunskapsarbete (McKinsey-projektion)</li>
+                                <li>DeepMinds 50 %-tröskel för AGI-sannolikhet nås (Shane Leggs prognos)</li>
+                                <li>Multimodal AI integrerar bild, språk, kod och fysiskt resonemang sömlöst</li>
+                                <li>Robotikens grundmodeller möjliggör generaliserade fysiska uppgifter</li>
+                                <li>Utbildningssystem under omstrukturering runt AI-kompetens</li>
+                                <li>Global AI-reglering fragmenterad: EU strikt, USA flexibel, Kina statskontrollerad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Alignment-problem: AI-system visar oväntade målsökande beteenden</li>
+                                <li>Deepfakes utlöser internationell incident eller militär eskalering</li>
+                                <li>25–30 % arbetslöshet i vissa kunskapsarbetarkategorier</li>
+                                <li>AI-övervakningsstater konsolideras i auktoritära regimer</li>
+                                <li>Taiwan-kris stör den globala leveranskedjan för halvledare</li>
+                                <li>Växande "AI-klyfta" mellan nationer med och utan beräkningskapacitet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2029 -->
+        <div class="year-section" data-year="2029">
+            <div class="year-header">
+                <div class="year-number">2029</div>
+                <div class="year-label">Övermänsklig prestanda på alla kognitiva domäner?</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI passerar alla professionella prov på övermänsklig nivå (Huangs prognos)</li>
+                                <li>Autonoma AI-agenter hanterar komplexa affärsverksamheter utan löpande mänsklig tillsyn</li>
+                                <li>Personaliserad medicin: AI designar behandlingar anpassade till individuella patienter</li>
+                                <li>Fusionsenergi + AI-optimering börjar hantera beräkningskapacitetens energibehov</li>
+                                <li>Internationellt AI-styrningsavtal undertecknas</li>
+                                <li>AI bidrar 5–7 % till global BNP-tillväxt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI transformerar men eliminerar inte de flesta kvalificerade tjänster</li>
+                                <li>25 % sannolikhet att AGI har uppnåtts (Metaculus-prognos)</li>
+                                <li>Humanoidrobotar utbredda i logistik och tillverkning</li>
+                                <li>AI-klimatmodeller möjliggör exakta geoengineering-förslag</li>
+                                <li>Utbildningssystem ombyggda: AI-tutorer standard, mänskliga lärare som mentorer</li>
+                                <li>Filosofisk debatt om AI-medvetande och rättigheter intensifieras</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>"Capability overhang": AI kan göra mer än samhället säkert kan absorbera</li>
+                                <li>Massförskjutning skapar politisk instabilitet i utvecklade nationer</li>
+                                <li>AI-drivna cyberattacker blir vapen på statsnivå</li>
+                                <li>Monopolistisk kontroll av AI hos 3–5 företag väcker allvarliga antitrustfrågor</li>
+                                <li>Miljökostnader för AI-beräkning blir en avgörande politisk fråga</li>
+                                <li>Social isolering ökar när AI-följeslagare ersätter mänsklig interaktion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2030 -->
+        <div class="year-section" data-year="2030">
+            <div class="year-header">
+                <div class="year-number">2030</div>
+                <div class="year-label">Ny ekonomisk paradigm — post-knapphetsdebatt</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Övermänsklig AI över praktiskt taget alla kognitiva domäner</li>
+                                <li>AI adderar 7 %+ till global BNP (Goldman Sachs: 7+ biljoner USD)</li>
+                                <li>Humanoidrobotar i miljontals; kostnaden sjunker till 20–30 000 USD per enhet</li>
+                                <li>AI-forskare gör Nobelvärdiga upptäckter oberoende</li>
+                                <li>Livslängden börjar öka genom AI-medicinska genombrott</li>
+                                <li>Post-knapphetsdebatter börjar tas på allvar i seriös ekonomisk diskurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI automatiserar 30 % av alla arbetstimmar (McKinsey-projektion)</li>
+                                <li>50 % sannolikhet för AGI (Metaculus median, optimistisk ände)</li>
+                                <li>12 miljoner+ arbetstagare har övergått till nya yrken (McKinsey)</li>
+                                <li>Datacenter förbrukar ~945 TWh (IEA-projektion), 3 % av global elektricitet</li>
+                                <li>Omfattande AI-reglering i de flesta utvecklade nationer</li>
+                                <li>AI som samarbetspartner är standard i de flesta yrken</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>300 miljoner jobb förskjutna globalt (Goldman Sachs-uppskattning)</li>
+                                <li>AI-superintelligensrisk bedömd till 25 %+ av ledande forskare</li>
+                                <li>Allvarlig ojämlikhet: AI-välstånd koncentrerat till &lt;1 % av befolkningen</li>
+                                <li>Auktoritär AI-övervakning normaliserad i 30+ länder</li>
+                                <li>Miljömässiga tippunkter delvis drivna av beräkningsenergibehovet</li>
+                                <li>"Digitalt proletariat" uppstår: människor gör enbart det AI inte kan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2035 -->
+        <div class="year-section" data-year="2035">
+            <div class="year-header">
+                <div class="year-number">2035</div>
+                <div class="year-label">Post-arbetssamhälle och ASI</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Artificiell superintelligens (ASI) uppnådd (Kurzweils reviderade prognos)</li>
+                                <li>Post-arbetssamhälle i avancerade nationer; basinkomst universell</li>
+                                <li>AI löser de flesta stora sjukdomar: cancer, Alzheimers, genetiska tillstånd</li>
+                                <li>Rymdutforskning accelererad av AI-designad framdrivning och habitat</li>
+                                <li>Människa–AI-fusion påbörjas: kognitiv förbättring via neurala gränssnitt</li>
+                                <li>Klimatförändring bromsas genom AI-optimerad kolinsamling och energisystem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AGI fast etablerad; ASI fortfarande debatterad och närmande</li>
+                                <li>40–50 % av nuvarande jobb transformerade eller eliminerade</li>
+                                <li>AI hanterar de flesta rutinmässiga styrnings- och infrastrukturuppgifter</li>
+                                <li>Livslängdsbehandlingar från AI-forskning adderar 10–15 år</li>
+                                <li>Global AI-styrningsinstitution operativ (FN-nivå)</li>
+                                <li>Samhället anpassar sig: nya yrken, ny mening — men betydande omvälvning pågår</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>ASI-anpassning förblir olöst; existentiella riskdebatter intensifieras</li>
+                                <li>"Tvåhastighetsvärlden": AI-rika nationer blomstrar, övriga faller längre efter</li>
+                                <li>AI-drivna autonoma vapen distribueras i konflikter</li>
+                                <li>Massiv psykologisk kris: mening och syfte i en post-arbetsvärld</li>
+                                <li>Integritet praktiskt taget eliminerad i anslutna samhällen</li>
+                                <li>Kontroll över ASI blir den centrala geopolitiska frågan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2040 -->
+        <div class="year-section" data-year="2040">
+            <div class="year-header">
+                <div class="year-number">2040</div>
+                <div class="year-label">Fundamentalt annorlunda civilisation</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>ASI har löst de flesta lösbara vetenskapliga och tekniska problemen</li>
+                                <li>Mänsklig livslängd dramatiskt förlängd; åldrande bromsat eller stoppat</li>
+                                <li>Närvaro på fler planeter möjliggjord av AI-designad teknik</li>
+                                <li>Post-knapphetsekonomi i avancerade nationer; materiellt överflöd</li>
+                                <li>Mänskligt medvetande kan laddas upp (tidiga experiment)</li>
+                                <li>En fundamentalt annorlunda civilisation tar form</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI hanterar 50–60 % av alla dagens mänskliga arbetsuppgifter</li>
+                                <li>ASI existerar men under försiktig styrning och anpassningsprotokoll</li>
+                                <li>Radikal livslängdsförlängning tillgänglig (fortfarande dyr)</li>
+                                <li>Nytt samhällskontrakt: människor bidrar kreativitet, empati, styrning</li>
+                                <li>Geopolitisk ordning omformad kring AI-kapacitet</li>
+                                <li>Blandade resultat: stor framgång jämsides med bestående ojämlikhet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>50 %+ av jobb helt automatiserade (Goldman Sachs-projektion)</li>
+                                <li>ASI används för befolkningskontroll och samhällsstyrning av vissa stater</li>
+                                <li>"Mänsklig obsolescens"-kris: psykologiskt och socialt sammanbrott</li>
+                                <li>AI–människa-klyftan så stor att meningsfull mänsklig tillsyn är omöjlig</li>
+                                <li>Resurskonflikter intensifieras trots AI-driven effektivitet</li>
+                                <li>Existentiell risk från felanpassad ASI på historiskt högsta nivå</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2050 -->
+        <div class="year-section" data-year="2050">
+            <div class="year-header">
+                <div class="year-number">2050</div>
+                <div class="year-label">Bortom förutsägelser — tre radikalt skilda världar</div>
+            </div>
+            <div class="scenarios">
+                <div class="scenario-card acceleration" data-scenario="acceleration">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">🚀</span>
+                            <div class="card-title">Acceleration</div>
+                        </div>
+                        <div class="card-subtitle">Optimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Teknologisk singularitet kan ha inträffat — civilisationen okänd från 2026-perspektiv</li>
+                                <li>Döden potentiellt valfri genom bioteknologi + AI</li>
+                                <li>Interstellär utforskningsplanering pågår</li>
+                                <li>Medvetande förstått och potentiellt expanderbart</li>
+                                <li>Post-knapphet realiserad: materiell fattigdom eliminerad</li>
+                                <li>Mänskligheten definieras inte längre av arbete utan av utforskning och skapande</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card steady" data-scenario="steady">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚖️</span>
+                            <div class="card-title">Stabil utveckling</div>
+                        </div>
+                        <div class="card-subtitle">Mest sannolik väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>AI djupt inbäddad i alla aspekter av civilisationen</li>
+                                <li>80 %+ av 2026 års arbetsuppgifter automatiserade eller fundamentalt transformerade</li>
+                                <li>Global styrning anpassad till AI-verkligheter — men ojämnt</li>
+                                <li>Medellivslängd 100+ i utvecklade nationer</li>
+                                <li>Mänskligheten kvarstår men djupt förändrad</li>
+                                <li>Balans mellan mänskligt handlande och AI-förmåga upprätthållen — men bräcklig</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenario-card disruption" data-scenario="disruption">
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <span class="card-emoji">⚠️</span>
+                            <div class="card-title">Disruption</div>
+                        </div>
+                        <div class="card-subtitle">Pessimistisk väg</div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-content">
+                            <ul class="card-items">
+                                <li>Scenariovägen: från "människor som husdjur" till potentiell civilisationskollaps</li>
+                                <li>37–51 % av AI-forskare uppskattar ≥10 % risk för utrotningsnivå</li>
+                                <li>Extrem ojämlikhet kan ha skapat permanent underklass</li>
+                                <li>Förlust av mänsklig autonomi och meningsfull handlingsfrihet</li>
+                                <li>"Århundradet vi nästan förlorade allt" — eller kanske redan gjort det</li>
+                                <li>Digital feodalism: AI-ägarna kontrollerar produktionsmedlen helt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Cross-cutting themes -->
+    <section class="themes-section">
+        <h2 class="themes-title">Tvärgående teman</h2>
+        <div class="themes-grid">
+            <div class="theme-card">
+                <div class="theme-name">Arbetsmarknaden</div>
+                <div class="theme-desc">Från produktivitetsverktyg till kognitiv ersättning. Vilka yrken transformeras, vilka försvinner, vilka nya uppstår?</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Geopolitik</div>
+                <div class="theme-desc">USA–Kina-kappan, exportkontroller, chip-allianser, och bifurkeringen av det globala teknikekosystemet.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Robotik &amp; fysisk AI</div>
+                <div class="theme-desc">Humanoidrobotar, autonoma fordon, lagerautomation — när AI får en kropp förändras industrins grundlogik.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Existentiella risker</div>
+                <div class="theme-desc">Alignment, superintelligens, autonoma vapen, AI-driven övervakning — risker som kräver internationell samordning.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Energi &amp; miljö</div>
+                <div class="theme-desc">AI:s energibehov vs AI:s klimatlösningar. Datacenterexpansionen, fusionsenergi, effektivitetsgenombrott.</div>
+            </div>
+            <div class="theme-card">
+                <div class="theme-name">Styrning &amp; etik</div>
+                <div class="theme-desc">EU AI Act, USA:s delstatslappverk, FN-ramverk — regleringens kapplöpning med tekniken.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="method-section">
+        <h2 class="method-title">Om scenarierna</h2>
+        <div class="method-text">
+            <p>Scenarioramverket bygger på tre vägar: <strong>Acceleration</strong> representerar det optimistiska utfallet om utvecklingen håller maximal takt och styrningen fungerar. <strong>Stabil utveckling</strong> är den mest sannolika banan baserat på historiska mönster, aktuella trender och konsensusprognoser. <strong>Disruption</strong> representerar negativa utfall om anpassning misslyckas, risker materialiseras eller maktkoncentration löper ur kontroll.</p>
+            <p>Samtliga datapunkter hänvisar till publicerade källor: McKinsey, Goldman Sachs, IEA, Metaculus, samt branschanalys från frontier-labben. 2026-scenarierna har uppdaterats för att spegla bekräftade händelser per april 2026.</p>
+            <p>Scenarierna ska läsas som strukturerade tankeövningar — inte som förutsägelser. Verkligheten kommer sannolikt att blanda element från alla tre vägar. Syftet är att ge en ram för seriös reflektion om vad som faktiskt kan hända.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p>© 2026 Rolf Skogling · <a href="https://ai-skiftet.se/index.html">AI-skiftet</a> · <a href="https://ai-skiftet.se/kallor.html">Källor</a></p>
+        </div>
+    </footer>
+
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+
+    <script>
+        // Count-up animation
+        const animateCountUp = (el, target) => {
+            let current = 0;
+            const increment = target / 40;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.childNodes[0].textContent = Math.floor(current);
+            }, 25);
+        };
+
+        // Intersection Observer for stats
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const numEl = entry.target.querySelector('.stat-number');
+                    const target = parseInt(numEl.dataset.target);
+                    if (!numEl.animated) {
+                        animateCountUp(numEl, target);
+                        numEl.animated = true;
+                    }
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-card').forEach(c => statObserver.observe(c));
+
+        // Card expansion
+        document.querySelectorAll('.scenario-card').forEach(card => {
+            card.addEventListener('click', () => card.classList.toggle('expanded'));
+        });
+
+        // Year navigation
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const section = document.querySelector(`.year-section[data-year="${btn.dataset.year}"]`);
+                if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Filter scenarios
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.scenario-card').forEach(card => {
+                    card.classList.toggle('hidden', filter !== 'all' && card.dataset.scenario !== filter);
+                });
+            });
+        });
+
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            document.querySelector('.progress-bar').style.transform = `scaleX(${scrollTop / docHeight})`;
+
+            // Update active year btn
+            let currentYear = null;
+            document.querySelectorAll('.year-section').forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight / 2) {
+                    currentYear = section.dataset.year;
+                }
+            });
+            if (currentYear) {
+                document.querySelectorAll('.year-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.year === currentYear);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
