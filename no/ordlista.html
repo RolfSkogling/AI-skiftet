@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordliste — AI-skiftet</title>
+  <meta name="description" content="AI-begreper forklart på rent norsk. Ingen sjargong uten kontekst — fra fabrikkgulvet, ikke styrerommet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    :root{--accent:#8c4a1f;--text:#1b1b1b;--muted:#5f6c7b;--surface:#fff;--bg:#f8f6f3;--line:rgba(140,74,31,.12);--radius:10px;--shadow:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.03)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:720px;margin:0 auto;padding:0 24px}
+    .container-wide{max-width:860px;margin:0 auto;padding:0 24px}
+
+    .site-nav{padding:16px 0;border-bottom:1px solid var(--line);background:var(--surface);position:sticky;top:0;z-index:100}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__logo{font-family:"Playfair Display",serif;font-weight:800;font-size:1.2rem;color:var(--text);text-decoration:none;margin-right:8px;white-space:nowrap}
+    .site-nav__links{display:flex;gap:20px}
+    .site-nav__links a{font-size:.88rem;font-weight:600;color:var(--muted);text-decoration:none;transition:color .15s}
+    .site-nav__links a:hover{color:var(--accent);text-decoration:none}
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:var(--muted);text-decoration:none}
+    .lang-switcher a.active{background:var(--accent);color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);margin:4px 0;border-radius:2px}
+    @media(max-width:700px){
+      .nav-toggle{display:block}
+      .site-nav__links{display:none;flex-direction:column;gap:12px;position:absolute;top:100%;left:0;right:0;background:var(--surface);padding:20px 24px;border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+      .site-nav__links.active{display:flex}
+    }
+
+    .site-footer{border-top:1px solid var(--line);padding:28px 0 36px;text-align:center;font-size:.85rem;color:var(--muted)}
+    .site-footer a{color:var(--accent)}
+
+    .filter-tag{padding:5px 14px;border:1px solid var(--line);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--muted);background:transparent;cursor:pointer;transition:all .2s;font-family:inherit}
+    .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+    .glossary-hero{padding:56px 0 36px;border-bottom:1px solid var(--line);text-align:center}
+    .glossary-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2rem,5vw,2.8rem);font-weight:800;color:var(--text);margin:0 0 8px}
+    .glossary-hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:560px;margin:0 auto;line-height:1.6}
+    .glossary-filter{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:28px 0 0}
+    .glossary-search{max-width:440px;margin:20px auto 0;position:relative}
+    .glossary-search input{width:100%;padding:10px 14px 10px 40px;border:1px solid var(--line);border-radius:var(--radius);font-size:.95rem;font-family:"Inter",sans-serif;background:var(--surface);color:var(--text);transition:border-color .2s}
+    .glossary-search input:focus{outline:none;border-color:var(--accent)}
+    .glossary-search input::placeholder{color:var(--muted);opacity:.6}
+    .glossary-search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+    .term-count{text-align:center;font-size:.82rem;color:var(--muted);margin-top:14px}
+
+    .glossary-main{padding-top:32px;padding-bottom:60px}
+    .glossary-intro{font-size:.95rem;color:var(--muted);line-height:1.75;margin-bottom:32px;padding:16px 20px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;box-shadow:var(--shadow)}
+    .cat-heading{font-family:"Playfair Display",serif;font-size:1.35rem;font-weight:700;color:var(--text);margin:36px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--accent);display:inline-block}
+
+    .term-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:10px;box-shadow:var(--shadow);transition:transform .15s,border-color .2s}
+    .term-card:hover{transform:translateY(-1px);border-color:rgba(140,74,31,.25)}
+    .term-header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+    .term-name{font-size:1.08rem;font-weight:700;color:var(--text)}
+    .term-eng{font-size:.82rem;color:var(--muted);font-style:italic}
+    .term-tags{display:flex;gap:5px;flex-wrap:wrap;margin-left:auto}
+    .term-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 9px;border-radius:100px}
+    .term-tag--grunderna{background:rgba(140,74,31,.1);color:var(--accent)}
+    .term-tag--modeller{background:rgba(20,100,180,.1);color:#1060a0}
+    .term-tag--anvandning{background:rgba(30,120,70,.1);color:#1a6b3c}
+    .term-tag--infrastruktur{background:rgba(100,80,160,.1);color:#5540a0}
+    .term-tag--samhalle{background:rgba(180,60,40,.1);color:#993322}
+    .term-body{font-size:.92rem;color:var(--text);line-height:1.7}
+    .term-body a{color:var(--accent)}
+    .term-body a:hover{text-decoration:none}
+    .analogy{display:block;margin-top:8px;padding:10px 14px;background:rgba(140,74,31,.06);border-radius:var(--radius);font-size:.88rem;color:#5c3a22;font-style:italic;border-left:3px solid rgba(140,74,31,.2)}
+    .analogy::before{content:"💡 "}
+    .no-results{text-align:center;padding:48px 16px;color:var(--muted);font-style:italic;display:none}
+    @media(max-width:600px){.term-header{flex-direction:column;gap:4px}.term-tags{margin-left:0}.glossary-hero{padding:40px 0 28px}}
+  </style>
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/ordlista.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/ordlista.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/ordlista.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/ordlista.html">
+</head>
+<body>
+
+<nav class="site-nav"><div class="container-wide">
+  <a href="index.html" class="site-nav__logo">AI‑skiftet</a>
+  <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')"><span></span><span></span><span></span></button>
+  <div class="site-nav__links">
+    <a href="index.html#nyheter">Nyheter</a>
+    <a href="index.html#essays">Essays</a>
+    <a href="framtidsscenarier.html">Scenarier</a>
+    <a href="ordlista.html" style="color:var(--accent)">Ordliste</a>
+    <a href="index.html#om">Om</a>
+    <a href="kilder.html">Kilder</a>
+  </div>
+  <div class="lang-switcher">
+    <a href="../ordlista.html" lang="sv">SV</a>
+    <a href="../en/ordlista.html" lang="en">EN</a>
+    <a href="ordlista.html" lang="nb" class="active">NO</a>
+  </div>
+</div></nav>
+
+<section class="glossary-hero"><div class="container">
+  <h1>Ordliste</h1>
+  <p class="subtitle">AI-begreper forklart på rent norsk — fra fabrikkgulvet, ikke styrerommet.</p>
+  <div class="glossary-filter">
+    <button class="filter-tag active" data-filter="alla">Alle</button>
+    <button class="filter-tag" data-filter="grunderna">Grunnleggende</button>
+    <button class="filter-tag" data-filter="modeller">Modeller &amp; trening</button>
+    <button class="filter-tag" data-filter="anvandning">Bruk</button>
+    <button class="filter-tag" data-filter="infrastruktur">Infrastruktur</button>
+    <button class="filter-tag" data-filter="samhalle">Samfunn &amp; framtid</button>
+  </div>
+  <div class="glossary-search">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+    <input type="text" id="search" placeholder="Søk begrep…" autocomplete="off">
+  </div>
+  <div class="term-count" id="termCount"></div>
+</div></section>
+
+<div class="container-wide glossary-main">
+<p class="glossary-intro">Denne ordlisten finnes for at du skal kunne lese essayene på AI‑skiftet uten å snuble i sjargong. Forklaringene er bevisst jordnære — målet er at du skal forstå hva begrepene <em>betyr i praksis</em>, ikke at du skal kunne sitere en lærebok. Lista oppdateres løpende.</p>
+
+<!-- ══════════ GRUNNLEGGENDE ══════════ -->
+<h2 class="cat-heading" id="cat-grunderna">Grunnleggende</h2>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">AI</span><span class="term-eng">Artificial Intelligence</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Samlebetegnelse på systemer som utfører oppgaver som tradisjonelt har krevd menneskelig tenkning — tolke tekst, ta beslutninger, identifisere mønstre. I dagens debatt mener man nesten alltid <em>generativ AI</em>, men begrepet er bredere og omfatter alt fra spamfiltre til selvkjørende biler.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Generativ AI</span><span class="term-eng">Generative AI / GenAI</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">AI som <em>skaper</em> nytt innhold — tekst, bilde, kode, lyd, video — i stedet for bare å klassifisere eller sortere. ChatGPT, Claude, Midjourney og Suno er alle generative. Det avgjørende: de automatiserer ikke beregning — de automatiserer <em>kognisjon</em>. Det er en kvalitativ forskjell.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Kognitiv automatisering</span><span class="term-eng">Cognitive automation</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Kjernen i skiftet: maskiner som utfører tankearbeid, ikke bare manuelt eller regnearbeid. Tolke rapporter, formulere analyser, gjøre vurderinger, skrive dokumenter. Det som gjør AI fundamentalt annerledes enn Excel, sveiseroboter eller ERP-systemer. Tidligere automatisering erstattet hender og regneark — denne erstatter deler av hodet.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Nevralt nettverk</span><span class="term-eng">Neural network / Deep learning</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Den matematiske arkitekturen bak moderne AI — lag på lag med beregningsnoder løst inspirert av hjernens synapser. "Deep learning" betyr at nettverket har mange lag. Alle store AI-systemer i dag — språkmodeller, bildegeneratorer, robotstyring — bygger på nevrale nettverk.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Transformer</span><span class="term-eng">Transformer architecture</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Arkitekturen bak i praksis alle moderne AI-modeller. Introdusert av Google i 2017 og løste et grunnproblem: hvordan en maskin skal forstå sammenheng i lange tekster. Grunnlaget for GPT ("Generative Pre-trained <em>Transformer</em>"), Claude, Gemini med flere.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">LLM</span><span class="term-eng">Large Language Model</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">En stor språkmodell — kjernen i systemer som Claude og GPT. Trent på enorme tekstmengder for å forstå og produsere språk. "Stor" viser til milliarder av innlærte parametre.<span class="analogy">Som en person som har lest hele internett og kan formulere seg om det meste — men som aldri har sett din spesifikke fabrikk. Det er der RAG og fine-tuning kommer inn.</span></div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">SLM</span><span class="term-eng">Small Language Model</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Mindre språkmodeller — typisk 1–10 milliarder parametre. Raskere, billigere, kan kjøres lokalt. Ofte spesialiserte via fine-tuning eller destillering. Googles Gemma, Microsofts Phi og Metas Llama i mindre varianter er eksempler. Det er disse som gjør AI på fabrikkgulvet praktisk mulig uten skytjeneste.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Token</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Den minste enheten en språkmodell arbeider med — rundt ¾ av et ord på engelsk, litt mindre på norsk. Når man sier at en modell har et "kontekstvindu på 200 000 tokens", betyr det hvor mye tekst den kan ha i arbeidsminnet samtidig: omtrent 150 000 ord, eller en tjukk bok.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Prompt</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Instruksjonen du gir en AI. Kan være et enkelt spørsmål eller en detaljert brief med kontekst, rolle, format og begrensninger. Kvaliteten på prompten avgjør kvaliteten på svaret — akkurat som en god arbeidsinstruksjon gir bedre resultater enn "gjør noe bra".</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Hallusinering</span><span class="term-eng">Hallucination</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">Når en AI med overbevisende språk presenterer informasjon som ikke stemmer. Den "dikter opp" — ikke av vrangvilje, men fordi den optimaliserer for sammenhengende tekst, ikke for sannhet. Alvorlig i profesjonell bruk. Du må kunne verifisere.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Multimodal</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">En modell som forstår flere typer input — tekst, bilde, lyd, video, kode — i samme samtale. Claude kan for eksempel analysere et bilde av en maskins kontrollpanel, lese av verdiene og foreslå justeringer. Det er multimodalitet i praksis.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Deepfake</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Grunnleggende</span></div></div>
+<div class="term-body">AI-generert lyd, bilde eller video som realistisk etterligner virkelige personer. Kan være en politikers stemme som sier ting hun aldri har sagt, eller et videomøte med en "sjef" som ikke finnes. EUs AI Act krever merking av slikt innhold.</div></div>
+
+<!-- ══════════ MODELLER & TRENING ══════════ -->
+<h2 class="cat-heading" id="cat-modeller">Modeller &amp; trening</h2>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Grunnmodell</span><span class="term-eng">Foundation model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">En stor, generelt trent modell som deretter kan tilpasses spesifikke oppgaver — via fine-tuning, RAG eller prompt engineering. GPT-4, Claude, Gemini og Llama er grunnmodeller. Tenk på det som råstoffet: svært kraftig, men først virkelig brukbart når det formes for et formål.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Parametre</span><span class="term-eng">Parameters / Weights</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">De innlærte verdiene i en modell — "rattene" som er justert under treningen. En modell med 70 milliarder parametre har 70 milliarder justerbare verdier. Flere parametre betyr vanligvis mer kapasitet, men krever mer minne og beregningskraft.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Fine-tuning</span><span class="term-eng">Finjustering</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Man tar en generell modell og spesialtrener den på et avgrenset materiale — en bransjes dokumentasjon, en bedrifts prosesser, et fagspråk.<span class="analogy">Som å ta en generalistingeniør og gi hen et halvår med dypdykk i akkurat din prosess. Hen mister ingenting av bredden, men får et skarpt dyp.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">LoRA</span><span class="term-eng">Low-Rank Adaptation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">En teknikk for å fine-tune store modeller uten å trene opp hele modellen på nytt. I stedet justerer man en liten del av parametrene. Gjør fine-tuning mulig med begrenset maskinvare.<span class="analogy">Som å bytte linse på et kamera i stedet for å bygge et nytt kamera.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">RAG</span><span class="term-eng">Retrieval-Augmented Generation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">AI-en henter relevante dokumenter før den svarer, i stedet for å gjette ut fra minnet. Du kobler modellen til dine egne datakilder — håndbøker, tegninger, prosesskort — og den søker i dem for hvert spørsmål.<span class="analogy">Forskjellen mellom å svare på en eksamensoppgave med åpne bøker og med stengte.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Embedding</span><span class="term-eng">Vektorinnebygging</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Teknikken med å gjøre om tekst (eller bilder, lyd) til tallvektorer som fanger <em>mening</em>, ikke bare ordrekkefølge. "Hund" og "valp" får like vektorer, mens "hund" og "traktor" havner langt fra hverandre. Bærebjelken i RAG-systemer — det er slik AI-en finner riktige dokumenter.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">MoE</span><span class="term-eng">Mixture of Experts</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">En modellarkitektur med flere spesialiserte "ekspertmoduler" der bare de relevante aktiveres per spørsmål. DeepSeek V4 har én billion parametre, men aktiverer bare 37 milliarder om gangen.<span class="analogy">Som et sykehus med spesialister — du møter ortopeden, ikke hele staben.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Destillering</span><span class="term-eng">Distillation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">En stor, kraftig modell lærer en mindre modell å etterligne atferden sin. Læreren genererer eksempler, eleven lærer mønstrene. Resultatet: en liten modell som presterer nær den store, men krever en brøkdel av ressursene. Det er slik de beste SLM-ene skapes.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Kvantisering</span><span class="term-eng">Quantization</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Å redusere presisjonen i modellens parametre — for eksempel fra 16-bits til 4-bits tall — slik at den får plass i mindre minne og kjører raskere. Noe kvalitetstap, men ofte overraskende lite. Avgjørende teknikk for å kjøre store modeller lokalt.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Diffusjonsmodell</span><span class="term-eng">Diffusion model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Arkitekturen bak de fleste AI-bildegeneratorer (Midjourney, DALL-E, Stable Diffusion) og nå også video. Modellen lærer å gradvis "avstøye" et tilfeldig bilde inntil det matcher beskrivelsen din.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Syntetiske data</span><span class="term-eng">Synthetic data</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Data generert av AI i stedet for samlet inn fra virkeligheten. Brukes til å trene modeller når reelle data er dyre, sensitive eller utilstrekkelige. Én AI genererer tusenvis av varianter av for eksempel røntgenbilder eller fabrikksscenarier — og en annen AI trenes på dem.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">RLHF</span><span class="term-eng">Reinforcement Learning from Human Feedback</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Metode for å tilpasse en modells atferd ut fra menneskelig tilbakemelding. Mennesker vurderer svarene — "dette var bra, dette var dårlig" — og modellen justeres. Det er derfor Claude og GPT føles hjelpsomme: de er trent til å opptre som gode samtalepartnere.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Reinforcement learning</span><span class="term-eng">Forsterkningslæring</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Læringsmetode der modellen lærer ved å prøve og få belønning eller straff. Grunnlaget i RLHF, men også i robotikk, spill-AI (AlphaGo) og autonome systemer. Særlig relevant for fysisk AI, der modellen må lære seg å navigere virkelige miljøer.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Emergente evner</span><span class="term-eng">Emergent abilities</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Evner som dukker opp uventet i en modell når den blir stor nok — uten at de er trent inn eksplisitt. En modell trent på tekst begynner plutselig å resonnere om matematikk eller løse logikkoppgaver den aldri har sett. Sentralt i debatten om veien til AGI.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Benchmark</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">Standardisert test for å sammenligne AI-modellers ytelse. MMLU tester bred kunnskap, HumanEval tester koding, ARC tester resonnement. Nyttig som grovmål — men ingen benchmark fanger hvor bra en modell fungerer i <em>din</em> spesifikke bruk.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Åpen modell</span><span class="term-eng">Open-weight model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Modeller</span></div></div>
+<div class="term-body">En modell der vektene er fritt tilgjengelige til å laste ned og kjøre selv. Llama (Meta), Gemma (Google) og Mistral er eksempler. "Åpen" betyr ikke alltid helt fri — lisensvilkårene varierer. Motsatsen: lukkede modeller som GPT og Claude, som bare er tilgjengelige via API eller chat.</div></div>
+
+<!-- ══════════ BRUK ══════════ -->
+<h2 class="cat-heading" id="cat-anvandning">Bruk</h2>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">AI-agent</span><span class="term-eng">AI Agent</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Et AI-system som ikke bare svarer på spørsmål, men handler selvstendig — planlegger, utfører oppgaver, bruker verktøy, søker etter informasjon og itererer til jobben er ferdig.<span class="analogy">Forskjellen fra en vanlig chatbot er som forskjellen mellom å spørre noen om veibeskrivelse og å be noen <em>kjøre deg dit</em>.</span></div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Agentisk arbeidsflyt</span><span class="term-eng">Agentic workflow</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">En arbeidsflyt der AI-agenter samarbeider — en samler data, en analyserer, en skriver rapport, en kvalitetssikrer. Systemer som Anthropics "Managed Agents" automatiserer hele kjeder av kognitivt arbeid, ikke bare enkeltsteg. Skiftet fra "modell som tjeneste" til "agent som tjeneste".</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">MCP</span><span class="term-eng">Model Context Protocol</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Åpen protokoll (utviklet av Anthropic) som lar AI-modeller koble seg til eksterne systemer — databaser, API-er, filsystemer, verktøy. Gjør at en agent kan søke i ERP-et ditt, lese e-post eller oppdatere en database.<span class="analogy">Tenk USB-standard, men for AI-integrasjoner. En kontakt som passer overalt.</span></div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Prompt engineering</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Kunsten å formulere instruksjoner som gir best mulig resultat. Inkluderer teknikker som rollesetting ("du er en erfaren prosessingeniør"), few-shot-eksempler (vis hva du vil ha), chain-of-thought (be modellen tenke steg for steg) og strukturert output. Ikke magi — strukturert kommunikasjon.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Kontekstvindu</span><span class="term-eng">Context window</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Mengden informasjon en modell kan "holde i hodet" i en samtale. Måles i tokens. Claude har 200 000 tokens (omtrent en hel bok), DeepSeek V4 håndterer 1 million. Større vindu = mer materiale uten å miste tråden.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Resonnerende / tenkende modeller</span><span class="term-eng">Reasoning models</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Modeller som "tenker" steg for steg før de svarer — resonnerer seg gjennom problemet i stedet for å gi et direkte svar. OpenAIs o-serie og Claudes extended thinking er eksempler. Bedre på komplekse problemer, men langsommere og dyrere per spørsmål.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Fysisk AI</span><span class="term-eng">Physical AI / Embodied AI</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">AI som virker i den fysiske verden — roboter, droner, selvkjørende kjøretøy, cobots på fabrikkgulvet. Modeller som forstår fysikkens lover godt nok til å styre bevegelser, gripe objekter og navigere virkelige miljøer. Se essayet <a href="fysiska-fronten.html"><em>Den fysiske fronten</em></a>.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Digital tvilling</span><span class="term-eng">Digital twin</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">En virtuell kopi av en fysisk ressurs — maskin, produksjonslinje eller hel fabrikk — som oppdateres i sanntid med sensordata. Med AI kan tvillingen forutsi havari, simulere prosessendringer og optimalisere drift uten å røre det fysiske utstyret.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Vibe coding</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Å lage programvare ved å beskrive hva man vil ha på naturlig språk, og la AI skrive koden. Ingen tradisjonell programmering kreves. Begrepet ble lansert av Andrej Karpathy (medgrunnlegger, OpenAI) i februar 2025. Grensen mellom "bruker" og "utvikler" viskes ut.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Guardrails</span><span class="term-eng">Sikkerhetsgrenser</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Bruk</span></div></div>
+<div class="term-body">Innebygde eller pålagte begrensninger som hindrer en AI i å produsere skadelig, feilaktig eller uønsket innhold. Kan være tekniske filtre, policyinstruksjoner i prompten eller separate overvåkningssystemer. Du vil ikke at kundeagenten din lover rabatter som ikke finnes.</div></div>
+
+<!-- ══════════ INFRASTRUKTUR ══════════ -->
+<h2 class="cat-heading" id="cat-infrastruktur">Infrastruktur</h2>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Sky-AI</span><span class="term-eng">Cloud AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Du bruker en AI som kjører på noen andres servere (Anthropic, OpenAI, Google). Dataene dine sendes dit, bearbeides, svaret kommer tilbake. Fordeler: alltid nyeste modell, ingen egen maskinvare. Ulempe: dataene forlater huset.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Lokal AI</span><span class="term-eng">Local / On-premise AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Modellen kjører på din egen maskinvare — din datamaskin, din server, ditt nettverk. Ingen data forlater bygningen. Krever nok minne (oftest 32+ GB RAM). Verktøy som Ollama og LM Studio gjør det tilgjengelig i dag.<span class="analogy">Skyen er å leie et verksted. Lokalt er å eie sitt eget. Full kontroll, men du vedlikeholder selv.</span></div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Edge AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">AI som kjører direkte i enheten — et kamera, en sensor, en robot — i stedet for å sende data til skyen. Raskere respons, ingen nettavhengighet. Kritisk for sanntid: et kvalitetskamera på linja som kasserer defekte deler på millisekunder kan ikke vente på et svar fra skyen.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">GPU</span><span class="term-eng">Graphics Processing Unit</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Grafikkprosessoren — opprinnelig designet for spill, men perfekt for AI-beregninger fordi den utfører tusenvis av parallelle operasjoner. NVIDIA dominerer. Tilgang til GPU-er er en av de største flaskehalsene i AI-utviklingen — TSMCs brikkeproduksjon og ASMLs litografikapasitet setter takten.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Compute</span><span class="term-eng">Beregningskraft</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Samlebetegnelse for beregningskraften som trengs for å trene og kjøre AI-modeller. Compute er AI-verdens olje: Amazon, Microsoft og Google investerer hundrevis av milliarder dollar i datasentre. Tilgang til compute avgjør hvem som kan bygge frontiermodeller — og hvem som blir avhengig.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">API</span><span class="term-eng">Application Programming Interface</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Programmeringsgrensesnitt — måten koden eller systemet ditt snakker med en AI-modell. I stedet for å bruke et chat-nettsted sender du forespørsler direkte, automatisert. Slik integrerer bedrifter AI i systemene og arbeidsflytene sine.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Inferens</span><span class="term-eng">Inference</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Når modellen faktisk brukes — genererer et svar ut fra din input. Trening skjer én gang (og koster hundrevis av millioner). Inferens skjer hver gang du stiller et spørsmål. Inferenskostnaden synker dramatisk — det er derfor marginalkostnaden for kognisjon nærmer seg null.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Latens</span><span class="term-eng">Latency</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastruktur</span></div></div>
+<div class="term-body">Tiden fra du sender en forespørsel til svaret begynner å komme. Skytjenester har latens avhengig av serveravstand. Lokale og edge-modeller har lavere latens. I industrielle tillempninger kan latens være forskjellen mellom å fange en defekt og å bomme.</div></div>
+
+<!-- ══════════ SAMFUNN & FRAMTID ══════════ -->
+<h2 class="cat-heading" id="cat-samhalle">Samfunn &amp; framtid</h2>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AGI</span><span class="term-eng">Artificial General Intelligence</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">En AI som kan utføre hvilken som helst intellektuell oppgave på menneskelig nivå. Definisjonen er omstridt og har blitt en politisk markør. Uansett eksakt definisjon beveger vi oss mot systemer med stadig bredere evner — det er den bevegelsen som betyr noe. Se essayet <a href="agi.html"><em>AGI og hva det faktisk betyr</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">ASI</span><span class="term-eng">Artificial Superintelligence</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">En AI som overgår menneskelig intelligens i alle henseender — inkludert vitenskapelig kreativitet, sosial kompetanse og strategisk tenkning. Fremdeles hypotetisk, men tidslinjer forkortes. Spørsmålet er ikke lenger <em>om</em>, men <em>når</em> — og framfor alt: hvem som kontrollerer den.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Skaleringslover</span><span class="term-eng">Scaling laws</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Observasjonen at AI-modeller blir forutsigbart bedre når man øker data, beregningskraft og modellstørrelse. Derfor investeres det milliarder i datasentre. Debattspørsmålet: holder skaleringslovene, eller treffer vi et tak?</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Eksponentiell utvikling</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">AI-evner akselererer. Det som tok et år i 2023 tar måneder i 2025 og uker i 2026. Mennesket tenker lineært av natur: vi ekstrapolerer gårsdagens tempo framover. Eksponentiell utvikling betyr at virkeligheten konsekvent overgår forventningene våre.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Nullmarginalkostnad</span><span class="term-eng">Zero marginal cost</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Kostnaden for hver ekstra enhet kognitivt arbeid nærmer seg null — akkurat som internett gjorde med distribusjon av informasjon. Konkret: et ICCM-fokusdiagram som vanligvis krever 16 timers ekspertarbeid kan leveres på 40 minutter. Se essayet <a href="overflod.html"><em>Når kostnader presses ned</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AI-alignment</span><span class="term-eng">AI Alignment / Safety</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Forskningsfeltet som arbeider med å sikre at AI-systemer gjør det vi faktisk vil — ikke bare det vi tilfeldigvis ba om. Stadig viktigere etter som systemene blir mer kapable. Anthropic ble grunnlagt spesifikt med alignment som kjerneoppdrag.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Eksistensiell risiko</span><span class="term-eng">Existential risk / x-risk</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Risikoen for at AI på AGI- eller ASI-nivå forårsaker irreversibel skade. Lederne i Anthropic, OpenAI og DeepMind har alle sammenlignet AI-risiko med pandemier og atomvåpen. Deles i <em>missalignment</em> (AI-en gjør ikke det vi vil) og <em>misuse</em> (AI-en brukes bevisst til skade).</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Red teaming</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Å systematisk teste en AI ved å prøve å få den til å oppføre seg farlig eller feilaktig — før den slippes. Som penetrasjonstesting av programvare, men for intelligente systemer. En av grunnpilarene i ansvarlig AI-utvikling.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Digital føydalisme</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">Et scenario der et fåtall teknologiselskaper kontrollerer den kognitive infrastrukturen — modellene, dataene, beregningskraften — og resten av samfunnet blir avhengig. Middelaldersk føydalisme, men med servere i stedet for jord. Motmiddelet: åpne modeller, lokal AI, politisk bevissthet.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Post-arbeid</span><span class="term-eng">Post-labor economy</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">En økonomi der stadig mindre menneskelig lønnsarbeid trengs for å opprettholde produksjonen. Ikke nødvendigvis en utopi — krever nye svar om identitet, mening, fordeling og samfunnsstruktur. Se essayet <a href="efter-jobbet.html"><em>Etter jobben</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AI Act</span><span class="term-eng">EUs AI-forordning</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Samfunn</span></div></div>
+<div class="term-body">EUs lovgivning som klassifiserer AI-systemer etter risikonivå og regulerer dem deretter. Forbyr visse anvendelser (sosial scoring), krever åpenhet og dokumentasjon. Viktig rammeverk — men utformet for en virkelighet som allerede har forandret seg. Hovedfrist: 2. august 2026.</div></div>
+
+<div class="no-results" id="no-results">Ingen begreper matchet søket ditt. Prøv et annet ord, eller <a href="mailto:rolf@skogling.se">foreslå et begrep</a>.</div>
+</div>
+
+<footer class="site-footer"><div class="container">
+  <p>© 2026 Rolf Skogling · <a href="kilder.html">Kilder</a> · <a href="index.html">Tilbake til startsiden</a></p>
+</div></footer>
+
+<script>
+const filterBtns=document.querySelectorAll('.filter-tag'),cards=document.querySelectorAll('.term-card'),headings=document.querySelectorAll('.cat-heading'),searchInput=document.getElementById('search'),noResults=document.getElementById('no-results'),termCount=document.getElementById('termCount');
+function update(){const f=document.querySelector('.filter-tag.active').dataset.filter,q=searchInput.value.toLowerCase().trim();let n=0;cards.forEach(c=>{const ok=(f==='alla'||c.dataset.cat===f)&&(!q||c.textContent.toLowerCase().includes(q));c.style.display=ok?'':'none';if(ok)n++});headings.forEach(h=>{const id=h.id.replace('cat-',''),any=Array.from(document.querySelectorAll('.term-card[data-cat="'+id+'"]')).some(c=>c.style.display!=='none');h.style.display=any?'':'none'});noResults.style.display=n?'none':'block';termCount.textContent=q?n+' av '+cards.length+' begreper':cards.length+' begreper'}
+filterBtns.forEach(b=>b.addEventListener('click',()=>{filterBtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');update()}));searchInput.addEventListener('input',update);update();
+</script>
+</body>
+</html>
