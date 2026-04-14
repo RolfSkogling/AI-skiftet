@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary — AI-skiftet</title>
+  <meta name="description" content="AI concepts explained in plain English. No jargon without context — from the shop floor, not the boardroom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    :root{--accent:#8c4a1f;--text:#1b1b1b;--muted:#5f6c7b;--surface:#fff;--bg:#f8f6f3;--line:rgba(140,74,31,.12);--radius:10px;--shadow:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.03)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:720px;margin:0 auto;padding:0 24px}
+    .container-wide{max-width:860px;margin:0 auto;padding:0 24px}
+
+    /* NAV */
+    .site-nav{padding:16px 0;border-bottom:1px solid var(--line);background:var(--surface);position:sticky;top:0;z-index:100}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__logo{font-family:"Playfair Display",serif;font-weight:800;font-size:1.2rem;color:var(--text);text-decoration:none;margin-right:8px;white-space:nowrap}
+    .site-nav__links{display:flex;gap:20px}
+    .site-nav__links a{font-size:.88rem;font-weight:600;color:var(--muted);text-decoration:none;transition:color .15s}
+    .site-nav__links a:hover{color:var(--accent);text-decoration:none}
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:var(--muted);text-decoration:none}
+    .lang-switcher a.active{background:var(--accent);color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);margin:4px 0;border-radius:2px}
+    @media(max-width:700px){
+      .nav-toggle{display:block}
+      .site-nav__links{display:none;flex-direction:column;gap:12px;position:absolute;top:100%;left:0;right:0;background:var(--surface);padding:20px 24px;border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+      .site-nav__links.active{display:flex}
+    }
+
+    /* FOOTER */
+    .site-footer{border-top:1px solid var(--line);padding:28px 0 36px;text-align:center;font-size:.85rem;color:var(--muted)}
+    .site-footer a{color:var(--accent)}
+
+    /* FILTER TAGS */
+    .filter-tag{padding:5px 14px;border:1px solid var(--line);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--muted);background:transparent;cursor:pointer;transition:all .2s;font-family:inherit}
+    .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+    /* HERO */
+    .glossary-hero{padding:56px 0 36px;border-bottom:1px solid var(--line);text-align:center}
+    .glossary-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2rem,5vw,2.8rem);font-weight:800;color:var(--text);margin:0 0 8px}
+    .glossary-hero .subtitle{font-size:1.05rem;color:var(--muted);max-width:560px;margin:0 auto;line-height:1.6}
+    .glossary-filter{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:28px 0 0}
+    .glossary-search{max-width:440px;margin:20px auto 0;position:relative}
+    .glossary-search input{width:100%;padding:10px 14px 10px 40px;border:1px solid var(--line);border-radius:var(--radius);font-size:.95rem;font-family:"Inter",sans-serif;background:var(--surface);color:var(--text);transition:border-color .2s}
+    .glossary-search input:focus{outline:none;border-color:var(--accent)}
+    .glossary-search input::placeholder{color:var(--muted);opacity:.6}
+    .glossary-search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+    .term-count{text-align:center;font-size:.82rem;color:var(--muted);margin-top:14px}
+
+    /* MAIN */
+    .glossary-main{padding-top:32px;padding-bottom:60px}
+    .glossary-intro{font-size:.95rem;color:var(--muted);line-height:1.75;margin-bottom:32px;padding:16px 20px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;box-shadow:var(--shadow)}
+    .cat-heading{font-family:"Playfair Display",serif;font-size:1.35rem;font-weight:700;color:var(--text);margin:36px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--accent);display:inline-block}
+
+    /* TERM CARDS */
+    .term-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:10px;box-shadow:var(--shadow);transition:transform .15s,border-color .2s}
+    .term-card:hover{transform:translateY(-1px);border-color:rgba(140,74,31,.25)}
+    .term-header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+    .term-name{font-size:1.08rem;font-weight:700;color:var(--text)}
+    .term-eng{font-size:.82rem;color:var(--muted);font-style:italic}
+    .term-tags{display:flex;gap:5px;flex-wrap:wrap;margin-left:auto}
+    .term-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 9px;border-radius:100px}
+    .term-tag--grunderna{background:rgba(140,74,31,.1);color:var(--accent)}
+    .term-tag--modeller{background:rgba(20,100,180,.1);color:#1060a0}
+    .term-tag--anvandning{background:rgba(30,120,70,.1);color:#1a6b3c}
+    .term-tag--infrastruktur{background:rgba(100,80,160,.1);color:#5540a0}
+    .term-tag--samhalle{background:rgba(180,60,40,.1);color:#993322}
+    .term-body{font-size:.92rem;color:var(--text);line-height:1.7}
+    .term-body a{color:var(--accent)}
+    .term-body a:hover{text-decoration:none}
+    .analogy{display:block;margin-top:8px;padding:10px 14px;background:rgba(140,74,31,.06);border-radius:var(--radius);font-size:.88rem;color:#5c3a22;font-style:italic;border-left:3px solid rgba(140,74,31,.2)}
+    .analogy::before{content:"💡 "}
+    .no-results{text-align:center;padding:48px 16px;color:var(--muted);font-style:italic;display:none}
+    @media(max-width:600px){.term-header{flex-direction:column;gap:4px}.term-tags{margin-left:0}.glossary-hero{padding:40px 0 28px}}
+  </style>
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/ordlista.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/ordlista.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/ordlista.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/ordlista.html">
+</head>
+<body>
+
+<nav class="site-nav"><div class="container-wide">
+  <a href="index.html" class="site-nav__logo">AI‑skiftet</a>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')"><span></span><span></span><span></span></button>
+  <div class="site-nav__links">
+    <a href="index.html#news">News</a>
+    <a href="index.html#essays">Essays</a>
+    <a href="framtidsscenarier.html">Scenarios</a>
+    <a href="ordlista.html" style="color:var(--accent)">Glossary</a>
+    <a href="index.html#about">About</a>
+    <a href="kallor.html">Sources</a>
+  </div>
+  <div class="lang-switcher">
+    <a href="../ordlista.html" lang="sv">SV</a>
+    <a href="ordlista.html" lang="en" class="active">EN</a>
+    <a href="../no/ordlista.html" lang="nb">NO</a>
+  </div>
+</div></nav>
+
+<section class="glossary-hero"><div class="container">
+  <h1>Glossary</h1>
+  <p class="subtitle">AI concepts explained in plain English — from the shop floor, not the boardroom.</p>
+  <div class="glossary-filter">
+    <button class="filter-tag active" data-filter="alla">All</button>
+    <button class="filter-tag" data-filter="grunderna">Basics</button>
+    <button class="filter-tag" data-filter="modeller">Models &amp; training</button>
+    <button class="filter-tag" data-filter="anvandning">Use</button>
+    <button class="filter-tag" data-filter="infrastruktur">Infrastructure</button>
+    <button class="filter-tag" data-filter="samhalle">Society &amp; future</button>
+  </div>
+  <div class="glossary-search">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+    <input type="text" id="search" placeholder="Search terms…" autocomplete="off">
+  </div>
+  <div class="term-count" id="termCount"></div>
+</div></section>
+
+<div class="container-wide glossary-main">
+<p class="glossary-intro">This glossary exists so you can read the essays on AI‑skiftet without tripping over jargon. The explanations are deliberately down-to-earth — the goal is for you to understand what the concepts <em>mean in practice</em>, not to memorize a textbook. The list is updated continuously.</p>
+
+<!-- ══════════ BASICS ══════════ -->
+<h2 class="cat-heading" id="cat-grunderna">Basics</h2>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">AI</span><span class="term-eng">Artificial Intelligence</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">Umbrella term for systems that perform tasks traditionally requiring human thought — interpreting text, making decisions, identifying patterns. In today's debate it almost always means <em>generative AI</em>, but the concept is broader and includes everything from spam filters to self-driving cars.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Generative AI</span><span class="term-eng">GenAI</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">AI that <em>creates</em> new content — text, images, code, audio, video — instead of just classifying or sorting. ChatGPT, Claude, Midjourney and Suno are all generative. The key point: they don't automate computation — they automate <em>cognition</em>. That's a qualitative difference.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Cognitive automation</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">The core of the shift: machines that do thinking, not just manual or computational work. Interpreting reports, writing analyses, making judgments, drafting documents. What makes AI fundamentally different from Excel, welding robots or ERP systems. Earlier automation replaced hands and spreadsheets — this one replaces parts of the head.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Neural network</span><span class="term-eng">Deep learning</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">The mathematical architecture behind modern AI — layer upon layer of computational nodes loosely inspired by the brain's synapses. "Deep learning" means the network has many layers. All large AI systems today — language models, image generators, robotic control — are built on neural networks.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Transformer</span><span class="term-eng">Transformer architecture</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">The architecture behind essentially all modern AI models. Introduced by Google in 2017, it solved a fundamental problem: how a machine should grasp context in long texts. The foundation for GPT ("Generative Pre-trained <em>Transformer</em>"), Claude, Gemini and others.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">LLM</span><span class="term-eng">Large Language Model</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">A large language model — the core of systems like Claude and GPT. Trained on vast amounts of text to understand and produce language. "Large" refers to billions of learned parameters.<span class="analogy">Like a person who has read the whole internet and can express themselves on most things — but who has never seen your specific factory. That's where RAG and fine-tuning come in.</span></div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">SLM</span><span class="term-eng">Small Language Model</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">Smaller language models — typically 1–10 billion parameters. Faster, cheaper, runnable locally. Often specialized via fine-tuning or distillation. Google's Gemma, Microsoft's Phi and Meta's Llama in smaller sizes are examples. These are what make AI on the shop floor practically feasible without a cloud service.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Token</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">The smallest unit a language model works with — roughly ¾ of an English word, slightly less in Swedish. When a model is said to have a "context window of 200,000 tokens", that's how much text it can keep in working memory at once: around 150,000 words, or a thick book.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Prompt</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">The instruction you give an AI. Can be a simple question or a detailed brief with context, role, format and constraints. The quality of your prompt determines the quality of the response — just as a good work instruction produces better results than "do something good".</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Hallucination</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">When an AI presents information that isn't true, in convincing language. It "makes things up" — not out of malice, but because it optimizes for coherent text, not for truth. Serious in professional use. You have to be able to verify.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Multimodal</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">A model that understands several types of input — text, image, audio, video, code — in the same conversation. Claude can, for example, analyze a photo of a machine's control panel, read the values, and suggest adjustments. That's multimodality in practice.</div></div>
+
+<div class="term-card" data-cat="grunderna"><div class="term-header"><span class="term-name">Deepfake</span><div class="term-tags"><span class="term-tag term-tag--grunderna">Basics</span></div></div>
+<div class="term-body">AI-generated audio, image or video that realistically mimics real people. Can be a politician's voice saying things they never said, or a video call with a "boss" who doesn't exist. The EU AI Act requires labelling of such content.</div></div>
+
+<!-- ══════════ MODELS & TRAINING ══════════ -->
+<h2 class="cat-heading" id="cat-modeller">Models &amp; training</h2>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Foundation model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">A large, generally trained model that can then be adapted to specific tasks — via fine-tuning, RAG or prompt engineering. GPT-4, Claude, Gemini and Llama are foundation models. Think of it as raw material: enormously capable, but only truly useful once it's shaped for a purpose.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Parameters</span><span class="term-eng">Weights</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">The learned values in a model — the "dials" adjusted during training. A model with 70 billion parameters has 70 billion adjustable values. More parameters generally means more capacity but requires more memory and compute.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Fine-tuning</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">You take a general model and specialize-train it on a defined body of material — an industry's documentation, a company's processes, a technical vocabulary.<span class="analogy">Like taking a generalist engineer and giving them six months of deep immersion in your specific process. They lose none of their breadth, but gain sharp depth.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">LoRA</span><span class="term-eng">Low-Rank Adaptation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">A technique for fine-tuning large models without retraining the whole thing. Instead, you adjust a small portion of the parameters. Makes fine-tuning feasible with limited hardware.<span class="analogy">Like swapping the lens on a camera instead of building a new camera.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">RAG</span><span class="term-eng">Retrieval-Augmented Generation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">The AI retrieves relevant documents before answering, instead of guessing from memory. You connect the model to your own data sources — manuals, drawings, process sheets — and it searches them for each query.<span class="analogy">The difference between answering an exam question open-book vs. closed-book.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Embedding</span><span class="term-eng">Vector embedding</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">The technique of converting text (or images, audio) into numeric vectors that capture <em>meaning</em>, not just word order. "Dog" and "puppy" get similar vectors, while "dog" and "tractor" land far apart. The cornerstone of RAG systems — it's how the AI finds the right documents.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">MoE</span><span class="term-eng">Mixture of Experts</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">A model architecture with several specialized "expert modules" of which only the relevant ones activate per query. DeepSeek V4 has a trillion parameters but activates only 37 billion at a time.<span class="analogy">Like a hospital with specialists — you see the orthopedist, not the entire staff.</span></div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Distillation</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">A large, capable model teaches a smaller model to mimic its behaviour. The teacher generates examples, the student learns the patterns. Result: a small model that performs near the large one but needs a fraction of the resources. This is how the best SLMs are created.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Quantization</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Reducing the precision of a model's parameters — e.g. from 16-bit to 4-bit numbers — so it fits in less memory and runs faster. Some quality loss, but often surprisingly little. A crucial technique for running large models locally.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Diffusion model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">The architecture behind most AI image generators (Midjourney, DALL-E, Stable Diffusion), and now video as well. The model learns to gradually "denoise" a random image until it matches your description.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Synthetic data</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Data generated by AI rather than collected from reality. Used to train models when real data is expensive, sensitive or insufficient. One AI generates thousands of variants of, say, x-ray images or factory scenarios — and another AI is trained on them.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">RLHF</span><span class="term-eng">Reinforcement Learning from Human Feedback</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Method for shaping a model's behaviour based on human feedback. People rate the responses — "this was good, this was bad" — and the model is adjusted. That's why Claude and GPT feel helpful: they have been trained to behave like good conversation partners.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Reinforcement learning</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Learning method where a model learns by trying and receiving reward or penalty. The basis of RLHF, but also of robotics, game AI (AlphaGo) and autonomous systems. Especially relevant for physical AI, where the model must learn to navigate real environments.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Emergent abilities</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Abilities that appear unexpectedly in a model once it becomes large enough — without being trained in explicitly. A model trained on text suddenly begins to reason about mathematics or solve logic problems it has never seen. Central to the debate about the path to AGI.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Benchmark</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">Standardized test for comparing AI models' performance. MMLU tests broad knowledge, HumanEval tests coding, ARC tests reasoning. Useful as a rough measure — but no benchmark captures how well a model performs in <em>your</em> specific application.</div></div>
+
+<div class="term-card" data-cat="modeller"><div class="term-header"><span class="term-name">Open-weight model</span><div class="term-tags"><span class="term-tag term-tag--modeller">Models</span></div></div>
+<div class="term-body">A model whose weights are freely available to download and run yourself. Llama (Meta), Gemma (Google) and Mistral are examples. "Open" doesn't always mean completely free — licence terms vary. The opposite: closed models like GPT and Claude, accessed only via API or chat.</div></div>
+
+<!-- ══════════ USE ══════════ -->
+<h2 class="cat-heading" id="cat-anvandning">Use</h2>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">AI agent</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">An AI system that doesn't just answer questions but acts autonomously — plans, performs tasks, uses tools, searches for information, and iterates until the job is done.<span class="analogy">The difference from an ordinary chatbot is like the difference between asking someone for directions and asking someone to <em>drive you there</em>.</span></div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Agentic workflow</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">A workflow in which AI agents collaborate — one gathers data, one analyzes, one writes the report, one quality-checks. Systems like Anthropic's "Managed Agents" automate whole chains of cognitive work, not just individual steps. The shift from "model as a service" to "agent as a service".</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">MCP</span><span class="term-eng">Model Context Protocol</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">Open protocol (developed by Anthropic) that lets AI models plug into external systems — databases, APIs, file systems, tools. It lets an agent query your ERP, read email or update a database.<span class="analogy">Think of a USB standard, but for AI integrations. A connector that fits everywhere.</span></div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Prompt engineering</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">The craft of formulating instructions that yield the best possible result. Includes techniques like role-setting ("you are an experienced process engineer"), few-shot examples (showing what you want), chain-of-thought (asking the model to think step by step), and structured output. Not magic — structured communication.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Context window</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">The amount of information a model can "hold in its head" in a conversation. Measured in tokens. Claude has 200,000 tokens (about a full book); DeepSeek V4 handles 1 million. Larger window = more material without losing the thread.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Reasoning / thinking models</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">Models that "think" step by step before answering — reasoning through the problem instead of giving a direct reply. OpenAI's o-series and Claude's extended thinking are examples. Better on complex problems, but slower and more expensive per query.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Physical AI</span><span class="term-eng">Embodied AI</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">AI that operates in the physical world — robots, drones, autonomous vehicles, cobots on the shop floor. Models that understand the laws of physics well enough to control motion, grasp objects and navigate real environments. See the essay <a href="fysiska-fronten.html"><em>The physical front</em></a>.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Digital twin</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">A virtual copy of a physical asset — machine, production line or whole factory — updated in real time with sensor data. With AI, the twin can predict failures, simulate process changes and optimize operations without touching the physical equipment.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Vibe coding</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">Creating software by describing what you want in natural language and letting AI write the code. No traditional programming required. The term was coined by Andrej Karpathy (co-founder, OpenAI) in February 2025. The line between "user" and "developer" is blurring.</div></div>
+
+<div class="term-card" data-cat="anvandning"><div class="term-header"><span class="term-name">Guardrails</span><div class="term-tags"><span class="term-tag term-tag--anvandning">Use</span></div></div>
+<div class="term-body">Built-in or externally imposed constraints that keep an AI from producing harmful, incorrect or unwanted content. Can be technical filters, policy instructions in the prompt, or separate monitoring systems. You don't want your customer agent promising discounts that don't exist.</div></div>
+
+<!-- ══════════ INFRASTRUCTURE ══════════ -->
+<h2 class="cat-heading" id="cat-infrastruktur">Infrastructure</h2>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Cloud AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">You use an AI running on someone else's servers (Anthropic, OpenAI, Google). Your data is sent there, processed, and the reply comes back. Upsides: always the latest model, no hardware of your own. Downside: your data leaves the building.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Local AI</span><span class="term-eng">On-premise AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">The model runs on your own hardware — your computer, your server, your network. No data leaves the building. Requires enough memory (usually 32+ GB of RAM). Tools like Ollama and LM Studio make it accessible today.<span class="analogy">The cloud is renting a workshop. Local is owning your own. Full control, but you maintain it yourself.</span></div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Edge AI</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">AI that runs directly in the device — a camera, a sensor, a robot — instead of sending data to the cloud. Faster response, no network dependency. Critical for real-time use: a quality camera on the line rejecting defective parts in milliseconds can't wait for a cloud reply.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">GPU</span><span class="term-eng">Graphics Processing Unit</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">The graphics processor — originally designed for games, but perfect for AI computation because it performs thousands of parallel operations. NVIDIA dominates. Access to GPUs is one of the biggest bottlenecks in AI development — TSMC's chip capacity and ASML's lithography capacity set the pace.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Compute</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">Umbrella term for the computational power required to train and run AI models. Compute is the AI world's oil: Amazon, Microsoft and Google are investing hundreds of billions of dollars in data centers. Access to compute determines who can build frontier models — and who becomes dependent.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">API</span><span class="term-eng">Application Programming Interface</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">Programming interface — how your code or your system talks to an AI model. Instead of using a chat website, you send requests directly, in automated fashion. That's how companies integrate AI into their systems and workflows.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Inference</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">When the model is actually used — generating a reply from your input. Training happens once (and costs hundreds of millions). Inference happens every time you ask a question. Inference costs are falling dramatically — that's why the marginal cost of cognition is approaching zero.</div></div>
+
+<div class="term-card" data-cat="infrastruktur"><div class="term-header"><span class="term-name">Latency</span><div class="term-tags"><span class="term-tag term-tag--infrastruktur">Infrastructure</span></div></div>
+<div class="term-body">The time from when you send a request until the reply starts arriving. Cloud services have latency that depends on server distance. Local and edge models have lower latency. In industrial applications, latency can be the difference between catching a defect and missing it.</div></div>
+
+<!-- ══════════ SOCIETY & FUTURE ══════════ -->
+<h2 class="cat-heading" id="cat-samhalle">Society &amp; future</h2>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AGI</span><span class="term-eng">Artificial General Intelligence</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">An AI able to perform any intellectual task at human level. The definition is contested and has become a political marker. Whatever the exact definition, we are moving toward systems with ever broader abilities — it's that movement that matters. See the essay <a href="agi.html"><em>AGI and what it actually means</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">ASI</span><span class="term-eng">Artificial Superintelligence</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">An AI that surpasses human intelligence in every respect — including scientific creativity, social skill and strategic thinking. Still hypothetical, but timelines are shortening. The question is no longer <em>if</em> but <em>when</em> — and above all: who controls it.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Scaling laws</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">The observation that AI models become predictably better as you increase data, compute and model size. That's why billions flow into data centers. The debate question: do the scaling laws hold, or will we hit a ceiling?</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Exponential progress</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">AI capabilities are accelerating. What took a year in 2023 takes months in 2025 and weeks in 2026. Humans think linearly by nature: we extrapolate yesterday's pace forward. Exponential progress means reality consistently outruns our expectations.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Zero marginal cost</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">The cost of each additional unit of cognitive work approaches zero — just as the internet did for distributing information. Concretely: an ICCM focus diagram that normally takes 16 hours of expert work can be delivered in 40 minutes. See the essay <a href="overflod.html"><em>When costs are driven down</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AI alignment</span><span class="term-eng">AI Safety</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">The research field working to make AI systems do what we actually want — not just what we happened to ask for. Increasingly important as systems become more capable. Anthropic was founded specifically with alignment as its core mission.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Existential risk</span><span class="term-eng">x-risk</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">The risk that AI at AGI or ASI level causes irreversible harm. The leaders of Anthropic, OpenAI and DeepMind have all compared AI risk to pandemics and nuclear weapons. Split into <em>misalignment</em> (the AI doesn't do what we want) and <em>misuse</em> (the AI is deliberately used for harm).</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Red teaming</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">Systematically testing an AI by trying to make it behave dangerously or incorrectly — before it is released. Like penetration testing of software, but for intelligent systems. A cornerstone of responsible AI development.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Digital feudalism</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">A scenario where a handful of tech companies control the cognitive infrastructure — the models, the data, the compute — and the rest of society becomes dependent. Medieval feudalism, but with servers instead of farmland. The counter: open models, local AI, political awareness.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">Post-labor economy</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">An economy where ever less human paid work is needed to keep production going. Not necessarily a utopia — it demands new answers about identity, meaning, distribution and social structure. See the essay <a href="efter-jobbet.html"><em>After the job</em></a>.</div></div>
+
+<div class="term-card" data-cat="samhalle"><div class="term-header"><span class="term-name">AI Act</span><span class="term-eng">EU AI Regulation</span><div class="term-tags"><span class="term-tag term-tag--samhalle">Society</span></div></div>
+<div class="term-body">The EU legislation that classifies AI systems by risk level and regulates them accordingly. Bans some applications (social scoring), and demands transparency and documentation. An important framework — but designed for a reality that has already moved on. Main deadline: 2 August 2026.</div></div>
+
+<div class="no-results" id="no-results">No terms matched your search. Try another word, or <a href="mailto:rolf@skogling.se">suggest a term</a>.</div>
+</div>
+
+<footer class="site-footer"><div class="container">
+  <p>© 2026 Rolf Skogling · <a href="kallor.html">Sources</a> · <a href="index.html">Back to the home page</a></p>
+</div></footer>
+
+<script>
+const filterBtns=document.querySelectorAll('.filter-tag'),cards=document.querySelectorAll('.term-card'),headings=document.querySelectorAll('.cat-heading'),searchInput=document.getElementById('search'),noResults=document.getElementById('no-results'),termCount=document.getElementById('termCount');
+function update(){const f=document.querySelector('.filter-tag.active').dataset.filter,q=searchInput.value.toLowerCase().trim();let n=0;cards.forEach(c=>{const ok=(f==='alla'||c.dataset.cat===f)&&(!q||c.textContent.toLowerCase().includes(q));c.style.display=ok?'':'none';if(ok)n++});headings.forEach(h=>{const id=h.id.replace('cat-',''),any=Array.from(document.querySelectorAll('.term-card[data-cat="'+id+'"]')).some(c=>c.style.display!=='none');h.style.display=any?'':'none'});noResults.style.display=n?'none':'block';termCount.textContent=q?n+' of '+cards.length+' terms':cards.length+' terms'}
+filterBtns.forEach(b=>b.addEventListener('click',()=>{filterBtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');update()}));searchInput.addEventListener('input',update);update();
+</script>
+</body>
+</html>
