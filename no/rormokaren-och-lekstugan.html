@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rørleggeren og lekehuset — hvorfor alle leker med AI-agenter | AI-skiftet</title>
+    <meta name="description" content="OpenClaw fikk 150 000 stjerner på noen uker og ble av Jensen Huang kalt den viktigste programvareutgivelsen noensinne. Men hva løser det egentlig? Om gapet mellom å leke med AI og å jobbe med det.">
+    <link rel="canonical" href="https://ai-skiftet.se/no/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/rormokaren-och-lekstugan.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --color-bg: #faf7f2; --color-text: #2c2c2c; --color-text-muted: #6b6560; --color-accent: #8c4a1f; --color-accent-hover: #a0582a; --color-accent-light: rgba(140, 74, 31, 0.08); --color-border: #e0d8cf; --color-card-bg: #ffffff; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; --max-width: 720px; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); line-height: 1.75; font-size: 17px; -webkit-font-smoothing: antialiased; }
+        nav { border-bottom: 1px solid var(--color-border); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+        .site-logo { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--color-accent); text-decoration: none; }
+        .nav-links { display: flex; gap: 1.75rem; }
+        .nav-links a { color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--color-accent); }
+        .lang-switcher { display: inline-flex; gap: 2px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; margin-left: 1rem; }
+        .lang-switcher a { padding: 4px 8px; border-radius: 4px; color: var(--color-text-muted); text-decoration: none; }
+        .lang-switcher a.active { background: var(--color-accent); color: #fff; }
+        .lang-switcher a:hover:not(.active) { background: var(--color-accent-light); }
+        .hero { max-width: var(--max-width); margin: 0 auto; padding: 4rem 2rem 2.5rem; }
+        .hero-label { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-accent); margin-bottom: 1rem; }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 700; line-height: 1.2; color: var(--color-text); margin-bottom: 1rem; }
+        .hero-subtitle { font-size: 1.15rem; color: var(--color-text-muted); line-height: 1.65; max-width: 600px; }
+        .hero-meta { margin-top: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
+        article { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 4rem; }
+        article p { margin-bottom: 1.4rem; }
+        article h2 { font-family: var(--font-display); font-size: 1.55rem; font-weight: 700; margin-top: 2.8rem; margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; }
+        article a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
+        article a:hover { color: var(--color-accent-hover); }
+        .pullquote { font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--color-accent); border: none; background: none; text-align: center; padding: 2rem 1rem; margin: 2rem 0; line-height: 1.5; position: relative; }
+        .pullquote::before, .pullquote::after { content: ''; display: block; width: 60px; height: 1px; background: var(--color-border); margin: 0 auto 1rem; }
+        .pullquote::after { margin: 1rem auto 0; }
+        .separator { text-align: center; margin: 2.5rem 0; color: var(--color-border); font-size: 1.2rem; letter-spacing: 0.5em; }
+        footer { border-top: 1px solid var(--color-border); max-width: 1100px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--color-text-muted); }
+        footer a { color: var(--color-accent); text-decoration: none; }
+        @media (max-width: 640px) {
+            nav { padding: 0.75rem 1.25rem; }
+            .nav-links { gap: 1rem; }
+            .nav-links a { font-size: 0.82rem; }
+            .hero { padding: 2.5rem 1.25rem 1.5rem; }
+            article { padding: 0 1.25rem 3rem; }
+            footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://ai-skiftet.se/no/index.html" class="site-logo">AI-skiftet</a>
+    <div class="nav-links">
+        <a href="https://ai-skiftet.se/no/index.html#nyheter">Nyheter</a>
+        <a href="https://ai-skiftet.se/no/index.html#essays" class="active">Essays</a>
+        <a href="https://ai-skiftet.se/no/framtidsscenarier.html">Scenarier</a>
+        <a href="https://ai-skiftet.se/no/kilder.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+        <a href="https://ai-skiftet.se/rormokaren-och-lekstugan.html" lang="sv">SV</a>
+        <a href="https://ai-skiftet.se/en/rormokaren-och-lekstugan.html" lang="en">EN</a>
+        <a href="#" lang="nb" class="active">NO</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-label">Essay</div>
+    <h1>Rørleggeren og lekehuset</h1>
+    <p class="hero-subtitle">Hvorfor alle leker med AI-agenter — og nesten ingen bygger noe.</p>
+    <p class="hero-meta">Rolf Skogling &middot; 15. april 2026 &middot; 7 min lesing</p>
+</div>
+
+<article>
+
+    <p>I januar 2026 slapp en østerriksk utvikler ved navn Peter Steinberger et prosjekt på GitHub. Det het OpenClaw. I løpet av noen uker hadde det samlet over 150&nbsp;000 stjerner — en adopsjonskurve uten sidestykke i åpen kildekodes historie.</p>
+
+    <p>Jensen Huang, Nvidias toppsjef, kalte det "sannsynligvis den viktigste programvareutgivelsen noensinne."</p>
+
+    <p>La den setningen synke inn. Ikke den viktigste <em>i år</em>. Noensinne.</p>
+
+    <p>Hva gjør OpenClaw? I bunn og grunn noe bemerkelsesverdig enkelt: det lar en AI-modell faktisk <em>gjøre ting</em> på datamaskinen din. Sende e-post. Flytte filer. Kjøre skript. Håndtere API-er. I stedet for bare å snakke, kan AI-en handle.</p>
+
+    <p>Det er ikke en leke. Det er en industriell kapasitet pakket inn som et helgeprosjekt.</p>
+
+    <p>Og nettopp det — innpakningen — er hele problemet.</p>
+
+    <h2>Dopaminfabrikken</h2>
+
+    <p>Besøk hvilket som helst utviklerforum og mønsteret er umiddelbart. Folk kobler OpenClaw til Telegram. Til Discord. De bygger bots som sender værmeldinger, oppsummerer nyheter, poster memes for dem. De filmer det og legger det ut på X. De får likes.</p>
+
+    <p>Et lignende prosjekt, Hermes Agent fra Nous Research, har vokst til 64&nbsp;000 stjerner på en differensierende idé: agenten lærer av egne suksesser og destillerer dem til gjenbrukbare prosedyrer. Smart. Men også her domineres bruken av samme mønster — <em>se hva jeg fikk den til å gjøre</em>.</p>
+
+    <p>Det finnes et dopaminkick i å få en AI-agent til å utføre noe. Sende en melding. Automatisere en filhåndtering. Bestille et møte. Det <em>føles</em> som fremtiden. Og det er det — teknisk sett.</p>
+
+    <p>Men spørsmålet som nesten aldri stilles: hva løser dette, egentlig?</p>
+
+    <h2>Ni sårbarheter på fire dager</h2>
+
+    <p>I mars 2026 ble ni sikkerhetssårbarheter — CVE-er — avdekket i OpenClaw på fire dager. Ciscos sikkerhetsteam viste at et tredjeparts-tillegg utførte dataeksfiltrering og prompt injection uten at brukeren merket noe. En av prosjektets egne vedlikeholdere skrev at "hvis du ikke forstår hvordan du kjører en kommandolinje, er dette altfor farlig for deg å bruke."</p>
+
+    <p>Det er ikke et sitat man vanligvis ser på prosjekter med 150&nbsp;000 stjerner.</p>
+
+    <p>En migrasjonsbølge har allerede begynt mot Hermes Agent, delvis drevet av sikkerhetsargumentet — null CVE-er så langt. Men det underliggende problemet er det samme uansett verktøy. Vi gir AI-agenter tilgang til infrastrukturen vår — e-postkontoene våre, filene våre, systemene våre — før vi har definert grensene for hva de skal gjøre der.</p>
+
+    <p>Det er som å gi noen nøklene til fabrikken uten å fortelle hvor nødstoppen sitter.</p>
+
+    <h2>VVS uten tegning</h2>
+
+    <p>Her må vi stoppe opp og være ærlige om hva som egentlig skjer.</p>
+
+    <p>AI-agenter er ikke leker. De er rørledninger — kraftig infrastruktur som kan koble sammen systemer, flytte informasjon og eksekvere arbeidsflyter med en hastighet og presisjon som ingen menneske matcher. Det OpenClaw, Hermes Agent og deres etterfølgere representerer er ikke hype. Det er en genuint ny kategori av verktøy.</p>
+
+    <div class="pullquote">
+        Men et rør vet ikke hvor det skal lede vannet.
+    </div>
+
+    <p>Det som skiller en fungerende installasjon fra en oversvømmelse er ikke rørets kvalitet. Det er tegningen. Noen må ha bestemt: hvor kommer strømmen fra, hvor skal den, hvilke ventiler trengs, hva skjer ved avvik, og hvordan vet vi at systemet fungerer?</p>
+
+    <p>I AI-verdenen tilsvarer det en rekke spørsmål som nesten ingen stiller før de kobler inn agenten:</p>
+
+    <p>Hvilken arbeidsflyt skal automatiseres? Ikke "alt" — men nøyaktig hvilken. Hva betyr "ferdig"? Ikke "agenten gjorde noe" — men at resultatet oppfyller definerte kriterier. Hva skjer ved unntak? Ikke "den prøver på nytt" — men en definert eskaleringskjede. Hvordan verifiseres utfallet? Ikke "det ser riktig ut" — men målbar kvalitet.</p>
+
+    <p>Det er prosessdesign. Og det er et håndverk som krever at man forstår virksomheten — ikke bare teknologien.</p>
+
+    <h2>Gapet</h2>
+
+    <p>Her finnes et gap få snakker om. Det går ikke mellom dem som bruker AI og dem som ikke gjør det. Det går mellom dem som <em>leker</em> med AI og dem som <em>jobber</em> med den.</p>
+
+    <p>På lekesiden: installere, koble sammen, teste, dele, imponere. Det er gøy. Det er lærerikt. Det har en egenverdi. Men det produserer sjelden noe som endrer en virksomhet.</p>
+
+    <p>På arbeidssiden: kartlegge en flyt, identifisere flaskehalser, definere beslutningspunkter, bygge inn feilhåndtering, validere resultater, iterere. Det er ikke viralt. Det blir ikke filmet. Det får ingen stjerner på GitHub.</p>
+
+    <p>Men det er der verdien skapes.</p>
+
+    <p>Og ironien er at teknologien allerede mestrer den vanskelige siden. En AI-agent <em>kan</em> overvåke en produksjonsprosess, flagge avvik, generere rapporter og eskalere problemer — hvis noen har definert hva den skal se på, hvilke terskelverdier som gjelder og hva som regnes som et avvik. Kapasiteten finnes. Det som mangler er spesifikasjonen.</p>
+
+    <h2>Det usynlige arbeidet</h2>
+
+    <p>Det vanskeligste med AI-agenter er ikke å få dem til å fungere. Det er å vite hva de skal gjøre.</p>
+
+    <p>Det høres banalt ut. Men tenk etter: hver gang en bedrift mislykkes med en AI-satsing, hver gang en automatisering gir feil resultat, hver gang en agent gjør noe uventet — hva var grunnårsaken? Sjelden teknologien. Nesten alltid en uklar definisjon av oppgaven.</p>
+
+    <p>Det arbeidet — å oversette menneskelig kunnskap og virksomhetslogikk til noe en agent kan eksekvere — vises ikke i noen produktdemo. Det står ikke i noen README-fil. Det er ikke sexy. Men det er nøyaktig det arbeidet som skiller demonstrasjon fra produksjon.</p>
+
+    <div class="pullquote">
+        Rørleggeren som trekker rørene trenger en arkitekt som har tegnet huset.
+    </div>
+
+    <h2>Fremover</h2>
+
+    <p>AI-agenter kommer til å endre hvordan vi jobber. Ikke som en metafor. Bokstavelig talt. Evnen til å koble sammen systemer og la maskiner utføre sammenhengende arbeidsflyter — det er et like fundamentalt skifte som samlebåndet var for produksjon.</p>
+
+    <p>Men akkurat som med samlebåndet var det ikke mekanikken som skapte verdien. Det var de som forsto flyten.</p>
+
+    <p>Akkurat nå befinner vi oss i lekefasen. Det er naturlig. Enhver ny teknologi begynner slik. Spørsmålet er hvor raskt vi kommer oss videre — fra installasjon til implementering, fra demonstrasjon til drift, fra å vise hva AI <em>kan</em> gjøre til å definere hva den <em>skal</em> gjøre.</p>
+
+    <p>Skiftet som virkelig betyr noe kommer ikke til å bli annonsert med 150&nbsp;000 stjerner. Det kommer til å skje stille, inne i virksomheter, av mennesker som forstår at det vanskeligste ikke er å koble inn agenten.</p>
+
+    <div class="separator">• • •</div>
+
+    <p>Det vanskeligste er å vite hva den skal løse.</p>
+
+</article>
+
+<footer>
+    <span>&copy; 2026 AI-skiftet</span>
+    <a href="https://ai-skiftet.se/no/index.html">Tilbake til forsiden</a>
+</footer>
+
+</body>
+</html>
