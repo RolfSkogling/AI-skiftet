@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The plumber and the playhouse — why everyone is playing with AI agents | AI-skiftet</title>
+    <meta name="description" content="OpenClaw collected 150,000 stars in a few weeks and was called the most important software release ever by Jensen Huang. But what does it actually solve? On the gap between playing with AI and working with it.">
+    <link rel="canonical" href="https://ai-skiftet.se/en/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/rormokaren-och-lekstugan.html">
+    <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/rormokaren-och-lekstugan.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --color-bg: #faf7f2; --color-text: #2c2c2c; --color-text-muted: #6b6560; --color-accent: #8c4a1f; --color-accent-hover: #a0582a; --color-accent-light: rgba(140, 74, 31, 0.08); --color-border: #e0d8cf; --color-card-bg: #ffffff; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; --max-width: 720px; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); line-height: 1.75; font-size: 17px; -webkit-font-smoothing: antialiased; }
+        nav { border-bottom: 1px solid var(--color-border); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+        .site-logo { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--color-accent); text-decoration: none; }
+        .nav-links { display: flex; gap: 1.75rem; }
+        .nav-links a { color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--color-accent); }
+        .lang-switcher { display: inline-flex; gap: 2px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; margin-left: 1rem; }
+        .lang-switcher a { padding: 4px 8px; border-radius: 4px; color: var(--color-text-muted); text-decoration: none; }
+        .lang-switcher a.active { background: var(--color-accent); color: #fff; }
+        .lang-switcher a:hover:not(.active) { background: var(--color-accent-light); }
+        .hero { max-width: var(--max-width); margin: 0 auto; padding: 4rem 2rem 2.5rem; }
+        .hero-label { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-accent); margin-bottom: 1rem; }
+        .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 700; line-height: 1.2; color: var(--color-text); margin-bottom: 1rem; }
+        .hero-subtitle { font-size: 1.15rem; color: var(--color-text-muted); line-height: 1.65; max-width: 600px; }
+        .hero-meta { margin-top: 1.5rem; font-size: 0.85rem; color: var(--color-text-muted); }
+        article { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem 4rem; }
+        article p { margin-bottom: 1.4rem; }
+        article h2 { font-family: var(--font-display); font-size: 1.55rem; font-weight: 700; margin-top: 2.8rem; margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; }
+        article a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
+        article a:hover { color: var(--color-accent-hover); }
+        .pullquote { font-family: var(--font-display); font-size: 1.35rem; font-style: italic; color: var(--color-accent); border: none; background: none; text-align: center; padding: 2rem 1rem; margin: 2rem 0; line-height: 1.5; position: relative; }
+        .pullquote::before, .pullquote::after { content: ''; display: block; width: 60px; height: 1px; background: var(--color-border); margin: 0 auto 1rem; }
+        .pullquote::after { margin: 1rem auto 0; }
+        .separator { text-align: center; margin: 2.5rem 0; color: var(--color-border); font-size: 1.2rem; letter-spacing: 0.5em; }
+        footer { border-top: 1px solid var(--color-border); max-width: 1100px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--color-text-muted); }
+        footer a { color: var(--color-accent); text-decoration: none; }
+        @media (max-width: 640px) {
+            nav { padding: 0.75rem 1.25rem; }
+            .nav-links { gap: 1rem; }
+            .nav-links a { font-size: 0.82rem; }
+            .hero { padding: 2.5rem 1.25rem 1.5rem; }
+            article { padding: 0 1.25rem 3rem; }
+            footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://ai-skiftet.se/en/index.html" class="site-logo">AI-skiftet</a>
+    <div class="nav-links">
+        <a href="https://ai-skiftet.se/en/index.html#news">News</a>
+        <a href="https://ai-skiftet.se/en/index.html#essays" class="active">Essays</a>
+        <a href="https://ai-skiftet.se/en/future-scenarios.html">Scenarios</a>
+        <a href="https://ai-skiftet.se/en/sources.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+        <a href="https://ai-skiftet.se/rormokaren-och-lekstugan.html" lang="sv">SV</a>
+        <a href="#" lang="en" class="active">EN</a>
+        <a href="https://ai-skiftet.se/no/rormokaren-och-lekstugan.html" lang="nb">NO</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-label">Essay</div>
+    <h1>The plumber and the playhouse</h1>
+    <p class="hero-subtitle">Why everyone is playing with AI agents — and almost nobody is building anything.</p>
+    <p class="hero-meta">Rolf Skogling &middot; April 15, 2026 &middot; 7 min read</p>
+</div>
+
+<article>
+
+    <p>In January 2026, an Austrian developer named Peter Steinberger released a project on GitHub. It was called OpenClaw. Within a few weeks it had gathered more than 150,000 stars — an adoption curve without precedent in the history of open source.</p>
+
+    <p>Jensen Huang, CEO of Nvidia, called it "probably the most important software release ever."</p>
+
+    <p>Let that sentence sink in. Not the most important <em>this year</em>. Ever.</p>
+
+    <p>What does OpenClaw do? At bottom, something remarkably simple: it lets an AI model actually <em>do things</em> on your computer. Send emails. Move files. Run scripts. Handle APIs. Instead of just talking, the AI can act.</p>
+
+    <p>It is not a toy. It is industrial capacity packaged as a weekend project.</p>
+
+    <p>And that — the packaging — is the whole problem.</p>
+
+    <h2>The dopamine factory</h2>
+
+    <p>Visit any developer forum and the pattern is immediate. People connect OpenClaw to Telegram. To Discord. They build bots that send weather reports, summarize news, post memes for them. They film it and post it on X. They get likes.</p>
+
+    <p>A similar project, Hermes Agent from Nous Research, has grown to 64,000 stars on a differentiating idea: the agent learns from its own successes and distills them into reusable procedures. Clever. But here too, usage is dominated by the same pattern — <em>look what I got it to do</em>.</p>
+
+    <p>There is a dopamine hit in getting an AI agent to execute something. Send a message. Automate a file handling task. Book a meeting. It <em>feels</em> like the future. And it is — technically.</p>
+
+    <p>But the question almost nobody asks: what does this actually solve?</p>
+
+    <h2>Nine vulnerabilities in four days</h2>
+
+    <p>In March 2026, OpenClaw had nine security vulnerabilities — CVEs — disclosed in four days. Cisco's security team showed that a third-party extension performed data exfiltration and prompt injection without the user noticing. One of the project's own maintainers wrote that "if you don't understand how to run a command line, this is far too dangerous for you to use."</p>
+
+    <p>That is not a quote you usually see on projects with 150,000 stars.</p>
+
+    <p>A migration wave has already begun toward Hermes Agent, partly driven by the security argument — zero CVEs so far. But the underlying problem is the same regardless of the tool. We are giving AI agents access to our infrastructure — our email accounts, our files, our systems — before we have defined the limits of what they should do there.</p>
+
+    <p>It is like handing someone the keys to the factory without telling them where the emergency stop is.</p>
+
+    <h2>Plumbing without a blueprint</h2>
+
+    <p>Here we need to stop and be honest about what is actually happening.</p>
+
+    <p>AI agents are not toys. They are pipelines — powerful infrastructure that can connect systems, move information and execute workflows at a speed and precision no human can match. What OpenClaw, Hermes Agent and their successors represent is not hype. It is a genuinely new category of tool.</p>
+
+    <div class="pullquote">
+        But a pipe does not know where to send the water.
+    </div>
+
+    <p>What separates a working installation from a flood is not the quality of the pipe. It is the blueprint. Somebody has to have decided: where does the flow come from, where is it going, which valves are needed, what happens on deviation, and how do we know the system is working?</p>
+
+    <p>In the AI world this corresponds to a series of questions almost nobody asks before they plug the agent in:</p>
+
+    <p>Which workflow should be automated? Not "everything" — but precisely which. What does "done" mean? Not "the agent did something" — but that the result meets defined criteria. What happens on exceptions? Not "it tries again" — but a defined escalation chain. How is the output verified? Not "it looks right" — but measurable quality.</p>
+
+    <p>That is process design. And it is a craft that requires understanding the business — not just the technology.</p>
+
+    <h2>The gap</h2>
+
+    <p>There is a gap here few are talking about. It is not between those who use AI and those who don't. It is between those who <em>play</em> with AI and those who <em>work</em> with it.</p>
+
+    <p>On the play side: install, connect, test, share, impress. It is fun. It is instructive. It has its own value. But it rarely produces anything that changes a business.</p>
+
+    <p>On the work side: map a flow, identify bottlenecks, define decision points, build in error handling, validate results, iterate. It is not viral. It is not filmed. It gets no stars on GitHub.</p>
+
+    <p>But that is where the value is created.</p>
+
+    <p>And the irony is that the technology already handles the harder side. An AI agent <em>can</em> monitor a production process, flag deviations, generate reports and escalate problems — if somebody has defined what to look at, what thresholds apply and what counts as a deviation. The capacity is there. What is missing is the specification.</p>
+
+    <h2>The invisible work</h2>
+
+    <p>The hardest thing about AI agents is not getting them to work. It is knowing what they should do.</p>
+
+    <p>That sounds trivial. But think about it: every time a company's AI initiative fails, every time an automation produces the wrong result, every time an agent does something unexpected — what was the root cause? Rarely the technology. Almost always an unclear definition of the task.</p>
+
+    <p>That work — translating human knowledge and business logic into something an agent can execute — does not show up in any product demo. It is not in any README file. It is not sexy. But it is exactly the work that separates demonstration from production.</p>
+
+    <div class="pullquote">
+        The plumber laying the pipes needs an architect who has drawn the house.
+    </div>
+
+    <h2>Forward</h2>
+
+    <p>AI agents will change how we work. Not as a metaphor. Literally. The ability to connect systems and let machines execute coherent workflows — that is as fundamental a shift as the assembly line was for manufacturing.</p>
+
+    <p>But just as with the assembly line, it was not the mechanics that created the value. It was those who understood the flow.</p>
+
+    <p>Right now we are in the play phase. That is natural. Every new technology begins that way. The question is how quickly we move beyond it — from installation to implementation, from demonstration to operation, from showing what AI <em>can</em> do to defining what it <em>should</em> do.</p>
+
+    <p>The shift that really matters will not be announced with 150,000 stars. It will happen quietly, inside businesses, by people who understand that the hardest part is not plugging in the agent.</p>
+
+    <div class="separator">• • •</div>
+
+    <p>The hardest part is knowing what it should solve.</p>
+
+</article>
+
+<footer>
+    <span>&copy; 2026 AI-skiftet</span>
+    <a href="https://ai-skiftet.se/en/index.html">Back to home</a>
+</footer>
+
+</body>
+</html>
