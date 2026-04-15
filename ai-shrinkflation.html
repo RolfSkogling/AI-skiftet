@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-shrinkflation — när du betalar samma pris för mindre intelligens | AI-skiftet</title>
+    <meta name="description" content="Anthropics flaggskeppsmodell Claude Opus 4.6 anklagas för systematisk kvalitetsförsämring. Bakom rubrikerna döljer sig en strukturell spänning som kommer att definiera hela AI-industrin.">
+    <link rel="canonical" href="https://ai-skiftet.se/ai-shrinkflation.html">
+    <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/ai-shrinkflation.html">
+    <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/ai-shrinkflation.html">
+    <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/ai-shrinkflation.html">
+    <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/ai-shrinkflation.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-bg: #faf7f2;
+            --color-text: #2c2c2c;
+            --color-text-muted: #6b6560;
+            --color-accent: #8c4a1f;
+            --color-accent-hover: #a0582a;
+            --color-accent-light: rgba(140, 74, 31, 0.08);
+            --color-border: #e0d8cf;
+            --color-card-bg: #ffffff;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --max-width: 720px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.75;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAV */
+        nav {
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .site-logo {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        .nav-links { display: flex; gap: 1.75rem; }
+        .nav-links a {
+            color: var(--color-text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active { color: var(--color-accent); }
+
+        .lang-switcher {
+            display: inline-flex;
+            gap: 2px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            margin-left: 1rem;
+        }
+        .lang-switcher a {
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--color-text-muted);
+            text-decoration: none;
+        }
+        .lang-switcher a.active { background: var(--color-accent); color: #fff; }
+        .lang-switcher a:hover:not(.active) { background: var(--color-accent-light); }
+
+        /* HERO */
+        .hero {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem 2rem 2.5rem;
+        }
+        .hero-label {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            line-height: 1.65;
+            max-width: 600px;
+        }
+        .hero-meta {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ARTICLE */
+        article {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        article p {
+            margin-bottom: 1.4rem;
+        }
+        article h2 {
+            font-family: var(--font-display);
+            font-size: 1.55rem;
+            font-weight: 700;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            line-height: 1.3;
+        }
+        article h3 {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-accent);
+        }
+        article a {
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        article a:hover { color: var(--color-accent-hover); }
+
+        blockquote {
+            border-left: 3px solid var(--color-accent);
+            padding: 1rem 1.5rem;
+            margin: 1.8rem 0;
+            background: var(--color-accent-light);
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+        blockquote strong {
+            color: var(--color-text);
+            font-style: normal;
+        }
+
+        .pullquote {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-style: italic;
+            color: var(--color-accent);
+            border: none;
+            background: none;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: 2rem 0;
+            line-height: 1.5;
+            position: relative;
+        }
+        .pullquote::before,
+        .pullquote::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: var(--color-border);
+            margin: 0 auto 1rem;
+        }
+        .pullquote::after { margin: 1rem auto 0; }
+
+        .fact-box {
+            background: var(--color-card-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 1.5rem 1.75rem;
+            margin: 2rem 0;
+        }
+        .fact-box h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--color-accent);
+        }
+        .fact-box p {
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+        }
+        .fact-box p:last-child { margin-bottom: 0; }
+
+        .separator {
+            text-align: center;
+            margin: 2.5rem 0;
+            color: var(--color-border);
+            font-size: 1.2rem;
+            letter-spacing: 0.5em;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid var(--color-border);
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            nav { padding: 0.75rem 1.25rem; }
+            .nav-links { gap: 1rem; }
+            .nav-links a { font-size: 0.82rem; }
+            .hero { padding: 2.5rem 1.25rem 1.5rem; }
+            article { padding: 0 1.25rem 3rem; }
+            footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://ai-skiftet.se/index.html" class="site-logo">AI-skiftet</a>
+    <div class="nav-links">
+        <a href="https://ai-skiftet.se/index.html#nyheter">Nyheter</a>
+        <a href="https://ai-skiftet.se/index.html#essaer" class="active">Essäer</a>
+        <a href="https://ai-skiftet.se/framtidsscenarier.html">Scenarier</a>
+        <a href="https://ai-skiftet.se/kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+        <a href="#" lang="sv" class="active">SV</a>
+        <a href="https://ai-skiftet.se/en/ai-shrinkflation.html" lang="en">EN</a>
+        <a href="https://ai-skiftet.se/no/ai-shrinkflation.html" lang="nb">NO</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-label">Essä</div>
+    <h1>AI-shrinkflation — när du betalar samma pris för mindre intelligens</h1>
+    <p class="hero-subtitle">Anthropics flaggskeppsmodell Claude Opus 4.6 anklagas för systematisk kvalitetsförsämring. Bakom rubrikerna döljer sig en strukturell spänning som kommer att definiera hela AI-industrin.</p>
+    <p class="hero-meta">Rolf Skogling &middot; 15 april 2026 &middot; 12 min läsning</p>
+</div>
+
+<article>
+
+    <p>I början av april 2026 publicerade Stella Laurenzo, teknisk chef inom AMD:s AI-grupp, en detaljerad teknisk analys på GitHub som skakade hela AI-utvecklarvärlden. Hennes slutsats var enkel och brutal: Anthropics mest avancerade AI-modell hade blivit dramatiskt sämre — och hon hade data som visade det.</p>
+
+    <p>Analysen baserades på 6&nbsp;852 Claude Code-sessioner, 234&nbsp;760 verktygssanrop och 17&nbsp;871 tankeblock, insamlade från januari till april 2026. Siffrorna visade ett mönster som var svårt att avfärda. Modellens resonementsdjup — mätt som median längd på tänkande-token — hade sjunkit med ungefär 67 procent. Antalet API-anrop per uppgift hade ökat dramatiskt. Modellen hade börjat fråga "ska jag fortsätta?" 173 gånger på 17 dagar, en beteendeförändring som var noll före den 8 mars. Självmotsägelserna hade tredubblats.</p>
+
+    <p>Rapporten fick över 2&nbsp;000 reaktioner på GitHub och spred sig snabbt via X, Reddit och teknikmedia. Begreppet som fångade stämningen var lånat från dagligvaruhandeln: <em>AI-shrinkflation</em>. Samma pris, samma förpackning — men mindre innehåll.</p>
+
+    <h2>Vad hände egentligen?</h2>
+
+    <p>Anthropics svar var uppriktigt nog att erkänna två konkreta produktförändringar, men bestred att modellen själv hade försämrats.</p>
+
+    <p>Den 9 februari infördes <em>adaptiv tänkning</em> — en mekanism som låter modellen själv bestämma hur mycket resonemang den ska lägga på varje fråga, istället för att använda en fast budget. Den 3 mars sänktes dessutom standardinställningen för ansträngningsnivå till "medium" (nivå 85 av 100). Boris Cherny, chef för Claude Code, kallade det "den bästa balansen mellan intelligens, latens och kostnad för de flesta användare."</p>
+
+    <p>Översatt till klarspråk: Anthropic bestämde att modellen som standard skulle tänka mindre, för att svara snabbare och kosta mindre att driva. Användare som ville ha full kapacitet kunde manuellt ställa in <code>/effort max</code> — men de flesta visste inte att alternativet fanns.</p>
+
+    <div class="fact-box">
+        <h4>De två förändringarna i korthet</h4>
+        <p><strong>9 februari:</strong> Adaptiv tänkning aktiveras. Modellen bestämmer själv sitt resonementsdjup per fråga, istället för fast budget.</p>
+        <p><strong>3 mars:</strong> Standardnivån sänks till "medium effort" (85/100). Anthropic kallar det optimal balans. Utvecklarcommunityt kallar det en nerf.</p>
+        <p><strong>26 mars:</strong> Tidsberoende hastighetsbegränsningar införs — sessioner förbrukas snabbare under rusningstid (vardagar).</p>
+    </div>
+
+    <p>Cherny bestred också delar av Laurenzos metodik. Han menade att den observerade minskningen i tankelängd delvis berodde på att redigerad tänkande-data inte längre sparades lokalt — ett UI-beslut, inte en kapacitetsförändring. Det var ett tekniskt korrekt påpekande. Men det förklarade inte varför utvecklare världen över upplevde exakt samma sak: en modell som kändes grundare, mer osäker och mer benägen att ge halvhjärtade svar.</p>
+
+    <p>På Reddit fångade en användare frustrationen i en mening som fick hundratals uppröster: att Claude för första gången på två år inte visste att den hade ett inbyggt Plan Mode. Inte en subtil kvalitetsförskjutning — ett totalt funktionsbortfall.</p>
+
+    <h2>Shrinkflation som affärsmodell</h2>
+
+    <p>Begreppet shrinkflation kommer från konsumentekonomin. När en chokladkaka krymper från 200 till 180 gram men priset är oförändrat, är det shrinkflation. Fenomenet fungerar för att de flesta konsumenter inte väger sina köp. De reagerar på priset, inte på innehållet.</p>
+
+    <div class="pullquote">
+        AI-shrinkflation fungerar på exakt samma sätt. Du betalar 20 dollar i månaden för en Pro-prenumeration. Du får fortfarande svar. Men svaren har blivit tunnare, grundare, mindre genomtänkta — och du märker det bara om du ställer tillräckligt höga krav.
+    </div>
+
+    <p>Det fascinerande är att SaaS-industrin redan har normaliserat detta mönster. En studie från Vertice visade att över en fjärdedel av alla SaaS-avtal påverkades av shrinkflation 2023 — funktioner som försvann, prisnivåer som eliminerades, användningsgränser som stramades åt, allt medan fakturan var densamma eller högre. AI-tjänster lägger nu bara till ett nytt lager: produkten försämras inte genom att funktioner tas bort, utan genom att intelligensen — den enda saken du faktiskt betalar för — gradvis tunnas ut.</p>
+
+    <p>Det finns en viktig nyansskillnad mellan medveten försämring och kapacitetsoptimering. Anthropic hävdar det senare. De säger att de hittade en "sweet spot" som fungerar för majoriteten. Det är troligt att det stämmer — de flesta användare ställer enkla frågor där skillnaden mellan 85 procent och 100 procent ansträngning inte märks. Men för den professionella användare som betalar just för att få maximal kapacitet — utvecklaren som refaktoriserar en kodbas, konsulten som bygger komplexa analysmodeller, forskaren som behöver djupt resonemang — är skillnaden dramatisk.</p>
+
+    <p>Och det är precis de användarna som driver ryktesspridningen, skriver GitHub-issues och köper enterprise-planer. Att optimera bort dem är som att sänka kvaliteten på business class för att subventionera economy. Det fungerar exakt tills affärsresenärerna hittar ett annat flygbolag.</p>
+
+    <h2>Den underliggande spänningen</h2>
+
+    <p>Det som gör den här kontroversen strukturellt intressant — inte bara som en kundtjänstfråga — är att den avslöjar en fundamental spänning i AI-industrins ekonomi.</p>
+
+    <p>Att träna en frontier-modell kostar hundratals miljoner dollar. Det är en engångskostnad. Men att <em>köra</em> modellen — inferens, i branschspråk — kostar pengar för varje enskilt svar, varje tankekedja, varje token. Ju mer modellen tänker, desto mer GPU-tid förbrukas, desto högre blir den rörliga kostnaden.</p>
+
+    <p>Adaptiv tänkning är Anthropics försök att lösa denna ekvation. Om modellen kan lära sig att använda 30 procent av sin kapacitet på enkla frågor och 100 procent bara när det verkligen behövs, sjunker den genomsnittliga kostnaden per svar kraftigt. Det är rationellt. Det är till och med elegant.</p>
+
+    <p>Problemet är att modellen inte alltid bedömer rätt vilka frågor som är enkla. Laurenzos data antyder att den systematiskt underallokerade resurser på komplexa uppgifter — agentiska arbetsflöden, flerstegskodning, långa sessioner med beroende kontext. Just de uppgifter som professionella användare betalar premiumpriser för.</p>
+
+    <div class="pullquote">
+        Adaptiv tänkning är inte dum i sig. Men när systemet som bestämmer hur djupt din AI ska tänka inte själv tänker djupt nog, får du det värsta av två världar: samma pris, men sämre resultat just när det räknas som mest.
+    </div>
+
+    <p>Dessutom tillkommer kapacitetsbegränsningar som inte är kopplade till modellen utan till infrastrukturen. Den 26 mars införde Anthropic tidsberoende sessionshantering — under rusningstid (vardagar) förbrukas sessioner snabbare. Det är i praktiken en prisökning för den som arbetar dagtid, dold bakom samma månadskostnad. Anthropic bekräftade att Team- och Enterprise-kunder inte påverkades — vilket implicit bekräftar att gratisanvändare och Pro-prenumeranter fick reducerad tillgång.</p>
+
+    <h2>Historien upprepar sig</h2>
+
+    <p>Det här är inte första gången. AI-communityt har upplevt exakt samma mönster med både GPT-4 (sommaren 2023) och tidigare versioner av Claude. En modell lanseras med imponerande kapacitet. Användare anpassar sina arbetsflöden. Sedan, gradvis och utan explicit kommunikation, skiftar upplevelsen. Svaren blir kortare. Resonemangen grundare. Modellen börjar tveka där den tidigare var säker.</p>
+
+    <p>Mönstret är så konsekvent att det borde ses som en naturlag i AI-industrin snarare än en serie isolerade incidenter. Det finns en strukturell förklaring: AI-företag lanserar modeller med inställningar som maximerar kvalitet för att vinna benchmarks och generera positiv press. Sedan, när användarbasen växer och inferenskostnaderna skenar, skruvas inställningarna nedåt. Inte modellen själv — men konfigurationen runt den.</p>
+
+    <p>Det är som att köpa en bil som testad ger 500 hästkrafter, men efter tre månader mjukvaruuppdateras ner till 400. Motorn är densamma. Specifikationen du betalade för gäller inte längre.</p>
+
+    <h2>Vad BridgeBench-kontroversen avslöjar</h2>
+
+    <p>Parallellt med Laurenzos analys dök det upp en benchmarkbaserad anklagelse. BridgeMind publicerade data som påstod att Claude Opus 4.6:s träffsäkerhet hade fallit från 83,3 procent till 68,3 procent — ett fall från plats 2 till plats 10 på deras rankning.</p>
+
+    <p>Denna specifika datapunkt bör behandlas med stor skepsis. Flera oberoende granskare påpekade att BridgeBench-jämförelsen var metodologiskt tvivelaktig — den jämförde resultat från olika testkonfigurationer, och den observerade skillnaden låg inom normal statistisk variation för icke-deterministiska AI-modeller. En extra hallucination på en enda uppgift i ett litet stickprov kan flytta resultatet avsevärt.</p>
+
+    <p>Men det faktum att denna svaga datapunkt blev viral — delad tiotusentals gånger, citerad av teknikjournalister, behandlad som bevis — säger något viktigt om tillståndet i relationen mellan AI-företag och deras användare. När förtroendet eroderar räcker det med en gnista för att antända en brand. Och förtroendet eroderar just nu.</p>
+
+    <h2>Transparensens pris</h2>
+
+    <p>Den mest anmärkningsvärda aspekten av hela kontroversen är inte att Anthropic gjorde förändringar. Det är att de inte kommunicerade dem.</p>
+
+    <p>Adaptiv tänkning rullade ut den 9 februari. Effort-nivå 85 blev standard den 3 mars. Tidsberoende sessionshantering infördes den 26 mars. Ingen av dessa förändringar kommunicerades proaktivt till användarna i en form som matchade deras påverkan. De återfanns i utvecklardokumentation och release notes — inte i ett mejl till betalande kunder som sa: "Vi har ändrat hur din AI fungerar. Här är varför, och här är hur du återställer den."</p>
+
+    <p>Det är en kommunikationsmiss som gränsar till respektlöshet. Och den är särskilt problematisk för Anthropic, som bygger sitt varumärke på ansvarsfull AI och transparens. Om du marknadsför dig som det etiska alternativet i en bransch full av cowboys, sätter du också en högre standard för din egen öppenhet.</p>
+
+    <p>Jämför med en situation där en tillverkare ändrar receptet på en livsmedelsprodukt. Det finns lagkrav på att förpackningen ska uppdateras. Det finns inga motsvarande krav i AI-industrin — men det borde det finnas, och företag som Anthropic borde leda den utvecklingen snarare än att vänta tills en AMD-chef gör deras kvalitetskontroll åt dem på GitHub.</p>
+
+    <h2>Vad det betyder i praktiken</h2>
+
+    <p>Jag har 30 års erfarenhet av industriell optimering och lean manufacturing. Jag har sett hur mätsystem, processkontroll och variationshantering avgör om en fabrik levererar världsklass eller mediokerhet. Samma principer gäller här, fast applicerade på en helt ny typ av produkt.</p>
+
+    <p>I tillverkningsindustrin finns ett begrepp som heter <em>process capability</em> — processduglighet. Det mäter om en process konsekvent levererar inom specificerade gränser. En process med hög duglighet levererar förutsägbart. En process med låg duglighet levererar ibland bra, ibland dåligt, och kunden vet aldrig vilken leverans de får.</p>
+
+    <p>AI-modeller har precis samma problem, men utan den mätinfrastruktur som tillverkningsindustrin har byggt upp under decennier. Det finns inget offentligt Cpk-värde för Claude Opus 4.6. Det finns ingen oberoende kontroll som verifierar att den modell du får på tisdag eftermiddag levererar samma kvalitet som den du fick på söndag morgon. Och med tidsberoende kapacitetshantering och adaptiv tänkning finns det nu belägg för att den faktiskt <em>inte</em> gör det.</p>
+
+    <p>För den som integrerar AI i professionella arbetsflöden — och det gör allt fler — är detta en fundamental riskfaktor. Du bygger processer som förutsätter en viss kapacitetsnivå. Om den nivån sänks utan förvarning kollapsar inte bara uppgiften — hela arbetsflödet degraderas.</p>
+
+    <h2>Den större bilden</h2>
+
+    <p>Backa ett steg och betrakta det hela ur Mo Gawdats perspektiv om nollmarginalkostnad. Hans tes — som jag skrivit om tidigare på den här sajten och som jag personligen kan validera från min egen AI-produktivitet — är att AI driver marginalkostnaden för kognitiva tjänster mot noll. Det stämmer på en makronivå.</p>
+
+    <p>Men AI-shrinkflation avslöjar en friktion i den tesen. Att producera ett enskilt AI-svar kostar nästan ingenting jämfört med motsvarande mänskliga arbete. Men att producera ett <em>bra</em> AI-svar — ett med djupt resonemang, lång tankekedja och korrekt kontexthantering — kostar betydligt mer i beräkningsresurser än ett ytligt svar. Skillnaden kan vara en faktor 10 eller mer i GPU-tid.</p>
+
+    <p>Nollmarginalkostnaden gäller alltså kvantitet, men inte nödvändigtvis kvalitet. Och det skapar ett ekonomiskt incitament att leverera "tillräckligt bra" snarare än "bästa möjliga" — precis den dynamik vi ser i Anthropics adaptiva tänkning.</p>
+
+    <div class="pullquote">
+        Marginalkostnaden för ett AI-svar går mot noll. Marginalkostnaden för ett <em>bra</em> AI-svar gör det inte. I det glappet bor hela AI-shrinkflation-fenomenet.
+    </div>
+
+    <p>Det är en viktig insikt för alla som planerar sin verksamhet kring AI-verktyg. Den billigaste varianten av AI kommer att bli nästan gratis. Men den bästa varianten — den som levererar genuint expertnivå — kommer att förbli en premiumprodukt med ett pris som speglar de beräkningsresurser den kräver. Frågan är om AI-företagen kommer att vara transparenta med var gränsen går, eller om de fortsätter att sälja premium och leverera standard.</p>
+
+    <h2>Vägen framåt</h2>
+
+    <p>Tre saker behöver hända.</p>
+
+    <p>För det första behövs <strong>transparens om konfigurationsförändringar</strong>. Varje gång en AI-leverantör ändrar standardinställningar, resursallokering eller kapacitetshantering på ett sätt som påverkar output-kvalitet, ska det kommuniceras proaktivt till betalande kunder. Inte i en fotnot i ett API-changelog — i ett mejl, med konsekvensanalys och instruktioner för hur man återställer tidigare beteende.</p>
+
+    <p>För det andra behövs <strong>oberoende kvalitetsmätning</strong>. AI-industrin behöver en motsvarighet till tillverkningsindustrins kvalitetsgranskare — oberoende aktörer som kontinuerligt mäter och publicerar faktisk leveranskvalitet hos de stora modellerna, inte bara vid lansering utan över tid. BridgeBench-fiaskot visar att communityn inte klarar detta själv utan rigorös metodik.</p>
+
+    <p>För det tredje behövs en <strong>ärlig prisdiskussion</strong>. Om djupt resonemang kostar mer att köra, säg det. Erbjud en prisplan som explicit garanterar full kapacitet, och en billigare variant med adaptiv tänkning. Låt användaren välja — istället för att göra valet åt dem och hoppas att de inte märker.</p>
+
+    <div class="separator">• • •</div>
+
+    <p>AI-shrinkflation är inte en bugg. Det är inte heller en konspiration. Det är den logiska konsekvensen av en bransch som säljer ett löfte om obegränsad intelligens medan den brottas med mycket begränsade GPU-resurser. Spänningen mellan dessa två verkligheter kommer att definiera de närmaste åren — och de företag som löser den genom transparens snarare än genom att hoppas att ingen märker kommer att vinna det långa loppet.</p>
+
+    <p>Jag har tillbringat hela mitt yrkesliv i tillverkningsindustrin. Den enda lärdomen som gäller överallt — från gjuterier till solcellsfabriker, från kompositproduktion till livsmedel — är denna: mät alltid. Lita aldrig på att leverantören berättar när kvaliteten sjunker. Den regeln gäller nu för en helt ny typ av leverans.</p>
+
+</article>
+
+<footer>
+    <span>&copy; 2026 AI-skiftet</span>
+    <a href="https://ai-skiftet.se/index.html">Tillbaka till startsidan</a>
+</footer>
+
+</body>
+</html>
