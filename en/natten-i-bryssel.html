@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The night in Brussels — AI-skiftet</title>
+  <meta name="description" content="At 04:30 on May 7, 2026 the EU negotiators stood up and announced they had saved the AI Act — or had they? On why a sixteen-month delay is not enough when technology accelerates exponentially and the regulatory philosophy is already dead.">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/natten-i-bryssel.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/natten-i-bryssel.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/natten-i-bryssel.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/natten-i-bryssel.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#essays">Essays</a>
+      <a href="framtidsscenarier.html">Scenarios</a>
+      <a href="index.html#about">About</a>
+      <a href="kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../natten-i-bryssel.html" lang="sv">SV</a>
+      <a href="natten-i-bryssel.html" lang="en" class="active">EN</a>
+      <a href="../no/natten-i-bryssel.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="index.html" class="article-header__back">← Back</a>
+    <h1>The night in Brussels</h1>
+    <p class="article-meta">Current · Rolf Skogling · May 9, 2026</p>
+    <p class="article-lede"><em>On a night of negotiations that saved a regulatory philosophy already dead.</em></p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>At 04:30 in the morning on May 7, 2026 the negotiators in Brussels rose to their feet and declared that they had just saved the AI Act. They had been negotiating for nine hours. The result was that the application of the rules for high-risk AI was pushed back by sixteen months.</p>
+
+<p>Two days later Anthropic released an update to its Claude Opus model. That model — assuming the regulation holds to its new schedule — will fall under the high-risk rules sometime in December 2027. Except not <em>that</em> model, because by then it no longer exists. By then we have the next generation, and the one after that. And the regulation is written as if that did not matter.</p>
+
+<h2>What was agreed</h2>
+
+<p>The provisional agreement pushes the application of the high-risk rules from August 2026 to December 2, 2027 for stand-alone systems, and to August 2, 2028 for AI embedded in products such as toys and lifts. The justification is that technical standards and compliance tooling will not be ready in time. Companies need more time to prepare. Standards need more time to be written.</p>
+
+<p>It sounds reasonable. It is not.</p>
+
+<h2>The blind spot of linear bureaucracy</h2>
+
+<p>A technical standard within CEN and CENELEC takes between eighteen and thirty-six months to develop from first draft to publication. That is not a political critique — it is a structural description of how consensus-based standardisation bodies work. You need drafts, public comment rounds, harmonisation meetings, translations, formal adoption. The process is built to produce documents that will hold for twenty years.</p>
+
+<p>A frontier model is regenerated roughly every six months. GPT-4 was state of the art in March 2023. In May 2026, three years later, we are several generations on. What required a data centre to run in 2023 a qualified user runs today on a desktop. Context windows have grown by a factor of ten. Reasoning capacity is no longer comparable. And the pace is accelerating — the linear extrapolation from 2023 to 2026 underestimates 2029.</p>
+
+<p>What does this mean concretely? It means that the standard you write in 2026 is based on the technology you see in 2026. When it is published in 2028 it describes technology that is no longer the frontier. When it has to be applied to systems in production, it is no longer relevant. You have created a legal instrument that regulates a vanished generation of an exponentially developing technology.</p>
+
+<p>This is not an implementation problem that more time solves. It is a structural impossibility. You cannot standardise a moving target with a process that moves more slowly than the target.</p>
+
+<h2>The categories that do not catch reality</h2>
+
+<p>The AI Act's underlying architecture is built on risk classification. Unacceptable risk is prohibited. High risk is heavily regulated. Limited risk gets transparency requirements. Minimal risk is left alone. It is a logical construction. It just presupposes one thing: that AI systems have bounded use cases that can be classified.</p>
+
+<p>It presupposes a world that no longer exists.</p>
+
+<p>A modern language model has, by definition, no bounded use case. It is used to write emails, to classify quality deviations on a production line, to analyse X-rays, to help students with mathematics, to write code. The same model. The same week. Often the same hour. Some of these uses are trivial. Others are high-risk in the AI Act's sense — decisions that affect people's health, employment, creditworthiness. The model does not know which category it is in. It just answers.</p>
+
+<p>So how do you classify it? If a quality engineer in a German factory uses the same model to write meeting notes in the morning and to make deviation decisions in the afternoon — is the model a high-risk system? Is it one only in the afternoon? Or is it one always, because it <em>can</em> be used that way?</p>
+
+<p>This is not an edge case. It is how the technology is actually used, every day, across hundreds of thousands of European companies in May 2026 already. And we are still in the primitive phase. By 2028, when the rules are due to start applying, we are talking about autonomous agents that take thousands of decisions per minute, many of them consequential, all of them generated by the same underlying model that slides between use cases several times a second. There is no category in the AI Act that accounts for this. There is no classification procedure that can keep up.</p>
+
+<p>The regulation cannot grasp it. Not because of any failure of the lawyers. Because the taxonomy is built for a technology with stable usage patterns, and the technology has no stable usage patterns.</p>
+
+<h2>This is not delay — it is denial</h2>
+
+<p>Here is the essay's hard sentence: the bureaucracy negotiates sixteen months in order to postpone rules that, when they enter into force, will regulate the wrong thing anyway.</p>
+
+<p>The people negotiating in Brussels on May 7 did not understand what they were negotiating about. They thought they were negotiating a timetable. They were negotiating a regulatory philosophy that was already dead.</p>
+
+<p>To see why, ask: what was the alternative? The alternative was to admit that the AI Act in its current form is not applicable — not because the standards weren't finished, but because the standardisation method itself does not work for this technology. That alternative is politically intolerable. It would mean conceding that several years of legislative work and political capital have produced a document that does not do what it claims to do. It would mean starting over.</p>
+
+<p>So the delay is chosen instead. Sixteen months is negotiated. The story you tell yourself is that with more time it will come right. That if only the standards arrive, the machinery will work. That is not an assessment. It is a hopeful prayer dressed in procedural language.</p>
+
+<p>And meanwhile the technology continues its exponential curve. It does not care about Brussels. It does not care about CEN/CENELEC. It does not care about Annex III. It just accelerates.</p>
+
+<h2>What ought to be done</h2>
+
+<p>If the diagnosis is that classification-based static regulation does not work for exponentially developing general-purpose systems — what then is the alternative?</p>
+
+<p>Not more time. More time makes the problem worse, because the gap between regulation and reality grows every month. Nor more standards. The standards <em>are</em> the problem, not the solution.</p>
+
+<p>There are roughly two serious paths.</p>
+
+<p>The first is <em>adaptive capability-based regulation</em>. Instead of classifying systems by use case, you regulate them by capability. A model that exceeds a given capability threshold — defined by standardised tests updated quarterly — triggers specific safety requirements regardless of what it is being used for. The thresholds are adjusted in step with the frontier. The standardisation process is replaced by a living evaluation regime. This requires Brussels to give up the ambition of writing rules that hold for twenty years, and to accept that AI regulation has to function more like monetary policy than product safety — it has to be reactive and continuous.</p>
+
+<p>The second path is more uncomfortable. It is to accept that you cannot regulate the broad mass-flow of AI use, and instead concentrate all force on <em>catastrophe boundaries</em>. Not a thousand procedural requirements that no one can follow, but two or three red lines worth holding. Autonomous weapons development. Mass surveillance without judicial review. Generation of material documenting child abuse — the one new prohibition the negotiators in Brussels actually got right. Everything else is left to sectoral legislation, civil law and market mechanisms. It is a humbler ambition. But it is an honest one.</p>
+
+<p>Both paths require admitting something no one in Brussels has yet dared to say out loud: the AI Act in its current form will not protect Europeans from what it claims to protect them from. It will produce compliance work for departments that already exist, generate revenue for consultants who are already busy, and deliver compliance reports no one reads. It will not prevent what it is meant to prevent, because it no longer grasps the reality it is meant to regulate.</p>
+
+<h2>2028</h2>
+
+<p>Imagine August 2028. The rules have entered into force. Technical standards have been published with two-year delays. Conformity assessment bodies have been certified. Companies have hired compliance officers, built documentation systems, filled in Annex IV forms. Everything is working exactly as it should.</p>
+
+<p>And in the same instant an autonomous agent — one of billions running in the background of European infrastructure — has just completed a chain of sixty-seven decisions about how a financial restructuring is to be carried out at a customer in Hamburg. None of those decisions is covered by regulation, because the agent has no "user" in the AI Act's sense. The model driving the agent is in its thirteenth generation since August 2024. The classification done for its predecessor in 2026 is formally still valid. Materially it has nothing to do with the system that is actually running.</p>
+
+<p>This is not science fiction. It is extrapolation of the curve we already see in May 2026. It is what a linear sketch over an exponential reality always produces: regulations that are formally correct and materially absent.</p>
+
+<p class="article-coda"><em>The regulation enters into force in a world it does not describe.</em></p>
+
+<p class="article-coda"><em>And that night in Brussels — when the negotiators stood up at 04:30 and told the press they had saved the AI Act — what they saved was not the AI Act. It was the image of their own relevance. The technology was not even looking in their direction.</em></p>
+
+<p class="author-sig">Rolf Skogling runs ai-skiftet.se — a Swedish voice on how AI is changing society, work and leadership.</p>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Sources</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
