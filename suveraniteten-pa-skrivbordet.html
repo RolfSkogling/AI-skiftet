@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suveräniteten på skrivbordet — AI-skiftet</title>
+  <meta name="description" content="Essä om lokal AI, digital suveränitet och varför molndebatten behöver kompletteras med en politik för egna modeller.">
+  <meta name="date" content="2026-05-17">
+  <meta property="article:published_time" content="2026-05-17T09:00:00+02:00">
+  <meta property="og:title" content="Suveräniteten på skrivbordet — AI-skiftet">
+  <meta property="og:description" content="Essä om lokal AI, digital suveränitet och varför molndebatten behöver kompletteras med en politik för egna modeller.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/suveraniteten-pa-skrivbordet.html">
+  <link rel="canonical" href="https://ai-skiftet.se/suveraniteten-pa-skrivbordet.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+    .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+    .article-body blockquote{margin:32px 0;padding:22px 24px;border-left:4px solid var(--accent);background:#fbf8f4;color:#26313d;font-size:1.16rem;line-height:1.65}
+    .article-body .point{margin:28px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:#fbf8f4}
+    .article-body .point-number{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin-bottom:10px;border-radius:999px;background:var(--accent);color:#fff;font-weight:800}
+    .article-body .point h2{margin-top:0}
+    .article-body .closing{margin-top:34px;padding-top:10px}
+    .source-note{font-size:.95rem;color:var(--muted)}
+    .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="framtidsscenarier.html">Scenarier</a>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till essäer</a>
+    <div class="article-kicker">Digital suveränitet</div>
+    <h1>Suveräniteten på skrivbordet</h1>
+    <p class="article-dek">När debatten om digital suveränitet handlar om molntjänster och europeiska datacenter, missar man var den verkliga maktförskjutningen sker. Den sker på enskilda människors skrivbord.</p>
+    <p class="article-meta">Essä · Rolf Skogling · Publicerad 17 maj 2026 · ca 9 min läsning</p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+<p>Den 16 maj 2026, en lördag, körde jag den sista körningen av en finjusteringsprocess i terminalfönstret på min Mac Mini. På skärmen rullade träningsförlopp förbi: epoch 1, epoch 2, en loss-kurva som sjönk vackert. Datorn hade då redan arbetat i några timmar. Modellen hade lärt sig elva nya domäner. Den kunde nu mitt yrkesliv på ett sätt som ingen kommersiell AI-tjänst gör, eftersom den hade tränats på texter jag själv skrivit, kunskapsbaser jag själv byggt, och anpassningar jag själv valt. Min egen arbetsinsats i det hela — att förbereda data, konfigurera körningen, granska resultaten — var någon halvtimme. Resten skötte maskinen.</p>
+
+<p>Den dyraste hårdvaran i den processen var en Mac Mini som kostade ungefär lika mycket som en helgresa till södra Europa. Programvaran var gratis. Modellen var öppen. Mina data lämnade aldrig huset.</p>
+
+<p>Den här essän handlar om varför det är en politisk händelse, även om det inte ser ut så.</p>
+
+<h2>Den gamla suveränitetsdebatten</h2>
+
+<p>Under de senaste åren har "digital suveränitet" varit ett av de mest debatterade begreppen i svensk och europeisk teknikpolitik. Argumentet, som det levereras av allt från Miljöpartiet till säkerhetspolitiska analytiker till opinionsbildare som Joakim Öhman på Elastx, är att Europa inte har råd att fortsätta vara digitalt beroende av amerikansk infrastruktur. Amerikanska hyperscalers dominerar den europeiska molnmarknaden; återkommande marknadsdata placerar de tre största amerikanska aktörerna klart över europeiska leverantörer. När känsliga europeiska data lagras hos Microsoft Azure, Amazon AWS eller Google Cloud kan amerikansk extraterritoriell lagstiftning, leverantörsberoende och geopolitisk risk bli en del av riskbilden, även när GDPR och europeiska avtal fortfarande gäller.</p>
+
+<p>Argumentet är riktigt. Lösningen, som den vanligen formuleras, är att Sverige och Europa ska investera i egna molnleverantörer, egna datacenter, egna AI-fabriker. Vi ska inrätta European Health Data Space, vi ska gynna inhemska leverantörer i offentlig upphandling, vi ska bygga vår egen digitala infrastruktur. På så sätt återtar vi kontrollen.</p>
+
+<p>Det är en helt rimlig politik. Den är också, har jag insett under det senaste året, en politik som svarar på fel fråga.</p>
+
+<h2>Var makten faktiskt finns</h2>
+
+<p>Det som har förändrats — och som inte har fångats av den politiska debatten — är att den mest kraftfulla AI:n inte längre behöver leva i ett datacenter alls. Den kan leva på din egen dator. Inte en imitation av en kraftfull AI, inte en nedbantad demoversion, utan en stark öppen modell med samma grundläggande familj av transformerarkitektur som de stora kommersiella systemen.</p>
+
+<p>Den modell jag finjusterade i maj är en öppen modell från Google. Den är inte samma sak som Googles största kommersiella Gemini-system. Men öppna modeller från Google, Mistral och andra har blivit tillräckligt starka för många kvalificerade text- och kunskapsarbetsflöden, och vissa varianter hanterar även bild. Den kör helt och hållet på min hårdvara, i mitt nätverk, utan att mina frågor eller underlag behöver skickas till en extern molntjänst.</p>
+
+<p>Detta är digital suveränitet i en form som ingen molntjänst fullt ut kan leverera, hur europeisk den än är. När du kör en modell lokalt minskar dataöverföringen, leverantörsberoendet och den extraterritoriella riskytan. Det betyder inte att juridiken försvinner: behandlar du personuppgifter gäller GDPR, och i offentlig sektor kvarstår krav på informationssäkerhet, dokumentation, ansvar och rättssäkerhet. Men maktcentrum flyttar från leverantörens serverhall till din egen miljö.</p>
+
+<blockquote>Den verkliga digitala suveräniteten är inte ett europeiskt moln. Den är att modellen aldrig behöver lämna ditt skrivbord.</blockquote>
+
+<p>Det betyder att hela det politiska samtalet om suveränitet behöver omformuleras. Inte avskrivas — det finns fortfarande utmärkta skäl att bygga europeisk molninfrastruktur, för stora aktörer och för data som av andra skäl måste centraliseras — men kompletteras med en helt ny dimension. Frågan är inte längre bara <em>var</em> data lagras. Frågan är vem som äger den modell som bearbetar den.</p>
+
+<h2>Det miljöpartiet missar</h2>
+
+<p>Miljöpartiet har den mest genomarbetade tematiska AI-politiken av riksdagspartierna. I deras programfördjupning "En grön AI-politik" finns ett helt avsnitt om digital suveränitet — och hela avsnittet handlar om molntjänster. Staten och kommunerna ska gynna svenska och europeiska leverantörer av molntjänster, så att känslig offentlig data inte hamnar under utländsk jurisdiktion.</p>
+
+<p>Det är rätt instinkt, fel applikation. Den känsligaste offentliga datan i Sverige — patientjournaler, socialtjänstärenden, brottsutredningsdata — behöver inte hamna i ett moln överhuvudtaget. Den kan bearbetas av lokalt körda modeller på regionens eller kommunens egna servrar, eller till och med på enskilda tjänstepersoners enheter. Den teknik som krävs finns i dag. Den är inte hypotetisk, den är inte forskningsstadium, den är på mitt skrivbord.</p>
+
+<p>Det Miljöpartiet borde driva — och som ingen annan i riksdagen kommer att driva — är en politik för <em>lokal AI</em>. Det vill säga: en politik för att svenska kommuner, regioner och myndigheter ska gå direkt på öppna modeller och egen finjustering, snarare än att låsa in sig i molnavtal med vare sig amerikanska eller europeiska leverantörer. Det skulle vara ett miljöpartistiskt val både ideologiskt — för det handlar om decentralisering och oberoende — och ekonomiskt, eftersom det skulle innebära betydligt lägre långsiktiga driftskostnader än någon molnlösning.</p>
+
+<p>Det kan också, beroende på användningsfall, vara en mer resurssnål väg. Lokal AI är inte automatiskt grönare än moln; datacenter kan vara mycket effektiva, och små lokala installationer kan användas slarvigt. Men för många återkommande interna uppgifter kan egen drift minska onödig dataöverföring, ge bättre kontroll över hårdvaran och göra energifrågan konkret i stället för osynlig.</p>
+
+<h2>Det vänsterpartiet missar</h2>
+
+<p>Vänsterpartiet har en djupt rotad skepsis mot stora amerikanska teknikbolag, vilken jag i mycket delar. Men deras lösning på problemet — kraftigare reglering, stärkt offentlig sektor, statligt övertagande av digital infrastruktur — förutsätter att maktproblemet är centraliserat och kan lösas centraliserat.</p>
+
+<p>Det är förmodligen sant för molnberoendet. Det är inte sant för AI-modellerna själva. När öppna modeller från Google, Meta, Mistral, Alibaba och andra finns fritt tillgängliga under generösa licenser, har Big Tech inte längre monopol på den underliggande tekniken. Monopolet ligger på <em>tjänstelagret</em> — på de praktiska applikationer som körs ovanpå modellerna — och det monopolet bryts inte av reglering, det bryts av att vanliga människor och organisationer börjar köra sina egna lokala alternativ.</p>
+
+<p>Det är en närmast anarkistisk lösning på ett systemkritiskt problem, och det är en lösning som borde tilltala vänstern mer än någon annan. Att vrida makten över verktygen från storkapitalet och ut i händerna på enskilda människor är en klassiskt vänsterhumanistisk position. Att det dessutom inte kräver statligt övertagande eller komplicerad lagstiftning, bara medvetenhet och kompetens, borde göra det enklare, inte svårare, att försvara. Men ingenstans i Vänsterpartiets program finns en formulering av detta.</p>
+
+<h2>Den frihetliga vinkeln som ingen tar</h2>
+
+<p>Om någon i riksdagen borde ha fångat upp den här tråden är det Centerpartiet. Ett parti som historiskt har stått upp för individens integritet mot statlig övervakning, som har varit skeptiskt till central reglering, och som har en frihetlig grundsyn på företagsamhet, borde ha allt att vinna på att vara det parti som försvarar medborgarens rätt att äga, träna och köra sin egen AI.</p>
+
+<p>Det parti som säger: en småföretagare som finjusterar en modell för sin egen verksamhet ska inte automatiskt behandlas som leverantör av ett högrisksystem enligt AI-förordningen, om användningen inte faktiskt faller inom ett högriskområde eller sätts på marknaden som ett sådant system. En privatperson som tränar en modell på sin egen data ska inte vara skyldig att redovisa sina träningsdata för någon myndighet. En kommun som vill köra sina egna modeller lokalt ska inte tvingas in i ett ramavtal med en molnleverantör för att uppfylla någon överdriven tolkning av rättssäkerhet.</p>
+
+<p>Det är en politik som lika gärna kunnat kallas frihetlig som vänsterhumanistisk. Den centrerar individen mot både staten och storkapitalet. Den respekterar både integritet och innovation. Den finns inte i något partis program 2026.</p>
+
+<h2>Vad det betyder för valet</h2>
+
+<p>Den här essän är inte ett påstående att lokal AI ska lösa alla problem. Det finns saker som kräver stora modeller, stora dataset, stora investeringar — och där behövs både europeisk molninfrastruktur, gemensamma forskningsmiljöer som WASP, och en industripolitik som tar AI på allvar. Det är inte en antingen-eller-fråga.</p>
+
+<p>Men det är en både-och-fråga som i dag bara har "och"-sidan formulerad. Hela suveränitetsdebatten handlar om centralisering, om infrastrukturinvesteringar, om vad staten och unionen ska bygga. Den andra sidan — vad medborgaren och småföretagaren själva kan bygga, äga och kontrollera — är politiskt oformulerad.</p>
+
+<p>När jag tittar på partiernas program inför valet i september, är det inte i första hand vad de säger som oroar mig. Det är vad de inte säger. Det är frånvaron av en politisk position kring den teknik som jag, helt utan stöd från någon riksdagsutredning, redan har installerat på mitt skrivbord. Den teknik som allt fler svenska småföretagare, utvecklare, studenter och offentliga verksamheter nu börjar utforska lokalt.</p>
+
+<p>När den dagen kommer — och den kommer snabbt — kommer den verkliga digitala suveräniteten inte att vara en fråga om var datacentren ligger. Den kommer att vara en fråga om vem som äger sin egen modell.</p>
+
+<section class="article-endnotes">
+  <h2>Källor och kontrollpunkter</h2>
+  <p class="source-note">Den här essän är en argumenterande analys. De faktiska kontrollpunkterna gäller främst regeringens AI-underlag, öppna/lokala modeller, GDPR och AI-förordningens tidslinje.</p>
+  <ol>
+    <li><a href="https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/02/sou-202512/">AI-kommissionens Färdplan för Sverige, SOU 2025:12, publicerad 4 februari 2025.</a></li>
+    <li><a href="https://www.government.se/information-material/2026/02/swedens-ai-strategy/">Regeringen: Sweden&#x27;s AI Strategy, publicerad 25 februari 2026, med tillhörande handlingsplan.</a></li>
+    <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-open-models/">Google: Gemma som familj av öppna modeller som kan köras på laptop, workstation eller moln.</a></li>
+    <li><a href="https://docs.mistral.ai/models/deployment">Mistral AI: dokumentation om lokal eller egen driftsättning av öppna modeller.</a></li>
+    <li><a href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/konsekvensbedomning/">Integritetsskyddsmyndigheten: vägledning om konsekvensbedömning enligt GDPR.</a></li>
+    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">EU-kommissionen: AI Act och aktuell implementeringstidslinje, inklusive högriskreglernas fasning.</a></li>
+  </ol>
+</section>
+
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i arbete med AI i skarpa verksamheter.</p>
+  </div>
+</article>
+
+<nav class="article-nav">
+  <div class="container">
+    <a href="essaer.html">Essäer</a>
+    <a href="sex-saker-du-behover-veta.html">Nästa</a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="essaer.html">Essäer</a> · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
