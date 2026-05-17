@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partierna och skiftet — AI-skiftet</title>
+  <meta name="description" content="Essä inför valet 2026 om riksdagspartiernas AI-positioner, lokal AI och den politiska tidskalan.">
+  <meta name="date" content="2026-05-17">
+  <meta property="article:published_time" content="2026-05-17T09:00:00+02:00">
+  <meta property="og:title" content="Partierna och skiftet — AI-skiftet">
+  <meta property="og:description" content="Essä inför valet 2026 om riksdagspartiernas AI-positioner, lokal AI och den politiska tidskalan.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/partierna-och-skiftet.html">
+  <link rel="canonical" href="https://ai-skiftet.se/partierna-och-skiftet.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+    .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+    .article-body blockquote{margin:32px 0;padding:22px 24px;border-left:4px solid var(--accent);background:#fbf8f4;color:#26313d;font-size:1.16rem;line-height:1.65}
+    .article-body .point{margin:28px 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:#fbf8f4}
+    .article-body .point-number{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin-bottom:10px;border-radius:999px;background:var(--accent);color:#fff;font-weight:800}
+    .article-body .point h2{margin-top:0}
+    .article-body .closing{margin-top:34px;padding-top:10px}
+    .source-note{font-size:.95rem;color:var(--muted)}
+    .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="framtidsscenarier.html">Scenarier</a>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till essäer</a>
+    <div class="article-kicker">Politik &middot; Valet 2026</div>
+    <h1>Partierna och skiftet</h1>
+    <p class="article-dek">Jag har läst SOU 2025:12. Jag har läst remissvaren. Jag har läst handlingsprogrammen. Och jag har en obekväm slutsats: inget av riksdagspartierna har förstått vad det är de står inför.</p>
+    <p class="article-meta">Essä · Rolf Skogling · Publicerad 17 maj 2026 · ca 14 min läsning</p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+<p>Det här är en essä jag inte ville skriva. Jag är konsult, inte partipolitisk kommentator, och jag har levt mitt yrkesliv med en pragmatisk inställning till var den politiska gränsen går. Men under våren 2026 har jag läst AI-kommissionens slutbetänkande, jag har läst de remissvar som följde, och jag har läst vad partierna säger om artificiell intelligens i sina handlingsprogram inför valet i september. Och slutsatsen går inte att komma runt.</p>
+
+<p>Inget av riksdagspartierna har förstått hastigheten.</p>
+
+<p>Det är inte ett påstående jag gör lättvindigt. Jag har respekt för det parlamentariska arbetet, och jag tror att den svenska modellen — med dess partsförhandlingar, dess remissrundor, dess långsamma men ofta välövervägda beslut — har levererat ett av världens mest fungerande samhällen. Men just den modell som har varit vår styrka är nu en strukturell svaghet, och ingen i Riksdagshuset vill säga det högt.</p>
+
+<p>Låt mig förklara varför, parti för parti. Och låt mig göra det med utgångspunkt i något konkret: vad som faktiskt händer i en mellanstor industri eller på ett konsultkontor i Värmland just nu, i maj 2026.</p>
+
+<h2>Verkligheten på marken</h2>
+
+<p>Den 16 maj 2026 körde jag färdig en finjustering av en stor språkmodell på min egen dator. Inte i ett datacenter. Inte i molnet. På en Mac Mini som står på mitt skrivbord. Modellen är öppen, vikterna är fria, och jag har anpassat den med elva specialiserade adaptrar för olika domäner i mitt arbete. Min egen arbetsinsats — att förbereda data, sätta upp körningen, granska resultaten — var någon halvtimme. Sedan jobbade datorn själv i några timmar medan jag gjorde annat.</p>
+
+<p>För arton månader sedan hade samma arbete krävt ett serverrum, en GPU-investering på flera hundra tusen kronor och en konsultkår från ett av de stora amerikanska molnföretagen. För arton månader sedan var det här en sak som bara forskningsinstitut och stora företag kunde göra. I dag gör jag det medan jag dricker kaffe.</p>
+
+<p>Jag är en enskild konsult i en småstad i Värmland. Jag arbetar med tillverkningsindustri. Jag är inte representativ för någon spjutspetsmiljö, jag är inte anställd vid ett av de stora forskningsklustren, och jag har ingen riskkapitalfinansiering bakom mig. Jag är en helt vanlig svensk småföretagare, och jag har just utfört något som var omöjligt strax innan riksdagen tillsatte sin AI-kommission.</p>
+
+<p>Den AI-kommission som sedan tog över ett år att slutföra sitt arbete. Vars betänkande skickades på remiss våren 2025. Vars åtgärder ska finansieras genom anslag som börjar betalas ut tidigast 2026. Och vars centrala förslag — den nationella AI-verkstaden, Data Stewards, regulatoriska sandlådor — bygger på en föreställning om att tekniken finns på en plats där den behöver flyttas ut till "vanliga" aktörer.</p>
+
+<p>Den föreställningen är fel. Tekniken är redan här ute. Den finns på mitt skrivbord, och den finns på skrivbord hos småföretagare, civilanställda och nyfikna gymnasister i hela landet. Frågan är inte längre hur staten ska tillgängliggöra AI för medborgarna. Frågan är vad staten ska göra med det faktum att medborgarna redan har den.</p>
+
+<p>Det är denna fråga som inget riksdagsparti har formulerat. Och det är därför ingen av deras AI-strategier kommer att fungera som tänkt.</p>
+
+<h2>Socialdemokraterna och fackförbunden: rätt instinkt, fel tidsskala</h2>
+
+<p>Låt mig börja med det parti som är närmast att förstå vad som händer på arbetsmarknaden, och förklara varför de ändå har fel.</p>
+
+<p>Socialdemokraternas AI-politik vilar på en akademisk grund — den lutar sig mot Daron Acemoglus institutionsteori, och den argumenterar för att teknik aldrig automatiskt leder till ökad jämlikhet. Det är ett resonemang jag delar fullt ut. Den fackliga rörelsens kritik mot AI-kommissionens betänkande — att utredningen är teknikdeterministisk, att arbetstagarperspektivet osynliggörs, att arbetsmarknadens parter ska involveras — är i sak korrekt.</p>
+
+<p>Problemet är inte vad de säger. Problemet är vad de tror om tidsskalan.</p>
+
+<p>När SRAT skriver att "strukturomvandlingar inte kan hanteras utan att involvera arbetsmarknadens parter i linje med den svenska modellen", förutsätter de att strukturomvandlingen sker i takt med att avtal kan förhandlas. När fackförbundet DIK kräver att framtidens AI-strategi ska "förankras i samverkan mellan stat och parter", förutsätter de att den AI som strategin gäller står stilla medan samverkan pågår.</p>
+
+<p>Den gör den inte. Den AI som DIK ska samverka kring i augusti 2026 är inte samma teknik som fanns när remissvaren skrevs våren 2025. Den modell jag körde finjustering på den 16 maj kan saker som inte ens var diskuterade som möjligheter när AI-kommissionen lämnade sitt betänkande. Och den modell som finns i augusti 2027, när den nya regeringen ska börja implementera vad den nu än kommer fram till, är en helt annan teknik än den jag använder i dag.</p>
+
+<p>Socialdemokraternas misstag är inte att de tar arbetstagaren på allvar. Det är att de tror att den svenska modellen — partsförhandling, kollektivavtal, samverkan — har samma temporala räckvidd som tekniken den ska reglera. Den har inte det. Och om man försöker tillämpa en modell med tre års cykler på en teknik där kapacitet, kostnader och användningsmönster kan förändras väsentligt på halvårs-nivå, så reglerar man inte tekniken. Man reglerar minnet av den.</p>
+
+<h2>Vänsterpartiet: nostalgi förklädd till radikalism</h2>
+
+<p>Vänsterpartiet har det mest internt konsekventa AI-programmet av alla riksdagspartier. Tesen är enkel: AI skapar tidsvinster och produktivitetsökningar; dessa vinster ska gå till arbetstagarna, inte till kapitalet; därför ska arbetstidsförkortning med bibehållen lön finansieras med AI-genererade besparingar.</p>
+
+<p>Det är en vacker idé. Den fungerar inte.</p>
+
+<p>Den fungerar inte därför att den förutsätter en stabilitet i produktivitetsökningarna som inte kommer att finnas. När jag som enskild konsult i vissa uppdrag kan göra arbete som tidigare hade krävt ett helt litet team, då räcker det inte att tala om "tidsvinster" som om arbetsinnehållet vore stabilt. Det finns ett <em>arbete som inte längre finns</em>. Vänsterpartiet förhandlar om hur kakan ska delas, samtidigt som bagaren slutar baka.</p>
+
+<p>Det här är inte en argumentation mot arbetstidsförkortning. Jag tror att en mycket kraftigare omfördelning av tid kommer att vara nödvändig — inte som facklig seger, utan som ekonomisk realitet — när stora delar av tjänstemannaarbetet automatiseras under de närmaste fem åren. Men Vänsterpartiets ramverk — där fackföreningar förhandlar fram kortare arbetstid finansierad av vinster — förutsätter ett kapitalistiskt produktionssystem där arbetet finns kvar och bara blir effektivare. Den teknik vi har 2026 raderar inte ineffektivitet ur arbetet. Den raderar arbetet.</p>
+
+<p>När V kräver att "all implementering av AI måste föregås av djuplodande och rigorösa konsekvensanalyser", missar de att den AI som analyseras hinner bytas ut två gånger om mellan konsekvensanalysens början och slut. Det är inte försiktighet. Det är förlamning förklädd till försiktighet.</p>
+
+<h2>Miljöpartiet: rätt principer, för långsam klocka</h2>
+
+<p>Miljöpartiet har riksdagens mest genomtänkta tematiska AI-program. Programfördjupningen "En grön AI-politik" är välstrukturerad, ideologiskt sammanhängande, och har flera positioner som jag delar fullt ut: kravet på transparens i träningsdata, motståndet mot autonoma vapensystem, betoningen av digital suveränitet, och insikten att AI-infrastrukturen själv måste energieffektiviseras.</p>
+
+<p>Det är också det parti vars principer jag instinktivt står närmast. Och just därför gör det ondast att säga: deras klocka går för långsamt.</p>
+
+<p>Digital suveränitet är inte längre en molnfråga. Den essän — om vi måste välja mellan amerikanska och europeiska leverantörer av molntjänster för att skydda svenska data — är 2023 års essä. Den essän förutsätter att AI är något du <em>hyr</em>. Verkligheten 2026 är att du kan <em>äga</em> den. Den modell jag finjusterade på min Mac Mini är amerikansk till sitt ursprung — Google släppte den under öppen licens — men den körs lokalt på min hårdvara, mina data lämnar aldrig mitt nätverk, och dataöverförings- och leverantörsriskerna blir väsentligt mindre. Juridik, säkerhet, loggning, åtkomstkontroll och ansvar finns fortfarande kvar, men suveräniteten flyttar närmare användaren än något molnavtal kan göra.</p>
+
+<p>Miljöpartiet borde vara det parti som först förstod det här. De har ju egentligen alla bitarna: skeptiska till maktkoncentration, intresserade av decentralisering, integritetsmedvetna. Men programmet är skrivet av människor som tänker på AI som en molntjänst, och som tror att kampen står mellan amerikansk och europeisk infrastruktur. Den kartan räcker inte längre. Nästa fråga är vem som äger sin egen modell — staten, kommunen, företaget, individen — och Miljöpartiet har ingen position alls i den frågan.</p>
+
+<p>Detsamma gäller deras krav på transparens i träningsdata. Det är en absolut rimlig princip för de stora amerikanska modellerna. Men de modeller som småföretagare och kommuner kan komma att använda från 2026 och framåt är ofta finjusterade lokalt på domänspecifika data. Vem ska redovisa träningsdatan där? Konsulten? Kommunen själv? Och med vilken upplösning? Frågan är inte ologisk, men den är obesvarad — och eftersom Miljöpartiet är det enda parti som tar transparens på allvar, är det också det enda parti vars tystnad i frågan blir intressant.</p>
+
+<h2>Centerpartiet: en frihetlig hållning som riskerar att bli irrelevant</h2>
+
+<p>Centerpartiet har en hederlig integritetsposition. Abir Al-Sahlanis röstning för AI-förordningen i Europaparlamentet, med den uttryckliga motiveringen att tekniken aldrig får användas för godtycklig biometrisk massövervakning, var en av få politiska handlingar under mandatperioden som jag fortfarande respekterar utan reservation.</p>
+
+<p>Men Centerpartiets bredare AI-politik — "öppna data", "Sverige som föregångsland", "en stark nationell AI-kommission" — är retorik från en svunnen tid. Det är 2018 års folkpartiretorik klädd i centerpartistiska kläder. Den förutsätter att den centrala kampen om AI handlar om att <em>tillgängliggöra</em> teknologin, när den i praktiken redan är tillgänglig för vem som helst som vill ladda ner en öppen modell från Hugging Face.</p>
+
+<p>Det Centerpartiet kunde göra — och som ingen annan i riksdagen kommer att göra — är att formulera en konsekvent frihetlig position kring lokal AI: att medborgaren har rätt att äga, träna och köra sina egna modeller utan att staten ska kunna inspektera dem; att en småföretagare som finjusterar en modell för sin egen verksamhet inte automatiskt ska behandlas som leverantör av ett högrisksystem, om användningen inte faktiskt faller inom ett högriskområde eller sätts på marknaden som ett sådant system; att den AI som körs på min Mac Mini är min angelägenhet, inte EU:s. Det skulle vara en position värd att rösta på. Den finns inte i några dokument.</p>
+
+<h2>Moderaterna: tillväxtretorik utan teknisk substans</h2>
+
+<p>Moderaterna är riksdagens mest teknikoptimistiska parti, och det är paradoxalt nog ett av de partier som förstår tekniken sämst. Talet om regulatoriska växthus, talangvisum och personaloptioner är näringspolitik från en värld där AI är en startup-fråga. Den världen finns inte längre.</p>
+
+<p>När Ulf Kristersson talar om att Sverige kan vinna tech-investeringar från Norge och Danmark, beskriver han ett spel där länderna konkurrerar om var modellerna ska <em>byggas</em>. Det är ett spel där Sverige i dag inte har ett ekosystem som realistiskt konkurrerar med USA, Kina eller de största europeiska satsningarna. Sverige kan absolut bygga spetskompetens, språkresurser, tillämpningar och egen drift. Men politiken bör inte låtsas att hela frågan handlar om att Sverige på egen hand ska bygga nästa frontiermodell.</p>
+
+<p>Frågan handlar om vad vi gör med modellerna när de finns. Och där har Moderaterna en intressant blind fläck: man ser AI som vinstmotor för det privata näringslivet och som besparing inom regional sjukvård, men man ser inte den lokala AI:n som politisk kraft. Den ekonomiska kalkyl som motiverar varför Sverige ska "bli ledande" på AI bygger fortfarande på en föreställning om datacenter, om hyperscale-investeringar, om att AI är en industri som genererar arbetstillfällen. Det är den inte. Den genererar produktivitet, och produktivitet är något annat än arbetstillfällen.</p>
+
+<h2>Kristdemokraterna och Liberalerna: snälla, små, för sent ute</h2>
+
+<p>Erik Slottners arbete för AI-verkstäderna har varit mer konkret än vad merparten av det politiska spektrumet har levererat. Att låta AI bevilja bygglov, analysera röntgenbilder och avlasta administrativ personal är inte fel. Det är bara småskaligt och fel tidssatt. När verkstaden är klar är den teknik som ska delas redan föråldrad, och de problem den skulle lösa har redan lösts av enskilda kommuner som har gått in via öppna modeller utan att vänta på nationella initiativ.</p>
+
+<p>Liberalernas livslångt-lärande-tes är logiskt riktig och praktiskt otillräcklig. Tanken att en yrkesarbetande ska kunna "ställa om mitt i livet" förutsätter att det finns något att ställa om till. När hela kompetenslandskapet förskjuts var sjätte månad är inte problemet att människor inte hinner lära sig nytt. Problemet är att det nya också blir gammalt innan kursen är klar. Liberalernas politik förutsätter en stabilitet i yrkenas innehåll som inte längre finns.</p>
+
+<h2>Sverigedemokraterna: lokal pragmatism, ingen riktningsangivelse</h2>
+
+<p>Sverigedemokraternas AI-politik är märkligt nog en av de minst osammanhängande, för den är minst dogmatisk. När SD i Region Halland argumenterar för att AI ska användas brett i sjukvården eftersom "en artificiell intelligens blir aldrig trött", är det inte särskilt djupsinnigt — men det är inte heller fel. När partiet kräver myndighetsstödda varningssystem mot AI-genererade bedrägerier, är det ett konkret förslag som adresserar ett verkligt problem.</p>
+
+<p>Det partiet inte har är en riktningsangivelse. SD säger att AI ska "gagna vanligt folk" och stämma med "svenska värderingar", men ingenstans förklaras vad det innebär i en värld där en arvikabo som jag kan köra sin egen modell på sitt eget skrivbord. Är det "vanligt folk" som ska få göra det, eller är det något som ska regleras bort till förmån för centraliserade lösningar? Partiet vet inte. Och eftersom det inte vet, blir AI-politiken en lapptäcksamling lokala initiativ utan riktning.</p>
+
+<h2>Det parti som borde finnas men inte gör det</h2>
+
+<p>Om man läser den här genomgången i en sjok blir det tydligt vad som saknas. Det finns inget parti som kombinerar:</p>
+
+<p>Insikten att tempot är fundamentalt annorlunda än för tidigare teknikskiften, och att den svenska modellens cykler är för långsamma. Det är något som ligger närmast Moderaterna, men kombinerat med deras tillväxtretorik blir det fel.</p>
+
+<p>Insikten att den lokala, decentraliserade AI:n är den verkliga maktförskjutningen, inte molntjänsterna. Det borde vara Miljöpartiet, men deras program är ännu en generation gammalt i den frågan.</p>
+
+<p>Insikten att medborgaren har rätt att äga sin egen modell, träna den på sitt sätt, och inte behöver staten som mellanhand. Det borde vara Centerpartiet, men Centerpartiet är upptaget med biometri och övervakning, vilka är gårdagens stridsfrågor.</p>
+
+<p>Insikten att arbetsmarknadens omvälvning kommer att vara så snabb och så total att den måste mötas med något annat än partsförhandling. Det är ingen som vågar säga det. Vänsterpartiet kommer närmast, men deras lösning förutsätter att de förlorade arbetena ändå finns kvar i någon form.</p>
+
+<blockquote>Det parti som behövs i riksdagsvalet 2026 är ett som accepterar att vi inte vet hur de kommande fem åren ser ut, och som bygger en politik runt den ödmjukheten i stället för att låtsas att en mandatperiods strategiska handlingsprogram fortfarande betyder något.</blockquote>
+
+<p>Ingen sådan ödmjukhet finns i de dokument jag har läst.</p>
+
+<h2>Vad väljaren kan göra</h2>
+
+<p>Det här är inte en essä som mynnar ut i en rekommendation att rösta på något särskilt parti. Det går inte. Det parti som förstår mitt arbete och mitt liv som svensk småföretagare i AI-skiftet finns inte, och kommer inte att finnas till valet i september.</p>
+
+<p>Det som väljaren <em>kan</em> göra är att ta partiernas AI-positioner som en indikator på hur de tänker om förändring i stort. Den som tror att SOU 2025:12 är en bra färdplan kommer också att tro att andra utdragna utredningsprocesser leder till goda beslut. Den som tror att "regulatoriska sandlådor" är en innovationsmotor kommer att tro att andra konstruerade undantagsmiljöer fungerar. Den som tror att svenska modellen kan reglera tjänstemannaarbetets försvinnande kommer att tro att andra omvälvningar går att förhandla bort.</p>
+
+<p>Jag tror inte det. Jag har sett vad min modell kan göra på mitt skrivbord. Jag har sett vad jag som enskild konsult kan leverera till mina kunder. Jag har sett hur snabbt det skiftar mellan månaderna. Och jag vet att inget i Riksdagshuset rör sig i den hastigheten.</p>
+
+<p>Det är inte ett argument mot att rösta. Det är ett argument för att rösta med medvetenhet om att den politiska klassen — oavsett färg — har en månads-cykel som inte längre matchar verkligheten. Det vi behöver är inte en bättre AI-strategi från en valvinnande regering. Det vi behöver är en politisk kultur som vågar säga att den inte vet, som vågar revidera sina beslut snabbt, och som vågar låta medborgaren behålla makten över sin egen teknik.</p>
+
+<p>Inget av detta står på valsedlarna i september. Men det är vad valet i grunden handlar om.</p>
+
+<section class="article-endnotes">
+  <h2>Källor och kontrollpunkter</h2>
+  <p class="source-note">Essätexten bygger på AI-skiftets sammanställning av partiernas AI-positioner samt officiella källor om svensk AI-politik och EU-reglering. Slutsatserna är författarens.</p>
+  <ol>
+    <li><a href="valguiden-2026/assets/research/partiernas-ai-strategier-2026.pdf">AI-skiftets arbetsunderlag: Partiernas AI-strategier inför valet 2026.</a></li>
+    <li><a href="https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2025/02/sou-202512/">AI-kommissionens Färdplan för Sverige, SOU 2025:12, publicerad 4 februari 2025.</a></li>
+    <li><a href="https://www.government.se/information-material/2026/02/swedens-ai-strategy/">Regeringen: Sweden&#x27;s AI Strategy, publicerad 25 februari 2026, med tillhörande handlingsplan.</a></li>
+    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">EU-kommissionen: AI Act och aktuell implementeringstidslinje, inklusive högriskreglernas fasning.</a></li>
+    <li><a href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/konsekvensbedomning/">Integritetsskyddsmyndigheten: vägledning om konsekvensbedömning enligt GDPR.</a></li>
+    <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-open-models/">Google: Gemma som familj av öppna modeller som kan köras på laptop, workstation eller moln.</a></li>
+    <li><a href="https://docs.mistral.ai/models/deployment">Mistral AI: dokumentation om lokal eller egen driftsättning av öppna modeller.</a></li>
+  </ol>
+</section>
+
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i arbete med AI i skarpa verksamheter.</p>
+  </div>
+</article>
+
+<nav class="article-nav">
+  <div class="container">
+    <a href="sex-saker-du-behover-veta.html">Föregående</a>
+    <a href="valguiden-2026/">Valkompassen</a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="essaer.html">Essäer</a> · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
