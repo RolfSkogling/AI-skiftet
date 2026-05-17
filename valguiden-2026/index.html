@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valet 2026: partier, sakfrågor och möjliga samarbeten</title>
+    <meta
+      name="description"
+      content="En pedagogisk, källbelagd guide till svenska riksdagsvalet 2026: vad partierna står för och vilka samarbeten som kan bli aktuella."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Till startsidan">
+        <span class="brand-mark">26</span>
+        <span>Valguiden</span>
+      </a>
+      <nav aria-label="Huvudnavigering">
+        <a href="#partier">Partier</a>
+        <a href="#samarbeten">Samarbeten</a>
+        <a href="#ai">AI</a>
+        <a href="#valkompass">Valkompass</a>
+        <a href="#jamfor">Jämför</a>
+        <a href="#kallor">Källor</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img src="assets/hero-election.png" alt="Illustration av väljare som förbereder sig inför valet">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Riksdag, region och kommun</p>
+          <h1>Svenska valet 2026, förklarat utan partibrus</h1>
+          <p>
+            En neutral översikt över riksdagspartiernas profilfrågor, konfliktlinjer och
+            tänkbara regeringsunderlag inför valdagen den 13 september 2026.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#partier">Utforska partierna</a>
+            <a class="button secondary" href="#valkompass">Testa valkompassen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts band" aria-labelledby="facts-title">
+        <div class="section-head compact">
+          <p class="eyebrow">Snabb koll</p>
+          <h2 id="facts-title">Tre saker som styr efter valet</h2>
+        </div>
+        <div class="fact-grid">
+          <article>
+            <span class="fact-number">13 sep</span>
+            <h3>Valdag 2026</h3>
+            <p>Valmyndigheten anger den 13 september 2026 som valdag för riksdag, region och kommun.</p>
+          </article>
+          <article>
+            <span class="fact-number">349</span>
+            <h3>Mandat i riksdagen</h3>
+            <p>För att kunna styra krävs att en statsminister tolereras av riksdagen. 175 nej-röster stoppar.</p>
+          </article>
+          <article>
+            <span class="fact-number">4%</span>
+            <h3>Riksdagsspärr</h3>
+            <p>Små förändringar nära spärren kan avgöra vilka block och samarbeten som faktiskt räcker.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="partier" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Partierna</p>
+          <h2>Vad står de för?</h2>
+          <p>
+            Korten sammanfattar partiernas egen profilering och välkända konfliktlinjer.
+            Använd filtren för att se partier som betonar samma typ av frågor.
+          </p>
+        </div>
+        <div class="filters" aria-label="Filtrera partier">
+          <button class="chip active" data-filter="alla">Alla</button>
+          <button class="chip" data-filter="valfard">Välfärd</button>
+          <button class="chip" data-filter="trygghet">Trygghet</button>
+          <button class="chip" data-filter="klimat">Klimat</button>
+          <button class="chip" data-filter="ekonomi">Ekonomi</button>
+          <button class="chip" data-filter="migration">Migration</button>
+        </div>
+        <div id="party-grid" class="party-grid"></div>
+      </section>
+
+      <section class="visual-split band">
+        <div>
+          <p class="eyebrow">Sakfrågor</p>
+          <h2>Väljare röstar ofta på paket, inte enstaka löften</h2>
+          <p>
+            Partierna prioriterar olika mellan välfärd, skatter, klimat, brott, migration,
+            skola, landsbygd och EU. Därför är den viktigaste frågan ofta: vilket paket av
+            prioriteringar tycker du är mest rimligt?
+          </p>
+          <div class="issue-list">
+            <span>Vård</span><span>Skola</span><span>Klimat</span><span>Jobb</span>
+            <span>Trygghet</span><span>Migration</span><span>Skatter</span><span>Landsbygd</span><span>AI</span>
+          </div>
+        </div>
+        <img src="assets/issues-desk.png" alt="Illustration av symboler för politiska sakområden">
+      </section>
+
+      <section id="ai" class="section ai-section">
+        <div class="section-head">
+          <p class="eyebrow">AI-politik</p>
+          <h2>AI har blivit en ny konfliktlinje</h2>
+          <p>
+            Gemini-underlaget beskriver AI som en systemfråga inför valet 2026: välfärdens
+            effektivitet, arbetsmarknadens trygghet, brottsbekämpning, integritet,
+            upphovsrätt, demokrati och Sveriges konkurrenskraft dras in i samma debatt.
+          </p>
+        </div>
+        <div class="ai-grid">
+          <article class="ai-card">
+            <span class="tag">Tillväxt och välfärd</span>
+            <h3>Teknikoptimistisk linje</h3>
+            <p>
+              M, KD och L betonar snabbare införande, regulatoriska testmiljöer,
+              mindre administration och AI som stöd i vård, omsorg, skola och arbetsliv.
+            </p>
+          </article>
+          <article class="ai-card">
+            <span class="tag">Kontroll och rättigheter</span>
+            <h3>Etik först-linje</h3>
+            <p>
+              S, V och MP lyfter demokratisk kontroll, fackligt inflytande, risk för bias,
+              upphovsrätt, arbetstagares trygghet och skydd mot deepfakes och desinformation.
+            </p>
+          </article>
+          <article class="ai-card">
+            <span class="tag">Integritet och data</span>
+            <h3>Övervakning är skiljelinjen</h3>
+            <p>
+              C och MP markerar hårt mot biometrisk massövervakning och vill se starkare
+              digital suveränitet. M och SD betonar oftare AI:s nytta för polis och säkerhet.
+            </p>
+          </article>
+          <article class="ai-card">
+            <span class="tag">Nationell pragmatism</span>
+            <h3>SD:s särskilda profil</h3>
+            <p>
+              SD bejakar AI för brottsbekämpning, bedrägerivarningar, vård och tolkning,
+              men är mer försiktiga kring skärmar i skolan och överstatliga teknikramverk.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="samarbeten" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Regeringsfrågan</p>
+          <h2>Vilka kan tänkas samarbeta?</h2>
+          <p>
+            Kartan skiljer på etablerat samarbete, tänkbara eftervalsunderlag och större
+            knäckfrågor. Det är inte en prognos, utan en pedagogisk lägesbild.
+          </p>
+        </div>
+        <div class="coalition-layout">
+          <div class="map-card">
+            <img src="assets/cooperation-table.png" alt="Illustration av partier runt ett förhandlingsbord">
+          </div>
+          <div class="coalitions">
+            <article class="coalition current">
+              <span class="tag">Etablerat 2022-2026</span>
+              <h3>Tidösamarbetet</h3>
+              <p>
+                Moderaterna, Kristdemokraterna och Liberalerna sitter i regeringen med
+                Sverigedemokraterna som samarbetsparti genom Tidöavtalet.
+              </p>
+              <div class="party-row"><b>M</b><b>KD</b><b>L</b><b>SD</b></div>
+            </article>
+            <article class="coalition possible">
+              <span class="tag">Möjligt S-lett underlag</span>
+              <h3>Oppositionsspåret</h3>
+              <p>
+                Socialdemokraterna är navet. Miljöpartiet och Vänsterpartiet vill tydligt
+                byta regering; Centerpartiet kan bli avgörande men relationen till V är en knäckfråga.
+              </p>
+              <div class="party-row"><b>S</b><b>MP</b><b>V</b><b>C</b></div>
+            </article>
+            <article class="coalition tension">
+              <span class="tag">Osäkra punkter</span>
+              <h3>Det väljarna bör bevaka</h3>
+              <p>
+                Regeringsmedverkan för SD, Liberalernas spärrläge, Centerpartiets roll och
+                hur S väger V, MP och C kan påverka regeringsbildningen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="valkompass" class="section compass-section">
+        <div class="section-head">
+          <p class="eyebrow">Valkompass</p>
+          <h2>Vilka partier ligger närmast dina svar?</h2>
+          <p>
+            Klicka på det alternativ som passar dig bäst i varje fråga. Markera frågor som
+            extra viktiga om de bör väga dubbelt. Resultatet visar matchning mot partiernas
+            profiler i den här guiden, inte ett facit om hur du ska rösta.
+          </p>
+        </div>
+        <div class="compass-layout">
+          <form id="compass-form" class="compass-form" aria-label="Valkompassfrågor"></form>
+          <aside class="compass-panel" aria-live="polite">
+            <div class="compass-score">
+              <span id="answered-count">0 frågor svarade</span>
+              <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+            </div>
+            <div id="compass-result" class="compass-result">
+              <h3>Ditt resultat visas här</h3>
+              <p>Svara på minst sex frågor för att få en första matchning.</p>
+            </div>
+            <button id="reset-compass" class="button reset-button" type="button">Nollställ svar</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="jamfor" class="section compare-section">
+        <div class="section-head">
+          <p class="eyebrow">Jämför</p>
+          <h2>Välj två partier</h2>
+          <p>Se hur deras profiler skiljer sig i språk, sakfrågor och möjliga samarbeten.</p>
+        </div>
+        <div class="compare-controls">
+          <label>
+            Parti A
+            <select id="compare-a"></select>
+          </label>
+          <label>
+            Parti B
+            <select id="compare-b"></select>
+          </label>
+        </div>
+        <div id="compare-output" class="compare-output"></div>
+      </section>
+
+      <section id="kallor" class="section sources">
+        <div class="section-head">
+          <p class="eyebrow">Källor och metod</p>
+          <h2>Byggd för att kunna uppdateras</h2>
+          <p>
+            Lägesbilden är sammanställd 17 maj 2026. Partiernas valplattformar och
+            regeringsbesked kan ändras under valrörelsen.
+          </p>
+        </div>
+        <div class="source-grid">
+          <a href="https://www.val.se/kommande-val/val-2026---riksdag-region-och-kommun">Valmyndigheten: Val 2026</a>
+          <a href="https://www.regeringen.se/pressmeddelanden/2026/05/regeringen-och-sverigedemokraterna-presenterar-bokslut-over-tidoavtalet/">Regeringen: Tidöavtalets bokslut</a>
+          <a href="https://moderaterna.se/var-politik/">Moderaterna: Vår politik</a>
+          <a href="https://www.socialdemokraterna.se/var-politik/">Socialdemokraterna: Vår politik</a>
+          <a href="https://www.sd.se/tidoavtalet/">Sverigedemokraterna: Tidöavtalet</a>
+          <a href="https://www.mp.se/politik/">Miljöpartiet: Politik</a>
+          <a href="https://www.vansterpartiet.se/">Vänsterpartiet: Politik A-Ö</a>
+          <a href="https://www.centerpartiet.se/">Centerpartiet: Valplan och politik</a>
+          <a href="https://kristdemokraterna.se/var-politik/">Kristdemokraterna: Vår politik</a>
+          <a href="https://www.liberalerna.se/politik-3">Liberalerna: Vår politik</a>
+          <a href="assets/research/partiernas-ai-strategier-2026.pdf">Gemini deep research: Partiernas AI-strategier</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Neutral pedagogisk översikt. Kontrollera alltid partiernas egna aktuella besked före röstning.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
