@@ -355,12 +355,18 @@ h3 {
 
 .meter {
   display: grid;
-  grid-template-columns: 94px 1fr;
-  gap: 10px;
+  grid-template-columns: minmax(122px, max-content) minmax(64px, 1fr);
+  gap: 12px;
   align-items: center;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 750;
+}
+
+.meter > span {
+  min-width: 0;
+  line-height: 1.2;
+  hyphens: auto;
 }
 
 .bar {
