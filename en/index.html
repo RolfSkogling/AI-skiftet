@@ -71,10 +71,10 @@
 <nav class="site-nav">
   <div class="container-wide">
     <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var links=this.closest('.site-nav').querySelector('.site-nav__links');var expanded=links.classList.toggle('active');this.setAttribute('aria-expanded',expanded)">
       <span></span><span></span><span></span>
     </button>
-    <div class="site-nav__links">
+    <div class="site-nav__links" onclick="if(event.target.closest('a')){this.classList.remove('active');this.closest('.site-nav').querySelector('.nav-toggle').setAttribute('aria-expanded','false')}">
       <a href="/en/index.html#news">News</a>
       <a href="/en/essays.html">Essays</a>
       <a href="/en/framtidsscenarier.html">Scenarios</a>
@@ -418,4 +418,3 @@
 
 
     <!-- (Date group 2026-05-04 removed — >7 days old) -->
-
