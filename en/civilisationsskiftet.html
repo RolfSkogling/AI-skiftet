@@ -235,11 +235,12 @@
     }
     @media (max-width: 680px) {
       .site-nav .container-wide {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
       }
       .essay-hero {
-        padding-top: 2.5rem;
+        padding-top: 1.75rem;
       }
       .essay-hero__wrap, .essay-article {
         border-radius: 22px;
@@ -251,6 +252,59 @@
     .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
     .site-nav .container-wide{display:flex;align-items:center;gap:16px}
     .site-nav__links{margin-left:0}
+    @media (max-width: 720px) {
+      .site-nav .container-wide {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 74px;
+        gap: 0.75rem;
+      }
+      .site-nav__logo { order: 1; }
+      .nav-toggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+      }
+      .lang-switcher {
+        order: 3;
+        margin-left: 0;
+      }
+      .site-nav__links {
+        order: 4;
+        display: none;
+        position: static;
+        flex-basis: 100%;
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        padding: 0.5rem 0 0.25rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+      .site-nav__links.active { display: flex; }
+      .site-nav__links a {
+        display: block;
+        padding: 0.7rem 0;
+        border-top: 1px solid var(--border);
+      }
+      .essay-hero__wrap {
+        padding: 1.35rem;
+      }
+      .essay-hero h1 {
+        font-size: clamp(2.05rem, 10vw, 2.6rem);
+        hyphens: manual;
+        overflow-wrap: normal;
+      }
+      .essay-hero__subtitle {
+        max-width: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -258,9 +312,12 @@
 <nav class="site-nav">
   <div class="container-wide">
     <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
-    <div class="site-nav__links">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="const links=this.parentElement.querySelector('.site-nav__links'); const open=links.classList.toggle('active'); this.setAttribute('aria-expanded', open ? 'true' : 'false')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links" onclick="if (event.target.tagName === 'A') { this.classList.remove('active'); this.parentElement.querySelector('.nav-toggle')?.setAttribute('aria-expanded', 'false'); }">
       <a href="/en/index.html">Home</a>
-      <a href="index.html#main-essay">Main essay</a>
+      <a href="/en/civilisationsskiftet.html" aria-current="page">Main essay</a>
       <a href="/en/essays.html">Essays</a>
       <a href="/en/framtidsscenarier.html">Scenarios</a>
       <a href="/en/kallor.html">Sources</a>
