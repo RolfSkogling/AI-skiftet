@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om AI-skiftet — hvordan tekstene skrives</title>
+  <meta name="description" content="Om hvordan tekstene på AI-skiftet blir til i samarbeid mellom Rolf Skogling og KI-verktøy.">
+  <link rel="canonical" href="https://ai-skiftet.se/no/om.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/om.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/about.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/om.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/om.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .site-nav__links{margin-left:0}
+    .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .article-body .fact-box{background:#fbf8f4;border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin:30px 0;box-shadow:var(--shadow)}
+    .article-body .fact-box h2{margin-top:0}
+    .article-body .pull{border-left:4px solid var(--accent);padding:8px 0 8px 20px;margin:30px 0;font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;line-height:1.45;color:var(--text)}
+
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/no/index.html#nyheter">Nyheter</a>
+      <a href="/no/essays.html">Essays</a>
+      <a href="/no/framtidsscenarier.html">Scenarier</a>
+      <a href="/no/ordlista.html">Ordliste</a>
+      <a href="/no/om.html" class="active">Om</a>
+      <a href="/no/kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../om.html" lang="sv">SV</a>
+      <a href="../en/about.html" lang="en">EN</a>
+      <a href="#" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="/no/index.html" class="article-header__back">← Tilbake</a>
+    <h1>100&nbsp;% KI</h1>
+    <p class="article-meta">Om metoden · Rolf Skogling</p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+    <p class="lead">Det var en viss komikk i det. Jeg tok noen avsnitt fra tekster jeg hadde skrevet — essays herfra, sider fra et romanmanus — og matet dem inn i et verktøy som skal avsløre maskinskrevet prosa. Svaret kom etter noen sekunder, og det var ikke tvetydig: helt KI-generert.</p>
+    <p>Min første reaksjon var ikke ubehag. Den var gjenkjennelse. For svaret er riktig i en svært bestemt og svært begrenset betydning. Og nettopp den betydningen er verdt å rydde opp i, fordi den sier noe om hele skiftet dette nettstedet finnes for å beskrive.</p>
+    <h2>Hva en detektor faktisk måler</h2>
+    <p>Verktøy av dette slaget leter ikke etter ideer. Det kan de ikke. De leter etter avtrykk: statistiske mønstre i hvordan ord følger ord, hvordan setninger bygges og hvordan en tekst puster. En språkmodell har en gjenkjennelig kadens, omtrent som en dreid detalj bærer spor av verktøyet som formet den. Det er disse sporene detektoren fanger.</p>
+    <p>Den kan med andre ord si noe om <em>hvordan</em> en tekst ble formet. Den kan ikke si <em>hvorfra</em> den kom. Det er en avgjørende forskjell. "100&nbsp;% KI" betyr her omtrent: Disse setningene ble satt sammen i samarbeid med en språkmodell. Det stemmer. Det betyr ikke at tankene, vurderingene, utvalget eller ansvaret tilhører en maskin.</p>
+    <div class="pull">En detektor kan se hvordan en tekst ble formet. Den kan ikke se hvor den kom fra.</div>
+    <h2>Hvordan tekstene faktisk skrives</h2>
+    <p>Jeg bærer med meg omtrent tretti år fra industrien. Det er der perspektivet kommer fra: fabrikkgulvet, ikke styrerommet. Et essay begynner i en observasjon, en irritasjon, en motsetning jeg ikke får til å stemme. Jeg bestemmer hva teksten skal handle om, hvilken tese den driver, hvilke eksempler som skal bære den og hvor den skal lande. Jeg avgjør hva som er sant nok til å skrive ut, og hva som bør strykes fordi en erfaren kollega ellers ville ristet på hodet.</p>
+    <p>Deretter arbeider jeg sammen med en språkmodell. Den hjelper meg å formulere, prøve, vende og slipe. Den foreslår; jeg velger. Den skriver en setning; jeg river den ned. Omtrent slik bruker jeg KI i konsulentarbeidet også: ikke som erstatning for dømmekraft, men som et verktøy som lar dømmekraften nå lenger. Resultatet bærer maskinens kadens fordi maskinen var med og holdt i pennen. Tankearbeidet bak er mitt.</p>
+    <div class="fact-box">
+      <h2>Kort sagt</h2>
+      <p><strong>Detektoren har rett:</strong> tekstene her er formulert i samarbeid med en språkmodell, og det synes.</p>
+      <p><strong>Detektoren sier ingenting om:</strong> hvor ideene kommer fra, om resonnementet holder eller om en konklusjon er verdt å tro på.</p>
+      <p><strong>Det er ikke noe jeg skjuler.</strong> På et nettsted om nettopp dette skiftet ville taushet vært det eneste virkelig uhederlige.</p>
+    </div>
+    <h2>Hvorfor jeg skriver det åpent</h2>
+    <p>Det ville vært enkelt å la være. Detektorer er ikke ufeilbarlige, og gjennomarbeidet, formell prosa — akkurat den typen jeg forsøker å levere — er ofte det de flagger. Jeg kunne lent meg mot den usikkerheten og sagt ingenting.</p>
+    <p>Men da ville jeg bommet på poenget. AI-skiftet handler om hvordan denne teknologien endrer arbeid, skriving og samfunn. Å late som om nettstedets egne tekster blir til på en annen måte, ville undergrave hele premisset. Jeg bruker verktøyet jeg skriver om. Å si det er ikke en innrømmelse; det er linjen.</p>
+    <p>Det som faktisk skader tilliten, er ikke at KI har vært med. Det er gapet mellom hva noen sier om hvordan en tekst ble til, og hvordan den faktisk ble til. Det gapet finnes ikke her, og jeg har tenkt å holde det slik.</p>
+    <h2>Gransk riktig ting</h2>
+    <p>Hvis du kjører en tekst herfra gjennom en detektor, vil den trolig bli flagget. Da vet du at verktøyet gjenkjenner språkmodellens fingeravtrykk, og du vet noe du allerede kunne lese på denne siden.</p>
+    <p>Det interessante spørsmålet har aldri vært om en enkelt setning er maskinformet. Det spørsmålet er teknisk og, ærlig talt, ganske kjedelig. Det interessante spørsmålet er om resonnementet holder. Om eksemplene bærer. Om konklusjonen er verdt å ta med seg. Det er slikt en leser kan dømme — og dømme langt skarpere enn noen detektor.</p>
+    <p>Gransk gjerne det jeg skriver hardt. Bare gransk riktig ting.</p>
+    <p class="author-sig">Tekstene på AI-skiftet skrives av Rolf Skogling i samarbeid med KI-verktøy. Ideer, perspektiv, utvalg og konklusjoner er mine; formulering og bearbeiding skjer ofte sammen med en språkmodell.</p>
+
+  </div>
+</article>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="/no/kallor.html">Kilder</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
