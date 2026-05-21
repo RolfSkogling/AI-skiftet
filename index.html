@@ -390,3 +390,66 @@
 
 
     <!-- (Datumgrupp 2026-05-04 borttagen — >7 dagar gammal) -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    function initNewsFilters() {
+      document.querySelectorAll('.news-filter').forEach(function (filterBar) {
+        var buttons = Array.prototype.slice.call(filterBar.querySelectorAll('.filter-tag'));
+        var section = filterBar.closest('.news-section') || document;
+        var groups = Array.prototype.slice.call(section.querySelectorAll('.news-date-group'));
+
+        function applyFilter(filter) {
+          var showAll = filter === 'alla' || filter === 'all';
+
+          buttons.forEach(function (button) {
+            var active = button.getAttribute('data-filter') === filter;
+            button.classList.toggle('active', active);
+            button.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+
+          groups.forEach(function (group) {
+            var visibleInGroup = false;
+            var cards = Array.prototype.slice.call(group.querySelectorAll('.news-card'));
+
+            cards.forEach(function (card) {
+              var tags = (card.getAttribute('data-tags') || '').split(/\s+/);
+              var visible = showAll || tags.indexOf(filter) !== -1;
+              card.hidden = !visible;
+              if (visible) visibleInGroup = true;
+            });
+
+            group.hidden = !visibleInGroup;
+          });
+        }
+
+        filterBar.addEventListener('click', function (event) {
+          var button = event.target.closest('.filter-tag');
+          if (!button || !filterBar.contains(button)) return;
+          applyFilter(button.getAttribute('data-filter') || 'alla');
+        });
+
+        buttons.forEach(function (button) {
+          button.setAttribute('aria-pressed', button.classList.contains('active') ? 'true' : 'false');
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initNewsFilters);
+    } else {
+      initNewsFilters();
+    }
+  })();
+</script>
+
+</body>
+</html>
