@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minnet som veier — EWMC blir åpen kildekode — AI-skiftet</title>
+  <meta name="description" content="EWMC blir åpen kildekode: et lokalt, vektet minnelager for AI-assistenter og et mønster for delt minne mellom flere AI-verktøy.">
+  <meta name="date" content="2026-05-26">
+  <meta property="article:published_time" content="2026-05-26T10:00:00+02:00">
+  <meta property="og:title" content="Minnet som veier — EWMC blir åpen kildekode">
+  <meta property="og:description" content="Et åpent, lokalt minnesystem for AI-assistenter: SQLite, Ollama og minner som vektes etter betydning.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/no/minnet-som-vager-ewmc.html">
+  <link rel="canonical" href="https://ai-skiftet.se/no/minnet-som-vager-ewmc.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/minnet-som-vager-ewmc.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/minnet-som-vager-ewmc.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/minnet-som-vager-ewmc.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/minnet-som-vager-ewmc.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .site-nav__links{margin-left:0}
+    .link-list{padding-left:1.2rem}
+    .link-list li{margin-bottom:.45rem}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/no/essays.html">Essays</a>
+      <a href="/no/framtidsscenarier.html">Scenarier</a>
+      <a href="/no/om.html">Om</a>
+      <a href="/no/kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../minnet-som-vager-ewmc.html" lang="sv">SV</a>
+      <a href="../en/minnet-som-vager-ewmc.html" lang="en">EN</a>
+      <a href="minnet-som-vager-ewmc.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="/no/essays.html" class="article-header__back">← Til essays</a>
+    <h1>Minnet som veier — EWMC blir åpen kildekode</h1>
+    <p class="article-meta">Lansering · Rolf Skogling · 26. mai 2026</p>
+    <p class="article-lede"><em>Om et lokalt minnesystem for AI-assistenter der ikke alt veier like mye.</em></p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+
+<p>For en tid siden skrev jeg her om minnet som mangler: at dagens AI-assistenter husker som en loggbok. Alt lagres, alt veier like mye, og det som hentes frem styres av hvor nylig eller hvor likt noe er. En kaffepause havner ved siden av en livsavgjørende beslutning, uten rangering.</p>
+
+<p>EWMC — Emotionally-Weighted Memory Consolidation — er mitt forsøk på å ta det på alvor. Tanken er enkel og lånt fra hvordan vi selv husker: vi husker det vi føler og det som viser seg å få konsekvenser, ikke alt vi prosesserer. Hvert minne får en vekt som endrer seg over tid. Det som vender tilbake og viser seg betydningsfullt, består; trivialiteter blekner; og en nattlig konsolidering rydder og omorganiserer — omtrent som en natts søvn sorterer en dags inntrykk.</p>
+
+<p>Nå legger jeg det ut som åpen kildekode, i to deler.</p>
+
+<p>Det første repoet, <strong>ewmc</strong>, er selve minnelageret: en liten, lokal referanseimplementasjon. Alt kjører på din egen maskin — én SQLite-fil og en lokal Ollama-modell for embeddings. Ingen sky, ingen konto, ingen nøkler. Minnene dine forlater aldri datamaskinen.</p>
+
+<p>Det andre, <strong>local-ai-memory-os</strong>, er et mønster oppå: hvordan flere assistenter — si en chatteklient og en kodeagent på en annen maskin — kan dele et felles, varig minne via en git-distribuert logg, der det som skal bli kjerneminne alltid passerer menneskelig godkjenning først.</p>
+
+<p>Jeg vil være ærlig om hva dette er og ikke er. Det er ingen ny grunnforskning. Ingrediensene er kjente — konsolidering som metafor, frekvens- og konsekvensvekting, glemselskurver og repetisjon, vektorminne. Bidraget er kombinasjonen, og et par egensindige valg: negative minner blekner raskere (for å unngå grublesløyfer), og ingenting forfremmes til kjerneminne automatisk — den beslutningen er din.</p>
+
+<h2>Koden</h2>
+<ul class="link-list">
+  <li><a href="https://github.com/RolfSkogling/ewmc">ewmc — minnelageret</a></li>
+  <li><a href="https://github.com/RolfSkogling/local-ai-memory-os">local-ai-memory-os — orkestrering mellom flere AI-er</a></li>
+  <li><a href="https://github.com/RolfSkogling/ewmc/blob/main/paper/EWMC-white-paper.md">Den tilhørende teksten: EWMC white paper</a></li>
+</ul>
+
+<p>Det er fritt å bruke, endre og bygge videre på. Ta gjerne kontakt hvis du prøver det.</p>
+
+<p class="author-sig">Rolf Skogling driver ai-skiftet.se — en svensk stemme om hvordan AI endrer samfunn, arbeid og ledelse.</p>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="/no/kallor.html">Kilder</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
