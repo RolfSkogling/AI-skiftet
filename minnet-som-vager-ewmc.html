@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minnet som väger — EWMC blir öppen källkod — AI-skiftet</title>
+  <meta name="description" content="EWMC blir öppen källkod: ett lokalt, viktat minnesförråd för AI-assistenter och ett mönster för delat minne mellan flera AI-verktyg.">
+  <meta name="date" content="2026-05-26">
+  <meta property="article:published_time" content="2026-05-26T10:00:00+02:00">
+  <meta property="og:title" content="Minnet som väger — EWMC blir öppen källkod">
+  <meta property="og:description" content="Ett öppet, lokalt minnessystem för AI-assistenter: SQLite, Ollama och minnen som viktas efter betydelse.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/minnet-som-vager-ewmc.html">
+  <link rel="canonical" href="https://ai-skiftet.se/minnet-som-vager-ewmc.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .site-nav__links{margin-left:0}
+    .link-list{padding-left:1.2rem}
+    .link-list li{margin-bottom:.45rem}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="framtidsscenarier.html">Scenarier</a>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="minnet-som-vager-ewmc.html" lang="sv" class="active">SV</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">← Till essäerna</a>
+    <h1>Minnet som väger — EWMC blir öppen källkod</h1>
+    <p class="article-meta">Launch · Rolf Skogling · 26 maj 2026</p>
+    <p class="article-lede"><em>Om ett lokalt minnessystem för AI-assistenter där allt inte väger lika mycket.</em></p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+
+<p>För en tid sedan skrev jag här om minnet som saknas: att dagens AI-assistenter minns som en loggbok. Allt sparas, allt väger lika mycket, och det som plockas fram styrs av hur nyligen eller hur likt något är. En kafferast hamnar bredvid ett livsavgörande beslut, utan rangordning.</p>
+
+<p>EWMC — Emotionally-Weighted Memory Consolidation — är mitt försök att ta det på allvar. Tanken är enkel och lånad från hur vi själva minns: vi minns det vi känner och det som visar sig få konsekvenser, inte allt vi processar. Varje minne får en vikt som förändras över tid. Det som återkommer och visar sig betydelsefullt består; trivialiteter bleknar; och en nattlig konsolidering städar och omorganiserar — ungefär som en natts sömn sorterar en dags intryck.</p>
+
+<p>Nu lägger jag ut det som öppen källkod, i två delar.</p>
+
+<p>Det första repot, <strong>ewmc</strong>, är själva minnesförrådet: en liten, lokal referensimplementation. Allt kör på din egen maskin — en SQLite-fil och en lokal Ollama-modell för embeddings. Inget moln, inget konto, inga nycklar. Dina minnen lämnar aldrig datorn.</p>
+
+<p>Det andra, <strong>local-ai-memory-os</strong>, är ett mönster ovanpå: hur flera assistenter — säg en chattklient och en kodagent på en annan maskin — kan dela ett gemensamt, varaktigt minne via en git-distribuerad logg, där det som ska bli kärnminne alltid passerar ett mänskligt godkännande först.</p>
+
+<p>Jag vill vara ärlig om vad det här är och inte är. Det är ingen ny grundforskning. Ingredienserna är välkända — konsolidering som metafor, frekvens- och konsekvensviktning, glömskekurvor och repetition, vektorminne. Bidraget är kombinationen, och ett par egensinniga val: negativa minnen bleknar snabbare (för att slippa grubbleriloopar), och ingenting befordras till kärnminne automatiskt — det beslutet är ditt.</p>
+
+<h2>Koden</h2>
+<ul class="link-list">
+  <li><a href="https://github.com/RolfSkogling/ewmc">ewmc — minnesförrådet</a></li>
+  <li><a href="https://github.com/RolfSkogling/local-ai-memory-os">local-ai-memory-os — orkestrering mellan flera AI</a></li>
+  <li><a href="https://github.com/RolfSkogling/ewmc/blob/main/paper/EWMC-white-paper.md">Den tillhörande texten: EWMC white paper</a></li>
+</ul>
+
+<p>Det är fritt att använda, ändra och bygga vidare på. Hör gärna av dig om du provar det.</p>
+
+<p class="author-sig">Rolf Skogling driver ai-skiftet.se — en svensk röst om hur AI förändrar samhälle, arbete och ledarskap.</p>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
