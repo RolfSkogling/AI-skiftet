@@ -64,7 +64,7 @@
     .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
     .site-nav .container-wide{display:flex;align-items:center;gap:16px}
     .site-nav__links{margin-left:0}
-  </style>
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:0 0 18px;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/</style>
 </head>
 <body>
 
@@ -117,7 +117,13 @@
       <button class="filter-tag" data-filter="debatt">Debate</button>
     </div>
 
-    <div class="news-list" id="newsList">
+    <!--AUDIO-BLOCK-START-->
+<div class="news-audio" role="region" aria-label="Listen to the news">
+  <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to the news</div><div class="news-audio__note">Audio summary is in English. &middot; Audio June 5, 2026</div></div></div>
+  <audio class="news-audio__player" controls preload="none"><source src="/audio/dagens.m4a?v=2026-06-05" type="audio/mp4"></audio>
+</div>
+<!--AUDIO-BLOCK-END-->
+<div class="news-list" id="newsList">
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-06-05                      -->
     <!-- ============================================ -->
