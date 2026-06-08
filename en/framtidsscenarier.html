@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Future Scenarios 2026–2050 — AI-skiftet</title>
-    <meta name="description" content="Tre möjliga vägar för artificiell intelligens från 2026 till 2050 — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning och expertbedömningar.">
+    <title>AI Future Scenarios 2026–2040 — AI-skiftet</title>
+    <meta name="description" content="Three scenarios — Acceleration, Friction and Divergence — year by year 2026–2040. Not forecasts, but consistent stories tested against the same variables. Based on the report Sweden's AI Transition (May 2026).">
     <link rel="canonical" href="https://ai-skiftet.se/en/framtidsscenarier.html">
     <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
     <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/framtidsscenarier.html">
@@ -173,15 +173,11 @@
         .scenario-card.hidden { display: none; }
         .card-accent { height: 3px; width: 100%; }
         .scenario-card.acceleration .card-accent { background: var(--green); }
-        .scenario-card.steady .card-accent { background: var(--blue); }
-        .scenario-card.disruption .card-accent { background: var(--red); }
         .card-body { padding: 1.2rem; }
         .card-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; }
         .card-emoji { font-size: 1.2rem; }
         .card-title { font-size: 0.95rem; font-weight: 700; }
         .scenario-card.acceleration .card-title { color: var(--green); }
-        .scenario-card.steady .card-title { color: var(--blue); }
-        .scenario-card.disruption .card-title { color: var(--red); }
         .card-subtitle { font-size: 0.75rem; color: var(--dim); margin-bottom: 0.8rem; }
         .card-expand-hint {
             font-size: 0.75rem; color: var(--dim); text-align: center;
@@ -262,12 +258,21 @@
         .essay-visual figcaption{max-width:720px;margin:.75rem auto 0;color:var(--color-text-muted,var(--muted,#5f6c7b));font-size:.92rem;line-height:1.55;text-align:center}
         .essay-visual--section{max-width:100%;margin:2.4rem 0;padding:0}
 
-</style>
+
+        /* === SCENARIO NEUTRAL ACCENTS (non-valenced) === */
+        :root { --sc-accel:#8c4a1f; --sc-frik:#3a6b73; --sc-klyv:#6a4a86; }
+        .scenario-card.acceleration .card-accent { background: var(--sc-accel); }
+        .scenario-card.friktion .card-accent { background: var(--sc-frik); }
+        .scenario-card.klyvning .card-accent { background: var(--sc-klyv); }
+        .scenario-card.acceleration .card-title { color: var(--sc-accel); }
+        .scenario-card.friktion .card-title { color: var(--sc-frik); }
+        .scenario-card.klyvning .card-title { color: var(--sc-klyv); }
+    </style>
 </head>
+
 <body>
 
-    <!-- Site Header -->
-    <header class="site-header">
+<header class="site-header">
         <div class="site-header-inner">
             <a href="/en/index.html" class="site-logo">AI-skiftet</a>
             <nav class="site-nav">
@@ -286,16 +291,16 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-label">Future Scenarios</div>
-        <h1>AI Scenarios 2026–2050</h1>
-        <p class="hero-subtitle">Three possible paths for artificial intelligence — acceleration, steady progress, and disruption. Based on current research, industry assessments, and observable trends.</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated April 2026</p>
+        <div class="hero-label">Future scenarios</div>
+        <h1>AI Scenarios 2026–2040</h1>
+        <p class="hero-subtitle">Three scenarios — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong> — year by year from today to 2040. Not forecasts and not value judgements, but consistent stories of how today's uncertainties may combine. Based on the report <em>Sweden's AI Transition</em> (May 2026).</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated June 2026</p>
     </section>
 
-<figure class="essay-visual">
-  <img src="../assets/illustrations/essays/framtidsscenarier.jpg" alt="Three paths branch from the same present: acceleration, stable development and disruption." width="1600" height="900" loading="eager" decoding="async">
-  <figcaption>Three paths branch from the same present: acceleration, stable development and disruption.</figcaption>
-</figure>
+    <figure class="essay-visual">
+      <img src="../assets/illustrations/essays/framtidsscenarier.jpg" alt="Three paths diverge from the same present: Acceleration, Friction and Divergence." width="1600" height="900" loading="eager" decoding="async">
+      <figcaption>Three scenarios from the same present — Acceleration, Friction and Divergence — tested against the same variables.</figcaption>
+    </figure>
 
     <!-- Timeline Navigation -->
     <nav class="timeline-nav">
@@ -308,43 +313,40 @@
             <button class="year-btn" data-year="2030">2030</button>
             <button class="year-btn" data-year="2035">2035</button>
             <button class="year-btn" data-year="2040">2040</button>
-            <button class="year-btn" data-year="2050">2050</button>
             <div class="filter-sep"></div>
             <span class="nav-label">Scenario</span>
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="acceleration">🚀 Acceleration</button>
-            <button class="filter-btn" data-filter="steady">⚖️ Steady</button>
-            <button class="filter-btn" data-filter="disruption">⚠️ Disruption</button>
+            <button class="filter-btn" data-filter="acceleration">Acceleration</button>
+            <button class="filter-btn" data-filter="friktion">Friction</button>
+            <button class="filter-btn" data-filter="klyvning">Divergence</button>
         </div>
     </nav>
 
-    <!-- Key Stats -->
+    <!-- Key figures -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number" data-target="15">0<span class="stat-suffix"> trillion</span></div>
-                <div class="stat-label">USD economic impact (est. 2030)</div>
+                <div class="stat-number" data-target="35">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Swedish firms (10+ empl.) using AI in 2025 · SCB</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="300">0<span class="stat-suffix"> M</span></div>
-                <div class="stat-label">Jobs potentially transformed globally</div>
+                <div class="stat-number" data-target="5">0<span class="stat-suffix">×/yr</span></div>
+                <div class="stat-label">Growth in training compute for frontier models since 2020 · Epoch</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="50">0<span class="stat-suffix">%</span></div>
-                <div class="stat-label">Of work hours automatable by 2050</div>
+                <div class="stat-number" data-target="75">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">US share of global AI venture capital 2025 — EU27: 6% · OECD</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="500">0<span class="stat-suffix">+ B</span></div>
-                <div class="stat-label">USD AI investments in 2026 alone</div>
+                <div class="stat-number" data-target="30">0<span class="stat-suffix"> bn USD</span></div>
+                <div class="stat-label">Build cost of a 1 GW AI data centre · Epoch</div>
             </div>
         </div>
     </section>
 
     <!-- Disclaimer -->
     <section class="disclaimer">
-        <div class="disclaimer-box">
-            <strong>How to read this.</strong> These scenarios are not forecasts but structured explorations of what could happen under different assumptions. Each period presents three paths: 🚀 <strong>Acceleration</strong> (optimistic), ⚖️ <strong>Steady Progress</strong> (most likely based on current trends), and ⚠️ <strong>Disruption</strong> (pessimistic). Reality will likely blend elements from all three. Click a card to expand details.
-        </div>
+        <div class="disclaimer-box"><strong>How to read this.</strong> Each year shows how the three scenarios might look — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong>. They are not forecasts and not value judgements: Acceleration is not “success”, Friction not “failure”, Divergence not merely a bleak sidetrack. Each scenario holds both opportunities and costs, and is tested against the same underlying variables — capability, adoption, capital, energy, geopolitics, Swedish response and EU coordination. Reality will likely blend elements of all three. Click a card to expand it.</div>
     </section>
 
     <!-- Timeline -->
@@ -354,72 +356,54 @@
         <div class="year-section" data-year="2026">
             <div class="year-header">
                 <div class="year-number">2026</div>
-                <div class="year-label">Current state — already confirmed and ongoing</div>
+                <div class="year-label">Baseline: documented signals</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Claude Opus 4.6 and Gemini 3.1 deliver expert-level reasoning; Anthropic withholds Mythos Preview for safety reasons</li>
-                                <li>AI agents (Claude Managed Agents, OpenAI Operator) handle complex multi-step workflows autonomously</li>
-                                <li>AI coding assistants write 60–80% of routine code; automated bug triage demonstrated in production</li>
-                                <li>Humanoid robots (Tesla Optimus, Figure) enter limited factory deployment</li>
-                                <li>AI-designed medicine in clinical trials; AlphaFold applications in production</li>
-                                <li>EU AI Act transparency rules take effect August 2; US states drive 600+ separate AI bills</li>
+                            <li>Frontier models improve fast on digital tasks (HLE, OSWorld, SWE-bench); training compute has grown ~5×/year since 2020.</li>
+                            <li>35.0% of Swedish firms (10+ employees) use AI — 71.9% among large, 30.8% among small (SCB).</li>
+                            <li>AI firms account for 61% of global venture capital in 2025 (OECD); large players secure compute and models.</li>
+                            <li>Read in Acceleration: this is the start of a longer concentration phase, not the peak of a hype cycle.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Incremental model improvements yield better reasoning but no transformative leaps; BCG reports 96% of Nordic companies see no AI returns</li>
-                                <li>AI agents useful but still require significant human oversight for critical decisions</li>
-                                <li>Humanoid robots in limited pilot deployment at select factories (Tesla, Amazon)</li>
-                                <li>Healthcare AI shows mixed results; AI scribes drive up US healthcare costs</li>
-                                <li>Data center energy consumption approaching 1,000 TWh globally; Amazon invests $200B</li>
-                                <li>EU AI Act enforcement begins; Digital Omnibus package creates uncertainty on high-risk classification</li>
+                            <li>The same model gains, but benchmarks saturate fast and invalid test items occur (AI Index).</li>
+                            <li>McKinsey: nearly two-thirds have not yet scaled AI across the whole company.</li>
+                            <li>Goldman/Walker: no clear productivity effect is yet visible at the economy level.</li>
+                            <li>Read in Friction: 2026 is a starting point where the gap between demo and production is wide.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Mythos Preview shows AI-driven cyber offense already outpaces defense; Anthropic warns competitors will deliver comparable capability within 6–12 months</li>
-                                <li>DeepSeek V4 runs on Huawei chips — export controls drive parallel Chinese AI ecosystem faster than expected</li>
-                                <li>Energy constraints become political issue; data centers compete for electricity with residential users</li>
-                                <li>OpenAI, Anthropic and Google form alliance against model copying — great power rivalry hardens</li>
-                                <li>Tech layoffs accelerate; Sweden's SCB tasked with mapping AI impact on academics' job market</li>
-                                <li>Regulatory explosion at US state level creates patchwork; EU and US diverge</li>
+                            <li>Large firms use AI far more than small ones; lack of expertise is the most common reason to abstain (SCB).</li>
+                            <li>Capital and GPU clusters are concentrated: US ~75% of AI venture capital, EU27 6% (OECD); US ~¾ of GPU performance (Epoch).</li>
+                            <li>Read in Divergence: the unevenness of 2026 is not transitional but an emerging structural pattern.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -429,72 +413,53 @@
         <div class="year-section" data-year="2027">
             <div class="year-header">
                 <div class="year-number">2027</div>
-                <div class="year-label">Near horizon — the age of agents and AGI claims</div>
+                <div class="year-label">Early divergence</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Frontier labs claim AGI-level systems achieved by own definitions; models automate parts of AI research itself</li>
-                                <li>AI tutors deliver personalized instruction at quality comparable to human teachers</li>
-                                <li>Humanoid robots scale to tens of thousands of units in manufacturing</li>
-                                <li>AI-driven scientific discovery accelerates: new materials, drugs, climate solutions</li>
-                                <li>Economic productivity boost: 2–3% additional GDP growth in leading nations</li>
-                                <li>Neuro-symbolic hybrids cut energy consumption 100× — efficiency over brute watts</li>
+                            <li>The time horizon of agent tasks grows (Hinton: doubling ~every seven months) — tasks taking a working day start to be handled.</li>
+                            <li>Firms rebuild workflows around agents in code, support, analysis and case handling.</li>
+                            <li>Early labour-market signals in exposed occupations — entry jobs and recruitment — before total unemployment moves.</li>
+                            <li>A political asymmetry: firms adapt fast, the state's lead times are longer.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI systems reach "senior specialist" level on complex intellectual tasks</li>
-                                <li>Agentic AI handles routine business workflows; 15–20% automation of white-collar work</li>
-                                <li>Humanoid robots reach 5,000–10,000 globally, mostly in structured environments</li>
-                                <li>AI medical diagnostics approved for broader clinical use</li>
-                                <li>Global AI governance debate intensifies; UN framework proposed</li>
-                                <li>Job displacements visible in data entry, basic analysis, customer service</li>
+                            <li>Robust operation requires control, documentation and human review — the demo→production gap persists.</li>
+                            <li>Broad but shallow use; local gains don't show up across the whole P&L.</li>
+                            <li>The EU begins to mature standards and supervision; Sweden gains time to sequence.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AGI claims prove premature; models still fail at genuinely novel reasoning</li>
-                                <li>AI-generated content floods the internet; trust in digital information collapses</li>
-                                <li>Wealth concentration accelerates — AI benefits flow to big tech</li>
-                                <li>US–China AI race creates bifurcated technology ecosystem</li>
-                                <li>Energy crisis: data centers compete with residential power in more regions</li>
-                                <li>Social unrest in knowledge worker sectors facing displacement</li>
+                            <li>Large and digitally mature players pull ahead; smaller firms lack specialists and procurement capability.</li>
+                            <li>The public sector splits: some agencies build capability, others get stuck in pilots.</li>
+                            <li>Dependence on external clouds and models starts to show in price and terms.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -504,72 +469,52 @@
         <div class="year-section" data-year="2028">
             <div class="year-header">
                 <div class="year-number">2028</div>
-                <div class="year-label">The intelligence explosion threshold</div>
+                <div class="year-label">The threshold question</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI systems conduct scientific research autonomously from hypothesis to publication</li>
-                                <li>Humanoid robots begin entering the service sector (hospitality, retail, logistics)</li>
-                                <li>Brain–computer interfaces improved through AI interpretation algorithms</li>
-                                <li>AI-designed medicine reaches Phase III trials; potential cancer breakthroughs</li>
-                                <li>Intelligence explosion begins: AI improves AI at increasing rates</li>
-                                <li>Universal basic income pilots launch in the Nordics and the US</li>
+                            <li>A possible qualitative threshold: Legg's 50/50 for “minimal AGI” falls here — general agent capability in digital environments.</li>
+                            <li>Large parts of administrative and knowledge work get new cost and production conditions.</li>
+                            <li>On early threshold passage (2028–2031), normal-tempo lead times don't suffice — rapid sequencing comes into play.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI handles ~30% of knowledge work tasks (McKinsey projection)</li>
-                                <li>DeepMind's 50% AGI probability threshold reached (Shane Legg's forecast)</li>
-                                <li>Multimodal AI integrates vision, language, code, and physical reasoning seamlessly</li>
-                                <li>Robotics foundation models enable generalized physical tasks</li>
-                                <li>Education systems undergoing restructuring around AI literacy</li>
-                                <li>Global AI regulation fragmented: EU strict, US flexible, China state-controlled</li>
+                            <li>AGI claims may prove premature; episodic memory, continual learning and robust world models remain unsolved.</li>
+                            <li>Adoption broadens but stays uneven; a skills shortage is a real brake.</li>
+                            <li>More time to sequence reforms — but only if the time is actually used.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Alignment failure: AI systems exhibit unexpected goal-seeking behaviors</li>
-                                <li>Deepfakes trigger international incident or military escalation</li>
-                                <li>25–30% unemployment in certain knowledge worker categories</li>
-                                <li>AI surveillance states consolidate in authoritarian regimes</li>
-                                <li>Taiwan crisis disrupts the global semiconductor supply chain</li>
-                                <li>Growing "AI divide" between nations with and without compute access</li>
+                            <li>If the first general systems are controlled by a few players in the US/China, European dependence becomes structural.</li>
+                            <li>The EU can regulate the systems but not produce them on relevant timescales.</li>
+                            <li>The gap between those with and without access to the best capacity becomes a new line of division.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -579,72 +524,52 @@
         <div class="year-section" data-year="2029">
             <div class="year-header">
                 <div class="year-number">2029</div>
-                <div class="year-label">Superhuman performance across all cognitive domains?</div>
+                <div class="year-label">The middle phase begins</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI passes every professional exam at superhuman level — Huang claimed in March 2026 that AGI had already been achieved (using an economic definition)</li>
-                                <li>Autonomous AI agents run complex business operations without ongoing human oversight</li>
-                                <li>Personalized medicine: AI designs treatments tailored to individual patients</li>
-                                <li>Fusion energy + AI optimization begin addressing compute energy needs</li>
-                                <li>International AI governance treaty signed</li>
-                                <li>AI contributes 5–7% to global GDP growth</li>
+                            <li>The agent horizon approaches quarter-length lead times; autonomous and semi-autonomous flows in more functions.</li>
+                            <li>Tax base and social insurance are pressured by faster service transformation than the support systems can follow.</li>
+                            <li>Risk that decisions arrive in the wrong order if indicators don't sit early in the chain.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI transforms but does not eliminate most skilled professions</li>
-                                <li>25% probability that AGI has been achieved (Metaculus forecast)</li>
-                                <li>Humanoid robots widespread in logistics and manufacturing</li>
-                                <li>AI climate models enable precise geoengineering proposals</li>
-                                <li>Education systems rebuilt: AI tutors standard, human teachers as mentors</li>
-                                <li>Philosophical debate on AI consciousness and rights intensifies</li>
+                            <li>The productivity gap between firms with and without capability can become long-lasting.</li>
+                            <li>Physical occupations (care, construction, eldercare) are affected more slowly — robotics lags machine cognition.</li>
+                            <li>A reasonable stance: reversible steps where possible, early investment where lead times are long (education, the grid).</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>"Capability overhang": AI can do more than society can safely absorb</li>
-                                <li>Mass displacement creates political instability in developed nations</li>
-                                <li>AI-powered cyberattacks become state-level weapons</li>
-                                <li>Monopolistic control of AI by 3–5 companies raises serious antitrust concerns</li>
-                                <li>Environmental costs of AI compute become a defining political issue</li>
-                                <li>Social isolation rises as AI companions replace human interaction</li>
+                            <li>Data centres are built where capital, power, land and permits can be assembled; other regions fall behind.</li>
+                            <li>Use and sovereignty drift apart: high AI benefit, low influence over the technology.</li>
+                            <li>EU coordination can reduce dependence — but only if regulation is matched by actual capacity.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -654,72 +579,52 @@
         <div class="year-section" data-year="2030">
             <div class="year-header">
                 <div class="year-number">2030</div>
-                <div class="year-label">New economic paradigm — post-scarcity debate</div>
+                <div class="year-label">The sequencing test</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Superhuman AI across virtually all cognitive domains</li>
-                                <li>AI adds 7%+ to global GDP (Goldman Sachs: $7+ trillion)</li>
-                                <li>Humanoid robots in millions; cost drops to $20–30K per unit</li>
-                                <li>AI scientists make Nobel-worthy discoveries independently</li>
-                                <li>Life expectancy begins rising through AI medical breakthroughs</li>
-                                <li>Post-scarcity debates enter serious economic discourse</li>
+                            <li>AI may add significant GDP (Goldman) — but institutional stress remains if reforms weren't built ahead of the pressure.</li>
+                            <li>Data centres' electricity demand is large (IEA); big loads compete with industry and households for power.</li>
+                            <li>Proactive adaptation (reforms 2026–2030) yields a steerable position; otherwise the transition turns reactive.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI automates 30% of all work hours (McKinsey projection)</li>
-                                <li>Metaculus AGI median reached in the early 2030s; prediction markets show rapidly shrinking timelines</li>
-                                <li>12 million+ workers have transitioned to new occupations (McKinsey)</li>
-                                <li>Data centers consume ~945 TWh (IEA projection), 3% of global electricity</li>
-                                <li>Comprehensive AI regulation in most developed nations</li>
-                                <li>AI as collaborative partner is standard in most professions</li>
+                            <li>McKinsey projection: ~30% of work hours automatable — but the outcome depends on adoption depth.</li>
+                            <li>A slower course conceals that lead times in education, infrastructure and government are still long.</li>
+                            <li>The main risk is passivity and misread security, not overload.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>300 million jobs displaced globally (Goldman Sachs estimate)</li>
-                                <li>AI superintelligence risk assessed at 25%+ by leading researchers</li>
-                                <li>Severe inequality: AI wealth concentrated in &lt;1% of the population</li>
-                                <li>Authoritarian AI surveillance normalized in 30+ countries</li>
-                                <li>Environmental tipping points partly driven by compute energy demand</li>
-                                <li>"Digital proletariat" emerges: humans do only what AI cannot</li>
+                            <li>Gains concentrate in capital, data and competence; costs land on smaller players and exposed occupations.</li>
+                            <li>Different service levels in the public sector become an equality issue, not just competitiveness.</li>
+                            <li>The price of dependence: pricing, security and continuity are decided in markets Sweden does not control.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -729,72 +634,52 @@
         <div class="year-section" data-year="2035">
             <div class="year-header">
                 <div class="year-number">2035</div>
-                <div class="year-label">Post-work society and ASI</div>
+                <div class="year-label">Institutionalisation — or catching up</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Artificial Superintelligence (ASI) achieved — earlier than Kurzweil's singularity timeline (2045) if acceleration assumptions hold</li>
-                                <li>Post-work society in advanced nations; universal basic income universal</li>
-                                <li>AI solves most major diseases: cancer, Alzheimer's, genetic conditions</li>
-                                <li>Space exploration accelerated by AI-designed propulsion and habitats</li>
-                                <li>Human–AI fusion begins: cognitive enhancement via neural interfaces</li>
-                                <li>Climate change decelerated through AI-optimized carbon capture and energy systems</li>
+                            <li>On late threshold passage (2032–2037) the middle phase becomes decisive; reforms must be accelerated.</li>
+                            <li>If readiness was built early, the conflict is over adjustments — not late crisis management.</li>
+                            <li>Rapid sequencing's reversible instruments can be activated within 30–90 days when indicators tip.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AGI firmly established; ASI still debated and approaching</li>
-                                <li>40–50% of current jobs transformed or eliminated</li>
-                                <li>AI handles most routine governance and infrastructure tasks</li>
-                                <li>Longevity treatments from AI research add 10–15 years</li>
-                                <li>Global AI governance institution operational (UN-level)</li>
-                                <li>Society adapting: new occupations, new meaning — but significant upheaval ongoing</li>
+                            <li>Reforms can be well sequenced if the time was used; otherwise study places and support are built in catch-up mode.</li>
+                            <li>Reactive adaptation (2030–2035) is manageable but costlier — and easily perceived as punishment or panic.</li>
+                            <li>EU standards and Nordic energy coordination can become Swedish assets if made operational.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>ASI alignment remains unsolved; existential risk debates intensify</li>
-                                <li>"Two-speed world": AI-rich nations flourish, others fall further behind</li>
-                                <li>AI-powered autonomous weapons deployed in conflicts</li>
-                                <li>Massive psychological crisis: meaning and purpose in a post-work world</li>
-                                <li>Privacy virtually eliminated in connected societies</li>
-                                <li>Control over ASI becomes the central geopolitical issue</li>
+                            <li>A two-speed pattern between players and regions may have set in.</li>
+                            <li>Strategic dependence becomes institutional and democratic, not merely economic.</li>
+                            <li>The realistic answer is qualified receiving capacity — test environments, a data resource, compute, procurement skill — not full self-sufficiency.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
             </div>
@@ -804,147 +689,52 @@
         <div class="year-section" data-year="2040">
             <div class="year-header">
                 <div class="year-number">2040</div>
-                <div class="year-label">A fundamentally different civilization</div>
+                <div class="year-label">Three paths, four outcomes</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Short lead times — speed is the question</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>ASI has solved most solvable scientific and engineering problems</li>
-                                <li>Human lifespan dramatically extended; aging slowed or halted</li>
-                                <li>Multi-planetary presence enabled by AI-designed technology</li>
-                                <li>Post-scarcity economy in advanced nations; material abundance</li>
-                                <li>Human consciousness upload possible (early experiments)</li>
-                                <li>A fundamentally different civilization emerges</li>
+                            <li>Proactive adaptation: indicators, transition support, financing readiness and transparency in place before the pressure — steerable, not friction-free.</li>
+                            <li>On early threshold passage without rapid sequencing: discontinuity — the right reforms for normal tempo meet a tempo that isn't normal; proactive becomes reactive in two years instead of five.</li>
+                            <li>The question is not whether Sweden can guarantee a good 2040, but whether 2026–2030 built institutions that make 2040 less dependent on luck.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Friction</span></div>
+                        <div class="card-subtitle">More time — but a passivity risk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI handles 50–60% of all current human work tasks</li>
-                                <li>ASI exists but under careful governance and alignment protocols</li>
-                                <li>Radical life extension treatment available (still expensive)</li>
-                                <li>New social contract: humans contribute creativity, empathy, governance</li>
-                                <li>Geopolitical order reshaped around AI capability</li>
-                                <li>Mixed outcomes: great progress alongside persistent inequality</li>
+                            <li>Reactive adaptation: you get there, but with less trust and a higher price.</li>
+                            <li>Reforms work differently well depending on whether they took effect before the pressure set in.</li>
+                            <li>Outcomes aren't binary — Sweden can be proactive in one track and delayed in another at the same time.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Click for details ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
+                        <div class="card-header"><span class="card-title">Divergence</span></div>
+                        <div class="card-subtitle">Uneven access and control</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>50%+ of jobs fully automated (Goldman Sachs projection)</li>
-                                <li>ASI used for population control and social engineering by some states</li>
-                                <li>"Human obsolescence" crisis: psychological and social breakdown</li>
-                                <li>AI–human gap so wide that meaningful human oversight is impossible</li>
-                                <li>Resource conflicts intensify despite AI-driven efficiency</li>
-                                <li>Existential risk from misaligned ASI at historical peak</li>
+                            <li>Delayed adaptation: several long-lead systems are repaired simultaneously under pressure; some groups feel they bore the cost.</li>
+                            <li>The word crisis should be used precisely — it means lost time and uneven distribution, not necessarily societal collapse.</li>
+                            <li>The annual review should ask which reform cluster is moving which way — not just which scenario the country is in.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2050 -->
-        <div class="year-section" data-year="2050">
-            <div class="year-header">
-                <div class="year-number">2050</div>
-                <div class="year-label">Beyond prediction — three radically different worlds</div>
-            </div>
-            <div class="scenarios">
-                <div class="scenario-card acceleration" data-scenario="acceleration">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistic path</div>
                         <div class="card-expand-hint">Click for details ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>Technological singularity may have occurred — civilization unrecognizable from a 2026 perspective</li>
-                                <li>Death potentially optional through biotechnology + AI</li>
-                                <li>Interstellar exploration planning underway</li>
-                                <li>Consciousness understood and potentially expandable</li>
-                                <li>Post-scarcity realized: material poverty eliminated</li>
-                                <li>Humanity defined not by work but by exploration and creation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Steady Progress</div>
-                        </div>
-                        <div class="card-subtitle">Most likely path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>AI deeply embedded in all aspects of civilization</li>
-                                <li>80%+ of 2026 work tasks automated or fundamentally transformed</li>
-                                <li>Global governance adapted to AI realities — but unevenly</li>
-                                <li>Average life expectancy 100+ in developed nations</li>
-                                <li>Humanity persists but deeply changed</li>
-                                <li>Balance between human agency and AI capability maintained — but fragile</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistic path</div>
-                        <div class="card-expand-hint">Click for details ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>Scenario path: from "humans as pets" to potential civilization collapse</li>
-                                <li>37–51% of AI researchers estimate ≥10% chance of extinction-level outcomes</li>
-                                <li>Extreme inequality may have created permanent underclass</li>
-                                <li>Loss of human autonomy and meaningful agency</li>
-                                <li>"The century we almost lost everything" — or perhaps already did</li>
-                                <li>Digital feudalism: AI owners control the means of production entirely</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -954,42 +744,42 @@
 
     <!-- Cross-cutting themes -->
     <section class="themes-section">
-        <h2 class="themes-title">Cross-Cutting Themes</h2>
+        <h2 class="themes-title">Cross-cutting themes</h2>
         <div class="themes-grid">
             <div class="theme-card">
-                <div class="theme-name">Labor Market</div>
-                <div class="theme-desc">From productivity tools to cognitive replacement. Which professions transform, which disappear, which new ones emerge?</div>
+                <div class="theme-name">Labour market &amp; entry paths</div>
+                <div class="theme-desc">Exposure is uneven; younger workers in exposed occupations may be affected before total unemployment moves. Measure earlier than after-the-fact metrics.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Geopolitics</div>
-                <div class="theme-desc">The US–China race, export controls, chip alliances, and the bifurcation of the global tech ecosystem.</div>
+                <div class="theme-name">Tax base &amp; financing</div>
+                <div class="theme-desc">If productivity and profit concentrate in capital and models while costs land on the wage base, an imbalance arises that must be addressed.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Robotics &amp; Physical AI</div>
-                <div class="theme-desc">Humanoid robots, autonomous vehicles, warehouse automation — when AI gets a body, industry's fundamental logic changes.</div>
+                <div class="theme-name">Energy &amp; data centres</div>
+                <div class="theme-desc">AI is software on the surface but physical infrastructure beneath it. Power, grid, land and build rate become strategic scenario variables.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Existential Risks</div>
-                <div class="theme-desc">Alignment, superintelligence, autonomous weapons, AI-driven surveillance — risks requiring international coordination.</div>
+                <div class="theme-name">Democratic institutions</div>
+                <div class="theme-desc">New attack surfaces: deepfakes near elections, opaque AI decision support in administration, gradual function creep in surveillance.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Energy &amp; Environment</div>
-                <div class="theme-desc">AI's energy needs vs AI's climate solutions. Data center expansion, fusion energy, efficiency breakthroughs.</div>
+                <div class="theme-name">EU coordination</div>
+                <div class="theme-desc">EU law provides a frame, time and standards — but does not replace Swedish capacity. Regulation can coexist with strategic dependence.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Governance &amp; Ethics</div>
-                <div class="theme-desc">EU AI Act, US state-level patchwork, UN frameworks — regulation's race against technology.</div>
+                <div class="theme-name">Capacity threshold &amp; readiness</div>
+                <div class="theme-desc">The threshold (Hassabis, Hinton, Legg) sets the tempo. Rapid sequencing is reversible, indicator-driven readiness for early passage — not panic decisions.</div>
             </div>
         </div>
     </section>
 
     <!-- Methodology -->
     <section class="method-section">
-        <h2 class="method-title">About the Scenarios</h2>
+        <h2 class="method-title">About the scenarios</h2>
         <div class="method-text">
-            <p>The scenario framework is built on three paths: <strong>Acceleration</strong> represents the optimistic outcome if development maintains maximum pace and governance works. <strong>Steady Progress</strong> is the most likely trajectory based on historical patterns, current trends, and consensus forecasts. <strong>Disruption</strong> represents negative outcomes if adaptation fails, risks materialize, or power concentration spirals out of control.</p>
-            <p>All data points reference published sources: McKinsey, Goldman Sachs, IEA, Metaculus, and industry analysis from frontier labs. The 2026 scenarios have been updated to reflect confirmed events as of April 2026.</p>
-            <p>These scenarios should be read as structured thought exercises — not as predictions. Reality will likely blend elements from all three paths. The purpose is to provide a framework for serious reflection on what could actually happen.</p>
+            <p>The framework rests on three symmetrically constructed scenarios — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong> — each tested against the same seven variables (capability curve, adoption rate, investment durability, energy and data centres, geopolitical concentration, Swedish response and EU coordination). They should not be read as value judgements or as a guess about which future “wins”, but as three tests of the same reform package: a reform that works in only one scenario is too fragile.</p>
+            <p>The timeline projects each scenario's trajectory 2026–2040 from the report's logic and documented signals. The analysis distinguishes the <em>documented</em> (established measurements and expert assessments) from the <em>forecast</em> (a guess about outcomes) — and does not try to predict which outcome occurs, but to build readiness that holds across several possible courses. The May addendum adds an eighth variable, the capacity threshold (Hassabis, Hinton, Legg), and rapid sequencing as a readiness track for early threshold passage.</p>
+            <p>All data points and positions derive from published sources — including SCB, Epoch AI, OECD, IEA, McKinsey and the IMF. The basis is the report <em>Sweden’s AI Transition</em> (May 2026) and is revised as the source base ages. See <a href="/en/kallor.html">Sources</a>.</p>
         </div>
     </section>
 

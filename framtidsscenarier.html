@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Framtidsscenarier 2026–2050 — AI-skiftet</title>
-    <meta name="description" content="Tre möjliga vägar för artificiell intelligens från 2026 till 2050 — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning och expertbedömningar.">
+    <title>AI-Framtidsscenarier 2026–2040 — AI-skiftet</title>
+    <meta name="description" content="Tre scenarier — Acceleration, Friktion och Delning — år för år 2026–2040. Inte prognoser, utan konsekventa berättelser prövade mot samma variabler. Bygger på dokumentet Sveriges AI-omställning (maj 2026).">
     <link rel="canonical" href="https://ai-skiftet.se/framtidsscenarier.html">
     <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
     <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/framtidsscenarier.html">
@@ -173,15 +173,11 @@
         .scenario-card.hidden { display: none; }
         .card-accent { height: 3px; width: 100%; }
         .scenario-card.acceleration .card-accent { background: var(--green); }
-        .scenario-card.steady .card-accent { background: var(--blue); }
-        .scenario-card.disruption .card-accent { background: var(--red); }
         .card-body { padding: 1.2rem; }
         .card-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; }
         .card-emoji { font-size: 1.2rem; }
         .card-title { font-size: 0.95rem; font-weight: 700; }
         .scenario-card.acceleration .card-title { color: var(--green); }
-        .scenario-card.steady .card-title { color: var(--blue); }
-        .scenario-card.disruption .card-title { color: var(--red); }
         .card-subtitle { font-size: 0.75rem; color: var(--dim); margin-bottom: 0.8rem; }
         .card-expand-hint {
             font-size: 0.75rem; color: var(--dim); text-align: center;
@@ -262,8 +258,18 @@
         .essay-visual figcaption{max-width:720px;margin:.75rem auto 0;color:var(--color-text-muted,var(--muted,#5f6c7b));font-size:.92rem;line-height:1.55;text-align:center}
         .essay-visual--section{max-width:100%;margin:2.4rem 0;padding:0}
 
-</style>
+
+        /* === SCENARIO NEUTRAL ACCENTS (non-valenced; overrides green/blue/red) === */
+        :root { --sc-accel:#8c4a1f; --sc-frik:#3a6b73; --sc-klyv:#6a4a86; }
+        .scenario-card.acceleration .card-accent { background: var(--sc-accel); }
+        .scenario-card.friktion .card-accent { background: var(--sc-frik); }
+        .scenario-card.klyvning .card-accent { background: var(--sc-klyv); }
+        .scenario-card.acceleration .card-title { color: var(--sc-accel); }
+        .scenario-card.friktion .card-title { color: var(--sc-frik); }
+        .scenario-card.klyvning .card-title { color: var(--sc-klyv); }
+    </style>
 </head>
+
 <body>
 
     <!-- Site Header -->
@@ -287,15 +293,15 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-label">Framtidsscenarier</div>
-        <h1>AI-scenarier 2026–2050</h1>
-        <p class="hero-subtitle">Tre möjliga vägar för artificiell intelligens — acceleration, stabil utveckling och disruption. Baserat på aktuell forskning, branschbedömningar och observerbara trender.</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad april 2026</p>
+        <h1>AI-scenarier 2026–2040</h1>
+        <p class="hero-subtitle">Tre scenarier — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong> — år för år från nuläget till 2040. Inte prognoser och inte värderingar, utan konsekventa berättelser om hur dagens osäkerheter kan kombineras. Bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026).</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad juni 2026</p>
     </section>
 
-<figure class="essay-visual">
-  <img src="assets/illustrations/essays/framtidsscenarier.jpg" alt="Tre vägar delar sig från samma nutid: acceleration, stabil utveckling och disruption." width="1600" height="900" loading="eager" decoding="async">
-  <figcaption>Tre vägar delar sig från samma nutid: acceleration, stabil utveckling och disruption.</figcaption>
-</figure>
+    <figure class="essay-visual">
+      <img src="assets/illustrations/essays/framtidsscenarier.jpg" alt="Tre vägar delar sig från samma nutid: Acceleration, Friktion och Delning." width="1600" height="900" loading="eager" decoding="async">
+      <figcaption>Tre scenarier från samma nutid — Acceleration, Friktion och Delning — prövade mot samma variabler.</figcaption>
+    </figure>
 
     <!-- Timeline Navigation -->
     <nav class="timeline-nav">
@@ -308,34 +314,33 @@
             <button class="year-btn" data-year="2030">2030</button>
             <button class="year-btn" data-year="2035">2035</button>
             <button class="year-btn" data-year="2040">2040</button>
-            <button class="year-btn" data-year="2050">2050</button>
             <div class="filter-sep"></div>
             <span class="nav-label">Scenario</span>
             <button class="filter-btn active" data-filter="all">Alla</button>
-            <button class="filter-btn" data-filter="acceleration">🚀 Acceleration</button>
-            <button class="filter-btn" data-filter="steady">⚖️ Stabil</button>
-            <button class="filter-btn" data-filter="disruption">⚠️ Disruption</button>
+            <button class="filter-btn" data-filter="acceleration">Acceleration</button>
+            <button class="filter-btn" data-filter="friktion">Friktion</button>
+            <button class="filter-btn" data-filter="klyvning">Delning</button>
         </div>
     </nav>
 
-    <!-- Key Stats -->
+    <!-- Key figures (document-grounded) -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number" data-target="15">0<span class="stat-suffix"> biljoner</span></div>
-                <div class="stat-label">USD ekonomisk påverkan (uppskattning 2030)</div>
+                <div class="stat-number" data-target="35">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">Svenska företag (10+ anst.) som använde AI 2025 · SCB</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="300">0<span class="stat-suffix"> milj.</span></div>
-                <div class="stat-label">Jobb potentiellt omvandlade globalt</div>
+                <div class="stat-number" data-target="5">0<span class="stat-suffix">×/år</span></div>
+                <div class="stat-label">Tillväxt i träningscompute för frontiermodeller sedan 2020 · Epoch</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="50">0<span class="stat-suffix">%</span></div>
-                <div class="stat-label">Av arbetstimmar automatiserbara till 2050</div>
+                <div class="stat-number" data-target="75">0<span class="stat-suffix">%</span></div>
+                <div class="stat-label">USA:s andel av globalt AI-riskkapital 2025 — EU27: 6 % · OECD</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="500">0<span class="stat-suffix">+ mdr</span></div>
-                <div class="stat-label">USD AI-investeringar enbart 2026</div>
+                <div class="stat-number" data-target="30">0<span class="stat-suffix"> mdr USD</span></div>
+                <div class="stat-label">Byggkostnad för ett AI-datacenter på 1 GW · Epoch</div>
             </div>
         </div>
     </section>
@@ -343,7 +348,7 @@
     <!-- Disclaimer -->
     <section class="disclaimer">
         <div class="disclaimer-box">
-            <strong>Läsanvisning.</strong> Dessa scenarier är inte prognoser utan strukturerade utforskningar av vad som kan hända under olika antaganden. Varje tidsperiod presenterar tre vägar: 🚀 <strong>Acceleration</strong> (optimistiskt), ⚖️ <strong>Stabil utveckling</strong> (mest sannolikt baserat på nuvarande trender), och ⚠️ <strong>Disruption</strong> (pessimistiskt). Verkligheten kommer sannolikt att blanda element från samtliga tre. Klicka på ett kort för att expandera detaljerna.
+            <strong>Läsanvisning.</strong> Varje år visar hur de tre scenarierna kan te sig — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong>. De är inte prognoser och inte värderingar: Acceleration är inte ”framgång”, Friktion inte ”misslyckande”, Delning inte bara ett dystert sidospår. Varje scenario rymmer både möjligheter och kostnader och prövas mot samma underliggande variabler — kapacitet, adoption, kapital, energi, geopolitik, svensk respons och EU-samordning. Verkligheten blandar sannolikt element från alla tre. Klicka på ett kort för att fälla ut det.
         </div>
     </section>
 
@@ -354,72 +359,54 @@
         <div class="year-section" data-year="2026">
             <div class="year-header">
                 <div class="year-number">2026</div>
-                <div class="year-label">Nuläge — redan bekräftat och pågående</div>
+                <div class="year-label">Nuläge: belagda signaler</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Claude Opus 4.6 och Gemini 3.1 levererar expertresonemangskapacitet; Anthropic håller tillbaka Mythos Preview av säkerhetsskäl</li>
-                                <li>AI-agenter (Claude Managed Agents, OpenAI Operator) hanterar komplexa flerstegiga arbetsflöden autonomt</li>
-                                <li>AI-kodassistenter skriver 60–80 % av rutinkod; automatiserad bugghantering demonstrerad i produktion</li>
-                                <li>Humanoidrobotar (Tesla Optimus, Figure) går in i begränsad fabrikstillverkning</li>
-                                <li>AI-designad medicin i kliniska prövningar; AlphaFold-tillämpningar i produktion</li>
-                                <li>EU AI Act:s transparensregler träder i kraft 2 augusti; USA:s delstater driver 600+ egna lagförslag</li>
+                            <li>Frontiermodeller förbättras snabbt på digitala uppgifter (HLE, OSWorld, SWE-bench); träningscompute har vuxit ~5×/år sedan 2020.</li>
+                            <li>35,0 % av svenska företag (10+ anst.) använder AI — 71,9 % bland stora, 30,8 % bland små (SCB).</li>
+                            <li>AI-företag står för 61 % av globalt riskkapital 2025 (OECD); stora aktörer säkrar beräkning och modeller.</li>
+                            <li>Tolkning i Acceleration: detta är början på en längre koncentrationsfas, inte toppen av en hypecykel.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Modellförbättringar ger gradvis bättre resonemang men inte transformativa språng; BCG rapporterar att 96 % av nordiska företag inte ser AI-avkastning</li>
-                                <li>AI-agenter är användbara men kräver fortfarande betydande mänsklig tillsyn för kritiska beslut</li>
-                                <li>Humanoidrobotar i begränsad pilotdistribution vid enstaka fabriker (Tesla, Amazon)</li>
-                                <li>Sjukvårds-AI visar blandat resultat; AI-skrivassistenter driver upp amerikanska vårdkostnader</li>
-                                <li>Datacenters energikonsumtion närmar sig 1 000 TWh globalt; Amazon investerar 200 mdr USD</li>
-                                <li>EU AI Act-tillsyn påbörjas; Digital Omnibus-paketet skapar osäkerhet om högriskklassificering</li>
+                            <li>Samma modellframsteg, men benchmarks mättas snabbt och ogiltiga testfrågor förekommer (AI Index).</li>
+                            <li>McKinsey: nästan två tredjedelar har ännu inte skalat AI över hela företaget.</li>
+                            <li>Goldman/Walker: någon tydlig produktivitetseffekt syns ännu inte på ekonominivå.</li>
+                            <li>Tolkning i Friktion: 2026 är en startpunkt där skillnaden mellan demonstration och drift är stor.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Mythos Preview visar att AI-driven cyberoffensiv redan överträffar försvar; Anthropic varnar för att konkurrenter levererar motsvarande kapacitet inom 6–12 månader</li>
-                                <li>DeepSeek V4 körs på Huawei-chip — exportkontroller driver fram parallellt kinesiskt AI-ekosystem snabbare än väntat</li>
-                                <li>Energibegränsningar blir politisk fråga; datacenter konkurrerar om elkraft med bostäder</li>
-                                <li>OpenAI, Anthropic och Google bildar allians mot modellkopiering — stormaktsrivaliteten hårdnar</li>
-                                <li>Techuppsägningar accelererar; SCB får uppdrag att kartlägga AI:s påverkan på akademikers arbetsmarknad</li>
-                                <li>Regelexplosion på delstatsnivå i USA skapar lappverk; EU och USA divergerar</li>
+                            <li>Stora företag använder AI långt mer än små; brist på expertis är vanligaste skälet att avstå (SCB).</li>
+                            <li>Kapital och GPU-kluster är koncentrerade: USA ~75 % av AI-riskkapital, EU27 6 % (OECD); USA ~¾ av GPU-prestanda (Epoch).</li>
+                            <li>Tolkning i Delning: ojämnheten 2026 är inte övergående utan ett begynnande strukturellt mönster.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -429,72 +416,53 @@
         <div class="year-section" data-year="2027">
             <div class="year-header">
                 <div class="year-number">2027</div>
-                <div class="year-label">Nära horisont — agentålder och AGI-anspråk</div>
+                <div class="year-label">Tidig divergens</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Frontier-labb hävdar att AGI-nivå uppnåtts enligt egna definitioner; modeller automatiserar delar av AI-forskningen</li>
-                                <li>AI-tutorer ger personaliserad undervisning i kvalitet jämförbar med mänskliga lärare</li>
-                                <li>Humanoidrobotar skalas till tiotusentals enheter i tillverkning</li>
-                                <li>AI-driven vetenskaplig upptäckt accelererar: nya material, läkemedel, klimatlösningar</li>
-                                <li>Ekonomisk produktivitetsökning: 2–3 % extra BNP-tillväxt i ledande nationer</li>
-                                <li>Neuro-symboliska hybrider kapar energiåtgång 100× — effektivitet snarare än brutto-watt</li>
+                            <li>Agentuppgifternas tidshorisont växer (Hinton: dubbleras ~var sjunde månad) — uppgifter som tar en arbetsdag börjar klaras.</li>
+                            <li>Företag bygger om arbetsflöden kring agenter i kod, support, analys och ärendeberedning.</li>
+                            <li>Tidiga arbetsmarknadssignaler i exponerade yrken — inträdesjobb och rekrytering — före total arbetslöshet.</li>
+                            <li>Politisk asymmetri: företag ställer om snabbt, statens ledtider är längre.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI-system når "senior specialist"-nivå på komplexa intellektuella uppgifter</li>
-                                <li>Agentisk AI hanterar rutinmässiga affärsflöden; 15–20 % automation av kvalificerat kontorsarbete</li>
-                                <li>Humanoidrobotar uppgår till 5 000–10 000 globalt, mestadels i strukturerade miljöer</li>
-                                <li>AI-medicinsk diagnostik godkänd för bredare klinisk användning</li>
-                                <li>Global debatt om AI-styrning intensifieras; FN-ramverk föreslås</li>
-                                <li>Jobbförskjutningar tydliga inom datainmatning, grundläggande analys, kundservice</li>
+                            <li>Robust drift kräver kontroll, dokumentation och mänsklig granskning — gapet demo→drift kvarstår.</li>
+                            <li>Bred men grund användning; lokala vinster syns inte i hela resultaträkningen.</li>
+                            <li>EU hinner börja mogna standarder och tillsyn; Sverige får tid att sekvensera.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AGI-anspråk visar sig vara för tidiga; modeller misslyckas fortfarande vid genuint nytt resonemang</li>
-                                <li>AI-genererat innehåll översvämmar internet; förtroendet för digital information kollapsar</li>
-                                <li>Välståndskoncentrationen accelererar — AI-fördelarna strömmar till storbolagen</li>
-                                <li>USA–Kina AI-kapplöpningen skapar bifurkerat teknikekosystem</li>
-                                <li>Energikris: datacenter konkurrerar med bostäders elkraft i fler regioner</li>
-                                <li>Social oro i kunskapsarbetarsektorer som möter förskjutningar</li>
+                            <li>Stora och digitalt mogna aktörer drar ifrån; mindre företag saknar specialister och beställarkompetens.</li>
+                            <li>Offentlig sektor splittras: vissa myndigheter bygger förmåga, andra fastnar i pilot.</li>
+                            <li>Beroendet av externa moln och modeller börjar märkas i pris och villkor.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -504,72 +472,52 @@
         <div class="year-section" data-year="2028">
             <div class="year-header">
                 <div class="year-number">2028</div>
-                <div class="year-label">Intelligensexplosionens tröskel</div>
+                <div class="year-label">Tröskelfrågan</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI-system genomför vetenskaplig forskning autonomt från hypotes till publicering</li>
-                                <li>Humanoidrobotar börjar gå in i servicesektorn (hotell, detaljhandel, logistik)</li>
-                                <li>Hjärn–datorgränssnitt förbättras genom AI-tolkningsalgoritmer</li>
-                                <li>AI-designad medicin når fas III-prövningar; potentiella cancergenombrott</li>
-                                <li>Intelligensexplosion påbörjas: AI förbättrar AI i ökande takt</li>
-                                <li>Pilotprojekt med basinkomst lanseras i Norden och USA</li>
+                            <li>Möjlig kvalitativ tröskel: Leggs 50/50 för ”minimal AGI” infaller — generell agentkapacitet i digitala miljöer.</li>
+                            <li>Stora delar av administrations- och kunskapsarbete får nya kostnads- och produktionsvillkor.</li>
+                            <li>Vid tidig tröskelpassage (2028–2031) räcker inte normaltaktens ledtider — snabbsekvens aktualiseras.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI hanterar ~30 % av kvalificerat kunskapsarbete (McKinsey-projektion)</li>
-                                <li>DeepMinds 50 %-tröskel för AGI-sannolikhet nås (Shane Leggs prognos)</li>
-                                <li>Multimodal AI integrerar bild, språk, kod och fysiskt resonemang sömlöst</li>
-                                <li>Robotikens grundmodeller möjliggör generaliserade fysiska uppgifter</li>
-                                <li>Utbildningssystem under omstrukturering runt AI-kompetens</li>
-                                <li>Global AI-reglering fragmenterad: EU strikt, USA flexibel, Kina statskontrollerad</li>
+                            <li>AGI-anspråk kan visa sig för tidiga; episodiskt minne, kontinuerligt lärande och robust världsmodell är ännu olösta.</li>
+                            <li>Adoptionen breddas men förblir ojämn; kompetensbrist är en faktisk broms.</li>
+                            <li>Mer tid att sekvensera reformer — men bara om tiden faktiskt används.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Alignment-problem: AI-system visar oväntade målsökande beteenden</li>
-                                <li>Deepfakes utlöser internationell incident eller militär eskalering</li>
-                                <li>25–30 % arbetslöshet i vissa kunskapsarbetarkategorier</li>
-                                <li>AI-övervakningsstater konsolideras i auktoritära regimer</li>
-                                <li>Taiwan-kris stör den globala leveranskedjan för halvledare</li>
-                                <li>Växande "AI-klyfta" mellan nationer med och utan beräkningskapacitet</li>
+                            <li>Om de första generella systemen kontrolleras av få aktörer i USA/Kina blir det europeiska beroendet strukturellt.</li>
+                            <li>EU kan reglera systemen men inte producera dem på relevanta tidsskalor.</li>
+                            <li>Skillnaden mellan dem med och utan tillgång till bästa kapacitet blir en ny fördelningslinje.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -579,72 +527,52 @@
         <div class="year-section" data-year="2029">
             <div class="year-header">
                 <div class="year-number">2029</div>
-                <div class="year-label">Övermänsklig prestanda på alla kognitiva domäner?</div>
+                <div class="year-label">Mellanfasen tar vid</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI passerar alla professionella prov på övermänsklig nivå — Huang hävdade redan i mars 2026 att AGI uppnåtts (med ekonomisk definition)</li>
-                                <li>Autonoma AI-agenter hanterar komplexa affärsverksamheter utan löpande mänsklig tillsyn</li>
-                                <li>Personaliserad medicin: AI designar behandlingar anpassade till individuella patienter</li>
-                                <li>Fusionsenergi + AI-optimering börjar hantera beräkningskapacitetens energibehov</li>
-                                <li>Internationellt AI-styrningsavtal undertecknas</li>
-                                <li>AI bidrar 5–7 % till global BNP-tillväxt</li>
+                            <li>Agenthorisonten närmar sig kvartalsledtider; autonoma och halvautonoma flöden i fler funktioner.</li>
+                            <li>Skattebas och socialförsäkring pressas av snabbare tjänsteomvandling än stöden hinner följa.</li>
+                            <li>Risk att beslut kommer i fel ordning om indikatorerna inte ligger tidigt i kedjan.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI transformerar men eliminerar inte de flesta kvalificerade tjänster</li>
-                                <li>25 % sannolikhet att AGI har uppnåtts (Metaculus-prognos)</li>
-                                <li>Humanoidrobotar utbredda i logistik och tillverkning</li>
-                                <li>AI-klimatmodeller möjliggör exakta geoengineering-förslag</li>
-                                <li>Utbildningssystem ombyggda: AI-tutorer standard, mänskliga lärare som mentorer</li>
-                                <li>Filosofisk debatt om AI-medvetande och rättigheter intensifieras</li>
+                            <li>Produktivitetsgapet mellan företag med och utan förmåga kan bli långvarigt.</li>
+                            <li>Fysiska yrken (vård, bygg, omsorg) påverkas långsammare — robotiken släpar efter maskinkognitionen.</li>
+                            <li>Rimlig hållning: reversibla steg där det går, tidiga investeringar där ledtiderna är långa (utbildning, elnät).</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>"Capability overhang": AI kan göra mer än samhället säkert kan absorbera</li>
-                                <li>Massförskjutning skapar politisk instabilitet i utvecklade nationer</li>
-                                <li>AI-drivna cyberattacker blir vapen på statsnivå</li>
-                                <li>Monopolistisk kontroll av AI hos 3–5 företag väcker allvarliga antitrustfrågor</li>
-                                <li>Miljökostnader för AI-beräkning blir en avgörande politisk fråga</li>
-                                <li>Social isolering ökar när AI-följeslagare ersätter mänsklig interaktion</li>
+                            <li>Datacenter byggs där kapital, el, mark och tillstånd kan samlas; andra regioner hamnar efter.</li>
+                            <li>Användning och suveränitet glider isär: hög AI-nytta, lågt inflytande över tekniken.</li>
+                            <li>EU-samordning kan minska beroendet — men bara om reglering följs av faktisk kapacitet.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -654,72 +582,52 @@
         <div class="year-section" data-year="2030">
             <div class="year-header">
                 <div class="year-number">2030</div>
-                <div class="year-label">Ny ekonomisk paradigm — post-knapphetsdebatt</div>
+                <div class="year-label">Sekvenseringens prövning</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Övermänsklig AI över praktiskt taget alla kognitiva domäner</li>
-                                <li>AI adderar 7 %+ till global BNP (Goldman Sachs: 7+ biljoner USD)</li>
-                                <li>Humanoidrobotar i miljontals; kostnaden sjunker till 20–30 000 USD per enhet</li>
-                                <li>AI-forskare gör Nobelvärdiga upptäckter oberoende</li>
-                                <li>Livslängden börjar öka genom AI-medicinska genombrott</li>
-                                <li>Post-knapphetsdebatter börjar tas på allvar i seriös ekonomisk diskurs</li>
+                            <li>AI kan addera betydande BNP (Goldman) — men institutionell stress kvarstår om reformer inte byggts före trycket.</li>
+                            <li>Datacentrens elbehov är stort (IEA); stora laster konkurrerar med industri och hushåll om effekt.</li>
+                            <li>Proaktiv anpassning (reformer 2026–2030) ger ett styrbart läge; annars blir omställningen reaktiv.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI automatiserar 30 % av alla arbetstimmar (McKinsey-projektion)</li>
-                                <li>Metaculus-medianen för AGI nås under tidigt 2030-tal; prognosmarknaderna visar snabbt krympande tidslinjer</li>
-                                <li>12 miljoner+ arbetstagare har övergått till nya yrken (McKinsey)</li>
-                                <li>Datacenter förbrukar ~945 TWh (IEA-projektion), 3 % av global elektricitet</li>
-                                <li>Omfattande AI-reglering i de flesta utvecklade nationer</li>
-                                <li>AI som samarbetspartner är standard i de flesta yrken</li>
+                            <li>McKinsey-projektion: ~30 % av arbetstimmarna automatiserbara — men utfallet beror på adoptionsdjupet.</li>
+                            <li>Ett långsammare förlopp döljer att ledtiderna i utbildning, infrastruktur och myndighet ändå är långa.</li>
+                            <li>Den stora risken är passivitet och feltolkad trygghet, inte överbelastning.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>300 miljoner jobb förskjutna globalt (Goldman Sachs-uppskattning)</li>
-                                <li>AI-superintelligensrisk bedömd till 25 %+ av ledande forskare</li>
-                                <li>Allvarlig ojämlikhet: AI-välstånd koncentrerat till &lt;1 % av befolkningen</li>
-                                <li>Auktoritär AI-övervakning normaliserad i 30+ länder</li>
-                                <li>Miljömässiga tippunkter delvis drivna av beräkningsenergibehovet</li>
-                                <li>"Digitalt proletariat" uppstår: människor gör enbart det AI inte kan</li>
+                            <li>Vinster koncentreras till kapital, data och kompetens; kostnader hamnar hos mindre aktörer och exponerade yrken.</li>
+                            <li>Olika servicenivåer i offentlig sektor blir en likvärdighetsfråga, inte bara konkurrenskraft.</li>
+                            <li>Beroendets pris: prissättning, säkerhet och kontinuitet avgörs på marknader Sverige inte kontrollerar.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -729,72 +637,52 @@
         <div class="year-section" data-year="2035">
             <div class="year-header">
                 <div class="year-number">2035</div>
-                <div class="year-label">Post-arbetssamhälle och ASI</div>
+                <div class="year-label">Institutionalisering — eller ikapp-körning</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>Artificiell superintelligens (ASI) uppnådd — tidigare än Kurzweils singularitetstidslinje (2045) om accelerationsantagandena håller</li>
-                                <li>Post-arbetssamhälle i avancerade nationer; basinkomst universell</li>
-                                <li>AI löser de flesta stora sjukdomar: cancer, Alzheimers, genetiska tillstånd</li>
-                                <li>Rymdutforskning accelererad av AI-designad framdrivning och habitat</li>
-                                <li>Människa–AI-fusion påbörjas: kognitiv förbättring via neurala gränssnitt</li>
-                                <li>Klimatförändring bromsas genom AI-optimerad kolinsamling och energisystem</li>
+                            <li>Vid sen tröskelpassage (2032–2037) blir mellanfasen avgörande; reformerna måste accelereras.</li>
+                            <li>Har beredskap byggts tidigt förs konflikten kring justeringar — inte kring sen krishantering.</li>
+                            <li>Snabbsekvensens reversibla instrument kan aktiveras inom 30–90 dagar när indikatorerna tippar.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AGI fast etablerad; ASI fortfarande debatterad och närmande</li>
-                                <li>40–50 % av nuvarande jobb transformerade eller eliminerade</li>
-                                <li>AI hanterar de flesta rutinmässiga styrnings- och infrastrukturuppgifter</li>
-                                <li>Livslängdsbehandlingar från AI-forskning adderar 10–15 år</li>
-                                <li>Global AI-styrningsinstitution operativ (FN-nivå)</li>
-                                <li>Samhället anpassar sig: nya yrken, ny mening — men betydande omvälvning pågår</li>
+                            <li>Reformer kan sekvenseras väl om tiden använts; annars byggs utbildningsplatser och stöd i kapp.</li>
+                            <li>Reaktiv anpassning (2030–2035) är hanterbar men dyrare — och uppfattas lätt som straff eller panik.</li>
+                            <li>EU-standarder och nordisk energisamordning kan bli svenska tillgångar om de görs operativa.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>ASI-anpassning förblir olöst; existentiella riskdebatter intensifieras</li>
-                                <li>"Tvåhastighetsvärlden": AI-rika nationer blomstrar, övriga faller längre efter</li>
-                                <li>AI-drivna autonoma vapen distribueras i konflikter</li>
-                                <li>Massiv psykologisk kris: mening och syfte i en post-arbetsvärld</li>
-                                <li>Integritet praktiskt taget eliminerad i anslutna samhällen</li>
-                                <li>Kontroll över ASI blir den centrala geopolitiska frågan</li>
+                            <li>Ett tvåhastighetsmönster mellan aktörer och regioner kan ha cementerats.</li>
+                            <li>Strategiskt beroende blir institutionellt och demokratiskt, inte bara ekonomiskt.</li>
+                            <li>Realistiskt svar är kvalificerad mottagarkapacitet — testmiljöer, dataresurs, beräkning, beställarkompetens — inte full självförsörjning.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
             </div>
@@ -804,147 +692,52 @@
         <div class="year-section" data-year="2040">
             <div class="year-header">
                 <div class="year-number">2040</div>
-                <div class="year-label">Fundamentalt annorlunda civilisation</div>
+                <div class="year-label">Tre vägar, fyra utfall</div>
             </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Acceleration</span></div>
+                        <div class="card-subtitle">Korta ledtider — hastigheten är frågan</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>ASI har löst de flesta lösbara vetenskapliga och tekniska problemen</li>
-                                <li>Mänsklig livslängd dramatiskt förlängd; åldrande bromsat eller stoppat</li>
-                                <li>Närvaro på fler planeter möjliggjord av AI-designad teknik</li>
-                                <li>Post-knapphetsekonomi i avancerade nationer; materiellt överflöd</li>
-                                <li>Mänskligt medvetande kan laddas upp (tidiga experiment)</li>
-                                <li>En fundamentalt annorlunda civilisation tar form</li>
+                            <li>Proaktiv anpassning: indikatorer, omställningsstöd, finansieringsberedskap och insyn på plats före trycket — styrbart, inte friktionsfritt.</li>
+                            <li>Vid tidig tröskelpassage utan snabbsekvens: diskontinuitet — rätt reformer för normaltakt möter en takt som inte är normaltakt; proaktiv blir reaktiv på två år i stället för fem.</li>
+                            <li>Frågan är inte om Sverige garanterar ett gott 2040, utan om åren 2026–2030 byggde institutioner som gör 2040 mindre beroende av tur.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
+                <div class="scenario-card friktion" data-scenario="friktion">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Friktion</span></div>
+                        <div class="card-subtitle">Mer tid — men passivitetsrisk</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>AI hanterar 50–60 % av alla dagens mänskliga arbetsuppgifter</li>
-                                <li>ASI existerar men under försiktig styrning och anpassningsprotokoll</li>
-                                <li>Radikal livslängdsförlängning tillgänglig (fortfarande dyr)</li>
-                                <li>Nytt samhällskontrakt: människor bidrar kreativitet, empati, styrning</li>
-                                <li>Geopolitisk ordning omformad kring AI-kapacitet</li>
-                                <li>Blandade resultat: stor framgång jämsides med bestående ojämlikhet</li>
+                            <li>Reaktiv anpassning: man kommer fram, men med sämre förtroende och högre pris.</li>
+                            <li>Reformerna fungerar olika väl beroende på om de hann ge effekt innan trycket etablerades.</li>
+                            <li>Utfallen är inte binära — Sverige kan vara proaktivt i ett spår och försenat i ett annat samtidigt.</li>
                             </ul>
                         </div>
+                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
                     </div>
                 </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
+                <div class="scenario-card klyvning" data-scenario="klyvning">
                     <div class="card-accent"></div>
                     <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
+                        <div class="card-header"><span class="card-title">Delning</span></div>
+                        <div class="card-subtitle">Ojämn tillgång och kontroll</div>
                         <div class="card-content">
                             <ul class="card-items">
-                                <li>50 %+ av jobb helt automatiserade (Goldman Sachs-projektion)</li>
-                                <li>ASI används för befolkningskontroll och samhällsstyrning av vissa stater</li>
-                                <li>"Mänsklig obsolescens"-kris: psykologiskt och socialt sammanbrott</li>
-                                <li>AI–människa-klyftan så stor att meningsfull mänsklig tillsyn är omöjlig</li>
-                                <li>Resurskonflikter intensifieras trots AI-driven effektivitet</li>
-                                <li>Existentiell risk från felanpassad ASI på historiskt högsta nivå</li>
+                            <li>Försenad anpassning: flera långledda system repareras samtidigt under tryck; vissa grupper upplever att de bar kostnaden.</li>
+                            <li>Ordet kris bör användas exakt — det betyder förlorad tid och ojämn fördelning, inte nödvändigtvis samhällskollaps.</li>
+                            <li>Den årliga utvärderingen bör fråga vilket reformkluster som rör sig åt vilket håll — inte bara vilket scenario landet är i.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2050 -->
-        <div class="year-section" data-year="2050">
-            <div class="year-header">
-                <div class="year-number">2050</div>
-                <div class="year-label">Bortom förutsägelser — tre radikalt skilda världar</div>
-            </div>
-            <div class="scenarios">
-                <div class="scenario-card acceleration" data-scenario="acceleration">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">🚀</span>
-                            <div class="card-title">Acceleration</div>
-                        </div>
-                        <div class="card-subtitle">Optimistisk väg</div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>Teknologisk singularitet kan ha inträffat — civilisationen okänd från 2026-perspektiv</li>
-                                <li>Döden potentiellt valfri genom bioteknologi + AI</li>
-                                <li>Interstellär utforskningsplanering pågår</li>
-                                <li>Medvetande förstått och potentiellt expanderbart</li>
-                                <li>Post-knapphet realiserad: materiell fattigdom eliminerad</li>
-                                <li>Mänskligheten definieras inte längre av arbete utan av utforskning och skapande</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scenario-card steady" data-scenario="steady">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚖️</span>
-                            <div class="card-title">Stabil utveckling</div>
-                        </div>
-                        <div class="card-subtitle">Mest sannolik väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>AI djupt inbäddad i alla aspekter av civilisationen</li>
-                                <li>80 %+ av 2026 års arbetsuppgifter automatiserade eller fundamentalt transformerade</li>
-                                <li>Global styrning anpassad till AI-verkligheter — men ojämnt</li>
-                                <li>Medellivslängd 100+ i utvecklade nationer</li>
-                                <li>Mänskligheten kvarstår men djupt förändrad</li>
-                                <li>Balans mellan mänskligt handlande och AI-förmåga upprätthållen — men bräcklig</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scenario-card disruption" data-scenario="disruption">
-                    <div class="card-accent"></div>
-                    <div class="card-body">
-                        <div class="card-header">
-                            <span class="card-emoji">⚠️</span>
-                            <div class="card-title">Disruption</div>
-                        </div>
-                        <div class="card-subtitle">Pessimistisk väg</div>
-                        <div class="card-expand-hint">Klicka för detaljer ↓</div>
-                        <div class="card-content">
-                            <ul class="card-items">
-                                <li>Scenariovägen: från "människor som husdjur" till potentiell civilisationskollaps</li>
-                                <li>37–51 % av AI-forskare uppskattar ≥10 % risk för utrotningsnivå</li>
-                                <li>Extrem ojämlikhet kan ha skapat permanent underklass</li>
-                                <li>Förlust av mänsklig autonomi och meningsfull handlingsfrihet</li>
-                                <li>"Århundradet vi nästan förlorade allt" — eller kanske redan gjort det</li>
-                                <li>Digital feodalism: AI-ägarna kontrollerar produktionsmedlen helt</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -957,28 +750,28 @@
         <h2 class="themes-title">Tvärgående teman</h2>
         <div class="themes-grid">
             <div class="theme-card">
-                <div class="theme-name">Arbetsmarknaden</div>
-                <div class="theme-desc">Från produktivitetsverktyg till kognitiv ersättning. Vilka yrken transformeras, vilka försvinner, vilka nya uppstår?</div>
+                <div class="theme-name">Arbetsmarknad &amp; inträdesvägar</div>
+                <div class="theme-desc">Exponeringen är ojämn; yngre i exponerade yrken kan påverkas innan total arbetslöshet rör sig. Mät tidigare än efterhandsmåtten.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Geopolitik</div>
-                <div class="theme-desc">USA–Kina-kappan, exportkontroller, chip-allianser, och bifurkeringen av det globala teknikekosystemet.</div>
+                <div class="theme-name">Skattebas &amp; finansiering</div>
+                <div class="theme-desc">Om produktivitet och vinst koncentreras till kapital och modeller medan kostnaderna hamnar på lönebasen uppstår en obalans som måste hanteras.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Robotik &amp; fysisk AI</div>
-                <div class="theme-desc">Humanoidrobotar, autonoma fordon, lagerautomation — när AI får en kropp förändras industrins grundlogik.</div>
+                <div class="theme-name">Energi &amp; datacenter</div>
+                <div class="theme-desc">AI är mjukvara på ytan men fysisk infrastruktur under den. El, nät, mark och byggtakt blir strategiska scenariovariabler.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Existentiella risker</div>
-                <div class="theme-desc">Alignment, superintelligens, autonoma vapen, AI-driven övervakning — risker som kräver internationell samordning.</div>
+                <div class="theme-name">Demokratiska institutioner</div>
+                <div class="theme-desc">Nya angreppsytor: deepfakes i valnära miljöer, ogenomskinligt AI-beslutsstöd i förvaltning, stegvis funktionsglidning i övervakning.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Energi &amp; miljö</div>
-                <div class="theme-desc">AI:s energibehov vs AI:s klimatlösningar. Datacenterexpansionen, fusionsenergi, effektivitetsgenombrott.</div>
+                <div class="theme-name">EU-samordning</div>
+                <div class="theme-desc">EU-rätten ger ram, tid och standarder — men ersätter inte svensk kapacitet. Reglering kan samexistera med strategiskt beroende.</div>
             </div>
             <div class="theme-card">
-                <div class="theme-name">Styrning &amp; etik</div>
-                <div class="theme-desc">EU AI Act, USA:s delstatslappverk, FN-ramverk — regleringens kapplöpning med tekniken.</div>
+                <div class="theme-name">Kapacitetströskel &amp; beredskap</div>
+                <div class="theme-desc">Tröskeln (Hassabis, Hinton, Legg) avgör takten. Snabbsekvens är reversibel, indikatordriven beredskap för tidig passage — inte panikbeslut.</div>
             </div>
         </div>
     </section>
@@ -987,9 +780,9 @@
     <section class="method-section">
         <h2 class="method-title">Om scenarierna</h2>
         <div class="method-text">
-            <p>Scenarioramverket bygger på tre vägar: <strong>Acceleration</strong> representerar det optimistiska utfallet om utvecklingen håller maximal takt och styrningen fungerar. <strong>Stabil utveckling</strong> är den mest sannolika banan baserat på historiska mönster, aktuella trender och konsensusprognoser. <strong>Disruption</strong> representerar negativa utfall om anpassning misslyckas, risker materialiseras eller maktkoncentration löper ur kontroll.</p>
-            <p>Samtliga datapunkter hänvisar till publicerade källor: McKinsey, Goldman Sachs, IEA, Metaculus, samt branschanalys från frontier-labben. 2026-scenarierna har uppdaterats för att spegla bekräftade händelser per april 2026.</p>
-            <p>Scenarierna ska läsas som strukturerade tankeövningar — inte som förutsägelser. Verkligheten kommer sannolikt att blanda element från alla tre vägar. Syftet är att ge en ram för seriös reflektion om vad som faktiskt kan hända.</p>
+            <p>Ramverket bygger på tre symmetriskt konstruerade scenarier — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong> — som var och en prövas mot samma sju variabler (kapacitetskurva, adoptionstakt, investeringsuthållighet, energi och datacenter, geopolitisk koncentration, svensk respons och EU-samordning). De ska inte läsas som värderingar eller som en gissning om vilken framtid som ”vinner”, utan som tre prövningar av samma reformpaket: en reform som bara fungerar i ett scenario är för skör.</p>
+            <p>Tidslinjen projicerar varje scenarios bana 2026–2040 utifrån dokumentets logik och belagda signaler. Analysen skiljer mellan det som är <em>belagt</em> (etablerade mätningar och expertbedömningar) och det som vore <em>prognostiserat</em> (en gissning om utfall) — och försöker inte förutsäga vilket utfall som inträffar, utan bygga beredskap som håller under flera möjliga förlopp. Maj-tillägget kompletterar med en åttonde variabel, kapacitetströskel (Hassabis, Hinton, Legg), och med snabbsekvens som beredskapsspår vid tidig tröskelpassage.</p>
+            <p>Samtliga datapunkter och positioner härrör från publicerade källor — bl.a. SCB, Epoch AI, OECD, IEA, McKinsey och IMF. Underlaget bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026) och revideras när källbasen åldras. Se <a href="https://ai-skiftet.se/kallor.html">Källor</a>.</p>
         </div>
     </section>
 
