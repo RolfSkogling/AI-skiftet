@@ -241,7 +241,8 @@
       .essay-hero { padding-top: 2.5rem; }
       .essay-hero__wrap, .essay-article { border-radius: 22px; }
     }
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -271,6 +272,11 @@
     <div class="essay-hero__wrap">
       <div class="essay-hero__kicker">Essay 9</div>
       <h1>The dangerous gap in the AI debate</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (bf_emma) &middot; approx 8 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/farliga-glappet.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
       <div class="essay-hero__subtitle">The illusion of "the tool" and why the timeline is a trap</div>
       <p class="essay-hero__dek">A debate essay on why AI cannot be understood merely as a productivity tool, why historical comparisons become misleading when thinking itself is being automated and why even a 10–15 year timeline requires immediate societal preparation.</p>
       <div class="essay-hero__meta">
