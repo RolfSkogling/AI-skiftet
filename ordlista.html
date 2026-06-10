@@ -81,7 +81,8 @@
     .analogy::before{content:"💡 "}
     .no-results{text-align:center;padding:48px 16px;color:var(--muted);font-style:italic;display:none}
     @media(max-width:600px){.term-header{flex-direction:column;gap:4px}.term-tags{margin-left:0}.glossary-hero{padding:40px 0 28px}}
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -105,6 +106,11 @@
 
 <section class="glossary-hero"><div class="container">
   <h1>Ordlista</h1>
+      <div class="news-audio" role="region" aria-label="Lyssna p&aring; ess&auml;n">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna p&aring; ess&auml;n</div><div class="news-audio__note">Engelsk uppl&auml;sning via Kokoro (bf_emma) &middot; ca 1 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/ordlista.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
   <p class="subtitle">AI-begrepp förklarade på ren svenska — från fabriksgolvet, inte styrelserummet.</p>
   <div class="glossary-filter">
     <button class="filter-tag active" data-filter="alla">Alla</button>
