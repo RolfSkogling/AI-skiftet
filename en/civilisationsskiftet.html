@@ -305,7 +305,8 @@
         max-width: none;
       }
     }
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -335,6 +336,11 @@
     <div class="essay-hero__wrap">
       <div class="essay-hero__kicker">Main essay</div>
       <h1>The Civilisational&shy;Shift</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English narration via Kokoro (bf_emma) &middot; approx. 32 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/civilisationsskiftet.m4a?v=2026-06-09" type="audio/mp4"></audio>
+      </div>
+
       <p class="essay-hero__subtitle">AI, robotics and the path from a work society to an economy of abundance</p>
       <p class="essay-hero__dek">A longer main essay for AI-skiftet.se on why AI, cheap energy, automation and new forms of production together can force a new social contract between 2026 and 2040.</p>
       <div class="essay-hero__meta">
