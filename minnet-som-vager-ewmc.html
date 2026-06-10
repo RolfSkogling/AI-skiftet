@@ -29,7 +29,8 @@
     .site-nav__links{margin-left:0}
     .link-list{padding-left:1.2rem}
     .link-list li{margin-bottom:.45rem}
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -60,6 +61,11 @@
   <div class="container">
     <a href="essaer.html" class="article-header__back">← Till essäerna</a>
     <h1>Minnet som väger — EWMC blir öppen källkod</h1>
+      <div class="news-audio" role="region" aria-label="Lyssna p&aring; ess&auml;n">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna p&aring; ess&auml;n</div><div class="news-audio__note">Engelsk uppl&auml;sning via Kokoro (bf_emma) &middot; ca 2 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/minnet-som-vager-ewmc.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
     <p class="article-meta">Launch · Rolf Skogling · 26 maj 2026</p>
     <p class="article-lede"><em>Om ett lokalt minnessystem för AI-assistenter där allt inte väger lika mycket.</em></p>
   </div>
