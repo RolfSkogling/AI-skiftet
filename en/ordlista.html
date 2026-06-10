@@ -81,7 +81,8 @@
     .analogy::before{content:"💡 "}
     .no-results{text-align:center;padding:48px 16px;color:var(--muted);font-style:italic;display:none}
     @media(max-width:600px){.term-header{flex-direction:column;gap:4px}.term-tags{margin-left:0}.glossary-hero{padding:40px 0 28px}}
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
   <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/ordlista.html">
   <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/ordlista.html">
   <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/ordlista.html">
@@ -109,6 +110,11 @@
 
 <section class="glossary-hero"><div class="container">
   <h1>Glossary</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (bf_emma) &middot; approx 1 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/ordlista.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
   <p class="subtitle">AI concepts explained in plain English — from the shop floor, not the boardroom.</p>
   <div class="glossary-filter">
     <button class="filter-tag active" data-filter="alla">All</button>
