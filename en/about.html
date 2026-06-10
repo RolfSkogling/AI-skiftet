@@ -26,7 +26,8 @@
     .article-body .fact-box h2{margin-top:0}
     .article-body .pull{border-left:4px solid var(--accent);padding:8px 0 8px 20px;margin:30px 0;font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;line-height:1.45;color:var(--text)}
 
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -56,6 +57,11 @@
   <div class="container">
     <a href="/en/index.html" class="article-header__back">← Back</a>
     <h1>100% AI</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (bf_emma) &middot; approx 4 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/about.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
     <p class="article-meta">About the method · Rolf Skogling</p>
   </div>
 </header>
