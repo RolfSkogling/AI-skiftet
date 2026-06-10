@@ -36,7 +36,8 @@
     .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
     .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
     .site-nav__links{margin-left:0}
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -66,6 +67,11 @@
     <a href="/en/essays.html" class="article-header__back">Back to essays</a>
     <div class="article-kicker">Practice</div>
     <h1>The Missing Voice</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (bf_emma) &middot; approx 6 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/den-rost-som-saknas.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
     <p class="article-dek">The AI debate remains incomplete when it is conducted by people who have never stood where the technology actually has to be used.</p>
     <p class="article-meta">Essay · Rolf Skogling · Published May 18, 2026 · about 5 min read</p>
   </div>
