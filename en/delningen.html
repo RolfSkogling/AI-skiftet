@@ -29,7 +29,8 @@
     .site-nav__links{margin-left:0}
     .article-body blockquote{margin:32px 0;padding:22px 24px;border-left:4px solid var(--accent);background:#fbf8f4;color:#26313d;font-size:1.16rem;line-height:1.65}
     .source-note{font-size:.95rem;color:var(--muted)}
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -59,6 +60,11 @@
   <div class="container">
     <a href="/en/essays.html" class="article-header__back">← Back to essays</a>
     <h1>Divergence</h1>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (bf_emma) &middot; approx 6 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/delningen.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
     <p class="article-meta">Scenario · Rolf Skogling · June 8, 2026</p>
     <p class="article-lede"><em>AI can move quickly and still unevenly. Then the question is not how fast, but for whom.</em></p>
   </div>
