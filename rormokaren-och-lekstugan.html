@@ -71,6 +71,7 @@
         .essay-visual figcaption{max-width:720px;margin:.75rem auto 0;color:var(--color-text-muted,var(--muted,#5f6c7b));font-size:.92rem;line-height:1.55;text-align:center}
         .essay-visual--section{max-width:100%;margin:2.4rem 0;padding:0}
 
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
 </style>
 </head>
 <body>
@@ -93,6 +94,11 @@
 <div class="hero">
     <div class="hero-label">Essä</div>
     <h1>Rörmokaren och lekstugan</h1>
+      <div class="news-audio" role="region" aria-label="Lyssna p&aring; ess&auml;n">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna p&aring; ess&auml;n</div><div class="news-audio__note">Engelsk uppl&auml;sning via Kokoro (bf_emma) &middot; ca 6 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/rormokaren-och-lekstugan.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
     <p class="hero-subtitle">Varför alla leker med AI-agenter — och nästan ingen bygger något.</p>
     <p class="hero-meta">Rolf Skogling &middot; 15 april 2026 &middot; 7 min läsning</p>
 </div>
