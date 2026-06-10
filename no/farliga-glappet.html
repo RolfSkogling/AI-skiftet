@@ -241,7 +241,8 @@
       .essay-hero { padding-top: 2.5rem; }
       .essay-hero__wrap, .essay-article { border-radius: 22px; }
     }
-  </style>
+    .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
 </head>
 <body>
 
@@ -271,6 +272,11 @@
     <div class="essay-hero__wrap">
       <div class="essay-hero__kicker">Essay 9</div>
       <h1>Det farlige gapet i AI-debatten</h1>
+      <div class="news-audio" role="region" aria-label="Lytt til essayet">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lytt til essayet</div><div class="news-audio__note">Engelsk opplesning via Kokoro (bf_emma) &middot; ca 8 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/farliga-glappet.m4a?v=2026-06-10" type="audio/mp4"></audio>
+      </div>
+
       <div class="essay-hero__subtitle">Illusjonen om "verktøyet" og hvorfor tidslinjen er en felle</div>
       <p class="essay-hero__dek">En debattessay om hvorfor AI ikke bare kan forstås som et produktivitetsverktøy, hvorfor historiesammenligninger blir villedende når selve tenkningen automatiseres og hvorfor selv en 10–15 år lang tidslinje krever umiddelbare samfunnsforberedelser.</p>
       <div class="essay-hero__meta">
