@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI-skiftet Podcasts</title>
+    <link>https://ai-skiftet.se/poddar.html</link>
+    <atom:link href="https://ai-skiftet.se/podcast.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>© 2026 Rolf Skogling</copyright>
+    <itunes:author>Rolf Skogling</itunes:author>
+    <description>English two-host podcast dialogues based on selected AI-skiftet essays.</description>
+    <itunes:summary>English two-host podcast dialogues based on selected AI-skiftet essays.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology" />
+    <item>
+      <title>The missing consistency condition</title>
+      <description>On the contradiction between AI job forecasts, Swedish tech founders' policy wish list and the labour market their own products transform.</description>
+      <link>https://ai-skiftet.se/en/podcasts.html</link>
+      <guid isPermaLink="false">ai-skiftet-podcast-konsistensvillkoret-som-saknas-2026-06-12</guid>
+      <pubDate>Fri, 12 Jun 2026 09:41:55 +0000</pubDate>
+      <enclosure url="https://ai-skiftet.se/audio/konsistensvillkoret-som-saknas-podcast.m4a" length="3595304" type="audio/mp4" />
+      <itunes:duration>00:07:21</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>
