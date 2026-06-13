@@ -27,5 +27,6 @@
 </div></div></section>
 <footer class="site-footer"><div class="container"><p>© 2026 Rolf Skogling · <a href="/no/kallor.html">Kilder</a></p></div></footer>
 <script>document.querySelectorAll("[data-copy-url]").forEach((button)=>{button.addEventListener("click",async()=>{const label=button.dataset.defaultLabel||button.textContent;try{await navigator.clipboard.writeText(button.dataset.copyUrl);button.textContent=button.dataset.copiedLabel||"Copied";setTimeout(()=>{button.textContent=label},1600)}catch(e){window.prompt(button.dataset.promptLabel||"Copy RSS link",button.dataset.copyUrl)}})});</script>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

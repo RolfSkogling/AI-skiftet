@@ -333,5 +333,6 @@ const filterBtns=document.querySelectorAll('.filter-tag'),cards=document.querySe
 function update(){const f=document.querySelector('.filter-tag.active').dataset.filter,q=searchInput.value.toLowerCase().trim();let n=0;cards.forEach(c=>{const ok=(f==='alla'||c.dataset.cat===f)&&(!q||c.textContent.toLowerCase().includes(q));c.style.display=ok?'':'none';if(ok)n++});headings.forEach(h=>{const id=h.id.replace('cat-',''),any=Array.from(document.querySelectorAll('.term-card[data-cat="'+id+'"]')).some(c=>c.style.display!=='none');h.style.display=any?'':'none'});noResults.style.display=n?'none':'block';termCount.textContent=q?n+' of '+cards.length+' terms':cards.length+' terms'}
 filterBtns.forEach(b=>b.addEventListener('click',()=>{filterBtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');update()}));searchInput.addEventListener('input',update);update();
 </script>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
