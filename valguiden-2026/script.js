@@ -6,6 +6,18 @@ const parties = [
     color: "#b73442",
     block: "Opposition",
     filters: ["valfard", "trygghet", "ekonomi"],
+    foundation: "Demokratisk socialism och socialdemokrati: frihet genom jämlikhet, starkt samhälle, skattefinansierad välfärd och demokratisk kontroll över marknadens effekter.",
+    scenario: {
+      image: "assets/scenarier/socialdemokraterna-scenario.jpg",
+      alt: "Sverige som samhällslandskap med välfärdsinstitutioner, grön industri, bostäder och kollektivtrafik.",
+      title: "Ett starkare gemensamt samhälle",
+      summary: "Sverige blir mer institutionsburet: vård, skola, omsorg, bostäder och klimatomställning hålls ihop av offentlig investering och arbetslivets organisering.",
+      points: [
+        "Välfärdsstaten och progressiva skatter bär mer av samhällsbygget.",
+        "Arbete, facklig organisering och social rörlighet blir centrum.",
+        "Klimatomställningen kopplas till industri, jobb och rättvisa."
+      ]
+    },
     pitch: "Vill stärka välfärden, hålla ihop arbetslinjen och kombinera trygghetspolitik med mer offentlig kontroll.",
     tags: ["välfärd", "jobb", "trygghet", "klimat"],
     stances: { "Offentlig välfärd": 9, "Marknad/skatt": 4, "Klimatomställning": 7 },
@@ -20,6 +32,18 @@ const parties = [
     color: "#1f5f9f",
     block: "Tidö",
     filters: ["trygghet", "ekonomi", "migration"],
+    foundation: "Liberal konservatism: individens frihet, äganderätt och företagande kombineras med stark stat i kärnuppgifter som rättsstat, försvar och trygghet.",
+    scenario: {
+      image: "assets/scenarier/moderaterna-scenario.jpg",
+      alt: "Ordnat svenskt samhälle med rättsstat, företagande, vägar, handel och effektiva offentliga kärnverksamheter.",
+      title: "Frihet med stark kärnstat",
+      summary: "Sverige organiseras runt arbete, ägande och företagande, medan staten koncentreras tydligare till trygghet, försvar, rättsväsende och välfärdens kärna.",
+      points: [
+        "Polis, domstolar och försvar får en mer framträdande roll.",
+        "Företagande, arbete och lägre trösklar blir huvudmotorer.",
+        "Välfärden ska vara tydlig, mätbar och mer resultatstyrd."
+      ]
+    },
     pitch: "Betonar brottsbekämpning, arbete, lägre trösklar, stram migration och borgerlig ekonomisk politik.",
     tags: ["lag och ordning", "arbete", "migration", "energi"],
     stances: { "Offentlig välfärd": 5, "Marknad/skatt": 8, "Klimatomställning": 5 },
@@ -34,6 +58,18 @@ const parties = [
     color: "#d6a12f",
     block: "Tidö",
     filters: ["migration", "trygghet", "valfard"],
+    foundation: "Socialkonservatism med nationalistisk grundsyn: nationell gemenskap, kulturell kontinuitet, restriktiv migration, lag och ordning och välfärd inom en stark samhällsgemenskap.",
+    scenario: {
+      image: "assets/scenarier/sverigedemokraterna-scenario.jpg",
+      alt: "Sverige med småstäder, kulturmiljöer, trygghetsinstitutioner, vård och kustnära gränskontroll.",
+      title: "Ett mer sammanhållet folkhem",
+      summary: "Sverige betonar nationell sammanhållning, trygghet och social konservatism: färre snabba samhällsförändringar, hårdare ordning och välfärd inom en tydligare nationell ram.",
+      points: [
+        "Migration och integration blir mer restriktiva och kravorienterade.",
+        "Polis, straff och gränskontroll får större politisk tyngd.",
+        "Välfärd, pensioner och lokalsamhälle kopplas till nationell solidaritet."
+      ]
+    },
     pitch: "Profilerar sig på restriktiv migration, kriminalitet, nationell sammanhållning och välfärd före nya åtaganden.",
     tags: ["migration", "trygghet", "välfärd", "kultur"],
     stances: { "Offentlig välfärd": 7, "Marknad/skatt": 5, "Klimatomställning": 3 },
@@ -48,6 +84,18 @@ const parties = [
     color: "#8f2638",
     block: "Opposition",
     filters: ["valfard", "klimat", "ekonomi"],
+    foundation: "Socialistiskt, feministiskt och antirasistiskt parti på ekologisk grund: jämlikhet, gemensamt ägande, välfärd utan vinstjakt och demokratisk makt över ekonomin.",
+    scenario: {
+      image: "assets/scenarier/vansterpartiet-scenario.jpg",
+      alt: "Sverige med kooperativ, offentliga bostäder, gemensam energi, välfärd och grön kollektivtrafik.",
+      title: "Jämlikhet före vinstintresse",
+      summary: "Sverige blir mer omfördelande och demokratiserat ekonomiskt: offentliga och gemensamma lösningar tränger undan vinstlogik i välfärd, bostäder, energi och arbetsliv.",
+      points: [
+        "Offentlig välfärd, bostadspolitik och gemensamt ägande byggs ut.",
+        "Arbetstagarmakt, kortare arbetstid och ekonomisk jämlikhet prioriteras.",
+        "Klimatomställning drivs med social rättvisa som villkor."
+      ]
+    },
     pitch: "Vill minska ekonomiska klyftor, stoppa vinstjakt i välfärden och driva klimatomställning med jämlikhetsfokus.",
     tags: ["jämlikhet", "välfärd", "klimat", "arbetsliv"],
     stances: { "Offentlig välfärd": 10, "Marknad/skatt": 2, "Klimatomställning": 8 },
@@ -62,6 +110,18 @@ const parties = [
     color: "#1d7a5c",
     block: "Opposition",
     filters: ["klimat", "ekonomi", "valfard"],
+    foundation: "Grön liberal decentralism: individens självbestämmande, företagande, landsbygd, klimat genom innovation och beslut nära människor.",
+    scenario: {
+      image: "assets/scenarier/centerpartiet-scenario.jpg",
+      alt: "Decentraliserat Sverige med byar, gårdar, småföretag, grön energi, digital infrastruktur och regionala städer.",
+      title: "Hela landet som grön tillväxtzon",
+      summary: "Sverige blir mer decentraliserat, företagsamt och grönt: landsbygd, småföretag, lokal service och elektrifierad industri binds ihop av infrastruktur och valfrihet.",
+      points: [
+        "Företagande, jobb och lägre trösklar betonas i hela landet.",
+        "Klimatpolitiken kopplas till innovation, el, industri och transporter.",
+        "Lokal service, digital infrastruktur och landsbygd får större vikt."
+      ]
+    },
     pitch: "Driver grön liberal politik med fokus på företagande, landsbygd, decentralisering och klimat.",
     tags: ["landsbygd", "företag", "klimat", "välfärd"],
     stances: { "Offentlig välfärd": 6, "Marknad/skatt": 7, "Klimatomställning": 8 },
@@ -76,6 +136,18 @@ const parties = [
     color: "#294f86",
     block: "Tidö",
     filters: ["valfard", "trygghet", "ekonomi"],
+    foundation: "Kristdemokrati: människovärde, familj, civilsamhälle, subsidiaritet, förvaltarskap och solidaritet med fokus på vård, äldre och trygghet.",
+    scenario: {
+      image: "assets/scenarier/kristdemokraterna-scenario.jpg",
+      alt: "Sverige med familjer, äldreomsorg, vårdcentral, civilsamhälle, lekplatser och lokalt ansvar.",
+      title: "Omsorg nära människan",
+      summary: "Sverige formas kring familj, omsorg och civilsamhälle: vård, äldreomsorg, trygghet och lokala gemenskaper blir mer centrala än stora systemlösningar.",
+      points: [
+        "Vård och äldreomsorg ges tydligare ansvar, tillgänglighet och värdighet.",
+        "Familj, föreningsliv och civilsamhälle ses som bärande samhällsinstitutioner.",
+        "Subsidiaritet: beslut ska tas så nära människan som möjligt."
+      ]
+    },
     pitch: "Profilerar sig på sjukvård, äldre, familjepolitik, trygghet och ett värderingsbaserat borgerligt perspektiv.",
     tags: ["vård", "äldre", "familj", "trygghet"],
     stances: { "Offentlig välfärd": 7, "Marknad/skatt": 6, "Klimatomställning": 4 },
@@ -90,6 +162,18 @@ const parties = [
     color: "#3d78bf",
     block: "Tidö",
     filters: ["klimat", "migration", "ekonomi"],
+    foundation: "Socialliberalism: frihet genom kunskap, rättsstat, integration, jämställdhet, EU och statligt ansvar för likvärdig skola och möjligheter.",
+    scenario: {
+      image: "assets/scenarier/liberalerna-scenario.jpg",
+      alt: "Sverige med skola, bibliotek, universitet, rättsstat, forskning, Europa-kopplingar och olika livsvägar.",
+      title: "Kunskap som frihetsmotor",
+      summary: "Sverige byggs runt skola, bildning och rättsstat: staten ska ge människor verktyg att bli fria, medan internationalism, EU och teknikoptimism driver framtidstro.",
+      points: [
+        "Skola, studiero, läsning och lärarauktoritet blir frihetsfrågor.",
+        "Rättsstat, jämställdhet och skydd mot förtryck får stark profil.",
+        "EU, forskning, innovation och säkerhetspolitisk förankring betonas."
+      ]
+    },
     pitch: "Sätter skolan först, driver integration, liberal rättsstat, EU-linje och teknikoptimistisk klimatpolitik.",
     tags: ["skola", "integration", "EU", "klimat"],
     stances: { "Offentlig välfärd": 5, "Marknad/skatt": 7, "Klimatomställning": 7 },
@@ -104,6 +188,18 @@ const parties = [
     color: "#2f8a45",
     block: "Opposition",
     filters: ["klimat", "valfard", "migration"],
+    foundation: "Grön ideologi: liv inom planetens gränser, solidaritet med människor, natur och framtida generationer, klimat, biologisk mångfald och jämlikhet.",
+    scenario: {
+      image: "assets/scenarier/miljopartiet-scenario.jpg",
+      alt: "Grönt Sverige med spårtrafik, cyklar, sol- och vindkraft, våtmarker, biologisk mångfald och cirkulära verkstäder.",
+      title: "Samhälle inom planetens gränser",
+      summary: "Sverige ställs om ekologiskt och socialt: klimat, natur, transporter, mat, energi och välfärd organiseras för att rymmas inom planetens gränser.",
+      points: [
+        "Klimat, biologisk mångfald och ren miljö blir överordnade styrprinciper.",
+        "Städer, transporter och energi görs mer fossilfria och resurseffektiva.",
+        "Jämlikhet, fred och internationell solidaritet kopplas till omställningen."
+      ]
+    },
     pitch: "Har klimat och natur som kärna, kombinerat med jämlikhet, välfärd och en mer human migrationspolitik.",
     tags: ["klimat", "natur", "jämlikhet", "migration"],
     stances: { "Offentlig välfärd": 8, "Marknad/skatt": 4, "Klimatomställning": 10 },
@@ -123,6 +219,8 @@ const compassResult = document.querySelector("#compass-result");
 const answeredCount = document.querySelector("#answered-count");
 const progressBar = document.querySelector("#progress-bar");
 const resetCompass = document.querySelector("#reset-compass");
+const scenarioFeature = document.querySelector("#scenario-feature");
+const scenarioList = document.querySelector("#scenario-list");
 
 const compassQuestions = [
   {
@@ -318,6 +416,7 @@ function renderParties(filter = "alla") {
           <span class="party-badge">${party.short}</span>
         </div>
         <p>${party.pitch}</p>
+        <p class="party-foundation"><strong>Programkärna:</strong> ${party.foundation}</p>
         <div class="tags">${party.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
         <p class="ai-summary"><strong>AI:</strong> ${party.ai}</p>
         <div class="stance">
@@ -353,6 +452,8 @@ function renderCompare() {
       <article class="compare-card" style="--party-color:${party.color}">
         <h3>${party.name}</h3>
         <p>${party.pitch}</p>
+        <p><strong>Programkärna:</strong> ${party.foundation}</p>
+        <p><strong>Bildligt scenario:</strong> ${party.scenario.summary}</p>
         <p><strong>Samarbete:</strong> ${party.cooperation}</p>
         <ul>
           ${party.watch.map((item) => `<li>${item}</li>`).join("")}
@@ -360,6 +461,55 @@ function renderCompare() {
       </article>
     `)
     .join("");
+}
+
+let activeScenario = parties[0].short;
+
+function renderScenario(short = activeScenario) {
+  const party = parties.find((item) => item.short === short) || parties[0];
+  activeScenario = party.short;
+  scenarioFeature.style.setProperty("--party-color", party.color);
+  scenarioFeature.innerHTML = `
+    <img src="${party.scenario.image}" alt="${party.scenario.alt}" width="1672" height="941" loading="lazy" decoding="async">
+    <div class="scenario-feature-body">
+      <div class="scenario-title-row">
+        <div>
+          <p class="eyebrow">${party.name}</p>
+          <h3>${party.scenario.title}</h3>
+        </div>
+        <span class="party-badge" style="--party-color:${party.color}">${party.short}</span>
+      </div>
+      <p class="scenario-summary">${party.scenario.summary}</p>
+      <ul class="scenario-points">
+        ${party.scenario.points.map((point) => `<li>${point}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+
+  scenarioList.querySelectorAll(".scenario-button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.short === party.short);
+    button.setAttribute("aria-pressed", button.dataset.short === party.short ? "true" : "false");
+  });
+}
+
+function renderScenarioList() {
+  scenarioList.innerHTML = parties
+    .map((party) => `
+      <button class="scenario-button" type="button" data-short="${party.short}" style="--party-color:${party.color}" aria-pressed="false">
+        <span class="party-badge">${party.short}</span>
+        <span>
+          <strong>${party.name}</strong>
+          <span>${party.scenario.title}</span>
+        </span>
+      </button>
+    `)
+    .join("");
+
+  scenarioList.addEventListener("click", (event) => {
+    const button = event.target.closest(".scenario-button");
+    if (!button) return;
+    renderScenario(button.dataset.short);
+  });
 }
 
 function renderCompassQuestions() {
@@ -494,6 +644,8 @@ selectA.addEventListener("change", renderCompare);
 selectB.addEventListener("change", renderCompare);
 
 renderParties();
+renderScenarioList();
+renderScenario();
 populateSelects();
 renderCompare();
 renderCompassQuestions();
