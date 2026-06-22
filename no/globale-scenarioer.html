@@ -113,7 +113,7 @@
               <div class="chart-head">
                 <div>
                   <h2>Den ujevne omstillingen</h2>
-                  <p>Søylene viser valgt akse · farge = sårbarhet ved raskt AI-sjokk · bytt akse med knappene.</p>
+                  <p>Søyler, farge og etikett følger valgt akse. Grønt betyr lavere press eller sterkere kapasitet; rødt betyr høyere press eller svakere kapasitet.</p>
                 </div>
                 <div class="chart-legend" id="chart-legend"></div>
               </div>
@@ -135,11 +135,27 @@
           <script>
             const REGIONS = [{"key": "nordics", "lat": 62, "lng": 15, "exp": 60, "prep": 0.75, "damp": 0.9, "demo": 0.15, "col": "#2e7d32", "n": "Norden", "f": "Høy eksponering, men sterk støtdemping. AI erstatter delvis en krympende arbeidsstyrke.", "s": "Lav"}, {"key": "advanced_east_asia", "lat": 36, "lng": 138, "exp": 55, "prep": 0.78, "damp": 0.45, "demo": 0.1, "col": "#43a047", "n": "Avansert Øst-Asia", "f": "Japan, Korea og Singapore har høy kapasitet, men tynnere sosial pute enn Norden.", "s": "Lav–moderat"}, {"key": "continental_europe", "lat": 51, "lng": 10, "exp": 60, "prep": 0.7, "damp": 0.7, "demo": 0.15, "col": "#fdd835", "n": "Kontinental-Europa", "f": "Sterkt stillingsvern og industripolitikk gir tid, men kan også gjøre strukturskifter trege.", "s": "Moderat"}, {"key": "anglosphere", "lat": 39, "lng": -98, "exp": 60, "prep": 0.77, "damp": 0.22, "demo": 0.3, "col": "#fb8c00", "n": "Anglosfæren", "f": "Høy oppsidekapasitet, men tynnere nett og arbeid-som-identitet gjør sjokket politisk følsomt.", "s": "Moderat–høy"}, {"key": "china", "lat": 35, "lng": 104, "exp": 42, "prep": 0.64, "damp": 0.3, "demo": 0.25, "col": "#fb8c00", "n": "Kina", "f": "Automatisering kan dempe demografisk krymping, men beskyttelsen er ujevn og politisk styrt.", "s": "Moderat–høy"}, {"key": "latin_america", "lat": -10, "lng": -55, "exp": 40, "prep": 0.5, "damp": 0.42, "demo": 0.45, "col": "#f4511e", "n": "Latin-Amerika", "f": "Informalitet og tidlig avindustrialisering svekker både beskyttelse og utviklingsvei.", "s": "Høy"}, {"key": "south_asia_bangladesh", "lat": 23.7, "lng": 90.4, "exp": 40, "prep": 0.38, "damp": 0.3, "demo": 0.55, "col": "#f4511e", "n": "Bangladesh / eksport-Asia", "f": "Kleseksporten er en viktig stige inn i formelt arbeid, men automatisering og handel kan tynne ut jobbinnholdet.", "s": "Høy"}, {"key": "india", "lat": 22, "lng": 79, "exp": 40, "prep": 0.49, "damp": 0.25, "demo": 0.7, "col": "#d32f2f", "n": "Sør-Asia / India", "f": "Tjenestestigen er særlig viktig og særlig eksponert når enklere kunnskapsarbeid automatiseres.", "s": "Svært høy"}, {"key": "mena_gulf", "lat": 24, "lng": 45, "exp": 45, "prep": 0.55, "damp": 0.4, "demo": 0.75, "col": "#f4511e", "n": "MENA / Gulf", "f": "AI, ungdomstrykk og energiomstilling møtes i samme samfunnskontrakt.", "s": "Høy"}, {"key": "sub_saharan_africa", "lat": 9, "lng": 8, "exp": 26, "prep": 0.32, "damp": 0.2, "demo": 0.95, "col": "#b71c1c", "n": "Afrika sør for Sahara", "f": "Lavest direkte eksponering, men høyest systemrisiko: mange unge trenger jobber når utviklingsstigene tynnes ut.", "s": "Systemisk"}];
             const METRIC_LABELS = {"exp": "Eksponering", "prep": "Oppsidefangst (AIPI)", "damp": "Sosial støtdemping", "demo": "Ungdoms-/veksttrykk"};
+            const LEVEL_LABELS = {"low": "Lav", "moderate": "Moderat", "moderateHigh": "Moderat–høy", "high": "Høy", "veryHigh": "Svært høy"};
+            const LEVEL_KEYS = ["low", "moderate", "moderateHigh", "high", "veryHigh"];
+            const PRESSURE_COLORS = {
+              low:"#2e7d32",
+              moderate:"#fdd835",
+              moderateHigh:"#fb8c00",
+              high:"#f4511e",
+              veryHigh:"#d32f2f"
+            };
+            const CAPACITY_COLORS = {
+              low:"#d32f2f",
+              moderate:"#f4511e",
+              moderateHigh:"#fdd835",
+              high:"#43a047",
+              veryHigh:"#2e7d32"
+            };
             const METRICS = {
-              exp: {get:d=>d.exp/100, fmt:d=>d.exp+"%"},
-              prep: {get:d=>d.prep, fmt:d=>d.prep.toFixed(2)},
-              damp: {get:d=>d.damp, fmt:d=>Math.round(d.damp*100)+"/100"},
-              demo: {get:d=>d.demo, fmt:d=>Math.round(d.demo*100)+"/100"}
+              exp: {get:d=>d.exp/100, fmt:d=>d.exp+"%", direction:"pressure"},
+              prep: {get:d=>d.prep, fmt:d=>d.prep.toFixed(2), direction:"capacity"},
+              damp: {get:d=>d.damp, fmt:d=>Math.round(d.damp*100)+"/100", direction:"capacity"},
+              demo: {get:d=>d.demo, fmt:d=>Math.round(d.demo*100)+"/100", direction:"pressure"}
             };
             let current = "exp";
             const chart = document.getElementById("bar-chart");
@@ -151,15 +167,28 @@
             function setDetail(d){
               detail.innerHTML = `<h3>${d.n}</h3><p>${d.f}</p>`;
             }
+            function levelKey(value){
+              if (value < 0.35) return "low";
+              if (value < 0.50) return "moderate";
+              if (value < 0.65) return "moderateHigh";
+              if (value < 0.80) return "high";
+              return "veryHigh";
+            }
+            function tierFor(value){
+              const key = levelKey(value);
+              const colors = METRICS[current].direction === "capacity" ? CAPACITY_COLORS : PRESSURE_COLORS;
+              return { key, label: LEVEL_LABELS[key], color: colors[key] };
+            }
             function renderChart(){
               const rows = sortedRegions();
               chart.innerHTML = rows.map(d => {
                 const value = METRICS[current].get(d);
                 const pct = Math.max(2, Math.round(value * 100));
                 const label = METRICS[current].fmt(d);
-                return `<button class="chart-row" type="button" data-key="${d.key}" aria-label="${d.n}: ${METRIC_LABELS[current]} ${label}, Sårbarhet ved raskt sjokk ${d.s}">
-                  <span class="chart-label"><span class="chart-region">${d.n}</span><span class="chart-risk" style="border-color:${d.col}">${d.s}</span></span>
-                  <span class="chart-track"><span class="chart-bar" style="width:${pct}%;background:${d.col}"></span></span>
+                const tier = tierFor(value);
+                return `<button class="chart-row" type="button" data-key="${d.key}" aria-label="${d.n}: ${METRIC_LABELS[current]} ${label}, Nivå i valgt akse ${tier.label}">
+                  <span class="chart-label"><span class="chart-region">${d.n}</span><span class="chart-risk" style="border-color:${tier.color};color:${tier.color}">${tier.label}</span></span>
+                  <span class="chart-track"><span class="chart-bar" style="width:${pct}%;background:${tier.color}"></span></span>
                   <span class="chart-value">${label}</span>
                 </button>`;
               }).join("");
@@ -170,6 +199,11 @@
                 });
               });
               if (rows[0]) setDetail(rows[0]);
+              renderLegend();
+            }
+            function renderLegend(){
+              const colors = METRICS[current].direction === "capacity" ? CAPACITY_COLORS : PRESSURE_COLORS;
+              document.getElementById("chart-legend").innerHTML = "<strong>Nivå i valgt akse</strong>" + LEVEL_KEYS.map(key => `<span class="row"><i style="background:${colors[key]}"></i>${LEVEL_LABELS[key]}</span>`).join("");
             }
             Object.keys(METRICS).forEach(key => {
               const button = document.createElement("button");
@@ -183,8 +217,6 @@
               });
               controls.appendChild(button);
             });
-            const legend = [["#2e7d32","Lav"],["#fdd835","Moderat"],["#fb8c00","Moderat–høy"],["#f4511e","Høy"],["#d32f2f","Svært høy"],["#b71c1c","Systemisk"]];
-            document.getElementById("chart-legend").innerHTML = "<strong>Sårbarhet ved raskt sjokk</strong>" + legend.map(([color,text]) => `<span class="row"><i style="background:${color}"></i>${text}</span>`).join("");
             renderChart();
           </script>
           <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
