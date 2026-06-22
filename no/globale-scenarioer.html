@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+        <html lang="nb">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Globale AI-scenarioer 2026–2040 — AI-skiftet</title>
+          <meta name="description" content="Et globalt scenariokart over AI, arbeid, demografi, energi og utviklingsveier.">
+          <link rel="canonical" href="https://ai-skiftet.se/no/globale-scenarioer.html">
+          <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/globala-scenarier.html">
+          <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/global-scenarios.html">
+          <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/globale-scenarioer.html">
+          <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/globala-scenarier.html">
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+          <style>
+            *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+            :root{--bg:#fff;--surface:#faf8f5;--accent:#8c4a1f;--accent-light:rgba(140,74,31,.08);--text:#1b1b1b;--muted:#5f6c7b;--line:rgba(140,74,31,.12);--shadow:0 1px 3px rgba(0,0,0,.04)}
+            body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+            a{color:inherit} .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+            .site-header-inner{max-width:1040px;margin:0 auto;padding:1rem 1.5rem;display:flex;align-items:center;gap:16px}
+            .site-logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;text-decoration:none}
+            .site-nav{display:flex;align-items:center;gap:1.4rem;font-size:.9rem;flex-wrap:wrap}
+            .site-nav a{color:var(--muted);text-decoration:none;font-weight:500}.site-nav a:hover,.site-nav a.active{color:var(--accent)}
+            .lang-switch{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+            .lang-switch a{padding:4px 8px;border-radius:4px;color:var(--muted);text-decoration:none}.lang-switch a.current{background:var(--accent);color:#fff}
+            .hero,.global-main{max-width:1040px;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem}
+            .hero{padding-top:4rem;padding-bottom:1.8rem}.hero-label{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:1rem}
+            h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.1;margin-bottom:1.1rem}
+            .hero-subtitle{font-size:1.08rem;color:#3a3a3a;max-width:760px}.hero-meta{margin-top:1.2rem;color:#999;font-size:.82rem}
+            .scenario-switch{max-width:1040px;margin:0 auto 1.8rem;padding:0 1.5rem;display:flex;gap:8px;flex-wrap:wrap}
+            .scenario-switch a{border:1px solid var(--line);border-radius:999px;padding:7px 13px;text-decoration:none;color:var(--muted);font-weight:700;font-size:.84rem}
+            .scenario-switch a.active{background:var(--accent);border-color:var(--accent);color:#fff}
+            .globe-shell{position:relative;min-height:520px;height:min(70vh,680px);border-radius:8px;overflow:hidden;background:#0b1020;margin:0 0 2rem;box-shadow:0 16px 48px rgba(0,0,0,.18)}
+            #global-globe{position:absolute;inset:0}.globe-hud{position:absolute;left:18px;right:18px;top:16px;z-index:5;color:#e8edf7;pointer-events:none}
+            .globe-hud h2{font-family:'Inter',sans-serif;font-size:1.05rem;margin:0 0 2px}.globe-hud p{font-size:.82rem;color:#aab8d6;max-width:760px}
+            .globe-controls{position:absolute;left:18px;top:74px;z-index:6;display:flex;gap:8px;flex-wrap:wrap;max-width:calc(100% - 36px)}
+            .globe-controls button{cursor:pointer;border:1px solid #26324f;background:#121a30;color:#e8edf7;padding:7px 12px;border-radius:999px;font:inherit;font-size:.82rem;font-weight:700}
+            .globe-controls button.active{background:#2b6cff;border-color:#2b6cff}
+            .globe-legend{position:absolute;left:18px;bottom:14px;z-index:6;font-size:.75rem;color:#aab8d6;background:#0b1020cc;border:1px solid #26324f;border-radius:8px;padding:8px 10px;max-width:250px}
+            .globe-legend strong{display:block;color:#e8edf7;margin-bottom:4px}.globe-legend .row{display:flex;align-items:center;gap:6px;margin:2px 0}.globe-legend i{width:11px;height:11px;border-radius:2px;display:inline-block}
+            .region-card{position:absolute;right:18px;top:74px;z-index:7;width:310px;max-width:calc(100% - 36px);background:#121a30;color:#e8edf7;border:1px solid #26324f;border-radius:8px;padding:16px;box-shadow:0 12px 40px #0008;display:none}
+            .region-card h2{font-family:'Inter',sans-serif;font-size:1rem;margin-bottom:8px}.region-card .metric{display:flex;justify-content:space-between;gap:12px;font-size:.82rem;border-top:1px solid #26324f;padding:6px 0}
+            .region-card .metric span:last-child{color:#aab8d6;text-align:right}.region-card p{font-size:.82rem;color:#aab8d6;margin-top:10px}.region-card button{margin-top:12px;background:transparent;border:1px solid #26324f;color:#aab8d6;border-radius:6px;padding:5px 10px;font:inherit;cursor:pointer}
+            .global-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:2rem 0}.global-section{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;box-shadow:var(--shadow)}
+            .global-section h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin-bottom:.6rem}.source-box{border-left:3px solid var(--accent);background:#fbf8f4;border-radius:8px;padding:16px 18px;color:var(--muted);margin:0 0 3rem}
+            .site-footer{border-top:1px solid var(--line);padding:2rem 1.5rem;text-align:center;color:#999;font-size:.82rem}.site-footer a{color:var(--muted);text-decoration:none}
+            @media(max-width:760px){.site-header-inner{align-items:flex-start;flex-direction:column}.lang-switch{margin-left:0}.hero{padding-top:2.5rem}.globe-shell{min-height:620px;height:78vh}.globe-controls{top:92px}.region-card{top:auto;right:12px;left:12px;bottom:96px;width:auto}.global-grid{grid-template-columns:1fr}}
+          </style>
+        </head>
+        <body>
+          <header class="site-header">
+            <div class="site-header-inner">
+              <a href="/no/index.html" class="site-logo">AI-skiftet</a>
+              <nav class="site-nav">
+                <a href="/no/index.html#nyheter">Nyheter</a>
+                <a href="/no/essays.html">Essay</a>
+                <a href="/no/framtidsscenarier.html">Svenske scenarioer</a>
+                <a href="/no/globale-scenarioer.html" class="active">Globalt</a>
+                <a href="/no/kallor.html">Kilder</a>
+                <div class="lang-switch">
+                  <a href="https://ai-skiftet.se/globala-scenarier.html" >SV</a>
+                  <a href="/en/global-scenarios.html" >EN</a>
+                  <a href="/no/globale-scenarioer.html" class="current">NO</a>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <section class="hero">
+            <div class="hero-label">Globalt</div>
+            <h1>Globale AI-scenarioer 2026–2040</h1>
+            <p class="hero-subtitle">AIs arbeidsjokk følger ikke bare eksponering. Det følger hvilke land som har beskyttelse, hvilke som må skape jobber og hvilke som eier kapasiteten.</p>
+            <p class="hero-meta">AI-skiftet · Rolf Skogling · Publisert juni 2026</p>
+          </section>
+          <nav class="scenario-switch" aria-label="Scenariovalg">
+            <a href="/no/framtidsscenarier.html">Svenske scenarioer</a>
+            <a href="/no/globale-scenarioer.html" class="active">Globalt</a>
+          </nav>
+          <main class="global-main">
+            <section class="globe-shell" aria-label="Den ujevne omstillingen">
+              <div id="global-globe"></div>
+              <div class="globe-hud"><h2>Den ujevne omstillingen</h2><p>Søylehøyde = valgt akse · farge = sårbarhet ved raskt AI-sjokk · klikk på en region.</p></div>
+              <div class="globe-controls" id="globe-controls"></div>
+              <div class="globe-legend" id="globe-legend"></div>
+              <div class="region-card" id="region-card"></div>
+            </section>
+            <div class="global-grid">
+              <section class="global-section"><h2>Kartets omvendte logikk</h2><p>Avanserte økonomier er mest eksponert for AI, men også best rustet til å bruke teknologien og bære sjokket. Lavinntektsland er mindre direkte eksponert, men har svakere vern og mindre evne til å hente ut gevinstene.</p></section>
+<section class="global-section"><h2>Demografien snur risikoen</h2><p>Der arbeidsstyrken krymper, kan AI løse knapphet. Der arbeidsstyrken vokser, kan samme teknologi gjøre inngangsjobbene færre. Den største sosiale risikoen ligger derfor ikke nødvendigvis der eksponeringen er høyest.</p></section>
+<section class="global-section"><h2>To typer beredskap</h2><p>AIPI er nyttig som mål på AI-opptak og oppsidekapasitet. Det bør ikke leses som et mål på sosial motstandskraft. Sikkerhetsnett, arbeidskultur, lokal mobilitet og institusjonell tillit må vurderes separat.</p></section>
+<section class="global-section"><h2>Tre scenarioer</h2><p>Akselerasjon gir rask kapasitetsvekst og høy risiko for divergens. Friksjon gir blokker, eksportregler og ujevn tilgang. Deling krever at tilgang, investeringer og gevinster spres bredt nok til at utviklingsstigen ikke trekkes opp.</p></section>
+            </div>
+            <section class="source-box">
+              <p>Kilder: IMFs arbeid om AI-eksponering og AIPI, NBER om tidlig avindustrialisering og Kina-sjokket, IEA om energi og AI samt Federal Register/AP om AI Diffusion Rule.</p>
+            </section>
+          </main>
+          <footer class="site-footer"><p>© 2026 Rolf Skogling · <a href="/no/index.html">AI-skiftet</a> · <a href="/no/kallor.html">Kilder</a></p></footer>
+          <script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
+          <script>
+            const REGIONS = [{"key": "nordics", "lat": 62, "lng": 15, "exp": 60, "prep": 0.75, "damp": 0.9, "demo": 0.15, "col": "#2e7d32", "n": "Norden", "f": "Høy eksponering, men sterk støtdemping. AI erstatter delvis en krympende arbeidsstyrke.", "s": "Lav"}, {"key": "advanced_east_asia", "lat": 36, "lng": 138, "exp": 55, "prep": 0.78, "damp": 0.45, "demo": 0.1, "col": "#43a047", "n": "Avansert Øst-Asia", "f": "Japan, Korea og Singapore har høy kapasitet, men tynnere sosial pute enn Norden.", "s": "Lav–moderat"}, {"key": "continental_europe", "lat": 51, "lng": 10, "exp": 60, "prep": 0.7, "damp": 0.7, "demo": 0.15, "col": "#fdd835", "n": "Kontinental-Europa", "f": "Sterkt stillingsvern og industripolitikk gir tid, men kan også gjøre strukturskifter trege.", "s": "Moderat"}, {"key": "anglosphere", "lat": 39, "lng": -98, "exp": 60, "prep": 0.77, "damp": 0.22, "demo": 0.3, "col": "#fb8c00", "n": "Anglosfæren", "f": "Høy oppsidekapasitet, men tynnere nett og arbeid-som-identitet gjør sjokket politisk følsomt.", "s": "Moderat–høy"}, {"key": "china", "lat": 35, "lng": 104, "exp": 42, "prep": 0.64, "damp": 0.3, "demo": 0.25, "col": "#fb8c00", "n": "Kina", "f": "Automatisering kan dempe demografisk krymping, men beskyttelsen er ujevn og politisk styrt.", "s": "Moderat–høy"}, {"key": "latin_america", "lat": -10, "lng": -55, "exp": 40, "prep": 0.5, "damp": 0.42, "demo": 0.45, "col": "#f4511e", "n": "Latin-Amerika", "f": "Informalitet og tidlig avindustrialisering svekker både beskyttelse og utviklingsvei.", "s": "Høy"}, {"key": "south_asia_bangladesh", "lat": 23.7, "lng": 90.4, "exp": 40, "prep": 0.38, "damp": 0.3, "demo": 0.55, "col": "#f4511e", "n": "Bangladesh / eksport-Asia", "f": "Kleseksporten er en viktig stige inn i formelt arbeid, men automatisering og handel kan tynne ut jobbinnholdet.", "s": "Høy"}, {"key": "india", "lat": 22, "lng": 79, "exp": 40, "prep": 0.49, "damp": 0.25, "demo": 0.7, "col": "#d32f2f", "n": "Sør-Asia / India", "f": "Tjenestestigen er særlig viktig og særlig eksponert når enklere kunnskapsarbeid automatiseres.", "s": "Svært høy"}, {"key": "mena_gulf", "lat": 24, "lng": 45, "exp": 45, "prep": 0.55, "damp": 0.4, "demo": 0.75, "col": "#f4511e", "n": "MENA / Gulf", "f": "AI, ungdomstrykk og energiomstilling møtes i samme samfunnskontrakt.", "s": "Høy"}, {"key": "sub_saharan_africa", "lat": 9, "lng": 8, "exp": 26, "prep": 0.32, "damp": 0.2, "demo": 0.95, "col": "#b71c1c", "n": "Afrika sør for Sahara", "f": "Lavest direkte eksponering, men høyest systemrisiko: mange unge trenger jobber når utviklingsstigene tynnes ut.", "s": "Systemisk"}];
+            const METRIC_LABELS = {"exp": "Eksponering", "prep": "Oppsidefangst (AIPI)", "damp": "Sosial støtdemping", "demo": "Ungdoms-/veksttrykk"};
+            const METRICS = {
+              exp: {get:d=>d.exp/100, fmt:d=>d.exp+"%"},
+              prep: {get:d=>d.prep, fmt:d=>d.prep.toFixed(2)},
+              damp: {get:d=>d.damp, fmt:d=>Math.round(d.damp*100)+"/100"},
+              demo: {get:d=>d.demo, fmt:d=>Math.round(d.demo*100)+"/100"}
+            };
+            let current = "exp";
+            const globeEl = document.getElementById("global-globe");
+            const card = document.getElementById("region-card");
+            const world = Globe()(globeEl)
+              .globeImageUrl("https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg")
+              .backgroundColor("#0b1020")
+              .pointsData(REGIONS)
+              .pointLat("lat")
+              .pointLng("lng")
+              .pointColor("col")
+              .pointRadius(0.72)
+              .pointAltitude(d => 0.06 + METRICS[current].get(d) * 0.9)
+              .pointLabel(d => `<b>${d.n}</b><br>${METRIC_LABELS[current]}: ${METRICS[current].fmt(d)}`)
+              .onPointClick(showCard);
+            function setGlobeSize(){ world.width(globeEl.clientWidth).height(globeEl.clientHeight); }
+            setGlobeSize();
+            requestAnimationFrame(setGlobeSize);
+            world.controls().autoRotate = true;
+            world.controls().autoRotateSpeed = 0.45;
+            function refresh(){ world.pointAltitude(d => 0.06 + METRICS[current].get(d) * 0.9); }
+            const controls = document.getElementById("globe-controls");
+            Object.keys(METRICS).forEach(key => {
+              const button = document.createElement("button");
+              button.textContent = METRIC_LABELS[key];
+              button.dataset.key = key;
+              if (key === current) button.classList.add("active");
+              button.addEventListener("click", () => {
+                current = key;
+                refresh();
+                [...controls.children].forEach(child => child.classList.toggle("active", child.dataset.key === key));
+              });
+              controls.appendChild(button);
+            });
+            const legend = [["#2e7d32","Lav"],["#fdd835","Moderat"],["#fb8c00","Moderat–høy"],["#f4511e","Høy"],["#d32f2f","Svært høy"],["#b71c1c","Systemisk"]];
+            document.getElementById("globe-legend").innerHTML = "<strong>Sårbarhet ved raskt sjokk</strong>" + legend.map(([color,text]) => `<div class="row"><i style="background:${color}"></i>${text}</div>`).join("");
+            function showCard(d){
+              card.innerHTML = `<h2>${d.n}</h2>
+                <div class="metric"><span>${METRIC_LABELS.exp}</span><span>${d.exp}%</span></div>
+                <div class="metric"><span>${METRIC_LABELS.prep}</span><span>${d.prep.toFixed(2)}</span></div>
+                <div class="metric"><span>${METRIC_LABELS.damp}</span><span>${Math.round(d.damp*100)}/100</span></div>
+                <div class="metric"><span>${METRIC_LABELS.demo}</span><span>${Math.round(d.demo*100)}/100</span></div>
+                <div class="metric"><span>Sårbarhet ved raskt sjokk</span><span>${d.s}</span></div>
+                <p>${d.f}</p>
+                <button type="button">Lukk</button>`;
+              card.style.display = "block";
+              card.querySelector("button").addEventListener("click", () => card.style.display = "none");
+              world.controls().autoRotate = false;
+            }
+            window.addEventListener("resize", setGlobeSize);
+          </script>
+          <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+        </body>
+        </html>
