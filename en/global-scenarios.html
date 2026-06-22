@@ -113,7 +113,7 @@
               <div class="chart-head">
                 <div>
                   <h2>The uneven transition</h2>
-                  <p>Bars show the selected axis · colour = vulnerability under a fast AI shock · switch axis with the buttons.</p>
+                  <p>Bars, colour and label follow the selected axis. Green means lower pressure or stronger capacity; red means higher pressure or weaker capacity.</p>
                 </div>
                 <div class="chart-legend" id="chart-legend"></div>
               </div>
@@ -135,11 +135,27 @@
           <script>
             const REGIONS = [{"key": "nordics", "lat": 62, "lng": 15, "exp": 60, "prep": 0.75, "damp": 0.9, "demo": 0.15, "col": "#2e7d32", "n": "Nordics", "f": "High exposure but strong shock absorption. AI partly replaces a shrinking workforce.", "s": "Low"}, {"key": "advanced_east_asia", "lat": 36, "lng": 138, "exp": 55, "prep": 0.78, "damp": 0.45, "demo": 0.1, "col": "#43a047", "n": "Advanced East Asia", "f": "Japan, Korea and Singapore have high capacity but thinner social cushioning than the Nordics.", "s": "Low–moderate"}, {"key": "continental_europe", "lat": 51, "lng": 10, "exp": 60, "prep": 0.7, "damp": 0.7, "demo": 0.15, "col": "#fdd835", "n": "Continental Europe", "f": "Strong job protection and industrial policy buy time, but can also slow structural shifts.", "s": "Moderate"}, {"key": "anglosphere", "lat": 39, "lng": -98, "exp": 60, "prep": 0.77, "damp": 0.22, "demo": 0.3, "col": "#fb8c00", "n": "Anglosphere", "f": "High upside capacity, but thinner safety nets and work-as-identity make the shock politically sensitive.", "s": "Moderate–high"}, {"key": "china", "lat": 35, "lng": 104, "exp": 42, "prep": 0.64, "damp": 0.3, "demo": 0.25, "col": "#fb8c00", "n": "China", "f": "Automation can soften demographic decline, but protection is uneven and politically mediated.", "s": "Moderate–high"}, {"key": "latin_america", "lat": -10, "lng": -55, "exp": 40, "prep": 0.5, "damp": 0.42, "demo": 0.45, "col": "#f4511e", "n": "Latin America", "f": "Informality and premature deindustrialisation weaken both protection and development paths.", "s": "High"}, {"key": "south_asia_bangladesh", "lat": 23.7, "lng": 90.4, "exp": 40, "prep": 0.38, "damp": 0.3, "demo": 0.55, "col": "#f4511e", "n": "Bangladesh / export Asia", "f": "Garments are an important ladder into formal work, but automation and trade shifts can thin the job content.", "s": "High"}, {"key": "india", "lat": 22, "lng": 79, "exp": 40, "prep": 0.49, "damp": 0.25, "demo": 0.7, "col": "#d32f2f", "n": "South Asia / India", "f": "The service ladder is especially important and especially exposed as routine knowledge work is automated.", "s": "Very high"}, {"key": "mena_gulf", "lat": 24, "lng": 45, "exp": 45, "prep": 0.55, "damp": 0.4, "demo": 0.75, "col": "#f4511e", "n": "MENA / Gulf", "f": "AI, youth pressure and the energy transition meet inside the same social contract.", "s": "High"}, {"key": "sub_saharan_africa", "lat": 9, "lng": 8, "exp": 26, "prep": 0.32, "damp": 0.2, "demo": 0.95, "col": "#b71c1c", "n": "Sub-Saharan Africa", "f": "Lowest direct exposure but highest systemic risk: many young people need jobs as development ladders thin out.", "s": "Systemic"}];
             const METRIC_LABELS = {"exp": "Exposure", "prep": "Upside capture (AIPI)", "damp": "Social shock absorption", "demo": "Youth/growth pressure"};
+            const LEVEL_LABELS = {"low": "Low", "moderate": "Moderate", "moderateHigh": "Moderate–high", "high": "High", "veryHigh": "Very high"};
+            const LEVEL_KEYS = ["low", "moderate", "moderateHigh", "high", "veryHigh"];
+            const PRESSURE_COLORS = {
+              low:"#2e7d32",
+              moderate:"#fdd835",
+              moderateHigh:"#fb8c00",
+              high:"#f4511e",
+              veryHigh:"#d32f2f"
+            };
+            const CAPACITY_COLORS = {
+              low:"#d32f2f",
+              moderate:"#f4511e",
+              moderateHigh:"#fdd835",
+              high:"#43a047",
+              veryHigh:"#2e7d32"
+            };
             const METRICS = {
-              exp: {get:d=>d.exp/100, fmt:d=>d.exp+"%"},
-              prep: {get:d=>d.prep, fmt:d=>d.prep.toFixed(2)},
-              damp: {get:d=>d.damp, fmt:d=>Math.round(d.damp*100)+"/100"},
-              demo: {get:d=>d.demo, fmt:d=>Math.round(d.demo*100)+"/100"}
+              exp: {get:d=>d.exp/100, fmt:d=>d.exp+"%", direction:"pressure"},
+              prep: {get:d=>d.prep, fmt:d=>d.prep.toFixed(2), direction:"capacity"},
+              damp: {get:d=>d.damp, fmt:d=>Math.round(d.damp*100)+"/100", direction:"capacity"},
+              demo: {get:d=>d.demo, fmt:d=>Math.round(d.demo*100)+"/100", direction:"pressure"}
             };
             let current = "exp";
             const chart = document.getElementById("bar-chart");
@@ -151,15 +167,28 @@
             function setDetail(d){
               detail.innerHTML = `<h3>${d.n}</h3><p>${d.f}</p>`;
             }
+            function levelKey(value){
+              if (value < 0.35) return "low";
+              if (value < 0.50) return "moderate";
+              if (value < 0.65) return "moderateHigh";
+              if (value < 0.80) return "high";
+              return "veryHigh";
+            }
+            function tierFor(value){
+              const key = levelKey(value);
+              const colors = METRICS[current].direction === "capacity" ? CAPACITY_COLORS : PRESSURE_COLORS;
+              return { key, label: LEVEL_LABELS[key], color: colors[key] };
+            }
             function renderChart(){
               const rows = sortedRegions();
               chart.innerHTML = rows.map(d => {
                 const value = METRICS[current].get(d);
                 const pct = Math.max(2, Math.round(value * 100));
                 const label = METRICS[current].fmt(d);
-                return `<button class="chart-row" type="button" data-key="${d.key}" aria-label="${d.n}: ${METRIC_LABELS[current]} ${label}, Vulnerability under fast shock ${d.s}">
-                  <span class="chart-label"><span class="chart-region">${d.n}</span><span class="chart-risk" style="border-color:${d.col}">${d.s}</span></span>
-                  <span class="chart-track"><span class="chart-bar" style="width:${pct}%;background:${d.col}"></span></span>
+                const tier = tierFor(value);
+                return `<button class="chart-row" type="button" data-key="${d.key}" aria-label="${d.n}: ${METRIC_LABELS[current]} ${label}, Selected-axis level ${tier.label}">
+                  <span class="chart-label"><span class="chart-region">${d.n}</span><span class="chart-risk" style="border-color:${tier.color};color:${tier.color}">${tier.label}</span></span>
+                  <span class="chart-track"><span class="chart-bar" style="width:${pct}%;background:${tier.color}"></span></span>
                   <span class="chart-value">${label}</span>
                 </button>`;
               }).join("");
@@ -170,6 +199,11 @@
                 });
               });
               if (rows[0]) setDetail(rows[0]);
+              renderLegend();
+            }
+            function renderLegend(){
+              const colors = METRICS[current].direction === "capacity" ? CAPACITY_COLORS : PRESSURE_COLORS;
+              document.getElementById("chart-legend").innerHTML = "<strong>Selected-axis level</strong>" + LEVEL_KEYS.map(key => `<span class="row"><i style="background:${colors[key]}"></i>${LEVEL_LABELS[key]}</span>`).join("");
             }
             Object.keys(METRICS).forEach(key => {
               const button = document.createElement("button");
@@ -183,8 +217,6 @@
               });
               controls.appendChild(button);
             });
-            const legend = [["#2e7d32","Low"],["#fdd835","Moderate"],["#fb8c00","Moderate–high"],["#f4511e","High"],["#d32f2f","Very high"],["#b71c1c","Systemic"]];
-            document.getElementById("chart-legend").innerHTML = "<strong>Vulnerability under fast shock</strong>" + legend.map(([color,text]) => `<span class="row"><i style="background:${color}"></i>${text}</span>`).join("");
             renderChart();
           </script>
           <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
