@@ -39,7 +39,9 @@
 @media(max-width:768px){
   .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
   .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
-  .site-nav__links.active .nav-submenu__links{display:flex;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
   .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
 }
   .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
@@ -150,5 +152,20 @@
           </div>
         </footer>
             <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-        </body>
+        <script>
+  /* nav-submenu-script */
+  document.addEventListener("click", function(event) {
+    var toggle = event.target.closest(".nav-toggle");
+    if (!toggle) return;
+    var nav = toggle.closest(".site-nav");
+    var links = nav ? nav.querySelector(".site-nav__links") : document.querySelector(".site-nav__links");
+    if (!links) return;
+    links.querySelectorAll(".nav-submenu.open").forEach(function(item) {
+      item.classList.remove("open");
+      var button = item.querySelector(".nav-submenu__toggle");
+      if (button) button.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+</body>
         </html>
