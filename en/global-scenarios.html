@@ -20,6 +20,21 @@
             .site-logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.15rem;text-decoration:none}
             .site-nav{display:flex;align-items:center;gap:1.4rem;font-size:.9rem;flex-wrap:wrap}
             .site-nav a{color:var(--muted);text-decoration:none;font-weight:500}.site-nav a:hover,.site-nav a.active{color:var(--accent)}
+            /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:flex;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
             .lang-switch{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
             .lang-switch a{padding:4px 8px;border-radius:4px;color:var(--muted);text-decoration:none}.lang-switch a.current{background:var(--accent);color:#fff}
             .hero,.global-main{max-width:1040px;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem}
@@ -53,8 +68,13 @@
               <nav class="site-nav">
                 <a href="/en/index.html#news">News</a>
                 <a href="/en/essays.html">Essays</a>
-                <a href="/en/framtidsscenarier.html">Swedish scenarios</a>
-                <a href="/en/global-scenarios.html" class="active">Global</a>
+                <div class="nav-submenu nav-submenu--active">
+  <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarios</button>
+  <div class="nav-submenu__links">
+    <a href="/en/framtidsscenarier.html">Swedish scenarios</a>
+    <a href="/en/global-scenarios.html" class="active">Global</a>
+  </div>
+</div>
                 <a href="/en/kallor.html">Sources</a>
                 <div class="lang-switch">
                   <a href="https://ai-skiftet.se/globala-scenarier.html" >SV</a>
