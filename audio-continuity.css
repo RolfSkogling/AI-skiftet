@@ -1,0 +1,132 @@
+.audio-continuity {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  z-index: 2147483000;
+  display: none;
+  color: #1f2933;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(140, 74, 31, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 18px 48px rgba(31, 41, 51, 0.22);
+  backdrop-filter: blur(14px);
+}
+
+.audio-continuity.is-visible {
+  display: block;
+}
+
+.audio-continuity__inner {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(260px, 520px) auto;
+  gap: 14px;
+  align-items: center;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 12px 14px;
+}
+
+.audio-continuity__meta {
+  min-width: 0;
+}
+
+.audio-continuity__eyebrow {
+  color: #8c4a1f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.audio-continuity__title {
+  overflow: hidden;
+  margin-top: 3px;
+  color: #1b1b1b;
+  font-size: 0.96rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.audio-continuity__note {
+  overflow: hidden;
+  margin-top: 2px;
+  color: #5f6c7b;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.audio-continuity__audio {
+  width: 100%;
+  min-width: 0;
+}
+
+.audio-continuity__close {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(140, 74, 31, 0.22);
+  border-radius: 8px;
+  color: #5f6c7b;
+  background: #fbf8f4;
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.audio-continuity__close:hover,
+.audio-continuity__close:focus-visible {
+  color: #fff;
+  background: #8c4a1f;
+  outline: none;
+}
+
+body.audio-continuity-active {
+  padding-bottom: 112px;
+}
+
+@media (max-width: 760px) {
+  .audio-continuity {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+  }
+
+  .audio-continuity__inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 10px;
+    padding: 10px;
+  }
+
+  .audio-continuity__audio {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .audio-continuity__title,
+  .audio-continuity__note {
+    white-space: normal;
+  }
+
+  body.audio-continuity-active {
+    padding-bottom: 158px;
+  }
+}
+
+@media print {
+  .audio-continuity {
+    display: none !important;
+  }
+
+  body.audio-continuity-active {
+    padding-bottom: 0;
+  }
+}
