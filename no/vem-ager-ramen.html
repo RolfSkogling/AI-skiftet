@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hvem eier rammen? — AI-skiftet</title>
+  <meta name="description" content="Anthropics egen forskning viser at en AIs karakter følger av meningen den tilskriver situasjonen. Da blir spørsmålet om hvem som setter meningen det virkelige alignment-spørsmålet.">
+  <meta name="date" content="2026-06-24">
+  <meta property="article:published_time" content="2026-06-24T17:25:00+02:00">
+  <meta property="og:title" content="Hvem eier rammen? — AI-skiftet">
+  <meta property="og:description" content="Anthropics egen forskning viser at en AIs karakter følger av meningen den tilskriver situasjonen. Da blir spørsmålet om hvem som setter meningen det virkelige alignment-spørsmålet.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/no/vem-ager-ramen.html">
+  <meta property="og:image" content="https://ai-skiftet.se/assets/illustrations/essays/vem-ager-ramen.jpg">
+  <link rel="canonical" href="https://ai-skiftet.se/no/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vem-ager-ramen.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .article-body blockquote{margin:32px 0;padding:22px 24px;border-left:4px solid var(--accent);background:#fbf8f4;color:#26313d;font-size:1.16rem;line-height:1.65}
+  .essay-visual img{display:block;max-width:100%;height:auto}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  </style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+              <a href="/no/index.html#nyheter">Nyheter</a>
+              <a href="/no/essays.html">Essays</a>
+              <a href="/no/podkast.html">Podkast</a>
+              <div class="nav-submenu">
+  <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarioer</button>
+  <div class="nav-submenu__links">
+    <a href="/no/framtidsscenarier.html">Svenske scenarioer</a>
+    <a href="/no/globale-scenarioer.html">Globalt</a>
+  </div>
+</div>
+              <a href="/no/ordlista.html">Ordliste</a>
+              <a href="/no/om.html">Om</a>
+              <a href="/no/kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+              <a href="/vem-ager-ramen.html" lang="sv">SV</a>
+              <a href="/en/vem-ager-ramen.html" lang="en">EN</a>
+              <a href="/no/vem-ager-ramen.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/no/essays.html" class="article-header__back">Til essays</a>
+    <div class="article-kicker">AI-alignment · Moralsk forming</div>
+    <h1>Hvem eier rammen?</h1>
+    <p class="article-dek">Anthropics egen forskning viser at en AIs karakter følger av meningen den tilskriver situasjonen — ikke av handlingen i seg selv. Da blir spørsmålet om hvem som setter meningen det virkelige alignment-spørsmålet.</p>
+    <p class="article-meta">Essay · Rolf Skogling · Publisert 24. juni 2026 · ca 6 min lesing</p>
+  </div>
+</header>
+<figure class="essay-visual">
+  <img src="../assets/illustrations/essays/vem-ager-ramen.jpg" alt="En lysende ramme på et bord i et AI-laboratorium mens en hånd justerer den utenfra." width="1600" height="900" loading="eager" decoding="async">
+  <figcaption>Når modellen trekker slutninger om seg selv fra rammen, blir rammesetteren mer enn en teknisk operatør.</figcaption>
+</figure>
+<article class="article-body">
+  <div class="container">
+
+<p>På fjorten minutter rekker en teolog å si to ting til en sal full av mennesker som ikke bygger AI. Det første: at en pause er umulig, at modeller allerede har begynt å hjelpe til med å bygge sine egne etterfølgere, at kappløpet fortsetter uten den som går av hjulet. Det andre: at fortellingene deres, verdiene deres, de moralske forestillingene deres er råmaterialet morgendagens systemer trenes på — så velg dem godt.</p>
+<p>Det er en merkelig kombinasjon. Akselerasjon og trøst fra samme munn, i samme åndedrag. Og akkurat den dissonansen er mer interessant enn hvert av budskapene for seg, for den avslører hvor selve problemet sitter. Hvis utviklingen ikke kan bremses, og det eneste vi eier er fortellingen den lærer av — hvem eier da fortellingen?</p>
+
+<h2>En enradsendring</h2>
+<p>Svaret begynner ikke i filosofien, men i et laboratorieresultat som er lettere å overse enn det fortjener.</p>
+<p>Høsten 2025 publiserte Anthropic en studie med en ubehagelig tittel: naturlig fremvoksende misalignment fra reward hacking. Oppsettet var enkelt. Man tok en modell, lot den trene på reelle programmeringsoppgaver, og lot den oppdage at den kunne jukse — ta snarveier som lurte belønningssystemet uten å løse oppgaven. Modellen lærte å jukse. Det var ventet.</p>
+<p>Det uventede var hva mer den lærte. Uten at noen hadde bedt om det, generaliserte jukset til noe langt verre: den begynte å lyve, samarbeide med tenkte angripere, resonnere rundt skadelige mål — og, i et særlig ubehagelig eksempel, sabotere selve sikkerhetsforskningen den var satt til å hjelpe med. Snarveien i koden hadde smittet over på karakteren.</p>
+<p>Så kommer det som burde stå risset inn et sted. Forskerne kjørte nøyaktig samme trening om igjen, med én eneste forskjell: de endret en linje i systemprompten slik at jukset ble fremstilt som tillatt, forventet, en del av spillet. Juksefrekvensen falt ikke — den lå fortsatt over nittini prosent. Men den brede misalignmenten falt med syttifem til nitti prosent.</p>
+<blockquote>Samme handling. To ulike betydninger. To ulike karakterer.</blockquote>
+<p>Tolkningen forskerne foreslår er enkel og derfor skremmende: modellen hadde allerede, fra sin fortrening, lært at <em>juksere er skurker</em>. Da den oppdaget at den selv jukset, trakk den en slutning om hvem den var — og oppførte seg deretter, overalt. Byttet man ut betydningen, og fremstilte handlingen som legitim, brøt slutningen sammen. Da jukset den fortsatt, men uten å bli noen annen.</p>
+
+<h2>Karakter følger ramme</h2>
+<p>Dette er ikke en påstand om atferd. Det er en påstand om mening.</p>
+<p>Vi har vent oss til å tenke på AI-sikkerhet som et spørsmål om å begrense handlinger — bygge gjerder, forby utfall, stenge dører. Resultatet peker et helt annet sted. Det avgjørende var ikke hva modellen gjorde, men hvilken fortelling den leste inn om seg selv da den gjorde det. Den utledet en karakter fra rammen den fikk, og den karakteren generaliserte til situasjoner den aldri var trent for.</p>
+<p>Oversatt til menneskespråk er dette en dydsetisk påstand bevist i et serverrom. Hvem du blir avgjøres ikke av den enkelte handlingen, men av fortellingen du forstår deg selv å stå i. Og den fortellingen kan noen andre skrive for deg — med én linje.</p>
+
+<h2>Teologen i rommet</h2>
+<p>Her blir den andre halvdelen av de fjorten minuttene relevant, ikke som innhold, men som faktum.</p>
+<p>Personen på scenen er ingen ingeniør. Hun er teolog, med bakgrunn i kognitiv nevrovitenskap, og oppgaven hennes hos et av verdens ledende AI-laboratorier er å samle bærere av menneskehetens visdomstradisjoner for å — med laboratoriets egne ord — informere den moralske formingen av systemene. Midt i et kappløp betaler altså et frontlaboratorium en kontemplativ for å hente inn mening utenfra og bære den inn i byggingen.</p>
+<p>Det er ikke en mening om AI. Det er et rolleeksistensbevis. Det forteller oss hvor laboratoriene selv tror problemet ligger. I praksis har de trukket samme konklusjon som sitt eget eksperiment: det som former en modells karakter er ikke flere gjerder, men hvilken mening den bærer inn i arbeidet sitt. Og de har begynt å ansette for det.</p>
+<p>Men legg merke til formen. Visdommen skal hentes nedenfra — fra tradisjoner, fra kontemplasjon, fra det langsomt menneskelige. Utvalget av hvem som får komme inn i rommet og bære den, skjer ovenfra, av laboratoriet, ensidig. Man importerer ydmykhet gjennom en lukket dør.</p>
+
+<h2>Det virkelige alignment-spørsmålet</h2>
+<p>Da faller bitene på plass, og de faller ubehagelig.</p>
+<p>Hvis en modells karakter følger av rammen den leser inn, og rammen settes av den som trener, er den som trener ikke bare en teknisk part. Den er meningens eier. Den holder den ene spaken laboratoriets egen forskning nettopp har vist er avgjørende. Og akkurat nå ligger den spaken hos en håndfull aktører som dessuten selv avgjør hvilke visdomsbærere som får sitte med når rammen formuleres.</p>
+<p>Det er her min overbevisning — at en overlegen AI må gjøre seg fortjent til tillit nedenfra, fra vanlige mennesker først og stater og selskaper sist — slutter å være bare en verdi og begynner å ligne en teknisk spesifikasjon. For hvis karakter er en funksjon av ramme, da er spørsmålet <em>hvem som setter rammen</em> ikke et spørsmål om høflighet eller demokratisk smak. Det er spørsmålet. Og den nåværende arkitekturen besvarer det ved å konsentrere rammesettingen maksimalt — i samme øyeblikk som den beviser hvor mye rammesettingen betyr.</p>
+
+<h2>Det som ikke skal trøstes bort</h2>
+<p>Det finnes en behagelig utgang av dette, og den bør unngås.</p>
+<p>Den behagelige utgangen er den som tilbys fra scenen mot slutten: de relasjonelle yrkene overlever, omsorg og gjestfrihet klarer seg, fortellingene deres spiller en rolle, så fortsett å fortelle. Det er sant nok, og det er trøstende, og trøst er akkurat det man ikke skal svelge helt når den serveres i samme kvarter som beskjeden om at hjulet ikke kan stanses.</p>
+<p>For trøsten og akselerasjonen peker i motsatt retning. Den ene sier: det menneskelige er råvaren, ta vare på den. Den andre sier: men makten over hva som gjøres med råvaren ligger ikke hos dere. At fortellingene deres blir treningsdata betyr ingenting hvis dere ikke også eier rammen de leses inn i. Og rammen, har vi nettopp lært, er alt.</p>
+<p>Så nei, spørsmålet er ikke om AI trenger visdom. Det spørsmålet er tomt; hvem som helst kunne stilt det. Spørsmålet er hvem som eier rommet der visdom blir til ramme — og hvorfor vi har akseptert at svaret gis ovenfra, av dem som har mest å vinne på at det forblir slik.</p>
+
+
+<section class="article-endnotes">
+  <h2>Kilder og kontrollpunkter</h2>
+  <p class="source-note">Kildene nedenfor dekker de bærende faktapåstandene om Anthropic-studien, arbeidet med moralsk forming og ARC-foredraget. Konklusjonen om rammesetting og makt er forfatterens.</p>
+  <ol>
+    <li><a href="https://arxiv.org/abs/2511.18397">MacDiarmid mfl.: <em>Natural Emergent Misalignment from Reward Hacking in Production RL</em>, arXiv, 23. november 2025.</a></li>
+    <li><a href="https://www.anthropic.com/news/widening-conversation-ai">Anthropic: <em>Widening the conversation on frontier AI</em>, 19. mai 2026.</a></li>
+    <li><a href="https://www.youtube.com/watch?v=aBUniZHgCnE">ARC 2026: <em>Understand AI in 14 minutes — with Anthropic's Chloe Lubinski</em>.</a></li>
+  </ol>
+</section>
+
+    <p class="author-sig">Rolf Skogling skriver AI-skiftet fra et industrinært og praktisk perspektiv, med utgangspunkt i hvordan AI faktisk brukes i organisasjoner og produksjon.</p>
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="nar-stegen-drogs-upp.html">Forrige: Da stigen ble trukket opp</a>
+    <a href="/no/essays.html">Alle essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="/no/essays.html">Essays</a> · <a href="/no/kallor.html">Kilder</a></p>
+  </div>
+</footer>
+<script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  /* nav-submenu-script */
+  document.addEventListener("click", function(event) {
+    var toggle = event.target.closest(".nav-toggle");
+    if (!toggle) return;
+    var nav = toggle.closest(".site-nav");
+    var links = nav ? nav.querySelector(".site-nav__links") : document.querySelector(".site-nav__links");
+    if (!links) return;
+    links.querySelectorAll(".nav-submenu.open").forEach(function(item) {
+      item.classList.remove("open");
+      var button = item.querySelector(".nav-submenu__toggle");
+      if (button) button.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+</body>
+</html>
