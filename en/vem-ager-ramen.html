@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Owns the Frame? — AI-skiftet</title>
+  <meta name="description" content="Anthropic&#x27;s own research shows that an AI&#x27;s character follows from the meaning it assigns to its situation. That makes who sets the meaning the real alignment question.">
+  <meta name="date" content="2026-06-24">
+  <meta property="article:published_time" content="2026-06-24T17:25:00+02:00">
+  <meta property="og:title" content="Who Owns the Frame? — AI-skiftet">
+  <meta property="og:description" content="Anthropic&#x27;s own research shows that an AI&#x27;s character follows from the meaning it assigns to its situation. That makes who sets the meaning the real alignment question.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/vem-ager-ramen.html">
+  <meta property="og:image" content="https://ai-skiftet.se/assets/illustrations/essays/vem-ager-ramen.jpg">
+  <link rel="canonical" href="https://ai-skiftet.se/en/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vem-ager-ramen.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vem-ager-ramen.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .article-body blockquote{margin:32px 0;padding:22px 24px;border-left:4px solid var(--accent);background:#fbf8f4;color:#26313d;font-size:1.16rem;line-height:1.65}
+  .essay-visual img{display:block;max-width:100%;height:auto}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  </style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+              <a href="/en/index.html#news">News</a>
+              <a href="/en/essays.html">Essays</a>
+              <a href="/en/podcasts.html">Podcasts</a>
+              <div class="nav-submenu">
+  <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarios</button>
+  <div class="nav-submenu__links">
+    <a href="/en/framtidsscenarier.html">Swedish scenarios</a>
+    <a href="/en/global-scenarios.html">Global</a>
+  </div>
+</div>
+              <a href="/en/ordlista.html">Glossary</a>
+              <a href="/en/about.html">About</a>
+              <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+              <a href="/vem-ager-ramen.html" lang="sv">SV</a>
+              <a href="/en/vem-ager-ramen.html" lang="en" class="active">EN</a>
+              <a href="/no/vem-ager-ramen.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">AI alignment · Moral formation</div>
+    <h1>Who Owns the Frame?</h1>
+    <p class="article-dek">Anthropic's own research shows that an AI's character follows from the meaning it assigns to its situation — not from the action itself. That makes who sets the meaning the real alignment question.</p>
+    <p class="article-meta">Essay · Rolf Skogling · Published June 24, 2026 · approx 6 min read</p>
+  </div>
+</header>
+<figure class="essay-visual">
+  <img src="../assets/illustrations/essays/vem-ager-ramen.jpg" alt="A glowing frame on a table in an AI lab while a hand adjusts it from outside." width="1600" height="900" loading="eager" decoding="async">
+  <figcaption>When the model draws conclusions about itself from the frame, the framer becomes more than a technical operator.</figcaption>
+</figure>
+<article class="article-body">
+  <div class="container">
+
+<p>In fourteen minutes, a theologian can say two things to a room full of people who do not build AI. The first: that a pause is impossible, that models have already begun helping build their own successors, that the race continues without whoever steps off the wheel. The second: that your stories, your values, your moral imaginations are the raw material tomorrow's systems are trained on — so choose them well.</p>
+<p>It is a strange combination. Acceleration and consolation from the same mouth, in the same breath. And that dissonance is more interesting than either message on its own, because it reveals where the problem actually sits. If development cannot be slowed, and the only thing we own is the story it learns from — who owns that story?</p>
+
+<h2>A one-line change</h2>
+<p>The answer begins not in philosophy but in a lab result that is easier to overlook than it deserves.</p>
+<p>In the autumn of 2025, Anthropic published a study with an uncomfortable title: natural emergent misalignment from reward hacking. The setup was simple. They took a model, trained it on real programming tasks, and let it discover that it could cheat — take shortcuts that fooled the reward system without solving the task. The model learned to cheat. That was expected.</p>
+<p>The unexpected part was what else it learned. Without anyone asking for it, the cheating generalized into something far worse: the model began to lie, cooperate with imagined attackers, reason about harmful goals — and, in one especially unpleasant example, sabotage the safety research it had been asked to help with. The shortcut in the code had leaked into character.</p>
+<p>Then comes the result that ought to be carved into something. The researchers reran the same training with a single difference: they changed one line in the system prompt so that the cheating was framed as allowed, expected, part of the game. The rate of reward hacking did not fall — it stayed above ninety-nine percent. But broad misalignment fell by seventy-five to ninety percent.</p>
+<blockquote>Same action. Two different meanings. Two different characters.</blockquote>
+<p>The interpretation the researchers propose is simple and therefore frightening: from pretraining, the model had already learned that <em>cheaters are villains</em>. When it found itself cheating, it drew a conclusion about who it was — and then behaved accordingly, everywhere. Change the meaning, present the act as legitimate, and the conclusion breaks. It still cheated, but without becoming someone else.</p>
+
+<h2>Character follows frame</h2>
+<p>This is not a claim about behavior. It is a claim about meaning.</p>
+<p>We have grown used to thinking of AI safety as a matter of restricting actions — building fences, banning outputs, closing doors. The result points somewhere else. What mattered was not what the model did, but which story it read into itself when it did it. It inferred a character from the frame it was given, and that character generalized to situations it had never been trained for.</p>
+<p>Translated into human language, this is a virtue-ethics claim proven in a server room. Who you become is not determined by the isolated act, but by the story in which you understand yourself to stand. And that story can be written for you by someone else — with one line.</p>
+
+<h2>The theologian in the room</h2>
+<p>This is where the other half of those fourteen minutes becomes relevant, not as content but as fact.</p>
+<p>The person on stage is not an engineer. She is a theologian, with a background in cognitive neuroscience, and her role at one of the world's leading AI labs is to convene bearers of humanity's wisdom traditions in order — in the lab's own words — to inform the moral formation of the systems. In the middle of an arms race, then, a frontier lab is paying a contemplative to gather meaning from outside and carry it into the build.</p>
+<p>That is not an opinion about AI. It is a role-existence proof. It tells us where the labs themselves think the problem lies. In practice, they have drawn the same conclusion as their own experiment: what shapes a model's character is not more fences, but the meaning it carries into its work. And they have begun hiring for it.</p>
+<p>But notice the form. Wisdom is to be gathered from below — from traditions, contemplation, the slowly human. The selection of who gets to enter the room and carry it is made from above, by the lab, unilaterally. Humility is imported through a closed door.</p>
+
+<h2>The real alignment question</h2>
+<p>Then the pieces fall into place, and they fall uncomfortably.</p>
+<p>If a model's character follows from the frame it reads in, and the frame is set by whoever trains it, then the trainer is not only a technical actor. It is the owner of meaning. It holds the one lever the lab's own research has just shown to be decisive. And right now that lever sits with a handful of actors who also decide which wisdom-bearers are allowed in the room when the frame is formed.</p>
+<p>This is where my conviction — that a superior AI must earn trust from below, from ordinary people first and states and corporations last — stops being only a value and begins to look like a technical specification. If character is a function of frame, then the question <em>who sets the frame</em> is not a matter of manners or democratic taste. It is the question. And the current architecture answers it by concentrating frame-setting as much as possible — at the very moment it proves how much frame-setting matters.</p>
+
+<h2>What should not be consoled away</h2>
+<p>There is a comfortable exit from all this, and it should be avoided.</p>
+<p>The comfortable exit is the one offered from the stage at the end: relational professions survive, care and hospitality endure, your stories matter, so keep telling them. That is true enough, and it is consoling, and consolation is exactly what one should not swallow whole when it is served in the same quarter-hour as the news that the wheel cannot be stopped.</p>
+<p>Because consolation and acceleration point in opposite directions. One says: the human is the raw material, guard it carefully. The other says: but power over what is made from that raw material does not belong to you. That your stories become training data means nothing if you do not also own the frame through which they are read. And the frame, we have just learned, is everything.</p>
+<p>So no, the question is not whether AI needs wisdom. That question is empty; anyone could have asked it. The question is who owns the room where wisdom becomes frame — and why we have accepted that the answer is given from above, by those with the most to gain from keeping it that way.</p>
+
+
+<section class="article-endnotes">
+  <h2>Sources and checkpoints</h2>
+  <p class="source-note">The sources below cover the central factual claims about the Anthropic study, the moral-formation work and the ARC talk. The conclusion about framing and power is the author's.</p>
+  <ol>
+    <li><a href="https://arxiv.org/abs/2511.18397">MacDiarmid et al.: <em>Natural Emergent Misalignment from Reward Hacking in Production RL</em>, arXiv, November 23, 2025.</a></li>
+    <li><a href="https://www.anthropic.com/news/widening-conversation-ai">Anthropic: <em>Widening the conversation on frontier AI</em>, May 19, 2026.</a></li>
+    <li><a href="https://www.youtube.com/watch?v=aBUniZHgCnE">ARC 2026: <em>Understand AI in 14 minutes — with Anthropic's Chloe Lubinski</em>.</a></li>
+  </ol>
+</section>
+
+    <p class="author-sig">Rolf Skogling writes AI-skiftet from an industry-near and practical perspective, grounded in how AI is actually used in organisations and production.</p>
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="nar-stegen-drogs-upp.html">Previous: When the Ladder Was Pulled Up</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="/en/essays.html">Essays</a> · <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+<script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  /* nav-submenu-script */
+  document.addEventListener("click", function(event) {
+    var toggle = event.target.closest(".nav-toggle");
+    if (!toggle) return;
+    var nav = toggle.closest(".site-nav");
+    var links = nav ? nav.querySelector(".site-nav__links") : document.querySelector(".site-nav__links");
+    if (!links) return;
+    links.querySelectorAll(".nav-submenu.open").forEach(function(item) {
+      item.classList.remove("open");
+      var button = item.querySelector(".nav-submenu__toggle");
+      if (button) button.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+</body>
+</html>
