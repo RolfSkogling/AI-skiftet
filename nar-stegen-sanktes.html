@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>När stegen sänktes — AI-skiftet</title>
+  <meta name="description" content="Kina svarar på exportregleringen genom att sänka mjukvarustegen: frontier-modeller som fri programvara. En essä om veckan i Shanghai, öppna vikter och vems stege som egentligen sänks.">
+  <meta name="date" content="2026-07-22">
+  <meta property="article:published_time" content="2026-07-22T09:00:00+02:00">
+  <meta property="og:title" content="När stegen sänktes — AI-skiftet">
+  <meta property="og:description" content="Kina svarar på exportregleringen genom att sänka mjukvarustegen. En essä om veckan i Shanghai och vems stege som egentligen sänks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/nar-stegen-sanktes.html">
+  <link rel="canonical" href="https://ai-skiftet.se/nar-stegen-sanktes.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/nar-stegen-sanktes.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/nar-stegen-sanktes.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/nar-stegen-sanktes.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/nar-stegen-sanktes.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}
+  .news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .news-audio__icon{font-size:1.5rem;line-height:1}
+  .news-audio__title{font-weight:700}
+  .news-audio__note{font-size:.8rem;color:var(--muted)}
+  .news-audio__player{width:100%}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/nar-stegen-sanktes.html" lang="sv" class="active">SV</a>
+      <a href="/en/nar-stegen-sanktes.html" lang="en">EN</a>
+      <a href="/no/nar-stegen-sanktes.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till essäer</a>
+    <div class="article-kicker">Global AI-geopolitik · Öppna vikter</div>
+    <h1>När stegen sänktes</h1>
+    <p class="article-dek"><em>eller: svaret från Shanghai.</em> Xi Jinping erbjuder öppen frontier till världen — och Kina svarar på exportregleringen genom att sänka mjukvarustegen. Men är stegen tillbaka, eller bara en annan hand som håller?</p>
+    <p class="article-meta">Essä · Rolf Skogling · Publicerad 22 juli 2026 · ca 12 min läsning</p>
+      <div class="news-audio" role="region" aria-label="Lyssna på essän">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna på essän</div><div class="news-audio__note">Engelsk uppläsning via Kokoro (bf_emma) · ca 13 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/nar-stegen-sanktes.m4a?v=2026-07-22" type="audio/mp4"></audio>
+      </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Shanghai, den 17 juli. Xi Jinping står på scenen vid World AI Conference — första gången han är där personligen sedan konferensen startade 2018. Han säger att AI-utvecklingen inte ska vara ett soloframträdande av ett enda land utan en symfoni av internationellt samarbete. Han varnar för nya historiska orättvisor när tillgången till tekniken fördelas ojämnt. Han lovar att hjälpa det globala Syd att bygga egen förmåga. Samma vecka släpper tre kinesiska labb var sin modell i världsklass, och två av dem lovar att lägga ut vikterna fritt.</p>
+
+<p>Det är lätt att avfärda som teater. Det vore ett misstag. Frågan är inte om det är en föreställning — det är det. Frågan är vad som spelas, och för vem.</p>
+
+<h2>Stegen, igen</h2>
+
+<p>I en tidigare essä beskrev jag stegen: den sjuttioåriga vägen där fattiga länder klättrade från jordbruk till fabrik till kontor och blev rika — och hur AI drar upp den, båda vägarna samtidigt. Jag beskrev också vem som äger maskinen: att tillgång till beräkningskraft är den nya gränsen, och att den dras med exportregler som delar världen i nivåer — allierade utan tak, de flesta andra med tak, ett fåtal helt utestängda.</p>
+
+<p>Det jag inte skrev, för det hade inte hänt än, var vad som händer när ett av de utestängda länderna är världens näst största ekonomi.</p>
+
+<p>Exportkontrollerna drog upp hårdvarustegen för Kina. Kinas svar, levererat på en scen i Shanghai, är att sänka en annan stege: mjukvarans. Modeller i frontier-klass, fritt nedladdningsbara, till en bråkdel av de amerikanska priserna. Väst kontrollerar stegpinnarna av kisel; Kina gör stegpinnarna av kod gratis.</p>
+
+<p>Och lägg märke till språket. &rdquo;Nya historiska orättvisor&rdquo; — det är stegens berättelse, ordagrant. Tesen om utvecklingsvägen som dras undan för dem som ännu inte hunnit klättra är inte längre en analys i marginalen. Den är kinesisk utrikespolitik. Beijing säljer berättelsen om stegen som Väst drog upp — och erbjuder sin egen.</p>
+
+<h2>Veckan då allt släpptes</h2>
+
+<p>Fakta först, för de förtjänar det. Den 16 juli släppte Moonshot AI modellen Kimi K3: 2,8 biljoner parametrar, den största öppna modellen som någonsin annonserats, med ett kontextfönster på en miljon tokens. Vikterna utlovas till den 27 juli under en öppen licens — och ärligheten kräver tillägget att när detta skrivs ligger de ännu inte ute. &rdquo;Öppen&rdquo; är ett löfte tills filerna finns där.</p>
+
+<p>Två dagar senare, på samma konferens, förhandsvisade Alibaba sin Qwen3.8-Max: 2,4 biljoner parametrar, multimodal, enligt företaget slagen av en enda modell i världen — och med ett löfte om öppna vikter som bryter Alibabas eget mönster, för toppklassen har hittills alltid hållits stängd. DeepSeek uppges ha uppdaterat samma vecka. Tre släpp, en scen, en vecka. Det är inte en slump. Det är en demonstration.</p>
+
+<h2>Nästan lika bra</h2>
+
+<p>Hur nära är &rdquo;nästan lika bra som de bästa&rdquo;? Ärligt svar: närmare än någonsin, men inte ända fram — och exakt var strecket går spelar mindre roll än man tror.</p>
+
+<p>Leverantörernas egna siffror ska läsas som vad de är. Alibabas påstående om Qwen 3.8 saknar än så länge modellkort, benchmarktabeller och oberoende tester; det som finns är en förhandsvisning. Moonshot är mer klädsamt ärliga — deras egen teknikblogg medger att K3 ligger bakom de två starkaste stängda systemen totalt. Men för K3 finns nu också oberoende stöd: en etablerad oberoende utvärderare rankar modellen fyra i världen. Fyra. En fritt nedladdningsbar modell, om löftet håller, bland de fyra bästa som finns.</p>
+
+<p>Och sedan finns det starkare beviset än någon benchmark: beteendet. På den största neutrala förmedlingsplattformen för AI-trafik står kinesiska modeller nu för 46 procent av alla tokens, mot 36 för de amerikanska. För ett år sedan var snittet elva procent; första halvåret 2025 låg det under fem. Själva överkorsningen skedde i februari. Marknaden röstar med fötterna, och den väntar inte på att benchmarken ska verifieras. Drivkraften är inte ideologi utan pris: de öppna kinesiska modellerna är 60 till 90 procent billigare att köra.</p>
+
+<p>&rdquo;Nästan lika bra&rdquo; behöver inte vinna topplistan för att vinna världen. För de flesta uppgifter räcker nästan — och nästan har blivit en råvara.</p>
+
+<h2>Priset på intelligens</h2>
+
+<p>Så till siffrorna som fick börsen att darra. K3 kostar tre dollar per miljon inmatade tokens och femton för utmatade, trettio öre på dollarn vid cacheträff, samma taxa över hela kontextfönstret. Och det här är poängen många missar: det är inte fyndberättelsen. Det är mer än tre gånger dyrare än Moonshots egen föregångare. K3 är prissatt som ett flaggskepp — i nivå med de amerikanska mellanklassmodellerna, under de amerikanska toppmodellerna, ungefär en tredjedel av den dyraste taxan på marknaden. Ärligheten kräver även här ett tillägg: modellen resonerar alltid för fullt och bränner därmed fler tokens per uppgift, så räknat per färdig uppgift landar den enligt oberoende uppskattningar kring halva priset av de stängda toppmodellerna. Inte en tiondel.</p>
+
+<p>Men under flaggskeppet ligger det verkliga trycket: råvarulagret. Moonshots förra generation kostar under en dollar per miljon tokens. DeepSeeks billigaste variant kostar ören. Det är två skikt av press samtidigt — nästan-frontier till mellanklasspris, ovanpå ett golv som sjunker mot noll.</p>
+
+<p>Marknaden svarade på släppdagen: Nasdaq föll en och en halv procent, och kommentatorerna grep efter samma ord som i januari 2025 — en ny DeepSeek-chock. Men den mest talande signalen kom inifrån den amerikanska stacken själv. GitHub lade in Moonshots kodmodell i Copilot den första juli. Och Microsoft, de amerikanska frontier-labbens största kund, uppges nu utvärdera om K3 kan ta över delar av Copilot, med besparingar på uppemot sexhundra miljoner dollar. Uppgiften är obekräftad. Riktningen är det inte: prispressen kommer inte längre bara utifrån. Den kommer från insidan av den västliga leveranskedjan.</p>
+
+<p>Och ändå — en motvikt, för den hör till ärligheten. Volym är inte intäkt. På samma plattform där kinesiska modeller bär nästan hälften av trafiken tar den största amerikanska leverantören tolv procent av trafiken men nästan hälften av intäkterna. Två marknader håller på att bildas: intelligens som råvara och intelligens som premium. Frågan är inte om premiummarknaden försvinner. Frågan är hur bred råvarumarknaden blir — och vilka som bara har råd att bo där.</p>
+
+<h2>Murar eller priskrig</h2>
+
+<p>Väst har två drag, och de drar åt olika håll. Det ena är att konkurrera: sänka priserna, släppa egna öppna modeller, försvara premiumskiktet med kvalitet. Det andra är att mura: skärpa exportkontrollerna, begränsa användningen av kinesiska vikter, dra upp fler stegar.</p>
+
+<p>Paradoxen är att murandet redan är prövat, och att det är därför vi står här. Kontrollerna av chippen skulle bromsa Kinas väg mot frontier. De har gjort vägen dyrare — Kinas beräkningsbrist är verklig, och Moonshots egen infrastruktur sviktade under efterfrågan dagarna efter släppet — men de har inte stängt den. I stället flyttade Kina slaget till ett lager där kontrollerna inte når: mjukvaran, som kopieras fritt och färdas i en nedladdning.</p>
+
+<p>Nu lobbar de amerikanska labben i Washington mot öppna vikter. Mozillas tekniska chefs torra konstaterande förtjänar att återges: de skulle inte bry sig om hotet inte var verkligt. Och det starkaste argumentet på mursidan förtjänar också att tas på allvar, för det är sant: öppna vikter kan inte återkallas. Ett API kan stängas av, patchas, förses med spärrar. En modell som laddats ned av tusen organisationer kan ingen leverantör längre nå. Det är en annan riskprofil, på riktigt.</p>
+
+<p>Och Europa? EU:s AI-förordning skrevs med undantag för öppen källkod — men undantagen gäller inte modeller över systemrisktröskeln, och biljonmodeller ligger över den med marginal. På pappret gäller alltså skyldigheterna oavsett licens. I praktiken: vad är en skyldighet värd när leverantören sitter i Beijing och vikterna redan ligger på tusen europeiska servrar? Bryssel skrev regler för en värld där öppen källkod betydde små europeiska modeller. Nu byter öppenheten avsändare, och reglerna har inte hunnit märka det.</p>
+
+<h2>Stegen av kisel</h2>
+
+<p>Och hur gick det egentligen med muren? Facit efter fyra år förtjänar ett eget kapitel, för det är läroboksexemplet på andrahandseffekter.</p>
+
+<p>Kontrollerna skulle svälta Kinas AI på chip. Första ordningens effekt kom som planerat: Nvidias mest kraftfulla processorer försvann från den kinesiska marknaden, och bolagets Kina-intäkter föll mot noll. Andra ordningens effekt var den som räknades. Kina svarade med att bygga bort beroendet. Huawei siktar i år på omkring sexhundratusen exemplar av sitt toppchip, tillverkade hos SMIC, och har publicerat en färdplan tre generationer framåt. Det senaste chippet är byggt för att klara sig utan väst i varje led: eget höghastighetsminne i stället för det koreanska HBM som kontrollerna kommer åt, en design som slipper Taiwans paketeringsteknik. En kinesisk modell med sjuhundra miljarder parametrar har tränats på över sextusen inhemska processorer. När DeepSeek släppte sin senaste modell i våras kördes den från dag ett på fyra kinesiska chipmärken. Och den mest talande vändningen: när Washington till slut ångrade sig och åter tillät export av avancerade Nvidia-chip, mot en avgift, var det Beijing som sade nej. Kinas statliga inköpslista över godkänd AI-hårdvara tar upp Huawei och Cambricon. Nvidia står inte på den. Muren som USA byggde underhålls numera från insidan.</p>
+
+<p>Ärligheten kräver motbilden. Per chip är gapet verkligt — Huaweis bästa levererar ungefär en tredjedel av Nvidias flaggskepp, och förespråkarna för fortsatta kontroller hävdar att avståndet växer snarare än krymper, till sjutton gånger inom ett år. Flaskhalsen sitter i minnet, där tre utländska bolag fortfarande dominerar, och i litografin, där de mest avancerade maskinerna är förbjudna att sälja. Kina kompenserar horisontellt: fler chip i större kluster i stället för bättre chip. Det kostar el — och el är den insatsvara Kina bygger snabbare än någon annan.</p>
+
+<p>Men det finns en tredje våning i det här huset, och den glöms ofta bort. USA kontrollerar toppen av kiselstacken: designverktygen, litografin, de mest avancerade fabrikerna. Kina kontrollerar botten: polykislet som allting görs av, galliumet, germaniumet, de sällsynta jordartsmetallerna, specialkemikalierna som fabrikerna inte fungerar utan. Och Kina har börjat dra i sin ände. Kontrollerna av jordartsmetaller skärptes i två omgångar under 2025; i våras var Japan i praktiken avskuret från de tunga metallerna och gallium; i januari i år lades exportkontroller på halvledarkisel och tekniken att tillverka det. Två händer stryper samma stege från var sin ände — den ena håller i toppen, den andra i foten.</p>
+
+<p>Och där, i mitten, syns asymmetrin som förklarar hela spelet. Kina har världens största chipmarknad och dominerar de billiga lagren av kedjan — men vinsten sitter i toppen: de kinesiska halvledarbolagens sammanlagda årsvinst är mindre än en tjugondel av Nvidias ensam. Det är den ordningen Beijing försöker skriva om, med öppna modeller i ena handen och råvarukontroller i den andra. Stegen sänks inte av generositet. Den sänks för att den som äger botten av en stege vill äga mer av den.</p>
+
+<h2>Vems stege?</h2>
+
+<p>Så: är stegen riktig?</p>
+
+<p>Halvvägs. Öppna vikter är inte öppen tillgång. En modell med 2,8 biljoner parametrar kräver beräkningskraft, el och ingenjörer som större delen av världen inte har; att köra den själv är ingen verklig kostnadshävstång för de flesta. Stegen är sänkt, men stegpinnarna kostar fortfarande — och kraften, kylan och kompetensen säljs av samma handfull aktörer som förut.</p>
+
+<p>Och beroendet försvinner inte. Det byter ägare. Licenserna är villkorade och kan skrivas om. Takten är obarmhärtig: sex veckor efter K3 pensionerar Moonshot sitt förra flaggskepp, och den som byggt på det får flytta. Den som äger stegen bestämmer var den lutar.</p>
+
+<p>Sedan geometrin. Dagen före Xis tal undertecknade 29 länder bildandet av en världsorganisation för AI-samarbete, med säte i Shanghai. USA:s motsvarande koalition samlar 35. Ett enda land står på båda listorna: Kazakstan. Läs det en gång till — av över sextio länder i de två blocken har ett, ett enda, valt båda.</p>
+
+<p>I den förra essäns vokabulär är det här inte Delningen. Det är Friktionen: världen som splittras i nivåer där tillgång avgör allt. USA delar världen i beräkningsnivåer. Kina delar den i styrningsblock. Två stegar, två händer som håller, och en majoritetsvärld som ska välja vilken hand den litar på.</p>
+
+<p>Men — och det är essäns egentliga fråga — Xis erbjudande <em>låter</em> som Delningen. Vinsterna och tekniken tillgängliga brett. Stegen som sätts tillbaka. Kapacitetsbyggande, samarbetscenter, öppna vikter som globalt allmängods. Konvergensdödaren slutade i en fråga: om vinsterna delas, snabbt nog, innan bristningarna hinner kaskada. Xi står nu på en scen och säger: vi delar.</p>
+
+<p>Det som avgör det kommande decenniet är om det är sant. Om det är Delningen på riktigt — eller Friktionen klädd i Delningens språk. En stege som sätts tillbaka, eller en stege någon annan håller i. Cirkeln som bryts, eller bara ett nytt varv.</p>
+
+<p>Förra gången skrev jag att utfallet inte är en prognos utan ett val. Det står sig. Det nya efter veckan i Shanghai är att valet inte längre är Västs ensamrätt.</p>
+
+<p class="source-note">Referens till tidigare essä: <a href="nar-stegen-drogs-upp.html">När stegen drogs upp</a> (22 juni 2026). Empiriska påståenden om K3-vikter, oberoende rankningar, Qwen 3.8-vikter, prisdata, trafik- och intäktssiffror, EU:s AI-förordning, Huaweis produktionssiffror och Kinas råvarukontroller bygger på öppna källor per publiceringsdagen. Uppgiften om Microsoft/K3-utvärderingen är obekräftad av Microsoft. Sjutton-gånger-siffran är CFR-lägrets estimat och attribueras som sådan.</p>
+
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrinära och praktiskt perspektiv, med utgångspunkt i hur AI faktiskt används i organisationer och produktion.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="overhanget.html">Föregående: Överhänget</a>
+    <a href="essaer.html">Alla essäer</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="essaer.html">Essäer</a> · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
