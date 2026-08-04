@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vid foten av singulariteten — AI-skiftet</title>
+  <meta name="description" content="Demis Hassabis föreslår en FINRA-modell för frontier-AI: frivillig förhandsgranskning, Frontier-klassning och en ratchet-mekanism. En analys av förslaget, kritiken och den nordiska positionen.">
+  <meta name="date" content="2026-08-04">
+  <meta property="article:published_time" content="2026-08-04T09:00:00+02:00">
+  <meta property="og:title" content="Vid foten av singulariteten — AI-skiftet">
+  <meta property="og:description" content="Demis Hassabis föreslår en FINRA-modell för frontier-AI: frivillig förhandsgranskning, Frontier-klassning och en ratchet-mekanism. En analys av förslaget, kritiken och den nordiska positionen.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/hassabis-ramverket.html">
+  <link rel="canonical" href="https://ai-skiftet.se/hassabis-ramverket.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/hassabis-ramverket.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/hassabis-ramverket.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/hassabis-ramverket.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/hassabis-ramverket.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}
+  .news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .news-audio__icon{font-size:1.5rem;line-height:1}
+  .news-audio__title{font-weight:700}
+  .news-audio__note{font-size:.8rem;color:var(--muted)}
+  .news-audio__player{width:100%}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/hassabis-ramverket.html" lang="sv" class="active">SV</a>
+      <a href="/en/hassabis-ramverket.html" lang="en">EN</a>
+      <a href="/no/hassabis-ramverket.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till essäer</a>
+    <div class="article-kicker">AI-styrning · Frontier-reglering</div>
+    <h1>Vid foten av singulariteten</h1>
+    <p class="article-dek"><em>eller: en FINRA för AI.</em> Demis Hassabis föreslår frivillig förhandsgranskning av frontier-modeller som kan skruvas åt till bindande krav. Vad förslaget innehåller, varför det kommer nu — och var Norden hamnar när två regleringsfilosofier löper parallellt.</p>
+    <p class="article-meta">Analys · Rolf Skogling · Publicerad 4 augusti 2026 · ca 5 min läsning</p>
+      <div class="news-audio" role="region" aria-label="Lyssna på essän">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna på essän</div><div class="news-audio__note">Engelsk uppläsning via Kokoro (bf_emma) · ca 6 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/hassabis-ramverket.m4a?v=2026-08-04" type="audio/mp4"></audio>
+      </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Den 14 juli publicerade Demis Hassabis &mdash; Nobelpristagare i kemi 2024, VD och medgrundare f&ouml;r Google DeepMind &mdash; ess&auml;n &rdquo;A Framework for Frontier AI and the Dawning of a New Age&rdquo; p&aring; Substack och X. Utg&aring;ngspunkten &auml;r inte blygsam: AGI &auml;r &rdquo;troligen bara n&aring;gra f&aring; &aring;r bort&rdquo;, vi st&aring;r &rdquo;vid foten av singulariteten&rdquo;, och teknikens genomslag kan bli &rdquo;kanske 10x den industriella revolutionen i 10x hastigheten&rdquo;. Men ess&auml;ns k&auml;rna &auml;r inte visionen utan ett konkret institutionellt f&ouml;rslag &mdash; och det f&ouml;rtj&auml;nar att l&auml;sas noggrant.</p>
+
+<h2>Vad Hassabis faktiskt f&ouml;resl&aring;r</h2>
+
+<p>Hassabis vill att USA inr&auml;ttar ett standardiseringsorgan f&ouml;r frontier-AI, modellerat p&aring; FINRA &mdash; den amerikanska finansbranschens sj&auml;lvregleringsorganisation som &ouml;vervakar Wall Street under federal tillsyn. Organet skulle vara ett offentlig-privat partnerskap, finansierat huvudsakligen av industrin, med en styrelse som inkluderar oberoende tekniska experter och representanter f&ouml;r &ouml;ppen k&auml;llkod.</p>
+
+<p>Mekaniken &auml;r trestegad. F&ouml;rst definierar organet vilka modeller som &auml;r &rdquo;Frontier-klass&rdquo; via en upps&auml;ttning benchmarks som uppdateras l&ouml;pande &mdash; inledningsvis kanske kvartalsvis &mdash; d&auml;r m&auml;ttade tester fasas ut och organet p&aring; sikt bygger egna hemliga testsviter, oberoende av labben, f&ouml;r att f&ouml;rhindra &ouml;veranpassning. D&auml;refter delar &rdquo;Frontier Labs&rdquo; frivilligt sina modeller med organet f&ouml;r granskning upp till 30 dagar f&ouml;re lansering: vetenskapliga utv&auml;rderingar av cyberf&ouml;rm&aring;gor, biologiska hot och andra h&ouml;griskdom&auml;ner, plus agentiska tester som letar efter f&ouml;rs&ouml;k att kringg&aring; skyddsr&auml;cken eller tecken p&aring; vilseledning. N&auml;r granskningsprotokollet visat sig robust kan det formaliseras &mdash; d&aring; blir godk&auml;nd testning ett krav f&ouml;r att en frontier-modell alls f&aring;r drifts&auml;ttas p&aring; den amerikanska marknaden.</p>
+
+<p>Till detta kommer det Hassabis kallar ramverkets styrka: det kan &rdquo;skruvas &aring;t om allvaret i situationen kr&auml;ver det&rdquo;, inklusive att koordinera en inbromsning av utvecklingen bland frontier-labben. Reglerna skulle g&auml;lla frontier-modeller oavsett ursprungsland och oavsett om vikterna &auml;r &ouml;ppna eller slutna, medan mindre modeller fr&aring;n startups och akademi undantas helt.</p>
+
+<h2>Varf&ouml;r just nu</h2>
+
+<p>Tajmingen &auml;r ingen slump. I en intervju med Axios samma dag beskrev Hassabis dagens AI-drivna cyberrisker som &rdquo;varningsskott&rdquo; och bed&ouml;mde att betydligt allvarligare biologiska och nukle&auml;ra f&ouml;rm&aring;gor kan finnas i modeller bortom statlig kontroll inom 18 m&aring;nader. Enligt Axios har han i m&aring;nader f&ouml;rankrat f&ouml;rslaget hos Trump-administrationen, andra labbledare och europeiska tj&auml;nstem&auml;n, och vill se organet i drift &rdquo;f&ouml;re &aring;rsskiftet&rdquo;.</p>
+
+<p>Bakgrunden &auml;r den amerikanska v&aring;rens improviserade modellpolitik. Anthropics kraftfullaste modeller frystes &ouml;ver en natt av en exportkontrollorder och f&ouml;rhandlades fram igen under tv&aring; och en halv vecka &mdash; utan etablerade regler eller spelbok. OpenAI gick med p&aring; att begr&auml;nsa GPT-5.6 till statligt godk&auml;nda partner vid lanseringen f&ouml;r att undvika samma &ouml;de. TechCrunch noterar samtidigt att Vita husets AI-r&aring;dgivare Sriram Krishnan har avf&auml;rdat en klassisk myndighetsl&ouml;sning &mdash; &rdquo;det blir ingen FDA f&ouml;r AI&rdquo;. Hassabis f&ouml;rslag &auml;r skr&auml;ddarsytt f&ouml;r det politiska l&auml;get: en industrifinansierad sj&auml;lvregleringsorganisation &auml;r den konstruktion som m&ouml;jligen kan passera ett Washington som avvisar nya myndigheter. Att budb&auml;raren &auml;r en Nobelpristagare med respekt i f&auml;ltets alla l&auml;ger &mdash; och att Anthropics Dario Amodei parallellt f&ouml;reslagit en FAA-liknande myndighet, s&aring; att frontlabbens ledare numera mest tvistar om vem som ska h&aring;lla i taktpinnen &mdash; f&ouml;rst&auml;rker signalv&auml;rdet.</p>
+
+<h2>Styrkor och svagheter</h2>
+
+<p>F&ouml;rslagets styrkor &auml;r verkliga. Det &auml;r tekniskt fokuserat, byggt f&ouml;r att h&aring;lla j&auml;mna steg med f&auml;ltets acceleration, och det inneh&aring;ller n&aring;got s&aring; ovanligt som en inbyggd bromsmekanism f&ouml;reslagen av en frontlabbchef. Mottagandet bland branschkollegor var positivt &mdash; Anthropics Jack Clark kallade det &rdquo;utm&auml;rkt&rdquo; att se ramverket l&auml;ggas fram.</p>
+
+<p>Kritiken, sammanst&auml;lld bland andra av AI-analytikern Zvi Mowshowitz, tr&auml;ffar dock tre &ouml;mma punkter. Frivilligheten: granskningen g&auml;ller modeller som ska lanseras, och som forskaren Eli Tyre p&aring;pekat undantas d&auml;rmed modeller som bara drifts&auml;tts internt &mdash; d&auml;r en stor del av risken finns, inte minst automatiserad AI-forskning. Finansieringen: ett organ som betalas av dem det ska granska b&auml;r p&aring; en inbyggd intressekonflikt, och som Peter Wildeford formulerat det beh&ouml;ver en FINRA en SEC ovanf&ouml;r sig &mdash; sj&auml;lvreglering &auml;r ett komplement till statlig tillsyn, inte en ers&auml;ttning. Och allvaret: MIRI:s Nate Soares noterade att Hassabis skriver att &rdquo;experterna &auml;r oense&rdquo; utan att n&auml;mna att oenigheten g&auml;ller huruvida katastrofrisken &auml;r runt fem procent eller &ouml;ver femtio &mdash; och att ramverket saknar en plan f&ouml;r vad som h&auml;nder n&auml;r en modell v&auml;l bed&ouml;ms som farlig. D&auml;rtill &auml;r f&ouml;rslaget uttalat USA-centrerat: ett amerikanskt organ som pr&ouml;var tilltr&auml;de till den amerikanska marknaden, med internationella standarder som f&ouml;rhoppning snarare &auml;n mekanism.</p>
+
+<h2>F&ouml;r Norden</h2>
+
+<p>F&ouml;r Norden &auml;r det mest sl&aring;ende att tv&aring; regleringsfilosofier nu l&ouml;per parallellt. EU har redan valt bindande lag: AI-f&ouml;rordningens transparenskrav g&auml;ller sedan den 2 augusti, PTS f&ouml;resl&aring;s bli svensk tillsynsmyndighet och Nkom f&aring;r den samordnande rollen i Norge. Hassabis f&ouml;resl&aring;r den motsatta ordningen &mdash; b&ouml;rja frivilligt och tekniskt, formalisera n&auml;r metoden bevisats. F&ouml;r svenska och norska f&ouml;retag som bygger p&aring; amerikanska frontier-modeller kan b&aring;da sp&aring;ren komma att g&auml;lla samtidigt: ett amerikanskt organ som avg&ouml;r vilka modeller som n&aring;r marknaden, och ett europeiskt regelverk som avg&ouml;r hur de f&aring;r anv&auml;ndas h&auml;r. Om Hassabis ramverk blir verklighet f&ouml;re &aring;rsskiftet uppst&aring;r fr&aring;gan var europeiska &mdash; och nordiska &mdash; r&ouml;ster kommer in: ess&auml;n n&auml;mner internationell konsensus som m&aring;l, men styrelseplatserna han skisserar &auml;r amerikanska. Det &auml;r ett sk&auml;l s&aring; gott som n&aring;got f&ouml;r Riksdagen och Stortinget att f&ouml;lja den h&auml;r processen som deltagare, inte som &aring;sk&aring;dare.</p>
+
+<p class="source-note">K&auml;llor: <a href="https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age" rel="noopener" target="_blank">Demis Hassabis, &rdquo;A Framework for Frontier AI and the Dawning of a New Age&rdquo; (Substack, 14 juli 2026)</a> &middot; <a href="https://www.axios.com/2026/07/14/demis-hassabis-ai-regulation-google-deepmind" rel="noopener" target="_blank">Axios, 14 juli 2026</a> &middot; <a href="https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/" rel="noopener" target="_blank">TechCrunch, 14 juli 2026</a> &middot; <a href="https://thezvi.substack.com/p/demis-hassabis-on-the-new-coming" rel="noopener" target="_blank">Zvi Mowshowitz, 19 juli 2026</a>. Citaten fr&aring;n Clark, Tyre, Wildeford och Soares &auml;r h&auml;mtade ur Mowshowitz sammanst&auml;llning av reaktionerna.</p>
+
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrin&auml;ra och praktiskt perspektiv, med utg&aring;ngspunkt i hur AI faktiskt anv&auml;nds i organisationer och produktion.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="nar-stegen-sanktes.html">Föregående: När stegen sänktes</a>
+    <a href="essaer.html">Alla essäer</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="essaer.html">Essäer</a> · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
