@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samma megawatt — AI-skiftet</title>
+  <meta name="description" content="AI-datacenter, grönt stål och elbilar köar till samma nordiska elnät. Om anslutningsköerna i Sverige, Norge och Finland, hur prioritering faktiskt sker — och frågan om samhällsnytta.">
+  <meta name="date" content="2026-08-10">
+  <meta property="article:published_time" content="2026-08-10T09:00:00+02:00">
+  <meta property="og:title" content="Samma megawatt — AI-skiftet">
+  <meta property="og:description" content="AI-datacenter, grönt stål och elbilar köar till samma nordiska elnät. Om anslutningsköerna i Sverige, Norge och Finland, hur prioritering faktiskt sker — och frågan om samhällsnytta.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/samma-megawatt.html">
+  <link rel="canonical" href="https://ai-skiftet.se/samma-megawatt.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/samma-megawatt.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/samma-megawatt.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/samma-megawatt.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/samma-megawatt.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  /* nav-submenu-css */
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle,.nav-submenu--active .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu:focus-within .nav-submenu__links{display:none}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}
+  .news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .news-audio__icon{font-size:1.5rem;line-height:1}
+  .news-audio__title{font-weight:700}
+  .news-audio__note{font-size:.8rem;color:var(--muted)}
+  .news-audio__player{width:100%}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Essäer</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">Källor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/samma-megawatt.html" lang="sv" class="active">SV</a>
+      <a href="/en/samma-megawatt.html" lang="en">EN</a>
+      <a href="/no/samma-megawatt.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till essäer</a>
+    <div class="article-kicker">Infrastruktur · Nordiska elnätet</div>
+    <h1>Samma megawatt</h1>
+    <p class="article-dek"><em>eller: kön som politik.</em> AI-datacenter, grönt stål och transportelektrifiering köar till samma nordiska elnät. Vad köerna faktiskt innehåller, hur prioritering sker i dag — och den öppna frågan om samhällsnytta: plånbok eller politik.</p>
+    <p class="article-meta">Analys · Rolf Skogling · Publicerad 10 augusti 2026 · ca 6 min läsning</p>
+      <div class="news-audio" role="region" aria-label="Lyssna på essän">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna på essän</div><div class="news-audio__note">Engelsk uppläsning via Kokoro (bf_emma) · ca 9 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/samma-megawatt.m4a?v=2026-08-10" type="audio/mp4"></audio>
+      </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Siffrorna &auml;r offentliga, men s&auml;llan l&auml;sta bredvid varandra. I Svenska kraftn&auml;ts ans&ouml;kningsk&ouml; till stamn&auml;tet l&aring;g per den 30 juni 2026 totalt 25&nbsp;609 megawatt ny elanv&auml;ndning och v&auml;ntade p&aring; besked. Av dessa var 7&nbsp;014 megawatt datacenter och 10&nbsp;201 megawatt industri &mdash; tv&aring; kundkategorier som allts&aring; redan i dag st&aring;r bokstavligen i samma k&ouml;.</p>
+
+<h2>K&ouml;erna, land f&ouml;r land</h2>
+
+<p>I Norge har Statnett tillsammans med regionn&auml;tsbolagen reserverat n&auml;tkapacitet f&ouml;r &ouml;ver 8&nbsp;000 megawatt ny f&ouml;rbrukning. Enligt Teknisk Ukeblads genomg&aring;ng av anslutningsdata har 56 datacenter f&aring;tt reservationer motsvarande cirka 21 terawattimmar per &aring;r, medan ytterligare ett sextiotal med behov kring 36 terawattimmar st&aring;r i k&ouml;. NVE:s systemrapport fr&aring;n maj 2026 r&auml;knar med att datacentrens faktiska f&ouml;rbrukning v&auml;xer fr&aring;n runt 3 terawattimmar 2025 till cirka 8 terawattimmar 2030 &mdash; och kallar datacentren f&ouml;r prognosens stora joker.</p>
+
+<p>Finland &auml;r extremfallet. Fingrid har f&aring;tt anslutningsf&ouml;rfr&aring;gningar p&aring; &ouml;ver 50&nbsp;000 megawatt enbart fr&aring;n datacenter &mdash; mer &auml;n tre g&aring;nger landets f&ouml;rbrukningstopp p&aring; cirka 15&nbsp;000 megawatt. Fingrids prognos pekar p&aring; en elf&ouml;rbrukning som stiger fr&aring;n 86 terawattimmar 2025 till 103&ndash;123 terawattimmar 2030, med nya datacenter som fr&auml;msta drivkraft.</p>
+
+<p>Och vid horisonten st&aring;r Danmark som varnande exempel: Energinet pausade i mars 2026 nya n&auml;tanslutningar sedan k&ouml;n n&aring;tt 60 gigawatt &mdash; n&auml;stan nio g&aring;nger landets f&ouml;rbrukningstopp &mdash; varav cirka 14 gigawatt datacenter.</p>
+
+<h2>F&ouml;rst till kvarn, eller mognast f&ouml;rst</h2>
+
+<p>Hur v&auml;ljer man d&aring; vem som f&aring;r sina megawatt? Det korta svaret: ingen v&auml;ljer &mdash; &auml;n.</p>
+
+<p>Norge &auml;r tydligast. Statnett skriver uttryckligen att man &rdquo;opptrer n&aelig;ringsn&oslash;ytralt og foretar ingen prioritering av kundene&rdquo;. K&ouml;platsen avg&ouml;rs av datumet d&aring; en ans&ouml;kan bed&ouml;ms vara mogen enligt standardiserade mognadskriterier &mdash; tillst&aring;nd, planer, finansiering. Det &auml;r en rimlig ordning, men den har en inbyggd slagsida som lyfts i norsk debatt: ett kapitalstarkt datacenterbolag med f&auml;rdiga markoptioner kan producera en mogen ans&ouml;kan snabbare &auml;n ett industriprojekt som beh&ouml;ver &aring;r av milj&ouml;pr&ouml;vning. Neutrala regler ger inte neutrala utfall.</p>
+
+<p>Sverige saknar ocks&aring; uttalad prioritering, men Svenska kraftn&auml;ts rapport fr&aring;n april 2026 &mdash; svaret p&aring; regeringens uppdrag att se &ouml;ver anslutningsprocessen &mdash; introducerar verktyg som pekar i en ny riktning: obligatorisk trepartsdialog inom sex m&aring;nader, &rdquo;aff&auml;rsmatchning&rdquo; mellan produktion och f&ouml;rbrukning, och ett anvisningssystem d&auml;r Svenska kraftn&auml;t kan peka ut kapacitetszoner &rdquo;d&auml;r det &auml;r l&auml;mpligt att ansluta en viss kundkategori&rdquo;. Myndigheten betonar att uppdraget inte handlar om att styra var verksamheter placeras. Men en zon f&ouml;r en viss kundkategori &auml;r, hur man &auml;n v&auml;nder p&aring; det, en mjuk prioritering.</p>
+
+<p>Finland har valt pl&aring;nboken. Fingrid skickar visserligen ut nya tekniska anslutningskrav f&ouml;r datacenter och elektrolys&ouml;rer (KJV2026) p&aring; remiss, men det skarpaste beslutet fattades i riksdagen: fr&aring;n den 1 juli 2026 flyttades datacentren fr&aring;n den l&auml;gre elskatteklassen till den allm&auml;nna &mdash; en h&ouml;jning med 2,19 cent per kilowattimme. Finansutskottets motivering &auml;r v&auml;rd att citera: datacenterverksamhet &auml;r till sin natur tj&auml;nsteverksamhet, inte industriproduktion.</p>
+
+<h2>N&auml;r AI-fabriken och st&aring;lverket vill ha samma megawatt</h2>
+
+<p>Det &auml;r i norr som fr&aring;gan blir konkret. I Boden bygger Stegra v&auml;tgasbaserad st&aring;lproduktion med totalt 740 megawatt planerad elektrolyskapacitet, varav de f&ouml;rsta 200 megawatten &auml;r installerade &mdash; samtidigt som datacenter p&aring; sammanlagt 7&nbsp;014 megawatt st&aring;r i samma nationella anslutningsk&ouml; som industrin. I Norge tecknade Anthropic nyligen avtal om 133 megawatt AI-kapacitet i Tydal &mdash; i elomr&aring;de NO3, d&auml;r Statnett redan har en industrik&ouml; &mdash; och i Narvik v&auml;xer Stargate Norway vidare fr&aring;n en f&ouml;rsta etapp p&aring; 230 megawatt.</p>
+
+<p>Po&auml;ngen &auml;r inte att n&aring;gon av dessa etableringar &auml;r fel. Po&auml;ngen &auml;r att en megawatt som reserveras i ett begr&auml;nsat n&auml;tomr&aring;de &auml;r en megawatt n&aring;gon annan inte f&aring;r p&aring; ett decennium: Fingrid anger att en enda kraftledning tar i genomsnitt sju till &aring;tta &aring;r att f&ouml;rverkliga, inklusive tillst&aring;nd och milj&ouml;pr&ouml;vning. Ett datacenterbeslut fattas p&aring; m&aring;nader; ett st&aring;lverk mognar p&aring; &aring;r. K&ouml;n r&ouml;r sig i en takt, kunderna i en annan. Det &auml;r detta &mdash; inte str&ouml;mavbrott &mdash; som &auml;r AI:ns verkliga stresstest av det nordiska eln&auml;tet: det &auml;r k&ouml;designen som testas.</p>
+
+<h2>Samh&auml;llsnytta &mdash; pl&aring;nbok eller politik</h2>
+
+<p>S&aring; till den &ouml;ppna fr&aring;gan. I Norge f&ouml;reslog H&oslash;yre, SV och R&oslash;dt koncessionsplikt f&ouml;r datacenter; digitaliseringsminister Karianne Tung avvisade kravet med h&auml;nvisning till bland annat EES-r&auml;tten. I Sverige har fr&aring;gan om en nationell plan f&ouml;r datacenter v&auml;ckts i riksdagen, medan regeringens linje via Svenska kraftn&auml;t hittills &auml;r transparens snarare &auml;n styrning. Finland &auml;r hittills det enda land som agerat med ekonomiska styrmedel &mdash; via skattesedeln. Och Danmark visar var v&auml;gen slutar n&auml;r k&ouml;n v&auml;xer f&ouml;rbi systemets gr&auml;nser: Energinet har slopat f&ouml;rst-till-kvarn-principen f&ouml;r storf&ouml;rbrukare och sorterar nu projekten i pooler efter mognad och n&auml;tnytta.</p>
+
+<p>Fyra l&auml;nder, fyra svar p&aring; samma fr&aring;ga: ska samh&auml;llet rangordna v&auml;rdet av en megawattanv&auml;ndare &mdash; och i s&aring; fall, vem best&auml;mmer? Inget av regelverken har i dag ett svar p&aring; vad som h&auml;nder den dag en AI-gigafabrik och ett st&aring;lverk st&aring;r med var sin mogen ans&ouml;kan om samma megawatt. Tills n&aring;gon formulerar ett, g&auml;ller det svar som redan st&aring;r i k&ouml;ordningen.</p>
+
+<h2>Ett r&auml;kneexempel: megawatt m&auml;tt i &aring;rsverk</h2>
+
+<p><em>F&ouml;ljande &auml;r ett r&auml;kneexempel, inte en prognos &mdash; varje led bygger p&aring; &ouml;ppna riktv&auml;rden eller uttryckligen markerade antaganden.</em></p>
+
+<p>Ett fullt utbyggt AI-datacenter kostar enligt branschbed&ouml;mningar 30&ndash;40 miljoner dollar per megawatt inklusive chip &mdash; allts&aring; 300&ndash;400 miljarder kronor per 1&nbsp;000 megawatt (antagande: v&auml;xelkurs 10 kronor per dollar). Antag vidare att investeringen ska r&auml;knas hem p&aring; fem &aring;r, ungef&auml;r h&aring;rdvarans livsl&auml;ngd, och att mellanledet enligt logiken i Sequoia-investeraren David Cahns analys &rdquo;AI:s 600-miljardersfr&aring;ga&rdquo; beh&ouml;ver 50 procents bruttomarginal. D&aring; kr&auml;vs &aring;rliga slutkundsint&auml;kter p&aring; grovt r&auml;knat 120&ndash;160 miljarder kronor &mdash; per gigawatt.</p>
+
+<p>Om dessa int&auml;kter i slut&auml;nden ska betalas genom effektivisering av m&auml;nskligt arbete, kan de uttryckas i &aring;rsverk. Med en nordisk fullkostnad per heltidsanst&auml;lld p&aring; 0,8&ndash;1,1 miljoner kronor (SCB/Medlingsinstitutets genomsnittsl&ouml;n 42&nbsp;900 kronor i m&aring;naden 2025, plus arbetsgivaravgifter och overhead &mdash; antagande) motsvarar det i storleksordningen 100&nbsp;000&ndash;200&nbsp;000 &aring;rsverk. Per gigawatt.</p>
+
+<p>Summerar man de nuvarande nordiska datacenterk&ouml;erna &mdash; Svenska kraftn&auml;ts 7&nbsp;014 megawatt, de norska reservationerna och k&ouml;n p&aring; tillsammans cirka 57 terawattimmar per &aring;r (omr&auml;knat till kontinuerlig effekt ungef&auml;r 6,5 gigawatt; 57 TWh ÷ 8&nbsp;760 timmar), Fingrids &ouml;ver 50&nbsp;000 megawatt i f&ouml;rfr&aring;gningar och Danmarks cirka 14&nbsp;000 megawatt &mdash; landar man p&aring; i storleksordningen 80 gigawatt, med det viktiga till&auml;gget att kategorierna skiljer sig &aring;t (f&ouml;rfr&aring;gningar, reservationer, k&ouml;) och att dubbelr&auml;kning och bortfall &auml;r sannolika: detta &auml;r ett &ouml;vre spann av intresseanm&auml;lningar, inte byggplaner. Applicerar man &auml;nd&aring; samma kedja motsvarar det ett &aring;rligt int&auml;ktskrav p&aring; grovt r&auml;knat 9&nbsp;000&ndash;12&nbsp;500 miljarder kronor &mdash; eller i storleksordningen 8&ndash;16 miljoner &aring;rsverk.</p>
+
+<p>Tre f&ouml;rbeh&aring;ll b&auml;r hela exemplet. Nordiska datacenter betj&auml;nar globala marknader &mdash; &aring;rsverken &auml;r inte nordiska jobb. AI-int&auml;kter &auml;r inte enbart arbetssubstitution &mdash; ny kapacitet och nya tj&auml;nster r&auml;knas ocks&aring;. Och riktv&auml;rdena har breda spann. Men storleksordningen s&auml;ger n&aring;got: de megawatt som nu k&ouml;ar i nordiska n&auml;t b&auml;r p&aring; avkastningskrav som f&ouml;rr eller senare m&aring;ste h&auml;mtas ur den reala ekonomin.</p>
+
+<p>Neutralitet &auml;r ocks&aring; ett val.</p>
+
+<p class="source-note">K&auml;llor: <a href="https://www.svk.se/aktorsportalen/anslut-till-transmissionsnatet/information-om-pagaende-anslutningsarenden/" rel="noopener" target="_blank">Svenska kraftn&auml;t, p&aring;g&aring;ende anslutnings&auml;renden (per 30 juni 2026)</a> · <a href="https://www.svk.se/4992b2/siteassets/om-oss/rapporter/2026/rapport_-regeringsuppdrag-om-att-se-over-anslutningsprocessen-till-elsystemet-och-tilltradet-till-elmarknaden-.pdf" rel="noopener" target="_blank">Svenska kraftn&auml;t, rapport Svk 2025/5008 (april 2026)</a> · <a href="https://www.svk.se/press-och-nyheter/nyheter/allmanna-nyheter/2026/svenska-kraftnat-avser-infora-nya-verktyg-for-effektivare-anslutning/" rel="noopener" target="_blank">Svenska kraftn&auml;t, 4 maj 2026</a> · <a href="https://www.statnett.no/om-statnett/nyheter-og-pressemeldinger/nyhetsarkiv-2025/storre-apenhet-om-reservert-nettkapasitet-og-hvem-som-star-i-ko/" rel="noopener" target="_blank">Statnett, 31 mars 2025</a> · <a href="https://publikasjoner.nve.no/rapport/2026/rapport2026_17.pdf" rel="noopener" target="_blank">NVE, rapport 2026/17 (maj 2026)</a> · <a href="https://www.tu.no/artikler/er-det-egentlig-krise-i-nord/571604" rel="noopener" target="_blank">Teknisk Ukeblad</a> · <a href="https://www.fingrid.fi/globalassets/dokumentit/fi/yhtio/toimikunnat/neuvottelukunta/neuvottelukunta-24.3.2025-liittamiskyky-tulevina-vuosina-jyrinsalo.pdf" rel="noopener" target="_blank">Fingrid, mars 2025</a> · <a href="https://www.pge.fi/insights/fingrid-kjv2026-grid-requirements/" rel="noopener" target="_blank">Fingrid KJV2026-remiss (juni 2026)</a> · <a href="https://yle.fi/a/74-20189971" rel="noopener" target="_blank">Yle om elskattebeslutet (HE 156/2025)</a> · <a href="https://energinet.dk/om-nyheder/nyheder/2026/03/02/energinet-indforer-midlertidig-pause-i-nye-nettilslutninger-og-saetter-turbo-pa-akutpakke/" rel="noopener" target="_blank">Energinet, 2 mars 2026</a> · <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/interpellation/nationell-plan-for-nya-datacenter_hd10414/" rel="noopener" target="_blank">Riksdagen, ip. 2025/26:414</a> · <a href="https://www.energinyheter.se/20250827/33644/bodens-jatteprojekt-i-gang-men-vatgasdriften-drojer-till-2026" rel="noopener" target="_blank">Energinyheter om Stegra</a> · <a href="https://sequoiacap.com/article/ais-600b-question/" rel="noopener" target="_blank">David Cahn/Sequoia, &rdquo;AI&rsquo;s $600B Question&rdquo;</a> · <a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/loner-och-arbetskostnader/lonestrukturstatistik-hela-ekonomin/pong/tabell-och-diagram/genomsnittlig-manadslon-efter-sektor/" rel="noopener" target="_blank">SCB/Medlingsinstitutet, genomsnittlig m&aring;nadsl&ouml;n 2025</a> · R&auml;kneexemplets capex-riktv&auml;rden: JLL Global Data Center Market Outlook 2026 och Epoch AI (maj 2026), via branschsammanst&auml;llningar (<a href="https://axis-intelligence.com/ai-data-center-cost-per-mw/" rel="noopener" target="_blank">Axis Intelligence</a>, <a href="https://archdesk.com/blog/global-ai-data-center-construction-2026" rel="noopener" target="_blank">Archdesk</a>). Tydal-, Narvik- och koncessionsuppgifterna f&ouml;ljer AI-skiftets notisfl&ouml;de (Bloomberg, Nscale, Digi.no).</p>
+
+<p class="author-sig">Rolf Skogling skriver AI-skiftet ur ett industrin&auml;ra och praktiskt perspektiv, med utg&aring;ngspunkt i hur AI faktiskt anv&auml;nds i organisationer och produktion.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="hassabis-ramverket.html">Föregående: Vid foten av singulariteten</a>
+    <a href="essaer.html">Alla essäer</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="essaer.html">Essäer</a> · <a href="kallor.html">Källor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
