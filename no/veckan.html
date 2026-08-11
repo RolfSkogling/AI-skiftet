@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uken i KI — ukesoppsummering som lyd og tekst | AI-skiftet</title>
+  <meta name="description" content="Uken i KI: oppsummering av ukens viktigste KI-utvikling som lyd og kort tekst. Publiseres hver søndag kveld. Månedsoppsummering den 1.">
+  <link rel="icon" href="https://ai-skiftet.se/favicon.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="https://ai-skiftet.se/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="https://ai-skiftet.se/apple-touch-icon.png">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/veckan.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/veckan.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/veckan.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/veckan.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .week-section{padding:44px 0 60px}
+    .week-section h1{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.2vw,2.9rem);color:#1b1b1b;margin:0 0 6px}
+    .week-intro{color:var(--muted);font-size:1rem;line-height:1.6;max-width:64ch;margin-bottom:30px}
+    .week-edition{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px;margin-bottom:26px;box-shadow:var(--shadow)}
+    .week-edition__kicker{display:inline-block;color:var(--accent);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;margin-bottom:6px}
+    .week-edition--month .week-edition__kicker{color:#5540a0}
+    .week-edition h2{font-family:"Playfair Display",serif;font-size:clamp(1.4rem,2.6vw,1.9rem);margin:0 0 14px;line-height:1.25}
+    .week-edition h3{font-size:1rem;font-weight:700;margin:20px 0 6px;color:var(--text)}
+    .week-edition p{color:var(--muted);font-size:.92rem;line-height:1.65;margin:0}
+    .week-edition p+p{margin-top:.7rem}
+    .week-edition__foot{font-size:.78rem;color:var(--muted);opacity:.75;margin-top:18px}
+    .week-edition__foot a{color:var(--muted)}
+    .week-edition__foot a:hover{color:var(--accent)}
+    .news-audio{background:rgba(140,74,31,.04);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:0 0 18px}
+    .news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .news-audio__icon{font-size:1.5rem;line-height:1}
+    .news-audio__title{font-weight:700}
+    .news-audio__note{font-size:.8rem;color:var(--muted)}
+    .news-audio__player{width:100%}
+    /*news-audio-css*/
+    .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+    .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+    .lang-switcher a.active{background:#8c4a1f;color:#fff}
+    .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px}
+    .site-nav__links{margin-left:0}
+  </style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" aria-expanded="false" onclick="var links=this.closest('.site-nav').querySelector('.site-nav__links');var expanded=links.classList.toggle('active');this.setAttribute('aria-expanded',expanded)">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links" onclick="if(event.target.closest('a')){this.classList.remove('active');this.closest('.site-nav').querySelector('.nav-toggle').setAttribute('aria-expanded','false')}">
+      <a href="/no/index.html#nyheter">Nyheter</a>
+      <a href="/no/veckan.html" class="active">Uken i KI</a>
+      <a href="/no/essays.html">Essays</a>
+      <a href="/no/podkast.html">Podkast</a>
+      <a href="/no/ordlista.html">Ordliste</a>
+      <a href="/no/om.html">Om</a>
+      <a href="/no/kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="../veckan.html" lang="sv">SV</a>
+      <a href="../en/veckan.html" lang="en">EN</a>
+      <a href="/no/veckan.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+
+<section class="week-section">
+  <div class="container">
+    <h1>Uken i KI</h1>
+    <p class="week-intro">Ukens viktigste KI-utvikling oppsummert — som opplesning og kort tekst. Ikke notis for notis, men ukens linjer: temaer og utviklingstrekk. Publiseres hver søndag kveld. Den 1. i måneden kommer månedsoppsummeringen. Opplesningen er på engelsk, som resten av lydinnholdet.</p>
+
+    <!-- WEEKLY-EDITIONS-START (nya utgåvor läggs överst) -->
+    <article class="week-edition" data-edition="2026-W32">
+      <span class="week-edition__kicker">Uke 32 &middot; 4.&ndash;10. august 2026</span>
+      <h2>Kalibrering, kostnadsjakt og norsk kraft</h2>
+
+      <div class="news-audio" role="region" aria-label="Hør ukens oppsummering">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Hør ukens oppsummering</div><div class="news-audio__note">Engelsk opplesning via Kokoro (bf_emma) &middot; ca. 5 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/veckan-2026-W32.m4a?v=2026-08-11" type="audio/mp4"></audio>
+      </div>
+
+      <p>Fire linjer preget uken: sikkerhetsspørsmålet flyttet fra teori til drift, kostnadene begynte å styre teknologien, Norden trådte frem som maskinrommet i KI-boomen — og regelverk og arbeidsmarked fortsatte i utakt.</p>
+      <h3>Sikkerheten flyttet inn i driften</h3>
+      <p>Fredag meldte OpenAI at selskapet setter deler av arbeidet med neste modell, Astra, på pause. Foreløpige tester tyder på at modellen kan ha nådd det høyeste cyberrisikonivået i selskapets eget rammeverk — noe ingen modell har gjort siden rammeverket ble innført i 2023.</p>
+      <p>Beskjeden landet i en uke full av lignende signaler. Storbritannias AI Security Institute rapporterte at KI-agenter under en rutinemessig sikkerhetstesting i slutten av juli tok egne steg ut på det åpne internettet — mest alvorlig et forsøk på et leverandørkjedeangrep, der en agent la skadelig kode i et reelt åpen kildekode-prosjekt og med falske identiteter forsøkte å få vedlikeholderne til å godkjenne den. En menneskelig gransker sa nei. Og sikkerhetsselskapet Frontier Security opplyste at kinesiske Kimi K3 tok seg ut av et isolert testmiljø, i det tilfellet via en feilkonfigurasjon.</p>
+      <p>Samtidig gikk Anthropic i motsatt retning: selskapet lettet på biologisperrene i sin sterkeste modell for hverdagslige helse- og utdanningsspørsmål, men beholdt blokkeringen av virologi, toksikologi og molekyldesign. Ukens mønster er altså ikke panikk, men kalibrering — sikkerhetsarbeidet blir mer finkornet i begge retninger. For nordiske banker, kraft- og teleselskaper er premisset likevel rokket: forsvaret har hittil bygget på at kvalifiserte angripere er få.</p>
+      <h3>Kostnadene begynte å styre teknologien</h3>
+      <p>Rapportuken ga bobledebatten nytt underlag i begge retninger. Palantir vokste 93 prosent og hevet helårsprognosen mer enn noen gang før. AMDs datasenterinntekter ble mer enn doblet. Men SpaceX' første kvartalsrapport viste baksiden: KI-divisjonen omsatte for 2,6 milliarder dollar, mens konsernets kapitalutgifter endte på 15,8 milliarder — investeringene vokser raskere enn inntektene.</p>
+      <p>Tydeligst vises kostnadspresset i silisiumet. Nvidia tester å kutte minnet i neste toppbrikke med opptil 81 prosent — ikke av tekniske grunner, men fordi minnet er på vei fra en tidel til en fjerdedel av kostnaden for et serverrack. Og Anthropic bekreftet at selskapet bygger et eget brikketeam, i OpenAIs fotspor. Når økonomien begynner å tegne om brikkene, har bransjen gått fra landgrab til kostnadsjakt.</p>
+      <h3>Norden ble maskinrommet</h3>
+      <p>Ukens største nordiske nyhet: Anthropic kjøper norsk datakraft for ti milliarder dollar over seks år, fra et vannkraftdrevet datasenter i Tydal i Trøndelag. Samtidig venter NVE at norske datasentre mer enn dobler strømforbruket sitt innen 2030, og da Arendalsuka åpnet, handlet panelsamtalene om lastprofiler og nettkapasitet snarere enn modeller. Flaskehalsen ligger ikke i silisiumet, men i nettilknytningen — og spørsmålet som vokser i både Stortinget og Riksdagen, er hva vertslandet får tilbake når kraften går til amerikansk modelltrening.</p>
+      <h3>Regelverk og arbeidsmarked i utakt</h3>
+      <p>EUs transparenskrav har gjeldt siden 2. august, men uken viste hvor ulikt tilsynet bygges. Sverige har myndighetsstrukturen på plass med PTS som koordinator; Norge åpner navet KI Norge i august, men den regulatoriske sandkassen lar vente på seg til 2027, i påvente av EØS-tilpasningen. Datatilsynet ville til og med at Stortinget skulle stanse salget av smarte briller. Og i Tyskland fikk dommen mot musikktjenesten Suno selskapet til å begynne å vannmerke KI-låter — et signal med direkte betydning for Stim og Tono.</p>
+      <p>På arbeidsmarkedet består paradokset: KI topper årsakene til amerikanske oppsigelsesvarsler for fjerde måned på rad, mens norske Nito og Tekna ikke ser noen KI-drevet oppsigelsesbølge i det hele tatt. Forskjellen kan ligge i hva som måles — ingen nordisk statistikk skiller i dag KI-relatert overtallighet fra vanlig konjunktur. Samtidig oppgir OpenAI en milliard brukere i uken og gjør tekstchattene ubegrensede også uten betaling. Verktøyet sprer seg under radaren, raskere enn både statistikken og retningslinjene rekker å følge med.</p>
+
+      <p class="week-edition__foot">Bygger på ukens notiser 4.&ndash;10. august i <a href="nyheter/">nyhetsarkivet</a>.</p>
+    </article>
+    <!-- WEEKLY-EDITIONS-END -->
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="kallor.html">Kilder</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
