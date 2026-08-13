@@ -129,7 +129,7 @@
   </div>
 </section>
 
-<!-- LATEST-ESSAY-START (bytt hele blokken når nytt essay publiseres) -->
+<!-- LATEST-ANALYSES-START (de tre nyeste analysene i fallende datorekkefølge: [1] stort kort, [2]-[3] kompakte rader. Ved nytt essay: det nye essayet blir [1], gammel [1] blir rad [2], gammel [2] blir rad [3], gammel [3] tas ut.) -->
 <style>
   .latest-essay{padding:26px 0 6px}
   .latest-essay__card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .15s}
@@ -138,18 +138,34 @@
   .latest-essay__title{font-family:"Playfair Display",serif;font-size:clamp(1.5rem,2.8vw,2rem);margin:0 0 8px;color:var(--text);line-height:1.2}
   .latest-essay__lede{color:var(--muted);font-size:1rem;line-height:1.6;margin:0 0 10px;max-width:60ch}
   .latest-essay__link{color:var(--accent);font-weight:700;font-size:.9rem}
+  .latest-essay__prev{list-style:none;margin:10px 0 0;padding:0}
+  .latest-essay__prev li+li{margin-top:8px}
+  .latest-essay__prev-link{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:12px 18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;color:inherit;transition:transform .15s}
+  .latest-essay__prev-link:hover{transform:translateY(-1px);text-decoration:none}
+  .latest-essay__prev-title{font-weight:700;color:var(--text)}
+  .latest-essay__prev-date{color:var(--muted);font-size:.85rem;white-space:nowrap}
+  .latest-essay__all{display:inline-block;margin-top:12px;color:var(--muted);font-size:.88rem;font-weight:600;text-decoration:none}
+  .latest-essay__all:hover{color:var(--accent);text-decoration:none}
 </style>
-<section class="latest-essay" aria-label="Nyeste essay">
+<section class="latest-essay" aria-label="Nyeste analyser">
   <div class="container">
+    <!-- [1] -->
     <a class="latest-essay__card" href="/no/den-sista-mjukvaran.html">
       <span class="latest-essay__kicker">Nyeste analyse &middot; 13. august 2026</span>
       <h2 class="latest-essay__title">Den siste programvaren</h2>
       <p class="latest-essay__lede">Lovable verdsettes til 13,3 milliarder dollar for å bygge apper for alle. Om hva som skjer når AI-agenter blir inngangen til den digitale verdenen — tesen, Kina-evidensen, motargumentene og tempoet.</p>
       <span class="latest-essay__link">Les analysen →</span>
     </a>
+    <ul class="latest-essay__prev">
+      <!-- [2] -->
+      <li><a class="latest-essay__prev-link" href="/no/samma-megawatt.html"><span class="latest-essay__prev-title">Samme megawatt</span><span class="latest-essay__prev-date">Analyse &middot; 10. august 2026</span></a></li>
+      <!-- [3] -->
+      <li><a class="latest-essay__prev-link" href="/no/hassabis-ramverket.html"><span class="latest-essay__prev-title">Ved foten av singulariteten</span><span class="latest-essay__prev-date">Analyse &middot; 4. august 2026</span></a></li>
+    </ul>
+    <a class="latest-essay__all" href="/no/essays.html">Alle essayene →</a>
   </div>
 </section>
-<!-- LATEST-ESSAY-END -->
+<!-- LATEST-ANALYSES-END -->
 
 <!-- ==================== NYHETER ==================== -->
 <section class="news-section" id="nyheter">
