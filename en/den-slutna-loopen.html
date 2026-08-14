@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Closing Loop — AI-skiftet</title>
+  <meta name="description" content="Recursive self-improvement has become a stated engineering goal at no fewer than three AI labs simultaneously. On what the labs are actually doing, what the METR measurements say, the counterarguments that carry weight — and what the pace means for the labor market and the Nordics.">
+  <meta name="date" content="2026-08-14">
+  <meta property="article:published_time" content="2026-08-14T09:00:00+02:00">
+  <meta property="og:title" content="The Closing Loop — AI-skiftet">
+  <meta property="og:description" content="Recursive self-improvement has become a stated engineering goal at no fewer than three AI labs simultaneously. On what the labs are actually doing, what the METR measurements say, the counterarguments that carry weight — and what the pace means for the labor market and the Nordics.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/den-slutna-loopen.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/den-slutna-loopen.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/den-slutna-loopen.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/den-slutna-loopen.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/den-slutna-loopen.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/den-slutna-loopen.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}
+  .news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .news-audio__icon{font-size:1.5rem;line-height:1}
+  .news-audio__title{font-weight:700}
+  .news-audio__note{font-size:.8rem;color:var(--muted)}
+  .news-audio__player{width:100%}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/den-slutna-loopen.html" lang="sv">SV</a>
+      <a href="/en/den-slutna-loopen.html" lang="en" class="active">EN</a>
+      <a href="/no/den-slutna-loopen.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">AI Research · Self-Improvement</div>
+    <h1>The Closing Loop</h1>
+    <p class="article-dek"><em>or: how fast is fast?</em> Recursive self-improvement has become a stated engineering goal at no fewer than three AI labs simultaneously. On what the labs are actually doing, what the measurements say, the counterarguments that carry weight — and the difference between structural transformation and shock.</p>
+    <p class="article-meta">Analysis · Rolf Skogling · Published August 14, 2026 · approx. 8 min read</p>
+      <div class="news-audio" role="region" aria-label="Listen to this essay">
+        <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Listen to this essay</div><div class="news-audio__note">English voice via Kokoro (af_sarah) · approx 7 min</div></div></div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/den-slutna-loopen.m4a?v=2026-08-14" type="audio/mp4"></audio>
+      </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>On June 5, 2026, Anthropic published a report containing a sentence that would have sounded like science fiction three years ago: more than 80 percent of the code merged into the company's production systems is now written by Claude, not by humans. OpenAI has set dates &mdash; an automated AI research intern by September 2026, a fully fledged automated AI researcher by March 2028. Google DeepMind has let its AlphaEvolve system improve the algorithms that train Gemini. Recursive self-improvement &mdash; AI accelerating the development of AI &mdash; has stopped being a thought experiment in philosophical essays and become a stated engineering goal at no fewer than three companies simultaneously.</p>
+
+<p>This site has covered parts of this before. &ldquo;Every Seven Months&rdquo; dealt with the doubling rate of what AI systems can accomplish; &ldquo;Two Documents, Same Week&rdquo; with the gap between Anthropic's self-improvement report and the company's economic policy thinking. The question that remains is the one increasingly being asked in earnest: not <em>whether</em> the loop can close, but <em>how fast</em> it happens if it does &mdash; now, with several actors pulling in the same direction with hundreds of thousands of GPUs each.</p>
+
+<h2>What the labs are actually doing</h2>
+
+<p>Anthropic's report, authored by Marina Favaro and Jack Clark, is the most detailed window into the daily operations of a frontier lab published to date. The numbers deserve exact citation, with the caveat that they are the company's own and not independently audited. The share of production code written by Claude: over 80 percent in May 2026, versus single digits before February 2025. Code output per engineer: eight times the 2024 level &mdash; with the company's own note that lines of code measure quantity, not productivity. In the company's recurring optimization test, where the model is asked to speed up training code, the result went from roughly 3x (May 2025) to roughly 52x (April 2026); a skilled human researcher reaches around 4x in half a working day. And in April 2026, Anthropic published the first example of an open research problem driven from hypothesis to result by AI agents: on a week-long alignment problem, the agents recovered 97 percent of the measurable improvement gap, where two human researchers reached 23 percent &mdash; but humans still chose the problem and built the scoring rubric.</p>
+
+<p>OpenAI's announcement is of a different kind: not measured results but stated goals. In a livestream on October 28, 2025, Sam Altman and chief scientist Jakub Pachocki gave internal target dates &mdash; an &ldquo;automated AI research intern&rdquo; by September 2026, running on hundreds of thousands of GPUs, and a true automated AI researcher by March 2028. Altman explicitly added that they may fail entirely. The goal is informative nonetheless: one of the world's largest AI labs is now organizing its research roadmap around automating its own research.</p>
+
+<p>DeepMind holds the empirically most elegant data point. AlphaEvolve, presented in May 2025, found among other things a method for multiplying 4&times;4 matrices using 48 multiplications &mdash; the first improvement of its kind for complex-valued matrices since Strassen's algorithm in 1969 &mdash; and sped up a central computational kernel in Gemini's training by 23 percent, cutting roughly one percent off total training time. One percent sounds small. But it is a closed loop in miniature: a Gemini-powered system making the next Gemini cheaper to train.</p>
+
+<p>All of this should be read with a source-critical spine. The labs have commercial reasons to appear fast, the figures are internal, and Anthropic itself reports that employee estimates of productivity gains tend to be inflated. But the direction is supported by external measurements &mdash; and that is where we turn next.</p>
+
+<h2>The curve that shortened</h2>
+
+<p>The seven-month figure that gave the June essay &ldquo;Every Seven Months&rdquo; its name comes from METR's original study in March 2025: the length of tasks AI systems can complete independently doubled roughly every seven months. That figure is already old. METR's updated dataset, Time Horizon 1.1, published on January 29, 2026, shows that the doubling rate for the period from 2023 onward is closer to four months. In METR's pilot measurement from spring 2026, the strongest assessed model sat at an estimated 16&ndash;20 hours of task length &mdash; at the upper limit of what the measurement suite can handle at all without new, longer tasks. Anthropic uses the same trend in its report: four minutes in March 2024, an hour and a half a year later, twelve-hour tasks this year.</p>
+
+<p>It is worth pausing on what this means methodologically. The confidence intervals are wide, the measurement suite is near its ceiling, and a trend that holds for three years need not hold for five. But the empirical core is uncomfortable for anyone hoping for a slowdown: the best-documented rate has not stood still or flattened &mdash; it has shortened, from seven months to roughly four. The development has outrun its own most-cited rule of thumb.</p>
+
+<h2>The counterarguments carry weight</h2>
+
+<p>Here a worse essay would shift into inevitability. The counterarguments deserve their full weight instead, because they are not straw men &mdash; they are the most likely explanation for why the loop is not yet self-sustaining.</p>
+
+<p>The first is the difference between automated engineering and automated research. Anthropic's own report is strikingly honest on this point: Claude is today superhumanly fast at <em>executing</em> well-defined experiments, but the gap persists in what the company calls research taste &mdash; choosing which problems are worth attacking, which results to trust, when a line of inquiry is dead. In the agent experiment above, humans chose the problem and wrote the scoring rubric. Automating the perspiration is not the same as automating the judgment, and it is judgment that drives paradigm shifts.</p>
+
+<p>The second is the verification bottleneck. Anthropic itself describes how human code review has already become a chokepoint as Claude produces more than humans can read &mdash; Amdahl's law in organizational form: the step that hasn't sped up sets the system's total pace. METR's randomized study from July 2025 cut deeper still: experienced developers who <em>believed</em> AI tools made them faster turned out on average to be 19 percent slower with them. Self-reported acceleration is not acceleration. This is, in my view, the single strongest reason to read the labs' internal figures with caution.</p>
+
+<p>The third is physics and economics. Epoch AI's macro model GATE &mdash; the most serious attempt to date to model automated AI development &mdash; concludes that a pure software explosion, where AI improves AI without continued expansion of physical compute, does not add up: experiments require compute, and the efficiency gains land near or below the self-sustaining threshold once experiment costs are counted. Compute is built in the physical world, and that world has queues &mdash; &ldquo;The Same Megawatt&rdquo; showed that the Nordic grid queues alone hold tens of gigawatts and that a transmission line takes seven to eight years. The loop's speed is ultimately a function of concrete, transformers, and permitting processes.</p>
+
+<p>The fourth is that the fastest scenarios have drawn qualified criticism. The AI 2027 scenario &mdash; where an automated researcher in 2027 triggers an intelligence explosion &mdash; has been picked apart, and the criticism of its timeline models is substantial: assumptions of unbroken exponentiality, sensitivity to parameter choices, absence of negative feedback. The scenario is worth reading as a stress test, not a forecast.</p>
+
+<h2>Base assessment and fast scenario</h2>
+
+<p>My base assessment, clearly marked as such: the software leg of AI development continues to accelerate, and something resembling OpenAI's &ldquo;research intern&rdquo; &mdash; systems that independently execute week-long, well-defined research tasks &mdash; will be in operation at several labs within one to two years. That is enough for a strong, cumulative speedup of AI research, perhaps a factor of two to four at lab level. But full recursive self-improvement &mdash; systems that without humans choose problems, judge results, and build their successors &mdash; is braked by the three documented bottlenecks of judgment, verification, and compute, and on the base assessment does not become reality before roughly 2030.</p>
+
+<p>Then there is the fast scenario, and it deserves equally clear marking. The most unsettling partial result in Anthropic's report is not the code share but the judgment measurement: in the company's test of choosing the <em>next step</em> in real research sessions, the models went from beating the human's choice in 51 percent of cases in November 2025 to 64 percent in April 2026. If research taste turns out to be just another capability following the same curve as all the others &mdash; and so far every measurable capability has, in the company's own phrasing &mdash; the first counterargument falls. Add the race dynamic: three labs with stated goals and hundreds of thousands of GPUs each means it is enough for <em>one</em> of them to succeed. In the fast scenario, the loop starts to bite in earnest as early as 2027&ndash;2028, with a doubling rate that keeps shortening rather than leveling out. It is a scenario, not a forecast &mdash; but anyone planning around the base assessment should stress-test the plan against the faster course, because the difference between them is only a couple of years.</p>
+
+<h2>The loop meets the payroll</h2>
+
+<p>What does the pace mean for the labor market? &ldquo;The Same Megawatt&rdquo; provided the uncomfortable frame: by that essay's illustrative calculation, every gigawatt of data center capacity in the queues carries revenue requirements equivalent to 100,000&ndash;200,000 person-years of work, and the Nordic queues sum to 8&ndash;16 million person-years &mdash; if the revenues are ultimately drawn from making human labor more efficient. The closing loop is the mechanism that sets the pace of that extraction. The base assessment gives labor markets and education systems perhaps a decade to absorb the shift; the fast scenario gives a couple of years. The difference between the scenarios is thus not abstract &mdash; it is the difference between structural transformation and shock.</p>
+
+<p>Early signals exist, but only where someone is measuring. In the United States, AI has topped Challenger, Gray & Christmas's monthly statistics on stated layoff reasons five months in a row, March through July 2026 &mdash; roughly 102,000 announced job cuts citing AI in the first half of the year, about 23 percent of all cuts, versus 5 percent for the whole of 2025. In Norway, the unions Nito and Tekna meanwhile see no signs of AI-driven layoffs. Both pictures can be true: diffusion lags, and the Nordics sit later in the chain. But there is a third explanation that should worry us more &mdash; the measurement gap. As far as we have been able to find, no Nordic government statistics separate out AI as a stated cause of redundancy; there is no box to tick. Challenger can count because American companies state the reason themselves. With the doubling rate shortened to four months, that gap becomes a policy problem in its own right: you cannot plan for what you do not measure, and the signal will show up in American data long before it shows up in Nordic data.</p>
+
+<h2>For the Nordics</h2>
+
+<p>The most remarkable thing in Anthropic's report is its conclusion: the company documenting its own acceleration argues that the world needs a verifiable option to jointly slow down &mdash; while noting that training runs are easier to conceal than missile silos and that trust infrastructure of that kind has historically taken decades to build. &ldquo;At the Foot of the Singularity&rdquo; covered Hassabis's parallel proposal; none of the mechanisms yet exist. The race is thus the default, and the pace is set by the least cautious actor.</p>
+
+<p>For Nordic decision-makers this means three things. The advice from &ldquo;Every Seven Months&rdquo; &mdash; reversible preparedness, indicators early in the chain &mdash; still stands, but the urgency has changed: what doubled every seven months now doubles every four. The indicators to watch are concrete: METR's next data points, whether labs begin crediting models with research ideas rather than execution, and the energy queues &mdash; because the Nordics sit, as &ldquo;The Same Megawatt&rdquo; showed, on one of the loop's real choke valves and thus hold more bargaining power than the debate pretends. And institutions that plan in budget years now face a process that improves itself in quarters.</p>
+
+<p>The question was never whether the loop can close. The question is whether we manage to decide anything before it does.</p>
+
+<p class="source-note">Sources: <a href="https://www.anthropic.com/institute/recursive-self-improvement" rel="noopener" target="_blank">Anthropic, "When AI builds itself", June 5, 2026</a> · <a href="https://alignment.anthropic.com/2026/automated-w2s-researcher/" rel="noopener" target="_blank">Anthropic, automated weak-to-strong researcher, April 2026</a> · <a href="https://x.com/sama/status/1983584366547829073" rel="noopener" target="_blank">Sam Altman on X, Oct 28, 2025</a> · <a href="https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/" rel="noopener" target="_blank">TechCrunch on OpenAI's goals, Oct 28, 2025</a> · <a href="https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/" rel="noopener" target="_blank">DeepMind, AlphaEvolve, May 2025</a> · <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/" rel="noopener" target="_blank">METR, "Measuring AI Ability to Complete Long Tasks", March 2025</a> · <a href="https://metr.org/blog/2026-1-29-time-horizon-1-1/" rel="noopener" target="_blank">METR, "Time Horizon 1.1", Jan 29, 2026</a> · <a href="https://metr.org/time-horizons/" rel="noopener" target="_blank">METR, time horizons overview</a> · <a href="https://arxiv.org/pdf/2507.09089" rel="noopener" target="_blank">METR, developer study, July 2025 (arXiv 2507.09089)</a> · <a href="https://epoch.ai/blog/announcing-gate" rel="noopener" target="_blank">Epoch AI, GATE</a> · <a href="https://epoch.ai/gradient-updates/ai-and-explosive-growth-redux" rel="noopener" target="_blank">Epoch AI, "AI and explosive growth redux"</a> · <a href="https://ai-2027.com/" rel="noopener" target="_blank">AI 2027</a> · <a href="https://www.lesswrong.com/posts/PAYfmG2aRbdb74mEp/a-deep-critique-of-ai-2027-s-bad-timeline-models" rel="noopener" target="_blank">Critique of AI 2027's timeline models (LessWrong)</a> · <a href="https://www.challengergray.com/blog/challenger-report-june-layoffs-cool-to-45849-down-53-from-may-ai-leads-reasons-for-fourth-consecutive-month/" rel="noopener" target="_blank">Challenger, Gray & Christmas, June 2026 report</a> · <a href="https://www.challengergray.com/blog/challenger-report-layoffs-fall-hiring-picks-up-ai-leads-for-fifth-straight-month/" rel="noopener" target="_blank">Challenger, "AI Leads For Fifth Straight Month"</a> · <a href="https://www.digi.no/artikler/ingen-tegn-til-ki-drevne-oppsigelser-i-norge-mener-nito-og-tekna/575173" rel="noopener" target="_blank">Digi.no on Nito and Tekna</a> · <a href="https://ai-skiftet.se/en/var-sjunde-manad.html" rel="noopener" target="_blank">Every Seven Months</a> · <a href="https://ai-skiftet.se/en/tva-dokument-samma-vecka.html" rel="noopener" target="_blank">Two Documents, Same Week</a> · <a href="https://ai-skiftet.se/en/hassabis-ramverket.html" rel="noopener" target="_blank">At the Foot of the Singularity</a> · <a href="https://ai-skiftet.se/en/samma-megawatt.html" rel="noopener" target="_blank">The Same Megawatt</a></p>
+
+<p class="source-note"><em>Assessment note: the base assessment and the fast scenario in the section "Base assessment and fast scenario" are the author's own conclusions; the factual claims elsewhere are documented in the sources above. Anthropic's internal figures are the company's own and not independently audited &mdash; this is stated in the text where they are used.</em></p>
+
+<p class="author-sig">Rolf Skogling writes AI-skiftet from an industry-oriented, practical perspective, grounded in how AI is actually used in organisations and production.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/en/den-sista-mjukvaran.html">Previous: The Last Piece of Software</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Rolf Skogling · <a href="/en/essays.html">Essays</a> · <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
