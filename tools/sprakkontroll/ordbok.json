@@ -1,0 +1,2558 @@
+{
+  "_om": "Sprakkontroll for ai-skiftet.se. Varje post ar BADE ordlista och oversattningsordbok: formerna under no[] far aldrig forekomma i svensk text, formerna under sv[] far aldrig forekomma i norsk text. en[] ar den engelska motsvarigheten och anvands vid oversattning. Satt en_check=true for termer som ocksa ska blockeras i engelsk text (konkreta termer som aldrig ar egennamn).",
+  "_version": "1.0.0 (2026-08-21)",
+  "tillatna_egennamn": [
+    "Regjeringen.no",
+    "Regjeringen NO",
+    "Utdanningsdirektoratet",
+    "Kunnskapsdepartementet",
+    "Datatilsynet",
+    "Forskningsradet",
+    "Forskningsrådet",
+    "Arbeidstilsynet",
+    "Stortinget",
+    "Statsministerens kontor",
+    "Digitaliseringsdirektoratet",
+    "Statens vegvesen",
+    "Nasjonal kommunikasjonsmyndighet",
+    "Medietilsynet",
+    "Barnevakten",
+    "Norges Bank",
+    "Næringslivets Hovedorganisasjon",
+    "Landsorganisasjonen",
+    "Kunnskapsdepartementets",
+    "Utdanningsforbundet",
+    "Helsedirektoratet",
+    "Folkehelseinstituttet",
+    "Sykehuspartner",
+    "Regeringskansliet",
+    "Riksdagen",
+    "Skolverket",
+    "Vinnova",
+    "Arbetsförmedlingen",
+    "Svenska kraftnät",
+    "Näringsdepartementet",
+    "Utbildningsdepartementet",
+    "Internetstiftelsen",
+    "Integritetsskyddsmyndigheten",
+    "Lärarförbundet",
+    "Sveriges Kommuner och Regioner",
+    "Arbetsmiljöverket",
+    "Folkhälsomyndigheten",
+    "Universitets- och högskolerådet",
+    "Statens medieråd",
+    "Försäkringskassan",
+    "Konkurrensverket",
+    "Naturvårdsverket",
+    "Energimyndigheten",
+    "Tillväxtverket",
+    "Dagens Næringsliv",
+    "Svenskt Näringsliv",
+    "Regeringen.se",
+    "regeringen.se",
+    "Nordland fylke",
+    "Nordlands fylke",
+    "Troms fylke",
+    "Finnmark fylke",
+    "Vestland fylke",
+    "Rogaland fylke",
+    "Innlandet fylke",
+    "fylkeskommune",
+    "Norges offentlige utredninger",
+    "Statistiska centralbyrån",
+    "Statistisk sentralbyrå",
+    "Kommunal- og distriktsdepartementet",
+    "Nærings- og fiskeridepartementet",
+    "Barne- og familiedepartementet",
+    "Likestillings- og diskrimineringsombudet",
+    "Norges vassdrags- og energidirektorat",
+    "Post- och telestyrelsen",
+    "Myndigheten för digital förvaltning",
+    "Svenskarna och internet",
+    "Nasjonal sikkerhetsmyndighet",
+    "Nasjonalbiblioteket",
+    "Nasjonalbibliotekets",
+    "Innovasjon Norge",
+    "KI-Norge",
+    "KI Norge",
+    "Statens pensjonsfond"
+  ],
+  "termer": [
+    {
+      "dom": "skola",
+      "no": [
+        "trinn",
+        "trinnet",
+        "trinnene",
+        "trinns"
+      ],
+      "sv": [
+        "årskurs",
+        "årskursen",
+        "årskurser",
+        "årskurserna"
+      ],
+      "en": [
+        "year group",
+        "grade"
+      ],
+      "en_check": true,
+      "kommentar": "NO trinn = SV årskurs. Notera att trinn i norsk text aven kan betyda steg/fas och da ar korrekt."
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "videregående",
+        "videregaende"
+      ],
+      "sv": [
+        "gymnasiet",
+        "gymnasieskolan",
+        "gymnasieskola",
+        "gymnasieutbildning"
+      ],
+      "en": [
+        "upper secondary school"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "opplæring",
+        "opplæringen",
+        "opplaering"
+      ],
+      "sv": [
+        "utbildning",
+        "utbildningen"
+      ],
+      "en": [
+        "education",
+        "training"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "barneskole",
+        "barneskolen",
+        "barneskoler",
+        "barneskolene"
+      ],
+      "sv": [
+        "lågstadiet",
+        "mellanstadiet",
+        "grundskolan"
+      ],
+      "en": [
+        "primary school"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "ungdomsskole",
+        "ungdomsskolen",
+        "ungdomsskoler",
+        "ungdomsskolene"
+      ],
+      "sv": [
+        "högstadiet"
+      ],
+      "en": [
+        "lower secondary school"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "barnehage",
+        "barnehagen",
+        "barnehager",
+        "barnehagene"
+      ],
+      "sv": [
+        "förskola",
+        "förskolan",
+        "förskolor"
+      ],
+      "en": [
+        "kindergarten",
+        "preschool"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "grunnskole",
+        "grunnskolen"
+      ],
+      "sv": [
+        "grundskola"
+      ],
+      "en": [
+        "compulsory school"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "lærer",
+        "lærere",
+        "lærerne",
+        "lærernes",
+        "laerer"
+      ],
+      "sv": [
+        "lärare",
+        "läraren",
+        "lärarna"
+      ],
+      "en": [
+        "teacher",
+        "teachers"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "skolen",
+        "skolene",
+        "skoler"
+      ],
+      "sv": [
+        "skolan",
+        "skolorna"
+      ],
+      "en": [
+        "the school",
+        "schools"
+      ]
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "utdanning",
+        "utdanningen"
+      ],
+      "sv": [
+        "utbildningen"
+      ],
+      "en": [
+        "education"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "eksamen"
+      ],
+      "sv": [
+        "examen"
+      ],
+      "en": [
+        "exam"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "læreplan",
+        "læreplanen"
+      ],
+      "sv": [
+        "läroplan",
+        "läroplanen"
+      ],
+      "en": [
+        "curriculum"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "elevene",
+        "elevenes"
+      ],
+      "sv": [
+        "eleverna",
+        "elevernas"
+      ],
+      "en": [
+        "the pupils"
+      ]
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "rektorene"
+      ],
+      "sv": [
+        "rektorerna"
+      ],
+      "en": [
+        "the principals"
+      ]
+    },
+    {
+      "dom": "skola",
+      "no": [
+        "lekse",
+        "lekser",
+        "leksen"
+      ],
+      "sv": [
+        "läxa",
+        "läxor",
+        "läxan"
+      ],
+      "en": [
+        "homework"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "kommune",
+        "kommunen",
+        "kommuner",
+        "kommunene",
+        "fylkeskommune",
+        "fylkeskommunen"
+      ],
+      "sv": [
+        "kommun",
+        "kommunen",
+        "kommuner",
+        "kommunerna"
+      ],
+      "en": [
+        "municipality",
+        "municipalities"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "fylke",
+        "fylket",
+        "fylker",
+        "fylkene"
+      ],
+      "sv": [
+        "län",
+        "länet"
+      ],
+      "en": [
+        "county",
+        "region"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "regjering",
+        "regjeringen",
+        "regjeringens"
+      ],
+      "sv": [
+        "regering",
+        "regeringen",
+        "regeringens"
+      ],
+      "en": [
+        "government"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "høring",
+        "høringen",
+        "høringsrunde"
+      ],
+      "sv": [
+        "remiss",
+        "remissen",
+        "remissrunda"
+      ],
+      "en": [
+        "consultation"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "vedtak",
+        "vedtaket"
+      ],
+      "sv": [
+        "beslut",
+        "beslutet"
+      ],
+      "en": [
+        "decision"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "forskrift",
+        "forskriften",
+        "forskrifter"
+      ],
+      "sv": [
+        "föreskrift",
+        "föreskriften",
+        "föreskrifter"
+      ],
+      "en": [
+        "regulation"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "lovforslag",
+        "lovforslaget"
+      ],
+      "sv": [
+        "lagförslag",
+        "lagförslaget"
+      ],
+      "en": [
+        "bill",
+        "legislative proposal"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "loven",
+        "lovene",
+        "lovverk",
+        "lovverket"
+      ],
+      "sv": [
+        "lagen",
+        "lagarna",
+        "lagstiftningen"
+      ],
+      "en": [
+        "the law",
+        "legislation"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "forbud",
+        "forbudet"
+      ],
+      "sv": [
+        "förbud",
+        "förbudet"
+      ],
+      "en": [
+        "ban"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "pålegg",
+        "pålegget"
+      ],
+      "sv": [
+        "föreläggande"
+      ],
+      "en": [
+        "order",
+        "injunction"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "søknad",
+        "søknaden",
+        "søknader"
+      ],
+      "sv": [
+        "ansökan",
+        "ansökningar"
+      ],
+      "en": [
+        "application"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "tilsyn",
+        "tilsynet"
+      ],
+      "sv": [
+        "tillsyn",
+        "tillsynen"
+      ],
+      "en": [
+        "supervision",
+        "oversight"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "myndighetene"
+      ],
+      "sv": [
+        "myndigheterna"
+      ],
+      "en": [
+        "the authorities"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "innbygger",
+        "innbyggere",
+        "innbyggerne"
+      ],
+      "sv": [
+        "invånare",
+        "invånarna"
+      ],
+      "en": [
+        "inhabitants",
+        "residents"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "politiet"
+      ],
+      "sv": [
+        "polisen"
+      ],
+      "en": [
+        "the police"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "utvalg",
+        "utvalget"
+      ],
+      "sv": [
+        "utskott",
+        "utskottet"
+      ],
+      "en": [
+        "committee",
+        "inquiry"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "melding",
+        "meldingen",
+        "meldingene"
+      ],
+      "sv": [
+        "meddelande",
+        "meddelandet"
+      ],
+      "en": [
+        "notice",
+        "white paper"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "støtteordning",
+        "tilskudd",
+        "tilskuddet"
+      ],
+      "sv": [
+        "stöd",
+        "bidrag",
+        "bidraget"
+      ],
+      "en": [
+        "grant",
+        "subsidy"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidsliv",
+        "arbeidslivet"
+      ],
+      "sv": [
+        "arbetsliv",
+        "arbetslivet"
+      ],
+      "en": [
+        "working life"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidsmarked",
+        "arbeidsmarkedet"
+      ],
+      "sv": [
+        "arbetsmarknad",
+        "arbetsmarknaden"
+      ],
+      "en": [
+        "labour market"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidsgiver",
+        "arbeidsgivere",
+        "arbeidsgiveren"
+      ],
+      "sv": [
+        "arbetsgivare",
+        "arbetsgivaren"
+      ],
+      "en": [
+        "employer"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidstaker",
+        "arbeidstakere",
+        "arbeidstakerne"
+      ],
+      "sv": [
+        "arbetstagare",
+        "arbetstagarna"
+      ],
+      "en": [
+        "employee",
+        "worker"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidsledighet",
+        "arbeidsledige"
+      ],
+      "sv": [
+        "arbetslöshet",
+        "arbetslösa"
+      ],
+      "en": [
+        "unemployment"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeidsplass",
+        "arbeidsplasser",
+        "arbeidsplassene"
+      ],
+      "sv": [
+        "arbetsplats",
+        "arbetsplatser",
+        "arbetstillfällen"
+      ],
+      "en": [
+        "workplace",
+        "jobs"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "ansatt",
+        "ansatte",
+        "ansattes"
+      ],
+      "sv": [
+        "anställd",
+        "anställda",
+        "anställdas"
+      ],
+      "en": [
+        "employee",
+        "employees"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "lønn",
+        "lønnen",
+        "lønninger",
+        "lønnsvekst"
+      ],
+      "sv": [
+        "lön",
+        "lönen",
+        "löner",
+        "löneökning"
+      ],
+      "en": [
+        "pay",
+        "wages"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "fagforening",
+        "fagforeningen",
+        "fagforeninger",
+        "fagbevegelsen"
+      ],
+      "sv": [
+        "fackförbund",
+        "fackförbundet",
+        "fackförening",
+        "facket"
+      ],
+      "en": [
+        "trade union"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "tillitsvalgt",
+        "tillitsvalgte"
+      ],
+      "sv": [
+        "fackligt förtroendevald",
+        "förtroendevalda"
+      ],
+      "en": [
+        "union representative"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "oppsigelse",
+        "oppsigelser",
+        "nedbemanning"
+      ],
+      "sv": [
+        "uppsägning",
+        "uppsägningar",
+        "neddragning"
+      ],
+      "en": [
+        "layoff",
+        "redundancy"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "yrke",
+        "yrkene",
+        "yrkesgruppe"
+      ],
+      "sv": [
+        "yrke",
+        "yrkena",
+        "yrkesgrupp"
+      ],
+      "en": [
+        "occupation"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "pensjon",
+        "pensjonen"
+      ],
+      "sv": [
+        "pension",
+        "pensionen"
+      ],
+      "en": [
+        "pension"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "næringsliv",
+        "næringslivet",
+        "naeringsliv"
+      ],
+      "sv": [
+        "näringsliv",
+        "näringslivet"
+      ],
+      "en": [
+        "business sector",
+        "industry"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "bedrift",
+        "bedriften",
+        "bedrifter",
+        "bedriftene"
+      ],
+      "sv": [
+        "företag",
+        "företaget",
+        "företagen"
+      ],
+      "en": [
+        "company",
+        "companies"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "selskap",
+        "selskapet",
+        "selskaper",
+        "selskapene",
+        "selskapets"
+      ],
+      "sv": [
+        "bolag",
+        "bolaget",
+        "bolagen",
+        "bolagets"
+      ],
+      "en": [
+        "company"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "virksomhet",
+        "virksomheten",
+        "virksomheter"
+      ],
+      "sv": [
+        "verksamhet",
+        "verksamheten",
+        "verksamheter"
+      ],
+      "en": [
+        "operations",
+        "business"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "ledelse",
+        "ledelsen"
+      ],
+      "sv": [
+        "ledning",
+        "ledningen"
+      ],
+      "en": [
+        "management"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "styret",
+        "styrets"
+      ],
+      "sv": [
+        "styrelsen",
+        "styrelsens"
+      ],
+      "en": [
+        "the board"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "eier",
+        "eiere",
+        "eierne",
+        "eierskap"
+      ],
+      "sv": [
+        "ägare",
+        "ägarna",
+        "ägarskap"
+      ],
+      "en": [
+        "owner",
+        "ownership"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "kjøp",
+        "kjøpet",
+        "oppkjøp"
+      ],
+      "sv": [
+        "köp",
+        "köpet",
+        "förvärv"
+      ],
+      "en": [
+        "purchase",
+        "acquisition"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "omsetning",
+        "omsetningen"
+      ],
+      "sv": [
+        "omsättning",
+        "omsättningen"
+      ],
+      "en": [
+        "revenue",
+        "turnover"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "overskudd",
+        "underskudd"
+      ],
+      "sv": [
+        "överskott",
+        "underskott"
+      ],
+      "en": [
+        "profit",
+        "deficit"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "utbygging",
+        "utbyggingen"
+      ],
+      "sv": [
+        "utbyggnad",
+        "utbyggnaden"
+      ],
+      "en": [
+        "build-out"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "sykehus",
+        "sykehuset",
+        "sykehusene"
+      ],
+      "sv": [
+        "sjukhus",
+        "sjukhuset",
+        "sjukhusen"
+      ],
+      "en": [
+        "hospital"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "helsevesen",
+        "helsevesenet",
+        "helsetjenesten"
+      ],
+      "sv": [
+        "hälso- och sjukvård",
+        "sjukvården",
+        "vården"
+      ],
+      "en": [
+        "health service",
+        "healthcare"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "sykepleier",
+        "sykepleiere"
+      ],
+      "sv": [
+        "sjuksköterska",
+        "sjuksköterskor"
+      ],
+      "en": [
+        "nurse"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "sykdom",
+        "sykdommer"
+      ],
+      "sv": [
+        "sjukdom",
+        "sjukdomar"
+      ],
+      "en": [
+        "disease"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "forsikring",
+        "forsikringen"
+      ],
+      "sv": [
+        "försäkring",
+        "försäkringen"
+      ],
+      "en": [
+        "insurance"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "befolkningen"
+      ],
+      "sv": [
+        "befolkningen"
+      ],
+      "en": [
+        "the population"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "tenåring",
+        "tenåringer",
+        "tenåringene"
+      ],
+      "sv": [
+        "tonåring",
+        "tonåringar",
+        "tonåringarna"
+      ],
+      "en": [
+        "teenager",
+        "teenagers"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "barna",
+        "barnas"
+      ],
+      "sv": [
+        "barnen",
+        "barnens"
+      ],
+      "en": [
+        "the children"
+      ]
+    },
+    {
+      "dom": "samhalle",
+      "no": [
+        "mindreårige"
+      ],
+      "sv": [
+        "minderåriga"
+      ],
+      "en": [
+        "minors"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "verktøy",
+        "verktøyet",
+        "verktøyene"
+      ],
+      "sv": [
+        "verktyg",
+        "verktyget",
+        "verktygen"
+      ],
+      "en": [
+        "tool",
+        "tools"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "løsning",
+        "løsningen",
+        "løsninger"
+      ],
+      "sv": [
+        "lösning",
+        "lösningen",
+        "lösningar"
+      ],
+      "en": [
+        "solution"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "utvikling",
+        "utviklingen",
+        "utvikler",
+        "utviklere",
+        "utviklerne"
+      ],
+      "sv": [
+        "utveckling",
+        "utvecklingen",
+        "utvecklare"
+      ],
+      "en": [
+        "development",
+        "developer"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "kunnskap",
+        "kunnskapen"
+      ],
+      "sv": [
+        "kunskap",
+        "kunskapen"
+      ],
+      "en": [
+        "knowledge"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "forsker",
+        "forskere",
+        "forskerne"
+      ],
+      "sv": [
+        "forskare",
+        "forskarna"
+      ],
+      "en": [
+        "researcher",
+        "researchers"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "forskningsmiljø",
+        "forskningsmiljøet",
+        "fagmiljø",
+        "fagmiljøet"
+      ],
+      "sv": [
+        "forskningsmiljö",
+        "forskningsmiljön"
+      ],
+      "en": [
+        "research community"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "tilgang",
+        "tilgangen"
+      ],
+      "sv": [
+        "tillgång",
+        "tillgången"
+      ],
+      "en": [
+        "access"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "bruker",
+        "brukere",
+        "brukerne",
+        "brukernes"
+      ],
+      "sv": [
+        "användare",
+        "användarna",
+        "användarnas"
+      ],
+      "en": [
+        "user",
+        "users"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "oppgave",
+        "oppgaven",
+        "oppgaver",
+        "oppgavene"
+      ],
+      "sv": [
+        "uppgift",
+        "uppgiften",
+        "uppgifter",
+        "uppgifterna"
+      ],
+      "en": [
+        "task",
+        "tasks"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "mulighet",
+        "muligheter",
+        "mulighetene"
+      ],
+      "sv": [
+        "möjlighet",
+        "möjligheter",
+        "möjligheterna"
+      ],
+      "en": [
+        "opportunity",
+        "possibilities"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "spørsmål",
+        "spørsmålet"
+      ],
+      "sv": [
+        "fråga",
+        "frågan",
+        "frågor"
+      ],
+      "en": [
+        "question",
+        "issue"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "støtte",
+        "støtten"
+      ],
+      "sv": [
+        "stöd",
+        "stödet"
+      ],
+      "en": [
+        "support"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "økning",
+        "økningen",
+        "økte"
+      ],
+      "sv": [
+        "ökning",
+        "ökningen",
+        "ökade"
+      ],
+      "en": [
+        "increase"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "gjennomføring",
+        "gjennomføringen",
+        "gjennomført",
+        "gjennomføre"
+      ],
+      "sv": [
+        "genomförande",
+        "genomförandet",
+        "genomfört",
+        "genomföra"
+      ],
+      "en": [
+        "implementation"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "kjøring",
+        "køring",
+        "treningskøring"
+      ],
+      "sv": [
+        "körning",
+        "träningskörning"
+      ],
+      "en": [
+        "run",
+        "training run"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "søk",
+        "søket",
+        "søkemotor"
+      ],
+      "sv": [
+        "sökning",
+        "sökmotor"
+      ],
+      "en": [
+        "search",
+        "search engine"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "sikkerhet",
+        "sikkerheten"
+      ],
+      "sv": [
+        "säkerhet",
+        "säkerheten"
+      ],
+      "en": [
+        "safety",
+        "security"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "personvern",
+        "personvernet"
+      ],
+      "sv": [
+        "integritetsskydd",
+        "dataskydd"
+      ],
+      "en": [
+        "privacy",
+        "data protection"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "kunstig intelligens"
+      ],
+      "sv": [
+        "artificiell intelligens"
+      ],
+      "en": [
+        "artificial intelligence"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "ikke",
+        "ikkje"
+      ],
+      "sv": [
+        "inte"
+      ],
+      "en": [
+        "not"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "også"
+      ],
+      "sv": [
+        "också"
+      ],
+      "en": [
+        "also"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "hvordan"
+      ],
+      "sv": [
+        "hur"
+      ],
+      "en": [
+        "how"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "hvorfor"
+      ],
+      "sv": [
+        "varför"
+      ],
+      "en": [
+        "why"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "hvilke",
+        "hvilken",
+        "hvilket"
+      ],
+      "sv": [
+        "vilka",
+        "vilken",
+        "vilket"
+      ],
+      "en": [
+        "which"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "hvem"
+      ],
+      "sv": [
+        "vem"
+      ],
+      "en": [
+        "who"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "noen",
+        "noe"
+      ],
+      "sv": [
+        "några",
+        "något"
+      ],
+      "en": [
+        "some",
+        "something"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "selv"
+      ],
+      "sv": [
+        "själv"
+      ],
+      "en": [
+        "itself",
+        "even"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "mellom"
+      ],
+      "sv": [
+        "mellan"
+      ],
+      "en": [
+        "between"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "etter"
+      ],
+      "sv": [
+        "efter"
+      ],
+      "en": [
+        "after"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "første",
+        "først"
+      ],
+      "sv": [
+        "första",
+        "först"
+      ],
+      "en": [
+        "first"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "sammen"
+      ],
+      "sv": [
+        "tillsammans"
+      ],
+      "en": [
+        "together"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "bare"
+      ],
+      "sv": [
+        "bara"
+      ],
+      "en": [
+        "only"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "veldig",
+        "svært"
+      ],
+      "sv": [
+        "väldigt",
+        "mycket"
+      ],
+      "en": [
+        "very"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "mye"
+      ],
+      "sv": [
+        "mycket"
+      ],
+      "en": [
+        "much"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "fra"
+      ],
+      "sv": [
+        "från"
+      ],
+      "en": [
+        "from"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "til"
+      ],
+      "sv": [
+        "till"
+      ],
+      "en": [
+        "to"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "og"
+      ],
+      "sv": [
+        "och"
+      ],
+      "en": [
+        "and"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "være",
+        "vært"
+      ],
+      "sv": [
+        "vara",
+        "varit"
+      ],
+      "en": [
+        "be",
+        "been"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "seg"
+      ],
+      "sv": [
+        "sig"
+      ],
+      "en": [
+        "itself"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "meg",
+        "deg"
+      ],
+      "sv": [
+        "mig",
+        "dig"
+      ],
+      "en": [
+        "me",
+        "you"
+      ],
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "annen",
+        "annet"
+      ],
+      "sv": [
+        "annan",
+        "annat"
+      ],
+      "en": [
+        "other"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "hos"
+      ],
+      "sv": [
+        "hos"
+      ],
+      "en": [
+        "at"
+      ],
+      "en_check": false,
+      "handhavs": false,
+      "kommentar": " Ej handhavd: kolliderar med egennamn/sammansatta myndighetsnamn."
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "mens"
+      ],
+      "sv": [
+        "medan"
+      ],
+      "en": [
+        "while"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "derimot"
+      ],
+      "sv": [
+        "däremot"
+      ],
+      "en": [
+        "however"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "ifølge"
+      ],
+      "sv": [
+        "enligt"
+      ],
+      "en": [
+        "according to"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "blant annet"
+      ],
+      "sv": [
+        "bland annat"
+      ],
+      "en": [
+        "among other things"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "samtidig"
+      ],
+      "sv": [
+        "samtidigt"
+      ],
+      "en": [
+        "at the same time"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "allerede"
+      ],
+      "sv": [
+        "redan"
+      ],
+      "en": [
+        "already"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "kanskje"
+      ],
+      "sv": [
+        "kanske"
+      ],
+      "en": [
+        "maybe"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "særlig"
+      ],
+      "sv": [
+        "särskilt"
+      ],
+      "en": [
+        "particularly"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "rundt"
+      ],
+      "sv": [
+        "runt"
+      ],
+      "en": [
+        "around"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "gjennom"
+      ],
+      "sv": [
+        "genom"
+      ],
+      "en": [
+        "through"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "uten"
+      ],
+      "sv": [
+        "utan"
+      ],
+      "en": [
+        "without"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "måned",
+        "måneden",
+        "måneder"
+      ],
+      "sv": [
+        "månad",
+        "månaden",
+        "månader"
+      ],
+      "en": [
+        "month"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "uke",
+        "uken",
+        "uker"
+      ],
+      "sv": [
+        "vecka",
+        "veckan",
+        "veckor"
+      ],
+      "en": [
+        "week"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "årene"
+      ],
+      "sv": [
+        "åren"
+      ],
+      "en": [
+        "the years"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "tallene",
+        "tallet"
+      ],
+      "sv": [
+        "siffrorna",
+        "talet"
+      ],
+      "en": [
+        "the figures"
+      ]
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "kroner"
+      ],
+      "sv": [
+        "kronor"
+      ],
+      "en": [
+        "kroner"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "prosent"
+      ],
+      "sv": [
+        "procent"
+      ],
+      "en": [
+        "percent"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "funktionsord",
+      "no": [
+        "milliarder",
+        "millioner"
+      ],
+      "sv": [
+        "miljarder",
+        "miljoner"
+      ],
+      "en": [
+        "billion",
+        "million"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "nasjonal",
+        "nasjonalt",
+        "nasjonale"
+      ],
+      "sv": [
+        "nationell",
+        "nationellt",
+        "nationella"
+      ],
+      "en": [
+        "national"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "tilpasset",
+        "tilpassede"
+      ],
+      "sv": [
+        "anpassad",
+        "anpassat",
+        "anpassade"
+      ],
+      "en": [
+        "adapted",
+        "tailored"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "tiltak",
+        "tiltaket",
+        "tiltakene"
+      ],
+      "sv": [
+        "åtgärd",
+        "åtgärden",
+        "åtgärder",
+        "åtgärderna"
+      ],
+      "en": [
+        "measure",
+        "measures"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "forslag",
+        "forslaget"
+      ],
+      "sv": [
+        "förslag",
+        "förslaget"
+      ],
+      "en": [
+        "proposal"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "innføring",
+        "innføringen",
+        "innført"
+      ],
+      "sv": [
+        "införande",
+        "införandet",
+        "infört"
+      ],
+      "en": [
+        "introduction"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "avtale",
+        "avtalen",
+        "avtaler",
+        "avtalene"
+      ],
+      "sv": [
+        "avtal",
+        "avtalet",
+        "avtalen"
+      ],
+      "en": [
+        "agreement"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "vurdering",
+        "vurderingen",
+        "vurderinger"
+      ],
+      "sv": [
+        "bedömning",
+        "bedömningen",
+        "bedömningar"
+      ],
+      "en": [
+        "assessment"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "undersøkelse",
+        "undersøkelsen"
+      ],
+      "sv": [
+        "undersökning",
+        "undersökningen"
+      ],
+      "en": [
+        "survey",
+        "study"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "forvaltning",
+      "no": [
+        "erklæring",
+        "erklæringen"
+      ],
+      "sv": [
+        "förklaring",
+        "deklaration"
+      ],
+      "en": [
+        "declaration"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "arbeid",
+        "arbeidet"
+      ],
+      "sv": [
+        "arbete",
+        "arbetet"
+      ],
+      "en": [
+        "work"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "kompetanse",
+        "kompetansen"
+      ],
+      "sv": [
+        "kompetens",
+        "kompetensen"
+      ],
+      "en": [
+        "competence",
+        "skills"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "satsing",
+        "satsingen",
+        "satsinger"
+      ],
+      "sv": [
+        "satsningar"
+      ],
+      "en": [
+        "initiative"
+      ],
+      "en_check": true,
+      "kommentar": "Bokmal tillater bade satsing och satsning - bara pluralformen kontrolleras."
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "innsats",
+        "innsatsen"
+      ],
+      "sv": [
+        "insats",
+        "insatsen"
+      ],
+      "en": [
+        "effort"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "samarbeid",
+        "samarbeidet"
+      ],
+      "sv": [
+        "samarbete",
+        "samarbetet"
+      ],
+      "en": [
+        "collaboration"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "arbetsmarknad",
+      "no": [
+        "erfaring",
+        "erfaringen",
+        "erfaringer"
+      ],
+      "sv": [
+        "erfarenhet",
+        "erfarenheten",
+        "erfarenheter"
+      ],
+      "en": [
+        "experience"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "vekst",
+        "veksten"
+      ],
+      "sv": [
+        "tillväxt",
+        "tillväxten"
+      ],
+      "en": [
+        "growth"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "endring",
+        "endringen",
+        "endringer",
+        "endringene"
+      ],
+      "sv": [
+        "förändring",
+        "förändringen",
+        "förändringar"
+      ],
+      "en": [
+        "change"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "utfordring",
+        "utfordringen",
+        "utfordringer"
+      ],
+      "sv": [
+        "utmaning",
+        "utmaningen",
+        "utmaningar"
+      ],
+      "en": [
+        "challenge"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "naringsliv",
+      "no": [
+        "prosjekt",
+        "prosjektet",
+        "prosjekter"
+      ],
+      "sv": [
+        "projekt",
+        "projektet",
+        "projekten"
+      ],
+      "en": [
+        "project"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "tjeneste",
+        "tjenesten",
+        "tjenester",
+        "tjenestene"
+      ],
+      "sv": [
+        "tjänst",
+        "tjänsten",
+        "tjänster",
+        "tjänsterna"
+      ],
+      "en": [
+        "service",
+        "services"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "nettverk",
+        "nettverket"
+      ],
+      "sv": [
+        "nätverk",
+        "nätverket"
+      ],
+      "en": [
+        "network"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "strømforbruk",
+        "strømnett",
+        "strømmen",
+        "kraftnett",
+        "kraftnettet"
+      ],
+      "sv": [
+        "elförbrukning",
+        "elnät",
+        "elnätet",
+        "strömmen"
+      ],
+      "en": [
+        "power consumption",
+        "grid"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "styring",
+        "styringen"
+      ],
+      "sv": [
+        "styrning",
+        "styrningen"
+      ],
+      "en": [
+        "governance"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "trussel",
+        "trusler",
+        "trusselen"
+      ],
+      "sv": [
+        "hot",
+        "hotet",
+        "hoten"
+      ],
+      "en": [
+        "threat"
+      ],
+      "en_check": false,
+      "kommentar": "SV hot kontrolleras ej i engelsk text (kolliderar med engelskans hot)."
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "framover",
+        "fremover"
+      ],
+      "sv": [
+        "framöver"
+      ],
+      "en": [
+        "going forward"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "hittil"
+      ],
+      "sv": [
+        "hittills"
+      ],
+      "en": [
+        "so far"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "nesten"
+      ],
+      "sv": [
+        "nästan"
+      ],
+      "en": [
+        "almost"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "flere"
+      ],
+      "sv": [
+        "flera"
+      ],
+      "en": [
+        "several"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "største",
+        "høyere",
+        "lavere"
+      ],
+      "sv": [
+        "största",
+        "högre",
+        "lägre"
+      ],
+      "en": [
+        "largest",
+        "higher",
+        "lower"
+      ],
+      "en_check": true
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "sier",
+        "mener"
+      ],
+      "sv": [
+        "säger",
+        "menar"
+      ],
+      "en": [
+        "says"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "blant"
+      ],
+      "sv": [
+        "bland"
+      ],
+      "en": [
+        "among"
+      ],
+      "en_check": false
+    },
+    {
+      "dom": "teknik",
+      "no": [
+        "KI",
+        "KI-loven",
+        "KI-forordningen"
+      ],
+      "sv": [
+        "AI",
+        "AI-lagen",
+        "AI-forordningen"
+      ],
+      "en": [
+        "AI",
+        "the AI Act"
+      ],
+      "handhavs": false,
+      "kommentar": "NO forkortar kunstig intelligens som KI, SV/EN som AI. Ej handhavd eftersom KI ocksa ar Karolinska Institutet pa svenska - kontrolleras manuellt vid oversattning: KI-sammansattningar i svensk text ska normalt vara AI-."
+    }
+  ],
+  "_tier": "handhavs=false betyder att termparet finns i ordboken for konsekvent oversattning men INTE fallerar kontrollen, eftersom formen ocksa forekommer i korrekta egennamn."
+}

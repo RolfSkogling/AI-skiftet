@@ -1,0 +1,178 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Sprakkontroll for ai-skiftet.se - mekanisk sparr mot spraklackage.
+
+Fallerar (exit 1) om norska ord forekommer i svensk text, svenska ord i norsk
+text, eller nordiska facktermer i engelsk text. Korrekturlasning fangar inte
+den har feltypen: norska i svensk text laser flytande.
+
+Anvandning:
+    python3 tools/sprakkontroll/check_language.py            # hela repot
+    python3 tools/sprakkontroll/check_language.py index.html no/index.html
+    python3 tools/sprakkontroll/check_language.py --live     # mot publicerad sajt
+    python3 tools/sprakkontroll/check_language.py --json     # maskinlasbart
+
+Undantag: satt lang-attribut pa elementet, t.ex.
+    <span lang="nb">videregaende opplaering</span>
+sa hoppas innehallet over (avsett citat pa annat sprak).
+"""
+import argparse, html, json, os, re, sys, urllib.request
+
+HAR = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HAR))
+ORDBOK = os.path.join(HAR, "ordbok.json")
+SPRAK = ("sv", "no", "en")
+MOJIBAKE = ["\u00c3\u00a4", "\u00c3\u00b6", "\u00c3\u00a5", "\u00c3\u00a6",
+            "\u00c3\u00b8", "\u00c3\u2026", "\u00c3\u201e", "\u00c3\u2013",
+            "\u00e2\u20ac", "\u00c2\u00a0"]
+LIVE_BAS = "https://ai-skiftet.se"
+LIVE_SIDOR = ["/index.html", "/nyheter/index.html", "/en/index.html",
+              "/en/nyheter/index.html", "/no/index.html", "/no/nyheter/index.html"]
+
+
+def las_ordbok(sokvag=ORDBOK):
+    with open(sokvag, encoding="utf-8") as f:
+        data = json.load(f)
+    regler = {s: [] for s in SPRAK}
+    for post in data["termer"]:
+        no = [t.lower() for t in post.get("no", [])]
+        sv = [t.lower() for t in post.get("sv", [])]
+        if post.get("handhavs", True) is False:
+            continue
+        en_kontroll = post.get("en_check", False)
+        dom = post.get("dom", "")
+        ratt_sv = ", ".join(post.get("sv", [])) or "(saknas)"
+        ratt_no = ", ".join(post.get("no", [])) or "(saknas)"
+        ratt_en = ", ".join(post.get("en", [])) or "(saknas)"
+        for term in no:
+            if term in sv:
+                continue
+            regler["sv"].append((term, "norska", ratt_sv, dom))
+            if en_kontroll:
+                regler["en"].append((term, "norska", ratt_en, dom))
+        for term in sv:
+            if term in no:
+                continue
+            regler["no"].append((term, "svenska", ratt_no, dom))
+            if en_kontroll:
+                regler["en"].append((term, "svenska", ratt_en, dom))
+    kompilerat = {}
+    for sprak, poster in regler.items():
+        sedda, unika = set(), []
+        for term, kalla, ratt, dom in poster:
+            if term in sedda:
+                continue
+            sedda.add(term)
+            kropp = r"\s+".join(re.escape(o) for o in term.split())
+            unika.append((re.compile(r"(?<![\w-])" + kropp + r"(?![\w-])", re.IGNORECASE),
+                          term, kalla, ratt, dom))
+        kompilerat[sprak] = unika
+    return kompilerat, data.get("tillatna_egennamn", [])
+
+
+def _tomma_rader(traff):
+    return "\n" * traff.group(0).count("\n")
+
+
+def stad(text, sprak, egennamn):
+    """Ta bort kod, taggar/attribut, kallrader och egennamn. Bevarar radantal."""
+    for monster in (r"<script\b.*?</script>", r"<style\b.*?</style>", r"<!--.*?-->"):
+        text = re.sub(monster, _tomma_rader, text, flags=re.S | re.I)
+    text = re.sub(r"<(\w+)\b[^>]*\blang=\"(?!" + sprak + r"\b)[^\"]*\"[^>]*>.*?</\1>",
+                  _tomma_rader, text, flags=re.S | re.I)
+    text = re.sub(r"<div[^>]*class=\"[^\"]*news-card__source[^\"]*\"[^>]*>.*?</div>",
+                  _tomma_rader, text, flags=re.S | re.I)
+    text = re.sub(r"<(\w+)[^>]*class=\"[^\"]*lang-switcher[^\"]*\"[^>]*>.*?</\1>",
+                  _tomma_rader, text, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    for namn in egennamn:
+        text = re.sub(re.escape(namn), " ", text, flags=re.I)
+    return text
+
+
+def sprak_for(sokvag):
+    delar = sokvag.replace(os.sep, "/").strip("/").split("/")
+    if "en" in delar:
+        return "en"
+    if "no" in delar:
+        return "no"
+    return "sv"
+
+
+def granska(namn, text, sprak, regler, egennamn):
+    traffar = []
+    for radnr, rad in enumerate(stad(text, sprak, egennamn).split("\n"), 1):
+        if not rad.strip():
+            continue
+        for regex, term, kalla, ratt, dom in regler[sprak]:
+            for m in regex.finditer(rad):
+                if m.group(0).isupper() and len(m.group(0)) <= 5:
+                    continue          # akronym (FRA, LO, NHO), inte spraklackage
+                traffar.append({"fil": namn, "rad": radnr, "sprak": sprak, "term": m.group(0),
+                                "fran": kalla, "ratt": ratt, "dom": dom,
+                                "kontext": rad[max(0, m.start() - 60):m.end() + 60].strip()})
+    for radnr, rad in enumerate(text.split("\n"), 1):
+        for m in MOJIBAKE:
+            if m in rad:
+                traffar.append({"fil": namn, "rad": radnr, "sprak": sprak, "term": m,
+                                "fran": "mojibake", "ratt": "korrekt UTF-8", "dom": "teckenkodning",
+                                "kontext": rad.strip()[:160]})
+    return traffar
+
+
+def samla_filer(argv):
+    if argv:
+        return [os.path.abspath(p) for p in argv]
+    filer = []
+    for kat, undermappar, filnamn in os.walk(ROOT):
+        undermappar[:] = [d for d in undermappar if d not in (".git", "node_modules", "assets", "audio")]
+        filer += [os.path.join(kat, f) for f in filnamn if f.endswith(".html")]
+    return sorted(filer)
+
+
+def main():
+    p = argparse.ArgumentParser(description="Sprakkontroll ai-skiftet.se")
+    p.add_argument("filer", nargs="*")
+    p.add_argument("--live", action="store_true", help="granska publicerade sidor")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--ordbok", default=ORDBOK)
+    args = p.parse_args()
+
+    regler, egennamn = las_ordbok(args.ordbok)
+    traffar, antal = [], 0
+
+    if args.live:
+        for sida in LIVE_SIDOR:
+            url = LIVE_BAS + sida
+            with urllib.request.urlopen(url, timeout=30) as r:
+                text = r.read().decode("utf-8", "replace")
+            antal += 1
+            traffar += granska(url, text, sprak_for(sida), regler, egennamn)
+    else:
+        for sokvag in samla_filer(args.filer):
+            rel = os.path.relpath(sokvag, ROOT)
+            with open(sokvag, encoding="utf-8", errors="replace") as f:
+                text = f.read()
+            antal += 1
+            traffar += granska(rel, text, sprak_for(rel), regler, egennamn)
+
+    if args.json:
+        print(json.dumps({"granskade": antal, "traffar": traffar}, ensure_ascii=False, indent=2))
+    else:
+        print("Sprakkontroll: %d filer granskade, %d traffar." % (antal, len(traffar)))
+        for t in traffar:
+            print("  %s:%s [%s] %s (%s) -> ratt: %s" % (t["fil"], t["rad"], t["sprak"],
+                                                        t["term"], t["fran"], t["ratt"]))
+            print("      ...%s..." % t["kontext"])
+    if traffar:
+        print("FALLERAR: %d spraktraffar. Publicera INTE forran de ar rattade." % len(traffar),
+              file=sys.stderr)
+        return 1
+    print("RENT: inga spraktraffar, ingen mojibake.", file=sys.stderr)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
