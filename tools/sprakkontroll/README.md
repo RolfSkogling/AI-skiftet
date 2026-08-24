@@ -24,8 +24,31 @@ Mekanisk kontroll i stallet for mer korrekturlasning.
 | Fil | Roll |
 |---|---|
 | `ordbok.json` | Bade ordlista OCH oversattningsordbok. Varje post har `no` / `sv` / `en`-former. Formerna under `no` far aldrig forekomma i svensk text, formerna under `sv` aldrig i norsk. `en`-formen anvands vid oversattning sa framtida korningar oversatter konsekvent i stallet for att improvisera. |
-| `check_language.py` | Granskaren. Exit 0 = rent, exit 1 = traffar. Kollar aven mojibake. |
-| `verifiera.sh` | Tunn wrapper for anvandning som verifieringssteg. |
+| `check_language.py` | Granskaren. Exit 0 = rent, exit 1 = traffar ELLER for fa granskade filer. Kollar aven mojibake. |
+| `verifiera.sh` | Tunn wrapper for anvandning som verifieringssteg i en lokal klon. |
+| `hamta_och_kor.sh` | Hamtar granskaren ur repot med hard felkontroll och kor den. For korningar utan klon (schemalagda Cowork-korningar). |
+| `test_sprakkontroll.py` | Regressionstest. Kor gammal och ny logik mot samma indata och kraver att den gamla slappte igenom felet och den nya fangar det. |
+
+## Tva grindar, inte en (bada tillagda 2026-08-24)
+
+**1. Sprakkod normaliseras, och rotelementet ar inget citat.** Citatregeln nedan
+jamforde tidigare lang-attributet med sokvagsspraket rakt av. Sidorna markerar sig
+med `<html lang="nb">` medan sokvagsspraket heter `no` — alltsa raknades HELA det
+norska dokumentet som ett frammandespraakigt citat och tomdes fore granskning.
+`no/index.html` gick in som 103 267 tecken och kom ut som 0. Spaerren gav gront pa
+46 norska sidor utan att ha last ett tecken av dem. Nu normaliseras `nb`, `nb-NO`
+och `nn` till norska, `<html>` undantas fran regeln, och en OKAND sprakkod
+granskas i stallet for att tomas — en felstavad `lang` far aldrig tysta innehall.
+
+**2. Noll granskade filer ar inte ett rent resultat.** `--minst N` (standard 1)
+fallerar om farre an N filer granskades. Utan den gav en tom filmangd — fel
+katalog, misslyckad nedladdning, sidor skrivna pa fel plats — exit 0, och
+publiceringen slapptes igenom av en sparr som aldrig last nagot. Satt `--minst`
+till antalet sidor som faktiskt ska publiceras.
+
+Kor `python3 tools/sprakkontroll/test_sprakkontroll.py` efter varje andring i
+granskaren. Testet kraver att den gamla logiken slappte igenom felet — gar aven
+den igenom ar testet trasigt, inte fixen bevisad.
 
 ```bash
 bash tools/sprakkontroll/verifiera.sh            # hela repot

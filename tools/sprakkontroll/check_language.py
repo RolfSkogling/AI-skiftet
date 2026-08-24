@@ -12,10 +12,15 @@ Anvandning:
     python3 tools/sprakkontroll/check_language.py index.html no/index.html
     python3 tools/sprakkontroll/check_language.py --live     # mot publicerad sajt
     python3 tools/sprakkontroll/check_language.py --json     # maskinlasbart
+    python3 tools/sprakkontroll/check_language.py --minst 6  # krav pa tackning
+
+Exitkoder: 0 = rent, 1 = traffar ELLER for fa granskade filer.
 
 Undantag: satt lang-attribut pa elementet, t.ex.
     <span lang="nb">videregaende opplaering</span>
-sa hoppas innehallet over (avsett citat pa annat sprak).
+sa hoppas innehallet over (avsett citat pa annat sprak). Sprakkoden normaliseras
+(nb, nb-NO och nn ar norska), och rotelementet <html> undantas fran regeln —
+annars raknas hela dokumentet som ett citat och granskas aldrig.
 """
 import argparse, html, json, os, re, sys, urllib.request
 
@@ -23,6 +28,12 @@ HAR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HAR))
 ORDBOK = os.path.join(HAR, "ordbok.json")
 SPRAK = ("sv", "no", "en")
+# Sokvagen ger sprak "sv"/"no"/"en", men dokumenten markerar sig med BCP 47-koder.
+# De norska sidorna anvander lang="nb". Utan den har mappningen raknades
+# <html lang="nb"> som ett frammandespraakigt citat, och HELA den norska sidan
+# tomdes fore granskning — spaerren gav gront utan att ha last nagot
+# (upptackt och lagat 2026-08-24).
+SPRAKFAMILJ = {"sv": {"sv"}, "no": {"no", "nb", "nn"}, "en": {"en"}}
 MOJIBAKE = ["\u00c3\u00a4", "\u00c3\u00b6", "\u00c3\u00a5", "\u00c3\u00a6",
             "\u00c3\u00b8", "\u00c3\u2026", "\u00c3\u201e", "\u00c3\u2013",
             "\u00e2\u20ac", "\u00c2\u00a0"]
@@ -75,12 +86,45 @@ def _tomma_rader(traff):
     return "\n" * traff.group(0).count("\n")
 
 
+def sprakfamilj(varde):
+    """'nb' -> 'no', 'nb-NO' -> 'no', 'sv-SE' -> 'sv'. None for okand kod.
+
+    Okand kod ger medvetet None och INTE 'frammande sprak' — en felstavad
+    lang-kod ska leda till att innehallet granskas, aldrig till att det tystas.
+    """
+    primar = re.split(r"[-_]", str(varde).strip().lower(), 1)[0]
+    for familj, koder in SPRAKFAMILJ.items():
+        if primar in koder:
+            return familj
+    return None
+
+
 def stad(text, sprak, egennamn):
     """Ta bort kod, taggar/attribut, kallrader och egennamn. Bevarar radantal."""
     for monster in (r"<script\b.*?</script>", r"<style\b.*?</style>", r"<!--.*?-->"):
         text = re.sub(monster, _tomma_rader, text, flags=re.S | re.I)
-    text = re.sub(r"<(\w+)\b[^>]*\blang=\"(?!" + sprak + r"\b)[^\"]*\"[^>]*>.*?</\1>",
-                  _tomma_rader, text, flags=re.S | re.I)
+
+    def _avsett_citat(traff):
+        """Tomma bara element som BEVISLIGEN ar pa ett annat sprak.
+
+        Skarpningar mot den gamla negativa lookaheaden `(?!sv\\b)`:
+          1. sprakkoden normaliseras — nb, nb-NO och nn ar norska,
+          2. okand sprakkod granskas i stallet for att tomas: en felstavad
+             lang far aldrig tysta innehall.
+        """
+        familj = sprakfamilj(traff.group(2))
+        if familj is None or familj == sprak:
+            return traff.group(0)
+        return _tomma_rader(traff)
+
+    # `(?!html\b)` undantar ROTELEMENTET fran citatregeln, och det maste ske i
+    # monstret — inte i _avsett_citat. Ett <html ...>-element som MATCHAR och
+    # lamnas orort konsumerar anda hela dokumentet ur re.sub:s scanning, sa
+    # inre citat skulle aldrig provas. Det var sa <html lang="nb"> tomde hela
+    # den norska sidan: dokumentet raknades som ett frammandespraakigt citat
+    # (2026-08-24).
+    text = re.sub(r"<(?!html\b)(\w+)\b[^>]*\blang=\"([^\"]*)\"[^>]*>.*?</\1>",
+                  _avsett_citat, text, flags=re.S | re.I)
     text = re.sub(r"<div[^>]*class=\"[^\"]*news-card__source[^\"]*\"[^>]*>.*?</div>",
                   _tomma_rader, text, flags=re.S | re.I)
     text = re.sub(r"<(\w+)[^>]*class=\"[^\"]*lang-switcher[^\"]*\"[^>]*>.*?</\1>",
@@ -138,6 +182,9 @@ def main():
     p.add_argument("--live", action="store_true", help="granska publicerade sidor")
     p.add_argument("--json", action="store_true")
     p.add_argument("--ordbok", default=ORDBOK)
+    p.add_argument("--minst", type=int, default=1, metavar="N",
+                   help="fallera om farre an N filer granskades (standard 1). "
+                        "Satt till antalet sidor som ska publiceras.")
     args = p.parse_args()
 
     regler, egennamn = las_ordbok(args.ordbok)
@@ -166,11 +213,22 @@ def main():
             print("  %s:%s [%s] %s (%s) -> ratt: %s" % (t["fil"], t["rad"], t["sprak"],
                                                         t["term"], t["fran"], t["ratt"]))
             print("      ...%s..." % t["kontext"])
-    if traffar:
-        print("FALLERAR: %d spraktraffar. Publicera INTE forran de ar rattade." % len(traffar),
+    # Tackningsgrind (2026-08-24): noll granskade filer ar INTE ett rent resultat.
+    # Utan den har raden ger en tom filmangd — fel katalog, misslyckad
+    # nedladdning, sidor skrivna pa fel plats — exit 0 och publiceringen slapps
+    # igenom av en sparr som aldrig last nagot.
+    if antal < args.minst:
+        print("FALLERAR: %d filer granskade, minst %d kravs. Kontrollen har inte "
+              "last det den skulle skydda — publicera INTE." % (antal, args.minst),
               file=sys.stderr)
         return 1
-    print("RENT: inga spraktraffar, ingen mojibake.", file=sys.stderr)
+
+    if traffar:
+        print("FALLERAR: %d spraktraffar i %d filer. Publicera INTE forran de ar rattade."
+              % (len(traffar), antal), file=sys.stderr)
+        return 1
+    print("RENT: %d filer granskade, inga spraktraffar, ingen mojibake." % antal,
+          file=sys.stderr)
     return 0
 
 
