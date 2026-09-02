@@ -56,7 +56,17 @@ GROUP_RE = re.compile(
 CARD_RE = re.compile(r'<div class="news-card"[^>]*data-tags="([^"]*)"[^>]*>(.*?)</div>\s*</div>', re.S)
 H3_RE = re.compile(r"<h3>\s*<a[^>]*>(.*?)</a>\s*</h3>", re.S)
 P_RE = re.compile(r"<p>(.*?)</p>", re.S)
-SRC_RE = re.compile(r'<div class="news-card__source">(.*?)</div>', re.S)
+# CARD_RE ater upp kortets sista </div>-par, sa kallradens egen sluttagg kan
+# saknas i `inner`. Ta darfor allt som ateratar och stad bort en ev. sluttagg.
+SRC_RE = re.compile(r'<div class="news-card__source">(.*)', re.S)
+
+
+def source_text(inner):
+    m = SRC_RE.search(inner)
+    if not m:
+        return ""
+    s = m.group(1).strip()
+    return s[: -len("</div>")].strip() if s.endswith("</div>") else s
 TAG_STRIP = re.compile(r"<[^>]+>")
 
 
@@ -88,13 +98,12 @@ def parse_archive(path):
                 continue
             href = re.search(r'<h3>\s*<a href="([^"]+)"', inner)
             paras = [p for p in P_RE.findall(inner)]
-            src = SRC_RE.search(inner)
             cards.append({
                 "tags": tags.split(),
                 "title": text_of(h3.group(1)),
                 "href": href.group(1) if href else "",
                 "paras": paras,
-                "source": src.group(1).strip() if src else "",
+                "source": source_text(inner),
             })
         if cards:
             days.append((date, cards))
