@@ -383,3 +383,20 @@ img{max-width:100%;height:auto}
   .about-inner,
   .debate-highlight{padding:22px}
 }
+
+/* Dagsankare 2026-09-02: RSS-flodet lankar till #dag-YYYY-MM-DD i nyhetsarkivet.
+   Utan scroll-margin hamnar dagsrubriken bakom den sticky navigeringen. */
+.news-date-group{scroll-margin-top:88px}
+.news-date-group:target .news-date{color:var(--accent,#8c4a1f)}
+
+/* RSS-ruta 2026-09-02: samma komponent som redan anvands pa poddsidorna,
+   flyttad hit sa att nyhetsflodet kan lankas fran forstasidan i alla sprak. */
+.rss-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 18px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius,8px);background:var(--surface);box-shadow:var(--shadow)}
+.rss-tools__body{min-width:220px;flex:1}
+.rss-tools__label{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:800;color:var(--accent)}
+.rss-tools__text{font-size:.9rem;color:var(--text);margin:2px 0 3px}
+.rss-tools__url{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.84rem;color:var(--muted);word-break:break-all}
+.rss-tools__button,.rss-tools__link{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 12px;border:1px solid var(--accent);border-radius:6px;font:inherit;font-weight:700;line-height:1.1;text-decoration:none;white-space:nowrap;cursor:pointer}
+.rss-tools__button{background:var(--accent);color:#fff}
+.rss-tools__link{background:transparent;color:var(--accent)}
+.rss-tools__link:hover{background:#fbf8f4;text-decoration:none}
