@@ -4,7 +4,8 @@
 Sprakkontroll for ai-skiftet.se - mekanisk sparr mot spraklackage.
 
 Fallerar (exit 1) om norska ord forekommer i svensk text, svenska ord i norsk
-text, eller nordiska facktermer i engelsk text. Korrekturlasning fangar inte
+text, nordiska facktermer i engelsk text, ELLER om ett ord ar felstavat med fel
+omljudsvokal (ocksa med a-umlaut i stallet for a-ring). Korrekturlasning fangar inte
 den har feltypen: norska i svensk text laser flytande.
 
 Anvandning:
@@ -38,8 +39,34 @@ MOJIBAKE = ["\u00c3\u00a4", "\u00c3\u00b6", "\u00c3\u00a5", "\u00c3\u00a6",
             "\u00c3\u00b8", "\u00c3\u2026", "\u00c3\u201e", "\u00c3\u2013",
             "\u00e2\u20ac", "\u00c2\u00a0"]
 LIVE_BAS = "https://ai-skiftet.se"
-LIVE_SIDOR = ["/index.html", "/nyheter/index.html", "/en/index.html",
+# Nyhetssidorna ar minimikravet — de maste alltid granskas aven om repot
+# saknas (schemalagda korningar utan klon).
+LIVE_KARNA = ["/index.html", "/nyheter/index.html", "/en/index.html",
               "/en/nyheter/index.html", "/no/index.html", "/no/nyheter/index.html"]
+
+
+def live_sidor():
+    """Alla publicerade HTML-sidor, harledda ur repot.
+
+    Tidigare var det har en hardkodad lista pa sex nyhetssidor. Foljden var att
+    essasidorna ALDRIG granskades mot live: fem spraktraffar i no/delningen.html,
+    no/minnet-som-vager-ewmc.html och no/turbulenta-aren.html lag opptackta tills
+    ett fullrepo-svep gjordes for hand 2026-09-02. En hardkodad lista vaxer inte
+    med sajten — den harleds nu i stallet, sa varje ny essa tacks automatiskt.
+    """
+    sidor = list(LIVE_KARNA)
+    if os.path.isdir(ROOT):
+        for kat, undermappar, filnamn in os.walk(ROOT):
+            undermappar[:] = [d for d in undermappar
+                              if d not in (".git", "node_modules", "assets", "audio")]
+            for f in filnamn:
+                if not f.endswith(".html"):
+                    continue
+                rel = os.path.relpath(os.path.join(kat, f), ROOT).replace(os.sep, "/")
+                url = "/" + rel
+                if url not in sidor:
+                    sidor.append(url)
+    return sidor
 
 
 def las_ordbok(sokvag=ORDBOK):
@@ -68,6 +95,20 @@ def las_ordbok(sokvag=ORDBOK):
             regler["no"].append((term, "svenska", ratt_no, dom))
             if en_kontroll:
                 regler["en"].append((term, "svenska", ratt_en, dom))
+    # Felstavningar: strangar som inte ar ord pa nagot av spraken. Termlistan
+    # ovan fangar RIKTIGA ord pa FEL sprak och kan per konstruktion inte se
+    # felstavningar — "ocksa" med a-umlaut star inte i nagon ordlista och ar
+    # valformad UTF-8, sa varken termregeln eller mojibake-listan reagerade.
+    # Den luckan slapp igenom ett publicerat stavfel 2026-08-28.
+    felstavningar = {s: [] for s in SPRAK}
+    for post in data.get("felstavningar", []):
+        sprak = post.get("sprak", "sv")
+        if sprak not in felstavningar:
+            continue
+        felstavningar[sprak].append(
+            (re.compile(r"(?<![\w-])" + re.escape(post["fel"]) + r"(?![\w-])", re.IGNORECASE),
+             post["fel"], post["ratt"], post.get("kommentar", "")))
+
     kompilerat = {}
     for sprak, poster in regler.items():
         sedda, unika = set(), []
@@ -79,7 +120,7 @@ def las_ordbok(sokvag=ORDBOK):
             unika.append((re.compile(r"(?<![\w-])" + kropp + r"(?![\w-])", re.IGNORECASE),
                           term, kalla, ratt, dom))
         kompilerat[sprak] = unika
-    return kompilerat, data.get("tillatna_egennamn", [])
+    return kompilerat, data.get("tillatna_egennamn", []), felstavningar
 
 
 def _tomma_rader(traff):
@@ -145,11 +186,18 @@ def sprak_for(sokvag):
     return "sv"
 
 
-def granska(namn, text, sprak, regler, egennamn):
+def granska(namn, text, sprak, regler, egennamn, felstavningar=None):
     traffar = []
+    felstavningar = felstavningar or {}
     for radnr, rad in enumerate(stad(text, sprak, egennamn).split("\n"), 1):
         if not rad.strip():
             continue
+        for regex, fel, ratt, kommentar in felstavningar.get(sprak, ()):
+            for m in regex.finditer(rad):
+                traffar.append({"fil": namn, "rad": radnr, "sprak": sprak,
+                                "term": m.group(0), "fran": "felstavning",
+                                "ratt": ratt, "dom": kommentar or "stavning",
+                                "kontext": rad[max(0, m.start() - 60):m.end() + 60].strip()})
         for regex, term, kalla, ratt, dom in regler[sprak]:
             for m in regex.finditer(rad):
                 if m.group(0).isupper() and len(m.group(0)) <= 5:
@@ -187,23 +235,23 @@ def main():
                         "Satt till antalet sidor som ska publiceras.")
     args = p.parse_args()
 
-    regler, egennamn = las_ordbok(args.ordbok)
+    regler, egennamn, felstavningar = las_ordbok(args.ordbok)
     traffar, antal = [], 0
 
     if args.live:
-        for sida in LIVE_SIDOR:
+        for sida in live_sidor():
             url = LIVE_BAS + sida
             with urllib.request.urlopen(url, timeout=30) as r:
                 text = r.read().decode("utf-8", "replace")
             antal += 1
-            traffar += granska(url, text, sprak_for(sida), regler, egennamn)
+            traffar += granska(url, text, sprak_for(sida), regler, egennamn, felstavningar)
     else:
         for sokvag in samla_filer(args.filer):
             rel = os.path.relpath(sokvag, ROOT)
             with open(sokvag, encoding="utf-8", errors="replace") as f:
                 text = f.read()
             antal += 1
-            traffar += granska(rel, text, sprak_for(rel), regler, egennamn)
+            traffar += granska(rel, text, sprak_for(rel), regler, egennamn, felstavningar)
 
     if args.json:
         print(json.dumps({"granskade": antal, "traffar": traffar}, ensure_ascii=False, indent=2))
