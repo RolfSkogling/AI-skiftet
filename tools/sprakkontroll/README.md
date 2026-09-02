@@ -59,6 +59,53 @@ bash tools/sprakkontroll/verifiera.sh index.html no/index.html
 
 Sprak bestams av sokvagen: `en/...` = engelska, `no/...` = norska, ovrigt = svenska.
 
+## Tre detektorer, inte tva (den tredje tillagd 2026-09-02)
+
+Granskaren har nu tre oberoende detektorer. Hall isar dem — de fangar olika saker:
+
+| Detektor | Fangar | Kalla |
+|---|---|---|
+| Termlistan | RIKTIGA ord pa FEL sprak (norskt `trinn` i svensk text) | `ordbok.json` -> `termer` |
+| Felstavningslistan | strangar som inte ar ord pa NAGOT sprak (`ocksa` med a-umlaut) | `ordbok.json` -> `felstavningar` |
+| Mojibake | trasig teckenkodning (`Ã¤`, `Ã¶`) | `MOJIBAKE` i granskaren |
+
+### Varfor den tredje behovdes
+
+Den 28 augusti 2026 publicerades stavfelet **ocks{a-umlaut}** (for *ocksa* med a-ring) och
+passerade den blockerande grinden orort. Bada de gamla detektorerna var blinda
+av konstruktion:
+
+* **Termlistan** letar efter riktiga ord pa fel sprak. `ocks{a-umlaut}` ar inget ord pa
+  vare sig svenska eller norska och kan darfor inte sta i nagon ordlista.
+* **Mojibake-listan** letar efter trasiga bytesekvenser. `&auml;` ar valformad
+  UTF-8 — tecknet ar korrekt kodat, det ar bara fel tecken.
+
+Kontrollen het sprakkontroll men tackte bara EN sorts sprakfel. Felstavnings-
+listan tacker den feltyp en engelskspraakig modell producerar oftast: ratt
+konsonanter, fel omljudsvokal.
+
+### Regeln for felstavningslistan
+
+Listan ar **sluten** och far bara innehalla strangar som inte ar ord pa nagot av
+spraken. Ar strangen korrekt svenska men fel i norsk text hor den hemma i
+termlistan, inte har — annars dubbelrapporteras samma trafk. `test_10` haller
+kontraktet och fallerar om listorna overlappar; den fangade `forst` och
+`losning` nar listan skrevs.
+
+Lagg **aldrig** in ett ord som existerar pa malspraket. Precision gar fore
+tackning: en sparr som skriker varg blir avstangd.
+
+## Live-lage granskar hela sajten (2026-09-02)
+
+`--live` hade en hardkodad lista pa sex nyhetssidor. Foljden var att
+essasidorna aldrig granskades mot live — fem spraktraffar i `no/delningen.html`,
+`no/minnet-som-vager-ewmc.html` och `no/turbulenta-aren.html` lag opptackta tills
+ett fullrepo-svep gjordes for hand. En hardkodad lista vaxer inte med sajten.
+
+`live_sidor()` harleder nu listan ur repot: de sex nyhetssidorna ar alltid med
+(de maste granskas aven utan klon), och varje `.html` i arbetstradet laggs till.
+Varje ny essa tacks automatiskt fran och med att den finns i repot.
+
 ## Sa undviks falska positiver
 
 Kontrollen tar bort foljande innan matchning:
