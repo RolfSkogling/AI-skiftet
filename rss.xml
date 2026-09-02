@@ -7,8 +7,53 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 02 Sep 2026 02:24:13 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 04:20:56 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic släpper Claude Fable 5.1 — billigare i drift och öppnad för sårbarhetssökning</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-anthropic-slapper-claude-fable-5-1-billigare-i</guid>
+      <pubDate>Wed, 02 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic lanserade den 1 september Claude Fable 5.1 och Claude Mythos 5.1, som bolaget beskriver som sina mest avancerade modeller för kodning och kunskapsarbete. De två är samma underliggande modell med olika skyddsspärrar: Fable 5.1 är allmänt tillgänglig, medan Mythos 5.1 bara nås via bolagets program för granskade cyberförsvarare och livsvetenskapsforskare.</p>
+<p>På kodtestet Terminal-Bench 4.0 når Fable 5.1 55,8 procent, mot 52,3 för Opus 5 och 37,3 för OpenAI:s GPT-5.6 Sol, och på forskningstestet Terminal-Bench-Science mer än fördubblas resultatet jämfört med Fable 5. Priset per token är oförändrat, 10 respektive 50 dollar per miljon in- och uttoken, men cacheläsningar blir 75 procent billigare, vilket enligt Anthropic sänker kostnaden för typiska arbetsflöden med omkring 25 procent och för agentiska arbetsflöden med upp till 45 procent. Fable 5.1 får dessutom användas för att hitta sårbarheter i programvara, dock inte för att bygga exploateringskod, och bolaget uppger att cyberspärrarna ingriper omkring 60 procent mer sällan per session för Claude Code-användare jämfört med Fable 5. Modellen bär den textvattenstämpel som EU:s AI-förordning kräver av modeller som släppts efter den 2 augusti 2026, och ett detektions-API öppnas i sluten förhandsvisning för bland andra tillsynsmyndigheter, medier och faktagranskare.</p>
+<p>För Norden är två detaljer viktigare än testresultaten. Mythos 5.1 är tills vidare bara tillgänglig för amerikanska organisationer, så nordiska cyberförsvarare hos NSM, CERT-SE, Telenor eller DNB får vänta på den utvidgning Anthropic säger sig samordna med USA:s regering. Detektions-API:et för vattenstämpeln är däremot tänkt för just den sortens aktörer som IMY, Medietilsynet och de nordiska redaktionernas faktagranskare utgör.</p>]]></description>
+    </item>
+    <item>
+      <title>EU beställer AI-superdatorn Lumi-AI till Kajana — Norge är med i konsortiet</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-eu-bestaller-ai-superdatorn-lumi-ai-till-kajana</guid>
+      <pubDate>Wed, 02 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <category>norden</category>
+      <description><![CDATA[<p>EuroHPC, EU:s gemensamma organ för superdatorer, har skrivit kontrakt med franska Bull om att bygga Lumi-AI, en ny AI-optimerad superdator vid CSC:s datacenter i Kajana i Finland. Kontraktet är värt 387,8 miljoner euro, omkring 4,3 miljarder kronor, och maskinen ska tas i drift under 2027.</p>
+<p>Systemet bygger på AMD:s kommande grafikprocessor Instinct MI430X och Epyc-processorer med 256 kärnor och ska enligt EuroHPC ge tio gånger dagens Lumi-kapacitet för AI. EU betalar hälften via programmet för ett digitalt Europa, resten står värdkonsortiet för: Finland, Tjeckien, Danmark, Estland, Norge och Polen. Datorn är i första hand tänkt för små och medelstora företag och startupbolag inom ramen för den europeiska AI-fabriken Lumi AIF, men öppnas också för forskarvärlden. Lumi-AI är det sjätte AI-fabrikskontraktet EuroHPC tecknar.</p>
+<p>För Norden är Lumi-AI den närmaste vägen till europeisk träningskapacitet i världsklass. Norge är delfinansiär, och eftersom resurserna fördelas i proportion till insatsen får norska forskare och bolag en egen väg in, medan Sverige står utanför konsortiet och i stället får söka tid genom EuroHPC:s öppna utlysningar. För NTNU, Sintef och de norska språkmodellmiljöerna blir Kajana ett handfast alternativ till amerikanska molntjänster.</p>]]></description>
+    </item>
+    <item>
+      <title>EU klassar ChatGPT som mycket stor sökmotor — strikta DSA-krav från januari</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-eu-klassar-chatgpt-som-mycket-stor-sokmotor-strikta</guid>
+      <pubDate>Wed, 02 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>EU-kommissionen beslutade den 31 augusti att ChatGPT ska klassas som en mycket stor onlinesökmotor enligt förordningen om digitala tjänster, DSA. Samtidigt utses Reddit och Roblox till mycket stora onlineplattformar. Tjänsterna har själva rapporterat att de når minst 45 miljoner användare i månaden i EU.</p>
+<p>Klassningen innebär att OpenAI senast i januari 2027 ska ha bedömt och begränsat de systemrisker som tjänsten och dess algoritmer medför, bland annat spridning av olagligt innehåll, negativa effekter för minderåriga, användarnas fysiska och psykiska hälsa, grundläggande rättigheter, valprocesser och allmän säkerhet. Kommissionen ser ChatGPT som en hybrid: tjänsten svarar på frågor, men söker också på webben och återger innehåll därifrån, och det är den funktionen som gör den till en sökmotor i lagens mening. Enligt Computer Sweden har kommissionen därmed pekat ut 28 tjänster som riskerar kraftiga böter vid överträdelser.</p>
+<p>För Norden är det första gången en AI-assistent hamnar under DSA:s tyngsta tillsyn, och riskbedömningarna ska täcka svenska användare och svenska valprocesser. I Sverige är PTS samordnare för DSA och får nu ChatGPT på sitt bord vid sidan av kommissionen. I Norge, där DSA ännu inte tagits in i EES-avtalet, tvingas Medietilsynet och Datatilsynet luta sig mot den tillsyn som sker från Bryssel.</p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI: Astra är bolagets första modell som når kritisk cyberförmåga</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-openai-astra-ar-bolagets-forsta-modell-som-nar</guid>
+      <pubDate>Wed, 02 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI meddelade den 1 september att den kommande modellen Astra är bolagets första som uppfyller den kritiska nivån för cyberförmåga i bolagets beredskapsramverk Preparedness Framework. Det innebär att modellen, med rätt verktyg och åtkomst, kan hitta tidigare okända sårbarheter och utveckla sätt att utnyttja dem i välskyddade system utan att en människa styr varje steg.</p>
+<p>I expertledda tester byggde Astra en komplett attackkedja mot en härdad webbläsare och kombinerade flera sårbarheter i ett härdat operativsystem till en väg från vanlig användare till full kontroll. Under utvärderingen hittade modellen också två nolldagarsårbarheter som OpenAI nu rapporterar till utvecklarna. Bolaget har under de senaste veckorna skjutit upp delar av utvecklingen för att stärka skydden, tränat modellen att oftare vägra skadliga förfrågningar — 91,5 procent i bolagets tester, mot 59 för GPT-5.6 Sol — och infört övervakning som kan stoppa oauktoriserade handlingar. Astra ska släppas inom kort, men de mest avancerade cyberfunktionerna går först till en liten grupp testare och därefter till cyberförsvarsprogrammet Daybreak Blue.</p>
+<p>För Norden är beskedet en tidsmarkör: verktyg som själva hittar och utnyttjar nolldagarsårbarheter finns nu i produktionsnära form, och NSM i Norge och CERT-SE vid MSB får planera för att motståndare förr eller senare har liknande förmåga. OpenAI varnar samtidigt för att skydden kan bromsa legitimt arbete, vilket berör nordiska kunder hos Ericsson, Telenor och de stora bankerna som kör agenter mot egna system.</p>]]></description>
+    </item>
     <item>
       <title>Sony och Warner stämmer Anthropic för AI-träning på musik — kräver miljardbelopp</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-01</link>
@@ -924,51 +969,6 @@
       <description><![CDATA[<p>Northrop Grummans Mission Robotic Vehicle är på väg mot hög bana, där den med robotarmar ska montera fast en ny framdrivningsenhet på en åldrande satellit.</p>
 <p>Fyra farkoster sköts upp i juli med en Falcon 9. En är själva roboten, utrustad med två avancerade robotarmar utvecklade av den amerikanska försvarsforskningsmyndigheten DARPA. De tre övriga är enklare moduler, Mission Extension Pods, som i praktiken är enkla, modulära framdrivningssystem. Alla fyra är på väg mot mål i geostationär höjd, drygt 35 000 kilometer över jorden, och under 2027 ska roboten använda armarna för att fästa en av modulerna på en Optus-satellit som sköts upp 2009 med 15 års planerad livslängd. Den här veckan kopplade föregångaren, en Mission Extension Vehicle, loss från samma satellit efter drygt ett år. Affärsmodellen är ny: kunderna köper och äger modulerna, vilket frigör roboten för fler uppdrag. Farkosten är också byggd för att kunna tankas i omloppsbana.</p>
 <p>För Norden rör det här en bransch där regionen redan har ställning. Kongsberg Satellite Services driver markstationer på Svalbard och i Antarktis, Space Norway äger egna satelliter i hög elliptisk bana över Arktis, och Andøya Spaceport och SSC:s Esrange i Kiruna byggs ut för uppskjutningar. Om dyra satelliter i hög bana kan servas i stället för att ersättas ändras kalkylen för norska och svenska operatörer som i dag räknar med en livslängd på omkring 15 år. Samtidigt är tekniken dubbelanvändbar — en robotarm som kan greppa en satellit kan också oskadliggöra en, vilket gör frågan relevant för Försvarsmakten och Forsvaret nu när rymden räknas som kritisk infrastruktur.</p>]]></description>
-    </item>
-    <item>
-      <title>Nvidia tar hjälp av sex Wall Street-jättar för att finansiera AI-bygget</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-12-nvidia-tar-hjalp-av-sex-wall-street-jattar</guid>
-      <pubDate>Wed, 12 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Nvidia har tecknat avsiktsförklaringar med sex av världens tyngsta kapitalförvaltare och investmentbanker om att bygga finansieringsplattformar för AI-infrastruktur. Ambitionen är att mobilisera mer än 500 miljarder dollar i kapital från tredje part.</p>
-<p>Parterna är Apollo Global Management, BlackRock, Blackstone, Brookfield Asset Management, Goldman Sachs och KKR. Upplägget presenterades den 10 augusti, då Jensen Huang och toppchefer från alla sex partnerbolagen ställde upp i en gemensam intervju i CNBC. Tänkt konstruktion är fristående plattformar som lånar ut till Nvidias kunder så att de kan bygga datacenter, köpa chip och betala för kraft och kylning utan att lägga hela beloppet kontant — med själva grafikprocessorerna som säkerhet. Argumentet är att ett GPU-kluster ska värderas som en långsiktig intäktsgenererande anläggning i klass med fastigheter och kraftnät, inte som snabbt föråldrad it-utrustning. Morgan Stanley räknar med att enbart hyperskalarna investerar omkring 3,3 biljoner dollar mellan 2026 och 2028. Avtalen är ännu inte färdigförhandlade, och kritiker pekar på risken för cirkulär finansiering när leverantören också ordnar pengarna åt köparna.</p>
-<p>För Norden är kopplingen både finansiell och fysisk. Nvidia är sedan en tid en av de största enskilda aktieposterna i Oljefondet, och AP-fonderna har exponering mot samma bolag — om GPU:er börjar användas som lånesäkerhet i stor skala blir avskrivningstiden för ett grafikkort plötsligt en fråga för nordiska pensionssparare. På marken är kapital just nu den bindande restriktionen för datacenterprojekt i Sverige och Norge lika mycket som elnätet: bolag som evroc, EcoDataCenter och norska aktörer i Kvandal och Narvik konkurrerar om samma finansiering. Att NVE räknar med att elförbrukningen i norska datacenter minst fördubblas till 2030 gör att Statnett och Svenska kraftnät nu måste planera näten för en efterfrågan som även kan finansieras utanför bankerna.</p>]]></description>
-    </item>
-    <item>
-      <title>Nature-kommentar: forskarna bör leda vägen bort från AI:s megadatacenter</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-12-nature-kommentar-forskarna-bor-leda-vagen-bort-fran</guid>
-      <pubDate>Wed, 12 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Tre forskare vid amerikanska lärosäten argumenterar i Nature för att vetenskapen inte behöver de enorma datacenter som byggs för konsument-AI. De vill i stället se öppna modeller som körs lokalt på lärosätenas egna servrar.</p>
-<p>Kommentaren publicerades den 11 augusti av Cassidy K. Buhler vid University of Colorado Boulder samt Fernando Pérez och Carl Boettiger vid University of California, Berkeley. De påminner om att världens datacenter förra året använde omkring 485 terawattimmar el, ungefär lika mycket som hela Tyskland, och att IEA väntar sig en fördubbling till 2030. Fem bolag — Amazon, Alphabet, Microsoft, Meta och Oracle — väntas enligt författarna i år lägga mer än 600 miljarder dollar på AI-infrastruktur, mot mindre än 40 miljarder för tio år sedan. En Gallupmätning som publicerades i maj visade att 71 procent av amerikanerna motsatte sig ett datacenter i den egna kommunen. Författarnas poäng är att forskningens behov ser annorlunda ut än behoven hos en konsumenttjänst med miljontals samtidiga användare: ett serverrack stort som ett litet kylskåp räcker enligt dem för ett femtiotal samtidiga användare, och enligt Epoch AI tar det numera omkring fyra månader innan modeller med öppna vikter når samma nivå som de proprietära frontmodellerna. Texten är en debattartikel, inte en granskad studie.</p>
-<p>För Norden är det här inte en teoretisk fråga. Sverige och Norge har redan valt den decentraliserade vägen i forskningen: Berzelius vid Linköpings universitet inom NAISS, Sigma2:s anläggningar i Norge och det EuroHPC-finansierade LUMI i finska Kajaani är just sådan gemensam infrastruktur som artikeln efterlyser, med vattenkraft och återvunnen spillvärme i stället för nya gaskraftverk. Samtidigt driver Nasjonalbiblioteket, Språkbanken vid Göteborgs universitet och WASP-miljöerna vid KTH och Chalmers modeller med öppna vikter där träningsdata går att granska. Argumentet ställer också en obekväm fråga till svenska och norska lärosäten: ska forskningsmedel gå till abonnemang hos amerikanska leverantörer, eller till egna servrar som universiteten själva kontrollerar?</p>]]></description>
-    </item>
-    <item>
-      <title>Quantinuum nästan fyrdubblar kvartalsintäkterna och sätter kvantdatorn i Oracles moln</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-12-quantinuum-nastan-fyrdubblar-kvartalsintakterna-och-satter-kvantdatorn-i</guid>
-      <pubDate>Wed, 12 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Kvantdatorbolaget Quantinuum redovisade på tisdagskvällen intäkter på 8,0 miljoner dollar för andra kvartalet, en ökning med 279 procent på ett år. Samtidigt växte förlusterna.</p>
-<p>Bolaget guidar för 28–32 miljoner dollar i intäkter för helåret 2026. Den tekniska nyheten är att Quantinuum uppger sig ha nått en logisk fidelitet på nära fem nior på systemet Helios med hjälp av en ny familj felrättande koder — alltså en felfrekvens i storleksordningen en på hundratusen för en logisk kvantbit. Parallellt annonserades ett avtal med Oracle om att lägga Helios i Oracle Cloud Infrastructure som en tjänst för kombinerade kvant- och AI-arbetsbelastningar. Nästa system, Sol, ligger kvar på 2027 med fällchippet under produktvalidering, och Apollo på 2029. Siffrorna är bolagets egna och fidelitetsmåttet är ännu inte oberoende granskat; intäktsbasen är dessutom så liten att procenttalet säger mer om utgångsläget än om marknadens storlek — för första halvåret sjönk intäkterna i själva verket till 13,2 miljoner dollar, från 21,2 miljoner året innan.</p>
-<p>För Norden är jämförelsen nära till hands. Finska IQM, som liksom Quantinuum börsnoterats nyligen, lämnade sin första kvartalsrapport i början av augusti, och Chalmers kvantdator inom WACQT bygger på supraledande kvantbitar medan Quantinuum använder infångade joner — två olika vägar mot samma mål, där felrättning nu är den avgörande tävlingsgrenen. Att en kvantdator säljs som molntjänst bredvid AI-kapacitet gör också tekniken tillgänglig för nordiska användare utan egen hårdvara, vilket är relevant för nordiska industri- och finansaktörer som arbetar med optimerings- och portföljproblem. För MSB och Nasjonal sikkerhetsmyndighet är varje steg mot fungerande felrättning samtidigt en påminnelse om att migreringen till kvantsäker kryptering har ett slutdatum.</p>]]></description>
-    </item>
-    <item>
-      <title>Norge samlar statsråd, KI Norge och Nasjonalbiblioteket kring egna språkmodeller</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-12-norge-samlar-statsrad-ki-norge-och-nasjonalbiblioteket-kring</guid>
-      <pubDate>Wed, 12 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <category>norden</category>
-      <description><![CDATA[<p>På torsdag möts den norska forskningsministern, KI Norges direktör och nationalbibliotekarien i AI-tältet under Arendalsuka. Frågan de ska besvara är om Norge överhuvudtaget kan bygga konkurrenskraftiga språkmodeller självt.</p>
-<p>Arrangörer är Språkmodellklynge Norge tillsammans med Universitetet i Oslo, NTNU, Nasjonalbiblioteket, Språkrådet och Sigma2. Stephan Oepen, professor vid UiO, inleder med en statusrapport och klustrets rekommendationer. Därefter debatterar forsknings- och högre utbildningsminister Sigrun Aasland, KI Norges direktör Hans Christian Holte, Jussi Karlgren från Silo AI:s New Nordics AI och nationalbibliotekarie Åse Wetås, med Klas Pettersen från Simula som moderator. Utgångspunkten är att regeringen i Plan for Norge lovat sörja för användning och vidareutveckling av norska språkmodeller, och att digital suveränitet förutsätter nationella eller europeiska modeller med kontroll över data, upphovsrätt, personuppgifter och transparens. Att Nasjonalbiblioteket sitter i panelen är ingen slump: det är där den norska textmängden finns som gör träning möjlig överhuvudtaget.</p>
-<p>För Norden är tajmingen slående. Samma vecka som Nvidia och Wall Street ska mobilisera 500 miljarder dollar till amerikansk AI-infrastruktur ska Norge diskutera hur ett land med 5,6 miljoner invånare behåller kontrollen över modellerna som läser dess språk. Sverige står inför exakt samma fråga med GPT-SW3 och Språkbanken, och AI Sweden och Vinnova har hittills saknat en motsvarande samlad klusterstruktur med bibliotek, språkvård och beräkningsleverantör vid samma bord. Att Sigma2 står som medarrangör visar också att frågan om modeller och frågan om beräkningskraft nu behandlas som en och samma fråga i Norge — en koppling som svenska myndigheter och forskningsfinansiärer ännu inte gjort lika tydlig.</p>]]></description>
     </item>
   </channel>
 </rss>
