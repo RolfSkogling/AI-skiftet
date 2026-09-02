@@ -91,8 +91,8 @@
 <section class="essays-section">
   <div class="container-wide">
     <h2>Oversatte essays</h2>
-    <p class="section-intro">De 33 essayene som finnes på svensk, engelsk og norsk.</p>
-    <div class="essay-grid">
+    <p class="section-intro">De <span class="essay-count">39</span> essayene som finnes på svensk, engelsk og norsk.</p>
+    <div class="essay-grid essay-grid--bibliotek">
 <a class="essay-card" href="ingangen.html">
   <div class="essay-card__number">Analyse &middot; 27. august 2026</div>
   <div class="essay-card__title">Inngangen</div>
@@ -354,5 +354,6 @@
     });
   });
 </script>
+<script>(function(){var g=document.querySelector(".essay-grid--bibliotek"),s=document.querySelector(".essay-count");if(g&&s){s.textContent=g.querySelectorAll(".essay-card").length;}})();</script>
 </body>
 </html>
