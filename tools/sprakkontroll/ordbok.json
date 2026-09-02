@@ -1,6 +1,6 @@
 {
-  "_om": "Sprakkontroll for ai-skiftet.se. Varje post ar BADE ordlista och oversattningsordbok: formerna under no[] far aldrig forekomma i svensk text, formerna under sv[] far aldrig forekomma i norsk text. en[] ar den engelska motsvarigheten och anvands vid oversattning. Satt en_check=true for termer som ocksa ska blockeras i engelsk text (konkreta termer som aldrig ar egennamn).",
-  "_version": "1.0.0 (2026-08-21)",
+  "_om": "Sprakkontroll for ai-skiftet.se. Varje post ar BADE ordlista och oversattningsordbok: formerna under no[] far aldrig forekomma i svensk text, formerna under sv[] far aldrig forekomma i norsk text. en[] ar den engelska motsvarigheten och anvands vid oversattning. Satt en_check=true for termer som ocksa ska blockeras i engelsk text (konkreta termer som aldrig ar egennamn). Blocket 'felstavningar' ar en SLUTEN lista over strangar som inte ar ord pa nagot av spraken — typiskt fel omljudsvokal (a for a-ring i svenska, ae eller o-umlaut i norska). Termlistan fangar RIKTIGA ord pa FEL sprak; felstavningslistan fangar ord som inte ar ord alls. Tva feltyper, tva detektorer. Lagg ALDRIG in en strang som ar korrekt pa nagot av spraken — precision gar fore tackning, en sparr som skriker varg blir avstangd.",
+  "_version": "2026-09-02-felstavningar",
   "tillatna_egennamn": [
     "Regjeringen.no",
     "Regjeringen NO",
@@ -605,7 +605,9 @@
       "no": [
         "støtteordning",
         "tilskudd",
-        "tilskuddet"
+        "tilskuddet",
+        "bidrag",
+        "bidraget"
       ],
       "sv": [
         "stöd",
@@ -616,7 +618,8 @@
         "grant",
         "subsidy"
       ],
-      "en_check": true
+      "en_check": true,
+      "kommentar": "SV bidrag i betydelsen ekonomiskt stod = NO tilskudd/stotteordning. Men bidrag/bidraget ar ocksa korrekt bokmal i betydelsen 'bidrag till ett falt' (\"Bidraget er kombinasjonen\"). Ordet star darfor i bada listorna och triggar ingen regel at nagot hall — ett ord som stavas likadant pa bada spraken kan inte vara bevis for spraklackage. Falsklarm 2026-09-02, no/minnet-som-vager-ewmc.html."
     },
     {
       "dom": "arbetsmarknad",
@@ -2554,5 +2557,302 @@
       "kommentar": "NO forkortar kunstig intelligens som KI, SV/EN som AI. Ej handhavd eftersom KI ocksa ar Karolinska Institutet pa svenska - kontrolleras manuellt vid oversattning: KI-sammansattningar i svensk text ska normalt vara AI-."
     }
   ],
-  "_tier": "handhavs=false betyder att termparet finns i ordboken for konsekvent oversattning men INTE fallerar kontrollen, eftersom formen ocksa forekommer i korrekta egennamn."
+  "_tier": "handhavs=false betyder att termparet finns i ordboken for konsekvent oversattning men INTE fallerar kontrollen, eftersom formen ocksa forekommer i korrekta egennamn.",
+  "felstavningar": [
+    {
+      "fel": "ocksä",
+      "ratt": "också",
+      "sprak": "sv",
+      "kommentar": "publicerat 2026-08-28, passerade STEG 6.6 orort"
+    },
+    {
+      "fel": "dröyt",
+      "ratt": "drygt",
+      "sprak": "sv",
+      "kommentar": "publicerat; norskt drøyt halvoversatt"
+    },
+    {
+      "fel": "formår",
+      "ratt": "formar",
+      "sprak": "sv",
+      "kommentar": "publicerat; norskt formår i svensk text"
+    },
+    {
+      "fel": "tætt",
+      "ratt": "tett",
+      "sprak": "no",
+      "kommentar": "publicerat; dansk vokal i bokmal"
+    },
+    {
+      "fel": "energitæt",
+      "ratt": "energitett",
+      "sprak": "no",
+      "kommentar": "publicerat; dansk vokal i bokmal"
+    },
+    {
+      "fel": "sä",
+      "ratt": "så",
+      "sprak": "sv"
+    },
+    {
+      "fel": "gär",
+      "ratt": "går",
+      "sprak": "sv"
+    },
+    {
+      "fel": "nägon",
+      "ratt": "någon",
+      "sprak": "sv"
+    },
+    {
+      "fel": "nägot",
+      "ratt": "något",
+      "sprak": "sv"
+    },
+    {
+      "fel": "nägra",
+      "ratt": "några",
+      "sprak": "sv"
+    },
+    {
+      "fel": "mänga",
+      "ratt": "många",
+      "sprak": "sv"
+    },
+    {
+      "fel": "tvä",
+      "ratt": "två",
+      "sprak": "sv"
+    },
+    {
+      "fel": "frägan",
+      "ratt": "frågan",
+      "sprak": "sv"
+    },
+    {
+      "fel": "fräga",
+      "ratt": "fråga",
+      "sprak": "sv"
+    },
+    {
+      "fel": "frägor",
+      "ratt": "frågor",
+      "sprak": "sv"
+    },
+    {
+      "fel": "päverka",
+      "ratt": "påverka",
+      "sprak": "sv"
+    },
+    {
+      "fel": "päverkar",
+      "ratt": "påverkar",
+      "sprak": "sv"
+    },
+    {
+      "fel": "bäde",
+      "ratt": "både",
+      "sprak": "sv"
+    },
+    {
+      "fel": "äret",
+      "ratt": "året",
+      "sprak": "sv"
+    },
+    {
+      "fel": "ären",
+      "ratt": "åren",
+      "sprak": "sv"
+    },
+    {
+      "fel": "förstär",
+      "ratt": "förstår",
+      "sprak": "sv"
+    },
+    {
+      "fel": "mäste",
+      "ratt": "måste",
+      "sprak": "sv"
+    },
+    {
+      "fel": "fär",
+      "ratt": "får",
+      "sprak": "sv"
+    },
+    {
+      "fel": "stär",
+      "ratt": "står",
+      "sprak": "sv"
+    },
+    {
+      "fel": "räd",
+      "ratt": "råd",
+      "sprak": "sv"
+    },
+    {
+      "fel": "äterkommer",
+      "ratt": "återkommer",
+      "sprak": "sv"
+    },
+    {
+      "fel": "äterstär",
+      "ratt": "återstår",
+      "sprak": "sv"
+    },
+    {
+      "fel": "ätgärd",
+      "ratt": "åtgärd",
+      "sprak": "sv"
+    },
+    {
+      "fel": "ätgärder",
+      "ratt": "åtgärder",
+      "sprak": "sv"
+    },
+    {
+      "fel": "längsiktig",
+      "ratt": "långsiktig",
+      "sprak": "sv"
+    },
+    {
+      "fel": "längsiktighet",
+      "ratt": "långsiktighet",
+      "sprak": "sv"
+    },
+    {
+      "fel": "vären",
+      "ratt": "våren",
+      "sprak": "sv"
+    },
+    {
+      "fel": "smä",
+      "ratt": "små",
+      "sprak": "sv"
+    },
+    {
+      "fel": "blä",
+      "ratt": "blå",
+      "sprak": "sv"
+    },
+    {
+      "fel": "tillgäng",
+      "ratt": "tillgång",
+      "sprak": "sv"
+    },
+    {
+      "fel": "omräde",
+      "ratt": "område",
+      "sprak": "sv"
+    },
+    {
+      "fel": "omräden",
+      "ratt": "områden",
+      "sprak": "sv"
+    },
+    {
+      "fel": "förhällande",
+      "ratt": "förhållande",
+      "sprak": "sv"
+    },
+    {
+      "fel": "sammanhäng",
+      "ratt": "sammanhang",
+      "sprak": "sv"
+    },
+    {
+      "fel": "beröknas",
+      "ratt": "beräknas",
+      "sprak": "sv"
+    },
+    {
+      "fel": "sjölv",
+      "ratt": "själv",
+      "sprak": "sv"
+    },
+    {
+      "fel": "gärdagens",
+      "ratt": "gårdagens",
+      "sprak": "sv"
+    },
+    {
+      "fel": "förslär",
+      "ratt": "förslår",
+      "sprak": "sv"
+    },
+    {
+      "fel": "uppgär",
+      "ratt": "uppgår",
+      "sprak": "sv"
+    },
+    {
+      "fel": "motsvärande",
+      "ratt": "motsvarande",
+      "sprak": "sv"
+    },
+    {
+      "fel": "hvær",
+      "ratt": "hver",
+      "sprak": "no"
+    },
+    {
+      "fel": "stæd",
+      "ratt": "sted",
+      "sprak": "no"
+    },
+    {
+      "fel": "mæn",
+      "ratt": "men",
+      "sprak": "no"
+    },
+    {
+      "fel": "sælv",
+      "ratt": "selv",
+      "sprak": "no"
+    },
+    {
+      "fel": "höy",
+      "ratt": "høy",
+      "sprak": "no"
+    },
+    {
+      "fel": "öker",
+      "ratt": "øker",
+      "sprak": "no"
+    },
+    {
+      "fel": "gjör",
+      "ratt": "gjør",
+      "sprak": "no"
+    },
+    {
+      "fel": "spörsmäl",
+      "ratt": "spørsmål",
+      "sprak": "no"
+    },
+    {
+      "fel": "könn",
+      "ratt": "kunne",
+      "sprak": "no"
+    },
+    {
+      "fel": "fölge",
+      "ratt": "følge",
+      "sprak": "no"
+    },
+    {
+      "fel": "törre",
+      "ratt": "tørre",
+      "sprak": "no"
+    },
+    {
+      "fel": "nödvendig",
+      "ratt": "nødvendig",
+      "sprak": "no"
+    },
+    {
+      "fel": "mulighöt",
+      "ratt": "mulighet",
+      "sprak": "no"
+    }
+  ]
 }
