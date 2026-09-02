@@ -53,20 +53,30 @@ LANGS = {
 GROUP_RE = re.compile(
     r'<div class="news-date-group"[^>]*data-date="(\d{4}-\d{2}-\d{2})"[^>]*>(.*?)(?=<div class="news-date-group"|\Z)',
     re.S)
-CARD_RE = re.compile(r'<div class="news-card"[^>]*data-tags="([^"]*)"[^>]*>(.*?)</div>\s*</div>', re.S)
+CARD_START_RE = re.compile(r'<div class="news-card"[^>]*data-tags="([^"]*)"[^>]*>')
+DIV_RE = re.compile(r"<div\b|</div>")
 H3_RE = re.compile(r"<h3>\s*<a[^>]*>(.*?)</a>\s*</h3>", re.S)
 P_RE = re.compile(r"<p>(.*?)</p>", re.S)
-# CARD_RE ater upp kortets sista </div>-par, sa kallradens egen sluttagg kan
-# saknas i `inner`. Ta darfor allt som ateratar och stad bort en ev. sluttagg.
-SRC_RE = re.compile(r'<div class="news-card__source">(.*)', re.S)
+SRC_RE = re.compile(r'<div class="news-card__source">(.*?)</div>', re.S)
 
 
-def source_text(inner):
-    m = SRC_RE.search(inner)
-    if not m:
-        return ""
-    s = m.group(1).strip()
-    return s[: -len("</div>")].strip() if s.endswith("</div>") else s
+def iter_cards(body):
+    """-> (matchning pa oppningstaggen, kortets inre, index efter kortets </div>).
+
+    Balanserad div-rakning, inte `(.*?)</div>\\s*</div>`. Den genvagen slutade
+    vid FEL </div>-par: kallraden foll utanfor `inner` (RSS-flodena saknade
+    kallor 2026-09-02) och det sista kortet i en dagsgrupp at upp gruppens egen
+    sluttagg, sa efterfoljande innehall hamnade utanfor behallaren."""
+    for m in CARD_START_RE.finditer(body):
+        depth, pos = 1, m.end()
+        for t in DIV_RE.finditer(body, pos):
+            if t.group(0) == "</div>":
+                depth -= 1
+                if depth == 0:
+                    yield m, body[pos:t.start()], t.end()
+                    break
+            else:
+                depth += 1
 TAG_STRIP = re.compile(r"<[^>]+>")
 
 
@@ -92,18 +102,18 @@ def parse_archive(path):
     days = []
     for date, body in GROUP_RE.findall(doc):
         cards = []
-        for tags, inner in CARD_RE.findall(body):
+        for m, inner, _end in iter_cards(body):
             h3 = H3_RE.search(inner)
             if not h3:
                 continue
             href = re.search(r'<h3>\s*<a href="([^"]+)"', inner)
-            paras = [p for p in P_RE.findall(inner)]
+            src = SRC_RE.search(inner)
             cards.append({
-                "tags": tags.split(),
+                "tags": m.group(1).split(),
                 "title": text_of(h3.group(1)),
                 "href": href.group(1) if href else "",
-                "paras": paras,
-                "source": source_text(inner),
+                "paras": P_RE.findall(inner),
+                "source": src.group(1).strip() if src else "",
             })
         if cards:
             days.append((date, cards))
