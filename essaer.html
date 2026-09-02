@@ -86,12 +86,6 @@
     <h2>Svenska valtexter</h2>
     <p class="section-intro">Svenskspecifika texter om lokal AI, beslutsfattande och politikens förmåga att möta teknikutvecklingen.</p>
     <div class="essay-grid">
-      <a class="essay-card" href="konsistensvillkoret-som-saknas.html">
-        <div class="essay-card__number">Publicerad 28 maj 2026</div>
-        <div class="essay-card__title">Konsistensvillkoret som saknas</div>
-        <p class="essay-card__excerpt">Två brev samma vecka — Altman och Amodei drog tillbaka sina jobbprognoser, åtta svenska tech-grundare bad regeringen om långsiktighet. Båda förutsätter en ekonomi som deras egna produkter monterar ner.</p>
-        <div class="essay-card__read">Läs essän</div>
-      </a>
       <a class="essay-card" href="strategin-gar-forstaelsen-star.html">
         <div class="essay-card__number">Publicerad 20 maj 2026</div>
         <div class="essay-card__title">Strategin går, förståelsen står</div>
@@ -129,8 +123,8 @@
 <section class="essays-section" style="padding-top:0">
   <div class="container-wide">
     <h2>Gemensamt essäbibliotek</h2>
-    <p class="section-intro">De 33 texterna som finns på svenska, engelska och norska.</p>
-    <div class="essay-grid">
+    <p class="section-intro">De <span class="essay-count">39</span> texterna som finns på svenska, engelska och norska.</p>
+    <div class="essay-grid essay-grid--bibliotek">
 <a class="essay-card" href="ingangen.html">
   <div class="essay-card__number">Analys &middot; 27 augusti 2026</div>
   <div class="essay-card__title">Ing&aring;ngen</div>
@@ -392,5 +386,6 @@
     });
   });
 </script>
+<script>(function(){var g=document.querySelector(".essay-grid--bibliotek"),s=document.querySelector(".essay-count");if(g&&s){s.textContent=g.querySelectorAll(".essay-card").length;}})();</script>
 </body>
 </html>
