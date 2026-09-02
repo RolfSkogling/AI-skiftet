@@ -91,8 +91,8 @@
 <section class="essays-section">
   <div class="container-wide">
     <h2>Translated essays</h2>
-    <p class="section-intro">The 33 essays available in Swedish, English and Norwegian.</p>
-    <div class="essay-grid">
+    <p class="section-intro">The <span class="essay-count">39</span> essays available in Swedish, English and Norwegian.</p>
+    <div class="essay-grid essay-grid--bibliotek">
 <a class="essay-card" href="ingangen.html">
   <div class="essay-card__number">Analysis &middot; August 27, 2026</div>
   <div class="essay-card__title">The Way In</div>
@@ -354,5 +354,6 @@
     });
   });
 </script>
+<script>(function(){var g=document.querySelector(".essay-grid--bibliotek"),s=document.querySelector(".essay-count");if(g&&s){s.textContent=g.querySelectorAll(".essay-card").length;}})();</script>
 </body>
 </html>
