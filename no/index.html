@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI-skiftet — essays og daglige nyheter om AI, arbeid og samfunnsomstilling</title>
   <meta name="description" content="Daglig dekning og essays om AI-skiftet: modeller, forskning, fysisk AI, industri, politikk, AGI, robotikk og omstilling. Et industrinært perspektiv.">
+  <link rel="alternate" type="application/rss+xml" title="AI-skiftet &mdash; Nyheter" href="https://ai-skiftet.se/no/rss.xml">
   <link rel="icon" href="https://ai-skiftet.se/favicon.png" type="image/png" sizes="96x96">
   <link rel="icon" href="https://ai-skiftet.se/favicon.svg" type="image/svg+xml" sizes="any">
   <link rel="apple-touch-icon" href="https://ai-skiftet.se/apple-touch-icon.png">
@@ -28,6 +29,8 @@
       cursor:pointer;transition:all .2s;font-family:inherit;
     }
     .filter-tag:hover,.filter-tag.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .filter-tag--norden{margin-right:10px;border-color:var(--accent);color:var(--accent);font-weight:700}
+    .filter-tag--norden::after{content:'';display:inline-block;width:1px;height:16px;background:var(--line);margin-left:10px;vertical-align:-3px}
     .news-date-group{margin-bottom:28px}
     .news-date{
       font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;
@@ -175,6 +178,7 @@
 
     <div class="news-filter" id="newsFilter">
       <button class="filter-tag active" data-filter="alla">Alle</button>
+      <button class="filter-tag filter-tag--norden" data-filter="norden">Norden</button>
       <button class="filter-tag" data-filter="modeller">Modeller</button>
       <button class="filter-tag" data-filter="forskning">Forskning</button>
       <button class="filter-tag" data-filter="fysisk-ai">Fysisk AI</button>
@@ -186,9 +190,22 @@
       <button class="filter-tag" data-filter="debatt">Debatt</button>
     </div>
 
+        <!--RSS-BLOCK-START-->
+    <div class="rss-tools" aria-label="RSS-str&oslash;m">
+      <div class="rss-tools__body">
+        <div class="rss-tools__label">RSS-str&oslash;m</div>
+        <div class="rss-tools__text">Nyhetsnotisene som str&oslash;m &mdash; f&oslash;lg i din egen leser. Ingen konto, ingen e-post.</div>
+        <div class="rss-tools__url">https://ai-skiftet.se/no/rss.xml</div>
+      </div>
+      <button class="rss-tools__button" type="button" data-copy-url="https://ai-skiftet.se/no/rss.xml" data-copied-label="Kopiert" data-prompt-label="Kopier RSS-lenke">Kopier lenke</button>
+      <a class="rss-tools__link" href="/no/rss.xml">&Aring;pne str&oslash;mmen</a>
+    </div>
+    <script>document.querySelectorAll("[data-copy-url]").forEach(function(b){if(b.dataset.bound)return;b.dataset.bound="1";var d=b.textContent;b.addEventListener("click",function(){navigator.clipboard.writeText(b.dataset.copyUrl).then(function(){b.textContent=b.dataset.copiedLabel;setTimeout(function(){b.textContent=d},1600)}).catch(function(){window.prompt(b.dataset.promptLabel,b.dataset.copyUrl)})})});</script>
+    <!--RSS-BLOCK-END-->
+
     <!--AUDIO-BLOCK-START-->
 <div class="news-audio" role="region" aria-label="H&oslash;r nyhetene">
-  <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">H&oslash;r nyhetene</div><div class="news-audio__note">Lydoppsummeringen er p&aring; engelsk. &middot; Opplesning 1. september 2026</div></div></div>
+  <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">H&oslash;r nyhetene &mdash; engelsk opplesning</div><div class="news-audio__note">Et engelsk spor for alle tre spr&aring;kversjonene. &middot; Opplesning 1. september 2026</div></div></div>
   <audio class="news-audio__player" controls preload="none"><source src="/audio/dagens.m4a?v=2026-09-01" type="audio/mp4"></audio>
 </div>
 <!--AUDIO-BLOCK-END-->
@@ -196,7 +213,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-09-01                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-09-01">
+      <div class="news-date-group" id="dag-2026-09-01" data-date="2026-09-01">
       <div class="news-date">1. september 2026</div>
 
       <div class="news-card" data-tags="reglering">
@@ -217,7 +234,7 @@
         <div class="news-card__source">Kilde: <a href="https://www.anthropic.com/news/improving-alignment-security-efforts">Anthropic</a>, <a href="https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing">UK AI Security Institute</a></div>
       </div>
 
-      <div class="news-card" data-tags="infrastruktur">
+      <div class="news-card" data-tags="infrastruktur norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
         <h3><a href="https://www.bloomberg.com/news/articles/2026-08-28/amazon-strikes-four-wind-power-supply-deals-in-sweden">Amazon kj&oslash;per str&oslash;m fra fire nye svenske vindkraftparker</a></h3>
         <p>Amazon har inng&aring;tt str&oslash;mavtaler med ytterligere fire svenske vindkraftparker, melder Bloomberg. Dermed har selskapet avtaler med ni parker i Sverige, med en samlet kapasitet p&aring; 985 megawatt &mdash; en produksjon som tilsvarer &aring;rsforbruket til rundt 350&nbsp;000 husholdninger.</p>
@@ -240,7 +257,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-31                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-31">
+      <div class="news-date-group" id="dag-2026-08-31" data-date="2026-08-31">
       <div class="news-date">31. august 2026</div>
 
       <div class="news-card" data-tags="modeller">
@@ -252,7 +269,7 @@
         <div class="news-card__source">Kilde: <a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce</a>, <a href="https://investor.salesforce.com/news/news-details/2026/Salesforce-and-Anthropic-Announce-Claudeforce-The-1-AI-Meets-the-1-AI-CRM/default.aspx">Salesforce Investor Relations</a>, <a href="https://www.cnbc.com/2026/08/26/salesforce-anthropic-partnership-claudeforce.html">CNBC</a>, <a href="https://www.digitalcommerce360.com/2026/08/27/salesforce-anthropic-claude-partnership-claudeforce/">Digital Commerce 360</a></div>
       </div>
 
-      <div class="news-card" data-tags="forskning">
+      <div class="news-card" data-tags="forskning norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--forskning">Forskning</span></div>
         <h3><a href="https://healthmap.newnordics.ai/">Hver tredje kartlagte KI-satsing i nordisk helsesektor er allerede i daglig drift</a></h3>
         <p>En ny nordisk kartlegging viser at omtrent en tredjedel av de kartlagte KI-initiativene i nordisk helsesektor allerede er i rutinemessig drift. Kartet ble lansert 26. august ved Karolinska universitetssjukhus i Stockholm.</p>
@@ -282,7 +299,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-30                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-30">
+      <div class="news-date-group" id="dag-2026-08-30" data-date="2026-08-30">
       <div class="news-date">30. august 2026</div>
 
       <div class="news-card" data-tags="modeller">
@@ -324,10 +341,10 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-29                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-29">
+      <div class="news-date-group" id="dag-2026-08-29" data-date="2026-08-29">
       <div class="news-date">29. august 2026</div>
 
-      <div class="news-card" data-tags="fysisk-ai">
+      <div class="news-card" data-tags="fysisk-ai norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
         <h3><a href="https://techstartups.com/2026/08/27/softbank-in-talks-to-buy-a-majority-stake-in-humanoid-robot-startup-1x-at-6-billion-valuation/">SoftBank forhandler om en majoritetspost i norske robotselskapet 1X</a></h3>
         <p>SoftBank skal ifl&oslash;ge opplysninger til The Information forhandle om &aring; kj&oslash;pe en majoritetspost i det norske humanoidselskapet 1X Technologies, til en verdsettelse p&aring; rundt 6 milliarder dollar.</p>
@@ -376,7 +393,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-28                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-28">
+      <div class="news-date-group" id="dag-2026-08-28" data-date="2026-08-28">
       <div class="news-date">28. august 2026</div>
 
       <div class="news-card" data-tags="fysisk-ai">
@@ -388,7 +405,7 @@
         <div class="news-card__source">Kilde: <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview">Anthropic</a>, <a href="https://www.bloomberg.com/news/articles/2026-08-27/anthropic-tests-new-way-for-claude-to-work-with-robots-and-scientific-lab-tools">Bloomberg</a>, <a href="https://www.anthropic.com/news/expanding-support-for-scientists">Anthropic</a></div>
       </div>
 
-      <div class="news-card" data-tags="infrastruktur">
+      <div class="news-card" data-tags="infrastruktur norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
         <h3><a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html">Nvidia skal kj&oslash;pe Hugging Face &mdash; der Nordens &aring;pne spr&aring;kmodeller ligger</a></h3>
         <p>Nvidia skal if&oslash;lge opplysninger gitt til The Information ha sagt ja til et kj&oslash;p av Hugging Face for 12,9 milliarder dollar. Verken Nvidia eller Hugging Face har bekreftet noen avtale.</p>
@@ -397,7 +414,7 @@
         <div class="news-card__source">Kilde: <a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html">CNBC</a>, <a href="https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/">TechCrunch</a>, <a href="https://fortune.com/2026/08/27/nvidia-hugging-face-billion-dollar-deal-open-source-ai/">Fortune</a>, <a href="https://huggingface.co/NbAiLab">NbAiLab</a></div>
       </div>
 
-      <div class="news-card" data-tags="reglering">
+      <div class="news-card" data-tags="reglering norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--reglering">Regulering</span></div>
         <h3><a href="https://www.digdir.no/kunstig-intelligens/digdir-etablerer-ki-norge/7412">Norge samler KI-veiledning og regulatorisk sandkasse i &eacute;n inngang</a></h3>
         <p>Digitaliseringsdirektoratet &aring;pner i august KI Norge, en nasjonal arena som skal samle veiledning, kunnskapsgrunnlag og en regulatorisk sandkasse for kunstig intelligens.</p>
@@ -428,7 +445,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-27                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-27">
+      <div class="news-date-group" id="dag-2026-08-27" data-date="2026-08-27">
       <div class="news-date">27. august 2026</div>
 
       <div class="news-card" data-tags="hardvara">
@@ -440,7 +457,7 @@
         <div class="news-card__source">Kilde: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027">NVIDIA</a>, <a href="https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html">CNBC</a>, <a href="https://fortune.com/2026/08/26/nvidia-results-q2-earnings/">Fortune</a>, <a href="https://i3-invest.com/2026/08/nbim-holdings-shows-how-passive-investors-are-forced-into-ai-bet/">i3 Insights</a>, <a href="https://www.digi.no/artikler/gigantkontrakt-for-ki-datasenter-verdi-pa-55-milliarder-kroner/575371">Digi.no</a></div>
       </div>
 
-      <div class="news-card" data-tags="debatt">
+      <div class="news-card" data-tags="debatt norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--debatt">Debatt</span></div>
         <h3><a href="https://www.vg.no/nyheter/i/PdebQ6/kritikk-mot-nrk-brukte-ai-i-dokumentarserie">92 sekunder AI-bilde i NRK-dokumentar &mdash; norske kreat&oslash;rer raser</a></h3>
         <p>Dokumentarserien &rdquo;V&aring;r verdensarv&rdquo; hadde premiere p&aring; NRK forrige uke. Allerede 33 sekunder inn i f&oslash;rste episode m&oslash;tes seeren av et AI-generert klipp, merket &rdquo;KI-generert visualisering&rdquo;.</p>
@@ -449,7 +466,7 @@
         <div class="news-card__source">Kilde: <a href="https://www.vg.no/nyheter/i/PdebQ6/kritikk-mot-nrk-brukte-ai-i-dokumentarserie">VG</a>, <a href="https://www.journalisten.no/nrk-forsvarer-ki-bruk-i-ny-tv-serie/680769">Journalisten</a>, <a href="https://www.digi.no/artikler/nye-eu-regler-for-ki-norge-og-eos-henger-enna-langt-etter/575266">Digi.no</a></div>
       </div>
 
-      <div class="news-card" data-tags="arbetsmarknad">
+      <div class="news-card" data-tags="arbetsmarknad norden">
         <div class="news-card__tags"><span class="news-card__tag news-card__tag--arbetsmarknad">Arbeidsmarked</span></div>
         <h3><a href="https://www.nordiskaprojekt.se/2026/08/24/85-procent-av-svenska-industriforetag-har-annu-inte-tagit-ai-bortom-pilotstadiet/">85 prosent av svensk industri har ikke tatt AI forbi pilotstadiet</a></h3>
         <p>En nordisk unders&oslash;kelse fra forretningssystemleverand&oslash;ren IFS, publisert 24. august, viser at 85 prosent av de svenske respondentene fortsatt utforsker AI eller kj&oslash;rer pilotprosjekter. Bare 15 prosent har g&aring;tt videre til reell drift, og de 40 prosentene som ikke bruker AI-verkt&oslash;y i det hele tatt, ligger innenfor de 85.</p>
@@ -471,7 +488,7 @@
     <!-- ============================================ -->
     <!-- DAGLIG POST: 2026-08-26                      -->
     <!-- ============================================ -->
-      <div class="news-date-group" data-date="2026-08-26">
+      <div class="news-date-group" id="dag-2026-08-26" data-date="2026-08-26">
       <div class="news-date">26. august 2026</div>
 
       <div class="news-card" data-tags="debatt">
