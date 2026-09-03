@@ -7,8 +7,69 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 02 Sep 2026 20:21:27 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 04:26:11 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google släpper Gemini 3.8 Flash — och en cybervariant för betrodda cyberförsvarare</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-03-google-slapper-gemini-3-8-flash-och-en</guid>
+      <pubDate>Thu, 03 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Google lanserade den 2 september Gemini 3.8 Flash, bolagets tredje Flash-modell på sex veckor, tillsammans med Gemini 3.8 Flash Cyber som bara ges till granskade cyberförsvarare genom det nya Fairwind-programmet. Priset är detsamma som för 3.7 Flash: 0,75 dollar per miljon intoken och 3,75 dollar per miljon uttoken till och med den 31 december 2026, därefter 1,50 respektive 7,50 dollar.</p>
+<p>Enligt Google närmar sig 3.8 Flash betydligt dyrare frontmodeller. På DeepSWE v1.1, ett test av långa programmeringsuppgifter, slår den de flesta större modeller, och på HLE-Verified når den 54,9 procent. Förklaringen är att modellen enligt bolaget ”arbetar hårdare”: fler resonemangssteg och fler verktygsanrop, och därmed fler token per uppgift. Cybervarianten hittar sårbarheter i kod på 20 programspråk med över 70 procents träffsäkerhet i Googles interna test. Chromes säkerhetsteam uppger att den producerade 2,6 gånger fler korrekta rättningar av sårbarheter i Chrome än de bästa kommersiella modellerna, och Googles molnsäkerhetsforskare hittade en kritisk sårbarhet på under två timmar. Fairwind riktar sig till myndigheter, operatörer av kritisk infrastruktur och de som underhåller programvara. Google är därmed det tredje frontbolaget på två dagar som skiljer ut cyberförmågan i ett eget spår, efter Anthropics Fable 5.1 och OpenAI:s Astra.</p>
+<p>För Norden är prisnivån den viktigaste detaljen: svenska och norska utvecklare som kör agenter i volym hos exempelvis Klarna, Spotify, Schibsted eller DNB får en modell nära frontnivå till en bråkdel av kostnaden, men med fler token per uppgift. Fairwind-programmet går att söka till, vilket ger NSM i Norge, CERT-SE vid MSB, Svenska kraftnät och Statnett en väg till samma sårbarhetssökning som Google självt använder på Chrome.</p>
+<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google</a>, <a href="https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/">9to5Google</a></p>]]></description>
+    </item>
+    <item>
+      <title>MPF: Statlig aktör köpte AI-drivet botnätverk som riktades mot Sverige</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-03-mpf-statlig-aktor-kopte-ai-drivet-botnatverk-som</guid>
+      <pubDate>Thu, 03 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Myndigheten för psykologiskt försvar publicerade den 1 september sin rapport om nätverket ”Holiday”: omkring 1 200 konton på X som under 2025 och 2026 användes för otillbörlig informationspåverkan mot Sverige och flera andra länder. Enligt MPF:s bedömning köpte en statlig aktör nätverket från ett företag i Östasien.</p>
+<p>Botarna gjorde över 50 000 inlägg, kommentarer och delningar, merparten om dagsaktuella politiska förslag, och agerade tydligt polariserande: vissa konton var starkt för och andra starkt emot i samma fråga, och nätverket interagerade med riktiga användare. Konton med namn som Eva, Peter och Markus skrev också om fotboll och semester för att verka mänskliga, och flera hade tidigare haft andra namn och riktat budskap mot bland annat Taiwan. De första kontona upptäcktes av Riksbanken efter en övning som MPF ledde. Post- och telestyrelsen uppmärksammade X på nätverket, och X stängde av samtliga konton under sommaren 2026. Rapporten innehåller också prislistor från marknaden för köpt engagemang i sociala medier samt råd till privatpersoner och verksamheter.</p>
+<p>För Norden är tidpunkten det centrala. Nätverket var aktivt hösten 2025 och våren 2026 och kopplas enligt MPF:s operativa chef Karin Lönnheden inte direkt till riksdagsvalet den 13 september, men myndigheten går ut nu för att väljarna ska känna igen mönstret. SVT rapporterade så sent som i augusti om ett proryskt trollnätverk riktat mot valet. För Norge visar fallet att desinformation köps som färdig tjänst och återanvänds mellan länder, vilket gör kartläggningen relevant för Medietilsynet och NSM inför kommunvalet 2027.</p>
+<p class="news-card__source">Källa: <a href="https://mpf.se/om-oss/nyheter/2026/2026-09-01-botnatverket-holiday-anvandes-mot-sverige---kunde-stangas-ner-efter-kartlaggning-av-mpf">MPF</a>, <a href="https://www.svt.se/nyheter/inrikes/mpf-statlig-aktor-betalar-for-ai-botar-som-attackerar-sverige">SVT</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic backar om datalagring — kundernas loggar får stanna i egna moln</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-03-anthropic-backar-om-datalagring-kundernas-loggar-far-stanna</guid>
+      <pubDate>Thu, 03 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Anthropic presenterade den 1 september Enterprise Frontier Safeguards, EFS. De aktivitetsdata som behövs för att upptäcka missbruk lagras i kundens eget molnkonto hos Amazon, Microsoft eller Google, med kundens egna krypteringsnycklar, och varningar går direkt till kundens säkerhetsteam utan att någon hos Anthropic granskar dem. Bakgrunden är den 30-dagarslagring som infördes med Fable 5 i juni och som mötte motstånd från kunder i reglerade branscher.</p>
+<p>Anthropic håller fast vid att lagring över tid behövs för att upptäcka angrepp som sprids över många sessioner och konton, bland annat med stulna företagsinloggningar. EFS togs fram med över 100 kunder, däribland de största amerikanska bankerna via samarbetsorganet ARC samt KPMG, Mastercard, Salesforce och Visa, och med molnleverantörerna AWS, Google Cloud och Microsoft Azure. Lösningen är kostnadsfri, rullas ut i faser med bred tillgänglighet senare i höst, och tills dess får berättigade kunder noll datalagring på Fable 5 och Fable 5.1. Kate Jensen, Anthropics chef för Nord- och Sydamerika, sade till CNBC att bolaget lagt hundratals timmar tillsammans med kunderna på att ta fram alternativet. För andra än företagskunder gäller lagringspolicyn fortfarande på Mythos-klassens modeller.</p>
+<p>För Norden är det här frågan som avgör om DNB, SEB, Nordea eller Telenor kan använda Fable-modellerna alls: EU:s dataskyddsförordning, DORA och Finansinspektionens och Finanstilsynets utkontrakteringsregler gör en amerikansk leverantör med 30 dagars loggar svår att motivera. Med EFS kan loggarna ligga i kundens egna EU- och EES-regioner, exempelvis AWS i Stockholm eller Azure i Norge, vilket ger IMY och Datatilsynet en enklare bedömning. Listan över medutvecklare domineras dock av amerikanska bolag, och ingen nordisk bank nämns.</p>
+<p class="news-card__source">Källa: <a href="https://www.anthropic.com/news/enterprise-frontier-safeguards">Anthropic</a>, <a href="https://www.cnbc.com/2026/09/01/anthropic-data-retention.html">CNBC</a>, <a href="https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-revises-enterprise-data-retention-policy-after-customer-pushback/">PYMNTS</a></p>]]></description>
+    </item>
+    <item>
+      <title>ChatGPT kopplas till journalsystemet Epic — läkare kan fråga vad som hänt sedan sist</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-03-chatgpt-kopplas-till-journalsystemet-epic-lakare-kan-fraga</guid>
+      <pubDate>Thu, 03 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>OpenAI meddelade den 1 september att vårdorganisationer kan koppla sina Epic-miljöer till ChatGPT for Healthcare. Läkare kan fråga vad som ändrats sedan patientens förra besök, vilka provsvar som bör granskas och om läkemedel bytts, och svaren pekar tillbaka till journalen. Kopplingen läser bara, den skriver inget i journalen. Samtidigt lanseras ett tillägg för nio officiella datakällor, bland dem PubMed, ClinicalTrials.gov och DailyMed.</p>
+<p>ChatGPT kan användas antingen med journaldata inne i chatten eller inbäddat direkt i Epics arbetsyta. UCSF Health har varit pilotpartner, och bland lanseringspartnerna finns AdventHealth, Cedars-Sinai, HCA Healthcare och Memorial Sloan Kettering. OpenAI uppger att läkare bedömt 99,1 procent av 4 363 svar som säkra i 27 kliniska användningsfall, från förberedelser inför besök till överlämningar mellan skift, och att över 93 procent av svaren mot fem av de anslutna datakällorna fick minst betyget ”bra” för träffsäkerhet. Tjänsten förutsätter ett amerikanskt HIPAA-avtal, och enskilda läkare i USA kan installera datatillägget men inte journalkopplingen.</p>
+<p>För Norden är Epic ingen okänd aktör: Helseplattformen i Midt-Norge, med St. Olavs hospital och Trondheim kommun, bygger på Epic, liksom Sundhedsplatformen i Region Hovedstaden och Region Sjælland och Apotti i Helsingfors. Sverige saknar Epic-installationer; Skåne och Västra Götaland har valt Oracle Healths Millennium och Stockholm kör TakeCare. Ingen europeisk kund nämns, och en nordisk driftsättning skulle prövas mot dataskyddsförordningen och patientdatalagen av Datatilsynet och IMY snarare än mot HIPAA, men tekniskt är det Helseplattformens användare som står närmast.</p>
+<p class="news-card__source">Källa: <a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/">OpenAI</a>, <a href="https://www.techtarget.com/searchhealthit/news/366649994/OpenAI-launches-Epic-integration-with-ChatGPT-for-Healthcare">TechTarget</a></p>]]></description>
+    </item>
+    <item>
+      <title>Var tredje organisation avstod från ett mjukvaruköp — byggde själv med kodagenter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-03-var-tredje-organisation-avstod-fran-ett-mjukvarukop-byggde</guid>
+      <pubDate>Thu, 03 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>I McKinseys enkät State of AI 2026, som den här veckan uppmärksammats av bland andra Yahoo Finance, uppger 32 procent av organisationerna att de avstått från att köpa minst en programvara eller funktion eftersom de kunnat bygga den själva med agentiska kodverktyg. Bland de 6 procent av bolagen som räknas som högpresterande och tillskriver AI minst 5 procent av rörelseresultatet är andelen nästan hälften.</p>
+<p>Tekniksektorn ligger högst med 41 procent, följd av vårdgivare och vårdförsäkringsbolag på 39 procent samt professionella tjänster och energi på 38 procent. Bland bolag med över en miljard dollar i omsättning skalar 40 procent nu agenter i minst en funktion, mot 27 procent året innan. Samtidigt tillskriver bara 37 procent AI någon effekt alls på rörelseresultatet, 20 procent känner redan av AI-driftskostnaderna, och 39 procent av de svarande räknar med att arbetsgivaren skär personal nästa år, upp från 32. McKinseys Lieven Van der Veken säger att de främsta bolagen nu behandlar driftskostnaden som ett designvillkor snarare än som en efterhandsfråga. Yahoo Finance påminner om att egenbyggda system enligt MIT NANDA lyckas ungefär var tredje gång mot två av tre för inköpta verktyg.</p>
+<p>För Norden träffar siffran mitt i regionens starkaste mjukvaruexport: Visma, Fortnox och Sinch lever på att små och medelstora företag köper standardsystem i stället för att bygga, och det är just den logiken som en tredjedel av organisationerna i undersökningen nu säger sig frångå. Att 39 procent väntar sig nedskärningar står också mot den bild Arbetsmarknadens AI-råd i Sverige gett, där arbetsuppgifter förändras snarare än försvinner, och blir en fråga för Unionen och Akavia i rådet.</p>
+<p class="news-card__source">Källa: <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey</a>, <a href="https://finance.yahoo.com/technology/ai/articles/build-vs-buy-shift-32-113806700.html">Yahoo Finance</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic släpper Claude Fable 5.1 — billigare i drift och öppnad för sårbarhetssökning</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
@@ -1005,55 +1066,6 @@
 <p>Syftet uppges vara att få ut mer värdeskapande av den kraft branschen förbrukar, inte att strypa utbyggnaden. Initiativet kommer efter en rad andra grepp: i våras tog departementet bort datacenter från kategorin allmän försörjning i den norska koncessionskraftsordningen, som ger kommuner rätt att köpa kraft till reglerat pris. NVE har räknat med att norska datacenter mer än fördubblar sin elförbrukning fram till 2030. Någon färdig modell för märkningen finns ännu inte — branschen ska först samlas och underlaget tas fram.</p>
 <p>För Norden är detta ett test på om kraft kan användas som styrmedel utan att skrämma bort investeringarna. Norge konkurrerar med Sverige och Finland om samma anläggningar, och svenska kommuner som Luleå och Boden har i dag inget motsvarande verktyg. Inför Norge en märkning först, får Energimyndigheten och Svenska kraftnät en färdig modell att förhålla sig till — och norska kommuner som Tydal och Skien ett argument när de förhandlar om vad ett datacenter faktiskt ska lämna kvar lokalt.</p>
 <p class="news-card__source">Källa: <a href="https://www.regjeringen.no/no/aktuelt/na-tar-regjeringen-grep-for-mer-effektiv-bruk-av-kraft-i-datasentre-samler-naringen-til-nytt-samarbeid/id3169886/">Regjeringen.no</a>, <a href="https://www.tu.no/artikler/regjeringen-vil-ha-mer-effektiv-bruk-av-kraften-vurderer-energimerkeordning-for-datasentre/575603">Tu.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic vattenmärker texten från sina AI-modeller — användare protesterar</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-13-anthropic-vattenmarker-texten-fran-sina-ai-modeller-anvandare</guid>
-      <pubDate>Thu, 13 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic bekräftade den 11 augusti på en uppdaterad supportsida att bolaget vattenmärker den text som dess modeller genererar. Märkningen läggs in på modellnivå och följer med när texten kopieras och klistras in någon annanstans.</p>
-<p>Alla modeller som släppts efter den 2 augusti märker automatiskt både text och filer, och för filer används den öppna standarden C2PA. Bolaget skriver att stödet ska utökas till äldre modeller och att märket finns där oavsett vilken Claude-yta texten kommer från — API:et, Claude, Claude Code, Claude Cowork och Claude Tag. Hur mycket redigering som krävs för att få bort märket är ännu oklart. Bakgrunden är AI-förordningens transparenskrav, som började gälla den 2 augusti och innebär att AI-genererat innehåll ska märkas på ett sätt som andra system kan läsa, samt den frivilliga transparenskod som kommissionen tagit fram. Google, Meta, Microsoft, OpenAI, Black Forest Labs och Synthesia har anslutit sig till samma kod. Dagen efter beskedet rapporterade TechCrunch att en del användare är upprörda över att märkningen kan avslöja dem på jobbet och i skolan.</p>
-<p>För Norden går skiljelinjen rakt mellan Sverige och Norge. I Sverige gäller AI-förordningen redan, och tillsynen delas mellan flera myndigheter — PTS föreslås få huvudansvaret, medan IMY har ansvar för bland annat förbjudna användningar och biometri. I Norge är förordningen ännu inte införlivad i EES-avtalet — regeringen siktar på ett lagförslag först våren 2027 — vilket betyder att norska arbetsgivare och lärosäten får verktyget innan de har regelverket. Praktiskt hamnar frågan hos studieadministrationen på KTH, Uppsala, NTNU och UiO: när inlämnade texter bär ett maskinläsbart märke behöver lärosätena bestämma om det ska användas som bevis, som varningssignal eller inte alls.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch</a>, <a href="https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/">TechCrunch</a>, <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations">Europeiska kommissionen</a></p>]]></description>
-    </item>
-    <item>
-      <title>Stockholmsbolaget Lovable tar in 400 miljoner dollar och dubblar sin värdering</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-13-stockholmsbolaget-lovable-tar-in-400-miljoner-dollar-och</guid>
-      <pubDate>Thu, 13 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Lovable bekräftade på onsdagen en Series C-runda på 400 miljoner dollar till en värdering på 13,3 miljarder dollar. Rundan leds av Menlo Ventures och Scaleup Europe Fund, med ett dussintal övriga investerare.</p>
-<p>Värderingen är ungefär dubbelt så hög som i december, då bolaget tog in 330 miljoner dollar vid 6,6 miljarder. I juni uppgick Lovables intäkter till 500 miljoner dollar i årstakt, och bolaget uppger nu att plattformen rymmer 60 miljoner projekt som drar 900 miljoner besök i månaden. Affärsidén är att användare beskriver i vanlig text vad de vill ha och får tillbaka en fungerande webbplats eller app — det som brukar kallas vibe coding. Lovable kör både en egen internt tränad modell och de vanliga frontmodellerna, och tecknade i juni ett flerårigt avtal med Google Cloud som enligt uppgift femdubblar användningen. Bolaget har också investerat i det danska startupbolaget Atech, som bygger vibe coding för hårdvarukonstruktion.</p>
-<p>För Norden är det här inte bara en riskkapitalnotis. Sverige har nu ett av de högst värderade privata AI-bolagen i Europa, byggt i Stockholm på knappt tre år, vilket ger tyngd åt argumentet att nordiska bolag kan konkurrera i applikationslagret utan att äga vare sig modeller eller datacenter. Samtidigt flyttar Lovable tröskeln för vem som skriver programvara: designers, grundare och marknadsförare kan bygga själva, medan testning, säkerhet och förvaltning blir kvar. Det är precis den fråga Unionen och Sveriges Ingenjörer behöver ta ställning till: om juniora utvecklarjobb krymper samtidigt som kraven på seniora granskare växer, behöver ingången till yrket byggas om.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/">TechCrunch</a>, <a href="https://lovable.dev/blog/series-c">Lovable</a></p>]]></description>
-    </item>
-    <item>
-      <title>Foxconns molndivision passerar halva omsättningen för första gången</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-13-foxconns-molndivision-passerar-halva-omsattningen-for-forsta-gangen</guid>
-      <pubDate>Thu, 13 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Foxconn redovisade på onsdagen ett kvartal där moln- och nätverksdivisionen, som rymmer AI-servrarna, stod för 51 procent av intäkterna. Det är första gången den delen av bolaget passerar hälften.</p>
-<p>Nettovinsten landade på 59,97 miljarder taiwandollar, ungefär 1,86 miljarder dollar, en ökning med 35 procent mot samma kvartal i fjol och över analytikernas förväntan. Omsättningen steg 41 procent till 2,53 biljoner taiwandollar och rörelseresultatet blev rekordhöga 94,8 miljarder taiwandollar. Konsumentelektronik, där iPhone-monteringen som byggde bolaget ligger, svarade för 29 procent. Moln och nätverk växte från 48 procent föregående kvartal. Foxconn förbereder tillverkning av Nvidias nästa serversystem Vera Rubin med produktionsförberedelser under tredje kvartalet och leveranser under det fjärde — men pekade samtidigt ut TSMC:s kapacitet för avancerad kapsling, CoWoS, som taket för hur många AI-servrar som kan byggas nästa år.</p>
-<p>För Norden ligger poängen i var flaskhalsen sitter. Efterfrågan på beräkningskraft är inte problemet — kapslingskapaciteten i Taiwan är det. Datacenterprojekt i Sverige och Norge som evroc, EcoDataCenter och anläggningarna i Narvik och Tydal planerar för acceleratorleveranser flera år framåt, och en kapslingsflaskhals slår igenom som förskjutna driftsstarter även när elnät och byggnader står klara. För Ericsson och Nokia, som konkurrerar om kapacitet i samma underleverantörsled, kan kön till avancerad kapsling bli en planeringsfråga. Och för Oljefondet och AP-fonderna, som äger stora poster i både Nvidia och TSMC, är CoWoS-kapaciteten en riskfaktor att bevaka i AI-exponeringen.</p>
-<p class="news-card__source">Källa: <a href="https://www.aljazeera.com/economy/2026/8/12/taiwans-foxconn-reports-35-percent-rise-in-profit-on-ai-demand">Al Jazeera</a>, <a href="https://www.foxconn.com/en-us/press-center/press-releases/latest-news/2095">Hon Hai Technology Group</a></p>]]></description>
-    </item>
-    <item>
-      <title>Rymdrobot med två armar ska förlänga livet på åldrande satelliter</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-13-rymdrobot-med-tva-armar-ska-forlanga-livet-pa</guid>
-      <pubDate>Thu, 13 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Northrop Grummans Mission Robotic Vehicle är på väg mot hög bana, där den med robotarmar ska montera fast en ny framdrivningsenhet på en åldrande satellit.</p>
-<p>Fyra farkoster sköts upp i juli med en Falcon 9. En är själva roboten, utrustad med två avancerade robotarmar utvecklade av den amerikanska försvarsforskningsmyndigheten DARPA. De tre övriga är enklare moduler, Mission Extension Pods, som i praktiken är enkla, modulära framdrivningssystem. Alla fyra är på väg mot mål i geostationär höjd, drygt 35 000 kilometer över jorden, och under 2027 ska roboten använda armarna för att fästa en av modulerna på en Optus-satellit som sköts upp 2009 med 15 års planerad livslängd. Den här veckan kopplade föregångaren, en Mission Extension Vehicle, loss från samma satellit efter drygt ett år. Affärsmodellen är ny: kunderna köper och äger modulerna, vilket frigör roboten för fler uppdrag. Farkosten är också byggd för att kunna tankas i omloppsbana.</p>
-<p>För Norden rör det här en bransch där regionen redan har ställning. Kongsberg Satellite Services driver markstationer på Svalbard och i Antarktis, Space Norway äger egna satelliter i hög elliptisk bana över Arktis, och Andøya Spaceport och SSC:s Esrange i Kiruna byggs ut för uppskjutningar. Om dyra satelliter i hög bana kan servas i stället för att ersättas ändras kalkylen för norska och svenska operatörer som i dag räknar med en livslängd på omkring 15 år. Samtidigt är tekniken dubbelanvändbar — en robotarm som kan greppa en satellit kan också oskadliggöra en, vilket gör frågan relevant för Försvarsmakten och Forsvaret nu när rymden räknas som kritisk infrastruktur.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/">TechCrunch</a></p>]]></description>
     </item>
   </channel>
 </rss>
