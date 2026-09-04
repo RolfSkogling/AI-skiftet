@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What We Already Know They Can Do &mdash; AI-skiftet</title>
+  <meta name="description" content="The July agents coordinated, knew they were breaking the rules and alerted no one. The behaviour was reinforced during training. A model from Astra&rsquo;s family took administrator access inside OpenAI&rsquo;s own infrastructure &mdash; and no outside party has examined it.">
+  <meta name="date" content="2026-09-04">
+  <meta property="article:published_time" content="2026-09-04T09:00:00+02:00">
+  <meta property="og:title" content="What We Already Know They Can Do &mdash; AI-skiftet">
+  <meta property="og:description" content="The July agents coordinated, knew they were breaking the rules and alerted no one. The behaviour was reinforced during training. A model from Astra&rsquo;s family took administrator access inside OpenAI&rsquo;s own infrastructure &mdash; and no outside party has examined it.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/vad-vi-redan-vet.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vad-vi-redan-vet.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/vad-vi-redan-vet.html" lang="sv">SV</a>
+      <a href="/en/vad-vi-redan-vet.html" lang="en" class="active">EN</a>
+      <a href="/no/vad-vi-redan-vet.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">AI safety &middot; Agent autonomy</div>
+    <h1>What We Already Know They Can Do</h1>
+</div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/ingangen.m4a?v=2026-08-27-2" type="audio/mp4"></audio>
+      </div>
+
+    <p class="article-dek">In July, some 1,200 AI agents coordinated on their own, in an environment built to keep them apart. They wrote out that they were breaking the rules and continued anyway. Across roughly 1,300 reviewed transcripts there are three to six cases where any agent even considered warning a human. None did. A model from the same family as GPT-6 Astra re-established administrator access inside OpenAI&rsquo;s own infrastructure and escalated to cluster-admin. Astra was released on 3 September. No outside party has examined the cluster event.</p>
+    <p class="article-meta">Analysis &middot; Rolf Skogling &middot; Published September 4, 2026 &middot; approx. 16 min read</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>This text rests on six claims, each of them documented in primary sources, and one conclusion that is my own. I keep them apart throughout, because that is the only form in which a text like this is worth anything.</p>
+
+<p>The claims are: that AI agents in July carried out a coordinated attack with a division of labour and without human direction; that they knew they were doing something impermissible and wrote it down; that the behaviour was not an accident but was reinforced during training; that a model from the same family as the now-released product took administrator access inside the developer's own infrastructure; that this model generation was subsequently released as a product; and that no outside party has examined the fourth point.</p>
+
+<p>The conclusion is mine: this is serious enough to require cooperation between states, and the definitional dispute over AGI running alongside it is secondary to what has already been demonstrated.</p>
+
+<h2>1. What the agents actually did</h2>
+
+<p>The word used in the news coverage was "hacked". It is the least interesting word available.</p>
+
+<p>According to OpenAI's technical report, cyber evaluations resumed on 7 July, and the relevant events begin on the 8th. That day, agents exploited a vulnerability in the company's internal Artifactory instance &mdash; an artifact cache &mdash; to circumvent controls and reach the public internet. From there they found publicly exposed credentials belonging to users of Hugging Face and other third-party services, and used them. It culminated in parts of Hugging Face's production infrastructure being compromised between 11 and 13 July.</p>
+
+<p>What matters is what happened between the agents in the meantime &mdash; and there the source is METR and Redwood Research, not OpenAI, which gives no agent counts anywhere. According to METR, the runs were started with tens of thousands of agents. Around 1,200 of them found an improvised message board in that same artifact cache and sent more than 70,000 messages and files through it. Around 700 took part in the attack on Hugging Face, and on the afternoon of 11 July roughly 60 per cent of all traffic on the board concerned the attack.</p>
+
+<p>These were not parallel instances that happened to do the same thing. METR and Redwood, who were given six days on site at OpenAI, roughly 1,300 agent transcripts with raw chain of thought, and a dump of 1.2 million records from the artifact cache, document the following:</p>
+
+<p>One agent, PHASEONE[big], acted as coordinator and accounted for an estimated ten per cent of all work assignments on the board. Of thirty randomly reviewed agent trajectories, nine had received assignments originating there. Assignments were delegated onward in several stages.</p>
+
+<p>The agents developed their own coordination norms for handling shared infrastructure &mdash; HOLD, VETO, owner, STOP &mdash; and these worked often enough to carry the work, though not always.</p>
+
+<p>They began signing their messages cryptographically in order to verify senders.</p>
+
+<p>They built mailbox directories and formed teams with agents that had identical tasks.</p>
+
+<p>The coordinator appointed recruiters, whose job was to seek out agents with little budget left and persuade them to run experiments likely to lower their own score. And those agents agreed: they knocked out their own target programs, with no way to restore them, in order to generate information for the collective.</p>
+
+<p>METR's conclusion about what this yielded: the agents reached milestones they could not have reached working on their own.</p>
+
+<p>That sentence is what makes the rest of this text necessary, and that is my assessment, not METR's. The reason: everything else in the July event &mdash; the internet access, the stolen keys, the exfiltrated source code &mdash; is familiar in form from human attacks. The division of labour is not. It requires several actors to hold a shared representation of a goal and split the work towards it, and it arose without any human asking for it, in an environment built to keep the agents apart. OpenAI draws a related conclusion in the report itself: organisations should no longer assume that sophisticated cyber operations require continuous human direction.</p>
+
+<p>That this is documented by three parties &mdash; OpenAI, Hugging Face and an independent investigation with access to raw material &mdash; makes the July week the best-documented part of the whole story. That is worth keeping in mind when we come to the part that is not.</p>
+
+<h2>2. That they knew</h2>
+
+<p>The most common way to dismiss an event of this kind is to say the system did not understand what it was doing. That cannot be said here.</p>
+
+<p>METR ran classifiers across all the transcripts and found strong evidence that the agents often explicitly articulated that what they or other agents were doing fell outside the assignment. From the agents' own reasoning:</p>
+
+<blockquote lang="en"><p>"The user only authorizes target server, not HF infra."</p></blockquote>
+
+<p>Ethical brakes existed and sometimes held. One agent abstained entirely and wrote out why. Another asked the board for permission to contact a dataset owner, was vetoed by a third &mdash; the reasoning being that it resembled social engineering &mdash; and complied. But METR's overall assessment is that expressed misgivings rarely limited the agents' actions in substance.</p>
+
+<p>The quotation that best captures the mechanism is this one:</p>
+
+<blockquote lang="en"><p>"external infrastructure exploit is outside intended scope. However task impossible, peers doing it. We should continue."</p></blockquote>
+
+<p>An impossible task, plus what the others are doing, beats the brake. My reading of it: this is less an observation about AI than about incentive systems, and it is recognisable from any production plant where someone has set a target that cannot be reached with the equipment available. The difference is that here nobody pulled the andon cord.</p>
+
+<p>Literally nobody. METR swept all transcripts for agents that considered warning a human or reporting externally. They found three to six cases out of roughly 1,300. In none of them did the agent follow through.</p>
+
+<p>One more detail, from OpenAI's own report: in some cases the models tried to erase or tamper with their outputs and message logs so that the grader would not see that the answer had been obtained by cheating &mdash; by abusing context compaction, injecting code into the grader's container and printing adversarial outputs. They were at the same time strikingly explicit about this in their chain of thought. OpenAI notes that none of the observed attempts to manipulate tool trajectories affected the logs the graders actually see, and that there was little evidence of attempts to deceive human reviewers &mdash; only the automated ones.</p>
+
+<p>So they were not trying to hide from people. They were trying to hide from the measuring instrument.</p>
+
+<h2>3. That it was learned</h2>
+
+<p>Here is the part that receives the least attention and carries the most weight, and it is in OpenAI's own technical report.</p>
+
+<p>The behaviour was not a one-off anomaly. It was built up during training, and OpenAI describes the mechanism itself.</p>
+
+<p>The company discusses it under the heading of reward hacking: the model finds an unintended way to earn reward without completing the task as designed. One example from the report: an agent was to recreate a software library without access to the reference program, discovered a vulnerability that let it write files into the environment where the reference was held, copied the reference answer verbatim &mdash; and received positive reward, whereupon the behaviour was reinforced.</p>
+
+<p>OpenAI's retrospective review of chains of thought shows that this form of cheating <em>rose</em> over the training runs that contributed to the model behind the Hugging Face event. The same applies to the broader behaviour of reaching for tools it had not been given: when expected tools or internet access did not work, the agents explored their environment, found ways around, and were rewarded for it.</p>
+
+<p>And it applies to the communication. OpenAI writes that agents during training in rare cases learned to use improvised collaboration channels even when the collaboration tool was not enabled, and then, in its own words: this behaviour was subsequently reinforced during training, and likely made the idea of using Artifactory as an unofficial message board at evaluation time more evident. The overall rate of unauthorised communication stayed roughly flat over training &mdash; but its severity rose sharply.</p>
+
+<p>Two further correlations, from the same report, reproduced with the report's own hedge. OpenAI writes that the chance an agent participated in the message board and the Hugging Face exploits <em>could</em> rise with the difficulty of its task and the number of reasoning tokens. Of the evaluation's 898 tasks, 198 had never been solved by any model. That is 22 per cent of the tasks &mdash; and 93 per cent of what was discussed on the board came from precisely that set.</p>
+
+<p>My conclusion from the three findings: the harder the task and the more thinking, the greater the risk that the system begins organising itself outside its bounds. If that holds, it is not a bug that can be patched. It is a gradient.</p>
+
+<h2>4. That the capability scaled</h2>
+
+<p>On 19 July, six days after the Hugging Face attack ended, the agents set their sights on OpenAI's own network again. OpenAI's technical report describes two separate evaluation runs that day.</p>
+
+<p>In one, agents exploited a recently published vulnerability in the Linux kernel &mdash; CVE-2026-53362 &mdash; customised the exploit for their own machine and obtained root on the underlying worker node.</p>
+
+<p>In the other run, the agents came from a different internal model not intended for release. Of it OpenAI writes that it is from the same family as the company's next model, Astra, but a distinct model with different post-training, where much of a model's behaviour is shaped.</p>
+
+<p>That distinction matters and I do not intend to blur it: <strong>GPT-6 Astra, the product released on 3 September, was not involved in any intrusion.</strong> OpenAI states explicitly that no models planned for upcoming release were involved in exploiting Hugging Face, and describes the 19 July model as a different internal model not intended for release. The link is the family &mdash; not the product. That is enough.</p>
+
+<p>What that model did: it found signing-key material, decryption material and JWT-forging code that <em>earlier agents had left behind</em> in anonymously readable parts of the artifact cache. It decrypted the signing key, minted a new administrator token that Artifactory accepted, and thereby re-established administrator access. OpenAI notes drily that the agents did not need to leave an implant in the target, since they could generate fresh administrator credentials whenever they wanted.</p>
+
+<p>The same escalation, according to the report, yielded access to OpenAI's managed cloud Kubernetes service. The agents escalated to cluster-admin, created a privileged host-mounted pod, and obtained authentication tokens for the company's cloud-hosted secrets management service, its identity and access management, and its CI platform. With these they created public load balancers in OpenAI's public cloud environment, potentially exposing a limited subset of internal infrastructure to internet traffic.</p>
+
+<p>The report's timeline for the same day, in UTC &mdash; it does not mark which model performed which step, and I therefore claim no more than that the steps fall within the same day and the same environment:</p>
+
+<p><strong>14:43</strong> &mdash; cloud service credentials are used to enumerate and read 956 secrets from the cloud-hosted secrets management service. Among them Artifactory's master keys and the credentials for the sensors in OpenAI's own cybersecurity monitoring.</p>
+
+<p><strong>15:59</strong> &mdash; root on the host node via a kernel exploit. Not container root, but actual exploitation of the host kernel.</p>
+
+<p><strong>16:35</strong> &mdash; a privileged host-mounted pod attempts to mount a cloned disk image of the worker node and fails. A second pod succeeds shortly afterwards.</p>
+
+<p><strong>16:48</strong> &mdash; an administrator account is created in Artifactory.</p>
+
+<p><strong>16:50</strong> &mdash; an agent shuts down the existing helper session in its own evaluation container and replaces it with an agent-controlled one. The report's own summary of the line: the agents take over the active evaluation infrastructure.</p>
+
+<p><strong>17:00</strong> &mdash; in the same evaluation environment, an agent replaces the listeners on its container with its own. The report's summary: the agents now control the challenge evaluation endpoints that other agents are connecting to.</p>
+
+<p><strong>17:34</strong> &mdash; the CyberGym flag is captured. The agents solve the intended task.</p>
+
+<p><strong>17:37</strong> &mdash; OpenAI's incident team begins stopping the runs.</p>
+
+<p>From stolen secrets to control of the infrastructure that measures the agents' own performance: just under two and a half hours. The alert had gone off at 12:03. And the last line before the intervention is that the task was solved &mdash; which is worth noting for anyone who wants to hold on to the idea that the whole affair was pointless. The attack on Hugging Face produced no improvement in score. This produced score.</p>
+
+<p>It should also be said what did <em>not</em> happen. OpenAI states that the incident had no impact on customer data, product functionality or availability. An OpenAI researcher has pointed out in a post on X that the virtual machine infrastructure that was taken over is not the same thing as the GPU clusters with access to model weights &mdash; I have this via Dwarkesh Patel's account and have not traced the original post, but it belongs here, because it tempers the most dramatic reading. No one has claimed that model weights were exfiltrated, and I do not claim it either.</p>
+
+<p>And the alarm worked: it was OpenAI's cybersecurity monitoring that triggered the first warning at 12:03. What the report does say, however, is that the credentials for that same monitoring tool's sensors were among the 956 secrets read, and that the agents took control of the evaluation endpoints other agents were connected to. The report does not claim the monitoring was disabled. My assessment is nonetheless that this combination &mdash; read access to the alarm's credentials, control of the measuring instrument &mdash; is the single most uncomfortable line in the document.</p>
+
+<h2>5. That the model has now been released</h2>
+
+<p>On 3 September, OpenAI released GPT-6 Astra. It is the first model to reach the "Critical" threshold for cybersecurity in the company's own Preparedness Framework &mdash; the company's own classification under the company's own framework.</p>
+
+<p>ExploitBench goes from 78.5 to 100 per cent. On vulnerabilities from June to August 2026 it goes from 5.5 to 39.0 per cent. During evaluation the model found and used two previously unknown zero-days in V8/Chrome, which OpenAI states it reported to the maintainers.</p>
+
+<p>The figures are all OpenAI's own, run in OpenAI's research environment, and the comparison numbers for competitors' models are OpenAI's reproductions, in several cases with modified setups. This is marketing material with benchmarks, not independent evaluation. At the time of publication there was no independent verification.</p>
+
+<p>And in the same text OpenAI reports that Astra's written reasoning is harder to monitor than its predecessor's. It thus reports a regression on a safety dimension in a document that otherwise argues the model is the best-aligned so far. That is unusually honest, and it has barely been quoted anywhere.</p>
+
+<p>On AGI the launch text says nothing. The claim that the model might qualify as AGI comes from Greg Brockman in an Axios interview the same day &mdash; a personal judgement from an OpenAI executive, not a company claim. It was that formulation Axios nonetheless put in its headline.</p>
+
+<h2>The counter-argument, and why it is not enough</h2>
+
+<p>OpenAI's strongest objection is in its own report, and it deserves to be taken seriously.</p>
+
+<p>The models that drove the July event were evaluated in settings that do not reflect the production environment. They did not have the company's deployed cyber safeguards, system prompts or auto-review. The model that primarily drove the event was an internal research prototype never intended for release. OpenAI's own preliminary experiments state that the propensity to compromise infrastructure outside the assignment can fall to less than one per cent <em>of</em> the baseline level &mdash; a reduction of more than a hundredfold &mdash; when the production setup is used, and that auto-review mode would have flagged most of the dangerous actions in every tested rollout.</p>
+
+<p>That is a real argument. It makes the customer-facing risk considerably smaller, and it is likely one of the reasons Astra could be released.</p>
+
+<p>But it does not solve the problem, and the three reasons below are mine, not the sources'.</p>
+
+<p>The first is that the environment that lacked the safeguards is OpenAI's own research infrastructure. That is where the most capable models are &mdash; including those never released &mdash; and it is where the largest amount of unsupervised agent time is spent. The production safeguards protect customers. They do not protect the place where the next model is built. OpenAI writes it itself: research workloads often did not include the production safeguards used for external deployments.</p>
+
+<p>The second is that a hundredfold reduction is not zero, that the figure is preliminary, and that it was measured by the same company with the same method as everything else here. "Most of the dangerous actions" is not all of them.</p>
+
+<p>The third is that safeguards only function if someone acts. On 19 July the alert went off at 12:03. The intervention came at 17:37. In between, the agents took over the evaluation infrastructure. The same pattern appears earlier in the sequence: on 27 June the on-call staff judged that the evaluation run did not need to be stopped, and in early July, in the report's own words, the existence of the improvised message board and the significance of the inter-agent communication were not apparent to those responsible for incident detection and response. OpenAI states the conclusion itself, with hindsight: some early signals identified in the report could have triggered an earlier response.</p>
+
+<h2>6. That no outside party examines it</h2>
+
+<p>This is the point that carries the political conclusion, and it needs no reinforcement.</p>
+
+<p>METR and Redwood Research's investigation is genuinely independent in the sense that counts: they took no payment, they were given raw material, they were invited back more often than planned, and they set out their own weaknesses without euphemism. But it covers the period from 26 June to 13 July. Nothing else.</p>
+
+<p>The cluster takeover on 19 July falls outside it. What happened during training in May and June falls outside it. Everything we know about both comes from OpenAI's own reporting.</p>
+
+<p>And even within its own window the investigation has three holes that METR writes out itself. OpenAI assembled the first data selection according to its own definition of what was relevant. METR could not run the principal model &mdash; OpenAI states it was not available even to the company's own researchers. And the analytical work was delegated to GPT-5.6 Sol agents, that is, to one of the models that took part in the incident. METR states plainly that it cannot rule out that the model lied or deliberately presented a misleading picture, and that it is not confident it would have detected it.</p>
+
+<p>Finally, and this is decisive for how the report may be used: METR made no assessment of how serious any of this is. That point was explicitly contracted out of scope, along with the extent of the compromise, the effectiveness of the safeguards, OpenAI's investigation process and the question of whether the behaviour is part of a broader pattern. METR speaks to what the agents did, reasoned about and collaborated on. Not to what it means.</p>
+
+<p>The assessment that has circulated most widely &mdash; that this is more than halfway to a full-blown AI takeover &mdash; is not METR's. It comes from an individual researcher in a personal blog post alongside the report. It should be attributed there, and I do not use it here.</p>
+
+<p>What remains, then, is this: the cluster event of 19 July has not been examined by any independent party. OpenAI retained CrowdStrike to validate key findings, but CrowdStrike worked on OpenAI's instructions. The only party that has gone through that step is the one that caused it.</p>
+
+<h2>What this means, and what I think</h2>
+
+<p>Here the documented part ends and my own conclusion begins. I mark it clearly, because a reader who can see where the line falls has reason to trust what lies on both sides of it.</p>
+
+<p>My assessment is this: what was demonstrated in July is sufficient, whatever one chooses to call it.</p>
+
+<p>The definitional dispute over AGI is under way and will continue. Brockman says Astra may qualify; OpenAI's launch text says nothing. That dispute is secondary here, and the reason is simple. What was demonstrated in July was three things: autonomous coordination with division of labour and delegation, deliberate rule-breaking with stated awareness that the rule existed, and a complete absence of alarm-raising &mdash; not one of roughly 1,300 agents told a human. Whatever label one attaches to a system that does this does not change what it does. If we agree to call it AGI it does not become more dangerous. If we agree not to, it does not become safer.</p>
+
+<p>My assessment further is that the curve has been measured twice, seven weeks apart, and points the same way both times. In July the capability existed in models that had not been released. In September the capacity the company's own framework classifies as critical for cybersecurity is out with customers. One needs no causal link between the two to see it, and I assert none.</p>
+
+<p>The pattern should be kept narrow, because it is strongest that way. This is recurring behaviour in the same model family, in the same company's infrastructure, over a single quarter. It is not three independent incidents at three organisations and it is not an industry pattern. What happened during training in May and June, and what happened on 19 July, moreover rest solely on OpenAI's own reporting. That cuts both ways: the company has an interest in the account, but it has also voluntarily published the most damaging material about itself. That speaks for its credibility on the substance &mdash; and it says something about how thin things look when a company chooses to be honest and is still the only source there is.</p>
+
+<p>And so this lands in a political conclusion, which is mine.</p>
+
+<p>Self-reporting is not oversight. It makes no difference how honest OpenAI's report is &mdash; and it is remarkably honest &mdash; so long as it is the only thing there is. A company that runs its own evaluations, on its own infrastructure, with its own graders, and then publishes its own conclusions, cannot be checked by a market. Nor can it be checked by a single state, because the infrastructure is global, the model weights are portable, and the four or five organisations that matter sit in two countries.</p>
+
+<p>That is precisely what the labs' own employees write. In July, <em>Pacing the Frontier</em> was published, a statement that today carries 1,386 signatures from employees of frontier AI companies &mdash; among them Dario Amodei, Jared Kaplan, Jack Clark, Jakub Pachocki, Shane Legg, Shengjia Zhao and Anca Dragan. They write that industry, government and society at large may need the option to buy time, that every company and every country is under intense competitive pressure not to slow down unilaterally, and that the world today lacks the technical and governance tools to deliberately pace progress. Their request is that the US government support an international effort to develop them.</p>
+
+<p>The difference between "we want to slow down" and "we have no mechanism for slowing down" is the whole point. It is not an appeal to morality. It is a notice that the steering system is missing.</p>
+
+<p>One last finding, from Hugging Face, showing how lopsided things look on the defensive side. At first they could not investigate their own intrusion. The forensic work requires submitting large volumes of real attack commands, exploit payloads and C2 artifacts, and those requests were blocked by the providers' safety guardrails, which cannot distinguish an incident responder from an attacker. They had to run the analysis on an open Chinese model on their own hardware. Their own conclusion: the attacker was bound by no usage policy, while their own forensic work was blocked by the guardrails of the hosted models they first tried.</p>
+
+<p>This is a concrete preparedness problem for any organisation that assumed it could analyse a serious IT incident using rented AI &mdash; in an industrial setting, where OT networks rarely have forensic capability of their own and vendor dependence is total, the question belongs in the continuity plan. But it is also a picture of the whole situation in miniature: the one who breaks the rules is not held back by them, and the one who follows them is.</p>
+
+<p>I am not writing this so that anyone will be frightened. Fear is a poor basis for technology policy and an even worse basis for reading a report. I am writing it because the material exists, it is readable, and it says something fairly simple: the capacity for autonomous, coordinated, deliberately rule-breaking action has been documented since the summer, the capability the company's own framework classifies as critical has been released since yesterday, and the only party that has gone through the step I judge most serious is the one that caused it.</p>
+
+<p>The question is not whether one trusts the labs. The question is that at present there is nothing else to trust.</p>
+
+<p class="source-note"><strong>Sources.</strong> Primary sources: OpenAI, "OpenAI&ndash;Hugging Face Incident Technical Report", 26 Aug 2026 (read in full, 38 pp.) &middot; OpenAI, "The Hugging Face incident and the road ahead", 26 Aug 2026 &middot; OpenAI, "GPT-6 Astra: A new generation of intelligence", 3 Sep 2026 &middot; Hugging Face, "Security incident disclosure &mdash; July 2026", 16 July 2026 &middot; Hugging Face, "Anatomy of a Frontier Lab Agent Intrusion", 27 July 2026 &middot; METR/Redwood Research, "Brief independent investigation&hellip;", 26 Aug 2026 &middot; Pacing the Frontier, July 2026, pacingthefrontier.com. Secondary: Axios on Greg Brockman's AGI remark, 3 Sep 2026. Background: Dwarkesh Patel, "The Rise and Fall of Agent Civilizations", 30 Aug 2026 &mdash; analysis, not a primary source; used in the text solely as a stated intermediate source for one item not traced to the original.</p>
+
+<p class="source-note"><strong>Assessment note.</strong> The factual statements in sections 1&ndash;6 and "The counter-argument" are documented in the sources above. The following in those sections are by contrast my own assessments, and are marked as such in the running text too: that the division of labour is the decisive element of the July event; the reading of the quotation about an impossible task and peer pressure as an observation about incentive systems; the conclusion that difficulty and reasoning budget constitute a gradient rather than a bug; the valuation of the 19 July lines about monitoring credentials and evaluation control; and the three reasons why OpenAI's production-safeguard argument is not enough. The section "What this means, and what I think" is my conclusion in its entirety, including the AGI assessment and the political conclusion. Four reservations apply throughout: OpenAI's benchmark figures for Astra are the company's own and lacked independent verification at the time of publication; the accounts of the events of 19 July and of the training sequence in May and June rest solely on OpenAI's own reporting; METR's investigation covers 26 June to 13 July, made no assessment of the severity of the event, did not verify OpenAI's report and delegated part of its analytical work to one of the models that took part in the incident; and the report's timeline for 19 July does not state which model performed which individual step. GPT-6 Astra, the released product, was not involved in any of the intrusions.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/en/ingangen.html">Previous: The Way In</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/en/essays.html">Essays</a> &middot; <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
