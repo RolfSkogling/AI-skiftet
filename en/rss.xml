@@ -7,8 +7,20 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 03 Sep 2026 04:26:11 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 03:52:44 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>GPT-6 Astra has shipped — every figure is OpenAI’s own</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-gpt-6-astra-har-slappts-alla-siffror-ar</guid>
+      <pubDate>Fri, 04 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI released GPT-6 Astra on 3 September, with the API name gpt-6-astra and pricing of 10 dollars per million input tokens and 50 dollars per million output tokens. The model goes first to a limited set of organisations in the company’s Daybreak Access programme and then to Plus, Pro, Business and Enterprise, as well as to the API and AWS Bedrock, switched off by default for Enterprise at launch. Astra is the first of the company’s models to reach the “Critical” level for cyber capability in OpenAI’s own Preparedness Framework.</p>
+<p>The company reports large jumps over the previous generation, GPT-5.6 Sol: from 78.5 to 100 per cent on ExploitBench, but only from 5.5 to 39.0 per cent on the subset of fresh vulnerabilities from June to August 2026, and from 7.8 to 99.9 per cent on ARC-AGI-3. All of the figures are OpenAI’s own, run in the company’s own research environment, and the competitors’ results were reproduced by OpenAI itself — no independent verification existed at launch. The suggestion that the model might count as AGI does not come from the launch material but from OpenAI president Greg Brockman at a press briefing the same day, reported by Axios. In the launch text the company also writes that Astra’s written reasoning is harder to monitor than its predecessor’s.</p>
+<p>For the Nordics the model reaches customers through the API and AWS Bedrock, that is, the same purchasing routes Swedish and Norwegian organisations already use for cloud-based AI. The classification is OpenAI’s own assessment within the company’s own framework and not a regulatory review — for CERT-SE at Sweden’s MSB and for Norway’s NSM, it is the difference between a self-declaration and an independent audit that decides how the claim should be weighed in the threat picture. Astra was not involved in the Hugging Face intrusion in July; that was driven mainly by an internal research model, with contributions from agents built on GPT-5.6 Sol, seven weeks before the launch. What actually happened then, and which parts of the sequence no independent party has examined, is covered in <a href="/en/vad-vi-redan-vet.html">today’s analysis</a>.</p>
+<p class="news-card__source">Source: <a href="https://openai.com/index/gpt-6-astra/">OpenAI</a>, <a href="https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman">Axios</a>, <a href="https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940">NBC News</a></p>]]></description>
+    </item>
     <item>
       <title>Google releases Gemini 3.8 Flash — and a cyber variant for trusted defenders</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-03</link>
@@ -1015,57 +1027,6 @@
 <p>The memories consist of laser-cooled clouds of rubidium atoms placed at either end of the fibre. The team, led by Xi-Yu Luo at the University of Science and Technology of China in Hefei, used the DLCZ scheme and converted the photons to the telecom band to keep fibre losses down. What matters is not the kilometres as such but that the experiment passes the so-called PLOB bound — the theoretical ceiling on how much quantum information can be sent directly through a fibre without repeaters. The step is described as the transition from quantum networks within a city to quantum networks between cities.</p>
 <p>For the Nordics the distance is the interesting part: 420 kilometres is somewhat more than the straight-line distance between Stockholm and Gothenburg, and a bit further than Oslo–Trondheim as the crow flies. That turns quantum links between Nordic metropolitan regions into a technical question rather than a theoretical one. At the same time it is a reminder to NSM, MSB and the banks that migrating to quantum-safe encryption is not becoming less urgent. Sweden has domestic expertise in the field through WACQT at Chalmers, whose superconducting quantum computer is up to 25 qubits with a target of 100 in 2029 — and on August 25 the field gathers in Gothenburg for the SQA conference.</p>
 <p class="news-card__source">Source: <a href="https://journals.aps.org/prl/abstract/10.1103/ccd6-rf1s">Physical Review Letters</a>, <a href="https://www.scmp.com/news/china/science/article/3364045/miles-ahead-china-team-boosts-atom-entanglement-distance-record-fourfold">South China Morning Post</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI runs its most powerful model up to fourteen times faster on Cerebras hardware</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-14-openai-kor-sin-starkaste-modell-upp-till-fjorton</guid>
-      <pubDate>Fri, 14 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>On August 13 OpenAI opened a preview of Ultrafast, a new API service tier that runs GPT‑5.6 Sol up to fourteen times faster than standard processing. Throughput is stated at up to 750 output tokens per second.</p>
-<p>The speed does not come from a smaller model but from different hardware. Behind the tier sits chip company Cerebras, whose wafer-scale processors hold the model weights in memory on the chip itself rather than fetching them from external memory — that is the bottleneck that otherwise slows frontier models on graphics cards. OpenAI describes use cases where seconds cost money: incident response, financial research, voice-based customer support and abandoned checkouts in e-commerce. Early customers named are Jane Street, Podium, Basis and Rogo. For now the tier is a limited preview for selected customers, and no price has been published.</p>
-<p>For the Nordics two things are worth watching. The first is who gets in: banks such as SEB and DNB and telecom operators such as Telenor and Telia run exactly the kind of latency-sensitive workflows — voice support and market analysis — that the tier is built for, but without a price tag the calculation cannot be made. The second is the hardware. The AI data centres now being built in the Nordics, Tydal in Trøndelag and the clusters in Luleå, are dimensioned for graphics cards. If top-tier inference moves toward wafer scale, both power demand and cooling change in those facilities.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/previewing-ultrafast/">OpenAI</a>, <a href="https://www.globenewswire.com/news-release/2026/08/13/3344804/0/en/cerebras-powers-ultrafast-mode-for-openai-s-gpt-5-6-sol.html">Cerebras via GlobeNewswire</a></p>]]></description>
-    </item>
-    <item>
-      <title>Tangen warns: the oil fund is vulnerable if the AI bubble bursts</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-14-tangen-varnar-oljefonden-ar-sarbar-om-ai-bubblan</guid>
-      <pubDate>Fri, 14 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Nicolai Tangen, head of Norway's oil fund, said during Arendalsuka that the fund is vulnerable to a fall in AI-related equities. The concentration in a small number of technology companies is, in his view, greater than it has ever been.</p>
-<p>The fund was worth 22 683 billion Norwegian kroner on June 30 and reported a return of 1 753 billion kroner for the first half year — a result that comes largely from the same companies that constitute the risk: Alphabet, Meta, Amazon and Apple. Tangen urged the public to be prepared for sharp falls and pointed to equities dropping around 80 percent, as he put it, in the wake of the 1929 crash. Norges Bank Investment Management has in earlier scenarios calculated that a break in AI valuations could pull the fund's value down by around 35 percent.</p>
-<p>For the Nordics this is not a stock market comment but a public finance question. Through the fiscal rule the oil fund finances a substantial share of the Norwegian state budget, so a fall of that magnitude hits the budget room for municipalities, healthcare and defence. At the same time Norwegian data centre capacity is being built out for the same AI wave — Tydal in Trøndelag is the clearest example — which means the country is taking the risk twice: once in the portfolio and once in the power grid. Sweden has corresponding exposure in the AP funds, but on a considerably smaller scale.</p>
-<p class="news-card__source">Source: <a href="https://www.digi.no/artikler/tangen-oljefondet-sarbart-for-ki-boble/575702">Digi.no</a>, <a href="https://www.tv2.no/direkte/jpybz/siste-nytt/6a7bec3e9b81e58af5948d49/tangen-oljefondet-sarbart-for-kiboble">TV 2</a></p>]]></description>
-    </item>
-    <item>
-      <title>Tydal gives away a million GPU hours to Norwegian AI research</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-14-tydal-ger-bort-en-miljon-gpu-timmar-till</guid>
-      <pubDate>Fri, 14 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Data centre company Tydal Data Center announced during Arendalsuka that it is donating one million GPU hours to Norwegian AI research. NTNU and the research institute Simula receive 500 000 hours each.</p>
-<p>The company values the gift at 100 million Norwegian kroner, and it comes only days after Tydal signed a customer contract that the company has stated is worth around 45 billion kroner. Tydal says a further one million GPU hours will be distributed later. The role structure is worth noting: Haakon Bryhni is both chairman of Tydal Data Center and a professor at SimulaMet, which is part of the recipient Simula.</p>
-<p>For the Nordics this fills a concrete gap. Norwegian and Swedish research groups have long had access to data and expertise but not to compute on the scale required to train their own models — the same bottleneck the National Library of Norway described in its work on the Norwegian language models. One million GPU hours is not enough for a frontier model, but it goes a long way for fine-tuning and evaluation in Norwegian. The question for Swedish counterparts — KTH, Chalmers and WASP — is whether they can negotiate similar arrangements with the data centres being built in Luleå and Boden.</p>
-<p class="news-card__source">Source: <a href="https://www.digi.no/artikler/tydal-gir-en-million-gpu-timer-til-ntnu-og-simula/575699">Digi.no</a>, <a href="https://www.arendalsuka.no/program/1-million-gpu-timer-i-gave-verdi-100-millioner-kroner-to-vinnere">Arendalsuka</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norwegian government considers energy labelling for data centres</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-14-norska-regeringen-overvager-energimarkning-av-datacenter</guid>
-      <pubDate>Fri, 14 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>On August 10 the Norwegian government launched a collaboration with the data centre industry on more efficient use of power. A possible energy labelling scheme for data centres is one of the main tracks in the work.</p>
-<p>The stated aim is to get more value creation out of the power the industry consumes, not to choke the build-out. The initiative follows a series of other steps: this spring the ministry removed data centres from the category of ordinary supply in the Norwegian concession power scheme, which gives municipalities the right to buy power at a regulated price. NVE has calculated that Norwegian data centres will more than double their electricity consumption by 2030. No finished model for the labelling exists yet — the industry is to be convened first and the groundwork prepared.</p>
-<p>For the Nordics this is a test of whether power can be used as a policy instrument without scaring off investment. Norway competes with Sweden and Finland for the same facilities, and Swedish municipalities such as Luleå and Boden have no corresponding tool today. If Norway introduces labelling first, the Swedish Energy Agency and Svenska kraftnät get a ready-made model to relate to — and Norwegian municipalities such as Tydal and Skien get an argument when they negotiate over what a data centre should actually leave behind locally.</p>
-<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/na-tar-regjeringen-grep-for-mer-effektiv-bruk-av-kraft-i-datasentre-samler-naringen-til-nytt-samarbeid/id3169886/">Regjeringen.no</a>, <a href="https://www.tu.no/artikler/regjeringen-vil-ha-mer-effektiv-bruk-av-kraften-vurderer-energimerkeordning-for-datasentre/575603">Tu.no</a></p>]]></description>
     </item>
   </channel>
 </rss>
