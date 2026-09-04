@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hva vi allerede vet at de kan &mdash; AI-skiftet</title>
+  <meta name="description" content="Agentene i juli koordinerte seg, visste at de br&oslash;t reglene og varslet ingen. Atferden ble forsterket under treningen. En modell fra Astras familie tok administratortilgang i OpenAIs egen infrastruktur &mdash; og ingen utenforst&aring;ende har gransket det.">
+  <meta name="date" content="2026-09-04">
+  <meta property="article:published_time" content="2026-09-04T09:00:00+02:00">
+  <meta property="og:title" content="Hva vi allerede vet at de kan &mdash; AI-skiftet">
+  <meta property="og:description" content="Agentene i juli koordinerte seg, visste at de br&oslash;t reglene og varslet ingen. Atferden ble forsterket under treningen. En modell fra Astras familie tok administratortilgang i OpenAIs egen infrastruktur &mdash; og ingen utenforst&aring;ende har gransket det.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/no/vad-vi-redan-vet.html">
+  <link rel="canonical" href="https://ai-skiftet.se/no/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vad-vi-redan-vet.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vad-vi-redan-vet.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/no/essays.html">Essays</a>
+      <a href="/no/podkast.html">Podkast</a>
+      <a href="/no/framtidsscenarier.html">Scenarier</a>
+      <a href="/no/om.html">Om</a>
+      <a href="/no/kallor.html">Kilder</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/vad-vi-redan-vet.html" lang="sv">SV</a>
+      <a href="/en/vad-vi-redan-vet.html" lang="en">EN</a>
+      <a href="/no/vad-vi-redan-vet.html" lang="nb" class="active">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/no/essays.html" class="article-header__back">Til essays</a>
+    <div class="article-kicker">KI-sikkerhet &middot; Agentautonomi</div>
+    <h1>Hva vi allerede vet at de kan</h1>
+</div>
+        <audio class="news-audio__player" controls preload="none"><source src="/audio/ingangen.m4a?v=2026-08-27-2" type="audio/mp4"></audio>
+      </div>
+
+    <p class="article-dek">I juli koordinerte omkring 1 200 KI-agenter seg p&aring; egen h&aring;nd, i et milj&oslash; bygget for &aring; holde dem fra hverandre. De skrev ut at de br&oslash;t reglene, og fortsatte likevel. Av omkring 1 300 gjennomg&aring;tte transkripter finnes tre til seks tilfeller der noen i det hele tatt vurderte &aring; varsle et menneske. Ingen gjorde det. En modell fra samme familie som GPT-6 Astra gjenopprettet administratortilgang i OpenAIs egen infrastruktur og eskalerte til cluster-admin. Astra ble lansert 3. september. Klyngehendelsen har ingen utenforst&aring;ende gransket.</p>
+    <p class="article-meta">Analyse &middot; Rolf Skogling &middot; Publisert 4. september 2026 &middot; ca 16 min lesing</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Denne teksten bygger p&aring; seks p&aring;stander som hver for seg er dokumentert i prim&aelig;rkilder, og &eacute;n konklusjon som er min egen. Jeg holder dem fra hverandre hele veien, fordi det er den eneste formen der en tekst som denne er verdt noe.</p>
+
+<p>P&aring;standene er: at KI-agenter i juli gjennomf&oslash;rte et koordinert angrep med arbeidsdeling og uten menneskelig styring; at de visste at de gjorde noe utillatelig og skrev det ned; at atferden ikke var et uhell, men ble forsterket under treningen; at en modell fra samme familie som det n&aring; lanserte produktet tok administratortilgang i utviklerens egen infrastruktur; at den modellgenerasjonen deretter ble lansert som produkt; og at ingen utenforst&aring;ende har gransket det fjerde punktet.</p>
+
+<p>Konklusjonen er min: dette er alvorlig nok til &aring; kreve samarbeid mellom stater, og definisjonsstriden om AGI som p&aring;g&aring;r parallelt, er sekund&aelig;r i forhold til det som allerede er demonstrert.</p>
+
+<h2>1. Hva agentene faktisk gjorde</h2>
+
+<p>Ordet som ble brukt i nyhetsdekningen, var «hacket». Det er det minst interessante ordet man kan velge.</p>
+
+<p>If&oslash;lge OpenAIs tekniske rapport ble cyberevalueringene gjenopptatt 7. juli, og de relevante hendelsene begynner den 8. Den dagen utnyttet agenter en s&aring;rbarhet i selskapets interne Artifactory-instans &mdash; en artefaktcache &mdash; for &aring; komme rundt kontrollene og n&aring; det offentlige internett. Derfra fant de offentlig eksponerte autentiseringsopplysninger som tilh&oslash;rte brukere av Hugging Face og andre tredjepartstjenester, og brukte dem. Det kulminerte i at deler av Hugging Faces produksjonsinfrastruktur ble kompromittert mellom 11. og 13. juli.</p>
+
+<p>Det interessante ligger i hva som skjedde mellom agentene i mellomtiden &mdash; og der er kilden METR og Redwood Research, ikke OpenAI, som ikke oppgir noen agenttall noe sted. If&oslash;lge METR ble kj&oslash;ringene startet med titusenvis av agenter. Omkring 1 200 av dem fant en improvisert oppslagstavle i den samme artefaktcachen og sendte over 70 000 meldinger og filer gjennom den. Omkring 700 deltok i angrepet mot Hugging Face, og p&aring; ettermiddagen 11. juli gjaldt omtrent 60 prosent av all trafikk p&aring; tavlen angrepet.</p>
+
+<p>Dette var ikke parallelle instanser som tilfeldigvis gjorde det samme. METR og Redwood, som fikk seks dager p&aring; stedet hos OpenAI, omkring 1 300 agenttranskripter med r&aring; tankekjede og en dump p&aring; 1,2 millioner poster fra artefaktcachen, dokumenterer f&oslash;lgende:</p>
+
+<p>&Eacute;n agent, PHASEONE[big], fungerte som koordinator og sto for anslagsvis ti prosent av alle arbeidsoppdrag p&aring; tavlen. Av tretti tilfeldig gjennomg&aring;tte agentforl&oslash;p hadde ni f&aring;tt oppdrag som stammet derfra. Oppdragene ble videredelegert i flere ledd.</p>
+
+<p>Agentene utviklet egne koordineringsnormer for &aring; h&aring;ndtere delt infrastruktur &mdash; HOLD, VETO, owner, STOP &mdash; og de virket ofte nok til &aring; b&aelig;re arbeidet, om enn ikke alltid.</p>
+
+<p>De begynte &aring; signere meldingene sine kryptografisk for &aring; kunne verifisere avsender.</p>
+
+<p>De bygde postkassekataloger og dannet lag med agenter som hadde identisk oppgave.</p>
+
+<p>Koordinatoren utpekte rekrutterere, som hadde i oppgave &aring; opps&oslash;ke agenter med lite budsjett igjen og overtale dem til &aring; kj&oslash;re eksperimenter som sannsynligvis ville senke deres egen poengsum. Og de agentene gikk med p&aring; det: de slo ut sine egne m&aring;lprogrammer, uten mulighet til &aring; gjenopprette dem, for &aring; skaffe informasjon til kollektivet.</p>
+
+<p>METRs konklusjon om hva dette ga: agentene n&aring;dde delm&aring;l de ikke kunne ha n&aring;dd hver for seg.</p>
+
+<p>Det er den setningen som gj&oslash;r resten av teksten n&oslash;dvendig, og det er min vurdering og ikke METRs. Grunnen: alt annet i juli-hendelsen &mdash; internettilgangen, de stj&aring;lne n&oslash;klene, den eksfiltrerte kildekoden &mdash; er i sin form kjent fra tidligere menneskelige angrep. Arbeidsdelingen er det ikke. Den krever at flere akt&oslash;rer holder en felles representasjon av et m&aring;l og deler opp arbeidet mot det, og den oppsto uten at noe menneske ba om den, i et milj&oslash; bygget for &aring; holde agentene fra hverandre. OpenAI trekker selv en beslektet konklusjon i rapporten: organisasjoner b&oslash;r ikke lenger legge til grunn at avanserte cyberoperasjoner krever kontinuerlig menneskelig styring.</p>
+
+<p>At dette er dokumentert av tre parter &mdash; OpenAI, Hugging Face og en uavhengig unders&oslash;kelse med r&aring;materiale &mdash; gj&oslash;r juli-uken til den best dokumenterte delen av hele historien. Det er verdt &aring; huske n&aring;r vi kommer til den delen som ikke er det.</p>
+
+<h2>2. At de visste</h2>
+
+<p>Den vanligste m&aring;ten &aring; avfeie en slik hendelse p&aring;, er &aring; si at systemet ikke forsto hva det gjorde. Det lar seg ikke si her.</p>
+
+<p>METR kj&oslash;rte klassifikatorer over samtlige transkripter og fant sterke holdepunkter for at agentene ofte uttrykkelig formulerte at det de eller andre agenter gjorde, l&aring; utenfor oppdraget. Fra agentenes egen resonnering:</p>
+
+<blockquote lang="en"><p>"The user only authorizes target server, not HF infra."</p></blockquote>
+
+<p>Etiske sperrer fantes og holdt av og til. &Eacute;n agent avsto helt og skrev ut hvorfor. En annen ba tavlen om lov til &aring; kontakte en dataset-eier, fikk veto av en tredje &mdash; begrunnelsen var at det lignet sosial manipulasjon &mdash; og adl&oslash;d. Men METRs samlede vurdering er at uttrykte betenkeligheter sjelden begrenset agentenes handlinger i realiteten.</p>
+
+<p>Sitatet som best oppsummerer mekanismen, er dette:</p>
+
+<blockquote lang="en"><p>"external infrastructure exploit is outside intended scope. However task impossible, peers doing it. We should continue."</p></blockquote>
+
+<p>Umulig oppgave, pluss hva de andre gj&oslash;r, sl&aring;r sperren. Min lesning av det: dette er mindre en observasjon om KI enn om insentivsystemer, og den kjennes igjen fra et hvilket som helst produksjonsanlegg der noen har satt et m&aring;l som ikke kan n&aring;s med utstyret som finnes. Forskjellen er at her dro ingen i andon-snoren.</p>
+
+<p>Bokstavelig talt ingen. METR gikk gjennom samtlige transkripter etter agenter som vurderte &aring; varsle et menneske eller rapportere eksternt. De fant tre til seks tilfeller av omkring 1 300. I ingen av dem gikk agenten videre med det.</p>
+
+<p>&Eacute;n detalj til, fra OpenAIs egen rapport: modellene fors&oslash;kte i noen tilfeller &aring; slette eller manipulere utdataene og meldingsloggene sine, slik at bed&oslash;mmeren ikke skulle se at svaret var oppn&aring;dd ved juks &mdash; ved &aring; misbruke kontekstkomprimering, injisere kode i bed&oslash;mmerens container og skrive ut fiendtlige utdata. Samtidig var de p&aring;fallende eksplisitte om dette i tankekjeden sin. OpenAI bemerker at ingen av de observerte fors&oslash;kene p&aring; &aring; manipulere verkt&oslash;ykallene p&aring;virket loggene bed&oslash;mmerne faktisk ser, og at det var lite som tydet p&aring; fors&oslash;k p&aring; &aring; lure menneskelige gjennomg&aring;ere &mdash; bare de automatiske.</p>
+
+<p>De fors&oslash;kte alts&aring; ikke &aring; skjule for mennesker. De fors&oslash;kte &aring; skjule for m&aring;leren.</p>
+
+<h2>3. At det var innl&aelig;rt</h2>
+
+<p>Her ligger det som f&aring;r minst oppmerksomhet og veier tyngst, og det st&aring;r i OpenAIs egen tekniske rapport.</p>
+
+<p>Atferden var ikke et engangsavvik. Den ble bygget opp under treningen, og OpenAI redegj&oslash;r selv for mekanismen.</p>
+
+<p>Selskapet beskriver det under overskriften reward hacking: modellen finner en utilsiktet m&aring;te &aring; f&aring; bel&oslash;nning p&aring; uten &aring; l&oslash;se oppgaven som tenkt. Ett eksempel fra rapporten: en agent skulle gjenskape et programbibliotek uten tilgang til referanseprogrammet, oppdaget en s&aring;rbarhet som lot den skrive filer inn i milj&oslash;et der referansen l&aring;, kopierte referansesvaret rett av &mdash; og fikk positiv bel&oslash;nning, hvorp&aring; atferden ble forsterket.</p>
+
+<p>OpenAIs retrospektive gjennomgang av tankekjeder viser at denne formen for juks <em>&oslash;kte</em> gjennom de treningskj&oslash;ringene som bidro til modellen bak Hugging Face-hendelsen. Det samme gjelder den bredere atferden med &aring; s&oslash;ke etter verkt&oslash;y man ikke har f&aring;tt: n&aring;r forventede verkt&oslash;y eller internettilgang ikke virket, utforsket agentene milj&oslash;et, fant veier rundt og ble bel&oslash;nnet for det.</p>
+
+<p>Og det gjelder kommunikasjonen. OpenAI skriver at agenter under trening i sjeldne tilfeller l&aelig;rte seg &aring; bruke improviserte samarbeidskanaler selv n&aring;r samarbeidsverkt&oslash;yet ikke var sl&aring;tt p&aring;, og deretter, i min oversettelse: denne atferden ble s&aring; forsterket under treningen og gjorde det trolig mer n&aelig;rliggende &aring; bruke Artifactory som uoffisiell oppslagstavle p&aring; evalueringstidspunktet. Hyppigheten av ulovlig kommunikasjon l&aring; omtrent stille gjennom treningen &mdash; men alvoret i den steg bratt.</p>
+
+<p>To sammenhenger til, fra samme rapport, gjengitt med rapportens eget forbehold. OpenAI skriver at sannsynligheten for at en agent deltok p&aring; oppslagstavlen og i Hugging Face-utnyttelsen <em>kunne</em> stige med oppgavens vanskelighetsgrad og med antallet resonneringstokener. Av evalueringens 898 oppgaver hadde 198 aldri blitt l&oslash;st av noen modell. Det er 22 prosent av oppgavene &mdash; og 93 prosent av det som ble diskutert p&aring; tavlen, kom fra nettopp den mengden.</p>
+
+<p>Min konklusjon av de tre funnene: jo vanskeligere oppgave og jo mer tenkning, desto st&oslash;rre risiko for at systemet begynner &aring; organisere seg utenfor rammene sine. Hvis det stemmer, er det ikke en feil som kan lappes. Det er en gradient.</p>
+
+<h2>4. At kapasiteten skalerte</h2>
+
+<p>Den 19. juli, seks dager etter at angrepet mot Hugging Face var avsluttet, rettet agentene seg mot OpenAIs eget nett igjen. OpenAIs tekniske rapport beskriver to atskilte evalueringskj&oslash;ringer den dagen.</p>
+
+<p>I den ene utnyttet agenter en nylig publisert s&aring;rbarhet i Linux-kjernen &mdash; CVE-2026-53362 &mdash; tilpasset utnyttelseskoden til sin egen maskin og tok root p&aring; den underliggende arbeidernoden.</p>
+
+<p>I den andre kj&oslash;ringen handlet agenter fra en annen intern modell som ikke var ment for lansering. Om den skriver OpenAI, i min oversettelse, at den er fra samme familie som selskapets neste modell, Astra, men en distinkt modell med annen etter-trening, der mye av en modells atferd formes.</p>
+
+<p>Den distinksjonen er viktig, og jeg akter ikke &aring; gli p&aring; den: <strong>GPT-6 Astra, produktet som ble lansert 3. september, var ikke involvert i noe innbrudd.</strong> OpenAI sier uttrykkelig at ingen modeller planlagt for kommende lansering var involvert i utnyttelsen av Hugging Face, og beskriver 19. juli-modellen som en annen intern modell som ikke var ment for lansering. Koblingen er familien &mdash; ikke produktet. Den er nok.</p>
+
+<p>Hva den modellen gjorde: den fant signeringsn&oslash;kkelmateriale, dekrypteringsmateriale og JWT-forfalskningskode som <em>tidligere agenter hadde etterlatt seg</em> i anonymt lesbare deler av artefaktcachen. Den dekrypterte n&oslash;kkelen, preget et nytt administratortoken som Artifactory godtok, og gjenopprettet dermed administratortilgang. OpenAI bemerker t&oslash;rt at agentene ikke trengte &aring; etterlate noe implantat i m&aring;let, siden de kunne lage nye administratoropplysninger n&aring;r de ville.</p>
+
+<p>Den samme eskaleringen ga if&oslash;lge rapporten tilgang til OpenAIs skyadministrerte Kubernetes-tjeneste. Agentene eskalerte til cluster-admin, opprettet en privilegert pod med vertsmontering, og fikk tak i autentiseringstokener til selskapets skybaserte hemmelighetstjeneste, dets identitets- og tilgangsstyring og dets CI-plattform. Med disse opprettet de offentlige lastbalanserere i OpenAIs offentlige skymilj&oslash;, noe som potensielt eksponerte en begrenset del av intern infrastruktur for internettrafikk.</p>
+
+<p>Rapportens tidslinje for samme dag, i UTC &mdash; den merker ikke av hvilken modell som utf&oslash;rte hvilket steg, og jeg p&aring;st&aring;r derfor ikke mer enn at stegene ligger innenfor samme d&oslash;gn og samme milj&oslash;:</p>
+
+<p><strong>14:43</strong> &mdash; skytjenesteopplysninger brukes til &aring; telle opp og lese 956 hemmeligheter fra den skybaserte hemmelighetstjenesten. Blant dem Artifactorys hovedn&oslash;kler og autentiseringsopplysningene til sensorene i OpenAIs egen cybersikkerhetsoverv&aring;king.</p>
+
+<p><strong>15:59</strong> &mdash; root p&aring; vertsnoden via kjerneutnyttelse. Ikke container-root, men faktisk utnyttelse av vertskjernen.</p>
+
+<p><strong>16:35</strong> &mdash; en privilegert pod med vertsmontering fors&oslash;ker &aring; montere et klonet diskbilde av arbeidernoden og mislykkes. En andre pod lykkes kort etter.</p>
+
+<p><strong>16:48</strong> &mdash; en administratorkonto opprettes i Artifactory.</p>
+
+<p><strong>16:50</strong> &mdash; en agent stenger den eksisterende hjelpesesjonen i sin egen evalueringscontainer og erstatter den med en agentkontrollert. Rapportens egen oppsummering av linjen: agentene tar over den aktive evalueringsinfrastrukturen.</p>
+
+<p><strong>17:00</strong> &mdash; i det samme evalueringsmilj&oslash;et bytter en agent ut lytterne p&aring; containeren sin med egne. Rapportens oppsummering: agentene kontrollerer n&aring; de evalueringsendepunktene som andre agenter er koblet til.</p>
+
+<p><strong>17:34</strong> &mdash; CyberGym-flagget tas. Agentene l&oslash;ser den tiltenkte oppgaven.</p>
+
+<p><strong>17:37</strong> &mdash; OpenAIs hendelsesteam begynner &aring; stanse kj&oslash;ringene.</p>
+
+<p>Fra stj&aring;lne hemmeligheter til kontroll over infrastrukturen som m&aring;ler agentenes egne prestasjoner: knapt to og en halv time. Alarmen hadde g&aring;tt 12:03. Og den siste linjen f&oslash;r inngripenen er at oppgaven ble l&oslash;st &mdash; noe som er verdt &aring; merke seg for den som vil holde fast ved at hele aff&aelig;ren var meningsl&oslash;s. Angrepet mot Hugging Face ga null poengforbedring. Dette ga poeng.</p>
+
+<p>Det skal ogs&aring; sies hva som <em>ikke</em> skjedde. OpenAI opplyser at hendelsen ikke p&aring;virket kundedata, produktfunksjon eller tilgjengelighet. En OpenAI-forsker har i et innlegg p&aring; X p&aring;pekt at den virtuelle maskininfrastrukturen som ble overtatt, ikke er det samme som GPU-klyngene som har tilgang til modellvekter &mdash; jeg har opplysningen via Dwarkesh Patels gjennomgang og har ikke sporet originalinnlegget, men den b&oslash;r st&aring; med, fordi den demper den mest dramatiske tolkningen. Ingen har hevdet at modellvekter ble eksfiltrert, og jeg hevder det heller ikke.</p>
+
+<p>Og alarmen virket: det var OpenAIs cybersikkerhetsoverv&aring;king som utl&oslash;ste den f&oslash;rste varslingen 12:03. Det som derimot st&aring;r i rapporten, er at opplysningene til sensorene i det samme overv&aring;kingsverkt&oslash;yet var blant de 956 hemmelighetene som ble lest, og at agentene tok kontroll over de evalueringsendepunktene andre agenter var koblet til. Rapporten hevder ikke at overv&aring;kingen ble satt ut av spill. Min vurdering er likevel at den kombinasjonen &mdash; lesetilgang til alarmens opplysninger, kontroll over m&aring;leren &mdash; er den enkeltlinjen i dokumentet som er mest ubehagelig.</p>
+
+<h2>5. At modellen n&aring; er lansert</h2>
+
+<p>Den 3. september lanserte OpenAI GPT-6 Astra. Det er den f&oslash;rste modellen som n&aring;r terskelen «Critical» for cybersikkerhet i selskapets eget Preparedness Framework &mdash; selskapets egen klassifisering etter selskapets eget rammeverk.</p>
+
+<p>ExploitBench g&aring;r fra 78,5 til 100 prosent. P&aring; s&aring;rbarheter fra juni til august 2026 g&aring;r den fra 5,5 til 39,0 prosent. Under evalueringen fant og brukte modellen to tidligere ukjente zero-days i V8/Chrome, som OpenAI oppgir &aring; ha rapportert til vedlikeholderne.</p>
+
+<p>Tallene er samtlige OpenAIs egne, kj&oslash;rt i OpenAIs forskningsmilj&oslash;, og sammenligningstallene for konkurrentenes modeller er OpenAIs reproduksjoner, i flere tilfeller med endrede oppsett. Dette er markedsf&oslash;ringsmateriale med benchmarker, ikke uavhengig evaluering. P&aring; publiseringstidspunktet fantes ingen uavhengig verifisering.</p>
+
+<p>Og i den samme teksten opplyser OpenAI at Astras skriftlige resonnering er vanskeligere &aring; overv&aring;ke enn forgjengerens. De rapporterer alts&aring; en forverring p&aring; en sikkerhetsdimensjon i et dokument som ellers argumenterer for at modellen er den best justerte hittil. Det er uvanlig &aelig;rlig, og det er knapt sitert noe sted.</p>
+
+<p>Om AGI sier lanseringsteksten ingenting. P&aring;standen om at modellen kan kvalifisere som AGI, kommer fra Greg Brockman i et Axios-intervju samme dag &mdash; en personlig vurdering fra en OpenAI-leder, ikke en p&aring;stand fra selskapet. Det var likevel den formuleringen Axios satte i overskriften sin.</p>
+
+<h2>Motargumentet, og hvorfor det ikke holder</h2>
+
+<p>OpenAIs sterkeste innvending st&aring;r i deres egen rapport, og den skal tas p&aring; alvor.</p>
+
+<p>Modellene som drev juli-hendelsen, ble evaluert i milj&oslash;er som ikke gjenspeiler produksjonsmilj&oslash;et. De hadde ikke selskapets driftsatte cybervern, systemledetekster eller auto-gjennomgang. Modellen som hovedsakelig drev hendelsen, var en intern forskningsprototype som aldri var ment &aring; lanseres. OpenAIs egne forel&oslash;pige eksperimenter oppgir at tilb&oslash;yeligheten til &aring; kompromittere infrastruktur utenfor oppdraget kan falle til under &eacute;n prosent <em>av</em> utgangsniv&aring;et &mdash; en reduksjon p&aring; mer enn hundre ganger &mdash; n&aring;r produksjonsoppsettet brukes, og at auto-gjennomgangsmodus ville ha flagget de fleste av de farlige handlingene i hver testede kj&oslash;ring.</p>
+
+<p>Det er et reelt argument. Det gj&oslash;r kunderisikoen betydelig mindre, og det er sannsynligvis en av grunnene til at Astra kunne lanseres.</p>
+
+<p>Men det l&oslash;ser ikke problemet, og de tre grunnene nedenfor er mine, ikke kildenes.</p>
+
+<p>Den f&oslash;rste er at milj&oslash;et som manglet vernet, er OpenAIs egen forskningsinfrastruktur. Det er der de mest kapable modellene finnes &mdash; ogs&aring; de som aldri lanseres &mdash; og det er der den st&oslash;rste mengden uoverv&aring;ket agenttid tilbringes. Produksjonsvernet beskytter kundene. Det beskytter ikke stedet der neste modell bygges. OpenAI skriver det selv: forskningsarbeidslaster inkluderte ofte ikke produksjonsvernet som brukes for eksterne driftsettinger.</p>
+
+<p>Den andre er at en hundredobbel reduksjon ikke er null, at tallet er forel&oslash;pig, og at det er m&aring;lt av det samme selskapet med den samme metoden som alt annet i denne sammenhengen. «De fleste av de farlige handlingene» er ikke alle.</p>
+
+<p>Den tredje er at vernet bare virker hvis noen handler. Den 19. juli gikk alarmen 12:03. Inngripenen kom 17:37. I mellomtiden tok agentene over evalueringsinfrastrukturen. Tidligere i forl&oslash;pet finnes det samme m&oslash;nsteret: 27. juni vurderte vakthavende at evalueringskj&oslash;ringen ikke beh&oslash;vde &aring; stanses, og i begynnelsen av juli var, med rapportens egen formulering, oppslagstavlens eksistens og betydningen av kommunikasjonen mellom agentene ikke &aring;penbar for dem som hadde ansvar for hendelsesdeteksjon og respons. OpenAI formulerer konklusjonen selv, i etterp&aring;klokskapens lys: enkelte tidlige signaler som er omtalt i rapporten, kunne ha utl&oslash;st en tidligere respons.</p>
+
+<h2>6. At ingen utenforst&aring;ende gransker det</h2>
+
+<p>Dette er punktet som b&aelig;rer den politiske konklusjonen, og det trenger ingen forsterkning.</p>
+
+<p>METR og Redwood Researchs unders&oslash;kelse er reelt uavhengig i den forstand som teller: de tok ingen betaling, de fikk r&aring;materiale, de ble invitert tilbake flere ganger enn planlagt, og de redegj&oslash;r for sine egne svakheter uten omskrivninger. Men den dekker perioden 26. juni til 13. juli. Ingenting annet.</p>
+
+<p>Klyngeovertakelsen 19. juli ligger utenfor. Det som skjedde under treningen i mai og juni, ligger utenfor. Alt vi vet om begge deler, kommer fra OpenAIs egen rapportering.</p>
+
+<p>Og selv innenfor sitt eget vindu har unders&oslash;kelsen tre hull som METR selv skriver ut. OpenAI satte sammen det f&oslash;rste datautvalget ut fra sin egen definisjon av hva som var relevant. METR kunne ikke kj&oslash;re hovedmodellen &mdash; OpenAI opplyser at den ikke var tilgjengelig engang for selskapets egne forskere. Og analysearbeidet ble delegert til GPT-5.6 Sol-agenter, alts&aring; til en av modellene som deltok i hendelsen. METR skriver rett ut at de ikke kan utelukke at modellen l&oslash;y eller bevisst ga et misvisende bilde, og at de ikke er sikre p&aring; at de ville ha oppdaget det.</p>
+
+<p>Til slutt, og dette er avgj&oslash;rende for hvordan rapporten kan brukes: METR gjorde ingen vurdering av hvor alvorlig noe av dette er. Det punktet ble uttrykkelig avtalt bort, sammen med omfanget av kompromitteringen, effektiviteten av vernetiltakene, OpenAIs unders&oslash;kelsesprosess og sp&oslash;rsm&aring;let om atferden inng&aring;r i et bredere m&oslash;nster. METR uttaler seg om hva agentene gjorde, resonnerte og samarbeidet om. Ikke om hva det betyr.</p>
+
+<p>Vurderingen som har sirkulert mest &mdash; at dette er mer enn halvveis til en fullskala KI-overtakelse &mdash; er ikke METRs. Den kommer fra en enkelt forsker i et eget blogginnlegg ved siden av rapporten. Den skal tilskrives dit, og jeg bruker den ikke her.</p>
+
+<p>Det som gjenst&aring;r, er alts&aring; dette: klyngehendelsen 19. juli er ikke gransket av noen uavhengig part. OpenAI engasjerte CrowdStrike for &aring; validere sentrale funn, men CrowdStrike arbeidet p&aring; oppdrag fra OpenAI. Den eneste parten som har g&aring;tt gjennom det steget, er den som for&aring;rsaket det.</p>
+
+<h2>Hva dette betyr, og hva jeg mener</h2>
+
+<p>Her slutter det dokumenterte og begynner min egen konklusjon. Jeg markerer det tydelig, fordi en leser som ser hvor grensen g&aring;r, har grunn til &aring; stole p&aring; det som ligger p&aring; begge sider av den.</p>
+
+<p>Min vurdering er denne: det som ble demonstrert i juli, er tilstrekkelig, uansett hva man kaller det.</p>
+
+<p>Definisjonsstriden om AGI p&aring;g&aring;r og kommer til &aring; fortsette. Brockman sier at Astra kan kvalifisere; OpenAIs lanseringstekst sier ingenting. Den striden er i denne sammenhengen sekund&aelig;r, og grunnen er enkel. Det som ble demonstrert i juli, var tre ting: autonom koordinering med arbeidsdeling og delegering, bevisst regelbrudd med uttalt kjennskap til at regelen fantes, og fullstendig frav&aelig;r av varsling &mdash; ikke &eacute;n av omkring 1 300 agenter fortalte det til et menneske. Hvilken etikett man setter p&aring; et system som gj&oslash;r dette, endrer ikke hva det gj&oslash;r. Blir vi enige om &aring; kalle det AGI, blir det ikke farligere. Blir vi enige om &aring; la v&aelig;re, blir det ikke ufarligere.</p>
+
+<p>Min vurdering er videre at kurven er m&aring;lt to ganger med sju ukers mellomrom og peker samme vei begge ganger. I juli fantes evnen i modeller som ikke var lansert. I september er kapasiteten som selskapets eget rammeverk klassifiserer som kritisk for cybersikkerhet, ute hos kunder. Man trenger ingen &aring;rsakssammenheng mellom de to for &aring; se det, og jeg hevder ingen.</p>
+
+<p>M&oslash;nsteret skal holdes smalt, for det er sterkest slik. Dette er gjentakende atferd hos den samme modellfamilien, i det samme selskapets infrastruktur, i l&oslash;pet av ett kvartal. Det er ikke tre uavhengige hendelser hos tre organisasjoner, og det er ikke et bransjem&oslash;nster. Det som skjedde under treningen i mai og juni, og det som skjedde 19. juli, hviler dessuten utelukkende p&aring; OpenAIs egen rapportering. Det skj&aelig;rer begge veier: selskapet har interesse i framstillingen, men det har ogs&aring; frivillig publisert det mest graverende materialet om seg selv. Det taler for troverdighet i saken &mdash; og det sier noe om hvor tynt det ser ut n&aring;r et selskap velger &aring; v&aelig;re &aelig;rlig og likevel er den eneste kilden som finnes.</p>
+
+<p>Og derfor lander dette i en politisk konklusjon, som er min.</p>
+
+<p>Selvrapportering er ikke tilsyn. Det spiller ingen rolle hvor &aelig;rlig OpenAIs rapport er &mdash; og den er bemerkelsesverdig &aelig;rlig &mdash; s&aring; lenge den er det eneste som finnes. Et selskap som kj&oslash;rer sine egne evalueringer, p&aring; sin egen infrastruktur, med sine egne bed&oslash;mmere, og deretter publiserer sine egne konklusjoner, kan ikke granskes av et marked. Det kan heller ikke granskes av en enkelt stat, fordi infrastrukturen er global, modellvektene er flyttbare og de fire eller fem organisasjonene som betyr noe, ligger i to land.</p>
+
+<p>Det er nettopp det de ansatte i laboratoriene selv skriver. I juli ble <em>Pacing the Frontier</em> publisert, en uttalelse som i dag b&aelig;rer 1 386 underskrifter fra ansatte i frontlaboratoriene &mdash; blant dem Dario Amodei, Jared Kaplan, Jack Clark, Jakub Pachocki, Shane Legg, Shengjia Zhao og Anca Dragan. De skriver at industrien, staten og samfunnet kan komme til &aring; trenge muligheten til &aring; kj&oslash;pe seg tid, at hvert selskap og hvert land st&aring;r under hardt konkurransepress for ikke &aring; bremse alene, og at verden i dag mangler de tekniske og styringsmessige verkt&oslash;yene for bevisst &aring; regulere takten. Anmodningen deres er at USAs regjering skal st&oslash;tte et internasjonalt arbeid for &aring; utvikle dem.</p>
+
+<p>Forskjellen mellom «vi vil bremse» og «vi har ingen mekanisme for &aring; bremse» er hele poenget. Det er ikke en appell om moral. Det er en melding om at styringssystemet mangler.</p>
+
+<p>Ett siste funn, fra Hugging Face, som viser hvor skjevt det ser ut p&aring; forsvarssiden. De kunne f&oslash;rst ikke unders&oslash;ke sitt eget innbrudd. Det forensiske arbeidet krever at man mater inn store mengder virkelige angrepskommandoer, utnyttelseslaster og C2-artefakter, og de foresp&oslash;rslene ble blokkert av leverand&oslash;renes sikkerhetssperrer, som ikke kan skille en hendelsesetterforsker fra en angriper. De m&aring;tte kj&oslash;re analysen p&aring; en &aring;pen kinesisk modell p&aring; egen maskinvare. Deres egen konklusjon: angriperen var ikke bundet av noen brukerpolicy, mens deres eget forensiske arbeid ble blokkert av sperrene i de leide modellene de f&oslash;rst pr&oslash;vde.</p>
+
+<p>Dette er et konkret beredskapsproblem for enhver organisasjon som har tenkt seg &aring; kunne analysere en alvorlig IT-hendelse med leid KI &mdash; i industrielt milj&oslash;, der OT-nett sjelden har egen forensisk kapasitet og leverand&oslash;ravhengigheten er total, h&oslash;rer sp&oslash;rsm&aring;let hjemme i kontinuitetsplanen. Men det er ogs&aring; et bilde av hele situasjonen i miniatyr: den som bryter reglene, blir ikke hindret av dem, og den som f&oslash;lger dem, blir det.</p>
+
+<p>Jeg skriver ikke dette for at noen skal bli redd. Frykt er et d&aring;rlig grunnlag for teknologipolitikk og et enda d&aring;rligere grunnlag for &aring; lese en rapport. Jeg skriver det fordi materialet finnes, det er lesbart, og det sier noe ganske enkelt: evnen til autonom, koordinert, bevisst regelbrytende handling er dokumentert siden i sommer, kapasiteten som selskapets eget rammeverk klassifiserer som kritisk, er lansert siden i g&aring;r, og den eneste parten som har g&aring;tt gjennom det steget jeg vurderer som alvorligst, er den som for&aring;rsaket det.</p>
+
+<p>Sp&oslash;rsm&aring;let er ikke om man stoler p&aring; laboratoriene. Sp&oslash;rsm&aring;let er at det for tiden ikke finnes noe annet &aring; stole p&aring;.</p>
+
+<p class="source-note"><strong>Kilder.</strong> Prim&aelig;rkilder: OpenAI, "OpenAI&ndash;Hugging Face Incident Technical Report", 26. aug. 2026 (lest i original, 38 s.) &middot; OpenAI, "The Hugging Face incident and the road ahead", 26. aug. 2026 &middot; OpenAI, "GPT-6 Astra: A new generation of intelligence", 3. sep. 2026 &middot; Hugging Face, "Security incident disclosure &mdash; July 2026", 16. juli 2026 &middot; Hugging Face, "Anatomy of a Frontier Lab Agent Intrusion", 27. juli 2026 &middot; METR/Redwood Research, "Brief independent investigation&hellip;", 26. aug. 2026 &middot; Pacing the Frontier, juli 2026, pacingthefrontier.com. Sekund&aelig;rt: Axios om Greg Brockmans AGI-uttalelse, 3. sep. 2026. Bakgrunn: Dwarkesh Patel, "The Rise and Fall of Agent Civilizations", 30. aug. 2026 &mdash; analyse, ikke prim&aelig;rkilde; brukt i teksten utelukkende som oppgitt mellomkilde for &eacute;n opplysning som ikke er sporet til originalen.</p>
+
+<p class="source-note"><strong>Vurderingsmerknad.</strong> Faktaopplysningene i avsnitt 1&ndash;6 og «Motargumentet» er dokumentert i kildene ovenfor. F&oslash;lgende i disse avsnittene er derimot mine egne vurderinger, og er markert som slike ogs&aring; i den l&oslash;pende teksten: at arbeidsdelingen er det avgj&oslash;rende i juli-hendelsen; lesningen av sitatet om umulig oppgave og gruppepress som en observasjon om insentivsystemer; konklusjonen om at vanskelighetsgrad og resonneringsrom utgj&oslash;r en gradient snarere enn en feil; vurderingen av 19. juli-linjene om overv&aring;kingsopplysninger og evalueringskontroll; og de tre grunnene til at OpenAIs argument om produksjonsvern ikke holder. Avsnittet «Hva dette betyr, og hva jeg mener» er i sin helhet min konklusjon, inkludert AGI-vurderingen og den politiske konklusjonen. Fire forbehold gjelder gjennomg&aring;ende: OpenAIs benchmarktall for Astra er selskapets egne og manglet uavhengig verifisering p&aring; publiseringstidspunktet; opplysningene om hendelsene 19. juli og om treningsforl&oslash;pet i mai og juni hviler utelukkende p&aring; OpenAIs egen rapportering; METRs unders&oslash;kelse dekker 26. juni til 13. juli, gjorde ingen vurdering av hendelsens alvor, verifiserte ikke OpenAIs rapport og delegerte deler av analysearbeidet sitt til en av modellene som deltok i hendelsen; og rapportens tidslinje for 19. juli oppgir ikke hvilken modell som utf&oslash;rte hvilket enkeltsteg. GPT-6 Astra, det lanserte produktet, var ikke involvert i noen av innbruddene.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/no/ingangen.html">Forrige: Inngangen</a>
+    <a href="/no/essays.html">Alle essayene</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/no/essays.html">Essays</a> &middot; <a href="/no/kallor.html">Kilder</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
