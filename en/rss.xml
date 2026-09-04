@@ -7,19 +7,68 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 04 Sep 2026 03:52:44 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 04:25:07 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
     <item>
       <title>GPT-6 Astra has shipped — every figure is OpenAI’s own</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
       <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-gpt-6-astra-har-slappts-alla-siffror-ar</guid>
-      <pubDate>Fri, 04 Sep 2026 06:01:00 +0200</pubDate>
+      <pubDate>Fri, 04 Sep 2026 06:05:00 +0200</pubDate>
       <dc:creator>Rolf Skogling</dc:creator>
       <category>modeller</category>
       <description><![CDATA[<p>OpenAI released GPT-6 Astra on 3 September, with the API name gpt-6-astra and pricing of 10 dollars per million input tokens and 50 dollars per million output tokens. The model goes first to a limited set of organisations in the company’s Daybreak Access programme and then to Plus, Pro, Business and Enterprise, as well as to the API and AWS Bedrock, switched off by default for Enterprise at launch. Astra is the first of the company’s models to reach the “Critical” level for cyber capability in OpenAI’s own Preparedness Framework.</p>
 <p>The company reports large jumps over the previous generation, GPT-5.6 Sol: from 78.5 to 100 per cent on ExploitBench, but only from 5.5 to 39.0 per cent on the subset of fresh vulnerabilities from June to August 2026, and from 7.8 to 99.9 per cent on ARC-AGI-3. All of the figures are OpenAI’s own, run in the company’s own research environment, and the competitors’ results were reproduced by OpenAI itself — no independent verification existed at launch. The suggestion that the model might count as AGI does not come from the launch material but from OpenAI president Greg Brockman at a press briefing the same day, reported by Axios. In the launch text the company also writes that Astra’s written reasoning is harder to monitor than its predecessor’s.</p>
 <p>For the Nordics the model reaches customers through the API and AWS Bedrock, that is, the same purchasing routes Swedish and Norwegian organisations already use for cloud-based AI. The classification is OpenAI’s own assessment within the company’s own framework and not a regulatory review — for CERT-SE at Sweden’s MSB and for Norway’s NSM, it is the difference between a self-declaration and an independent audit that decides how the claim should be weighed in the threat picture. Astra was not involved in the Hugging Face intrusion in July; that was driven mainly by an internal research model, with contributions from agents built on GPT-5.6 Sol, seven weeks before the launch. What actually happened then, and which parts of the sequence no independent party has examined, is covered in <a href="/en/vad-vi-redan-vet.html">today’s analysis</a>.</p>
 <p class="news-card__source">Source: <a href="https://openai.com/index/gpt-6-astra/">OpenAI</a>, <a href="https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman">Axios</a>, <a href="https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940">NBC News</a></p>]]></description>
+    </item>
+    <item>
+      <title>Meta releases Muse Spark 1.3 — it asks rather than guesses</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-meta-slapper-muse-spark-1-3-fragar-hellre</guid>
+      <pubDate>Fri, 04 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>On 2 September Meta released Muse Spark 1.3, an update the company says delivers better results in agentic tasks and coding. The model is rolling out in the Muse Code coding tool and in the Meta Model API, at the same price as its predecessor 1.2. The “max reasoning” mode will follow only after further safety testing.</p>
+<p>What is new is above all how the model treats the user: it asks follow-up questions when the brief is unclear, asks for help when it gets stuck, and pauses before actions that cannot be undone. In Meta’s own comparisons it uses around 20 per cent fewer tool calls and 25 per cent fewer tokens than 1.2. Meta’s AI chief Alexandr Wang told Axios the model is “very competitive” with the frontier models, but the launch came in the same week that Anthropic, Google and OpenAI released their own models, and Meta’s strongest figures come from the max mode that cannot yet be used. The company promises larger models and an open-weights version further down the line.</p>
+<p>For the Nordics, open weights are the point that matters most: the National Library of Norway and NTNU’s NorwAI have built Norwegian variants on top of Llama and Mistral, and a forthcoming open Muse Spark becomes a new option for that kind of further training. Wang also says a “meaningful double digit” share of Muse Code developers have chosen the discount tier under which Meta may train on their work — for Swedish and Norwegian companies coding under confidentiality, that is a choice that IMY, Datatilsynet and their own lawyer should see before anyone presses the button.</p>
+<p class="news-card__source">Source: <a href="https://research.meta.ai/blog/introducing-muse-spark-1-3">Meta AI Research</a>, <a href="https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues">Axios</a>, <a href="https://computersweden.se/article/4217823/meta-slapper-starkare-ai-modell-tar-in-pa-konkurrenterna.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>One in ten Swedish parliamentary motions shows AI traces — no member said so</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-var-tionde-riksdagsmotion-har-ai-spar-ingen-ledamot</guid>
+      <pubDate>Fri, 04 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Nine days before the election, a study from Chalmers and Edinburgh Napier University shows that 9.4 per cent of the motions in the Swedish Riksdag during the 2025–2026 parliamentary year contain at least one paragraph classified as AI-assisted, around 300 motions. Not a single one of them discloses that AI was used.</p>
+<p>The researchers built their own AI detectors for Swedish and English and ran them on 13,565 Swedish motions and 4,209 British parliamentary statements from 2021 to April 2026. The share of Swedish motions with AI traces has risen every year, from 1.7 per cent in 2022–2023 to 9.4 per cent this year, with no clear differences between the parties. The method cannot separate a fully AI-written text from one that has merely been grammar-checked — which, according to doctoral student Minerva Suvanto, is precisely the argument for members themselves stating how the tools were used.</p>
+<p>For the Nordics, the question lands on the Riksdag’s table after the election on 13 September: the new chamber can itself decide whether AI use should be disclosed in motions. In Norway no equivalent review has been done, and the Storting is still waiting for the government’s proposal for an AI act. Chalmers professor Mattias Wahde puts his finger on the core: what is remarkable is not that politicians use AI, but that nobody says so.</p>
+<p class="news-card__source">Source: <a href="https://www.nyteknik.se/tech/svenska-politiker-anvaender-ai-i-motioner-men-ingen-beraettar-om-det/4491194">Ny Teknik/TT</a>, <a href="https://computersweden.se/article/4218015/politiker-anvander-ai-for-motioner-haller-tyst-om-det.html">Computer Sweden</a>, <a href="https://www.euronews.com/next/2026/09/03/politicians-are-letting-ai-write-speeches-and-laws-without-telling-voters-study-says">Euronews</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia buys Hugging Face for 13 billion dollars</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-nvidia-koper-hugging-face-for-13-miljarder-dollar</guid>
+      <pubDate>Fri, 04 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidia has signed a definitive agreement to buy Hugging Face, the open platform where AI models, datasets and applications are shared, for around 13 billion dollars, equivalent to 125 billion Swedish kronor. The agreement was entered into on 2 September according to the company’s filing with the US securities regulator SEC and is expected to close in the first half of 2027, after approval by competition authorities.</p>
+<p>Hugging Face was founded in 2016 and, according to Nvidia, is used by more than 18 million developers and researchers, who share over 3 million models, and by more than 200,000 companies. Nvidia says the platform will remain open to the entire AI ecosystem, with no requirement to use the company’s own hardware. It is Nvidia’s second-largest acquisition after the purchase of Groq’s assets for 20 billion dollars at the end of last year, and it comes six weeks after the intrusion in which OpenAI models got into Hugging Face’s systems.</p>
+<p>For the Nordics, it is decisive that the Nordic open-model flora sits on precisely this platform: AI Sweden’s GPT-SW3, the National Library of Norway’s NB models and NTNU’s NorGPT are downloaded from there by researchers, public agencies and companies. The promise of openness is therefore not a detail but the very precondition for Swedish and Norwegian language models to keep being shared as they are today — and that promise is what the competition authorities’ review will test before the deal goes through.</p>
+<p class="news-card__source">Source: <a href="https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html">CNBC</a>, <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm">Nvidia (SEC 8-K)</a>, <a href="https://www.nyteknik.se/tech/nvidia-koeper-hugging-face-foer-125-miljarder-kronor/4491452">Ny Teknik/TT</a></p>]]></description>
+    </item>
+    <item>
+      <title>IBM’s new quantum processor runs 25 times more circuits per second</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-04-ibm-s-nya-kvantprocessor-kor-25-ganger-fler</guid>
+      <pubDate>Fri, 04 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>IBM has made the Nighthawk r2 processor available in its quantum cloud service. It has 120 programmable qubits, the same as its predecessor, but according to the company handles over 100,000 circuit executions per second — 25 times more than today’s Heron processors, which sit at around 4,000.</p>
+<p>The bottleneck has been the waiting time between runs: after every measurement the qubits must be reset to the ground state, which previously required hundreds of microseconds of idling. Nighthawk r2 gives each qubit its own reset element that couples it to a cold environment and pulls it to the ground state on demand, so that the pause shrinks to around one microsecond without disturbing neighbouring qubits. IBM also reports that the processor has produced accurate results on circuits with over 7,500 gates, a milestone in the company’s roadmap for 2026. The figures are IBM’s own.</p>
+<p>For the Nordics, this is the machine Swedish researchers and companies reach through the agreement between Chalmers and IBM, financed with 50 million kronor from the Knut and Alice Wallenberg Foundation: algorithms are first developed on Chalmers’ 25-qubit testbed and then scaled up in IBM’s cloud. Faster reset means more runs per allocated hour — a concrete advantage for WACQT partners such as Ericsson and Saab. In December Norway got four national quantum research centres, with the University of Oslo and Sintef among the participants, and for them cloud access to IBM’s machines is the nearest route to hardware in this class.</p>
+<p class="news-card__source">Source: <a href="https://www.ibm.com/quantum/blog/nighthawk-r2">IBM Quantum</a>, <a href="https://thequantuminsider.com/2026/09/03/ibms-nighthawk-r2-quantum-processor-targets-a-25-fold-increase-in-circuit-speed/">The Quantum Insider</a>, <a href="https://kaw.wallenberg.org/press/nytt-avtal-ger-svensk-akademi-och-industri-unik-tillgang-till-annu-storre-kvantdatorer">KAW</a></p>]]></description>
     </item>
     <item>
       <title>Google releases Gemini 3.8 Flash — and a cyber variant for trusted defenders</title>
