@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 04 Sep 2026 04:25:07 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:27:48 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Robotbolaget Figure köper beräkningskraft för 3,5 miljarder dollar av Nscale</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-robotbolaget-figure-koper-berakningskraft-for-3-5-miljarder</guid>
+      <pubDate>Sat, 05 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Humanoidbolaget Figure och molnleverantören Nscale tecknade den 3 september ett flerårigt avtal om upp till 100 000 Nvidia-processorer på plattformen Vera Rubin. Figure binder sig inledningsvis för beräkningskraft för 3,5 miljarder dollar, med avsikten att utöka åtagandet till över 6 miljarder. Anläggningen ska stå i Barstow i Texas och tas i drift från andra halvåret 2027.</p>
+<p>Nscale blir samtidigt delägare i Figure och bolagets föredragna leverantör av beräkningskraft. Kapaciteten ska träna kommande generationer av Figures modellfamilj Helix, som styr robotarnas syn, språkförståelse och rörelser. Enligt Forbes har Figure sammanlagt tagit in omkring 1,9 miljarder dollar i riskkapital, alltså klart mindre än det belopp bolaget nu förbinder sig att köpa beräkningskraft för — hur köpet ska finansieras framgår inte av pressmeddelandena. Nvidias vd Jensen Huang beskriver upplägget som ett ”svänghjul” där modellerna tränas i Nscales moln, testas i Nvidias simulator Isaac Sim och körs på Nvidia-chip i robotarna.</p>
+<p>För Norden är Nscale redan en bekant aktör: bolaget driver en datahall i Glomfjord i Nordland och bygger tillsammans med Aker en anläggning i Kvandal utanför Narvik som ska rymma 100 000 Nvidia-processorer och drivas av vattenkraft. Att samma leverantör nu blir motorn bakom en av världens mest kapitalstarka humanoidsatsningar visar i vilken skala den leverantör som bygger i Nordland nu verkar. För norska 1X Technologies, där SoftBank enligt uppgift förhandlar om en majoritetspost, sätter avtalet ribban för vad en konkurrent lägger på träning av robotmodeller.</p>
+<p class="news-card__source">Källa: <a href="https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership">Figure</a>, <a href="https://www.nscale.com/press-releases/nscale-and-figure">Nscale</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/04/how-figure-committed-35-billion-for-ai-compute-after-raising-only-19-billion/">Forbes</a>, <a href="https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai">Nscale/Aker (Narvik)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Regeringen pekar ut AI som ny riskfaktor i Sveriges första strategi mot biologiska hot</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-regeringen-pekar-ut-ai-som-ny-riskfaktor-i</guid>
+      <pubDate>Sat, 05 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Regeringen presenterade den 4 september Sveriges första nationella strategi för skydd mot biologiska hot. Socialminister Jakob Forssmed, försvarsminister Pål Jonson och klimat- och miljöminister Romina Pourmokhtari presenterar strategin i regeringens pressmeddelande, som täcker allt från nästa pandemi och laboratorieolyckor till biologiska vapen i krig eller hybridpåverkan.</p>
+<p>Strategin skriver rakt ut att bioteknik i kombination med artificiell intelligens och teknik med dubbla användningsområden ”omformar hotbilden från grunden” och suddar ut gränserna mellan naturliga utbrott, olyckor och avsiktliga handlingar. Den bygger på fem pelare — förutse, förebygga, upptäcka, agera och återhämta — med sammanlagt 25 fokusområden. Ett av dem gäller systematisk bevakning av teknik med dubbla användningsområden, som gensaxar och syntetisk biologi, ett annat gäller ansvarsfull innovation och forskningssäkerhet. Strategin kopplar också beredskapslagren till de uthållighetskrav Nato ställer på medlemsländerna.</p>
+<p>För Norden är det första gången AI skrivs in i ett svenskt strategidokument om biologiska hot, samma år som Anthropic skärpte sina biologiska spärrar i Claude och Bernie Sanders motiverade sitt lagförslag mot superintelligens med att AI redan använts för att skapa virus. Totalförsvarets forskningsinstitut FOI pekade i januari på riskerna med teknikläckage och dubbla användningsområden i svensk bioteknik. I Norge ligger motsvarande ansvar hos Folkehelseinstituttet och Forsvarets forskningsinstitutt, i ett land som omfattas av samma Nato-krav på uthållighet — för dem är det svenska dokumentet den närmaste jämförelsepunkten.</p>
+<p class="news-card__source">Källa: <a href="https://regeringen.se/pressmeddelanden/2026/09/ny-strategi-ska-skydda-sverige-mot-biologiska-hot/">Regeringen</a>, <a href="https://regeringen.se/contentassets/788190b19dc540a6a931a37408117b2b/strategi-for-skydd-mot-biologiska-hot.pdf">Strategin (pdf)</a>, <a href="https://www.foi.se/nyheter-och-press/nyheter/2026-01-26-bade-mojligheter-och-bekymmer-for-svensk-bioteknik.html">FOI</a>, <a href="https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards">Anthropic</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sanders vill förbjuda superintelligens — och pausa all avancerad AI-utveckling</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-sanders-vill-forbjuda-superintelligens-och-pausa-all-avancerad</guid>
+      <pubDate>Sat, 05 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Senator Bernie Sanders och kongressledamoten Greg Casar presenterade den 3 september lagförslaget Ban Artificial Superintelligence Act. Det skulle permanent förbjuda utveckling och drift av AI-system som överträffar mänsklig intelligens eller kan kringgå avstängningskommandon, och pausa all avancerad AI-utveckling tills en ny federal myndighet har satt säkerhetsregler på plats.</p>
+<p>Förslaget inrättar en ny myndighet på ministernivå som ska övervaka frontmodeller genom hela livscykeln och ha rätt att beordra att farliga förmågor tas bort. Bolag som bryter mot förbudet ska kunna upplösas och enskilda dömas till upp till 20 års fängelse, straffnivåer som Sanders kontor jämför med olovlig kärnvapenutveckling. USA ska dessutom driva på för internationella avtal som förbjuder superintelligens överallt. Casar formulerar det som att spjutspets-AI i dag är ”mindre reglerad än en genomsnittlig food truck”. Forskaren Gary Marcus, länge en av branschens skarpaste kritiker, säger nej till förslaget, som ännu inte är formellt inlämnat i kongressen.</p>
+<p>För Norden landar frågan mitt i en svensk valrörelse där AI hittills mest synts som ett skrivverktyg i riksdagsmotionerna, inte som en fråga om vad som alls får byggas. I Norge har digitaliseringsminister Karianne Tung skjutit fram den norska AI-lagen till våren 2027, och Stortinget har därmed inte ens EU:s regelverk på plats. Om USA:s debatt flyttas från hur AI ska regleras till vad som alls får utvecklas, så sker det medan riksdagen och Stortinget fortfarande diskuterar det första steget.</p>
+<p class="news-card__source">Källa: <a href="https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/">Senator Sanders</a>, <a href="https://thehill.com/policy/technology/6069131-sanders-casar-ai-superintelligence-ban/">The Hill</a>, <a href="https://garymarcus.substack.com/p/the-new-sanders-casar-ban-artificial">Gary Marcus</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>Europas försvar bromsar EU:s plan att minska beroendet av amerikanska moln</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-europas-forsvar-bromsar-eu-s-plan-att-minska</guid>
+      <pubDate>Sat, 05 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Försvarstjänstemän i flera EU-länder pressar kommissionen att mildra den föreslagna Cloud and AI Development Act, rapporterar Financial Times. De varnar för att regler som gynnar EU-kontrollerade leverantörer kan ge försvaret sämre system, nya cyberrisker och problem med samverkan inom Nato innan europeiska alternativ finns.</p>
+<p>Lagförslaget lades fram den 3 juni och sorterar offentlig upphandling av moln- och AI-tjänster i fyra suveränitetsnivåer. På den högsta krävs full europeisk kontroll utan inblandning från stater utanför EU, vilket enligt Financial Times motsvarar omkring en procent av den offentliga upphandlingsmarknaden. Det känsligaste exemplet är stödsystemen kring stridsflygplanet F-35, där uppdrags-, logistik- och underhållsdata utbyts i ett ekosystem tätt knutet till amerikansk teknik. Motståndet uppges vara starkast bland de östra och nordiska medlemsländerna, som prioriterar förstärkningen av Natos nordöstra flank.</p>
+<p>För Norden är det just den flanken det handlar om. Norge, Danmark och Finland flyger F-35 och berörs därför av hur nivåerna dras; Sverige, Natomedlem sedan 2024, berörs som EU-land direkt av nivåerna för Försvarsmaktens och totalförsvarets molntjänster. För Norge tillkommer att lagen måste tas in i EES-avtalet, med samma fördröjning som drabbat AI-lagen. Slutresultatet blir sannolikt stegvisa krav och undantag för betrodda leverantörer utanför EU — och det är där det i praktiken avgörs hur mycket europeisk molnsuveränitet som blir kvar.</p>
+<p class="news-card__source">Källa: <a href="https://www.ft.com/content/0e9d714b-f367-4dd7-8ef4-6d4b2c08b79c">Financial Times</a>, <a href="https://defencematters.eu/european-defence-us-cloud-eu-ai-act-interoperability/">Defence Matters</a>, <a href="https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act">EU-kommissionen</a></p>]]></description>
+    </item>
     <item>
       <title>GPT-6 Astra har släppts — alla siffror är OpenAI:s egna</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-04</link>
@@ -1027,55 +1076,6 @@
 <p>Metoden kallas skuggutvärdering och har utformats av bland andra Sayash Kapoor, datavetare vid Princeton University. Forskargruppen valde två artiklar som skickats in till årets NeurIPS-konferens, lät AI-systemet forska fram och skriva egna artiklar utifrån samma forskningsfrågor, och bad de ursprungliga författarna granska utfallet — de har mer expertis och tålamod än en pressad granskare. Systemet byggdes enligt Nature på språkmodellen Claude Opus 4.8 i en modifierad version av agentsystemet OpenClaw, och fick sex dygn och 3 000 dollar i beräkningskredit per uppgift. Ingenjörsarbetet imponerade: hundratals experiment utan att fastna i olösliga felslingor, dugliga litteraturgenomgångar, och systemet fångade sina egna felaktiga påståenden utan att ta genvägar. Det typiska misslyckandet var i stället att låsa sig vid en hypotes för tidigt och inte backa när ansatsen inte fungerade.</p>
 <p>För Norden landar det här mitt i en höst där beräkningstid delas ut i stora klumpar. Tydal gav i förra veckan bort en miljon GPU-timmar till NTNU och Simula, och Vetenskapsrådet, Vinnova, Norges forskningsråd och WASP fattar löpande beslut om hur AI-agenter ska få användas i finansierade projekt. Studien pekar ut var gränsen går: systemet var bra på det som kostar tid — köra experiment, läsa litteratur — och dåligt på det som avgör kvaliteten, alltså att välja fråga och överge en ansats som inte bär. För KTH, Chalmers, NTNU och Karolinska är slutsatsen praktisk: agenter kan skalas in i laborationsledet, men handledningen kan inte skalas ned.</p>
 <p class="news-card__source">Källa: <a href="https://www.nature.com/articles/d41586-026-02494-5">Nature</a>, <a href="https://arxiv.org/abs/2607.27191">arXiv (Kirgis m.fl.)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google släpper Gemini 3.7 Flash bara tre veckor efter föregående modell</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-google-slapper-gemini-3-7-flash-bara-tre</guid>
-      <pubDate>Sun, 16 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Google presenterade den 13 augusti Gemini 3.7 Flash, tre veckor efter att 3.6 Flash släpptes. Bolaget beskriver modellen som riktad mot kodning, agenter och webbutveckling.</p>
-<p>Siffrorna som Google redovisar gäller framför allt programmering och dokumentarbete. På kodningstestet DeepSWE v1.1 går modellen från 49,0 till 65,3 procent och på FrontierCode 1.1 Main från 34,4 till 43,6 procent, medan AutomationBench, som mäter genomförda affärsflöden, går från 17,0 till 30,4 procent. Priset är det andra beskedet: fram till årsskiftet kostar modellen 0,75 dollar per miljon inmatade token och 3,75 dollar per miljon utmatade — hälften av vad föregångaren kostade vid sin lansering. Modellen finns i AI Studio, Android Studio, Antigravity och Gemini Enterprise, och rullas ut i Gemini-appen till Spark-användare med AI Pro eller Ultra. Google uppger också att skärpta spärrar mot missbruk inom CBRN och cyberangrepp följer med.</p>
-<p>För Norden är prishalveringen den viktigare nyheten. Agentbygge kostar token, och nordiska bolag som bygger på frontmodeller — Stockholmsbaserade Lovable, som just tog in 400 miljoner dollar, men också utvecklingsavdelningar på SEB, DNB, Telenor och Telia — får sin kalkyl för automatiserade arbetsflöden halverad över en natt. Samma sak gäller offentlig sektor: norska och svenska myndigheter som hållit tillbaka agentprojekt av kostnadsskäl får ett nytt räkneexempel. Kvar står frågan om leverantörsberoende, eftersom priset sätts i Mountain View och gäller till årsskiftet.</p>
-<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google</a>, <a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/">9to5Google</a></p>]]></description>
-    </item>
-    <item>
-      <title>Åtta procent av norska verksamheter kan visa att deras AI-satsning faktiskt gav något</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-atta-procent-av-norska-verksamheter-kan-visa-att</guid>
-      <pubDate>Sun, 16 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>En färsk undersökning bland 914 norska chefer visar att 65 procent planerar att använda AI för effektivisering det kommande året. Bara 8 procent uppger att de har mätt och dokumenterat konkreta vinster.</p>
-<p>Undersökningen är gjord av Norstat på uppdrag av IT-bolaget Computas och publiceras som rapporten ”<span lang="nb">KI-paradoksene 2026</span>”. Nio av tio verksamheter har antingen inte mätt effekten, inte nått mätbara resultat eller också vet de inte om tekniken skapar värde. Hälften av cheferna pekar ut kompetensbrist bland de anställda som det främsta hindret, medan bara 3 procent säger sig sakna tillgång till AI-verktyg. Ett annat mönster: 55 procent är skeptiska till amerikanska molntjänster, men 96 procent använder dem ändå. Offentlig sektor ligger efter näringslivet — 4 mot 9 procent dokumenterade vinster. ”Norska verksamheter lägger miljarder på teknik utan att veta om den skapar värde”, säger Computas vd Trond Eilertsen. Rapporten överlämnades under Arendalsuka till Hans Christian Holte, ny chef för KI Norge.</p>
-<p>För Norden är detta ett mätproblem, inte ett teknikproblem. Enligt Altinget pekar en färsk Rambøll-undersökning åt samma håll: norsk offentlig sektor inför AI i stor skala — alltså hög införandetakt och låg bevisföring på samma gång. Frågan går rakt in i den norska konsultdebatten om vad staten får för sina IT-pengar, och den är lika relevant i Sverige, där Digg och kommunerna står inför samma budgetbeslut utan gemensam mall för hur nyttan ska räknas hem. Att kompetens, inte verktygstillgång, pekas ut som flaskhals lägger dessutom ansvaret hos arbetsgivarna och parterna snarare än hos leverantörerna.</p>
-<p class="news-card__source">Källa: <a href="https://kommunikasjon.ntb.no/pressemelding/19017759/ny-rapport-rekordmange-bruker-ki-men-fa-vet-om-det-virker">Computas via NTB</a>, <a href="https://www.altinget.no/digital/artikkel/advarer-om-usikre-gevinster-etter-oekt-ki-bruk-risikerer-aa-bli-norgeshistoriens-mest-kostbare-investering">Altinget</a></p>]]></description>
-    </item>
-    <item>
-      <title>Ciscos AI-order från molnjättarna har mer än fyrdubblats på ett år</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-ciscos-ai-order-fran-molnjattarna-har-mer-an</guid>
-      <pubDate>Sun, 16 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Cisco redovisade den 12 augusti sitt fjärde räkenskapskvartal med intäkter på 17,3 miljarder dollar, en ökning med 18 procent mot samma kvartal i fjol. Bolaget höjde samtidigt sin försäljningsprognos och hänvisade till bred rekordefterfrågan, driven av datacenter.</p>
-<p>Det som drar är nätverksutrustning till AI-anläggningar. Order på AI-infrastruktur från de stora molnbolagen låg på omkring 9,3 miljarder dollar under räkenskapsåret, ungefär 4,5 gånger så mycket som året innan, medan cirka 4 miljarder hunnit bokas som intäkt. För nästa räkenskapsår räknar bolaget med 7,5 miljarder dollar. Nätverksintäkterna steg 28 procent, produktintäkterna 24 procent och säkerhetsintäkterna 14 procent, och order på datacenterswitchar växte med över 25 procent. AI-affären väntas motsvara omkring en tiondel av de 72–73 miljarder dollar bolaget guidar för kommande år.</p>
-<p>För Norden är det här prislappen på insidan av de anläggningar som just nu byggs. Tydal i Trøndelag och klustren i Luleå och Boden räknas oftast i megawatt och kvadratmeter, men en betydande del av investeringen går till switchar och optik från ett fåtal amerikanska leverantörer — kapital som lämnar Norden direkt. Samma utrustning behövs när Telenor och Telia uppgraderar sina större noder. Det ger nordiska kommuner ett konkret förhandlingsargument: om kraften är lokal men värdekedjan inte är det, blir frågan vad som faktiskt stannar kvar på platsen.</p>
-<p class="news-card__source">Källa: <a href="https://www.bloomberg.com/news/articles/2026-08-12/cisco-beats-on-sales-outlook-citing-broad-based-record-demand">Bloomberg</a>, <a href="https://www.fierce-network.com/cloud/cisco-closes-fy2026-record-revenue-cites-ai-demand-and-networking-growth">Fierce Network</a></p>]]></description>
-    </item>
-    <item>
-      <title>Kinesiskt forskarlag sammanflätar kvantminnen över 420 kilometer fiber</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-kinesiskt-forskarlag-sammanflatar-kvantminnen-over-420-kilometer-fiber</guid>
-      <pubDate>Sun, 16 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Två kvantminnen har sammanflätats genom en 420 kilometer lång optisk fiber. Resultatet publicerades i Physical Review Letters den 11 augusti och är drygt fyra gånger så långt som i tidigare demonstrationer.</p>
-<p>Minnena består av laserkylda moln av rubidiumatomer och sitter i var sin ände av fibern. Laget, som leds av Xi-Yu Luo vid University of Science and Technology of China i Hefei, använde det så kallade DLCZ-schemat och konverterade fotonerna till telekombandet för att hålla nere förlusterna i fibern. Det avgörande är inte kilometrarna i sig utan att experimentet passerar den så kallade PLOB-gränsen — det teoretiska taket för hur mycket kvantinformation som kan skickas direkt genom en fiber utan repeterare. Steget beskrivs som övergången från kvantnät inom en stad till kvantnät mellan städer.</p>
-<p>För Norden är avståndet det intressanta: 420 kilometer är något mer än fågelvägen mellan Stockholm och Göteborg, och en bit längre än fågelvägen Oslo–Trondheim. Det gör kvantlänkar mellan nordiska storstadsregioner till en teknisk fråga i stället för en teoretisk. Samtidigt är det en påminnelse till NSM, MSB och bankerna om att migreringen till kvantsäker kryptering inte blir mindre brådskande. Sverige har egen kompetens i området genom WACQT vid Chalmers, som har sin supraledande kvantdator uppe i 25 kvantbitar med sikte på 100 år 2029 — och den 25 augusti samlas fältet just i Göteborg på SQA-konferensen.</p>
-<p class="news-card__source">Källa: <a href="https://journals.aps.org/prl/abstract/10.1103/ccd6-rf1s">Physical Review Letters</a>, <a href="https://www.scmp.com/news/china/science/article/3364045/miles-ahead-china-team-boosts-atom-entanglement-distance-record-fourfold">South China Morning Post</a></p>]]></description>
     </item>
   </channel>
 </rss>
