@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 04 Sep 2026 04:25:07 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:27:48 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Robot maker Figure buys $3.5 billion of compute from Nscale</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-robotbolaget-figure-koper-berakningskraft-for-3-5-miljarder</guid>
+      <pubDate>Sat, 05 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Humanoid robotics company Figure and cloud provider Nscale signed a multi-year agreement on September 3 for up to 100,000 Nvidia GPUs on the Vera Rubin platform. Figure is initially committing to $3.5 billion of compute, with the intent to expand the commitment to more than $6 billion. The facility will be located in Barstow, Texas, with deployment starting in the second half of 2027.</p>
+<p>Nscale also becomes a shareholder in Figure and its preferred compute provider. The capacity will train future generations of Figure’s Helix model family, which controls the robots’ vision, language understanding and movement. According to Forbes, Figure has raised about $1.9 billion in venture capital in total, considerably less than the amount it is now committing to spend on compute — how the purchase will be financed is not stated in the press releases. Nvidia CEO Jensen Huang describes the arrangement as a “flywheel” in which the models are trained in Nscale’s cloud, validated in Nvidia’s Isaac Sim simulator and run on Nvidia chips inside the robots.</p>
+<p>For the Nordics, Nscale is already a familiar name: the company operates a data centre in Glomfjord in Nordland and is building, together with Aker, a facility at Kvandal outside Narvik that is to house 100,000 Nvidia GPUs and run on hydropower. That the same provider is now the engine behind one of the world’s best-funded humanoid ventures shows the scale at which the operator building in Nordland now works. For Norway’s 1X Technologies, where SoftBank is reported to be negotiating a majority stake, the deal sets the bar for what a competitor spends on training robot models.</p>
+<p class="news-card__source">Source: <a href="https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership">Figure</a>, <a href="https://www.nscale.com/press-releases/nscale-and-figure">Nscale</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/04/how-figure-committed-35-billion-for-ai-compute-after-raising-only-19-billion/">Forbes</a>, <a href="https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai">Nscale/Aker (Narvik)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Swedish government names AI as a new risk factor in its first biological threats strategy</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-regeringen-pekar-ut-ai-som-ny-riskfaktor-i</guid>
+      <pubDate>Sat, 05 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>On September 4 the Swedish government presented the country’s first national strategy for protection against biological threats. Minister for Social Affairs Jakob Forssmed, Minister for Defence Pål Jonson and Minister for Climate and the Environment Romina Pourmokhtari present the strategy in the government’s press release, which covers everything from the next pandemic and laboratory accidents to biological weapons used in war or hybrid operations.</p>
+<p>The strategy states outright that biotechnology combined with artificial intelligence and dual-use technology is “reshaping the threat picture from the ground up” and blurring the lines between natural outbreaks, accidents and deliberate acts. It rests on five pillars — anticipate, prevent, detect, act and recover — with 25 focus areas in total. One of them concerns systematic monitoring of dual-use technologies such as gene editing and synthetic biology; another concerns responsible innovation and research security. The strategy also ties emergency stockpiles to the endurance requirements NATO places on its member states.</p>
+<p>For the Nordics, this is the first time AI has been written into a Swedish strategy document on biological threats, in the same year that Anthropic tightened its biology safeguards in Claude and Bernie Sanders justified his bill against superintelligence by pointing out that AI has already been used to create viruses. The Swedish Defence Research Agency FOI pointed in January to the risks of technology leakage and dual use in Swedish biotechnology. In Norway the corresponding responsibility lies with the Norwegian Institute of Public Health and the Norwegian Defence Research Establishment, in a country covered by the same NATO endurance requirements — for them, the Swedish document is the closest point of comparison.</p>
+<p class="news-card__source">Source: <a href="https://regeringen.se/pressmeddelanden/2026/09/ny-strategi-ska-skydda-sverige-mot-biologiska-hot/">Swedish Government</a>, <a href="https://regeringen.se/contentassets/788190b19dc540a6a931a37408117b2b/strategi-for-skydd-mot-biologiska-hot.pdf">The strategy (pdf, in Swedish)</a>, <a href="https://www.foi.se/nyheter-och-press/nyheter/2026-01-26-bade-mojligheter-och-bekymmer-for-svensk-bioteknik.html">FOI</a>, <a href="https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards">Anthropic</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sanders wants to ban superintelligence — and pause all advanced AI development</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-sanders-vill-forbjuda-superintelligens-och-pausa-all-avancerad</guid>
+      <pubDate>Sat, 05 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Senator Bernie Sanders and Representative Greg Casar announced the Ban Artificial Superintelligence Act on September 3. It would permanently prohibit the development and deployment of AI systems that surpass human intelligence or can subvert shutdown commands, and pause all advanced AI development until a new federal agency has put safety rules in place.</p>
+<p>The bill would establish a new cabinet-level agency to monitor frontier models throughout their lifecycle, with the power to order the removal of dangerous capabilities. Companies that violate the ban could be dissolved and individuals sentenced to up to 20 years in prison, penalty levels that Sanders’ office compares with the unlawful development of nuclear weapons. The United States would also push for international agreements banning superintelligence everywhere. Casar puts it this way: cutting-edge AI today is “less regulated than the average food truck”. The researcher Gary Marcus, long one of the industry’s sharpest critics, opposes the bill, which has not yet been formally introduced in Congress.</p>
+<p>For the Nordics, the question lands in the middle of a Swedish election campaign in which AI has so far mostly appeared as a writing tool in parliamentary motions, not as a question of what may be built at all. In Norway, Minister of Digitalisation Karianne Tung has pushed the Norwegian AI act back to spring 2027, so the Storting does not even have the EU framework in place. If the US debate shifts from how AI should be regulated to what may be developed at all, it does so while the Riksdag and the Storting are still discussing the first step.</p>
+<p class="news-card__source">Source: <a href="https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/">Senator Sanders</a>, <a href="https://thehill.com/policy/technology/6069131-sanders-casar-ai-superintelligence-ban/">The Hill</a>, <a href="https://garymarcus.substack.com/p/the-new-sanders-casar-ban-artificial">Gary Marcus</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>Europe’s defence establishment slows the EU plan to cut reliance on US cloud</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-europas-forsvar-bromsar-eu-s-plan-att-minska</guid>
+      <pubDate>Sat, 05 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Defence officials in several EU countries are pressing the Commission to soften the proposed Cloud and AI Development Act, the Financial Times reports. They warn that rules favouring EU-controlled providers could leave armed forces with less capable systems, new cyber risks and interoperability problems within NATO before European alternatives exist.</p>
+<p>The proposal was tabled on June 3 and sorts public procurement of cloud and AI services into four sovereignty levels. At the highest level, full European control without interference from non-EU states is required, which according to the Financial Times corresponds to about one per cent of the public procurement market. The most sensitive example is the support systems around the F-35 fighter aircraft, where mission, logistics and maintenance data are exchanged in an ecosystem closely tied to US technology. Opposition is reported to be strongest among the eastern and Nordic member states, which prioritise reinforcing NATO’s north-eastern flank.</p>
+<p>For the Nordics, that flank is precisely the point. Norway, Denmark and Finland fly the F-35 and are therefore affected by where the levels are drawn; Sweden, a NATO member since 2024, is directly affected as an EU country by the levels applied to the cloud services of the Swedish Armed Forces and total defence. For Norway there is the added fact that the act must be incorporated into the EEA Agreement, with the same delay that has hit the AI act. The end result is likely to be staged requirements and exemptions for trusted non-EU providers — and that is where it will in practice be decided how much European cloud sovereignty remains.</p>
+<p class="news-card__source">Source: <a href="https://www.ft.com/content/0e9d714b-f367-4dd7-8ef4-6d4b2c08b79c">Financial Times</a>, <a href="https://defencematters.eu/european-defence-us-cloud-eu-ai-act-interoperability/">Defence Matters</a>, <a href="https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act">European Commission</a></p>]]></description>
+    </item>
     <item>
       <title>GPT-6 Astra has shipped — every figure is OpenAI’s own</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-04</link>
@@ -1027,55 +1076,6 @@
 <p>The method is called shadow evaluation and was devised by, among others, Sayash Kapoor, a computer scientist at Princeton University. The research group picked two papers submitted to this year’s NeurIPS conference, had the AI system research and write its own papers from the same research questions, and asked the original authors to scrutinise the output — they have more expertise and patience than a harried reviewer. According to Nature the system was built on the language model Claude Opus 4.8 inside a modified version of the agentic system OpenClaw, and was given six days and $3,000 in compute credits per task. The engineering work impressed: hundreds of experiments without getting stuck in unresolvable error loops, competent literature reviews, and the system caught its own false claims without cutting corners. The typical failure was instead settling on a hypothesis too early and not backtracking when the approach was not working.</p>
 <p>For the Nordics this lands in the middle of an autumn in which compute time is being handed out in large blocks. Tydal gave away a million GPU hours to NTNU and Simula last week, and the Swedish Research Council, Vinnova, the Research Council of Norway and WASP are making running decisions about how AI agents may be used in funded projects. The study marks where the line falls: the system was good at what costs time — running experiments, reading literature — and poor at what determines quality, namely choosing the question and abandoning an approach that does not hold. For KTH, Chalmers, NTNU and Karolinska the conclusion is practical: agents can be scaled into the bench work, but supervision cannot be scaled down.</p>
 <p class="news-card__source">Source: <a href="https://www.nature.com/articles/d41586-026-02494-5">Nature</a>, <a href="https://arxiv.org/abs/2607.27191">arXiv (Kirgis et al.)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google releases Gemini 3.7 Flash just three weeks after the previous model</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-google-slapper-gemini-3-7-flash-bara-tre</guid>
-      <pubDate>Sun, 16 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>On August 13 Google presented Gemini 3.7 Flash, three weeks after the release of 3.6 Flash. The company describes the model as aimed at coding, agents and web development.</p>
-<p>The figures Google reports concern software engineering and document work above all. On the DeepSWE v1.1 coding benchmark the model goes from 49.0 to 65.3 percent, and on FrontierCode 1.1 Main from 34.4 to 43.6 percent, while AutomationBench, which measures completed business workflows, rises from 17.0 to 30.4 percent. Pricing is the second piece of news: until the end of the year the model costs $0.75 per million input tokens and $3.75 per million output tokens — half of what its predecessor cost at launch. The model is available in AI Studio, Android Studio, Antigravity and Gemini Enterprise, and is rolling out in the Gemini app to Spark users with AI Pro or Ultra. Google also states that tightened safeguards against misuse in the CBRN and cyber offense domains are included.</p>
-<p>For the Nordics the halved price is the more important news. Building agents costs tokens, and Nordic companies building on frontier models — Stockholm-based Lovable, which just raised $400 million, but also development units at SEB, DNB, Telenor and Telia — see the economics of automated workflows halved overnight. The same applies to the public sector: Norwegian and Swedish agencies that have held back agent projects on cost grounds now have a new calculation to run. What remains is the question of vendor dependence, since the price is set in Mountain View and holds only until the end of the year.</p>
-<p class="news-card__source">Source: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google</a>, <a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/">9to5Google</a></p>]]></description>
-    </item>
-    <item>
-      <title>Eight percent of Norwegian organisations can show their AI investment actually delivered</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-atta-procent-av-norska-verksamheter-kan-visa-att</guid>
-      <pubDate>Sun, 16 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>A new survey of 914 Norwegian executives finds that 65 percent plan to use AI for efficiency gains over the coming year. Only 8 percent say they have measured and documented concrete benefits.</p>
-<p>The survey was carried out by Norstat on behalf of the IT company Computas and is published as the report “KI-paradoksene 2026”. Nine out of ten organisations have either not measured the effect, not achieved measurable results, or else do not know whether the technology creates value. Half of the executives point to a lack of employee skills as the foremost barrier, while only 3 percent say they lack access to AI tools. Another pattern: 55 percent are sceptical of American cloud services, yet 96 percent use them anyway. The public sector trails business — 4 percent versus 9 percent documented benefits. “Norwegian organisations are spending billions on technology without knowing whether it creates value,” says Computas CEO Trond Eilertsen. The report was handed over during Arendalsuka to Hans Christian Holte, the new head of KI Norge.</p>
-<p>For the Nordics this is a measurement problem, not a technology problem. According to Altinget, a recent Rambøll survey points the same way: Norwegian public bodies are adopting AI at scale — high adoption and thin evidence at the same time. The question feeds directly into the Norwegian debate over what the state gets for its IT money, and it is just as relevant in Sweden, where Digg and the municipalities face the same budget decisions without a shared template for how benefits are to be counted. That skills, not tool access, is identified as the bottleneck also places responsibility with employers and the social partners rather than with vendors.</p>
-<p class="news-card__source">Source: <a href="https://kommunikasjon.ntb.no/pressemelding/19017759/ny-rapport-rekordmange-bruker-ki-men-fa-vet-om-det-virker">Computas via NTB</a>, <a href="https://www.altinget.no/digital/artikkel/advarer-om-usikre-gevinster-etter-oekt-ki-bruk-risikerer-aa-bli-norgeshistoriens-mest-kostbare-investering">Altinget</a></p>]]></description>
-    </item>
-    <item>
-      <title>Cisco’s AI orders from the cloud giants have more than quadrupled in a year</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-ciscos-ai-order-fran-molnjattarna-har-mer-an</guid>
-      <pubDate>Sun, 16 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>On August 12 Cisco reported its fourth fiscal quarter with revenue of $17.3 billion, up 18 percent on the same quarter last year. The company also raised its sales outlook, citing broad-based record demand driven by data centres.</p>
-<p>The driver is networking equipment for AI facilities. AI infrastructure orders from the large cloud providers came to roughly $9.3 billion over the fiscal year, about 4.5 times as much as the year before, with some $4 billion recognised as revenue. For the next fiscal year the company expects $7.5 billion. Networking revenue rose 28 percent, product revenue 24 percent and security revenue 14 percent, while orders for data centre switches grew by more than 25 percent. The AI business is expected to account for around a tenth of the $72–73 billion the company is guiding for the coming year.</p>
-<p>For the Nordics this is the price tag on the inside of the facilities now being built. Tydal in Trøndelag and the clusters in Luleå and Boden are usually counted in megawatts and square metres, but a substantial share of the investment goes to switches and optics from a handful of American suppliers — capital that leaves the Nordics immediately. The same equipment is needed when Telenor and Telia upgrade their larger nodes. That gives Nordic municipalities a concrete negotiating argument: if the power is local but the value chain is not, the question becomes what actually stays behind locally.</p>
-<p class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-08-12/cisco-beats-on-sales-outlook-citing-broad-based-record-demand">Bloomberg</a>, <a href="https://www.fierce-network.com/cloud/cisco-closes-fy2026-record-revenue-cites-ai-demand-and-networking-growth">Fierce Network</a></p>]]></description>
-    </item>
-    <item>
-      <title>Chinese team entangles quantum memories across 420 kilometres of fibre</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-16-kinesiskt-forskarlag-sammanflatar-kvantminnen-over-420-kilometer-fiber</guid>
-      <pubDate>Sun, 16 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Two quantum memories have been entangled through a 420 kilometre optical fibre. The result was published in Physical Review Letters on August 11 and is more than four times as far as in earlier demonstrations.</p>
-<p>The memories consist of laser-cooled clouds of rubidium atoms placed at either end of the fibre. The team, led by Xi-Yu Luo at the University of Science and Technology of China in Hefei, used the DLCZ scheme and converted the photons to the telecom band to keep fibre losses down. What matters is not the kilometres as such but that the experiment passes the so-called PLOB bound — the theoretical ceiling on how much quantum information can be sent directly through a fibre without repeaters. The step is described as the transition from quantum networks within a city to quantum networks between cities.</p>
-<p>For the Nordics the distance is the interesting part: 420 kilometres is somewhat more than the straight-line distance between Stockholm and Gothenburg, and a bit further than Oslo–Trondheim as the crow flies. That turns quantum links between Nordic metropolitan regions into a technical question rather than a theoretical one. At the same time it is a reminder to NSM, MSB and the banks that migrating to quantum-safe encryption is not becoming less urgent. Sweden has domestic expertise in the field through WACQT at Chalmers, whose superconducting quantum computer is up to 25 qubits with a target of 100 in 2029 — and on August 25 the field gathers in Gothenburg for the SQA conference.</p>
-<p class="news-card__source">Source: <a href="https://journals.aps.org/prl/abstract/10.1103/ccd6-rf1s">Physical Review Letters</a>, <a href="https://www.scmp.com/news/china/science/article/3364045/miles-ahead-china-team-boosts-atom-entanglement-distance-record-fourfold">South China Morning Post</a></p>]]></description>
     </item>
   </channel>
 </rss>
