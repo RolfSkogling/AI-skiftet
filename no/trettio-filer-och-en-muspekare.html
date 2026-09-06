@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <style>
   .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
   .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
@@ -36,21 +36,6 @@
   .article-endnotes ol{margin:0;padding-left:1.5em}
   .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
   .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
-.nav-submenu{position:relative;display:inline-flex;align-items:center}
-.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
-.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
-.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
-.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
-.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
-.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
-.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
-@media(max-width:768px){
-  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
-  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
-  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
-  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
-  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
-}
   .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
 </style>
   <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
@@ -59,25 +44,16 @@
 <body>
 <nav class="site-nav">
   <div class="container-wide">
-    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <a href="/no/index.html" class="site-nav__logo">AI-skiftet</a>
     <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
       <span></span><span></span><span></span>
     </button>
     <div class="site-nav__links">
-      <a href="index.html#nyheter">Nyheter</a>
-      <a href="valguiden-2026/">Valguiden 2026</a>
-      <a href="essaer.html">Ess&auml;er</a>
-      <a href="poddar.html">Poddar</a>
-      <div class="nav-submenu">
-        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
-        <div class="nav-submenu__links">
-          <a href="framtidsscenarier.html">Svenska scenarier</a>
-          <a href="globala-scenarier.html">Globalt</a>
-        </div>
-      </div>
-      <a href="ordlista.html">Ordlista</a>
-      <a href="om.html">Om</a>
-      <a href="kallor.html">K&auml;llor</a>
+      <a href="/no/essays.html">Essays</a>
+      <a href="/no/podkast.html">Podkast</a>
+      <a href="/no/framtidsscenarier.html">Scenarier</a>
+      <a href="/no/om.html">Om</a>
+      <a href="/no/kallor.html">Kilder</a>
     </div>
     <div class="lang-switcher">
       <a href="/trettio-filer-och-en-muspekare.html" lang="sv">SV</a>
@@ -88,7 +64,7 @@
 </nav>
 <header class="article-header">
   <div class="container">
-    <a href="essays.html" class="article-header__back">Til essays</a>
+    <a href="/no/essays.html" class="article-header__back">Til essays</a>
     <div class="article-kicker">AI-arkitektur &middot; Lean</div>
     <h1>Tretti filer og en musepeker</h1>
       <div class="news-audio" role="region" aria-label="Lytt til essayet">
@@ -218,13 +194,13 @@
 </article>
 <nav class="article-nav">
   <div class="container">
-    <a href="vad-vi-redan-vet.html">Forrige: Hva vi allerede vet at de kan</a>
-    <a href="essays.html">Alle essays</a>
+    <a href="/no/vad-vi-redan-vet.html">Forrige: Hva vi allerede vet at de kan</a>
+    <a href="/no/essays.html">Alle essayene</a>
   </div>
 </nav>
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Rolf Skogling &middot; <a href="essaer.html">Ess&auml;er</a> &middot; <a href="kallor.html">K&auml;llor</a></p>
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/no/essays.html">Essays</a> &middot; <a href="/no/kallor.html">Kilder</a></p>
   </div>
 </footer>
     <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
