@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trettio filer och en muspekare &mdash; AI-skiftet</title>
+  <meta name="description" content="En agent som f&aring;r ett m&aring;l och r&auml;tt kanal arbetar parallellt, uth&aring;lligt och exakt. Computer use tvingar allt det genom ett gr&auml;nssnitt byggt f&ouml;r en m&auml;nniska med en muspekare. Sl&ouml;seriet sitter i kanalen, inte i modellen.">
+  <meta name="date" content="2026-09-06">
+  <meta property="article:published_time" content="2026-09-06T09:00:00+02:00">
+  <meta property="og:title" content="Trettio filer och en muspekare &mdash; AI-skiftet">
+  <meta property="og:description" content="En agent som f&aring;r ett m&aring;l och r&auml;tt kanal arbetar parallellt, uth&aring;lligt och exakt. Computer use tvingar allt det genom ett gr&auml;nssnitt byggt f&ouml;r en m&auml;nniska med en muspekare. Sl&ouml;seriet sitter i kanalen, inte i modellen.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="canonical" href="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Ess&auml;er</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">K&auml;llor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/trettio-filer-och-en-muspekare.html" lang="sv" class="active">SV</a>
+      <a href="/en/trettio-filer-och-en-muspekare.html" lang="en">EN</a>
+      <a href="/no/trettio-filer-och-en-muspekare.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till ess&auml;er</a>
+    <div class="article-kicker">AI-arkitektur &middot; Lean</div>
+    <h1>Trettio filer och en muspekare</h1>
+    <p class="article-dek"><em>eller: vad man ger bort n&auml;r man l&aring;ter en agent klicka.</em> En agent som f&aring;r ett m&aring;l och r&auml;tt kanal arbetar parallellt, uth&aring;lligt och exakt &mdash; och kan backa n&auml;stan gratis. Computer use tvingar allt det genom ett gr&auml;nssnitt byggt f&ouml;r en m&auml;nniska med en muspekare, ett klick i taget. Sl&ouml;seriet &auml;r inte omognad som n&auml;sta modellgeneration fixar. Det sitter i kanalen.</p>
+    <p class="article-meta">Analys &middot; Rolf Skogling &middot; Publicerad 6 september 2026 &middot; ca 11 min l&auml;sning</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+
+<p>Jag satt en kv&auml;ll och tittade p&aring; n&auml;r GPT-6 Astra anv&auml;nde min dator. Jag sa vad som skulle ske p&aring; sk&auml;rmen, den tittade, den flyttade mark&ouml;ren, den klickade. Det fungerade.</p>
+
+<p>Min f&ouml;rsta reaktion var inte att det var imponerande. Den var att det var sl&ouml;seri.</p>
+
+<p>Sedan l&auml;ste jag vad andra skrev om samma sak, och d&auml;r var reaktionen den motsatta. Det var den stora saken, beviset p&aring; att n&aring;got hade tagit ett steg. Det &auml;r den skillnaden den h&auml;r texten handlar om &mdash; f&ouml;r jag tror inte att de som blev imponerade s&aring;g fel. De s&aring;g samma sak som jag. De m&auml;tte den mot n&aring;got annat.</p>
+
+<p>Det som demonstreras &auml;r att en modell <em>kan</em> anv&auml;nda ett gr&auml;nssnitt byggt f&ouml;r m&auml;nniskor. Det &auml;r en imponerande teknisk prestation, och det &auml;r samtidigt ett d&aring;ligt s&auml;tt att arbeta. B&aring;da sakerna &auml;r sanna samtidigt, och det &auml;r d&auml;rf&ouml;r f&ouml;rvirringen uppst&aring;r. Prestationen m&auml;ts mot vad modeller klarade i fjol, och mot den m&aring;ttstocken &auml;r den stor. Arbetss&auml;ttet borde m&auml;tas mot hur samma modell arbetar n&auml;r den f&aring;r r&auml;tt kanal, och mot den m&aring;ttstocken &auml;r den liten.</p>
+
+<p>Men det g&aring;r inte att se f&ouml;rr&auml;n man vet vad den andra kanalen ger. S&aring; jag b&ouml;rjar d&auml;r.</p>
+
+<h2>S&aring; arbetar en agent n&auml;r den f&aring;r</h2>
+
+<p>Ge en agent ett m&aring;l och en form den kan arbeta i, och du f&aring;r n&aring;got som inte har n&aring;gon riktig motsvarighet i m&auml;nskligt arbete.</p>
+
+<p>Den arbetar parallellt. Trettio filer &auml;r inte trettio saker att h&aring;lla i huvudet, det &auml;r en enda kontext. Den arbetar uth&aring;lligt: samma kontroll p&aring; fyrahundra poster utf&ouml;rs p&aring; post fyrahundra precis som p&aring; post ett, utan den uppm&auml;rksamhetsdrift som g&ouml;r att en m&auml;nniska hittar tre fel av fem p&aring; eftermiddagen. Den arbetar exakt &mdash; en j&auml;mf&ouml;relse mot ett v&auml;rde &auml;r en j&auml;mf&ouml;relse mot ett v&auml;rde, inte ett &ouml;gonkast. Och den arbetar i maskinhastighet, vilket &auml;r den minst intressanta av egenskaperna men den som alla n&auml;mner f&ouml;rst.</p>
+
+<p>Framf&ouml;r allt kan den backa. Att g&ouml;ra om ett steg kostar n&auml;stan ingenting, vilket betyder att den kan pr&ouml;va sig fram p&aring; ett s&auml;tt som &auml;r oekonomiskt f&ouml;r en m&auml;nniska. Det &auml;r den egenskapen som g&ouml;r att man kan ge den ett m&aring;l i st&auml;llet f&ouml;r en instruktion.</p>
+
+<p>L&auml;gg ihop det och du f&aring;r en arbetsform med en helt annan kostnadskurva &auml;n v&aring;r. Det som &auml;r dyrt f&ouml;r en m&auml;nniska &mdash; repetition, uth&aring;llighet, exakthet &ouml;ver volym, att g&ouml;ra om &mdash; &auml;r billigt f&ouml;r agenten. Det som &auml;r dyrt f&ouml;r agenten, omd&ouml;met om vad som &auml;r v&auml;rt att g&ouml;ra och f&ouml;rm&aring;gan att se n&auml;r ett svar ser r&auml;tt ut men &auml;r fel, &auml;r det vi &auml;r kvar f&ouml;r.</p>
+
+<p>Det &auml;r den arbetsformen som &auml;r v&auml;rd n&aring;got. Det &auml;r ocks&aring; den man ger bort.</p>
+
+<h2>Ett gr&auml;nssnitt &auml;r en kanal byggd f&ouml;r en muspekare</h2>
+
+<p>Ett grafiskt anv&auml;ndargr&auml;nssnitt &auml;r inte funktionen. Det &auml;r funktionen paketerad f&ouml;r en s&auml;rskild mottagare.</p>
+
+<p>Vi gl&ouml;mmer det, f&ouml;r vi &auml;r mottagaren. En knapp &auml;r en operation som f&aring;tt en form, en placering och en f&auml;rg d&auml;rf&ouml;r att en m&auml;nniska ska hitta den p&aring; under en sekund. En meny &auml;r en beslutstr&auml;dstruktur som vikts ihop s&aring; att den ryms i korttidsminnet. Ett hovertillst&aring;nd finns d&auml;rf&ouml;r att en hand kan sv&auml;va. Spatial layout, ikonografi, gruppering, gr&aring;toner f&ouml;r det inaktiva &mdash; allt det &auml;r kompression, och kompressionen &auml;r optimerad f&ouml;r m&auml;nsklig perception. Inget annat.</p>
+
+<p>Under gr&auml;nssnittet ligger hela tiden den uppackade formen. Filen. Kommandot. API-anropet. Den formen &auml;r inte en f&ouml;renkling av gr&auml;nssnittet; det &auml;r tv&auml;rtom gr&auml;nssnittet som &auml;r en &ouml;vers&auml;ttning av den. Att l&aring;ta en agent arbeta genom sk&auml;rmen &auml;r att l&aring;ta den l&auml;sa ett fotografi av kalkylbladet i st&auml;llet f&ouml;r kalkylbladet.</p>
+
+<p>Men det avg&ouml;rande &auml;r inte att formatet &auml;r ett annat. Det avg&ouml;rande &auml;r att formatet &auml;r <em>seriellt</em>. Ett gr&auml;nssnitt &auml;r byggt f&ouml;r en operat&ouml;r med en muspekare &mdash; n&aring;gon som kan g&ouml;ra en sak i taget och beh&ouml;ver se resultatet innan n&auml;sta. Och varje egenskap i f&ouml;rra avsnittet g&aring;r f&ouml;rlorad i den kanalen, en efter en.</p>
+
+<p>Parallelliteten f&ouml;rst: en muspekare &auml;r per definition en. Trettio filer blir trettio sekventiella &ouml;ppningar. Uth&aring;lligheten sedan: varje steg kr&auml;ver en ny sk&auml;rml&auml;sning, och varje sk&auml;rml&auml;sning &auml;r ett tillf&auml;lle att tolka fel &mdash; inte f&ouml;r att modellen &auml;r slarvig, utan f&ouml;r att slutledning ur pixlar &auml;r os&auml;krare &auml;n en l&auml;sning av ett v&auml;rde. Exaktheten g&aring;r samma v&auml;g. Och att backa, som var n&auml;stan gratis, blir pl&ouml;tsligt dyrt, f&ouml;r tillst&aring;ndet ligger nu i ett gr&auml;nssnitt som inte har n&aring;gon &aring;ngraknapp f&ouml;r det agenten just gjorde.</p>
+
+<p>Kvar blir hastigheten, och den blir s&auml;mre &auml;n en m&auml;nniskas.</p>
+
+<p>Det viktiga &auml;r att det h&auml;r inte &auml;r omognad. Det &auml;r l&auml;tt att l&auml;sa demonstrationen som ett tidigt stadium &mdash; l&aring;ngsam nu, snabb sedan. Men flaskhalsen sitter inte i modellen. Den sitter i kanalen. En dubbelt s&aring; snabb modell klickar dubbelt s&aring; fort genom samma nyckelh&aring;l, och nyckelh&aring;let &auml;r fortfarande dimensionerat f&ouml;r en hand. Man kan g&ouml;ra adaptern b&auml;ttre. Man kan inte g&ouml;ra den till n&aring;got annat &auml;n en adapter.</p>
+
+<p>Inv&auml;ndningen &auml;r allts&aring; inte att tekniken &auml;r d&aring;lig. Den &auml;r att man betalar f&ouml;r en agent och anv&auml;nder den som en praktikant med en mus.</p>
+
+<h2>Varf&ouml;r det &auml;nd&aring; &auml;r det som visas upp</h2>
+
+<p>Och &auml;nd&aring; &auml;r det den formen som demonstreras, och f&ouml;rklaringen &auml;r banal.</p>
+
+<p>Man kan se den. En agent som klickar sig genom ett gr&auml;nssnitt g&ouml;r n&aring;got begripligt. Vi k&auml;nner igen varje steg, vi ser mark&ouml;ren r&ouml;ra sig mot f&auml;ltet vi sj&auml;lva hade valt, vi ser den tveka, vi ser den lyckas. Vi har en inre modell av vad det kostar att g&ouml;ra samma sak f&ouml;r hand, och den modellen fylls automatiskt med mening.</p>
+
+<p>Det effektiva arbetet ser inte ut som n&aring;got alls. Ett m&aring;l formuleras, ett kommando k&ouml;rs, ett resultat finns. Det finns ingen mark&ouml;r att f&ouml;lja med blicken och ingenting som h&aring;ller intresset i trettio sekunder.</p>
+
+<p>S&aring; uppst&aring;r en skevhet. Den synliga varianten vinner uppm&auml;rksamhet, den anv&auml;ndbara vinner arbete, och det &auml;r inte samma marknad. Uppm&auml;rksamhet styr vad som demonstreras p&aring; scener, vad som klipps till trettio sekunder, vad investerare tror att tekniken &auml;r, och till sist vad en driftschef f&ouml;rest&auml;ller sig n&auml;r n&aring;gon s&auml;ger "AI-agent". Det &auml;r inget nytt i industrin. Vi har haft trettio &aring;r av samma sak med visualiseringstavlor: den tavla som ser b&auml;st ut p&aring; ett studiebes&ouml;k &auml;r s&auml;llan den som &auml;ndrar flest beslut.</p>
+
+<p>Jag har allts&aring; ingen inv&auml;ndning mot att n&aring;gon blir imponerad. Jag har en inv&auml;ndning mot kriteriet. Fr&aring;gan "klarade den det?" har ett svar som med tiden alltid blir ja, och som d&auml;rf&ouml;r slutar b&auml;ra information. Fr&aring;gan som b&auml;r &auml;r enkel att st&auml;lla och obekv&auml;m att svara p&aring;: j&auml;mf&ouml;rt med vad?</p>
+
+<h2>Ordningen &auml;r inte estetisk</h2>
+
+<p>Och d&auml;r kommer jag fr&aring;n annat h&aring;ll &auml;n de flesta som skriver om agentarkitektur.</p>
+
+<p>Det f&ouml;rsta lean fr&aring;gar om ett arbetsmoment &auml;r inte hur det ska g&ouml;ras snabbare. Det &auml;r om det ska finnas. Eliminera, sedan f&ouml;renkla, sedan &mdash; f&ouml;rst d&aring; &mdash; mekanisera. Ordningen &auml;r inte en preferens. Den &auml;r en f&ouml;rsvarsmekanism mot ett best&auml;mt fel: att g&ouml;ra ett on&ouml;digt moment permanent genom att bygga infrastruktur runt det.</p>
+
+<p>F&ouml;r det &auml;r vad automatisering g&ouml;r. Ett manuellt sl&ouml;seri &auml;r irriterande, synligt och billigt att avskaffa; n&aring;gon klagar p&aring; det varje vecka. Ett automatiserat sl&ouml;seri klagar ingen p&aring;. Det g&ouml;r inte ont l&auml;ngre. Det har en &auml;gare, en driftbudget, ett schema och en historik, och att ta bort det &auml;r nu ett projekt i st&auml;llet f&ouml;r ett beslut. Momentet har g&aring;tt fr&aring;n att vara en kostnad till att vara en tillg&aring;ng i n&aring;gons balansr&auml;kning. Det &auml;r d&auml;rf&ouml;r f&ouml;renklingen m&aring;ste komma f&ouml;re mekaniseringen &mdash; inte f&ouml;r att den &auml;r finare, utan f&ouml;r att f&ouml;nstret st&auml;ngs.</p>
+
+<p>Trappan har tre steg, och AI &auml;r det sista. F&ouml;rst f&ouml;renkla: skala arbetet till det som faktiskt tillf&ouml;r v&auml;rde, stabilisera processen, f&aring; rutinen att sitta. Sedan automatisera: mekanisera det repetitiva n&auml;r det v&auml;l &auml;r stabilt &mdash; sensorer som m&auml;ter, skript som registrerar, sp&auml;rrar som hindrar fel. Automation g&ouml;r en stabil process snabbare. Den g&ouml;r aldrig en instabil process stabil. Och sist, sist, sl&auml;ppa in en modell &mdash; d&auml;r m&ouml;nster och bed&ouml;mning betyder n&aring;got och d&auml;r de data den beh&ouml;ver redan finns, rena, d&auml;rf&ouml;r att de tv&aring; f&ouml;reg&aring;ende stegen byggdes f&ouml;rst.</p>
+
+<p>Varje steg f&ouml;rtj&auml;nar n&auml;sta. Hoppar man &ouml;ver ett f&aring;r man en modell tr&auml;nad p&aring; ett processkaos, och det enda den l&auml;r sig &auml;r att producera mer av det. Sedan f&aring;r modellen skulden, fast den g&ouml;r precis vad den l&auml;rde sig. Kaoset fanns f&ouml;re modellen. Modellen har bara f&ouml;rst&auml;rkt det.</p>
+
+<p>Computer use automatiserar det m&auml;nskliga gr&auml;nssnittet. Men det m&auml;nskliga gr&auml;nssnittet &auml;r sj&auml;lvt en n&ouml;dl&ouml;sning. Det finns d&auml;rf&ouml;r att en m&auml;nniska var tvungen att komma &aring;t funktionen och pixlar var den enda kanal vi hade. Det &auml;r inte processen. Det &auml;r processens f&ouml;rpackning f&ouml;r en viss operat&ouml;r. N&auml;r vi bygger en agent som klickar i den f&ouml;rpackningen har vi tagit ett moment som existerade av m&auml;nskliga sk&auml;l och gjort det permanent av tekniska.</p>
+
+<p>Det &auml;r att hoppa &ouml;ver de tv&aring; f&ouml;rsta stegen och applicera det tredje p&aring; en process ingen har f&ouml;renklat. Man fr&aring;gar aldrig om klickv&auml;gen beh&ouml;vde finnas. Man fr&aring;gar bara om modellen klarar den.</p>
+
+<p>Och det &auml;r d&auml;r de tv&aring; sakerna m&ouml;ts. Automatiserar man en klickv&auml;g f&aring;r den ett schema, en &auml;gare och en driftbudget &mdash; och d&auml;rmed ett f&ouml;rsvar. Sl&ouml;seriet blir inte bara kvar. Det blir infrastruktur, och infrastruktur avskaffar man inte, den f&ouml;rvaltar man.</p>
+
+<h2>D&auml;r det inte finns n&aring;gon v&auml;g in</h2>
+
+<p>Och s&aring; motbilden, som &auml;r minst lika viktig, f&ouml;r utan den &auml;r resten en k&auml;pph&auml;st.</p>
+
+<p>Computer use &auml;r r&auml;tt n&auml;r det inte finns n&aring;gon annan v&auml;g in. Inte "n&auml;r det &auml;r bekv&auml;mare". N&auml;r det inte finns.</p>
+
+<p>Den situationen &auml;r inte marginell i tillverkning. Den &auml;r normaltillst&aring;ndet. Ett MES som inte har n&aring;gon export ut&ouml;ver den rapport n&aring;gon en g&aring;ng best&auml;llde. En PLC-leverant&ouml;rs propriet&auml;ra verktyg d&auml;r data finns men bara innanf&ouml;r deras eget f&ouml;nster. En maskins HMI som visar tio parametrar i realtid och skickar noll av dem vidare. En webbtj&auml;nst utan API, eller med ett API som kostar mer &auml;n problemet. Ett system vars leverant&ouml;r g&aring;tt i konkurs och vars integration ingen l&auml;ngre kan best&auml;lla.</p>
+
+<p>I alla de fallen &auml;r den uppackade formen inte tillg&auml;nglig. Den finns &mdash; den ligger d&auml;r, tre lager ner &mdash; men den &auml;r inl&aring;st bakom ett gr&auml;nssnitt som &auml;r den enda d&ouml;rren. D&aring; &auml;r en agent som l&auml;ser sk&auml;rmen inte en omv&auml;g. D&aring; &auml;r den bron &ouml;ver det som inte g&aring;r att brygga, och den kan vara det enda som g&ouml;r en analys m&ouml;jlig utan ett integrationsprojekt p&aring; sex m&aring;nader.</p>
+
+<p>Skillnaden mellan de tv&aring; fallen &auml;r enkel att formulera och obekv&auml;m att svara p&aring;: finns det ett annat s&auml;tt in? Om ja, &auml;r gr&auml;nssnittsv&auml;gen ett val &mdash; och n&auml;stan alltid ett s&auml;mre. Om nej, &auml;r den den enda v&auml;gen, och d&aring; &auml;r fr&aring;gan inte l&auml;ngre vilken arkitektur som &auml;r vackrast utan om bron b&auml;r.</p>
+
+<h2>Vad jag sj&auml;lv k&ouml;r</h2>
+
+<p>Jag har mer sk&auml;l &auml;n de flesta att vara &auml;rlig h&auml;r, f&ouml;r mitt eget arbete &auml;r evidens &aring;t b&aring;da h&aring;llen.</p>
+
+<p>Tre saker jag byggt fungerar dagligen: en publiceringspipeline f&ouml;r den h&auml;r sajten, ett minnessystem som h&aring;ller kontext mellan sessioner och maskiner, och analysarbete p&aring; produktionsdata. Alla tre drivs likadant. Jag formulerar ett m&aring;l, jag ger n&ouml;dv&auml;ndig kontext, och arbetet utf&ouml;rs mot filer, mot kommandon, mot API:er.</p>
+
+<p>Det konkreta syns tydligast i den f&ouml;rsta. En utg&aring;va r&ouml;r ett trettiotal filer i tre spr&aring;kversioner, och allt ska st&auml;mma internt: samma artiklar i alla tre fl&ouml;den, samma datum, inga o&ouml;versatta rubriker som ligger kvar, ingen l&auml;nk som pekar p&aring; g&aring;rdagens fil. Det &auml;r precis den sortens kontroll som en m&auml;nniska g&ouml;r slarvigt vid elva p&aring; kv&auml;llen och som en agent utf&ouml;r identiskt p&aring; fil ett och fil trettio. Den &ouml;ppnar dem inte en i taget f&ouml;r att titta p&aring; dem. Den har dem.</p>
+
+<p>Analysarbetet fungerar likadant. Samma kontroll p&aring; varje rad i en m&auml;tserie, och n&auml;r n&aring;got ser fel ut kan den backa och k&ouml;ra om med en annan avgr&auml;nsning utan att det kostar en eftermiddag. Det &auml;r inte snabbhet som &auml;r po&auml;ngen d&auml;r. Det &auml;r att man v&aring;gar pr&ouml;va en tredje och en fj&auml;rde hypotes, eftersom det inte l&auml;ngre &auml;r dyrt att ha fel.</p>
+
+<p>Inget av det hade fungerat via sk&auml;rmklick. Inte "hade varit l&aring;ngsammare" &mdash; hade inte fungerat.</p>
+
+<p>Och sedan finns undantaget, och det &auml;r exakt det undantag motbilden beskriver: det enda st&auml;llet i hela min upps&auml;ttning d&auml;r en modell faktiskt styr ett gr&auml;nssnitt &auml;r webbl&auml;saren i ett nattjobb. Sk&auml;let &auml;r inte principiellt. Det finns inget API. K&auml;llan har inget annat s&auml;tt in, och det jag beh&ouml;ver d&auml;rifr&aring;n &auml;r v&auml;rt bron. Det &auml;r ocks&aring; den enda komponent som g&aring;r s&ouml;nder regelbundet &mdash; ett nattjobb som klickar sig genom ett gr&auml;nssnitt kommer f&ouml;rr eller senare att tr&auml;ffa p&aring; en dialogruta som inte fanns i g&aring;r, och sedan st&aring;r det still tills n&aring;gon vaknar.</p>
+
+<p>Jag har l&auml;rt mig l&auml;sa det som en signal snarare &auml;n ett problem. N&auml;r jag m&auml;rker att jag h&aring;ller p&aring; att s&auml;tta en modell framf&ouml;r en sk&auml;rm brukar det betyda n&aring;got om systemet p&aring; andra sidan &mdash; att det saknar en v&auml;g in som borde ha funnits. Ibland &auml;r den slutsatsen mer v&auml;rd &auml;n de data jag var ute efter.</p>
+
+<h2>Fr&aring;gan &auml;r inte den vi st&auml;ller</h2>
+
+<p>Jag tror inte att computer use f&ouml;rsvinner, och jag tror inte att det b&ouml;r g&ouml;ra det. Det finns f&ouml;r mycket inl&aring;st funktion i v&auml;rlden f&ouml;r att en generell adapter ska bli on&ouml;dig, och i tillverkningsindustrin s&auml;rskilt.</p>
+
+<p>Men det &auml;r en adapter. Den &auml;r svaret p&aring; ett format, inte p&aring; en uppgift. Och att den ser ut som arbete &mdash; att den &auml;r den enda AI-arbetsform en m&auml;nniska kan f&ouml;lja med blicken och k&auml;nna igen &mdash; g&ouml;r den varken mer kapabel eller mindre kostsam.</p>
+
+<p>Det jag s&aring;g den kv&auml;llen var en modell som gjorde n&aring;got sv&aring;rt p&aring; ett s&auml;tt som gjorde det sv&aring;rare &auml;n det beh&ouml;vde vara. Det &auml;r ingen anklagelse mot modellen. Den gjorde precis det jag bad om, och den gjorde det bra. Det var uppgiften som var fel st&auml;lld, och det var jag som st&auml;llde den.</p>
+
+<p>Den intressanta fr&aring;gan om en demonstration &auml;r inte om modellen klarar det.</p>
+
+<p>Den &auml;r om det &auml;r s&aring; det ska g&ouml;ras.</p>
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="vad-vi-redan-vet.html">F&ouml;reg&aring;ende: Vad vi redan vet att de kan</a>
+    <a href="essaer.html">Alla ess&auml;er</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="essaer.html">Ess&auml;er</a> &middot; <a href="kallor.html">K&auml;llor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
