@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thirty files and one mouse pointer &mdash; AI-skiftet</title>
+  <meta name="description" content="An agent given a goal and the right channel works in parallel, without fatigue and with precision. Computer use forces all of it through an interface built for a human with a mouse pointer. The waste sits in the channel, not in the model.">
+  <meta name="date" content="2026-09-06">
+  <meta property="article:published_time" content="2026-09-06T09:00:00+02:00">
+  <meta property="og:title" content="Thirty files and one mouse pointer &mdash; AI-skiftet">
+  <meta property="og:description" content="An agent given a goal and the right channel works in parallel, without fatigue and with precision. Computer use forces all of it through an interface built for a human with a mouse pointer. The waste sits in the channel, not in the model.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/trettio-filer-och-en-muspekare.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/trettio-filer-och-en-muspekare.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/trettio-filer-och-en-muspekare.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Ess&auml;er</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">K&auml;llor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/trettio-filer-och-en-muspekare.html" lang="sv">SV</a>
+      <a href="/en/trettio-filer-och-en-muspekare.html" lang="en" class="active">EN</a>
+      <a href="/no/trettio-filer-och-en-muspekare.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essays.html" class="article-header__back">Back to essays</a>
+    <div class="article-kicker">AI architecture &middot; Lean</div>
+    <h1>Thirty files and one mouse pointer</h1>
+    <p class="article-dek"><em>or: what you give away when you let an agent click.</em> An agent given a goal and the right channel works in parallel, without fatigue and with precision &mdash; and can back out almost for free. Computer use forces all of that through an interface built for a human with a mouse pointer, one click at a time. The waste is not immaturity that the next model generation will fix. It sits in the channel.</p>
+    <p class="article-meta">Analysis &middot; Rolf Skogling &middot; Published September 6, 2026 &middot; approx. 11 min read</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+
+<p>One evening I sat and watched GPT-6 Astra use my computer. I said what should happen on the screen, it looked, it moved the cursor, it clicked. It worked.</p>
+
+<p>My first reaction was not that it was impressive. It was that it was waste.</p>
+
+<p>Then I read what others wrote about the same thing, and there the reaction was the opposite. This was the big one, the proof that something had taken a step. That difference is what this text is about &mdash; because I do not think the people who were impressed saw wrong. They saw the same thing I did. They measured it against something else.</p>
+
+<p>What is being demonstrated is that a model <em>can</em> use an interface built for humans. That is an impressive technical feat, and it is at the same time a poor way to work. Both things are true at once, and that is where the confusion comes from. The feat is measured against what models could do last year, and by that yardstick it is large. The way of working ought to be measured against how the same model performs when it is given the right channel, and by that yardstick it is small.</p>
+
+<p>But none of that is visible until you know what the other channel gives you. So I will start there.</p>
+
+<h2>How an agent works when you let it</h2>
+
+<p>Give an agent a goal and a form it can work in, and you get something with no real equivalent in human work.</p>
+
+<p>It works in parallel. Thirty files are not thirty things to hold in your head; they are a single context. It works without fatigue: the same check on record four hundred is performed exactly as it was on record one, without the drift in attention that makes a human find three errors out of five by mid-afternoon. It works precisely &mdash; a comparison against a value is a comparison against a value, not a glance. And it works at machine speed, which is the least interesting of these properties and the one everybody mentions first.</p>
+
+<p>Above all, it can back out. Redoing a step costs almost nothing, which means it can feel its way forward in a manner that is uneconomical for a human being. That property is what lets you give it a goal instead of an instruction.</p>
+
+<p>Put it together and you get a way of working with a cost curve entirely unlike ours. What is expensive for a human &mdash; repetition, endurance, precision across volume, starting over &mdash; is cheap for the agent. What is expensive for the agent, the judgement about what is worth doing at all and the ability to see when an answer looks right but is wrong, is what we are still here for.</p>
+
+<p>That is the way of working that is worth something. It is also the one you give away.</p>
+
+<h2>An interface is a channel built for a mouse pointer</h2>
+
+<p>A graphical user interface is not the function. It is the function packaged for a particular recipient.</p>
+
+<p>We forget this, because we are the recipient. A button is an operation that has been given a shape, a position and a colour so that a human being can find it in under a second. A menu is a decision tree folded up small enough to fit in working memory. A hover state exists because a hand can hover. Spatial layout, iconography, grouping, greying out what is inactive &mdash; all of it is compression, and the compression is optimised for human perception. Nothing else.</p>
+
+<p>Underneath the interface, the whole time, lies the uncompressed form. The file. The command. The API call. That form is not a simplification of the interface; it is the interface that is a translation of it. To let an agent work through the screen is to let it read a photograph of the spreadsheet instead of the spreadsheet.</p>
+
+<p>But what matters is not that the format is different. What matters is that the format is <em>serial</em>. An interface is built for an operator with a mouse pointer &mdash; someone who can do one thing at a time and needs to see the result before the next. And every property from the previous section is lost in that channel, one after another.</p>
+
+<p>Parallelism first: a mouse pointer is by definition one. Thirty files become thirty sequential openings. Endurance next: every step requires a fresh reading of the screen, and every reading of the screen is an opportunity to misinterpret &mdash; not because the model is careless, but because inference from pixels is less certain than reading a value. Precision goes the same way. And backing out, which was nearly free, suddenly becomes expensive, because the state now sits in an interface that has no undo button for what the agent just did.</p>
+
+<p>What remains is the speed, and it is worse than a human's.</p>
+
+<p>The important thing is that this is not immaturity. It is easy to read the demonstration as an early stage &mdash; slow now, fast later. But the bottleneck is not in the model. It is in the channel. A model twice as fast clicks twice as fast through the same keyhole, and the keyhole is still sized for a hand. You can make the adapter better. You cannot make it into anything other than an adapter.</p>
+
+<p>So the objection is not that the technology is bad. It is that you are paying for an agent and using it as an intern with a mouse.</p>
+
+<h2>Why it is still what gets demonstrated</h2>
+
+<p>And yet that is the form that gets shown, and the explanation is banal.</p>
+
+<p>You can see it. An agent clicking its way through an interface does something intelligible. We recognise every step, we watch the cursor move towards the field we would have chosen ourselves, we see it hesitate, we see it succeed. We have an internal model of what the same thing costs by hand, and that model fills automatically with meaning.</p>
+
+<p>Effective work does not look like anything at all. A goal is formulated, a command runs, a result exists. There is no cursor to follow with your eyes and nothing that holds interest for thirty seconds.</p>
+
+<p>So a distortion arises. The visible variant wins attention, the useful one wins the work, and those are not the same market. Attention governs what gets demonstrated on stages, what gets cut to thirty seconds, what investors believe the technology is, and ultimately what an operations manager pictures when someone says "AI agent". None of this is new in industry. We have had thirty years of the same thing with visual management boards: the board that looks best during a site visit is rarely the one that changes the most decisions.</p>
+
+<p>So I have no objection to anyone being impressed. I have an objection to the criterion. The question "did it manage it?" has an answer that always becomes yes in time, and therefore stops carrying information. The question that holds is easy to ask and uncomfortable to answer: compared to what?</p>
+
+<h2>The order is not a matter of taste</h2>
+
+<p>And here I come at it from a different direction than most people writing about agent architecture.</p>
+
+<p>The first thing lean asks about a step in the work is not how to do it faster. It is whether it should exist at all. Eliminate, then simplify, then &mdash; only then &mdash; mechanise. The order is not a preference. It is a defence mechanism against one particular error: making an unnecessary step permanent by building infrastructure around it.</p>
+
+<p>Because that is what automation does. Manual waste is irritating, visible and cheap to abolish; somebody complains about it every week. Automated waste draws no complaints. It stops hurting. It has an owner, an operating budget, a schedule and a history, and removing it is now a project rather than a decision. The step has gone from being a cost to being an asset on somebody's balance sheet. That is why simplification has to come before mechanisation &mdash; not because it is nobler, but because the window closes.</p>
+
+<p>The ladder has three rungs, and AI is the top one. Begin by reducing: cut the work back to what actually adds value, make the process steady, get the routine to hold. Then mechanise: automate the repetitive parts once they are stable &mdash; instruments that log the values, scripts that file the records, hard stops that make the wrong move impossible. Mechanisation makes a steady process faster. It never makes an unsteady one steady. And only at the very end let a model in, in the places where recognising a pattern or weighing a case is what the job actually needs, and where the material it has to learn from is already sitting there, clean, because the two rungs below it were built first.</p>
+
+<p>No rung holds unless the one beneath it is in place. Skip one and you get a model trained on process disorder, and the only thing it learns is to produce more of it. Then the model takes the blame, though it is doing exactly what it learned. The disorder was there first. The model only scaled it up.</p>
+
+<p>Computer use automates the human interface. But the human interface is itself a stopgap. It exists because a human being had to reach the function and pixels were the only channel we had. It is not the process. It is the process packaged for a particular operator. When we build an agent that clicks inside that packaging, we have taken a step that existed for human reasons and made it permanent for technical ones.</p>
+
+<p>That is skipping the first two rungs and applying the third to a process nobody has simplified. You never ask whether the click path needed to exist. You only ask whether the model can handle it.</p>
+
+<p>And that is where the two things meet. Automate a click path and it acquires a schedule, an owner and an operating budget &mdash; and with them a defence. The waste does not merely remain. It becomes infrastructure, and infrastructure is not abolished, it is maintained.</p>
+
+<h2>Where there is no way in</h2>
+
+<p>And then the counter-picture, which matters just as much, because without it the rest is a hobbyhorse.</p>
+
+<p>Computer use is right when there is no other way in. Not "when it is more convenient". When there is none.</p>
+
+<p>That situation is not marginal in manufacturing. It is the normal state. An MES with no export beyond the one report somebody once ordered. A PLC vendor's proprietary tool where the data exists but only inside their own window. A machine HMI that displays ten parameters in real time and passes none of them on. A web service with no API, or with an API that costs more than the problem. A system whose vendor went bankrupt and whose integration nobody can order any more.</p>
+
+<p>In every one of those cases the uncompressed form is not available. It exists &mdash; it is sitting there, three layers down &mdash; but it is locked behind an interface that is the only door. Then an agent reading the screen is not a detour. Then it is the bridge across what cannot be bridged, and it may be the only thing that makes an analysis possible without a six-month integration project.</p>
+
+<p>The difference between the two cases is easy to state and uncomfortable to answer: is there another way in? If yes, the interface route is a choice &mdash; and almost always a worse one. If no, it is the only route, and then the question is no longer which architecture is most elegant but whether the bridge holds.</p>
+
+<h2>What I run myself</h2>
+
+<p>I have more reason than most to be honest here, because my own work is evidence in both directions.</p>
+
+<p>Three things I have built work every day: a publishing pipeline for this site, a memory system that holds context across sessions and machines, and analysis work on production data. All three are driven the same way. I formulate a goal, I supply the necessary context, and the work is carried out against files, against commands, against APIs.</p>
+
+<p>The concrete case is clearest in the first. One edition touches some thirty files across three language versions, and everything has to be internally consistent: the same articles in all three feeds, the same dates, no untranslated headings left behind, no link pointing at yesterday's file. That is exactly the kind of check a human does sloppily at eleven at night and an agent performs identically on file one and file thirty. It does not open them one at a time to look at them. It has them.</p>
+
+<p>The analysis work behaves the same way. The same check on every row of a measurement series, and when something looks wrong it can back out and rerun with a different boundary without costing an afternoon. Speed is not the point there. The point is that you dare to try a third and a fourth hypothesis, because being wrong is no longer expensive.</p>
+
+<p>None of it would have worked through screen clicks. Not "would have been slower" &mdash; would not have worked.</p>
+
+<p>And then there is the exception, and it is exactly the exception the counter-picture describes: the only place in my entire setup where a model actually drives an interface is a browser inside a nightly job. The reason is not one of principle. There is no API. The source has no other way in, and what I need from it is worth the bridge. It is also the only component that breaks regularly &mdash; a nightly job clicking its way through an interface will sooner or later meet a dialogue box that was not there yesterday, and then it stands still until somebody wakes up.</p>
+
+<p>I have learned to read that as a signal rather than a problem. When I notice that I am about to put a model in front of a screen, it usually says something about the system on the other side &mdash; that it lacks a way in that ought to have existed. Sometimes that conclusion is worth more than the data I was after.</p>
+
+<h2>The question is not the one we ask</h2>
+
+<p>I do not think computer use is going away, and I do not think it should. There is too much locked-in function in the world for a general adapter to become unnecessary, and in manufacturing especially.</p>
+
+<p>But it is an adapter. It is the answer to a format, not to a task. And the fact that it looks like work &mdash; that it is the only form of AI work a human can follow with their eyes and recognise &mdash; makes it neither more capable nor less costly.</p>
+
+<p>What I saw that evening was a model doing something difficult in a way that made it harder than it needed to be. That is no accusation against the model. It did exactly what I asked, and it did it well. It was the task that was badly framed, and I was the one who framed it.</p>
+
+<p>The interesting question about a demonstration is not whether the model can manage it.</p>
+
+<p>It is whether that is how it should be done.</p>
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="vad-vi-redan-vet.html">Previous: What we already know they can do</a>
+    <a href="essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="essaer.html">Ess&auml;er</a> &middot; <a href="kallor.html">K&auml;llor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
