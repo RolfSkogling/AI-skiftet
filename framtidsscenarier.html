@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svenska Svenska AI-scenarier 2026–2040 — AI-skiftet</title>
+    <title>Svenska AI-scenarier 2026–2040 — AI-skiftet</title>
     <meta name="description" content="Tre scenarier — Acceleration, Friktion och Delning — år för år 2026–2040. Inte prognoser, utan konsekventa berättelser prövade mot samma variabler. Bygger på dokumentet Sveriges AI-omställning (maj 2026).">
     <link rel="canonical" href="https://ai-skiftet.se/framtidsscenarier.html">
     <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
@@ -198,6 +198,24 @@
 
         /* === THEMES === */
         .themes-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        /* === REGELVERKETS FASTA PUNKTER (2026-09-07) === */
+        .reg-strip { border: 1px solid var(--line-strong); border-left: 3px solid var(--muted);
+            border-radius: 8px; padding: 0.8rem 0.95rem; margin: 0 0 1.1rem; background: var(--bg-surface); }
+        .reg-strip__label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+            color: var(--muted); font-weight: 600; margin-bottom: 0.45rem; }
+        .reg-strip__items { list-style: none; margin: 0; padding: 0; display: grid;
+            grid-template-columns: repeat(2, 1fr); gap: 0.35rem 1.1rem; }
+        .reg-strip__items li { font-size: 0.8rem; line-height: 1.45; color: var(--text-secondary);
+            padding-left: 0.95rem; position: relative; }
+        .reg-strip__items li::before { content: '\2014'; position: absolute; left: 0; color: var(--muted); }
+        .reg-strip__date { font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums;
+            white-space: nowrap; }
+        .reg-strip__src { font-size: 0.72rem; line-height: 1.4; color: var(--muted); margin-top: 0.55rem; }
+        .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: 2; }
+        @media (max-width: 768px) {
+            .reg-strip__items { grid-template-columns: 1fr; }
+            .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: auto; }
+        }
         .themes-title {
             font-family: 'Playfair Display', serif; font-size: 1.5rem;
             font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
@@ -330,7 +348,7 @@
       </div>
 
         <p class="hero-subtitle">Tre scenarier — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong> — år för år från nuläget till 2040. Inte prognoser och inte värderingar, utan konsekventa berättelser om hur dagens osäkerheter kan kombineras. Bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026).</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad juni 2026</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad september 2026</p>
     </section>
 
     <figure class="essay-visual">
@@ -453,6 +471,16 @@
                 <div class="year-number">2027</div>
                 <div class="year-label">Tidig divergens</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Regelverkets fasta punkter</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2 aug 2026</span> transparenskraven i artikel 50 tillämpas.</li>
+                    <li><span class="reg-strip__date">2 dec 2026</span> nya förbud i artikel 5; övergången för artikel 50.2 löper ut.</li>
+                    <li><span class="reg-strip__date">2 aug 2027</span> GPAI-modeller som fanns på marknaden före 2 augusti 2025 ska uppfylla kraven.</li>
+                    <li><span class="reg-strip__date">2 dec 2027</span> kapitel III avsnitt 1–3 för högrisk enligt artikel 6.2 och bilaga III.</li>
+                </ul>
+                <div class="reg-strip__src">Datum enligt förordning (EU) 2024/1689, ändrad genom förordning (EU) 2026/1744 (digital omnibusförordning om AI), i kraft 27 juli 2026. Datumen är desamma i alla tre scenarierna — lagen är inte en scenariovariabel.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -465,6 +493,7 @@
                             <li>Företag bygger om arbetsflöden kring agenter i kod, support, analys och ärendeberedning.</li>
                             <li>Tidiga arbetsmarknadssignaler i exponerade yrken — inträdesjobb och rekrytering — före total arbetslöshet.</li>
                             <li>Politisk asymmetri: företag ställer om snabbt, statens ledtider är längre.</li>
+                            <li>Förmågan hinner före datumen: system som ska bedömas i december 2027 bygger på modeller som inte fanns när standarderna skrevs.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -480,6 +509,7 @@
                             <li>Robust drift kräver kontroll, dokumentation och mänsklig granskning — gapet demo→drift kvarstår.</li>
                             <li>Bred men grund användning; lokala vinster syns inte i hela resultaträkningen.</li>
                             <li>EU hinner börja mogna standarder och tillsyn; Sverige får tid att sekvensera.</li>
+                            <li>Datumen hinner före förmågan: standarder, anmälda organ och tillsyn finns på plats innan de system de ska pröva är i drift.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -495,6 +525,7 @@
                             <li>Stora och digitalt mogna aktörer drar ifrån; mindre företag saknar specialister och beställarkompetens.</li>
                             <li>Offentlig sektor splittras: vissa myndigheter bygger förmåga, andra fastnar i pilot.</li>
                             <li>Beroendet av externa moln och modeller börjar märkas i pris och villkor.</li>
+                            <li>Samma datum, olika kostnad: efterlevnad blir en fast avgift som stora leverantörer bär lättare än små.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -509,6 +540,14 @@
                 <div class="year-number">2028</div>
                 <div class="year-label">Tröskelfrågan</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Regelverkets fasta punkter</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2 aug 2028</span> kapitel III avsnitt 1–3 för högrisk enligt artikel 6.1 och bilaga I — AI som säkerhetskomponent i reglerad produkt.</li>
+                    <li><span class="reg-strip__date">Maskiner</span> ligger sedan omnibusen under maskinförordningen (EU) 2023/1230, inte maskindirektivet 2006/42/EG.</li>
+                </ul>
+                <div class="reg-strip__src">Datum enligt förordning (EU) 2024/1689, ändrad genom förordning (EU) 2026/1744 (digital omnibusförordning om AI), i kraft 27 juli 2026. Datumen är desamma i alla tre scenarierna — lagen är inte en scenariovariabel.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -520,6 +559,7 @@
                             <li>Möjlig kvalitativ tröskel: Leggs 50/50 för ”minimal AGI” infaller — generell agentkapacitet i digitala miljöer.</li>
                             <li>Stora delar av administrations- och kunskapsarbete får nya kostnads- och produktionsvillkor.</li>
                             <li>Vid tidig tröskelpassage (2028–2031) räcker inte normaltaktens ledtider — snabbsekvens aktualiseras.</li>
+                            <li>Produktinbyggd AI når fristen medan hårdvarucyklerna är längre än modellcyklerna — maskiner certifieras mot modeller som hunnit bytas ut.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -535,6 +575,7 @@
                             <li>AGI-anspråk kan visa sig för tidiga; episodiskt minne, kontinuerligt lärande och robust världsmodell är ännu olösta.</li>
                             <li>Adoptionen breddas men förblir ojämn; kompetensbrist är en faktisk broms.</li>
                             <li>Mer tid att sekvensera reformer — men bara om tiden faktiskt används.</li>
+                            <li>Den längre fristen används: tillverkare hinner lägga om konstruktion, dokumentation och provning före bilaga I.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -550,6 +591,7 @@
                             <li>Om de första generella systemen kontrolleras av få aktörer i USA/Kina blir det europeiska beroendet strukturellt.</li>
                             <li>EU kan reglera systemen men inte producera dem på relevanta tidsskalor.</li>
                             <li>Skillnaden mellan dem med och utan tillgång till bästa kapacitet blir en ny fördelningslinje.</li>
+                            <li>Tillgången till anmälda organ och provningskapacitet fördelas ojämnt mellan tillverkare och länder.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klicka för detaljer ↓</div>
@@ -808,6 +850,10 @@
                 <div class="theme-name">Kapacitetströskel &amp; beredskap</div>
                 <div class="theme-desc">Tröskeln (Hassabis, Hinton, Legg) avgör takten. Snabbsekvens är reversibel, indikatordriven beredskap för tidig passage — inte panikbeslut.</div>
             </div>
+            <div class="theme-card">
+                <div class="theme-name">Från förmåga till tjänst</div>
+                <div class="theme-desc">Fyra led hålls isär: klarar i test, klarar tillförlitligt i drift, går att integrera lagligt och ekonomiskt — och tjänsten tas bort. Mellanleden avgör takten.</div>
+            </div>
         </div>
     </section>
 
@@ -817,7 +863,7 @@
         <div class="method-text">
             <p>Ramverket bygger på tre symmetriskt konstruerade scenarier — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong> — som var och en prövas mot samma sju variabler (kapacitetskurva, adoptionstakt, investeringsuthållighet, energi och datacenter, geopolitisk koncentration, svensk respons och EU-samordning). De ska inte läsas som värderingar eller som en gissning om vilken framtid som ”vinner”, utan som tre prövningar av samma reformpaket: en reform som bara fungerar i ett scenario är för skör.</p>
             <p>Tidslinjen projicerar varje scenarios bana 2026–2040 utifrån dokumentets logik och belagda signaler. Analysen skiljer mellan det som är <em>belagt</em> (etablerade mätningar och expertbedömningar) och det som vore <em>prognostiserat</em> (en gissning om utfall) — och försöker inte förutsäga vilket utfall som inträffar, utan bygga beredskap som håller under flera möjliga förlopp. Maj-tillägget kompletterar med en åttonde variabel, kapacitetströskel (Hassabis, Hinton, Legg), och med snabbsekvens som beredskapsspår vid tidig tröskelpassage.</p>
-            <p>Samtliga datapunkter och positioner härrör från publicerade källor — bl.a. SCB, Epoch AI, OECD, IEA, McKinsey och IMF. Underlaget bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026) och revideras när källbasen åldras. Se <a href="https://ai-skiftet.se/kallor.html">Källor</a>.</p>
+            <p>Samtliga datapunkter och positioner härrör från publicerade källor — bl.a. SCB, Epoch AI, OECD, IEA, McKinsey och IMF. Underlaget bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026) och revideras när källbasen åldras. Septembertillägget för in AI-förordningens tillämpningsdatum som fasta punkter i tidslinjen, i lydelsen efter förordning (EU) 2026/1744. Se <a href="https://ai-skiftet.se/kallor.html">Källor</a>.</p>
         </div>
     </section>
 
