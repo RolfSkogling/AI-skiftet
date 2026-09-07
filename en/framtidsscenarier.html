@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swedish Swedish AI Scenarios 2026–2040 — AI-skiftet</title>
+    <title>Swedish AI Scenarios 2026–2040 — AI-skiftet</title>
     <meta name="description" content="Three scenarios — Acceleration, Friction and Divergence — year by year 2026–2040. Not forecasts, but consistent stories tested against the same variables. Based on the report Sweden's AI Transition (May 2026).">
     <link rel="canonical" href="https://ai-skiftet.se/en/framtidsscenarier.html">
     <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/framtidsscenarier.html">
@@ -198,6 +198,24 @@
 
         /* === THEMES === */
         .themes-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        /* === REGELVERKETS FASTA PUNKTER (2026-09-07) === */
+        .reg-strip { border: 1px solid var(--line-strong); border-left: 3px solid var(--muted);
+            border-radius: 8px; padding: 0.8rem 0.95rem; margin: 0 0 1.1rem; background: var(--bg-surface); }
+        .reg-strip__label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+            color: var(--muted); font-weight: 600; margin-bottom: 0.45rem; }
+        .reg-strip__items { list-style: none; margin: 0; padding: 0; display: grid;
+            grid-template-columns: repeat(2, 1fr); gap: 0.35rem 1.1rem; }
+        .reg-strip__items li { font-size: 0.8rem; line-height: 1.45; color: var(--text-secondary);
+            padding-left: 0.95rem; position: relative; }
+        .reg-strip__items li::before { content: '\2014'; position: absolute; left: 0; color: var(--muted); }
+        .reg-strip__date { font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums;
+            white-space: nowrap; }
+        .reg-strip__src { font-size: 0.72rem; line-height: 1.4; color: var(--muted); margin-top: 0.55rem; }
+        .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: 2; }
+        @media (max-width: 768px) {
+            .reg-strip__items { grid-template-columns: 1fr; }
+            .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: auto; }
+        }
         .themes-title {
             font-family: 'Playfair Display', serif; font-size: 1.5rem;
             font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
@@ -329,7 +347,7 @@
       </div>
 
         <p class="hero-subtitle">Three scenarios — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong> — year by year from today to 2040. Not forecasts and not value judgements, but consistent stories of how today's uncertainties may combine. Based on the report <em>Sweden's AI Transition</em> (May 2026).</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated June 2026</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated September 2026</p>
     </section>
 
     <figure class="essay-visual">
@@ -450,6 +468,16 @@
                 <div class="year-number">2027</div>
                 <div class="year-label">Early divergence</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Fixed points in the rulebook</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2 Aug 2026</span> the transparency obligations in Article 50 apply.</li>
+                    <li><span class="reg-strip__date">2 Dec 2026</span> new prohibitions in Article 5; the transition for Article 50(2) ends.</li>
+                    <li><span class="reg-strip__date">2 Aug 2027</span> GPAI models placed on the market before 2 August 2025 must comply.</li>
+                    <li><span class="reg-strip__date">2 Dec 2027</span> Chapter III, Sections 1–3 for high-risk systems under Article 6(2) and Annex III.</li>
+                </ul>
+                <div class="reg-strip__src">Dates under Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026. The dates are the same in all three scenarios — the law is not a scenario variable.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -462,6 +490,7 @@
                             <li>Firms rebuild workflows around agents in code, support, analysis and case handling.</li>
                             <li>Early labour-market signals in exposed occupations — entry jobs and recruitment — before total unemployment moves.</li>
                             <li>A political asymmetry: firms adapt fast, the state's lead times are longer.</li>
+                            <li>Capability outruns the dates: systems to be assessed in December 2027 are built on models that did not exist when the standards were drafted.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -477,6 +506,7 @@
                             <li>Robust operation requires control, documentation and human review — the demo→production gap persists.</li>
                             <li>Broad but shallow use; local gains don't show up across the whole P&L.</li>
                             <li>The EU begins to mature standards and supervision; Sweden gains time to sequence.</li>
+                            <li>The dates outrun capability: standards, notified bodies and supervision are in place before the systems they are to assess are in operation.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -492,6 +522,7 @@
                             <li>Large and digitally mature players pull ahead; smaller firms lack specialists and procurement capability.</li>
                             <li>The public sector splits: some agencies build capability, others get stuck in pilots.</li>
                             <li>Dependence on external clouds and models starts to show in price and terms.</li>
+                            <li>Same dates, different cost: compliance becomes a fixed charge that large suppliers carry more easily than small ones.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -506,6 +537,14 @@
                 <div class="year-number">2028</div>
                 <div class="year-label">The threshold question</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Fixed points in the rulebook</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2 Aug 2028</span> Chapter III, Sections 1–3 for high-risk systems under Article 6(1) and Annex I — AI as a safety component in a regulated product.</li>
+                    <li><span class="reg-strip__date">Machinery</span> has since the omnibus fallen under the Machinery Regulation (EU) 2023/1230, not Machinery Directive 2006/42/EC.</li>
+                </ul>
+                <div class="reg-strip__src">Dates under Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026. The dates are the same in all three scenarios — the law is not a scenario variable.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -517,6 +556,7 @@
                             <li>A possible qualitative threshold: Legg's 50/50 for “minimal AGI” falls here — general agent capability in digital environments.</li>
                             <li>Large parts of administrative and knowledge work get new cost and production conditions.</li>
                             <li>On early threshold passage (2028–2031), normal-tempo lead times don't suffice — rapid sequencing comes into play.</li>
+                            <li>Product-embedded AI reaches the deadline while hardware cycles run longer than model cycles — machines are certified against models already replaced.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -532,6 +572,7 @@
                             <li>AGI claims may prove premature; episodic memory, continual learning and robust world models remain unsolved.</li>
                             <li>Adoption broadens but stays uneven; a skills shortage is a real brake.</li>
                             <li>More time to sequence reforms — but only if the time is actually used.</li>
+                            <li>The longer deadline is used: manufacturers have time to revise design, documentation and testing before Annex I applies.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -547,6 +588,7 @@
                             <li>If the first general systems are controlled by a few players in the US/China, European dependence becomes structural.</li>
                             <li>The EU can regulate the systems but not produce them on relevant timescales.</li>
                             <li>The gap between those with and without access to the best capacity becomes a new line of division.</li>
+                            <li>Access to notified bodies and testing capacity is distributed unevenly across manufacturers and countries.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Click for details ↓</div>
@@ -805,6 +847,10 @@
                 <div class="theme-name">Capacity threshold &amp; readiness</div>
                 <div class="theme-desc">The threshold (Hassabis, Hinton, Legg) sets the tempo. Rapid sequencing is reversible, indicator-driven readiness for early passage — not panic decisions.</div>
             </div>
+            <div class="theme-card">
+                <div class="theme-name">From capability to position</div>
+                <div class="theme-desc">Four links held apart: passes the test, performs reliably in operation, can be integrated legally and economically — and the position is removed. The middle links set the pace.</div>
+            </div>
         </div>
     </section>
 
@@ -814,7 +860,7 @@
         <div class="method-text">
             <p>The framework rests on three symmetrically constructed scenarios — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong> — each tested against the same seven variables (capability curve, adoption rate, investment durability, energy and data centres, geopolitical concentration, Swedish response and EU coordination). They should not be read as value judgements or as a guess about which future “wins”, but as three tests of the same reform package: a reform that works in only one scenario is too fragile.</p>
             <p>The timeline projects each scenario's trajectory 2026–2040 from the report's logic and documented signals. The analysis distinguishes the <em>documented</em> (established measurements and expert assessments) from the <em>forecast</em> (a guess about outcomes) — and does not try to predict which outcome occurs, but to build readiness that holds across several possible courses. The May addendum adds an eighth variable, the capacity threshold (Hassabis, Hinton, Legg), and rapid sequencing as a readiness track for early threshold passage.</p>
-            <p>All data points and positions derive from published sources — including SCB, Epoch AI, OECD, IEA, McKinsey and the IMF. The basis is the report <em>Sweden’s AI Transition</em> (May 2026) and is revised as the source base ages. See <a href="/en/kallor.html">Sources</a>.</p>
+            <p>All data points and positions derive from published sources — including SCB, Epoch AI, OECD, IEA, McKinsey and the IMF. The basis is the report <em>Sweden’s AI Transition</em> (May 2026) and is revised as the source base ages. The September addendum brings the AI Act’s dates of application into the timeline as fixed points, in the wording that follows Regulation (EU) 2026/1744. See <a href="/en/kallor.html">Sources</a>.</p>
         </div>
     </section>
 
