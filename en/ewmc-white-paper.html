@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EWMC White Paper &mdash; AI-skiftet</title>
+  <meta name="description" content="Emotionally Weighted Memory Consolidation: a product architecture for personal AI assistants. White paper by Rolf Skogling.">
+  <meta name="date" content="2026-03-01">
+  <meta property="og:title" content="EWMC White Paper &mdash; Emotionally Weighted Memory Consolidation">
+  <meta property="og:description" content="A product architecture for personal AI assistants: memories weighted by emotional intensity, consequence and recurrence.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/ewmc-white-paper.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/ewmc-white-paper.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .site-nav__links{margin-left:0}
+    .article-body h2{margin-top:2.2rem}
+    .article-body h3{margin-top:1.6rem;font-size:1.08rem}
+    .article-body ul,.article-body ol{padding-left:1.3rem;margin:.9rem 0}
+    .article-body li{margin-bottom:.4rem}
+    .wp-rule{border:0;border-top:1px solid var(--line);margin:2.2rem 0}
+    .article-body pre{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;overflow-x:auto;font-size:.82rem;line-height:1.5}
+    .article-body code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em}
+    .article-body pre code{font-size:1em}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <a href="/en/minnet-som-vager-ewmc.html" class="article-header__back">&larr; To the essay</a>
+    <h1>Emotionally Weighted Memory Consolidation: A Product Architecture for Personal AI Assistants</h1>
+    <p class="article-meta">White paper &middot; Rolf Skogling &middot; March 2026</p>
+    <p class="article-lede"><em>A product architecture for personal AI assistants.</em></p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="container">
+
+<p><strong>A White Paper for AI Lab Leadership</strong></p>
+<p><strong>Author:</strong> Rolf Skogling, Skogling Consulting <strong>Date:</strong> March 2026 <strong>Version:</strong> 4 — AI Labs Edition</p>
+<hr class="wp-rule">
+<h2>Executive Summary</h2>
+<p>Current AI memory systems (Claude's memory, ChatGPT memory, Gemini memory, etc.) treat all stored information equally. A user's career crisis shared at 3 AM competes for relevance with a preference for dark mode. This is not a technical necessity — it is a design choice, and it is wrong.</p>
+<p>Emotionally Weighted Memory Consolidation (EWMC) is a concrete architectural improvement that would transform how users experience AI memory. By detecting emotional intensity at encoding, reinforcing memories based on consequences and recurrence, implementing adaptive decay with emotional floors, and running periodic background consolidation, AI assistants would shift from "I have a record of what you told me" to "I remember what mattered to you."</p>
+<p>This is not research. This is a product differentiator. The lab that ships this first wins.</p>
+<hr class="wp-rule">
+<h2>The Problem: Why Current Memory Systems Feel Hollow</h2>
+<p>When a user returns to an AI assistant with memory enabled, they expect something specific: recognition of what <em>they</em> found significant. Instead, they encounter a system that has recorded facts but missed meaning.</p>
+<p><strong>Three user experience failures:</strong></p>
+<ol>
+<li><strong>The 3 AM Signal Problem</strong>: A user shares a breakthrough insight about a career transition at midnight, laboring over the explanation for 20 minutes. The system stores it as one fact among thousands. Six months later, when the user mentions the same topic, the system treats it with the same relevance as a mention of a favorite coffee shop.</li>
+</ol>
+<ol>
+<li><strong>The Recurrence Blind Spot</strong>: A user returns to a technical problem five times across as many months. Each conversation is stored, but the system doesn't recognize that the <em>repeated return</em> signals importance. It doesn't think: "This user cares about this problem. It shapes their work."</li>
+</ol>
+<ol>
+<li><strong>The Retroactive Validation Missed</strong>: A user says, "That advice you gave me three months ago changed everything. I got the promotion." The system stores this new fact but doesn't retrospectively update the weight of the original advice memory.</li>
+</ol>
+<p>These are not AI limitations. They are architecture decisions. Modern sentiment analysis, behavioral signal detection, and adaptive memory decay are all solved problems. What is missing is the decision to wire them together.</p>
+<hr class="wp-rule">
+<h2>The User Experience Upside</h2>
+<p>When EWMC is implemented correctly, users report a qualitatively different feeling of being "known":</p>
+<ul>
+<li><strong>Recognition of crises vs. routine</strong>: When a user discloses a health scare, relationship difficulty, or existential uncertainty, the system understands this is not equivalent to a preference update. The emotional intensity is detected and preserved.</li>
+</ul>
+<ul>
+<li><strong>Understanding of investment</strong>: Repeated engagement with a topic is recognized as a signal of importance. The system learns: "This user thinks about productivity systems obsessively" or "This user is deeply interested in the philosophy of consciousness."</li>
+</ul>
+<ul>
+<li><strong>Retroactive learning</strong>: When a user validates a previous suggestion ("that technique you suggested is now my daily practice"), the original memory is strengthened. The system learns to recognize its own successful advice, not just to record new facts.</li>
+</ul>
+<ul>
+<li><strong>Natural forgetfulness with purpose</strong>: Casual details fade naturally, but emotionally significant moments persist. This mirrors human memory and creates a sense of being understood rather than recorded.</li>
+</ul>
+<hr class="wp-rule">
+<h2>Competitive Positioning</h2>
+<p>The AI assistant market is consolidating around three players (Anthropic, OpenAI, Google). All three have launched memory features. None have emotionally weighted memory.</p>
+<p>First-mover advantage in EWMC is substantial:</p>
+<ul>
+<li><strong>User retention</strong>: An AI that "remembers what matters" has measurably higher engagement. This is a stickiness factor competitors will scramble to copy.</li>
+<li><strong>Differentiation in a feature-parity world</strong>: Memory itself is table stakes. Emotionally weighted memory is not. The lab that ships it becomes the "AI that truly knows you."</li>
+<li><strong>Brand alignment</strong>: Anthropic's positioning around human-aligned AI becomes concrete when the system demonstrably treats human significance the way humans do — emotionally.</li>
+<li><strong>Defensible moat</strong>: Once users have invested in building memory with an emotionally-aware system, switching costs rise. The continuity matters.</li>
+</ul>
+<hr class="wp-rule">
+<h2>Technical Implementation: Four Phases</h2>
+<p>EWMC can be integrated into existing memory architectures without full rewrites. The implementation path is incremental and de-risked:</p>
+<h3>Phase 1: Affect Detection at Encoding (Weeks 1-4)</h3>
+<p><strong>What happens:</strong> When a memory is created, score it for emotional intensity using existing signals.</p>
+<p><strong>Signals detected:</strong></p>
+<ul>
+<li>Linguistic markers: Exclamation points, intensifiers ("absolutely," "completely"), explicit emotional language ("I'm frustrated," "this is amazing")</li>
+<li>Behavioral markers: Conversation length exceeding baseline, rapid follow-up messages, timestamps outside normal hours (3 AM insights), explicit validation statements ("this is important," "I've been thinking about this for weeks")</li>
+<li>Domain gravity: Topics known to be high-stakes (career, health, relationships, existential questions)</li>
+</ul>
+<p><strong>Output:</strong> Each memory receives an emotional intensity score (0-100) at creation time.</p>
+<p><strong>Implementation effort:</strong> Low. Sentiment analysis tooling (existing Hugging Face models, fine-tuned RoBERTa) and rule-based behavioral detection are mature.</p>
+<p><strong>Risk:</strong> Low. This is read-only enhancement; existing memory retrieval is unaffected.</p>
+<h3>Phase 2: Consequence Reinforcement (Weeks 5-8)</h3>
+<p><strong>What happens:</strong> Memories are retroactively strengthened when the system detects that they influenced decisions or outcomes.</p>
+<p><strong>Reinforcement signals:</strong></p>
+<ul>
+<li><strong>Recurrence</strong>: User returns to the same topic in a later session. Flag the original memory as "consequential."</li>
+<li><strong>Decision validation</strong>: User explicitly states that a previous suggestion influenced a choice ("I took your advice on X and it worked").</li>
+<li><strong>Topic persistence</strong>: User continues working on a problem that was the subject of an emotionally intense conversation. Each return adds weight.</li>
+</ul>
+<p><strong>Output:</strong> High-consequence memories accumulate a secondary "reinforcement score" independent of encoding intensity.</p>
+<p><strong>Implementation effort:</strong> Medium. Requires topic tracking across sessions and simple NLP to detect validation statements.</p>
+<p><strong>Risk:</strong> Low to medium. Validation detection can produce false positives. Mitigate with conservative thresholds and user-visible memory weighting (users can see and adjust how the system weighted their conversations).</p>
+<h3>Phase 3: Adaptive Decay with Emotional Floors (Weeks 9-12)</h3>
+<p><strong>What happens:</strong> Replace uniform memory decay with emotion-weighted decay.</p>
+<p><strong>Current behavior:</strong> All memories decay at a fixed rate. A routine detail from 6 months ago has the same relevance curve as an emotionally significant event from 6 months ago.</p>
+<p><strong>New behavior:</strong></p>
+<ul>
+<li>Low-affect memories decay normally or faster</li>
+<li>High-affect memories have a <strong>decay floor</strong> — a minimum relevance score they never drop below</li>
+<li>Memories that are both high-affect <em>and</em> reinforced become <strong>core memories</strong> — persistent anchors in the user profile, resistant to decay</li>
+</ul>
+<p><strong>Example:</strong> A user's anxiety about a major life transition should not fade from the assistant's awareness the way a discussion of which text editor they use might.</p>
+<p><strong>Implementation effort:</strong> Medium. Requires modification of the decay function in the vector database layer.</p>
+<p><strong>Risk:</strong> Medium. If decay floors are too high, recent useful information gets crowded out. Mitigate with empirical tuning and user feedback.</p>
+<h3>Phase 4: Background Consolidation Cycles (Weeks 13-16)</h3>
+<p><strong>What happens:</strong> Inspired by NREM sleep consolidation and SWR-mediated replay, the system runs periodic background processes that re-evaluate and reorganize memory.</p>
+<p><strong>Background process operates on a weekly cycle:</strong></p>
+<ul>
+<li>Re-evaluate memory weights based on accumulated behavioral signals</li>
+<li>Cluster related emotional memories into coherent narratives (e.g., "career transition journey" pulls together multiple conversations across months)</li>
+<li>Identify conflicts or contradictions and flag them for user review</li>
+<li>Promote reinforced memories to higher-level user profile summaries</li>
+<li>Monitor for "consolidation drift" by spot-checking consolidated memories against source conversations</li>
+<li>Update retrieval indices to reflect new weighting</li>
+</ul>
+<p><strong>Output:</strong> Memory landscape becomes denser at the center (core themes, recurring interests) and sparser at the edges (one-off queries). Retrieval quality improves because the system has a better implicit model of what the user cares about.</p>
+<p><strong>Implementation effort:</strong> Medium to high. Requires background job infrastructure, clustering algorithms, and drift detection.</p>
+<p><strong>Risk:</strong> Medium. Background processes can be resource-intensive. Design for efficient batch processing. Risk of consolidation drift (inaccuracy introduced by successive compressions) exists but is manageable with validation checks.</p>
+<hr class="wp-rule">
+<h2>Practical Concerns: Addressed</h2>
+<h3>Privacy and User Control</h3>
+<p><strong>Concern</strong>: Emotional weighting could reveal sensitive information about when users are vulnerable.</p>
+<p><strong>Mitigation</strong>:</p>
+<ul>
+<li>Emotional weighting is internal to the user's memory. It is not transmitted, analyzed by third parties, or used for external purposes.</li>
+<li>Users have full visibility into how memories are weighted. A UI showing the emotional intensity score and reinforcement signals turns what could be opaque into something transparent and under user control.</li>
+<li>Users can manually adjust or remove emotional weightings they disagree with.</li>
+</ul>
+<h3>Bias Risks: Whose Emotions Count?</h3>
+<p><strong>Concern</strong>: The system might overweight certain emotional states (e.g., frustration) while underweighting others (e.g., quiet contentment), leading to a biased model of the user.</p>
+<p><strong>Mitigation</strong>:</p>
+<ul>
+<li>Design emotion detection to be broad: joy, frustration, anxiety, wonder, relief, disappointment are all treated as signal. This prevents overweighting of negative states.</li>
+<li>Behavioral signals (recurrence, explicit validation) act as independent checks on encoding-time sentiment. A topic can be low-sentiment but high-consequence, and vice versa.</li>
+<li>Monitor for drift in detected emotional distributions. If the system is overweighting negative emotions, this becomes visible in periodic reports.</li>
+</ul>
+<h3>Pathological Memory Consolidation Risk</h3>
+<p><strong>Concern</strong>: When users interact with the AI during acute emotional crises (health scares, relationship breakdown, existential despair at 3 AM), those high-negative-affect interactions receive strong persistence floors and are continuously resurfaced during consolidation. Over time, this creates an "anxiety echo chamber" where the system learns to understand the user primarily through their darkest moments, persistently surfacing old traumas and encoding a distorted self-model. This is the AI equivalent of rumination disorder—not a storage error, but a consolidation pathology.</p>
+<p><strong>Mitigation</strong>:</p>
+<ul>
+<li><strong>Valence asymmetry</strong>: Implement asymmetric persistence floors where negative-affect memories are consolidated to extract lessons but with reduced emotional persistence at retrieval. Positive and meaning-integrative insights receive higher persistence floors even if originally lower-intensity. This mirrors REM sleep's reprocessing of traumatic memories while reducing physiological stress.</li>
+<li><strong>Emotional integration during consolidation</strong>: During background cycles, identify memories that are both high-negative-affect AND followed by evidence of coping or resolution in subsequent sessions. Reweight to emphasize the trajectory (crisis → understanding → resolution) rather than the raw distress.</li>
+<li><strong>Crisis interaction flagging</strong>: Detect acute crisis signals (very high negative affect, 3 AM timestamps, rapid escalation, risk indicators) and apply special consolidation treatment. Hold such memories at lower retrieval weight pending evidence of integration or recovery.</li>
+<li><strong>User transparency and control</strong>: Make emotional weighting visible, allow manual adjustment of persistence floors for crisis memories, and provide periodic "memory health checks" asking whether weighted memories feel representative.</li>
+</ul>
+<p>This is a product-level risk that requires architectural attention: emotional intensity can encode either learning or pathology, and consolidation systems must distinguish between them.</p>
+<h3>Computational Overhead</h3>
+<p><strong>Concern</strong>: Sentiment analysis, behavioral tracking, and background consolidation consume compute.</p>
+<p><strong>Mitigation</strong>:</p>
+<ul>
+<li>Sentiment analysis is run once at encoding time (not per retrieval) using lightweight models. Batch processing minimizes overhead.</li>
+<li>Behavioral signal detection is rule-based and cheap.</li>
+<li>Background consolidation runs on a schedule (weekly), not per-retrieval. It can be distributed to off-peak compute windows.</li>
+<li>Estimated overhead: 5-15% additional compute on the memory pipeline. Entirely manageable at scale.</li>
+</ul>
+<h3>Evaluation: How Do We Know It Works?</h3>
+<p><strong>Metrics</strong>:</p>
+<ul>
+<li><strong>User retention</strong>: EWMC users should show higher session-to-session return rates and longer average session duration.</li>
+<li><strong>Memory utility</strong>: When users are asked (in survey) whether the system "remembers what matters," EWMC users should score significantly higher.</li>
+<li><strong>Guidance accuracy</strong>: When EWMC makes suggestions based on stored memories, users should rate them as more relevant and actionable than baseline memory suggestions.</li>
+<li><strong>Benchmark performance</strong>: Create a synthetic benchmark (e.g., "user returns to topic 5 times; system should weight the original memory higher") and measure accuracy improvement.</li>
+</ul>
+<p>Start with a cohort study: 5% of memory users get EWMC (random assignment), measure retention and utility metrics over 8 weeks.</p>
+<hr class="wp-rule">
+<h2>Existing Work: We're Not Inventing</h2>
+<p>The components of EWMC are being researched. What's missing is application to personal AI assistants:</p>
+<ul>
+<li><strong>Self-Reflective Emotional RAG</strong> (recent) assigns emotion embeddings to memories and retrieves emotionally similar contexts, improving personality consistency by 33%.</li>
+<li><strong>smrti</strong> memory engine (2025, open-source) implements emotional valence as a first-class memory property with automatic persistence floors for high-valence items.</li>
+<li><strong>Mem0</strong> has demonstrated 26% improvement over baseline memory systems, but uses deduplication-focused consolidation, not emotional weighting.</li>
+<li><strong>HippoRAG</strong> (2024) models hippocampal consolidation for knowledge integration, improving multi-hop reasoning.</li>
+</ul>
+<p>The field has proven that the individual pieces work. No one has integrated them into a coherent architecture for mainstream AI assistants.</p>
+<hr class="wp-rule">
+<h2>The Strategic Window</h2>
+<p>AI memory is a feature that labs are actively shipping right now:</p>
+<ul>
+<li><strong>Claude (Anthropic)</strong>: Memory enabled in limited form, expanding.</li>
+<li><strong>ChatGPT (OpenAI)</strong>: Memory announced, rolling out.</li>
+<li><strong>Gemini (Google)</strong>: Memory features in development.</li>
+</ul>
+<p>All three systems are still immature. The architecture decisions being made today will shape the user experience for years. This is the moment to integrate EWMC.</p>
+<p>If we wait 18 months, it will be harder. By then, user memory profiles will be baked into existing systems, and retrofitting emotional weighting will require migration (expensive and risky).</p>
+<p>The lab that acts now—investing 4-5 months of engineering effort—captures the market position. Competitors will follow, but the first-mover advantage in retention and brand differentiation is real.</p>
+<hr class="wp-rule">
+<h2>Why I'm Sharing This</h2>
+<p>I should be transparent about what this is and what it isn't. I'm not an AI researcher or an ML engineer. I'm a manufacturing consultant who uses AI tools extensively in my daily work — and who, as a heavy user of AI assistants, has noticed something missing in how these systems remember.</p>
+<p>This paper is the result of that observation, developed with the help of AI-assisted research and synthesis. The core insight — that memory without emotional weighting is storage, not understanding — comes from lived experience as a power user, combined with reading the neuroscience and AI literature that supports it.</p>
+<p>I don't have the technical depth to implement EWMC myself. But I believe the idea has merit, and I'm sharing it in the hope that it reaches teams who can evaluate whether it belongs on their roadmap.</p>
+<p><strong>What I'd welcome:</strong></p>
+<ul>
+<li>Feedback from your memory systems team: Does this align with your thinking? Where does it fall short?</li>
+<li>A conversation about whether EWMC (or something like it) is already on your radar</li>
+<li>Honest pushback on what's naive, what's already solved, and what's genuinely new</li>
+</ul>
+<hr class="wp-rule">
+<h2>Conclusion</h2>
+<p>The AI memory products shipping today have an invisible design flaw: they don't distinguish the significant from the routine. This is not because the technology is unavailable—it's because no one has made the product decision to integrate emotion, consequence, and consolidation into a unified memory architecture.</p>
+<p>That's an opportunity, not a limitation.</p>
+<p>The lab that builds the AI that "remembers what matters" will own the relationship with users. Not because memory itself is novel—all three major labs have it—but because emotional weight transforms memory from a feature into an experience.</p>
+<p>This white paper is one user's attempt to articulate what that experience should feel like — and a framework for how to build it. I hope it's useful.</p>
+<hr class="wp-rule">
+<p><strong>Appendix: Technical Notes for Implementation Teams</strong></p>
+<h3>A.1 Sentiment Detection</h3>
+<p>Start with a fine-tuned RoBERTa model (e.g., Hugging Face <code>distilroberta-base-finetuned-financial-sentiment-analysis</code> as baseline, retrain on conversation data). For Phase 1, aim for 85%+ accuracy on binary (emotional/neutral) classification.</p>
+<p>Rule-based behavioral signals: regex patterns for exclamation points, intensifiers ("really," "absolutely"), explicit markers ("I'm worried," "this matters"), and metadata (timestamp &gt; 11 PM or &lt; 6 AM, message length &gt; 2x median).</p>
+<h3>A.2 Decay Function</h3>
+<p>Replace standard exponential decay <code>w(t) = w₀ × e^(-λt)</code> with asymptotic-floor formulation:</p>
+<pre><code>// Emotional floor is proportional to emotional intensity and reinforcement count
+floor(a) = base_floor if emotional_intensity &gt; threshold else 0
+
+// Decay acts on distance to floor, creating asymptotic behavior
+dw/dt = -λ​(a) × (w(t) - floor(a))
+
+// Solution (as continuous curve):
+w(t) = floor(a) + (w - floor(a)) × e^(-λ(a)×t)</code></pre>
+<p><strong>Key improvement</strong>: Unlike piecewise functions, this formulation naturally creates asymptotic decay—relevance approaches the floor smoothly and never crosses it. The decay rate itself slows as the memory approaches its floor. This is mathematically cleaner and psychologically more accurate than hard constraints.</p>
+<p>Tune <code>base_floor</code>, <code>threshold</code>, and <code>λ(a)</code> parameters via A/B testing on user retention metrics.</p>
+<h3>A.3 Clustering in Background Consolidation</h3>
+<p>Use hierarchical clustering on memory embeddings, weighted by emotional intensity and reinforcement score. Group related memories into "life themes" (career, relationships, creative projects, health, learning). These clusters become user profile summaries for retrieval.</p>
+<h3>A.4 Safety: Monitoring for Manipulation</h3>
+<p>Concern: Could emotional weighting be exploited by prompt injection attacks or adversarial inputs?</p>
+<p>Mitigation:</p>
+<ul>
+<li>Emotional weighting is user-specific and internal to memory, not part of the generation prompt.</li>
+<li>Separate the emotional weighting model from the main LLM to reduce attack surface.</li>
+<li>Monitor for sudden shifts in detected emotional distributions (e.g., if all recent interactions suddenly score as "critical," this is a red flag).</li>
+<li>Log and audit all high-weight memory retrievals to catch anomalies.</li>
+</ul>
+<hr class="wp-rule">
+<p><strong>Contact:</strong> Rolf Skogling, Skogling Consulting, Arvika, Sweden — rolf.skogling@gmail.com</p>
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
