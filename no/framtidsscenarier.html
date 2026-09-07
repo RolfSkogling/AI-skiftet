@@ -198,6 +198,24 @@
 
         /* === THEMES === */
         .themes-section { max-width: 960px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+        /* === REGELVERKETS FASTA PUNKTER (2026-09-07) === */
+        .reg-strip { border: 1px solid var(--line-strong); border-left: 3px solid var(--muted);
+            border-radius: 8px; padding: 0.8rem 0.95rem; margin: 0 0 1.1rem; background: var(--bg-surface); }
+        .reg-strip__label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+            color: var(--muted); font-weight: 600; margin-bottom: 0.45rem; }
+        .reg-strip__items { list-style: none; margin: 0; padding: 0; display: grid;
+            grid-template-columns: repeat(2, 1fr); gap: 0.35rem 1.1rem; }
+        .reg-strip__items li { font-size: 0.8rem; line-height: 1.45; color: var(--text-secondary);
+            padding-left: 0.95rem; position: relative; }
+        .reg-strip__items li::before { content: '\2014'; position: absolute; left: 0; color: var(--muted); }
+        .reg-strip__date { font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums;
+            white-space: nowrap; }
+        .reg-strip__src { font-size: 0.72rem; line-height: 1.4; color: var(--muted); margin-top: 0.55rem; }
+        .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: 2; }
+        @media (max-width: 768px) {
+            .reg-strip__items { grid-template-columns: 1fr; }
+            .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: auto; }
+        }
         .themes-title {
             font-family: 'Playfair Display', serif; font-size: 1.5rem;
             font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
@@ -329,7 +347,7 @@
       </div>
 
         <p class="hero-subtitle">Tre scenarioer — <strong>Akselerasjon</strong>, <strong>Friksjon</strong> og <strong>Splittelse</strong> — år for år fra i dag til 2040. Ikke prognoser og ikke vurderinger, men konsistente fortellinger om hvordan dagens usikkerheter kan kombineres. Bygger på rapporten <em>Sveriges AI-omstilling</em> (mai 2026).</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Sist oppdatert juni 2026</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Sist oppdatert september 2026</p>
     </section>
 
     <figure class="essay-visual">
@@ -450,6 +468,16 @@
                 <div class="year-number">2027</div>
                 <div class="year-label">Tidlig divergens</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Faste punkter i regelverket</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2. aug. 2026</span> åpenhetskravene i artikkel 50 får anvendelse.</li>
+                    <li><span class="reg-strip__date">2. des. 2026</span> nye forbud i artikkel 5; overgangen for artikkel 50.2 løper ut.</li>
+                    <li><span class="reg-strip__date">2. aug. 2027</span> GPAI-modeller som var på markedet før 2. august 2025, skal oppfylle kravene.</li>
+                    <li><span class="reg-strip__date">2. des. 2027</span> kapittel III avsnitt 1–3 for høyrisiko etter artikkel 6.2 og vedlegg III.</li>
+                </ul>
+                <div class="reg-strip__src">Datoer etter forordning (EU) 2024/1689, endret ved forordning (EU) 2026/1744 (digital omnibusforordning om KI), i kraft 27. juli 2026. Datoene er de samme i alle tre scenarioene — loven er ikke en scenariovariabel.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -462,6 +490,7 @@
                             <li>Bedrifter bygger om arbeidsflyter rundt agenter i kode, support, analyse og saksbehandling.</li>
                             <li>Tidlige arbeidsmarkedssignaler i eksponerte yrker — inngangsjobber og rekruttering — før total arbeidsledighet beveger seg.</li>
                             <li>En politisk asymmetri: bedrifter omstiller raskt, statens ledetider er lengre.</li>
+                            <li>Evnen kommer før datoene: systemer som skal vurderes i desember 2027, bygger på modeller som ikke fantes da standardene ble skrevet.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -477,6 +506,7 @@
                             <li>Robust drift krever kontroll, dokumentasjon og menneskelig gjennomgang — gapet demo→drift vedvarer.</li>
                             <li>Bred, men grunn bruk; lokale gevinster vises ikke i hele resultatregnskapet.</li>
                             <li>EU begynner å modne standarder og tilsyn; Sverige får tid til å sekvensere.</li>
+                            <li>Datoene kommer før evnen: standarder, tekniske kontrollorganer og tilsyn er på plass før systemene de skal prøve, er i drift.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -492,6 +522,7 @@
                             <li>Store og digitalt modne aktører drar fra; mindre bedrifter mangler spesialister og bestillerkompetanse.</li>
                             <li>Offentlig sektor splittes: noen etater bygger kapasitet, andre blir sittende fast i pilot.</li>
                             <li>Avhengigheten av eksterne skyer og modeller begynner å vises i pris og vilkår.</li>
+                            <li>Samme datoer, ulik kostnad: etterlevelse blir en fast avgift som store leverandører bærer lettere enn små.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -506,6 +537,14 @@
                 <div class="year-number">2028</div>
                 <div class="year-label">Terskelspørsmålet</div>
             </div>
+            <div class="reg-strip">
+                <div class="reg-strip__label">Faste punkter i regelverket</div>
+                <ul class="reg-strip__items">
+                    <li><span class="reg-strip__date">2. aug. 2028</span> kapittel III avsnitt 1–3 for høyrisiko etter artikkel 6.1 og vedlegg I — KI som sikkerhetskomponent i regulert produkt.</li>
+                    <li><span class="reg-strip__date">Maskiner</span> ligger etter omnibusen under maskinforordningen (EU) 2023/1230, ikke maskindirektivet 2006/42/EF.</li>
+                </ul>
+                <div class="reg-strip__src">Datoer etter forordning (EU) 2024/1689, endret ved forordning (EU) 2026/1744 (digital omnibusforordning om KI), i kraft 27. juli 2026. Datoene er de samme i alle tre scenarioene — loven er ikke en scenariovariabel.</div>
+            </div>
             <div class="scenarios">
                 <div class="scenario-card acceleration" data-scenario="acceleration">
                     <div class="card-accent"></div>
@@ -517,6 +556,7 @@
                             <li>En mulig kvalitativ terskel: Leggs 50/50 for «minimal AGI» faller her — generell agentkapasitet i digitale miljøer.</li>
                             <li>Store deler av administrasjons- og kunnskapsarbeid får nye kostnads- og produksjonsvilkår.</li>
                             <li>Ved tidlig terskelpassasje (2028–2031) holder ikke normaltaktens ledetider — hurtigsekvens blir aktuelt.</li>
+                            <li>Produktinnebygd KI når fristen mens maskinvaresyklusene er lengre enn modellsyklusene — maskiner sertifiseres mot modeller som alt er byttet ut.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -532,6 +572,7 @@
                             <li>AGI-påstander kan vise seg for tidlige; episodisk minne, kontinuerlig læring og robust verdensmodell er ennå uløst.</li>
                             <li>Adopsjonen utvides, men forblir ujevn; kompetansemangel er en reell brems.</li>
                             <li>Mer tid til å sekvensere reformer — men bare hvis tiden faktisk brukes.</li>
+                            <li>Den lengre fristen brukes: produsenter rekker å legge om konstruksjon, dokumentasjon og prøving før vedlegg I.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -547,6 +588,7 @@
                             <li>Hvis de første generelle systemene kontrolleres av få aktører i USA/Kina, blir den europeiske avhengigheten strukturell.</li>
                             <li>EU kan regulere systemene, men ikke produsere dem på relevante tidsskalaer.</li>
                             <li>Forskjellen mellom dem med og uten tilgang til beste kapasitet blir en ny delelinje.</li>
+                            <li>Tilgangen til tekniske kontrollorganer og prøvingskapasitet fordeles ujevnt mellom produsenter og land.</li>
                             </ul>
                         </div>
                         <div class="card-expand-hint">Klikk for detaljer ↓</div>
@@ -805,6 +847,10 @@
                 <div class="theme-name">Kapasitetsterskel &amp; beredskap</div>
                 <div class="theme-desc">Terskelen (Hassabis, Hinton, Legg) setter takten. Hurtigsekvens er reversibel, indikatordrevet beredskap for tidlig passasje — ikke panikkbeslutninger.</div>
             </div>
+            <div class="theme-card">
+                <div class="theme-name">Fra evne til stilling</div>
+                <div class="theme-desc">Fire ledd holdes fra hverandre: klarer testen, klarer den pålitelig i drift, lar seg integrere rettslig og økonomisk — og stillingen fjernes. Mellomleddene avgjør takten.</div>
+            </div>
         </div>
     </section>
 
@@ -814,7 +860,7 @@
         <div class="method-text">
             <p>Rammeverket bygger på tre symmetrisk konstruerte scenarioer — <strong>Akselerasjon</strong>, <strong>Friksjon</strong> og <strong>Splittelse</strong> — som hver prøves mot de samme sju variablene (kapasitetskurve, adopsjonstakt, investeringsutholdenhet, energi og datasentre, geopolitisk konsentrasjon, svensk respons og EU-samordning). De skal ikke leses som vurderinger eller som en gjetning om hvilken framtid som «vinner», men som tre prøvinger av samme reformpakke: en reform som bare virker i ett scenario er for skjør.</p>
             <p>Tidslinjen projiserer hvert scenarios bane 2026–2040 ut fra rapportens logikk og dokumenterte signaler. Analysen skiller det <em>dokumenterte</em> (etablerte målinger og ekspertvurderinger) fra det <em>prognostiserte</em> (en gjetning om utfall) — og prøver ikke å forutsi hvilket utfall som inntreffer, men å bygge beredskap som holder under flere mulige forløp. Mai-tillegget supplerer med en åttende variabel, kapasitetsterskelen (Hassabis, Hinton, Legg), og hurtigsekvens som beredskapsspor ved tidlig terskelpassasje.</p>
-            <p>Alle datapunkter og posisjoner stammer fra publiserte kilder — bl.a. SCB, Epoch AI, OECD, IEA, McKinsey og IMF. Grunnlaget er rapporten <em>Sveriges AI-omstilling</em> (mai 2026) og revideres når kildegrunnlaget eldes. Se <a href="/no/kallor.html">Kilder</a>.</p>
+            <p>Alle datapunkter og posisjoner stammer fra publiserte kilder — bl.a. SCB, Epoch AI, OECD, IEA, McKinsey og IMF. Grunnlaget er rapporten <em>Sveriges AI-omstilling</em> (mai 2026) og revideres når kildegrunnlaget eldes. Septembertillegget fører KI-forordningens anvendelsesdatoer inn i tidslinjen som faste punkter, i ordlyden etter forordning (EU) 2026/1744. Se <a href="/no/kallor.html">Kilder</a>.</p>
         </div>
     </section>
 
