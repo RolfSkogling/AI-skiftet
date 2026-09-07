@@ -216,6 +216,15 @@
             .reg-strip__items { grid-template-columns: 1fr; }
             .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: auto; }
         }
+        /* === ÅRSANKARE + SEPTEMBERNOT (2026-09-07) === */
+        .year-section { scroll-margin-top: 172px; }
+        .hero-meta__note { display: block; margin-top: 0.35rem; }
+        /* Utökad träffyta för fingret; vertikal padding på inline-element
+           påverkar inte radhöjden, horisontell kvittas med negativ marginal. */
+        .hero-meta__note a { padding: 9px 5px; margin: 0 -5px; }
+        @media (max-width: 768px) {
+            .year-section { scroll-margin-top: 230px; }
+        }
         .themes-title {
             font-family: 'Playfair Display', serif; font-size: 1.5rem;
             font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
@@ -347,7 +356,7 @@
       </div>
 
         <p class="hero-subtitle">Three scenarios — <strong>Acceleration</strong>, <strong>Friction</strong> and <strong>Divergence</strong> — year by year from today to 2040. Not forecasts and not value judgements, but consistent stories of how today's uncertainties may combine. Based on the report <em>Sweden's AI Transition</em> (May 2026).</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated September 2026</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Last updated September 2026<span class="hero-meta__note">The September addendum adds the fixed regulatory dates for <a href="#ar-2027">2027</a> and <a href="#ar-2028">2028</a>, and one new cross-cutting theme.</span></p>
     </section>
 
     <figure class="essay-visual">
@@ -406,7 +415,7 @@
     <section class="timeline">
 
         <!-- 2026 -->
-        <div class="year-section" data-year="2026">
+        <div class="year-section" id="ar-2026" data-year="2026">
             <div class="year-header">
                 <div class="year-number">2026</div>
                 <div class="year-label">Baseline: documented signals</div>
@@ -463,7 +472,7 @@
         </div>
 
         <!-- 2027 -->
-        <div class="year-section" data-year="2027">
+        <div class="year-section" id="ar-2027" data-year="2027">
             <div class="year-header">
                 <div class="year-number">2027</div>
                 <div class="year-label">Early divergence</div>
@@ -532,7 +541,7 @@
         </div>
 
         <!-- 2028 -->
-        <div class="year-section" data-year="2028">
+        <div class="year-section" id="ar-2028" data-year="2028">
             <div class="year-header">
                 <div class="year-number">2028</div>
                 <div class="year-label">The threshold question</div>
@@ -598,7 +607,7 @@
         </div>
 
         <!-- 2029 -->
-        <div class="year-section" data-year="2029">
+        <div class="year-section" id="ar-2029" data-year="2029">
             <div class="year-header">
                 <div class="year-number">2029</div>
                 <div class="year-label">The middle phase begins</div>
@@ -653,7 +662,7 @@
         </div>
 
         <!-- 2030 -->
-        <div class="year-section" data-year="2030">
+        <div class="year-section" id="ar-2030" data-year="2030">
             <div class="year-header">
                 <div class="year-number">2030</div>
                 <div class="year-label">The sequencing test</div>
@@ -708,7 +717,7 @@
         </div>
 
         <!-- 2035 -->
-        <div class="year-section" data-year="2035">
+        <div class="year-section" id="ar-2035" data-year="2035">
             <div class="year-header">
                 <div class="year-number">2035</div>
                 <div class="year-label">Institutionalisation — or catching up</div>
@@ -763,7 +772,7 @@
         </div>
 
         <!-- 2040 -->
-        <div class="year-section" data-year="2040">
+        <div class="year-section" id="ar-2040" data-year="2040">
             <div class="year-header">
                 <div class="year-number">2040</div>
                 <div class="year-label">Three paths, four outcomes</div>
