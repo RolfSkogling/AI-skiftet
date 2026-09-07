@@ -216,6 +216,15 @@
             .reg-strip__items { grid-template-columns: 1fr; }
             .themes-grid > .theme-card:last-child:nth-child(3n+1) { grid-column: auto; }
         }
+        /* === ÅRSANKARE + SEPTEMBERNOT (2026-09-07) === */
+        .year-section { scroll-margin-top: 172px; }
+        .hero-meta__note { display: block; margin-top: 0.35rem; }
+        /* Utökad träffyta för fingret; vertikal padding på inline-element
+           påverkar inte radhöjden, horisontell kvittas med negativ marginal. */
+        .hero-meta__note a { padding: 9px 5px; margin: 0 -5px; }
+        @media (max-width: 768px) {
+            .year-section { scroll-margin-top: 230px; }
+        }
         .themes-title {
             font-family: 'Playfair Display', serif; font-size: 1.5rem;
             font-weight: 700; margin-bottom: 1.5rem; color: var(--text);
@@ -348,7 +357,7 @@
       </div>
 
         <p class="hero-subtitle">Tre scenarier — <strong>Acceleration</strong>, <strong>Friktion</strong> och <strong>Delning</strong> — år för år från nuläget till 2040. Inte prognoser och inte värderingar, utan konsekventa berättelser om hur dagens osäkerheter kan kombineras. Bygger på dokumentet <em>Sveriges AI-omställning</em> (maj 2026).</p>
-        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad september 2026</p>
+        <p class="hero-meta">AI-skiftet · Rolf Skogling · Senast uppdaterad september 2026<span class="hero-meta__note">Septembertillägget för in regelverkets fasta datum för <a href="#ar-2027">2027</a> och <a href="#ar-2028">2028</a>, samt ett nytt tvärgående tema.</span></p>
     </section>
 
     <figure class="essay-visual">
@@ -409,7 +418,7 @@
     <section class="timeline">
 
         <!-- 2026 -->
-        <div class="year-section" data-year="2026">
+        <div class="year-section" id="ar-2026" data-year="2026">
             <div class="year-header">
                 <div class="year-number">2026</div>
                 <div class="year-label">Nuläge: belagda signaler</div>
@@ -466,7 +475,7 @@
         </div>
 
         <!-- 2027 -->
-        <div class="year-section" data-year="2027">
+        <div class="year-section" id="ar-2027" data-year="2027">
             <div class="year-header">
                 <div class="year-number">2027</div>
                 <div class="year-label">Tidig divergens</div>
@@ -535,7 +544,7 @@
         </div>
 
         <!-- 2028 -->
-        <div class="year-section" data-year="2028">
+        <div class="year-section" id="ar-2028" data-year="2028">
             <div class="year-header">
                 <div class="year-number">2028</div>
                 <div class="year-label">Tröskelfrågan</div>
@@ -601,7 +610,7 @@
         </div>
 
         <!-- 2029 -->
-        <div class="year-section" data-year="2029">
+        <div class="year-section" id="ar-2029" data-year="2029">
             <div class="year-header">
                 <div class="year-number">2029</div>
                 <div class="year-label">Mellanfasen tar vid</div>
@@ -656,7 +665,7 @@
         </div>
 
         <!-- 2030 -->
-        <div class="year-section" data-year="2030">
+        <div class="year-section" id="ar-2030" data-year="2030">
             <div class="year-header">
                 <div class="year-number">2030</div>
                 <div class="year-label">Sekvenseringens prövning</div>
@@ -711,7 +720,7 @@
         </div>
 
         <!-- 2035 -->
-        <div class="year-section" data-year="2035">
+        <div class="year-section" id="ar-2035" data-year="2035">
             <div class="year-header">
                 <div class="year-number">2035</div>
                 <div class="year-label">Institutionalisering — eller ikapp-körning</div>
@@ -766,7 +775,7 @@
         </div>
 
         <!-- 2040 -->
-        <div class="year-section" data-year="2040">
+        <div class="year-section" id="ar-2040" data-year="2040">
             <div class="year-header">
                 <div class="year-number">2040</div>
                 <div class="year-label">Tre vägar, fyra utfall</div>
