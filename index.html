@@ -227,12 +227,15 @@ details.menu[open]>summary{color:var(--accent)}
       <p class="top__intro">AI-skiftet samlar essäer och dagliga nyheter från ett industrinära perspektiv: vad tekniken redan gör, vilka antaganden som håller, vilka som inte håller och hur Sverige kan förbereda sig mer proportionerligt.</p>
       <div class="top__actions"><a class="btn" href="civilisationsskiftet.html">Läs huvudessän</a><a class="btn btn--ghost" href="valguiden-2026/">Testa valguiden 2026</a><a href="#nyheter">Senaste nytt ↓</a></div>
     </div>
-    <article class="lead" aria-labelledby="huvudanalys">
-      <p class="eyebrow">Nyaste analysen · 6 september 2026</p>
-      <h2 id="huvudanalys"><a href="trettio-filer-och-en-muspekare.html">Trettio filer och en muspekare</a></h2>
-      <p>En agent som får ett mål och rätt kanal arbetar parallellt, uthålligt och exakt. Computer use tvingar allt det genom ett gränssnitt byggt för en människa med en muspekare, ett klick i taget. Slöseriet sitter i kanalen, inte i modellen.</p>
-      <a class="lead__read" href="trettio-filer-och-en-muspekare.html">Läs analysen →</a>
+    <!-- LATEST-ANALYSES-1-START (kort [1]. Raderna [2]-[3] ligger i sidospalten,
+         se LATEST-ANALYSES-PREV. Roteras BADA vid ny essa - se E2.) -->
+    <article class="lead latest-essay__card" aria-labelledby="huvudanalys">
+      <p class="eyebrow latest-essay__kicker">Nyaste analysen · 6 september 2026</p>
+      <h2 class="latest-essay__title" id="huvudanalys"><a href="trettio-filer-och-en-muspekare.html">Trettio filer och en muspekare</a></h2>
+      <p class="latest-essay__lede">En agent som får ett mål och rätt kanal arbetar parallellt, uthålligt och exakt. Computer use tvingar allt det genom ett gränssnitt byggt för en människa med en muspekare, ett klick i taget. Slöseriet sitter i kanalen, inte i modellen.</p>
+      <a class="lead__read latest-essay__link" href="trettio-filer-och-en-muspekare.html">Läs analysen →</a>
     </article>
+    <!-- LATEST-ANALYSES-1-END -->
   </section>
 
   <div class="body">
@@ -733,11 +736,14 @@ details.menu[open]>summary{color:var(--accent)}
 
     <aside class="aside" aria-labelledby="fordjupning">
       <h2 id="fordjupning">Fördjupning</h2>
+      <!-- LATEST-ANALYSES-PREV-START (raderna [2]-[3]. Kort [1] ligger i toppen,
+           se LATEST-ANALYSES-1. Roteras BADA vid ny essa - se E2.) -->
       <div class="deep">
         <p class="eyebrow">Tidigare analyser</p>
-        <ul class="deep__list"><li><a href="vad-vi-redan-vet.html">Vad vi redan vet att de kan<span>Analys · 4 september 2026</span></a></li><li><a href="ingangen.html">Ingången<span>Analys · 27 augusti 2026</span></a></li></ul>
-        <a class="deep__link" href="essaer.html">Alla essäer →</a>
+        <ul class="deep__list latest-essay__prev"><li><a class="latest-essay__prev-link" href="vad-vi-redan-vet.html"><span class="latest-essay__prev-title">Vad vi redan vet att de kan</span><span class="latest-essay__prev-date">Analys · 4 september 2026</span></a></li><li><a class="latest-essay__prev-link" href="ingangen.html"><span class="latest-essay__prev-title">Ingången</span><span class="latest-essay__prev-date">Analys · 27 augusti 2026</span></a></li></ul>
+        <a class="deep__link latest-essay__all" href="essaer.html">Alla essäer →</a>
       </div>
+      <!-- LATEST-ANALYSES-PREV-END -->
       <div class="deep">
         <p class="eyebrow">Överblick</p>
         <h3><a href="veckan.html">Veckan i AI</a></h3>
