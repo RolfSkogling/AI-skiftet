@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Sixth of the Size &mdash; AI-skiftet</title>
+  <meta name="description" content="KB-Whisper small is one sixth the size of OpenAI's largest Whisper and still has a lower error rate on Swedish. A measurement of what domain adaptation buys when a language sits thin in the training data &mdash; and of what the numbers do not say.">
+  <meta name="date" content="2026-09-09">
+  <meta property="article:published_time" content="2026-09-09T09:00:00+02:00">
+  <meta property="og:title" content="A Sixth of the Size &mdash; AI-skiftet">
+  <meta property="og:description" content="KB-Whisper small is one sixth the size of OpenAI's largest Whisper and still has a lower error rate on Swedish. A measurement of what domain adaptation buys when a language sits thin in the training data &mdash; and of what the numbers do not say.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/sjattedelen.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/sjattedelen.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/sjattedelen.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/sjattedelen.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+
+  .wer-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+  .wer-table{width:100%;border-collapse:collapse;font-size:.95rem}
+  .wer-table caption{caption-side:bottom;text-align:left;padding-top:10px;font-size:.85rem;line-height:1.55;color:var(--muted)}
+  .wer-table th,.wer-table td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+  .wer-table th:first-child,.wer-table td:first-child{text-align:left;white-space:normal}
+  .wer-table thead th{font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom-width:2px}
+  .wer-table tbody tr.is-highlight td{background:rgba(140,74,31,.08);font-weight:700}
+  @media(max-width:560px){.wer-table{font-size:.82rem}.wer-table th,.wer-table td{padding:7px 6px}}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/sjattedelen.html" lang="sv">SV</a>
+      <a href="/en/sjattedelen.html" lang="en" class="active">EN</a>
+      <a href="/no/sjattedelen.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">Speech recognition &middot; Measurement</div>
+    <h1>A Sixth of the Size</h1>
+      <p class="article-dek"><em>or: what 50,000 hours of Swedish buys that more parameters do not.</em> KB-Whisper small is one sixth the size of OpenAI's largest Whisper and still has a lower error rate on Swedish. The model dates from February 2025 &mdash; the point is not that it is new, but what the measurement shows about where the marginal return sits.</p>
+    <p class="article-meta">Analysis &middot; Rolf Skogling &middot; Published September 9, 2026 &middot; approx. 10 min read</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>There is a number in the National Library of Sweden's model card that deserves more attention than it has received, and it is not the one they put in the headline.</p>
+
+<p>KBLab, the data lab at the National Library of Sweden, released a suite of Swedish speech recognition models in February 2025 under the name KB-Whisper. They are built on OpenAI's Whisper and fine-tuned on more than 50,000 hours of Swedish speech. The headline claim on their own model card is that the best performing model reduces the word error rate by an average of 47 percent compared to OpenAI's <code>whisper-large-v3</code>.</p>
+
+<p>That is a good number. It is not the interesting one.</p>
+
+<p>The interesting one is on the middle row of the same table.</p>
+
+<div class="wer-table-wrap">
+<table class="wer-table">
+<caption>Word error rate (WER) on Swedish, lower is better. KBLab's own published measurements. FLEURS and Common Voice sat entirely outside the training data; the NST test is a held-out portion of a collection the model was also trained on.</caption>
+<thead>
+<tr><th>Model</th><th>FLEURS</th><th>Common&nbsp;Voice</th><th>NST</th></tr>
+</thead>
+<tbody>
+<tr><td>KB-Whisper large</td><td>5.4</td><td>4.1</td><td>5.2</td></tr>
+<tr class="is-highlight"><td>KB-Whisper small</td><td>7.3</td><td>6.4</td><td>6.6</td></tr>
+<tr><td>OpenAI whisper-large-v3</td><td>7.8</td><td>9.5</td><td>11.3</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>KB-Whisper <strong>small</strong> has a lower error rate than OpenAI's <strong>largest Whisper model</strong>. On all three test sets. Small has 244 million parameters, large-v3 has 1.55 billion &mdash; a factor of 6.4. KBLab themselves write that their small model beats &ldquo;a model six times its size&rdquo;.</p>
+
+<p>One sixth of the parameters, and it wins.</p>
+
+<h2>What the numbers actually are</h2>
+
+<p>WER, word error rate, is the share of words that come out wrong &mdash; insertions, deletions and substitutions counted against a reference and divided by the length of that reference. Lower is better. A 5.4 means that just over five words in a hundred are incorrect.</p>
+
+<p>The three columns are three public Swedish test sets. FLEURS is Google's multilingual corpus, in which a handful of native speakers read the same sentences in 102 languages. Common Voice is Mozilla's crowd-sourced recordings, of which 54 hours are Swedish. NST is the set of speech corpora collected by the company Nordisk Spr&aring;kteknologi and today maintained by the Language Bank at the National Library of Norway.</p>
+
+<p>Let me take the 47 percent apart, because the average hides a spread worth seeing. Compared with <code>whisper-large-v3</code>, KB-Whisper large cuts errors by 57 percent on Common Voice, 54 percent on NST &mdash; and 31 percent on FLEURS. The average comes to 47. So the claim that the model more than halves the errors holds on two of the three test sets, not on all three. It is a small thing. It is also exactly the kind of small thing that separates a number you can trust from one you cannot.</p>
+
+<h2>The thin layer</h2>
+
+<p><code>whisper-large-v3</code> is not a bad model for Swedish. It is a model expected to handle about a hundred languages, and Swedish is one of them. That relationship is the whole point.</p>
+
+<p>KBLab report in their paper exactly how thin the layer is. <code>whisper-large-v3</code> was trained on 680,000 hours of speech. Of those, <strong>2,119 hours were Swedish.</strong> That is three parts per thousand.</p>
+
+<p>KBLab's own corpus looks different: 34,261 hours of subtitled material &mdash; 18,468 from SVT, 8,629 from the Swedish Media Database and 7,164 from YouTube &mdash; plus 21,949 hours of parliamentary debate, 250 hours of NST and 54 hours of dialect recordings from the Institute for Language and Folklore. A total of 56,514 hours in the first training stage.</p>
+
+<p>Twenty-seven times more Swedish than the base model ever heard. And the figure of 50,000 is not arbitrary: KBLab point out that the Whisper authors themselves reported that improvement begins to level off somewhere around there, and built the corpus accordingly.</p>
+
+<p>That is where the finding sits, and it is not a Swedish finding:</p>
+
+<p><strong>When a language or a domain sits thin in the base model's training data, adaptation buys more than size does.</strong></p>
+
+<p>A model one sixth the size with enough of the right data beats one six times larger that got three parts per thousand. This says nothing about Swedes being more capable than Americans. It says something about where the marginal return sits when the underlying data is skewed &mdash; and that conclusion transfers to any domain underrepresented in what the models were trained on. Technical language. Industry terminology. Clinical notes. Image domains outside the internet photograph.</p>
+
+<p>It is also an argument that cuts directly against the easiest thing to sell, namely the next larger model.</p>
+
+<h2>The measurement on my own desk</h2>
+
+<p>Today I downloaded KB-Whisper large to a Mac mini and ran it.</p>
+
+<p>What surprised me was that the planned conversion turned out to be unnecessary. <code>mlx_audio</code> 0.4.3 reads the Hugging Face format directly: <code>ModelDimensions.from_dict</code> maps the configuration's <code>d_model</code> and <code>encoder_layers</code> onto mlx's own names, and <code>Model.sanitize</code> renames the weights &mdash; <code>encoder.layers.</code> becomes <code>encoder.blocks.</code>, <code>self_attn.q_proj</code> becomes <code>attn.query</code>. KBLab's official safetensors load as they are, without a single weight passing through a conversion tool. Third-party conversions of the same model exist on Hugging Face; they were deliberately passed over, because the uploaders are unknown and there is no reason to trust them when the original works.</p>
+
+<p>The test: 40.48 seconds of Swedish news material against a known reference. The audio was synthetically read &mdash; it is one of the daily audio briefs this site publishes itself &mdash; and that matters for how the result should be read. More on that shortly.</p>
+
+<p>Result: <strong>one error in 94 words. 1.1 percent.</strong> The error was <em>Xeon</em>, Intel's processor family, heard as <em>Action</em>.</p>
+
+<p>Timings: the model loaded in 13.0 seconds cold and 1.5 seconds warm. The transcription of the 40.48 seconds took 13.3 seconds the first time and 4.4 seconds the second &mdash; that is 3.0 times real time cold and 9.2 times warm. A ten-second spoken command becomes text in about a second once the model is loaded.</p>
+
+<p>KB-Whisper large weighs 3.22&nbsp;GB on disk, small 0.56. The whole chain runs locally: the speech recognition, the language model and the speech synthesis sit on the same machine, and no step has a cloud fallback. That is not a principle I am asserting here, only a description of the setup.</p>
+
+<h2>What the measurement does not say</h2>
+
+<p>Here is the part the rest of the text stands or falls on, because 1.1 percent is a number that is easy to quote wrongly.</p>
+
+<p><strong>One error in 94 words is one error.</strong> The uncertainty around a single outcome is wide enough that the figure cannot meaningfully be distinguished from zero, or from three percent. It is a spot check, not a measurement series, and I am reporting it as a spot check.</p>
+
+<p><strong>Everything measured here is read speech.</strong> FLEURS is read sentences. Common Voice is read sentences. NST consists, by KBLab's own description, of scripted sentences and isolated words. My own test was not even a human reading, but a speech synthesizer. Nothing in this material says anything about conversation, about two people talking over each other, about telephone audio, about a workshop with machinery in the background, or about someone interrupting themselves mid-sentence. That is where speech recognition normally breaks, and it is precisely the case none of these numbers illuminate.</p>
+
+<p><strong>One of the three columns is home ground.</strong> KBLab state plainly that Common Voice and FLEURS are not part of the training data and therefore measure the model's out-of-domain performance. NST does not qualify: 250 hours of NST sit in the training corpus, and the test is a held-out portion of the same collection. This is correct method and KBLab report it openly &mdash; but it means the NST column measures something different from the other two. Worth noting: NST yields the second largest gain, 54 percent, while FLEURS &mdash; the cleanest comparison &mdash; yields the smallest, 31.</p>
+
+<p><strong>The audio file was truncated.</strong> The script ran longer than the roughly 40 seconds actually recorded, and the audio stopped mid-sentence. The model then hallucinated a tail: twelve words of pure invention after the audio fell silent. Counted across the whole passage up to the cut, that gives 14 errors in 95 reference words, or 14.7 percent instead of 1.1. I report both figures, because the difference between them is not measurement uncertainty but a known property: Whisper models invent when audio is cut abruptly. The practical lesson is concrete enough to be worth writing down &mdash; send whole utterances to the recognizer, never clipped segments, and trim the silence at the end.</p>
+
+<p><strong>A second test failed, and I report no figure from it.</strong> I wanted to know how the model handles my own domain vocabulary &mdash; place names, company names and shop-floor terms from the industry I work in. The test was made with synthetic speech, and the synthesizer turned out to have rewritten the text before reading it: the first line turned a single name into four entirely different words. The test therefore measures speech synthesis and speech recognition in series, and the errors cannot be separated. Did the synthesizer say the word correctly and the model mishear it, or did the synthesizer already say it wrong? The material cannot answer that, and a figure drawn from it would be invented precision. The test failed on method. The only thing that can be said is that the ordinary Swedish in the same audio file was transcribed correctly throughout. The question of the domain vocabulary remains open, and what answers it is a recording of a real voice.</p>
+
+<p><strong>And the measurer is also the measured.</strong> The table is KBLab's own, produced by the same lab that built the models, and no independent replication is reported. To this comes a detail KBLab themselves raise as a weakness: the training data was filtered using <code>whisper-large-v3</code> &mdash; that is, using the very model the comparison is then made against. Three test sets are, moreover, three test sets. This is strong circumstantial evidence. It is not proof that the model is better everywhere.</p>
+
+<h2>Why it matters anyway</h2>
+
+<p>The model dates from February 2025. It has been open under Apache 2.0 for a little over eighteen months, the work was presented at Interspeech 2025, and the large version is downloaded on the order of seventy thousand times a month according to Hugging Face's counter, read on September 9, 2026. Nothing in this text concerns a new release, and that is deliberate. A measurement result does not age the way a release does.</p>
+
+<p>What makes the sixth interesting is not national. It is that it moves a boundary for what can be done without the cloud. A model of 0.56&nbsp;GB that beats one of 3.09 is the difference between speech recognition as a service you buy and speech recognition as a file you hold. For everything that cannot leave the building &mdash; patient audio, negotiations, recordings from a production floor, government material &mdash; that is not an optimization but a precondition.</p>
+
+<p>And for everyone else sitting on material that lies thin in the large models' training, the measurement points in a definite direction: the cheap path is not to wait for the next larger model. It is to take a smaller one and give it the right data.</p>
+
+<p>It is not a glamorous conclusion. It merely happens to be the one the numbers support.</p>
+
+<div class="article-endnotes">
+<h2>Sources</h2>
+<ol>
+<li>Vesterbacka, L., Rekathati, F., Kurtz, R., Sikora, J., Toftg&aring;rd, A. (2025). <a href="https://www.isca-archive.org/interspeech_2025/vesterbacka25_interspeech.html">Swedish Whispers; Leveraging a Massive Speech Corpus for Swedish Speech Recognition</a>. Proc. Interspeech 2025, 758&ndash;762. Source for: the composition of the corpus (Table 1), the parameter counts (Table 2), the WER table (Table 3), the 680,000 hours of which 2,119 were Swedish, and the statements about which test sets sit outside the training data.</li>
+<li>KBLab, the model cards for <a href="https://huggingface.co/KBLab/kb-whisper-large">kb-whisper-large</a> and <a href="https://huggingface.co/KBLab/kb-whisper-small">kb-whisper-small</a>, Hugging Face. Licence, file sizes and download counter.</li>
+<li>National Library of Sweden, <a href="https://www.mynewsdesk.com/se/kungliga_biblioteket/pressreleases/vaeltraenad-ai-modell-foervandlar-svenskt-tal-till-text-3370868">press release of February 20, 2025</a>.</li>
+<li>Own run on a Mac mini, September 9, 2026: <code>mlx_audio</code> 0.4.3, KBLab's official safetensors, 40.48 seconds of synthetically read Swedish news material against a known reference. Raw data and scripts held by the author.</li>
+</ol>
+</div>
+
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/en/trettio-filer-och-en-muspekare.html">Previous: Thirty files and one mouse pointer</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/en/essays.html">Essays</a> &middot; <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
