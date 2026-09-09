@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sj&auml;ttedelen &mdash; AI-skiftet</title>
+  <meta name="description" content="KB-Whisper small &auml;r en sj&auml;ttedel s&aring; stor som OpenAI:s st&ouml;rsta Whisper och har &auml;nd&aring; l&auml;gre felprocent p&aring; svenska. En m&auml;tning av vad dom&auml;nanpassning k&ouml;per n&auml;r ett spr&aring;k ligger tunt i tr&auml;ningsdatan &mdash; och av vad siffrorna inte s&auml;ger.">
+  <meta name="date" content="2026-09-09">
+  <meta property="article:published_time" content="2026-09-09T09:00:00+02:00">
+  <meta property="og:title" content="Sj&auml;ttedelen &mdash; AI-skiftet">
+  <meta property="og:description" content="KB-Whisper small &auml;r en sj&auml;ttedel s&aring; stor som OpenAI:s st&ouml;rsta Whisper och har &auml;nd&aring; l&auml;gre felprocent p&aring; svenska. En m&auml;tning av vad dom&auml;nanpassning k&ouml;per n&auml;r ett spr&aring;k ligger tunt i tr&auml;ningsdatan &mdash; och av vad siffrorna inte s&auml;ger.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="canonical" href="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/sjattedelen.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/sjattedelen.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/sjattedelen.html">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+
+  .wer-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0}
+  .wer-table{width:100%;border-collapse:collapse;font-size:.95rem}
+  .wer-table caption{caption-side:bottom;text-align:left;padding-top:10px;font-size:.85rem;line-height:1.55;color:var(--muted)}
+  .wer-table th,.wer-table td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+  .wer-table th:first-child,.wer-table td:first-child{text-align:left;white-space:normal}
+  .wer-table thead th{font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom-width:2px}
+  .wer-table tbody tr.is-highlight td{background:rgba(140,74,31,.08);font-weight:700}
+  @media(max-width:560px){.wer-table{font-size:.82rem}.wer-table th,.wer-table td{padding:7px 6px}}
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Ess&auml;er</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">K&auml;llor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/sjattedelen.html" lang="sv" class="active">SV</a>
+      <a href="/en/sjattedelen.html" lang="en">EN</a>
+      <a href="/no/sjattedelen.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till ess&auml;er</a>
+    <div class="article-kicker">Taligenk&auml;nning &middot; M&auml;tning</div>
+    <h1>Sj&auml;ttedelen</h1>
+      <p class="article-dek"><em>eller: vad 50&nbsp;000 timmar svenska k&ouml;per som fler parametrar inte g&ouml;r.</em> KB-Whisper small &auml;r en sj&auml;ttedel s&aring; stor som OpenAI:s st&ouml;rsta Whisper och har &auml;nd&aring; l&auml;gre felprocent p&aring; svenska. Modellen &auml;r fr&aring;n februari 2025 &mdash; po&auml;ngen &auml;r inte att den &auml;r ny, utan vad m&auml;tningen visar om var den marginella avkastningen sitter.</p>
+    <p class="article-meta">Analys &middot; Rolf Skogling &middot; Publicerad 9 september 2026 &middot; ca 9 min l&auml;sning</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>Det st&aring;r ett tal i Kungliga bibliotekets modellkort som f&ouml;rtj&auml;nar mer uppm&auml;rksamhet &auml;n det har f&aring;tt, och det &auml;r inte det de sj&auml;lva satte i rubriken.</p>
+
+<p>KBLab, datalabbet p&aring; Kungliga biblioteket, publicerade i februari 2025 en upps&auml;ttning taligenk&auml;nningsmodeller f&ouml;r svenska under namnet KB-Whisper. De bygger p&aring; OpenAI:s Whisper och &auml;r finetunade p&aring; drygt 50&nbsp;000 timmar svenskt tal. Rubrikp&aring;st&aring;endet i deras eget modellkort &auml;r att den b&auml;st presterande modellen s&auml;nker ordfelprocenten med 47 procent i snitt j&auml;mf&ouml;rt med OpenAI:s <code>whisper-large-v3</code>.</p>
+
+<p>Det &auml;r en bra siffra. Den &auml;r inte den intressanta.</p>
+
+<p>Den intressanta st&aring;r p&aring; mittenraden i samma tabell.</p>
+
+<div class="wer-table-wrap">
+<table class="wer-table">
+<caption>Ordfelprocent (WER) p&aring; svenska, l&auml;gre &auml;r b&auml;ttre. KBLab:s egna publicerade m&auml;tningar. FLEURS och Common Voice l&aring;g helt utanf&ouml;r tr&auml;ningsdatan; NST-testet &auml;r en undanh&aring;llen del av en insamling som modellen ocks&aring; tr&auml;nats p&aring;.</caption>
+<thead>
+<tr><th>Modell</th><th>FLEURS</th><th>Common&nbsp;Voice</th><th>NST</th></tr>
+</thead>
+<tbody>
+<tr><td>KB-Whisper large</td><td>5,4</td><td>4,1</td><td>5,2</td></tr>
+<tr class="is-highlight"><td>KB-Whisper small</td><td>7,3</td><td>6,4</td><td>6,6</td></tr>
+<tr><td>OpenAI whisper-large-v3</td><td>7,8</td><td>9,5</td><td>11,3</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>KB-Whisper <strong>small</strong> har l&auml;gre felprocent &auml;n OpenAI:s <strong>st&ouml;rsta Whisper-modell</strong>. P&aring; alla tre testm&auml;ngderna. Small har 244 miljoner parametrar, large-v3 har 1,55 miljarder &mdash; en faktor 6,4. KBLab skriver sj&auml;lva att deras small sl&aring;r &rdquo;a model six times its size&rdquo;.</p>
+
+<p>En sj&auml;ttedel av parametrarna, och den vinner.</p>
+
+<h2>Vad talen faktiskt &auml;r</h2>
+
+<p>WER, word error rate, &auml;r andelen ord som blir fel &mdash; ins&auml;ttningar, strykningar och ers&auml;ttningar r&auml;knade mot ett facit och delade med facitets l&auml;ngd. L&auml;gre &auml;r b&auml;ttre. 5,4 betyder att drygt fem ord av hundra inte st&auml;mmer.</p>
+
+<p>De tre kolumnerna &auml;r tre offentliga testm&auml;ngder f&ouml;r svenska. FLEURS &auml;r Googles flerspr&aring;kiga korpus med ett par modersm&aring;lstalare som l&auml;ser in samma meningar p&aring; 102 spr&aring;k. Common Voice &auml;r Mozillas inl&auml;sningar, varav 54 timmar &auml;r svenska. NST &auml;r de talkorpusar som samlades in av f&ouml;retaget Nordisk Spr&aring;kteknologi och som i dag f&ouml;rvaltas av Spr&aring;kbanken vid Nasjonalbiblioteket i Norge.</p>
+
+<p>L&aring;t mig ta 47-procentssiffran is&auml;r, eftersom snittet d&ouml;ljer en spridning som &auml;r v&auml;rd att se. J&auml;mf&ouml;rt med <code>whisper-large-v3</code> s&auml;nker KB-Whisper large felen med 57 procent p&aring; Common Voice, 54 procent p&aring; NST &mdash; och 31 procent p&aring; FLEURS. Snittet blir 47. Att modellen mer &auml;n halverar felen st&auml;mmer allts&aring; p&aring; tv&aring; av tre testm&auml;ngder, inte p&aring; alla tre. Det &auml;r en liten sak. Det &auml;r ocks&aring; precis den sortens lilla sak som skiljer en siffra man kan lita p&aring; fr&aring;n en man inte kan lita p&aring;.</p>
+
+<h2>Det tunna lagret</h2>
+
+<p><code>whisper-large-v3</code> &auml;r ingen d&aring;lig modell f&ouml;r svenska. Den &auml;r en modell som ska klara ett hundratal spr&aring;k, och svenska &auml;r ett av dem. Det &auml;r sj&auml;lva f&ouml;rh&aring;llandet som &auml;r po&auml;ngen.</p>
+
+<p>KBLab redovisar i sin artikel exakt hur tunt lagret &auml;r. <code>whisper-large-v3</code> tr&auml;nades p&aring; 680&nbsp;000 timmar tal. Av dem var <strong>2&nbsp;119 timmar svenska.</strong> Det &auml;r tre promille.</p>
+
+<p>KBLab:s egen korpus ser annorlunda ut: 34&nbsp;261 timmar undertextat material &mdash; 18&nbsp;468 fr&aring;n SVT, 8&nbsp;629 ur Svensk mediedatabas och 7&nbsp;164 fr&aring;n YouTube &mdash; plus 21&nbsp;949 timmar riksdagsdebatter, 250 timmar NST och 54 timmar dialektinspelningar fr&aring;n Institutet f&ouml;r spr&aring;k och folkminnen. Sammanlagt 56&nbsp;514 timmar i det f&ouml;rsta tr&auml;ningssteget.</p>
+
+<p>Tjugosju g&aring;nger mer svenska &auml;n basmodellen n&aring;gonsin fick h&ouml;ra. Och siffran 50&nbsp;000 &auml;r inte godtycklig: KBLab pekar p&aring; att Whisper-f&ouml;rfattarna sj&auml;lva rapporterade att f&ouml;rb&auml;ttringen b&ouml;rjar plana ut n&aring;gonstans d&auml;r, och byggde korpusen d&auml;refter.</p>
+
+<p>D&auml;r ligger fyndet, och det &auml;r inte ett svenskt fynd:</p>
+
+<p><strong>N&auml;r ett spr&aring;k eller en dom&auml;n ligger tunt i basmodellens tr&auml;ningsdata k&ouml;per anpassning mer &auml;n storlek g&ouml;r.</strong></p>
+
+<p>En sj&auml;ttedels modell med tillr&auml;ckligt med r&auml;tt data sl&aring;r en sex g&aring;nger st&ouml;rre som bara fick tre promille. Det s&auml;ger ingenting om att svenskar skulle vara skickligare &auml;n amerikaner. Det s&auml;ger n&aring;got om var den marginella avkastningen sitter n&auml;r underlaget &auml;r snedf&ouml;rdelat &mdash; och den slutsatsen &auml;r &ouml;verf&ouml;rbar till varje dom&auml;n som &auml;r underrepresenterad i det modellerna tr&auml;nats p&aring;. Fackspr&aring;k. Branschterminologi. Journalanteckningar. Bilddom&auml;ner utanf&ouml;r internetfotot.</p>
+
+<p>Det &auml;r ocks&aring; ett argument som sk&auml;r rakt mot det som &auml;r l&auml;ttast att s&auml;lja, n&auml;mligen n&auml;sta st&ouml;rre modell.</p>
+
+<h2>M&auml;tningen p&aring; mitt eget bord</h2>
+
+<p>I dag laddade jag ner KB-Whisper large till en Mac mini och k&ouml;rde den.</p>
+
+<p>Det som &ouml;verraskade mig var att den planerade konverteringen inte beh&ouml;vdes. <code>mlx_audio</code> 0.4.3 l&auml;ser Hugging Face-formatet direkt: <code>ModelDimensions.from_dict</code> mappar konfigurationens <code>d_model</code> och <code>encoder_layers</code> till mlx:s egna namn, och <code>Model.sanitize</code> d&ouml;per om vikterna &mdash; <code>encoder.layers.</code> blir <code>encoder.blocks.</code>, <code>self_attn.q_proj</code> blir <code>attn.query</code>. KBLab:s officiella safetensors laddas allts&aring; som de &auml;r, utan att en enda vikt passerar ett konverteringsverktyg. Det finns tredjepartskonverteringar av samma modell p&aring; Hugging Face; de valdes bort medvetet, eftersom uppladdarna &auml;r ok&auml;nda och det inte finns n&aring;got sk&auml;l att lita p&aring; dem n&auml;r originalet fungerar.</p>
+
+<p>Provet: 40,48 sekunder svenskt nyhetsmaterial mot ett k&auml;nt facit. Ljudet var syntetiskt uppl&auml;st &mdash; det &auml;r en av de dagliga ljudbriefer sajten sj&auml;lv publicerar &mdash; och det har betydelse f&ouml;r hur resultatet ska l&auml;sas. Mer om det strax.</p>
+
+<p>Resultat: <strong>ett fel p&aring; 94 ord. 1,1 procent.</strong> Felet var <em>Xeon</em>, Intels processorfamilj, som h&ouml;rdes som <em>Action</em>.</p>
+
+<p>Tiderna: modellen laddades p&aring; 13,0 sekunder kall och 1,5 sekunder varm. Sj&auml;lva transkriberingen av de 40,48 sekunderna tog 13,3 sekunder f&ouml;rsta g&aring;ngen och 4,4 sekunder andra &mdash; allts&aring; 3,0 g&aring;nger realtid kallt och 9,2 g&aring;nger varmt. Ett talat kommando p&aring; tio sekunder blir text p&aring; ungef&auml;r en sekund n&auml;r modellen ligger laddad.</p>
+
+<p>KB-Whisper large v&auml;ger 3,22&nbsp;GB p&aring; disk, small 0,56. Hela kedjan k&ouml;rs lokalt: taligenk&auml;nningen, spr&aring;kmodellen och talsyntesen ligger p&aring; samma maskin, och inget av stegen har en molnreserv. Det &auml;r ingen princip jag h&auml;vdar h&auml;r, bara en beskrivning av upps&auml;ttningen.</p>
+
+<h2>Vad m&auml;tningen inte s&auml;ger</h2>
+
+<p>H&auml;r kommer den del av texten som resten st&aring;r och faller med, eftersom 1,1 procent &auml;r en siffra som &auml;r l&auml;tt att citera fel.</p>
+
+<p><strong>Ett fel p&aring; 94 ord &auml;r ett fel.</strong> Os&auml;kerheten kring ett enda utfall &auml;r bred nog att talet inte meningsfullt g&aring;r att skilja fr&aring;n noll eller fr&aring;n tre procent. Det &auml;r ett stickprov, inte en m&auml;tserie, och jag redovisar det som ett stickprov.</p>
+
+<p><strong>Allt som m&auml;tts &auml;r uppl&auml;st tal.</strong> FLEURS &auml;r inl&auml;sta meningar. Common Voice &auml;r inl&auml;sta meningar. NST best&aring;r enligt KBLab:s egen beskrivning av manuskriptl&auml;sta meningar och enstaka ord. Mitt eget prov var inte ens en m&auml;nniska som l&auml;ser, utan en talsyntes. Ingenting i materialet s&auml;ger n&aring;got om samtal, om tv&aring; personer som talar i mun p&aring; varandra, om telefonljud, om en verkstad med maskiner i bakgrunden eller om n&aring;gon som avbryter sig sj&auml;lv mitt i en mening. Det &auml;r d&auml;r taligenk&auml;nning normalt g&aring;r s&ouml;nder, och det &auml;r precis det fall som ingen av de h&auml;r siffrorna belyser.</p>
+
+<p><strong>En av de tre kolumnerna &auml;r hemmaplan.</strong> KBLab skriver rakt ut att Common Voice och FLEURS inte ing&aring;r i tr&auml;ningsdatan och d&auml;rf&ouml;r m&auml;ter modellens utomdom&auml;nprestanda. NST g&ouml;r det inte: 250 timmar NST ligger i tr&auml;ningskorpusen, och testet &auml;r en undanh&aring;llen del av samma insamling. Det &auml;r korrekt metod och KBLab redovisar det &ouml;ppet &mdash; men det betyder att NST-kolumnen m&auml;ter n&aring;got annat &auml;n de tv&aring; andra. V&auml;rt att notera: NST ger den n&auml;st st&ouml;rsta vinsten, 54 procent, medan FLEURS &mdash; den renaste j&auml;mf&ouml;relsen &mdash; ger den minsta, 31.</p>
+
+<p><strong>Ljudfilen var beskuren.</strong> Manuset var l&auml;ngre &auml;n de dryga 40 sekunder som fanns inspelade, och ljudet tog slut mitt i en mening. Modellen hallucinerade d&aring; en svans: tolv ord ren uppfinning efter att ljudet tystnat. R&auml;knat p&aring; hela partiet fram till klippet blir det 14 fel p&aring; 95 referensord, allts&aring; 14,7 procent i st&auml;llet f&ouml;r 1,1. Jag redovisar b&aring;da talen, f&ouml;r skillnaden mellan dem &auml;r ingen m&auml;tos&auml;kerhet utan en k&auml;nd egenskap: Whisper-modeller hittar p&aring; n&auml;r ljudet klipps abrupt. Den praktiska l&auml;rdomen &auml;r konkret nog att vara v&auml;rd att skriva ner &mdash; skicka hela yttranden till taligenk&auml;nningen, aldrig klippta segment, och trimma tystnaden i slutet.</p>
+
+<p><strong>Ett andra prov underk&auml;ndes, och jag redovisar ingen siffra fr&aring;n det.</strong> Jag ville veta hur modellen klarar mina egna dom&auml;nord &mdash; ortnamn, bolagsnamn och verkstadstermer fr&aring;n industrin jag arbetar i. Provet gjordes med syntetiskt tal, och talsyntesen visade sig ha skrivit om texten innan den l&auml;stes upp: f&ouml;rsta raden f&ouml;rvandlade ett enda namn till fyra helt andra ord. D&auml;rmed m&auml;ter provet talsyntes och taligenk&auml;nning i serie, och felen g&aring;r inte att skilja &aring;t. Sade syntesen ordet r&auml;tt och h&ouml;rde modellen fel, eller sade syntesen redan fel? Fr&aring;gan g&aring;r inte att besvara ur materialet, och en siffra d&auml;rifr&aring;n vore p&aring;hittad precision. Provet f&ouml;ll p&aring; metoden. Det enda som kan s&auml;gas &auml;r att allm&auml;nsvenskan i samma ljudfil transkriberades r&auml;tt rakt igenom. Fr&aring;gan om dom&auml;norden &auml;r fortfarande obesvarad, och det som besvarar den &auml;r en inspelning av en riktig r&ouml;st.</p>
+
+<p><strong>Och m&auml;taren &auml;r ocks&aring; den m&auml;tta.</strong> Tabellen &auml;r KBLab:s egen, framtagen av samma labb som byggde modellerna, och n&aring;gon oberoende replikering finns inte redovisad. Till det kommer en detalj som KBLab sj&auml;lva lyfter som en svaghet: urvalet av tr&auml;ningsdata filtrerades med hj&auml;lp av <code>whisper-large-v3</code> &mdash; allts&aring; med den modell j&auml;mf&ouml;relsen sedan g&ouml;rs mot. Tre testm&auml;ngder &auml;r dessutom tre testm&auml;ngder. Det h&auml;r &auml;r starka indicier. Det &auml;r inte ett bevis f&ouml;r att modellen &auml;r b&auml;ttre &ouml;verallt.</p>
+
+<h2>Varf&ouml;r det &auml;nd&aring; betyder n&aring;got</h2>
+
+<p>Modellen &auml;r fr&aring;n februari 2025. Den har legat &ouml;ppen under Apache 2.0 i drygt arton m&aring;nader, arbetet presenterades p&aring; Interspeech 2025, och large-versionen laddas ner i storleksordningen sjuttiotusen g&aring;nger i m&aring;naden enligt Hugging Faces r&auml;knare vid l&auml;sning den 9 september 2026. Ingenting i den h&auml;r texten handlar om ett nysl&auml;pp, och det &auml;r avsiktligt. Ett m&auml;tresultat &aring;ldras inte p&aring; samma s&auml;tt som en release g&ouml;r.</p>
+
+<p>Det som g&ouml;r sj&auml;ttedelen intressant &auml;r inte nationellt. Det &auml;r att den flyttar en gr&auml;ns f&ouml;r vad som g&aring;r att g&ouml;ra utan moln. En modell p&aring; 0,56&nbsp;GB som sl&aring;r en p&aring; 3,09 &auml;r skillnaden mellan taligenk&auml;nning som en tj&auml;nst man k&ouml;per och taligenk&auml;nning som en fil man har. F&ouml;r allt som inte f&aring;r l&auml;mna huset &mdash; patientljud, f&ouml;rhandlingar, inspelningar fr&aring;n ett produktionsgolv, myndighetsmaterial &mdash; &auml;r det ingen optimering utan en f&ouml;ruts&auml;ttning.</p>
+
+<p>Och f&ouml;r alla andra som sitter med ett underlag som ligger tunt i de stora modellernas tr&auml;ning pekar m&auml;tningen &aring;t ett best&auml;mt h&aring;ll: den billiga v&auml;gen &auml;r inte att v&auml;nta p&aring; n&auml;sta st&ouml;rre modell. Den &auml;r att ta en mindre och ge den r&auml;tt data.</p>
+
+<p>Det &auml;r ingen glamor&ouml;s slutsats. Den r&aring;kar bara vara den som siffrorna st&ouml;der.</p>
+
+<div class="article-endnotes">
+<h2>K&auml;llor</h2>
+<ol>
+<li>Vesterbacka, L., Rekathati, F., Kurtz, R., Sikora, J., Toftg&aring;rd, A. (2025). <a href="https://www.isca-archive.org/interspeech_2025/vesterbacka25_interspeech.html">Swedish Whispers; Leveraging a Massive Speech Corpus for Swedish Speech Recognition</a>. Proc. Interspeech 2025, 758&ndash;762. H&auml;rifr&aring;n: korpusens sammans&auml;ttning (tabell 1), parametertalen (tabell 2), WER-tabellen (tabell 3), de 680&nbsp;000 timmarna varav 2&nbsp;119 svenska, och beskeden om vilka testm&auml;ngder som ligger utanf&ouml;r tr&auml;ningsdatan.</li>
+<li>KBLab, modellkorten f&ouml;r <a href="https://huggingface.co/KBLab/kb-whisper-large">kb-whisper-large</a> och <a href="https://huggingface.co/KBLab/kb-whisper-small">kb-whisper-small</a>, Hugging Face. Licens, filstorlekar och nedladdningsr&auml;knare.</li>
+<li>Kungliga biblioteket, <a href="https://www.mynewsdesk.com/se/kungliga_biblioteket/pressreleases/vaeltraenad-ai-modell-foervandlar-svenskt-tal-till-text-3370868">pressmeddelande 20 februari 2025</a>.</li>
+<li>Egen k&ouml;rning p&aring; Mac mini den 9 september 2026: <code>mlx_audio</code> 0.4.3, KBLab:s officiella safetensors, 40,48 sekunder syntetiskt uppl&auml;st svenskt nyhetsmaterial mot k&auml;nt facit. R&aring;data och skript finns hos f&ouml;rfattaren.</li>
+</ol>
+</div>
+
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="trettio-filer-och-en-muspekare.html">F&ouml;reg&aring;ende: Trettio filer och en muspekare</a>
+    <a href="essaer.html">Alla ess&auml;er</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="essaer.html">Ess&auml;er</a> &middot; <a href="kallor.html">K&auml;llor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
