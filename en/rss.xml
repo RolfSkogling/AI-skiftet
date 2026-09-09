@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 08 Sep 2026 04:27:46 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 04:33:25 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Meta launches Muse — an AI agent that emails, books and pays on your behalf</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-meta-lanserar-muse-en-ai-agent-som-mejlar</guid>
+      <pubDate>Wed, 09 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>On September 8, Meta introduced Muse, a personal AI agent designed to carry out everyday tasks for the user rather than merely answer questions. The agent connects to email, calendars, payments and other services and can send emails, book travel, fill in forms, lower bills and make purchases through Link by Stripe. Muse launches first in the United States, on the web, in iOS and Android apps and inside WhatsApp, and is due to come to Meta's AI glasses later.</p>
+<p>The service is powered by the Muse Spark model and is free up to a usage limit; beyond that there are subscriptions at $20 and $100 a month, and a payment card is required at sign-up. Meta says the agent runs in its own virtual machine with its own browser, that a separate sentinel agent monitors it, that it never sees passwords or card details, and that conversations are not shared with the advertising systems. TechCrunch notes that the launch comes less than two weeks after Meta's settlement of up to $18 billion with US states over social media harms to children, and that the question is whether users trust the company with more data than ever.</p>
+<p>For the Nordics, Muse is unavailable for now, and an EU launch would have to clear both the GDPR and the requirements of the AI Act. IMY in Sweden and Datatilsynet in Norway — which in 2023 imposed a daily coercive fine on Meta over behavioural advertising — are the supervisory authorities that would scrutinise an agent with access to email and payments. Norway's Consumer Council, Forbrukerrådet, has previously filed complaints against Meta over surveillance-based advertising, and an agent that shops and pays on its own also raises the question of who is liable when a purchase goes wrong.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/">TechCrunch</a>, <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Meta</a></p>]]></description>
+    </item>
+    <item>
+      <title>Mistral raises €3 billion — and an EQT-managed fund co-leads the round</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-mistral-tar-in-3-miljarder-euro-och-en</guid>
+      <pubDate>Wed, 09 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>French lab Mistral AI announced on September 8 that it has raised €3 billion in a Series D round valuing the company at more than €21 billion post-money. According to Mistral, it is the largest equity fundraising round ever completed by a European technology company. Samsung Electronics led the round, with the Scaleup Europe Fund, managed by Sweden's EQT, and existing investor PSG Equity as co-leads.</p>
+<p>New investors include Advent, funds managed by BlackRock and the Grand Duchy of Luxembourg; a16z, ASML, General Catalyst, Lightspeed, Nvidia and Salesforce Ventures also took part. The money is earmarked for compute capacity, its own data centers, research and international expansion, and CEO Arthur Mensch told CNBC that Mistral is on track to pass $1 billion in annual recurring revenue before the end of the year. French president Macron described the round as an expression of France's and South Korea's ambition to build a third way in AI, and TechCrunch notes that sovereignty is exactly what Mistral sells: customers choose the region where their queries are processed, and the company also hosts Chinese open-weight models.</p>
+<p>For the Nordics, the most tangible link is Borlänge. Earlier this year Mistral and EcoDataCenter announced a €1.2 billion investment in an AI data center at the former Kvarnsveden paper mill, with 250 megawatts in a first phase and the first facilities planned for 2027 — Mistral's first infrastructure investment outside France. An EQT-managed fund co-leading the round ties Stockholm more closely to the company, and for Swedish and Norwegian public bodies looking for EU-based alternatives to US clouds, the capacity in Dalarna becomes a concrete option to test.</p>
+<p class="news-card__source">Source: <a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/">Mistral</a>, <a href="https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/09/08/mistral-ai-funding-valuation-samsung.html">CNBC</a>, <a href="https://www.nyteknik.se/tech/mistral-ai-tar-in-32-miljarder-kronor-vaerderas-till-233-miljarder/4492210">Ny Teknik</a>, <a href="https://www.datacenterdynamics.com/en/news/french-ai-firm-mistral-signs-12bn-deal-to-lease-ecodatacenter-facility-in-sweden/">DCD</a></p>]]></description>
+    </item>
+    <item>
+      <title>Ny Teknik reviews the parties' AI policies: thinnest where the consequences could be greatest</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-ny-teknik-synar-partiernas-ai-politik-tunnast-dar</guid>
+      <pubDate>Wed, 09 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>On September 8, the Swedish engineering weekly Ny Teknik published a review of how developed the AI policies of the eight parliamentary parties are across twelve questions, from jobs, education, research and welfare to compute, democracy and security. Each answer is placed on a four-point scale, from no documented position to developed policy; the scale measures how concrete and comprehensive the policy is, not its content. The results are gathered on a web page where readers can compare the parties and go straight to the original sources.</p>
+<p>The picture that emerges is that many parties have partially developed policy, in a few cases fairly complete, on parts of the field, but that the concrete proposals usually stop at innovation, skills development and efficiency. On the areas that could have the most disruptive consequences, however, there is little, reporter Peter Ottsjö writes in a column: how citizens are to support themselves if the jobs disappear, how Sweden secures access to the most advanced models when the United States and China own the technology, and how the state should act if developments move faster than politics has assumed. His conclusion is that a politician who plays down the developments avoids looking like a fool, while one who takes them seriously has to defend a future that feels improbable to many.</p>
+<p>For the Nordics, the review lands five days before the election on September 13 and grades the parties in a campaign in which AI is barely mentioned. Among other things, the incoming Riksdag will have to decide how supervision under the EU AI Act is divided between IMY, PTS and other authorities, and follow up on the Swedish language model that the Wallenberg foundations announced together with the government in February. Norway, which went to the polls last year, has already designated Nkom as its coordinating AI authority and opened the national AI arena KI Norge under Digdir — a point of comparison for the Riksdag that convenes this autumn.</p>
+<p class="news-card__source">Source: <a href="https://www.nyteknik.se/tech/ny-teknik-synar-ai-politiken-vilka-tar-sig-an-de-mest-omstoertande-fragorna/4492114">Ny Teknik — granskningen</a>, <a href="https://www.nyteknik.se/kroenikor/politiker-som-tar-ai-utvecklingen-pa-allvar-kan-framsta-som-en-tok/4491610">Ny Teknik — Peter Ottsjös krönika</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google DeepMind releases AlphaGenome Atlas — predictions for nine billion DNA variants</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-google-deepmind-slapper-alphagenome-atlas-forutsagelser-for-nio</guid>
+      <pubDate>Wed, 09 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>On September 8, Google DeepMind opened AlphaGenome Atlas, a database that predicts the effect of every possible single-letter change in the human genome. Using its AlphaGenome model, the company has pre-computed the regulatory impact of all nine billion possible single nucleotide variants, producing a one-petabyte dataset. Researchers reach the Atlas through a web portal that requires no coding.</p>
+<p>To make the material manageable, a single combined score is introduced, the AlphaGenome Variant Impact, which merges predictions for both coding and non-coding DNA and lets researchers rank which variants are worth testing. DeepMind says the Broad Institute used the score to find a variant in the DNM1 gene that creates an incorrect splice site, helping to solve a previously unsolved rare disease case, and that researcher Gareth Hawkes, analysing more than 54,000 UK Biobank participants, found 22 percent more genetic associations in non-coding DNA. The Register reminds readers that the contents are still predictions, not measurements, and that the model is expected to improve over time.</p>
+<p>For the Nordics, it is the national genomics programmes that stand to benefit. Genomic Medicine Sweden and SciLifeLab have spent several years building whole-genome sequencing into healthcare, Karolinska Institutet and NTNU's HUNT biobank hold large cohorts with genotype data, and Denmark's National Genome Center recently bought a supercomputer whose compute, according to Ny Teknik, is more than 90 percent unused. A pre-computed atlas lowers the threshold for clinical geneticists in Stockholm, Trondheim and Copenhagen to prioritise variants without compute of their own — but interpretation still requires validation in the laboratory.</p>
+<p class="news-card__source">Source: <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/">Google DeepMind</a>, <a href="https://www.theregister.com/ai-and-ml/2026/09/08/google-deepmind-rises-above-the-ai-scrum-with-genome-atlas/5295137">The Register</a>, <a href="https://www.nyteknik.se/tech/hoeg-risk-foer-sloeseri-med-skattepengar-danmarks-nya-superdator-star-oanvaend/4488245">Ny Teknik</a></p>]]></description>
+    </item>
+    <item>
+      <title>Antioch raises $32 million on the thesis that robots can be trained in simulation</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-antioch-tar-in-32-miljoner-dollar-pa-tesen</guid>
+      <pubDate>Wed, 09 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Simulation company Antioch announced on September 8 a $32 million Series A led by Greylock, with A*, Category Ventures, Box Group and Icehouse Ventures. The company calibrates a simulation against the customer's own hardware and runs it in the cloud, so that a team that could previously afford a single physical experiment can run thousands of evaluations in parallel before the robot, drone or machine is deployed. Amazon's Ring unit says Antioch's simulations have closely matched physical tests, including in scenarios held out of calibration.</p>
+<p>Antioch was founded in May 2025 by, among others, Harry Mellsop, formerly of Tesla's Autopilot team, with co-founders from Google DeepMind and Meta's Reality Labs, and has now raised $44.75 million in total. Nvidia is a partner, and Antioch integrates Omniverse, Isaac Sim and Isaac Lab; cloud capacity comes from Nebius. Forbes describes the round as a bet against Figure AI's opposite strategy: in late August Figure launched the Index app, through which more than 16 million video uploads from 108 countries have been collected from paid contributors for $15 million, and has pledged over $1 billion to data and compute in the coming year.</p>
+<p>For the Nordics, the question of whether it is simulation or real-world data that decides how fast robots learn is at least as pressing. ABB Robotics in Västerås has sold its RobotStudio simulation tool since the 1990s and lets customers commission virtually before the robot is on the floor, while Norway's 1X in Moss is collecting training data in real homes ahead of deliveries of its Neo household robot in the United States later this year. Sintef and NTNU in Trondheim are building simulation environments for autonomous ships and underwater robots, where real-world data is expensive and dangerous to collect — precisely the niche Antioch says it is targeting.</p>
+<p class="news-card__source">Source: <a href="https://siliconangle.com/2026/09/08/antioch-raises-32m-to-move-robot-testing-into-simulation/">SiliconANGLE</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/08/heres-a-32-million-bet-that-robots-dont-need-a-billion-dollars-of-real-world-data/">Forbes</a>, <a href="https://www.humanoidsdaily.com/news/figure-ai-unveils-index-crowdsourcing-real-world-human-video-to-train-helix">Humanoids Daily</a></p>]]></description>
+    </item>
     <item>
       <title>UN human rights chief: A handful of men has almost unlimited power over AI</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-08</link>
@@ -1013,56 +1074,6 @@
 <p>The effect is largest where the agents write code: teams that connected a coding agent went from 21 to 65 pull requests opened per week over two years, while teams without one went from 8 to 10. Roles are blurring too — the share of product managers attaching pull requests themselves rose from 3 to 10 percent, and designers from 1 to 8 percent. The most telling finding is what did not happen: no existing task shrank. Activity around creating, triaging and commenting rose in nearly every function, and AI chat and agent sessions settled on top as a new layer. Linear counts pull requests opened, not merged, and sees only what happens inside its own tool — the numbers measure motion, not value.</p>
 <p>For the Nordics this feeds straight into the autumn’s pay and staffing talks. Unionen and Akavia have argued through the Labour Market AI Council that AI changes tasks first, not headcount — Linear’s data points the same way, but adds that the volume of work grows rather than shrinks. For development departments at Ericsson, Telenor, Klarna and Lovable, and at Norway’s Cognite and Visma, the question is not whether agents raise the pace but who reviews everything being produced. The figures come from Linear itself and cover only its own paying customers.</p>
 <p class="news-card__source">Source: <a href="https://linear.app/data">Linear</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI halts its largest training run after signs of critical cyber capability</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-20-openai-pausar-sin-storsta-traningskorning-efter-tecken-pa</guid>
-      <pubDate>Thu, 20 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI said on August 18 that it has temporarily slowed the pace of its model development. The reason is preliminary evidence that its upcoming model, Astra, may reach the “critical” cybersecurity capability level under the company’s own Preparedness Framework.</p>
-<p>The assessment was made on August 7. Since then OpenAI has imposed a two-week pause on reinforcement learning for the models intended for deployment, and its largest planned training run remains on hold while smaller runs are used to validate the safeguards. In parallel, the company has raised security requirements in its research environment: stricter sandboxes for code the model itself generates, network isolation from the internet, and a multistage monitoring system that inspects the model’s internal activity at every sampled token. The target is an alert within 30 minutes, and if the safety and research teams cannot rule out a false positive within a further 30 minutes, the activity is to be paused. By the company’s own estimate, monitoring costs roughly 20 percent of the inference compute being monitored. The backdrop also includes the model-evaluation security incident reported by OpenAI and Hugging Face.</p>
-<p>For the Nordics this bears directly on the organisations now placing AI agents close to their core systems. Sweden’s MSB and Norway’s Nasjonal sikkerhetsmyndighet are both tracking a development in which AI tools lower the threshold for cyberattacks, while banks such as SEB and DNB and industrial companies such as Ericsson, Kongsberg and Equinor embed models in environments where a failed safeguard costs more than an embarrassing wrong answer. A leading AI lab stopping its own largest run gives Nordic security officers a concrete argument for demanding documented protection levels rather than vendor promises.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI</a>, <a href="https://techstartups.com/2026/08/19/top-tech-news-today-august-19-2026-landspace-microsoft-nvidia-openai-samsung-unitree-z-ai-more/">TechStartups</a></p>]]></description>
-    </item>
-    <item>
-      <title>ChatGPT starts showing ads to Swedish and Norwegian users on August 24</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-20-chatgpt-borjar-visa-reklam-for-svenska-och-norska</guid>
-      <pubDate>Thu, 20 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>OpenAI is expanding its ChatGPT Ads product to 31 European markets from August 24. Sweden, Norway and Denmark are on the list, alongside Germany, France, Spain, Italy, Austria and the Benelux countries.</p>
-<p>Ads are shown only to users on the free tier and on the cheaper Go plan, which costs 7.99 euros a month. Paying Plus and Pro users are not affected. In the opening phase advertisers cannot build campaigns on their own and must go through OpenAI’s own sales organisation, agency partners or technology partners; self-service via Ads Manager is to follow later. Advertising in ChatGPT was first tested in the US market from February this year.</p>
-<p>For the Nordics it means one of the most widely used AI services becomes an advertising channel in the same market where Schibsted and Bonnier are already fighting over digital ad money. Sweden’s Konsumentverket and Norway’s Forbrukertilsynet require advertising to be distinguishable from editorial content — a line that gets harder to draw when the ad appears in the middle of a conversation with an assistant the user perceives as an adviser. Since August 2, the transparency requirements in Article 50 of the EU AI Act apply in full, requirements that bear on precisely this type of service when it reaches Swedish users. In Norway the regulation has not yet been incorporated into the EEA Agreement.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">OpenAI</a>, <a href="https://www.ehandel.se/chatgpt-ads-lanseras-i-sverige-riktigt-spannande">Ehandel.se</a>, <a href="https://www.neowin.net/news/openai-expands-chatgpt-ads-to-31-european-markets/">Neowin</a></p>]]></description>
-    </item>
-    <item>
-      <title>Europe’s new AI data centres are being built ever farther from the cities — northern Sweden singled out</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-20-europas-nya-ai-datacenter-byggs-allt-langre-fran</guid>
-      <pubDate>Thu, 20 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Hyperscale data centres planned in Europe, the Middle East and Africa between 2026 and 2028 sit on average around 175 kilometres from the major hub cities. For facilities completed in 2022–2025 the corresponding distance was about 46 kilometres.</p>
-<p>The figures come from an analysis by property adviser JLL reported by Reuters. The driver is electricity: AI training clusters need hundreds of megawatts and large land areas, and grid connection, permits and land availability have become bottlenecks around London, Frankfurt, Amsterdam, Paris and Dublin. According to the same reporting, only one of nine proposed European facilities with capacity above one gigawatt sits near a major city — Paris. The rest range from rural Spain to northern Sweden.</p>
-<p>For the Nordics this is both an opportunity and a cost. Norrbotten and Västerbotten have the combination of available power, cool air and grid capacity that the analysis singles out as decisive, and Luleå, Boden and Skellefteå already fall into the category investment is now heading toward. At the same time those same electrons compete with the region’s own industrial transition projects, and Svenska kraftnät has a queue for new connections. In Norway the same discussion about power and land use is under way in Telemark and Trøndelag, where data centre projects are already a municipal political battleground.</p>
-<p class="news-card__source">Source: <a href="https://datacentrereview.com/2026/08/ai-boom-pushes-hyperscale-data-centres-away-from-europes-major-hubs/">Data Centre Review</a>, <a href="https://finance.yahoo.com/technology/ai/articles/europe-ai-data-centres-seek-100149927.html">Reuters (via Yahoo Finance)</a>, <a href="https://datacentremagazine.com/news/jll-report-how-ai-is-redrawing-europes-data-centre-map">Data Centre Magazine</a></p>]]></description>
-    </item>
-    <item>
-      <title>Three former SpaceX engineers automate the steel shop with robots and AI</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-20-tre-fore-detta-spacex-ingenjorer-automatiserar-stalverkstaden-med</guid>
-      <pubDate>Thu, 20 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>The startup 1872, founded by three former SpaceX engineers, opened its first automated steel fabrication plant in Cincinnati, Ohio, this summer. The company has raised 15 million dollars and is led by Dan Summers, who previously worked on SpaceX’s Raptor engines.</p>
-<p>The first product is steel skids — rectangular frames used as foundations for modular buildings, AI data centres and small modular nuclear reactors. The ambition is to control cutting, welding and quality inspection with software and robot cells rather than manual changeover per order, with full operation targeted for 2027. Summers has told Ars Technica that the company may land at around 80 percent automation and deliberately stop there — a familiar pattern in engineering industry, where the last few percent often cost more than they return.</p>
-<p>For the Nordics the point lands close to home. Swedish and Norwegian engineering industry — SSAB, Alleima, Kongsberg and the suppliers around them — lives on short series and many variants, precisely the environment where automation has historically been held back by changeover time. If AI-driven programming makes the robot cell profitable even at small volumes, the calculation shifts for the entire supplier tier. ABB Robotics in Västerås and research environments such as Sintef Manufacturing and RISE are working on the same question; what has been missing are customer companies that build the factory around the software from the start.</p>
-<p class="news-card__source">Source: <a href="https://local12.com/news/local/former-spacex-engineers-steel-factory-cincinnati-15-million-investment-1872-camp-washington-david-hummel-building">Local 12</a>, <a href="https://dataconomy.com/2026/08/19/ex-spacex-engineers-raise-15-million-automated-steel-plant/">Dataconomy</a></p>]]></description>
     </item>
   </channel>
 </rss>
