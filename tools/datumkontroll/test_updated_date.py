@@ -21,7 +21,7 @@ SIDA = """<div class="sect-head">
 </div>
 <div class="strip news-audio">
   <source src="/audio/dagens.m4a?v={av}" type="audio/mp4">
-  <p class="strip__foot"><span class="news-audio__note">Ett engelskt spar. &middot; Upplasning {anote}</span></p>
+  <div class="news-audio__note">Ett engelskt spar. &middot; Upplasning {anote}</div>
 </div>
 <div class="news-list" id="newsList">
   <div class="day news-date-group" id="dag-{g}" data-date="{g}">
@@ -114,6 +114,34 @@ def test_norska_och_engelska_etiketter():
     for txt in ("September 10, 2026", "10. september 2026"):
         assert U.check(sida(txt=txt, glabel=txt)) == [], txt
         assert U.check(sida(txt="fel", glabel=txt), "x") != []
+
+
+# Ordagrann markup fran ai-skiftet.se 2026-09-11. Fixturen ovan var forst en
+# GISSNING (<span class="news-audio__note">) och selektorn matchade darfor aldrig
+# i produktion - kontrollen returnerade None och passerade tyst. Provet nedan
+# anvander verklig markup sa att samma glapp inte kan uppsta igen.
+PROD = """<div class="news-audio" role="region" aria-label="Lyssna">
+  <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div>\
+<div class="news-audio__title">Lyssna p&aring; nyheterna</div>\
+<div class="news-audio__note">Ett engelskt sp&aring;r f&ouml;r alla tre \
+spr&aring;kversionerna. &middot; Uppl&auml;sning {anote}</div></div></div>
+  <audio class="news-audio__player" controls preload="none">\
+<source src="/audio/dagens.m4a?v={av}" type="audio/mp4"></audio>
+</div>"""
+
+
+def test_selektorn_matchar_verklig_markup():
+    """Vaktar mot att fixturen glider ifran produktionens HTML."""
+    src, note = U.audio_dates(PROD.format(av="2026-09-11", anote="11 september 2026"))
+    assert src == "2026-09-11", "hittar inte ?v= i verklig markup: %r" % src
+    assert note is not None, "hittar INTE notisen i verklig markup - selektorn matchar fel"
+    assert "11 september 2026" in note, note
+
+
+def test_verklig_markup_flaggar_nar_notisen_ljuger():
+    h = PROD.format(av="2026-09-11", anote="8 september 2026")
+    src, note = U.audio_dates(h)
+    assert not U._same_day(note, src), "notis 8 sept mot ?v=11 sept ska INTE anses lika"
 
 
 if __name__ == "__main__":
