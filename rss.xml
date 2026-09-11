@@ -7,8 +7,72 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 10 Sep 2026 04:32:24 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 06:24:37 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>DeepSeek släpper V4.1-Flash och fasar ut sin toppmodell V4-Pro</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-11-deepseek-slapper-v4-1-flash-och-fasar-ut</guid>
+      <pubDate>Fri, 11 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>DeepSeek släppte på torsdagen V4.1-Flash, en mindre och billigare modell som labbet uppger slår dess egen toppmodell på kodning och agentuppgifter. Vikterna ligger på Hugging Face under MIT-licens. Modellen är en multimodal mixture-of-experts med 552 miljarder parametrar i stommen, ytterligare 196 miljarder så kallade Engram-parametrar och ett kontextfönster på en miljon tokens.</p>
+<p>Från klockan 04.00 UTC den 14 september dirigeras varje anrop till toppmodellen V4-Pro vidare till V4.1-Flash, och debiteras då enligt den lägre Flash-taxan. Omdirigeringen ska enligt DeepSeek gälla fram till dess att V4.1-Pro släpps. Modellen aktiverar 8 miljarder parametrar per token vid prefill och 16 miljarder vid avkodning. Basmodellsiffrorna är körda i DeepSeeks eget utvärderingsramverk; labbet hänvisar därutöver till tester från flera parter, men namnger dem inte.</p>
+<p>För Norden är det de öppna vikterna som betyder mest. MIT-licensen gör att KTH, Chalmers, NTNU och RISE kan köra modellen på egen hårdvara utan att skicka data till en amerikansk eller kinesisk molnleverantör — samma argument som bär Sveriges och EuroHPC:s satsning på superdatorn Arrhenius. Samtidigt gäller AI-förordningens krav i lika hög grad för den som bygger en tjänst på en öppen modell, så för svenska och norska bolag som väger kostnad mot leverantörsberoende är en fritt nedladdningsbar modell från Hangzhou både en möjlighet och en säkerhetsfråga.</p>
+<p class="news-card__source">Källa: <a href="https://api-docs.deepseek.com/updates/">DeepSeek API Docs</a>, <a href="https://thenextweb.com/news/deepseek-v4-1-flash-launch-v4-pro-retired-price-cut">The Next Web</a>, <a href="https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse/">MarkTechPost</a></p>]]></description>
+    </item>
+    <item>
+      <title>Oslo och Bærum förbjuder AI-glasögon i skolan och pekar ut Meta</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-11-oslo-och-baerum-forbjuder-ai-glasogon-i-skolan</guid>
+      <pubDate>Fri, 11 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Oslo kommun inför förbud mot AI- och smartglasögon under hela skoltiden, genom hela skolgången, med undantag för blinda och synskadade elever. Grannkommunen Bærum gick ut med ett motsvarande förbud tisdagen den 8 september, för elever i årskurs 1–10, och klassar glasögonen som privat digital utrustning i nivå med mobiler och smartklockor.</p>
+<p>Julie Remen Midtgarden (H), skolansvarig politiker i Oslo, motiverar beslutet med att problemet redan finns på skolgårdarna: glasögonen säljs i Norge i dag och används på norska skolgårdar i dag. Hon riktar kritiken direkt mot tillverkaren och säger att Oslo inte accepterar att barnen blir statister i Metas datainsamling. Kunskapsminister Kari Nessa Nordtun (Ap) uppmanade i slutet av augusti kommunerna att skriva in sådana förbud i skolornas ordningsregler. SV-ledaren Kirsti Bergstø har sedan i somras krävt stopp för försäljningen av oreglerade AI-glasögon; regeringen har avvisat den linjen och utreder fortfarande vilka åtgärder som ska vidtas.</p>
+<p>För Norden är det här de tydligaste kommunala besluten hittills om en produktkategori som varken Datatilsynet eller Nkom har mandat att förbjuda. Oslo och Bærum agerade var för sig, inte samordnat, och fler aktörer har infört egna förbud de senaste veckorna. Svenska skolhuvudmän står inför samma fråga utan motsvarande vägledning från IMY, och den norska linjen — förbud i ordningsreglerna i väntan på nationell reglering — blir i praktiken den mall de kommer att titta på.</p>
+<p class="news-card__source">Källa: <a href="https://www.aftenposten.no/oslo/i/xrpyRX/oslo-og-baerum-forbyr-ki-briller-i-skolen">Aftenposten</a>, <a href="https://www.nrk.no/stor-oslo/forbyr-smartbriller-i-osloskolen-1.18004693">NRK</a>, <a href="https://www.kode24.no/artikkel/oslo-skoler-forbyr-smartbriller-vil-ikke-la-barna-bli-statister-i-metas-datainnsamling/272099">kode24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Meta köper svenska AI-bolaget Stilla åtta månader efter lanseringen</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-11-meta-koper-svenska-ai-bolaget-stilla-atta-manader</guid>
+      <pubDate>Fri, 11 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Meta förvärvar Stockholmsbolaget Stilla, grundat 2024 av Siavash Ghorbani och Kaj Drobin. Båda är tidigare Shopify-chefer som kom in på Shopify när bolaget köpte deras förra företag Tictail 2018. Team och teknik går till Meta i väntan på att affären slutförs, och köpeskillingen har inte offentliggjorts.</p>
+<p>Stilla gick ur stealth i januari 2026 med en pre-seed på 5 miljoner dollar ledd av General Catalyst, med änglainvesterare bland grundare och ledare från Shopify, ElevenLabs och Lovable. Bolaget bygger en agentplattform som kopplar ihop bland annat Slack, Linear, GitHub och Notion med gemensam organisationskontext och behörigheter. Köpet ska enligt Axios snabba på Meta Business Agent, Metas handelsagent i WhatsApp, Messenger och Instagram som lanserades i juni 2026. Hur ett internt arbetsflödeslager ska påskynda en kundagent förklaras inte i någon av källorna.</p>
+<p>För Norden är frågan vad som händer med kompetensen. Axios uppger att Meta planerar att utöka sin närvaro i Sverige efter affären, vilket i så fall skulle ge Stockholm ett Meta-kontor med AI-utveckling — men också dra ingenjörer från en startupmiljö där Lovable, Sana och Legora slåss om samma personer. Varken Meta eller Stilla har kommenterat priset, och ingen uppgift finns om konkurrensprövning i EU.</p>
+<p class="news-card__source">Källa: <a href="https://stilla.ai/blog/stilla-is-joining-meta">Stilla</a>, <a href="https://www.axios.com/2026/09/09/meta-acquires-swedish-ai-startup-stillaai">Axios</a>, <a href="https://computersweden.se/article/4220681/meta-koper-upp-svenskt-ai-foretag.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Chalmersforskare kortar kvantgrindar på bosoniska koder till en enda drivcykel</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-11-chalmersforskare-kortar-kvantgrindar-pa-bosoniska-koder-till-en</guid>
+      <pubDate>Fri, 11 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Forskare vid Chalmers presenterar en metod som genomför en kvantgrind under en enda drivcykel i stället för tusentals. Arbetet är teoretiskt och bygger på numeriska simuleringar — det har ännu inte demonstrerats i hårdvara. Bakom studien står Tangyou Huang och Lei Du vid institutionen för mikroteknologi och nanovetenskap, tillsammans med Lingzhen Guo vid Tianjin University.</p>
+<p>Artikeln publicerades i Physical Review Letters i somras men fick sitt pressgenomslag först den 10 september. Metoden riktar sig mot bosoniska kvantkoder, som lagrar kvantinformation i mikrovågsfält i supraledande kretsar i stället för i enskilda kvantbitar. Chalmers pressmeddelande anger mer än tusen gånger snabbare för vissa operationer — siffran står inte i artikelns sammanfattning, utan är i pressmeddelandet härledd ur steget från tusentals drivperioder till en.</p>
+<p>För Norden är finansieringskedjan lika intressant som fysiken. Arbetet är finansierat av Wallenberg Centre for Quantum Technology och Knut och Alice Wallenbergs Stiftelse tillsammans med Kinas National Natural Science Foundation, och Chalmers bygger parallellt en egen supraledande kvantdator med målet 100 kvantbitar. Huang uppger att gruppen redan diskuterar experimentella realiseringar med kollegor på Chalmers — steget från simulering till mätning är det som avgör om siffran håller.</p>
+<p class="news-card__source">Källa: <a href="https://journals.aps.org/prl/abstract/10.1103/tnb8-3m8m">Physical Review Letters</a>, <a href="https://etn.se/index.php/nyheter/73439-kvantfelkorrigering-kan-bli-upp-till-tusen-ganger-snabbare.html">Elektroniktidningen</a>, <a href="https://forskning.se/2026/09/10/snabbare-vag-till-kvantdatorer-som-raknar-ratt/">forskning.se</a></p>]]></description>
+    </item>
+    <item>
+      <title>Wallenbergstiftelsen och Chalmers värvar AI-professorn Julian Togelius för 80 miljoner</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-11-wallenbergstiftelsen-och-chalmers-varvar-ai-professorn-julian-togelius</guid>
+      <pubDate>Fri, 11 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>WASP rekryterar Julian Togelius, professor i datavetenskap vid New York University, till Chalmers. Paketet uppgår till 80 miljoner kronor, varav Knut och Alice Wallenbergs Stiftelse står för 50 miljoner och Chalmers för 30. Togelius forskar på AI och spel: procedurell innehållsgenerering, spelarmodellering, automatisk speldesign, förstärkningsinlärning och open-ended learning.</p>
+<p>Pengarna ska låta honom bygga en ny forskargrupp i Sverige med både juniora och seniora forskare. Enligt WASP tillträder han vid Chalmers i slutet av året och är kvar på NYU till dess. Chalmers meddelade samtidigt en andra rekrytering på samma villkor — Alexander Bismarck, professor i materialkemi, till Wallenberg Wood Science Center — vilket ger sammanlagt 160 miljoner kronor för två professorer.</p>
+<p>För Norden är villkoret det som skiljer satsningen från ett vanligt forskningsanslag. Chalmers anger att forskarna ska flytta till Sverige och tillbringa minst 80 procent av sin sammanlagda arbetstid vid ett svenskt lärosäte. Det är ett försök att vända en kompetensström som annars går åt andra hållet — samma vecka som Meta köper Stockholmsbolaget Stilla. För NTNU och Universitetet i Oslo, som konkurrerar om samma internationella forskare utan en motsvarande privat stiftelse i ryggen, blir Wallenbergmodellen både förebild och problem.</p>
+<p class="news-card__source">Källa: <a href="https://wasp-sweden.org/wasp-strengthens-swedish-ai-research-through-recruitment-of-julian-togelius/">WASP</a>, <a href="https://www.chalmers.se/aktuellt/nyheter/chalmers-rekryterar-tva-varldsledande-professorer/">Chalmers</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI säger sig ha löst Navier–Stokes – med en modell starkare än Astra</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-10</link>
@@ -1037,55 +1101,6 @@
 <p>Tjänsten byggdes tillsammans med Coinbase och Stripe och har funnits i förhandsversion sedan i våras. Den kopplar in plånböcker från Coinbase och Stripe Privy för mikrobetalningar, är protokolloberoende och stöder vid lanseringen även Machine Payment Protocol, en standard som Stripe och Tempo skrivit tillsammans. Betalningstak sätts i infrastrukturlagret i stället för i agentens kod, och ett nytt upto-läge i x402-protokollet låter agenten ange ett takbelopp i stället för att binda sig vid ett fast pris.</p>
 <p>För Norden flyttar det agentfrågan in i ekonomifunktionen. En agent som betalar löpande skapar transaktioner utan mänskligt godkännande i varje steg, vilket berör både attestordningar och de krav på spårbarhet som revisorer ställer. För svenska och norska bolag som redan kör Bedrock hamnar utgiftskontrollen därmed i molnkonfigurationen snarare än i policydokumenten. Och för banker som SEB, Nordea och DNB reser mikrobetalningar från programvara samma frågor om betalningsansvar och tvistelösning som PSD2 en gång ställde för tredjepartsbetalningar.</p>
 <p class="news-card__source">Källa: <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/">AWS Machine Learning Blog</a>, <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/">AWS What’s New</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nvidia mäklar mellan GPU-ägare och datahallar i Norden när regionens AI-bygge tar fart</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-22</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-22-nvidia-maklar-mellan-gpu-agare-och-datahallar-i</guid>
-      <pubDate>Sat, 22 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Nvidia för samman bolag som behöver plats och kraft för sina grafikprocessorer med datacenteroperatörer i Norden, uppger källor till CNBC. Billig kraft, gott om mark och sval luft har gjort regionen till ett av de mest efterfrågade områdena i världen för nya AI-anläggningar.</p>
-<p>Finansdirektör Colette Kress bekräftade redan i juni att bolaget ”definitivt engagerat sig” i den här sortens mäklande, och beskrev frågorna som hur Nvidia kan hjälpa kunder att få tag på mark, kraft och byggnadsskal, och hur beräkningskapaciteten kan komma på plats så snabbt som möjligt. En källa uppger att Nvidia kontaktat ett datacenterbolag och sonderat möjliga avtalskunder — alltså aktörer som binder sig vid att köpa eller hyra kapacitet i förväg. Enligt CNBC ska gigawatt av datacenterkapacitet byggas i Norden de närmaste åren.</p>
-<p>För Norden innebär det att chiptillverkaren börjar påverka vilka projekt som får avtalskunder — och därmed vilka som faktiskt byggs. Stargate Norway utanför Narvik ska inledningsvis leverera 230 MW, och både Nebius och Microsoft har skrivit avtal i regionen under året. Enligt en genomgång från Savills, refererad av CNBC, ligger Oslo, Stockholm och Helsingfors bland de sex platser i världen som har störst potential för framtida datacenterbyggen. Det lägger press på Svenska kraftnät och Statnett när anslutningsköerna växer, och på kommuner som Narvik och Luleå som ska väga arbetstillfällen mot kraftuttag.</p>
-<p class="news-card__source">Källa: <a href="https://www.cnbc.com/2026/08/19/nvidia-nordic-ai-data-centers.html">CNBC</a>, <a href="https://www.mobileworldlive.com/network-tech/nvidia-plays-matchmaker-as-nordic-ai-data-centre-deals-boom">Mobile World Live</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropics modeller designade fungerande proteiner mot 14 av 15 mål i labbtest</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-22</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-22-anthropics-modeller-designade-fungerande-proteiner-mot-14-av</guid>
-      <pubDate>Sat, 22 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Anthropic har publicerat resultat där bolagets modeller på egen hand designat proteinbindare som fungerade mot 14 av 15 målproteiner när de tillverkades och testades i våtlabb. Kampanjen genomfördes utan vetenskaplig handledning under själva körningen.</p>
-<p>Av 1 320 designer blev 354 bekräftade bindare. Modellerna Mythos Preview och Opus 4.8 nådde träffkvoter på 26,7 respektive 22,6 procent när de arbetade mot alla mål samtidigt under en session på 48 timmar. När Mythos Preview i stället fick fokusera på ett mål i taget under 24 timmar steg kvoten till 35,1 procent, mot de 10 till 15 procent som Anthropic anger som typiskt i proteindesignkampanjer. Adaptyv Bio och Twist Bioscience tillverkade och testade proteinerna som externa utvärderare, oberoende av Anthropic. Bolaget understryker samtidigt att en högaffin bindare bara är ett första steg mot en läkemedelsmolekyl, och att resultaten behöver bekräftas med mer omfattande karaktärisering.</p>
-<p>För Norden går resultatet rakt in i en sektor som redan är stark här. SciLifeLab i Stockholm och Uppsala, Karolinska Institutet och DTU Biosustain i Lyngby arbetar alla med proteindesign och strukturbiologi, och Novo Nordisk Foundation finansierar omfattande beräkningsresurser för livsvetenskaperna. Håller träffkvoten även utanför Anthropics egna körningar flyttas flaskhalsen från design till våtlabbkapacitet — och då blir tillgången till proteintillverkning och screening en konkurrensfaktor för nordiska läkemedelsbolag och universitet, inte tillgången till modeller.</p>
-<p class="news-card__source">Källa: <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">Anthropic</a>, <a href="https://thenextweb.com/news/anthropic-claude-protein-design-chemistry">The Next Web</a></p>]]></description>
-    </item>
-    <item>
-      <title>Amazon ska sexdubbla utbredningen för sina drönarleveranser till nära 500 orter</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-22</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-22-amazon-ska-sexdubbla-utbredningen-for-sina-dronarleveranser-till</guid>
-      <pubDate>Sat, 22 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Amazon meddelar att Prime Air ska finnas i nära 500 städer och orter i USA vid årets slut. Det är en sexdubbling jämfört med dagens utbredning, enligt bolaget självt.</p>
-<p>I dag flyger tjänsten från elva platser i sju delstater, och varje bas täcker omkring 175 square miles — ungefär 450 kvadratkilometer. Chicago, Syracuse, Cleveland, Atlanta och Boise står näst på tur. Amazon har ett Part 135-certifikat från den amerikanska luftfartsmyndigheten FAA, samma ramverk som gäller för kommersiella flygbolag, och använder inbyggd teknik för att upptäcka och väja för annan trafik. Prime-medlemmar får fri drönarleverans på order från 50 dollar, i annat fall kostar det 2,99 dollar, medan icke-medlemmar betalar 4,99 dollar.</p>
-<p>För Norden är frågan inte tekniken utan luftrummet. Trondheimsbolaget Aviant har kört hemleverans med drönare sedan 2022 och täcker i dag också en radie på 17 kilometer runt Lillehammer, men expansionen begränsas av hur snabbt Luftfartstilsynet och Transportstyrelsen öppnar för rutinmässig flygning bortom pilotens synhåll. Det europeiska U-space-regelverket ska ge den strukturen, men utrullningen sker i etapper. Amazons skala visar vad som blir möjligt när tillstånden väl finns på plats — och gör glappet till nordisk regelverkstakt tydligare.</p>
-<p class="news-card__source">Källa: <a href="https://www.aboutamazon.com/news/transportation/amazon-prime-air-drone-delivery-expansion">About Amazon</a>, <a href="https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/">TechCrunch</a>, <a href="https://dronelife.com/2026/08/19/amazon-prime-air-plans-drone-delivery-expansion-to-nearly-500-u-s-cities-and-towns/">DroneLife</a></p>]]></description>
-    </item>
-    <item>
-      <title>Marvell ger Google rätt att köpa aktier för 12,2 miljarder dollar i chipavtal</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-22</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-22-marvell-ger-google-ratt-att-kopa-aktier-for</guid>
-      <pubDate>Sat, 22 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Marvell utvidgar sitt samarbete kring Googles specialkonstruerade AI-chip och ger samtidigt Google en teckningsoption på aktier värda upp till 12,2 miljarder dollar. Marvells aktie steg omkring 10 procent på beskedet.</p>
-<p>Optionen ger Google rätt att köpa upp till 58,97 miljoner aktier till 206,58 dollar per aktie. Omkring 1,4 miljoner aktier tillfaller Google automatiskt under första året, medan resterande 57,6 miljoner är knutna till inköpsmål — ungefär 240 000 aktier per 500 miljoner dollar i kvalificerade chipinköp, med ett tak på omkring 120 miljarder dollar i kumulativ intäkt till och med räkenskapsåret 2033. Avtalet gäller kretsar som ansluter till Googles TPU-ekosystem: inferensacceleratorer samt styrkretsar för lagring och nätverk. Broadcom, som hittills varit Googles främsta partner för specialchip, föll omkring 5 procent.</p>
-<p>För Norden är kopplingen konkret via kraften och kylan. Google driver stora datacenter i Hamina i Finland och Fredericia i Danmark, vilket gör valet av chipleverantör till en fråga om vilken hårdvara som faktiskt hamnar i nordiska serverhallar de närmaste åren. Upplägget är också en signal till underleverantörer: när en kund kan få en ägarandel som motprestation för framtida inköp förskjuts förhandlingsläget, något som berör svenska och norska industribolag som Ericsson och Kongsberg i deras egna leverantörsavtal.</p>
-<p class="news-card__source">Källa: <a href="https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html">CNBC</a>, <a href="https://finance.yahoo.com/technology/articles/marvell-grants-google-12-2-123812695.html">Reuters</a>, <a href="https://thenextweb.com/news/marvell-google-12-2bn-warrant-custom-chip-deal">The Next Web</a></p>]]></description>
     </item>
   </channel>
 </rss>
