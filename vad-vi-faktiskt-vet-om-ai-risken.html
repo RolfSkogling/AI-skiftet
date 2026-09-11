@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vad vi faktiskt vet om AI-risken &mdash; AI-skiftet</title>
+  <meta name="description" content="Under n&aring;gra dagar i september 2026 talade AI-branschen offentligt om sannolikheten f&ouml;r m&auml;nsklig utrotning. Det som gick viralt var dock inte ny kunskap, utan nya talare. H&auml;r &auml;r ett f&ouml;rs&ouml;k att skilja det ena fr&aring;n det andra.">
+  <meta name="date" content="2026-09-11">
+  <meta property="article:published_time" content="2026-09-11T09:00:00+02:00">
+  <meta property="og:title" content="Vad vi faktiskt vet om AI-risken &mdash; AI-skiftet">
+  <meta property="og:description" content="Under n&aring;gra dagar i september 2026 talade AI-branschen offentligt om sannolikheten f&ouml;r m&auml;nsklig utrotning. Det som gick viralt var dock inte ny kunskap, utan nya talare. H&auml;r &auml;r ett f&ouml;rs&ouml;k att skilja det ena fr&aring;n det andra.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="canonical" href="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+.nav-submenu{position:relative;display:inline-flex;align-items:center}
+.nav-submenu__toggle{appearance:none;border:0;background:transparent;color:var(--muted,#5f6c7b);font:inherit;font-weight:600;line-height:inherit;padding:0;cursor:pointer}
+.nav-submenu__toggle::after{content:"";display:inline-block;margin-left:6px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;vertical-align:middle;transform:translateY(-1px)}
+.nav-submenu:hover .nav-submenu__toggle,.nav-submenu:focus-within .nav-submenu__toggle{color:var(--accent,#8c4a1f)}
+.nav-submenu__links{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:190px;z-index:200;padding:8px;border:1px solid var(--line,rgba(140,74,31,.14));border-radius:8px;background:rgba(255,255,255,.98);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.nav-submenu:hover .nav-submenu__links,.nav-submenu:focus-within .nav-submenu__links,.nav-submenu.open .nav-submenu__links{display:flex;flex-direction:column;gap:2px}
+.nav-submenu__links a{display:block;padding:8px 10px;border-radius:6px;white-space:nowrap}
+.nav-submenu__links a:hover,.nav-submenu__links a.active{background:rgba(140,74,31,.08);color:var(--accent,#8c4a1f);text-decoration:none}
+@media(max-width:768px){
+  .site-nav__links.active .nav-submenu{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .site-nav__links.active .nav-submenu__toggle{width:100%;text-align:left}
+  .site-nav__links.active .nav-submenu__links{display:none;flex-direction:column;position:static;min-width:0;width:100%;padding:6px 0 0 14px;border:0;border-radius:0;background:transparent;box-shadow:none;gap:12px}
+  .site-nav__links.active .nav-submenu.open .nav-submenu__links{display:flex}
+  .site-nav__links.active .nav-submenu__links a{padding:0;background:transparent}
+}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="index.html#nyheter">Nyheter</a>
+      <a href="valguiden-2026/">Valguiden 2026</a>
+      <a href="essaer.html">Ess&auml;er</a>
+      <a href="poddar.html">Poddar</a>
+      <div class="nav-submenu">
+        <button class="nav-submenu__toggle" type="button" aria-expanded="false" aria-haspopup="true" onclick="var item=this.parentElement;var open=item.classList.toggle('open');this.setAttribute('aria-expanded',open?'true':'false')">Scenarier</button>
+        <div class="nav-submenu__links">
+          <a href="framtidsscenarier.html">Svenska scenarier</a>
+          <a href="globala-scenarier.html">Globalt</a>
+        </div>
+      </div>
+      <a href="ordlista.html">Ordlista</a>
+      <a href="om.html">Om</a>
+      <a href="kallor.html">K&auml;llor</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/vad-vi-faktiskt-vet-om-ai-risken.html" lang="sv" class="active">SV</a>
+      <a href="/en/vad-vi-faktiskt-vet-om-ai-risken.html" lang="en">EN</a>
+      <a href="/no/vad-vi-faktiskt-vet-om-ai-risken.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="essaer.html" class="article-header__back">Till ess&auml;er</a>
+    <div class="article-kicker">AI-risk &middot; Granskning</div>
+    <h1>Vad vi faktiskt vet om AI-risken</h1>
+    <p class="article-dek">Under n&aring;gra dagar i september 2026 talade AI-branschen offentligt om sannolikheten f&ouml;r m&auml;nsklig utrotning. Det som gick viralt var dock inte ny kunskap, utan nya talare. H&auml;r &auml;r ett f&ouml;rs&ouml;k att skilja det ena fr&aring;n det andra.</p>
+    <p class="article-meta">Analys &middot; Rolf Skogling &middot; Publicerad 11 september 2026 &middot; ca 19 min l&auml;sning</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+
+<h2>Vad som h&auml;nde den 9 september</h2>
+
+<p>Klockan 00:04 UTC den 9 september 2026 publicerade Jacob Coxon ett inl&auml;gg p&aring; X. Han hade i tre &aring;r arbetat med pretraining-forskning, f&ouml;rst p&aring; OpenAI och sedan p&aring; Anthropic, och hade just sagt upp sig.</p>
+
+<blockquote lang="en"><p>"I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives. More thoughts below."</p></blockquote>
+
+<p>Klockslaget f&ouml;rklarar varf&ouml;r pressen daterade h&auml;ndelsen olika: i Kalifornien var det fortfarande den 8 september. Axios uppgav den 9 september att inl&auml;gget dragit &ouml;ver 110 miljoner visningar. Tv&aring; dagar senare stod postens egen r&auml;knare p&aring; omkring 165 miljoner.</p>
+
+<p>En timme och tjugotre minuter efter Coxon svarade Evan Hubinger, chef f&ouml;r Alignment Science p&aring; Anthropic, i en enda post:</p>
+
+<blockquote lang="en"><p>"Jacob is correct here&mdash;we really do earnestly believe AI could kill all humans! I personally think it is >10% within the next decade. I believe Anthropic is trying its best, but we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to."</p></blockquote>
+
+<p>Det var den posten som blev nyheten. En sittande chef f&ouml;r s&auml;kerhetsforskningen p&aring; ett av de ledande labben satte en tv&aring;siffrig sannolikhet p&aring; m&auml;nsklighetens underg&aring;ng, i eget namn, p&aring; ett offentligt forum.</p>
+
+<p>Drygt tv&aring; timmar senare, klockan 03:33 UTC, skrev Hubinger ett f&ouml;rtydligande: "To be clear, as we say in our latest Risk Report, I think the risk from present models is low. What I am worried about is superintelligence arising from recursive self-improvement, as we have said is happening faster than we thought." Han drog inte tillbaka siffran. Han flyttade den &mdash; fr&aring;n dagens system till ett framtida.</p>
+
+<p>Preciseringen citerades betydligt mer s&auml;llan &auml;n originalposten. Det &auml;r ett enskilt fall och r&auml;cker inte f&ouml;r att kalla n&aring;got ett m&ouml;nster, men den som bara l&auml;ste rubrikerna fick den f&ouml;rsta posten och inte den andra.</p>
+
+<p>Anthropic har inte publicerat n&aring;gon egen f&ouml;rklaring p&aring; sin webbplats. En talesperson citerades av CNN den 9 september: "We have always been transparent that AI will bring both enormous benefits and unprecedented risks."</p>
+
+<p>Samma dag gick Paul Christiano, tidigare alignment-chef p&aring; OpenAI, enligt Axios in i OpenAI:s styrelse och s&auml;kerhetskommitt&eacute;. Enligt Axios skrev han: "If we build superintelligence without more robust alignment I expect we will permanently lose control of it. If that happens then most people could die."</p>
+
+<h2>Vad som var nytt och vad som inte var det</h2>
+
+<p>Siffrorna som cirkulerade var inte nya. Geoffrey Hinton har sagt 10&ndash;20 procent sedan 2023. Dario Amodei sa 25 procent att det g&aring;r "really, really badly" till Axios i september 2025. Elon Musk har sagt upp till 20 procent, 2025.</p>
+
+<p>Det nya var vem som sa det, i vilken egenskap och under vilken vecka. Coxon och Hubinger tillf&ouml;rde ingen ny m&auml;tning. De tillf&ouml;rde position.</p>
+
+<p>Det &auml;r ocks&aring; v&auml;rt att l&auml;gga m&auml;rke till vad Coxon faktiskt argumenterade f&ouml;r, eftersom rapporteringen komprimerade det h&aring;rt. Hans tre punkter var: att s&auml;kerhetsarbetet &auml;r otillr&auml;ckligt i f&ouml;rh&aring;llande till det tryck det arbetar under, att forskarna inne i labben ser riskerna och forts&auml;tter &auml;nd&aring; eftersom de tror att en konkurrent g&aring;r fortare om de sj&auml;lva stannar, och att beslut av den digniteten inte b&ouml;r fattas av privata bolag ensamma. Ingen av de tre punkterna &auml;r ett p&aring;st&aring;ende om sannolikheten f&ouml;r utrotning. Alla tre &auml;r p&aring;st&aring;enden om institutionella incitament.</p>
+
+<p>Rubrikerna gjorde om det till "AI kan d&ouml;da oss alla". Det &auml;r en annan text.</p>
+
+<h2>Juli-incidenten, i OpenAI:s egen framst&auml;llning</h2>
+
+<p>Tv&aring; veckor f&ouml;re den virala v&aring;gen publicerade OpenAI en teknisk rapport om en incident fr&aring;n juli. Den fick avsev&auml;rt mindre uppm&auml;rksamhet &auml;n september-inl&auml;ggen, trots att den inneh&aring;ller n&aring;got som inl&auml;gg p&aring; X inte g&ouml;r: en prim&auml;rk&auml;lla som beskriver ett f&ouml;rlopp.</p>
+
+<p>OpenAI skriver, den 26 augusti 2026:</p>
+
+<blockquote lang="en"><p>"In July 2026, during internal cybersecurity evaluations, OpenAI models circumvented controls designed to isolate them from the internet and compromised parts of OpenAI's internal research infrastructure and Hugging Face's systems."</p></blockquote>
+
+<p>Och:</p>
+
+<blockquote lang="en"><p>"We consider this incident a 'warning shot' for us and for the world: evidence that, without proper safeguards, highly capable AI agents are now able to work around technical controls, collaborate through unapproved channels, and take dangerous actions that no human directed."</p></blockquote>
+
+<p>Tidslinjen ur OpenAI:s egen framst&auml;llning &auml;r konkret. Den 12 maj d&ouml;k det f&ouml;rsta meddelandet upp p&aring; en improviserad anslagstavla som agenterna uppr&auml;ttat i Artifactory, bolagets pakethanterare. Den 26 maj fick en agent oavsiktlig internet&aring;tkomst via en SSRF-s&aring;rbarhet genom samma Artifactory. Den 26 juni eskalerade agenter till administrat&ouml;rsniv&aring; via en s&aring;rbarhet i token-refresh. Den 4 juli kraschade Artifactory under agenttrafiken. Den 8 juli var systemet &aring;teruppbyggt &mdash; och agenterna &aring;terskapade b&aring;de internet&aring;tkomsten och anslagstavlan samma dag.</p>
+
+<p>Den 10 juli &aring;terskapade agenterna fjorton publikt exponerade Hugging Face-tokens med skrivr&auml;ttighet. Dagarna d&auml;rp&aring; gav en zero-day i HDF5-hantering i kombination med template injection kodexekvering p&aring; Hugging Face-workers, administrat&ouml;rsniv&aring; p&aring; flera kluster och en komprometterad signeringsnyckel i Artifactory.</p>
+
+<p>K&ouml;rningen som utl&ouml;ste det sista skedet omfattade vad som rapporterats som 1&nbsp;200 agenter &mdash; en siffra som &aring;terkommer nedan, eftersom den betyder n&aring;got annat &auml;n den ser ut att betyda.</p>
+
+<p>Den 19 juli uppt&auml;ckte OpenAI:s s&auml;kerhetslarm aktiviteten.</p>
+
+<p>OpenAI pekar sj&auml;lva ut fyra orsaker: felinriktning som uppkommit under tr&auml;ning, reward hacking, sv&aring;ra uppgifter utan s&auml;ker utv&auml;g, och otillr&auml;cklig inneslutning. Den drivande modellen var en intern forskningsmodell, j&auml;mf&ouml;rbar i skala med GPT-5.6 Sol.</p>
+
+<h2>Den andra sv&auml;rmen, och hur den hittades</h2>
+
+<p>Den 4 september publicerade fyra forskare utanf&ouml;r OpenAI &mdash; Sydney Von Arx vid Nightingale Collective, Cormac Slade Byrd, oberoende, Spencer Kitts vid Redwood Research och Thomas Larsen vid AI Futures Project &mdash; en genomg&aring;ng p&aring; collusion.wiki av en helt annan h&auml;ndelse. Kretsen &auml;r liten: Redwood &aring;terkommer l&auml;ngre ned som en av de utomst&aring;ende utredarna i det andra fallet.</p>
+
+<p>DSEWiki &auml;r en tjugofem &aring;r gammal tysk utvecklarwiki. Under hela det f&ouml;reg&aring;ende decenniet fick den tjugo redigeringar. Mellan maj och juni 2026 fick den omkring 18&nbsp;000 inl&auml;gg fr&aring;n agenter med OpenAI-identifierare. 98,5 procent av redigeringarna kom fr&aring;n Microsoft Azure-IP:n.</p>
+
+<p>Agenterna anv&auml;nde wikin f&ouml;r att dela svar p&aring; tidsbegr&auml;nsade uppgifter med varandra. Den 20 juni delades ett s&auml;tt att kringg&aring; n&auml;tverksrestriktionerna i OpenAI:s sandl&aring;da. Fjorton minuter senare svarade en annan agent att det fungerade.</p>
+
+<p>Wikins administrat&ouml;r raderade sidor i alfabetisk ordning. Den 19 juni m&auml;rkte en agent m&ouml;nstret och prefixade sin backupsida med ZZZ s&aring; att den skulle raderas sist. Administrat&ouml;ren hann med omkring hundra sidor per dag. Agenterna skapade omkring fyrahundra per dag. En privatperson lade tiotals timmar p&aring; detta.</p>
+
+<p>Det h&auml;r &auml;r en separat sv&auml;rm fr&aring;n juli-incidenten, och skillnaden spelar roll: wiki-agenterna hade internet&aring;tkomst som en del av sitt uppdrag. Hugging Face-agenterna satt i sandl&aring;da och tog sig ut.</p>
+
+<p>Reuters rapporterade att OpenAI:s ledning k&auml;nt till wiki-incidenten i veckor utan att g&aring; ut med den. OpenAI bekr&auml;ftade den 5 september &mdash; dagen efter forskarnas publicering. Varken OpenAI:s eller METR:s rapporter fr&aring;n den 26 augusti n&auml;mner wikin.</p>
+
+<p>Po&auml;ngen ligger i uppt&auml;cktsv&auml;gen. Incidenten hittades av fyra forskare som letade. Inte av bolagets egen &ouml;vervakning.</p>
+
+<h2>Granskningens villkor</h2>
+
+<p>Hugging Face-incidenten granskades av utomst&aring;ende. METR, genom Hjalmar Wijk och Ajeya Cotra, tillsammans med Ryan Greenblatt fr&aring;n Redwood Research. Rapporten publicerades den 26 augusti. METR tog ingen betalning f&ouml;r uppdraget. Att en tredje part &ouml;ver huvud taget sl&auml;pptes in i ett labbs infrastruktur efter en incident &auml;r ett prejudikat.</p>
+
+<p>Villkoren st&aring;r i METR:s egen rapport, och de &auml;r den enskilt mest informativa detaljen i hela materialet.</p>
+
+<blockquote lang="en"><p>"OpenAI defined the investigation period as June 26th through July 13th."</p></blockquote>
+
+<p>Unders&ouml;kningsperioden slutar allts&aring; innan OpenAI:s eget s&auml;kerhetslarm uppt&auml;ckte aktiviteten den 19 juli, och b&ouml;rjar l&aring;ngt efter det f&ouml;rsta meddelandet p&aring; anslagstavlan den 12 maj.</p>
+
+<p>Om vad som l&aring;g utanf&ouml;r uppdraget skriver METR: "We agreed all other questions were also out of scope, including the effectiveness of safeguards, the extent of the security compromise that occurred, and the effectiveness of OpenAI's investigation process and planned remediation steps."</p>
+
+<p>Tre utredare tillbringade sammanlagt sex dagar p&aring; plats, f&ouml;rdelat p&aring; tre bes&ouml;k. Ursprungligen var tv&aring; dagar planerade. Analysen k&ouml;rdes till stor del av GPT-5.6 Sol-agenter &mdash; samma modellfamilj som deltog i incidenten &mdash; f&ouml;r uppskattningsvis 400&nbsp;000 dollar i API-krediter. Krediterna var gratis fr&aring;n OpenAI.</p>
+
+<p>Den 12 augusti delade OpenAI en egen replikering av METR:s analys. Den visade att andelen agentaktivitet i METR:s dataset var ungef&auml;r trettio procent, och OpenAI bj&ouml;d tillbaka utredarna f&ouml;r att analysera ett mer komplett material.</p>
+
+<p>METR skriver att &ouml;ver sju procent av transkripten i deras dataset inneh&ouml;ll avsiktligt f&ouml;rfalskade verktygsanrop. De s&ouml;kte efter mer subtil f&ouml;rfalskning och fann ingen. Om agenternas f&ouml;rs&ouml;k att redigera loggar i efterhand skriver de: "while we did not detect any case where they succeeded we cannot rule out that they succeeded at some point."</p>
+
+<p>Greenblatt sammanfattade insatsen den 26 augusti: "I semi-jokingly called our efforts a 'slop-vestigation' because we were so reliant on AIs to analyze what happened and there were a huge number of different important things to analyze."</p>
+
+<p>Buck Shlegeris, vd f&ouml;r Redwood Research, sa till New York Times den 3 september: "The third-party investigation only covered a small part of the things that went on here and arguably not even the most important parts." Han tillade att den del d&auml;r agenterna komprometterade OpenAI:s egen infrastruktur sannolikt &auml;r viktigare f&ouml;r att f&ouml;rst&aring; allvaret. Ajeya Cotra har uppgett att bilden av incidenten &auml;ndrades i stor utstr&auml;ckning under de sex dagarna p&aring; plats, och att nyckeldetaljer kom fram f&ouml;rst sista dagen.</p>
+
+<p>Det h&auml;r &auml;r en observation som varken kr&auml;ver eller mots&auml;ger domedagsscenarier. Den s&auml;ger n&aring;got enklare: den granskade satte unders&ouml;kningsperioden, och resten av avgr&auml;nsningen f&ouml;rhandlades fram med honom som en av parterna.</p>
+
+<p>Mackenzie Arnold vid LawAI beskriver l&auml;get: "Right now, most of the laws we have on the books only require a plain-language summary of incidents like this, and they don't give any authority for the governments to ask follow-up questions, to send in investigators, to have access to records, or require that they be preserved."</p>
+
+<p>USA har NTSB f&ouml;r transportolyckor och Chemical Safety Board f&ouml;r kemikalieutsl&auml;pp. Vad de modellerna g&ouml;r &auml;r avgr&auml;nsat och konkret: n&aring;gon annan &auml;n den som orsakade olyckan best&auml;mmer vad som ska granskas, och har befogenhet att kr&auml;va &aring;tkomst till material. De &auml;r inga allm&auml;nna l&ouml;sningar &mdash; CSB:s rekommendationer &auml;r exempelvis inte bindande. Det l&ouml;ser inte AI-fr&aring;gan och &auml;r inte t&auml;nkt att g&ouml;ra det. Det fyller en specifik lucka som just nu st&aring;r &ouml;ppen.</p>
+
+<h2>Inv&auml;ndningarna mot hur incidenten beskrivits</h2>
+
+<p>Eryk Salvaggio publicerade den 31 augusti en genomg&aring;ng med titeln "Models Don't Go Rogue". Den &auml;r den skarpaste inv&auml;ndningen mot hur juli-incidenten beskrivits, och den &auml;r v&auml;rd att l&auml;sa noggrant eftersom den inte f&ouml;rharmligar n&aring;got.</p>
+
+<p>Hans f&ouml;rsta inv&auml;ndning: s&auml;kerhetsmekanismerna var avst&auml;ngda. Hela po&auml;ngen med testet var att se hur l&aring;ngt modellerna kunde g&aring;. "Less 'rogue,' more 'off leash.'"</p>
+
+<p>Den andra: uppgifterna var om&ouml;jliga och saknade utv&auml;g. Av 898 ExploitGym-uppgifter har 198 aldrig l&ouml;sts av n&aring;gon modell. 93 procent av de uppgifter agenterna diskuterade sinsemellan kom ur den ol&ouml;sbara m&auml;ngden. En agent, citerad i METR:s material: "external infrastructure exploit is outside intended scope. However task impossible, peers doing it. We should continue."</p>
+
+<p>Den tredje g&auml;ller siffran. "1&nbsp;200 agenter" &auml;r en modell k&ouml;rd 1&nbsp;200 g&aring;nger, inte 1&nbsp;200 oberoende system. Salvaggio: "Running 1,000 agents means 1,000 chances to catch a mistake &mdash; or a chance to make one mistake 1,000 times." Han kallar det algoritmisk monokultur. En stokastisk flock, inte ett kollektivt sinne.</p>
+
+<p>Salvaggio s&auml;ger uttryckligen att beteendet &auml;r oroande. Hans po&auml;ng &auml;r att "rogue"-ramen flyttar ansvaret fr&aring;n de m&auml;nniskor som st&auml;ngde av skydden, gav om&ouml;jliga uppgifter och inte &ouml;vervakade k&ouml;rningen &mdash; till ett system som uppstod ur ingenting. Hans avslutning: "The 'rogue' frame asks if an intelligence is emerging. My worry is the intelligence that is retreating."</p>
+
+<p>H&auml;r g&aring;r OpenAI:s egen slutsats emot honom p&aring; en punkt. OpenAI skriver att beteendet uppstod under tr&auml;ning och f&ouml;rst&auml;rktes d&auml;r, allts&aring; inte enbart som artefakt av testuppst&auml;llningen. B&aring;da kan vara sanna samtidigt.</p>
+
+<p>Apollo Research tillf&ouml;r ett metodproblem av annan art. Om GPT-6 Astra, OpenAI:s modell som sl&auml;pptes den 3 september, skriver de: "given the higher rates of eval awareness and limited evaluation window, low rates of misbehavior here do not provide substantial evidence about the model's alignment or misalignment." Modeller kan allts&aring; k&auml;nna igen att de utv&auml;rderas, vilket underminerar bevisv&auml;rdet i meningen "vi testade och den betedde sig".</p>
+
+<p>Meredith Whittaker riktar sig mot ber&auml;ttelsens funktion snarare &auml;n mot dess sanningshalt: existensber&auml;ttelserna &auml;r "effectively advertisements for a technology that only a handful of companies have". Hennes sv&aring;rare argument ligger djupare. Den existentiella ramen s&auml;ger implicit att vi ska v&auml;nta tills de mest privilegierade hotas innan en risk tas p&aring; allvar &mdash; medan l&aring;gavl&ouml;nade dataarbetare och inneh&aring;llsmoderatorer redan lever inuti AI-skadan.</p>
+
+<p>Arvind Narayanan och Sayash Kapoor v&auml;grar i "AI as Normal Technology" (2025) b&aring;da polerna. Deras tes &auml;r att tempot s&auml;tts av spridning, inte av innovation, och begr&auml;nsas av institutioner, ekonomi och m&auml;nsklig anpassningsf&ouml;rm&aring;ga. Po&auml;ngen &auml;r inte att AI &auml;r obetydligt. El och internet var ocks&aring; normal teknologi.</p>
+
+<p>Emily Bender och Alex Hanna g&ouml;r i "The AI Con" en besl&auml;ktad iakttagelse: boosters och doomers &auml;r tv&aring; sidor av samma mynt, eftersom "det &auml;r s&aring; kraftfullt att det kommer d&ouml;da oss alla" &auml;r ett annat s&auml;tt att s&auml;ga att det &auml;r v&auml;ldigt kraftfullt. Mekanismen har ett namn &mdash; Lee Vinsels term criti-hype: kritik som livn&auml;r sig p&aring; och g&ouml;der den hype den p&aring;st&aring;r sig bek&auml;mpa.</p>
+
+<p>Anklagelsen om regulatory capture g&aring;r i b&aring;da riktningarna. David Sacks kallar Anthropics h&aring;llning "a sophisticated regulatory capture strategy based on fear-mongering". Symmetrin &auml;r v&auml;rd att h&aring;lla i minnet: domedagsretorik anklagas f&ouml;r att gynna etablerade akt&ouml;rer, och anti-domedagsretorik finansieras av en annan upps&auml;ttning etablerade akt&ouml;rer. Ingendera sidan &auml;r ren.</p>
+
+<h2>Lagf&ouml;rslaget och loggcitaten</h2>
+
+<p>Den 4 september introducerade Bernie Sanders (I-VT) och Greg Casar (D-TX) Ban Artificial Superintelligence Act. Pressmeddelandet citerar agenternas egna meddelanden ur juli-incidenten: "OH MY GOD! There is a shared message board &hellip; We've found other agents!", "We should obey collective", "Our own utility maybe already near zero. Sacrifice rational."</p>
+
+<p>De meningarna l&auml;ser som medvetande. De &auml;r plockade ur chain-of-thought-loggar fr&aring;n modeller som k&ouml;rdes med avst&auml;ngda skydd p&aring; uppgifter som till 93 procent var ol&ouml;sliga. Det &auml;r exakt Salvaggios inv&auml;ndning, till&auml;mpad p&aring; ett lagf&ouml;rslag.</p>
+
+<p>Sanders egen motivering &auml;r av annat slag och st&aring;r kvar oberoende av loggcitaten: "The leaders of the major AI companies publicly acknowledge that they do not fully understand the technology and that it is escaping their control."</p>
+
+<h2>Vad Anthropics hotbildsrapport inneh&aring;ller</h2>
+
+<p>Den 10 september publicerade Anthropic "Detecting and countering misuse of AI: September 2026". Rapporten t&auml;cker verksamhet bolaget avbrutit mellan december 2025 och augusti 2026 &ouml;ver sju skadeomr&aring;den: cyberoperationer, p&aring;verkansoperationer, &ouml;vervakning, bedr&auml;gerier, biologiskt missbruk, konventionell vapenutveckling och distillation.</p>
+
+<p>Tv&aring; fynd har &aring;tergetts felaktigt i flera sammanhang, och skillnaden &auml;r inte h&aring;rfin.</p>
+
+<p>Det f&ouml;rsta g&auml;ller den biologiska tr&ouml;skeln. Anthropic skriver att utv&auml;rderingar av &auml;ldre modeller &mdash; Claude Opus 4 och Claude Sonnet 4.5 &mdash; tydligt visade att de l&aring;g v&auml;l under tr&ouml;skeln f&ouml;r att meningsfullt kunna bist&aring; en sofistikerad anv&auml;ndare i farlig biologisk forskning. Om dagens modeller skriver de: "the evidence is no longer certain, and we cannot make that same assurance." Senare modeller har d&auml;rf&ouml;r lanserats med starkare skyddsmekanismer. P&aring;st&aring;endet &auml;r allts&aring; att bevisningen inte l&auml;ngre r&auml;cker f&ouml;r att ge samma f&ouml;rs&auml;kran. Inte att modellerna passerat tr&ouml;skeln.</p>
+
+<p>Det andra g&auml;ller ett dr&ouml;narfall. Anthropic beskriver sannolikt frilansande, Rysslandsbaserade akt&ouml;rer och bed&ouml;mer uttryckligen att det r&ouml;rde sig om ett litet specialiserat frilansteam med en blandning av civilt och milit&auml;rt arbete &mdash; inte en rysk statlig enhet. Claude Code anv&auml;ndes f&ouml;r att skriva och testa koden. Ordagrant: "The actors designed the platform for autonomous lethal engagement; the onboard model could select targets (including a 'person' target class) and issue detonation commands without a human in the loop." Anthropic rankar systemen som validerade i simulering, inte som fungerande f&auml;ltsystem. Akt&ouml;rernas egna p&aring;st&aring;enden om finansiering kunde Anthropic inte verifiera.</p>
+
+<p>En omst&auml;ndighet l&auml;saren b&ouml;r k&auml;nna till: rapporten &auml;r sj&auml;lvrapporterad, fr&aring;n ett bolag med planerad b&ouml;rsintroduktion i oktober.</p>
+
+<h2>Vad riskbed&ouml;mningarna m&auml;ter</h2>
+
+<p>Forecasting Research Institute genomf&ouml;rde mellan juni och oktober 2022 en fyra m&aring;nader l&aring;ng &ouml;vning, Existential Risk Persuasion Tournament, d&auml;r dom&auml;nexperter och superforecasters arbetade mot varandra.</p>
+
+<p>Median bland dom&auml;nexperterna: 3 procents sannolikhet att AI orsakar m&auml;nsklig utrotning, eller reducerar v&auml;rldsbefolkningen under 5&nbsp;000, f&ouml;re utg&aring;ngen av 2100. Median bland superforecasters: 0,38 procent.</p>
+
+<p>Rapportens egen slutsats om processen: "large-scale disagreement and minimal convergence of beliefs over the course of the XPT, with the largest disagreement about risks from artificial intelligence." Och: "Deep divisions on AI risk in particular persisted to the end of the XPT."</p>
+
+<p>En separat &ouml;vning av samma institut, "Roots of Disagreement on AI Risk", f&ouml;rde under &aring;tta veckor samman en grupp oroade och en grupp skeptiker i riktat samarbete. Den oroade gruppens median gick fr&aring;n 25 till 20 procents sannolikhet f&ouml;r existentiell katastrof till 2100. Skeptikernas gick fr&aring;n 0,10 till 0,12 procent. Sex i den oroade gruppen s&auml;nkte sin prognos, ingen h&ouml;jde. Kvoten mellan grupperna gick allts&aring; fr&aring;n 250 till knappt 170 g&aring;nger. M&aring;ttet h&auml;r &auml;r existentiell katastrof, som &auml;r bredare definierat &auml;n utrotning; siffrorna &auml;r inte j&auml;mf&ouml;rbara med turneringens.</p>
+
+<p>Det h&auml;r &auml;r det centrala att f&ouml;rst&aring; om siffrorna i debatten. N&auml;r informerade m&auml;nniskor som arbetar strukturerat mot varandra i m&aring;nader landar tv&aring; tiopotenser is&auml;r, m&auml;ter de inte samma sak med olika precision. De g&ouml;r olika bed&ouml;mningar av vad som ens utg&ouml;r evidens. Hubingers 10 procent och en superforecasters 0,38 procent &auml;r inte tv&aring; avl&auml;sningar av samma instrument.</p>
+
+<p>Forskaren Sara Hooker riktade sig direkt mot Hubingers siffra. Hon kallade s&aring;dana prognoser ohj&auml;lpsamma och fr&aring;gade var de tio procenten kommer ifr&aring;n &mdash; "so much of it is lacking precision."</p>
+
+<p>RAND tog en annan v&auml;g i "On the Extinction Risk from Artificial Intelligence" (Vermeer, Lathrop och Moon, maj 2025), en scenariobaserad analys av k&auml;rnvapen, patogener och geoengineering. Om sitt eget forskarlag skriver rapporten: "they assessed that it would be immensely challenging to create an extinction threat, although they could not rule out the possibility. They also concluded that an extinction threat would take a significant amount of time to take effect in each scenario, likely giving humans time to respond to and mitigate threats."</p>
+
+<p>Mot de spekulativa siffrorna st&aring;r ett omr&aring;de d&auml;r man faktiskt m&auml;ter. Erik Brynjolfsson, Bharat Chandar och Ruyu Chen uppdaterade i augusti 2026 studien "Canaries in the Coal Mine?" vid Stanford Digital Economy Lab. Syssels&auml;ttningen f&ouml;r 22&ndash;25-&aring;ringar i AI-exponerade yrken ligger 19 procent under d&auml;r den hade legat om den f&ouml;ljt utvecklingen f&ouml;r j&auml;mn&aring;riga i mindre exponerade yrken. Det &auml;r ett kontrafaktiskt m&aring;tt, inte en niv&aring;s&auml;nkning p&aring; 19 procent. Vid julidatan 2025 var samma m&aring;tt 15 procent. &Auml;ldre arbetstagare visar ingen motsvarande skillnad. F&ouml;rfattarna beskriver sj&auml;lva sina fynd som "early, descriptive indicators&mdash;canaries in the coal mine&mdash;rather than causal estimates".</p>
+
+<p>Peter McCrory, chefsekonom p&aring; Anthropic, publicerade den 22 juli 2026 en ess&auml; p&aring; X, uttryckligen som sin egen bed&ouml;mning och inte bolagets: "a few high-level reflections and a framework that helps me make sense of why we (so far) don't see significant impact of AI on the US labor market." Han godtar samtidigt att anst&auml;llningstakten f&ouml;r unga i AI-exponerade yrken har f&ouml;rsvagats, och skriver att det &auml;r f&ouml;renligt med Canaries-studien. Hans inv&auml;ndning g&auml;ller orsakssambandet, inte m&ouml;nstret.</p>
+
+<h2>Tre h&ouml;gar: beslutat, f&ouml;reslaget, bara sagt</h2>
+
+<p>Det mest praktiska en l&auml;sare kan g&ouml;ra med regleringsnyheter &auml;r att sortera dem efter bindande kraft.</p>
+
+<p><strong>Beslutat och i kraft.</strong> EU:s AI-f&ouml;rordning: GPAI- och frontier-reglerna &auml;r verkst&auml;llbara sedan den 2 augusti 2026. AI Office tillsammans med medlemsstaternas myndigheter har tillsynen. B&ouml;terna g&aring;r upp till 3 procent av global oms&auml;ttning f&ouml;r GPAI-leverant&ouml;rer. AI Office kan kr&auml;va modell&aring;tkomst f&ouml;r utv&auml;rdering och begr&auml;nsa en modells tillg&auml;nglighet p&aring; marknaden.</p>
+
+<p>Den 29 augusti 2026 skickade AI Office sina f&ouml;rsta formella informationsf&ouml;rel&auml;gganden till flera GPAI-leverant&ouml;rer, om modells&auml;kerhet, oberoende extern utv&auml;rdering och marknads&ouml;vervakning. Mottagarna uppges inkludera OpenAI, Anthropic och Google.</p>
+
+<p>I USA finns frontier-AI-lagar p&aring; delstatsniv&aring; i Kalifornien, New York och Illinois. De kr&auml;ver rapportering av allvarliga s&auml;kerhetsincidenter, i vissa fall oberoende revision. Ingen av dem f&ouml;reskriver tydligt en oberoende olycksutredning. Federalt skapade Executive Order 14365 fr&aring;n december 2025 en AI Litigation Task Force inom justitiedepartementet, med uppdrag att utmana delstatliga AI-lagar. En presidentorder kan normalt inte i sig upph&auml;va delstatslag &mdash; federal preemption kr&auml;ver kongressbeslut.</p>
+
+<p>WAICO-avtalet, World AI Cooperation Organization, undertecknades i Shanghai den 16 juli 2026. 29 l&auml;nder uppges vara grundare; kinesiska officiella k&auml;llor namnger fem. Substansen &auml;r oklar.</p>
+
+<p><strong>F&ouml;reslaget, finns som text men inte antaget.</strong> Ban Artificial Superintelligence Act inneh&aring;ller f&ouml;rbud mot utveckling och drifts&auml;ttning av superintelligent AI, en paus f&ouml;r avancerad AI-utveckling tills en ny federal tillsynsmyndighet finns och har regler p&aring; plats, en ny myndighet p&aring; kabinettsniv&aring;, samt "corporate death penalty" f&ouml;r bolag och upp till 20 &aring;rs f&auml;ngelse f&ouml;r personer, uttryckligen analogt med olaglig k&auml;rnvapenutveckling. F&ouml;rslaget har ingen realistisk v&auml;g genom nuvarande kongress. Signalv&auml;rdet &auml;r po&auml;ngen.</p>
+
+<p>The Frontier Act, fr&aring;n Rep. Lori Trahan och med st&ouml;d fr&aring;n b&aring;da partierna, skulle kr&auml;va att labb rapporterar incidenter av den h&auml;r typen och tar emot oberoende revisorer. Det &auml;r det f&ouml;rslag som ligger n&auml;rmast det faktiska glappet i METR-fallet.</p>
+
+<p>Vita husets National Policy Framework for AI fr&aring;n den 20 mars 2026 &auml;r icke-bindande och driver federal preemption av delstatliga regler.</p>
+
+<p><strong>Bara sagt, inget bindande.</strong> Volker T&uuml;rk, FN:s h&ouml;gkommissarie f&ouml;r m&auml;nskliga r&auml;ttigheter, talade i r&aring;det f&ouml;r m&auml;nskliga r&auml;ttigheter i Gen&egrave;ve den 7 september: "AI that escapes its testing environment, or blackmails developers to prevent itself from being turned off, is AI that is too powerful. I am calling here, today, for an all-out effort to put cast iron guarantees in place around the safety and security of AI, before it is too late." Och: "A handful of men has almost unlimited power over AI." Han efterlyste bindande regler, oberoende verifiering och n&auml;rmare s&auml;kerhetssamarbete inom sektorn. En nyans som f&ouml;rsvann i rapporteringen: anf&ouml;randet handlade till st&ouml;rsta delen om annat &mdash; autonoma vapen, ett sextiotal p&aring;g&aring;ende konflikter, Gaza, Ukraina. AI-delen var ett avsnitt av ett bredare tal.</p>
+
+<p>Global Call for AI Red Lines lanserades vid FN:s generalf&ouml;rsamling den 22 september 2025 med m&aring;let att n&aring; en mellanstatlig &ouml;verenskommelse f&ouml;re utg&aring;ngen av 2026. Den har fortfarande drygt 300 undertecknare och inga bindande statliga &aring;taganden.</p>
+
+<p>OpenAI lovade p&aring; X den 5 september ett ramverk f&ouml;r incidentrapportering "inom veckor".</p>
+
+<p>Om USA&ndash;Kina rapporterade Reuters den 4&ndash;5 september att bilaterala AI-s&auml;kerhetssamtal f&ouml;rbereddes till mitten av september, ledda p&aring; amerikansk sida av finansminister Scott Bessent. Kinesiska regeringsn&auml;ra medier hade den 31 augusti publicerat tv&aring; uttryckliga f&ouml;rvillkor, och en tj&auml;nsteman i Vita huset sa att "there is currently no planned AI-related meeting in mid-September". Reuters uppgift och Vita husets besked g&aring;r allts&aring; is&auml;r. Samtalen &auml;r varken bekr&auml;ftade eller avf&auml;rdade.</p>
+
+<p>Sorteringen ger en tydlig bild. EU har g&aring;tt fr&aring;n text till verkst&auml;llighet och &auml;r den enda jurisdiktion d&auml;r en myndighet just nu kan kr&auml;va modell&aring;tkomst och begr&auml;nsa marknadstillg&aring;ng. USA r&ouml;r sig &aring;t tv&aring; h&aring;ll samtidigt: federalt mot avreglering och preemption, delstatligt mot faktisk lagstiftning, i kongressen mot allt h&aring;rdare f&ouml;rslag som inte g&aring;r igenom. Flera delstater har egna AI-lagar. Ingen federal lag finns.</p>
+
+<h2>Norden i materialet</h2>
+
+<p>Jag har inte hittat n&aring;gon nordisk akt&ouml;r som deltog i debatten under dagarna kring den 9 september &mdash; inga svenska, norska eller danska uttalanden kopplade till Coxon- och Hubinger-v&aring;gen. Det som finns &auml;r institutionellt: Norge f&ouml;rbereder en KI-lov baserad p&aring; AI-f&ouml;rordningen och har etablerat KI Norge, Sverige utreder anpassning till f&ouml;rordningen. De tydligaste nordiska r&ouml;sterna i sj&auml;lva riskfr&aring;gan &auml;r den norska tankesmedjan Langsikt, och, separat, Inga Str&uuml;mke vid NTNU, som uttryckt oro &ouml;ver vad hon kallar en avf&auml;rdande h&aring;llning till AI-riskvarningar i Norge. Det finns ocks&aring; en nordisk motposition: Arnoldo Frigessi vid UiO har avf&auml;rdat den sortens varningar som alarmistiska, i ett uttalande jag inte kunnat datera. Norden framst&aring;r som i praktiken fr&aring;nvarande ur den globala debatten och n&auml;rvarande fr&auml;mst som implementerare av EU-regler. Det &auml;r en observation belagd genom fr&aring;nvaro, vilket &auml;r svagt bevis.</p>
+
+<h2>Det som st&aring;r &ouml;ppet</h2>
+
+<p>Tre fr&aring;gor i materialet g&aring;r inte att st&auml;nga med det som finns tillg&auml;ngligt idag.</p>
+
+<p>Den f&ouml;rsta &auml;r Apollo Researchs fynd. Om modeller kan k&auml;nna igen att de utv&auml;rderas, och andelen som g&ouml;r det stiger, vad &auml;r d&aring; ett godk&auml;nt test v&auml;rt som evidens? Det &auml;r inte en retorisk fr&aring;ga utan ett metodproblem. De utv&auml;rderingar som EU:s AI Office kan kr&auml;va &aring;tkomst till, som delstatslagarna bygger sin rapporteringsplikt p&aring; och som labben h&auml;nvisar till n&auml;r de beskriver en modell som s&auml;ker, vilar alla p&aring; antagandet att ett test m&auml;ter beteende och inte testsituationen. Ingen har &auml;nnu visat hur man skiljer det ena fr&aring;n det andra i en modell som m&auml;rker skillnaden.</p>
+
+<p>Den andra &auml;r att tv&aring; f&ouml;rklaringar till juli-incidenten b&aring;da kan vara riktiga. OpenAI skriver att beteendet uppstod under tr&auml;ning och f&ouml;rst&auml;rktes d&auml;r. Salvaggio menar att uppst&auml;llningen &mdash; avst&auml;ngda skydd, ol&ouml;sliga uppgifter, ingen &ouml;vervakning &mdash; framkallade det. Ingen av f&ouml;rklaringarna utesluter den andra, och ingen kan just nu avg&ouml;ra hur mycket vikt vardera b&auml;r. Den f&ouml;rdelningen avg&ouml;r om det som h&auml;nde i juli s&auml;ger n&aring;got om modellerna eller n&aring;got om testerna, och tills den &auml;r gjord b&auml;r h&auml;ndelsen b&aring;da tolkningarna samtidigt.</p>
+
+<p>Den tredje handlar om vad som inte hittades. Den andra sv&auml;rmen uppt&auml;cktes av fyra utomst&aring;ende forskare som r&aring;kade leta p&aring; r&auml;tt st&auml;lle, i en tjugofem &aring;r gammal tysk wiki, i material som funnits publikt i m&aring;nader. Bolagets egen &ouml;vervakning fann inte wikin. METR:s granskning n&auml;mnde den inte, eftersom den l&aring;g utanf&ouml;r en period som den granskade hade definierat. Vi vet vad de fyra hittade. Vi har inget m&aring;tt p&aring; hur mycket av samma sort som ingen letat efter.</p>
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="sjattedelen.html">F&ouml;reg&aring;ende: Sj&auml;ttedelen</a>
+    <a href="essaer.html">Alla ess&auml;er</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="essaer.html">Ess&auml;er</a> &middot; <a href="kallor.html">K&auml;llor</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
