@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-09-08">Senast uppdaterat 8 september 2026</time>
+        <time datetime="2026-09-11"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">11 september 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,79 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-09-11" data-date="2026-09-11">
+        <p class="day__label news-date">11 september 2026</p>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://api-docs.deepseek.com/updates/">DeepSeek släpper V4.1-Flash och fasar ut sin toppmodell V4-Pro</a></h3>
+        <p class="item__ingress">DeepSeek släppte på torsdagen V4.1-Flash, en mindre och billigare modell som labbet uppger slår dess egen toppmodell på kodning och agentuppgifter. Vikterna ligger på Hugging Face under MIT-licens.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>DeepSeek släppte på torsdagen V4.1-Flash, en mindre och billigare modell som labbet uppger slår dess egen toppmodell på kodning och agentuppgifter. Vikterna ligger på Hugging Face under MIT-licens. Modellen är en multimodal mixture-of-experts med 552 miljarder parametrar i stommen, ytterligare 196 miljarder så kallade Engram-parametrar och ett kontextfönster på en miljon tokens.</p>
+          <p>Från klockan 04.00 UTC den 14 september dirigeras varje anrop till toppmodellen V4-Pro vidare till V4.1-Flash, och debiteras då enligt den lägre Flash-taxan. Omdirigeringen ska enligt DeepSeek gälla fram till dess att V4.1-Pro släpps. Modellen aktiverar 8 miljarder parametrar per token vid prefill och 16 miljarder vid avkodning. Basmodellsiffrorna är körda i DeepSeeks eget utvärderingsramverk; labbet hänvisar därutöver till tester från flera parter, men namnger dem inte.</p>
+          <p>För Norden är det de öppna vikterna som betyder mest. MIT-licensen gör att KTH, Chalmers, NTNU och RISE kan köra modellen på egen hårdvara utan att skicka data till en amerikansk eller kinesisk molnleverantör &mdash; samma argument som bär Sveriges och EuroHPC:s satsning på superdatorn Arrhenius. Samtidigt gäller AI-förordningens krav i lika hög grad för den som bygger en tjänst på en öppen modell, så för svenska och norska bolag som väger kostnad mot leverantörsberoende är en fritt nedladdningsbar modell från Hangzhou både en möjlighet och en säkerhetsfråga.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://api-docs.deepseek.com/updates/">DeepSeek API Docs</a>, <a href="https://thenextweb.com/news/deepseek-v4-1-flash-launch-v4-pro-retired-price-cut">The Next Web</a>, <a href="https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse/">MarkTechPost</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="reglering norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.aftenposten.no/oslo/i/xrpyRX/oslo-og-baerum-forbyr-ki-briller-i-skolen">Oslo och Bærum förbjuder AI-glasögon i skolan och pekar ut Meta</a></h3>
+        <p class="item__ingress">Oslo kommun inför förbud mot AI- och smartglasögon under hela skoltiden, genom hela skolgången, med undantag för blinda och synskadade elever.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Oslo kommun inför förbud mot AI- och smartglasögon under hela skoltiden, genom hela skolgången, med undantag för blinda och synskadade elever. Grannkommunen Bærum gick ut med ett motsvarande förbud tisdagen den 8 september, för elever i årskurs 1&ndash;10, och klassar glasögonen som privat digital utrustning i nivå med mobiler och smartklockor.</p>
+          <p>Julie Remen Midtgarden (H), skolansvarig politiker i Oslo, motiverar beslutet med att problemet redan finns på skolgårdarna: glasögonen säljs i Norge i dag och används på norska skolgårdar i dag. Hon riktar kritiken direkt mot tillverkaren och säger att Oslo inte accepterar att barnen blir statister i Metas datainsamling. Kunskapsminister Kari Nessa Nordtun (Ap) uppmanade i slutet av augusti kommunerna att skriva in sådana förbud i skolornas ordningsregler. SV-ledaren Kirsti Bergstø har sedan i somras krävt stopp för försäljningen av oreglerade AI-glasögon; regeringen har avvisat den linjen och utreder fortfarande vilka åtgärder som ska vidtas.</p>
+          <p>För Norden är det här de tydligaste kommunala besluten hittills om en produktkategori som varken Datatilsynet eller Nkom har mandat att förbjuda. Oslo och Bærum agerade var för sig, inte samordnat, och fler aktörer har infört egna förbud de senaste veckorna. Svenska skolhuvudmän står inför samma fråga utan motsvarande vägledning från IMY, och den norska linjen &mdash; förbud i ordningsreglerna i väntan på nationell reglering &mdash; blir i praktiken den mall de kommer att titta på.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.aftenposten.no/oslo/i/xrpyRX/oslo-og-baerum-forbyr-ki-briller-i-skolen">Aftenposten</a>, <a href="https://www.nrk.no/stor-oslo/forbyr-smartbriller-i-osloskolen-1.18004693">NRK</a>, <a href="https://www.kode24.no/artikkel/oslo-skoler-forbyr-smartbriller-vil-ikke-la-barna-bli-statister-i-metas-datainnsamling/272099">kode24</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="arbetsmarknad norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--arbetsmarknad news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+        <h3><a href="https://stilla.ai/blog/stilla-is-joining-meta">Meta köper svenska AI-bolaget Stilla åtta månader efter lanseringen</a></h3>
+        <p class="item__ingress">Meta förvärvar Stockholmsbolaget Stilla, grundat 2024 av Siavash Ghorbani och Kaj Drobin. Båda är tidigare Shopify-chefer som kom in på Shopify när bolaget köpte deras förra företag Tictail 2018.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Meta förvärvar Stockholmsbolaget Stilla, grundat 2024 av Siavash Ghorbani och Kaj Drobin. Båda är tidigare Shopify-chefer som kom in på Shopify när bolaget köpte deras förra företag Tictail 2018. Team och teknik går till Meta i väntan på att affären slutförs, och köpeskillingen har inte offentliggjorts.</p>
+          <p>Stilla gick ur stealth i januari 2026 med en pre-seed på 5 miljoner dollar ledd av General Catalyst, med änglainvesterare bland grundare och ledare från Shopify, ElevenLabs och Lovable. Bolaget bygger en agentplattform som kopplar ihop bland annat Slack, Linear, GitHub och Notion med gemensam organisationskontext och behörigheter. Köpet ska enligt Axios snabba på Meta Business Agent, Metas handelsagent i WhatsApp, Messenger och Instagram som lanserades i juni 2026. Hur ett internt arbetsflödeslager ska påskynda en kundagent förklaras inte i någon av källorna.</p>
+          <p>För Norden är frågan vad som händer med kompetensen. Axios uppger att Meta planerar att utöka sin närvaro i Sverige efter affären, vilket i så fall skulle ge Stockholm ett Meta-kontor med AI-utveckling &mdash; men också dra ingenjörer från en startupmiljö där Lovable, Sana och Legora slåss om samma personer. Varken Meta eller Stilla har kommenterat priset, och ingen uppgift finns om konkurrensprövning i EU.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://stilla.ai/blog/stilla-is-joining-meta">Stilla</a>, <a href="https://www.axios.com/2026/09/09/meta-acquires-swedish-ai-startup-stillaai">Axios</a>, <a href="https://computersweden.se/article/4220681/meta-koper-upp-svenskt-ai-foretag.html">Computer Sweden</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="kvant norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://journals.aps.org/prl/abstract/10.1103/tnb8-3m8m">Chalmersforskare kortar kvantgrindar på bosoniska koder till en enda drivcykel</a></h3>
+        <p class="item__ingress">Forskare vid Chalmers presenterar en metod som genomför en kvantgrind under en enda drivcykel i stället för tusentals. Arbetet är teoretiskt och bygger på numeriska simuleringar &mdash; det har ännu inte demonstrerats i hårdvara.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Forskare vid Chalmers presenterar en metod som genomför en kvantgrind under en enda drivcykel i stället för tusentals. Arbetet är teoretiskt och bygger på numeriska simuleringar &mdash; det har ännu inte demonstrerats i hårdvara. Bakom studien står Tangyou Huang och Lei Du vid institutionen för mikroteknologi och nanovetenskap, tillsammans med Lingzhen Guo vid Tianjin University.</p>
+          <p>Artikeln publicerades i Physical Review Letters i somras men fick sitt pressgenomslag först den 10 september. Metoden riktar sig mot bosoniska kvantkoder, som lagrar kvantinformation i mikrovågsfält i supraledande kretsar i stället för i enskilda kvantbitar. Chalmers pressmeddelande anger mer än tusen gånger snabbare för vissa operationer &mdash; siffran står inte i artikelns sammanfattning, utan är i pressmeddelandet härledd ur steget från tusentals drivperioder till en.</p>
+          <p>För Norden är finansieringskedjan lika intressant som fysiken. Arbetet är finansierat av Wallenberg Centre for Quantum Technology och Knut och Alice Wallenbergs Stiftelse tillsammans med Kinas National Natural Science Foundation, och Chalmers bygger parallellt en egen supraledande kvantdator med målet 100 kvantbitar. Huang uppger att gruppen redan diskuterar experimentella realiseringar med kollegor på Chalmers &mdash; steget från simulering till mätning är det som avgör om siffran håller.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://journals.aps.org/prl/abstract/10.1103/tnb8-3m8m">Physical Review Letters</a>, <a href="https://etn.se/index.php/nyheter/73439-kvantfelkorrigering-kan-bli-upp-till-tusen-ganger-snabbare.html">Elektroniktidningen</a>, <a href="https://forskning.se/2026/09/10/snabbare-vag-till-kvantdatorer-som-raknar-ratt/">forskning.se</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="forskning norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://wasp-sweden.org/wasp-strengthens-swedish-ai-research-through-recruitment-of-julian-togelius/">Wallenbergstiftelsen och Chalmers värvar AI-professorn Julian Togelius för 80 miljoner</a></h3>
+        <p class="item__ingress">WASP rekryterar Julian Togelius, professor i datavetenskap vid New York University, till Chalmers. Paketet uppgår till 80 miljoner kronor, varav Knut och Alice Wallenbergs Stiftelse står för 50 miljoner och Chalmers för 30.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>WASP rekryterar Julian Togelius, professor i datavetenskap vid New York University, till Chalmers. Paketet uppgår till 80 miljoner kronor, varav Knut och Alice Wallenbergs Stiftelse står för 50 miljoner och Chalmers för 30. Togelius forskar på AI och spel: procedurell innehållsgenerering, spelarmodellering, automatisk speldesign, förstärkningsinlärning och open-ended learning.</p>
+          <p>Pengarna ska låta honom bygga en ny forskargrupp i Sverige med både juniora och seniora forskare. Enligt WASP tillträder han vid Chalmers i slutet av året och är kvar på NYU till dess. Chalmers meddelade samtidigt en andra rekrytering på samma villkor &mdash; Alexander Bismarck, professor i materialkemi, till Wallenberg Wood Science Center &mdash; vilket ger sammanlagt 160 miljoner kronor för två professorer.</p>
+          <p>För Norden är villkoret det som skiljer satsningen från ett vanligt forskningsanslag. Chalmers anger att forskarna ska flytta till Sverige och tillbringa minst 80 procent av sin sammanlagda arbetstid vid ett svenskt lärosäte. Det är ett försök att vända en kompetensström som annars går åt andra hållet &mdash; samma vecka som Meta köper Stockholmsbolaget Stilla. För NTNU och Universitetet i Oslo, som konkurrerar om samma internationella forskare utan en motsvarande privat stiftelse i ryggen, blir Wallenbergmodellen både förebild och problem.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://wasp-sweden.org/wasp-strengthens-swedish-ai-research-through-recruitment-of-julian-togelius/">WASP</a>, <a href="https://www.chalmers.se/aktuellt/nyheter/chalmers-rekryterar-tva-varldsledande-professorer/">Chalmers</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-09-10" data-date="2026-09-10">
         <p class="day__label news-date">10 september 2026</p>
       <article class="item news-card" data-tags="modeller">
@@ -672,80 +745,7 @@ details.menu[open]>summary{color:var(--accent)}
         </details>
       </article>
       </div>
-      <div class="day news-date-group" id="dag-2026-09-04" data-date="2026-09-04">
-        <p class="day__label news-date">4 september 2026</p>
-      <article class="item news-card" data-tags="modeller">
-        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://openai.com/index/gpt-6-astra/">GPT-6 Astra har släppts — alla siffror är OpenAI:s egna</a></h3>
-        <p class="item__ingress">OpenAI släppte den 3 september GPT-6 Astra, med API-namnet gpt-6-astra och priset 10 dollar per miljon intoken och 50 dollar per miljon uttoken.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>OpenAI släppte den 3 september GPT-6 Astra, med API-namnet gpt-6-astra och priset 10 dollar per miljon intoken och 50 dollar per miljon uttoken. Modellen går först till ett begränsat antal organisationer i bolagets program Daybreak Access och därefter till Plus, Pro, Business och Enterprise samt till API och AWS Bedrock, avstängd som standard för Enterprise vid lanseringen. Astra är den första av bolagets modeller som når nivån ”Critical” för cyberförmåga i OpenAI:s eget beredskapsramverk Preparedness Framework.</p>
-          <p>Bolaget redovisar stora språng jämfört med föregående generation GPT-5.6 Sol: från 78,5 till 100 procent på ExploitBench, men bara från 5,5 till 39,0 procent på delmängden med färska sårbarheter från juni till augusti 2026, och från 7,8 till 99,9 procent på ARC-AGI-3. Samtliga siffror är OpenAI:s egna, körda i bolagets egen forskningsmiljö, och konkurrenternas resultat är reproducerade av OpenAI självt — någon oberoende verifiering fanns inte vid lanseringen. Att modellen skulle kunna räknas som AGI kommer inte från lanseringsmaterialet utan från OpenAI:s president Greg Brockman vid en pressbriefing samma dag, refererad av Axios. I lanseringstexten skriver bolaget samtidigt att Astras skriftliga resonemang är svårare att övervaka än föregångarens.</p>
-          <p>För Norden når modellen kunderna via API och AWS Bedrock, alltså samma inköpsvägar som svenska och norska verksamheter redan använder för molnbaserad AI. Klassningen är OpenAI:s egen bedömning i bolagets eget ramverk och inte en myndighetsprövning — för CERT-SE hos MSB och för norska NSM är det skillnaden mellan en självdeklaration och en oberoende granskning som avgör hur uppgiften ska värderas i hotbilden. Astra var inte inblandad i intrånget mot Hugging Face i juli; det drevs främst av en intern forskningsmodell, med bidrag från agenter byggda på GPT-5.6 Sol, sju veckor före lanseringen. Vad som då faktiskt hände, och vilka delar av förloppet som ingen oberoende part har granskat, går <a href="/vad-vi-redan-vet.html">dagens analys</a> igenom.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://openai.com/index/gpt-6-astra/">OpenAI</a>, <a href="https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman">Axios</a>, <a href="https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940">NBC News</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="modeller">
-        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://research.meta.ai/blog/introducing-muse-spark-1-3">Meta släpper Muse Spark 1.3 — frågar hellre än gissar</a></h3>
-        <p class="item__ingress">Meta släppte den 2 september Muse Spark 1.3, en uppdatering som enligt bolaget ger bättre resultat i agentuppgifter och kodning.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Meta släppte den 2 september Muse Spark 1.3, en uppdatering som enligt bolaget ger bättre resultat i agentuppgifter och kodning. Modellen rullas ut i kodverktyget Muse Code och i Meta Model API, till samma pris som föregångaren 1.2. Läget ”max reasoning” kommer först efter ytterligare säkerhetstester.</p>
-          <p>Det nya är framför allt hur modellen bemöter användaren: den ställer följdfrågor när uppdraget är otydligt, ber om hjälp när den kör fast och stannar upp inför åtgärder som inte går att ångra. I Metas egna jämförelser använder den omkring 20 procent färre verktygsanrop och 25 procent färre token än 1.2. Metas AI-chef Alexandr Wang säger till Axios att modellen är ”mycket konkurrenskraftig” mot frontmodellerna, men lanseringen kom samma vecka som Anthropic, Google och OpenAI släppte sina egna modeller, och Metas starkaste siffror kommer från max-läget som ännu inte går att använda. Bolaget utlovar större modeller och en version med öppna vikter längre fram.</p>
-          <p>För Norden är öppna vikter den punkt som betyder mest: Nasjonalbiblioteket och NTNU:s NorwAI har byggt norska varianter ovanpå Llama och Mistral, och en kommande öppen Muse Spark blir ett nytt alternativ för den sortens vidareträning. Wang uppger också att en ”meningsfull tvåsiffrig” andel av Muse Code-utvecklarna valt rabattnivån där Meta får träna på deras arbete — för svenska och norska bolag som kodar under sekretess är det ett val som IMY, Datatilsynet och den egna juristen bör få se innan någon trycker på knappen.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://research.meta.ai/blog/introducing-muse-spark-1-3">Meta AI Research</a>, <a href="https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues">Axios</a>, <a href="https://computersweden.se/article/4217823/meta-slapper-starkare-ai-modell-tar-in-pa-konkurrenterna.html">Computer Sweden</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="forskning norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://www.nyteknik.se/tech/svenska-politiker-anvaender-ai-i-motioner-men-ingen-beraettar-om-det/4491194">Var tionde riksdagsmotion har AI-spår — ingen ledamot berättade det</a></h3>
-        <p class="item__ingress">Nio dagar före valet visar en studie från Chalmers och Edinburgh Napier University att 9,4 procent av motionerna i Sveriges riksdag under riksdagsåret 2025–2026 innehåller minst ett stycke som klassats som AI-assisterat, omkring…</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Nio dagar före valet visar en studie från Chalmers och Edinburgh Napier University att 9,4 procent av motionerna i Sveriges riksdag under riksdagsåret 2025–2026 innehåller minst ett stycke som klassats som AI-assisterat, omkring 300 motioner. Inte en enda av dem redovisar att AI använts.</p>
-          <p>Forskarna byggde egna AI-detektorer för svenska och engelska och körde dem på 13 565 svenska motioner och 4 209 brittiska parlamentsuttalanden från 2021 till april 2026. Andelen svenska motioner med AI-spår har ökat varje år, från 1,7 procent 2022–2023 till 9,4 procent i år, utan tydliga skillnader mellan partierna. Metoden kan inte skilja en helt AI-skriven text från en som bara grammatikgranskats — vilket enligt doktoranden Minerva Suvanto är själva argumentet för att ledamöterna själva bör ange hur verktygen använts.</p>
-          <p>För Norden landar frågan på riksdagens bord efter valet den 13 september: den nya kammaren kan själv besluta om AI-användning ska redovisas i motioner. I Norge är motsvarande granskning inte gjord, och Stortinget väntar fortfarande på regeringens förslag till AI-lag. Chalmersprofessorn Mattias Wahde sätter fingret på kärnan: det anmärkningsvärda är inte att politiker använder AI, utan att ingen säger det.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.nyteknik.se/tech/svenska-politiker-anvaender-ai-i-motioner-men-ingen-beraettar-om-det/4491194">Ny Teknik/TT</a>, <a href="https://computersweden.se/article/4218015/politiker-anvander-ai-for-motioner-haller-tyst-om-det.html">Computer Sweden</a>, <a href="https://www.euronews.com/next/2026/09/03/politicians-are-letting-ai-write-speeches-and-laws-without-telling-voters-study-says">Euronews</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="hardvara">
-        <div class="item__tags news-card__tags"><span class="tag tag--hardvara news-card__tag news-card__tag--hardvara">Hårdvara</span></div>
-        <h3><a href="https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html">Nvidia köper Hugging Face för 13 miljarder dollar</a></h3>
-        <p class="item__ingress">Nvidia har tecknat ett bindande avtal om att köpa Hugging Face, den öppna plattform där AI-modeller, dataset och applikationer delas, för omkring 13 miljarder dollar, motsvarande 125 miljarder kronor.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Nvidia har tecknat ett bindande avtal om att köpa Hugging Face, den öppna plattform där AI-modeller, dataset och applikationer delas, för omkring 13 miljarder dollar, motsvarande 125 miljarder kronor. Avtalet ingicks den 2 september enligt bolagets anmälan till den amerikanska börsmyndigheten SEC och väntas slutföras under första halvåret 2027, efter konkurrensmyndigheternas godkännande.</p>
-          <p>Hugging Face grundades 2016 och används enligt Nvidia av fler än 18 miljoner utvecklare och forskare, som delar över 3 miljoner modeller, och av fler än 200 000 företag. Nvidia säger att plattformen ska förbli öppen för hela AI-ekosystemet, utan krav på att använda bolagets egen hårdvara. Det är Nvidias näst största förvärv efter köpet av Groqs tillgångar för 20 miljarder dollar i slutet av förra året, och det kommer sex veckor efter intrånget där OpenAI-modeller tog sig in i Hugging Faces system.</p>
-          <p>För Norden är det avgörande att den nordiska öppna modellfloran ligger på just den här plattformen: AI Swedens GPT-SW3, Nasjonalbibliotekets NB-modeller och NTNU:s NorGPT hämtas därifrån av forskare, myndigheter och företag. Löftet om öppenhet är därmed inte en detalj utan själva förutsättningen för att svenska och norska språkmodeller ska kunna delas som i dag — och det löftet kommer konkurrensmyndigheternas granskning att pröva innan affären går igenom.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html">CNBC</a>, <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm">Nvidia (SEC 8-K)</a>, <a href="https://www.nyteknik.se/tech/nvidia-koeper-hugging-face-foer-125-miljarder-kronor/4491452">Ny Teknik/TT</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="kvant">
-        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
-        <h3><a href="https://www.ibm.com/quantum/blog/nighthawk-r2">IBM:s nya kvantprocessor kör 25 gånger fler kretsar per sekund</a></h3>
-        <p class="item__ingress">IBM har gjort processorn Nighthawk r2 tillgänglig i sin kvantmolntjänst. Den har 120 programmerbara qubitar, lika många som föregångaren, men klarar enligt bolaget över 100 000 kretskörningar per sekund — 25 gånger fler än dagens…</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>IBM har gjort processorn Nighthawk r2 tillgänglig i sin kvantmolntjänst. Den har 120 programmerbara qubitar, lika många som föregångaren, men klarar enligt bolaget över 100 000 kretskörningar per sekund — 25 gånger fler än dagens Heron-processorer, som ligger på omkring 4 000.</p>
-          <p>Flaskhalsen har varit väntetiden mellan körningarna: efter varje mätning måste qubitarna återställas till grundtillståndet, vilket tidigare krävde hundratals mikrosekunders tomgång. Nighthawk r2 ger varje qubit en egen återställningsenhet som kopplar den till en kall omgivning som drar den till grundtillståndet på begäran, så att pausen krymper till omkring en mikrosekund utan att grannqubitarna störs. IBM uppger också att processorn gett korrekta resultat på kretsar med över 7 500 grindar, ett delmål i bolagets färdplan för 2026. Siffrorna är IBM:s egna.</p>
-          <p>För Norden är det här den maskin svenska forskare och företag når via avtalet mellan Chalmers och IBM, finansierat med 50 miljoner kronor från Knut och Alice Wallenbergs stiftelse: algoritmer utvecklas först på Chalmers 25-qubitars testbädd och skalas sedan upp i IBM:s moln. Snabbare återställning betyder fler körningar per tilldelad timme — en konkret fördel för WACQT-partner som Ericsson och Saab. Norge fick i december fyra nationella kvantforskningscentrum, med Universitetet i Oslo och Sintef bland aktörerna, och för dem är molnåtkomst till IBM:s maskiner den närmaste vägen till hårdvara i den här klassen.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.ibm.com/quantum/blog/nighthawk-r2">IBM Quantum</a>, <a href="https://thequantuminsider.com/2026/09/03/ibms-nighthawk-r2-quantum-processor-targets-a-25-fold-increase-in-circuit-speed/">The Quantum Insider</a>, <a href="https://kaw.wallenberg.org/press/nytt-avtal-ger-svensk-akademi-och-industri-unik-tillgang-till-annu-storre-kvantdatorer">KAW</a></p>
-          </div>
-        </details>
-      </article>
       </div>
-    </div>
     </section>
 
     <aside class="aside" aria-labelledby="fordjupning">
@@ -820,5 +820,6 @@ details.menu[open]>summary{color:var(--accent)}
 })();
 </script>
 <script async="" data-goatcounter="https://rolfskogling.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
+<script>(function(){var g=document.querySelector("#newsList .news-date-group[data-date]"),t=document.querySelector(".sect-updated__date"),h=document.querySelector(".sect-head time");if(!g||!t||!h)return;var d=g.getAttribute("data-date"),l=g.querySelector(".news-date");if(!d||!l)return;h.setAttribute("datetime",d);t.textContent=l.textContent.trim();})();</script>
 </body>
 </html>
