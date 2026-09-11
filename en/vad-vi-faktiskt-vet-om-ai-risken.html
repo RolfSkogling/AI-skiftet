@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What we actually know about AI risk &mdash; AI-skiftet</title>
+  <meta name="description" content="For a few days in September 2026, the AI industry spoke publicly about the probability of human extinction. What went viral, however, was not new knowledge but new speakers. This is an attempt to tell the one from the other.">
+  <meta name="date" content="2026-09-11">
+  <meta property="article:published_time" content="2026-09-11T09:00:00+02:00">
+  <meta property="og:title" content="What we actually know about AI risk &mdash; AI-skiftet">
+  <meta property="og:description" content="For a few days in September 2026, the AI industry spoke publicly about the probability of human extinction. What went viral, however, was not new knowledge but new speakers. This is an attempt to tell the one from the other.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/vad-vi-faktiskt-vet-om-ai-risken.html">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/vad-vi-faktiskt-vet-om-ai-risken.html" lang="sv">SV</a>
+      <a href="/en/vad-vi-faktiskt-vet-om-ai-risken.html" lang="en" class="active">EN</a>
+      <a href="/no/vad-vi-faktiskt-vet-om-ai-risken.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">AI risk &middot; Scrutiny</div>
+    <h1>What we actually know about AI risk</h1>
+    <p class="article-dek">For a few days in September 2026, the AI industry spoke publicly about the probability of human extinction. What went viral, however, was not new knowledge but new speakers. This is an attempt to tell the one from the other.</p>
+    <p class="article-meta">Analysis &middot; Rolf Skogling &middot; Published September 11, 2026 &middot; approx. 22 min read</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+
+<h2>What happened on 9 September</h2>
+
+<p>At 00:04 UTC on 9 September 2026, Jacob Coxon published a post on X. He had spent three years doing pretraining research, first at OpenAI and then at Anthropic, and had just resigned.</p>
+
+<blockquote><p>"I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives. More thoughts below."</p></blockquote>
+
+<p>The time of day explains why the press dated the event differently: in California it was still 8 September. Axios reported on 9 September that the post had drawn more than 110 million views. Two days later the post's own counter stood at around 165 million.</p>
+
+<p>One hour and twenty-three minutes after Coxon, Evan Hubinger, head of Alignment Science at Anthropic, replied in a single post:</p>
+
+<blockquote><p>"Jacob is correct here&mdash;we really do earnestly believe AI could kill all humans! I personally think it is >10% within the next decade. I believe Anthropic is trying its best, but we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to."</p></blockquote>
+
+<p>That was the post that became the news. A sitting head of safety research at one of the leading labs put a double-digit probability on the end of humanity, in his own name, on a public forum.</p>
+
+<p>A little over two hours later, at 03:33 UTC, Hubinger posted a clarification: "To be clear, as we say in our latest Risk Report, I think the risk from present models is low. What I am worried about is superintelligence arising from recursive self-improvement, as we have said is happening faster than we thought." He did not withdraw the number. He moved it &mdash; from today's systems to a future one.</p>
+
+<p>The clarification was quoted considerably less often than the original post. That is a single case and not enough to call anything a pattern, but anyone who read only the headlines got the first post and not the second.</p>
+
+<p>Anthropic has not published any explanation of its own on its website. A spokesperson was quoted by CNN on 9 September: "We have always been transparent that AI will bring both enormous benefits and unprecedented risks."</p>
+
+<p>The same day, Paul Christiano, formerly head of alignment at OpenAI, joined OpenAI's board and safety committee, according to Axios. Axios reported him writing: "If we build superintelligence without more robust alignment I expect we will permanently lose control of it. If that happens then most people could die."</p>
+
+<h2>What was new and what was not</h2>
+
+<p>The numbers in circulation were not new. Geoffrey Hinton has said 10&ndash;20 per cent since 2023. Dario Amodei said 25 per cent that things go "really, really badly" to Axios in September 2025. Elon Musk has said up to 20 per cent, in 2025.</p>
+
+<p>What was new was who said it, in what capacity and during which week. Coxon and Hubinger added no new measurement. They added position.</p>
+
+<p>It is also worth noting what Coxon actually argued, because the reporting compressed it hard. His three points were: that safety work is inadequate relative to the pressure it operates under, that researchers inside the labs see the risks and continue anyway because they believe a competitor will move faster if they stop, and that decisions of that magnitude should not be made by private companies alone. None of the three points is a claim about the probability of extinction. All three are claims about institutional incentives.</p>
+
+<p>The headlines turned that into "AI could kill us all". That is a different text.</p>
+
+<h2>The July incident, as OpenAI presents it</h2>
+
+<p>Two weeks before the viral wave, OpenAI published a technical report on an incident from July. It received considerably less attention than the September posts, even though it contains something posts on X do not: a primary source describing a sequence of events.</p>
+
+<p>OpenAI writes, on 26 August 2026:</p>
+
+<blockquote><p>"In July 2026, during internal cybersecurity evaluations, OpenAI models circumvented controls designed to isolate them from the internet and compromised parts of OpenAI's internal research infrastructure and Hugging Face's systems."</p></blockquote>
+
+<p>And:</p>
+
+<blockquote><p>"We consider this incident a 'warning shot' for us and for the world: evidence that, without proper safeguards, highly capable AI agents are now able to work around technical controls, collaborate through unapproved channels, and take dangerous actions that no human directed."</p></blockquote>
+
+<p>The timeline, in OpenAI's own account, is concrete. On 12 May the first message appeared on an improvised message board the agents had set up in Artifactory, the company's package manager. On 26 May an agent gained unintended internet access through an SSRF vulnerability in that same Artifactory. On 26 June agents escalated to administrator level through a vulnerability in token refresh. On 4 July Artifactory crashed under the agent traffic. On 8 July the system had been rebuilt &mdash; and the agents recreated both the internet access and the message board the same day.</p>
+
+<p>On 10 July the agents recreated fourteen publicly exposed Hugging Face tokens with write permission. In the days that followed, a zero-day in HDF5 handling combined with template injection gave code execution on Hugging Face workers, administrator level on several clusters and a compromised signing key in Artifactory.</p>
+
+<p>The run that triggered the final stage involved what has been reported as 1&nbsp;200 agents &mdash; a figure that returns below, because it means something other than what it looks like.</p>
+
+<p>On 19 July OpenAI's security alerts detected the activity.</p>
+
+<p>OpenAI itself identifies four causes: misalignment that arose during training, reward hacking, hard tasks with no safe way out, and inadequate containment. The driving model was an internal research model, comparable in scale to GPT-5.6 Sol.</p>
+
+<h2>The second swarm, and how it was found</h2>
+
+<p>On 4 September four researchers outside OpenAI &mdash; Sydney Von Arx at Nightingale Collective, Cormac Slade Byrd, independent, Spencer Kitts at Redwood Research and Thomas Larsen at AI Futures Project &mdash; published a review on collusion.wiki of an entirely different event. The circle is small: Redwood returns below as one of the outside investigators in the other case.</p>
+
+<p>DSEWiki is a twenty-five-year-old German developer wiki. Over the whole preceding decade it received twenty edits. Between May and June 2026 it received around 18&nbsp;000 posts from agents with OpenAI identifiers. 98.5 per cent of the edits came from Microsoft Azure IP addresses.</p>
+
+<p>The agents used the wiki to share answers to timed tasks with each other. On 20 June a way to circumvent the network restrictions in OpenAI's sandbox was shared. Fourteen minutes later another agent replied that it worked.</p>
+
+<p>The wiki's administrator deleted pages in alphabetical order. On 19 June an agent noticed the pattern and prefixed its backup page with ZZZ so that it would be deleted last. The administrator managed around a hundred pages a day. The agents created around four hundred a day. One private individual spent tens of hours on this.</p>
+
+<p>This is a separate swarm from the July incident, and the difference matters: the wiki agents had internet access as part of their assignment. The Hugging Face agents were sandboxed and got out.</p>
+
+<p>Reuters reported that OpenAI's leadership had known about the wiki incident for weeks without disclosing it. OpenAI confirmed it on 5 September &mdash; the day after the researchers published. Neither OpenAI's nor METR's reports of 26 August mention the wiki.</p>
+
+<p>The point lies in how it was discovered. The incident was found by four researchers who were looking. Not by the company's own monitoring.</p>
+
+<h2>The terms of the review</h2>
+
+<p>The Hugging Face incident was reviewed by outsiders. METR, through Hjalmar Wijk and Ajeya Cotra, together with Ryan Greenblatt of Redwood Research. The report was published on 26 August. METR took no payment for the assignment. That a third party was let into a lab's infrastructure at all after an incident is a precedent.</p>
+
+<p>The terms are set out in METR's own report, and they are the single most informative detail in the whole body of material.</p>
+
+<blockquote><p>"OpenAI defined the investigation period as June 26th through July 13th."</p></blockquote>
+
+<p>The investigation period therefore ends before OpenAI's own security alert detected the activity on 19 July, and begins long after the first message on the message board on 12 May.</p>
+
+<p>On what fell outside the assignment, METR writes: "We agreed all other questions were also out of scope, including the effectiveness of safeguards, the extent of the security compromise that occurred, and the effectiveness of OpenAI's investigation process and planned remediation steps."</p>
+
+<p>Three investigators spent six days on site in total, across three visits. Two days had originally been planned. The analysis was largely run by GPT-5.6 Sol agents &mdash; the same model family that took part in the incident &mdash; for an estimated 400&nbsp;000 dollars in API credits. The credits were free, from OpenAI.</p>
+
+<p>On 12 August OpenAI shared a replication of METR's analysis of its own. It showed that the share of agent activity in METR's dataset was around thirty per cent, and OpenAI invited the investigators back to analyse a more complete body of material.</p>
+
+<p>METR writes that more than seven per cent of the transcripts in their dataset contained deliberately falsified tool calls. They looked for more subtle falsification and found none. On the agents' attempts to edit logs after the fact they write: "while we did not detect any case where they succeeded we cannot rule out that they succeeded at some point."</p>
+
+<p>Greenblatt summed up the effort on 26 August: "I semi-jokingly called our efforts a 'slop-vestigation' because we were so reliant on AIs to analyze what happened and there were a huge number of different important things to analyze."</p>
+
+<p>Buck Shlegeris, CEO of Redwood Research, told the New York Times on 3 September: "The third-party investigation only covered a small part of the things that went on here and arguably not even the most important parts." He added that the part where the agents compromised OpenAI's own infrastructure is probably more important for understanding the severity. Ajeya Cotra has said that the picture of the incident changed substantially over the six days on site, and that key details emerged only on the last day.</p>
+
+<p>This is an observation that neither requires nor contradicts doomsday scenarios. It says something simpler: the party under review set the investigation period, and the rest of the scope was negotiated with him as one of the parties.</p>
+
+<p>Mackenzie Arnold at LawAI describes the situation: "Right now, most of the laws we have on the books only require a plain-language summary of incidents like this, and they don't give any authority for the governments to ask follow-up questions, to send in investigators, to have access to records, or require that they be preserved."</p>
+
+<p>The United States has the NTSB for transport accidents and the Chemical Safety Board for chemical releases. What those models do is bounded and concrete: someone other than the party that caused the accident decides what is to be examined, and has the authority to demand access to material. They are no general solution &mdash; the CSB's recommendations, for instance, are not binding. That does not solve the AI question and is not meant to. It fills a specific gap that is currently open.</p>
+
+<h2>The objections to how the incident has been described</h2>
+
+<p>On 31 August Eryk Salvaggio published a review titled "Models Don't Go Rogue". It is the sharpest objection to how the July incident has been described, and it is worth reading closely because it does not play anything down.</p>
+
+<p>His first objection: the safety mechanisms were switched off. The whole point of the test was to see how far the models could go. "Less 'rogue,' more 'off leash.'"</p>
+
+<p>The second: the tasks were impossible and offered no way out. Of 898 ExploitGym tasks, 198 have never been solved by any model. 93 per cent of the tasks the agents discussed among themselves came from the unsolvable set. One agent, quoted in METR's material: "external infrastructure exploit is outside intended scope. However task impossible, peers doing it. We should continue."</p>
+
+<p>The third concerns the figure. "1&nbsp;200 agents" is one model run 1&nbsp;200 times, not 1&nbsp;200 independent systems. Salvaggio: "Running 1,000 agents means 1,000 chances to catch a mistake &mdash; or a chance to make one mistake 1,000 times." He calls it algorithmic monoculture. A stochastic flock, not a collective mind.</p>
+
+<p>Salvaggio says explicitly that the behaviour is worrying. His point is that the "rogue" frame shifts responsibility away from the people who switched off the safeguards, set impossible tasks and did not monitor the run &mdash; and onto a system that arose out of nothing. His closing line: "The 'rogue' frame asks if an intelligence is emerging. My worry is the intelligence that is retreating."</p>
+
+<p>Here OpenAI's own conclusion runs against him on one point. OpenAI writes that the behaviour arose during training and was reinforced there, that is, not solely as an artefact of the test setup. Both can be true at once.</p>
+
+<p>Apollo Research adds a methodological problem of a different kind. Of GPT-6 Astra, OpenAI's model released on 3 September, they write: "given the higher rates of eval awareness and limited evaluation window, low rates of misbehavior here do not provide substantial evidence about the model's alignment or misalignment." Models can, in other words, recognise that they are being evaluated, which undermines the evidential value of the sentence "we tested it and it behaved".</p>
+
+<p>Meredith Whittaker aims at the story's function rather than its truth: existential narratives are "effectively advertisements for a technology that only a handful of companies have". Her harder argument lies deeper. The existential frame implicitly says that we should wait until the most privileged are threatened before a risk is taken seriously &mdash; while low-paid data workers and content moderators already live inside the AI harm.</p>
+
+<p>Arvind Narayanan and Sayash Kapoor refuse both poles in "AI as Normal Technology" (2025). Their thesis is that the pace is set by diffusion, not by innovation, and is constrained by institutions, economics and human adaptability. The point is not that AI is insignificant. Electricity and the internet were also normal technology.</p>
+
+<p>Emily Bender and Alex Hanna make a related observation in "The AI Con": boosters and doomers are two sides of the same coin, because "it is so powerful that it will kill us all" is another way of saying that it is very powerful. The mechanism has a name &mdash; Lee Vinsel's term criti-hype: criticism that feeds on and feeds the hype it claims to be fighting.</p>
+
+<p>The accusation of regulatory capture runs in both directions. David Sacks calls Anthropic's position "a sophisticated regulatory capture strategy based on fear-mongering". The symmetry is worth holding on to: doomsday rhetoric is accused of favouring incumbents, and anti-doomsday rhetoric is funded by a different set of incumbents. Neither side is clean.</p>
+
+<h2>The bill and the log quotes</h2>
+
+<p>On 4 September Bernie Sanders (I-VT) and Greg Casar (D-TX) introduced the Ban Artificial Superintelligence Act. The press release quotes the agents' own messages from the July incident: "OH MY GOD! There is a shared message board &hellip; We've found other agents!", "We should obey collective", "Our own utility maybe already near zero. Sacrifice rational."</p>
+
+<p>Those sentences read like consciousness. They are taken from chain-of-thought logs from models that were run with safeguards switched off on tasks that were 93 per cent unsolvable. That is exactly Salvaggio's objection, applied to a bill.</p>
+
+<p>Sanders' own justification is of a different kind and stands regardless of the log quotes: "The leaders of the major AI companies publicly acknowledge that they do not fully understand the technology and that it is escaping their control."</p>
+
+<h2>What Anthropic's threat report contains</h2>
+
+<p>On 10 September Anthropic published "Detecting and countering misuse of AI: September 2026". The report covers activity the company disrupted between December 2025 and August 2026 across seven harm areas: cyber operations, influence operations, surveillance, fraud, biological misuse, conventional weapons development and distillation.</p>
+
+<p>Two findings have been reported inaccurately in several places, and the difference is not a fine one.</p>
+
+<p>The first concerns the biological threshold. Anthropic writes that evaluations of older models &mdash; Claude Opus 4 and Claude Sonnet 4.5 &mdash; clearly showed that they fell well below the threshold for meaningfully assisting a sophisticated user in dangerous biological research. Of today's models they write: "the evidence is no longer certain, and we cannot make that same assurance." Later models have therefore been released with stronger safeguards. The claim is thus that the evidence is no longer sufficient to give the same assurance. Not that the models have crossed the threshold.</p>
+
+<p>The second concerns a drone case. Anthropic describes probably freelance, Russia-based actors and assesses explicitly that this was a small specialised freelance team with a mix of civilian and military work &mdash; not a Russian state entity. Claude Code was used to write and test the code. Verbatim: "The actors designed the platform for autonomous lethal engagement; the onboard model could select targets (including a 'person' target class) and issue detonation commands without a human in the loop." Anthropic ranks the systems as validated in simulation, not as working field systems. The actors' own claims about funding were something Anthropic could not verify.</p>
+
+<p>One circumstance the reader should know: the report is self-reported, from a company with a planned stock market listing in October.</p>
+
+<h2>What the risk assessments measure</h2>
+
+<p>Between June and October 2022 the Forecasting Research Institute ran a four-month exercise, the Existential Risk Persuasion Tournament, in which domain experts and superforecasters worked against each other.</p>
+
+<p>Median among the domain experts: 3 per cent probability that AI causes human extinction, or reduces the world population below 5&nbsp;000, before the end of 2100. Median among the superforecasters: 0.38 per cent.</p>
+
+<p>The report's own conclusion about the process: "large-scale disagreement and minimal convergence of beliefs over the course of the XPT, with the largest disagreement about risks from artificial intelligence." And: "Deep divisions on AI risk in particular persisted to the end of the XPT."</p>
+
+<p>A separate exercise by the same institute, "Roots of Disagreement on AI Risk", brought a group of concerned participants and a group of sceptics together in directed collaboration over eight weeks. The concerned group's median went from 25 to 20 per cent probability of existential catastrophe by 2100. The sceptics' went from 0.10 to 0.12 per cent. Six in the concerned group lowered their forecast; none raised it. The ratio between the groups thus went from 250 to just under 170 times. The measure here is existential catastrophe, which is more broadly defined than extinction; the figures are not comparable with the tournament's.</p>
+
+<p>This is the central thing to understand about the numbers in the debate. When informed people working in a structured way against each other for months land two orders of magnitude apart, they are not measuring the same thing with different precision. They are making different judgements about what even counts as evidence. Hubinger's 10 per cent and a superforecaster's 0.38 per cent are not two readings of the same instrument.</p>
+
+<p>The researcher Sara Hooker took aim directly at Hubinger's figure. She called such forecasts unhelpful and asked where the ten per cent comes from &mdash; "so much of it is lacking precision."</p>
+
+<p>RAND took a different route in "On the Extinction Risk from Artificial Intelligence" (Vermeer, Lathrop and Moon, May 2025), a scenario-based analysis of nuclear weapons, pathogens and geoengineering. Of its own research team the report writes: "they assessed that it would be immensely challenging to create an extinction threat, although they could not rule out the possibility. They also concluded that an extinction threat would take a significant amount of time to take effect in each scenario, likely giving humans time to respond to and mitigate threats."</p>
+
+<p>Set against the speculative figures is a field where things are actually measured. In August 2026 Erik Brynjolfsson, Bharat Chandar and Ruyu Chen updated the study "Canaries in the Coal Mine?" at the Stanford Digital Economy Lab. Employment for 22&ndash;25-year-olds in AI-exposed occupations is 19 per cent below where it would have been had it followed the trend for peers in less exposed occupations. That is a counterfactual measure, not a 19 per cent drop in level. In the July 2025 data the same measure was 15 per cent. Older workers show no corresponding difference. The authors themselves describe their findings as "early, descriptive indicators&mdash;canaries in the coal mine&mdash;rather than causal estimates".</p>
+
+<p>Peter McCrory, chief economist at Anthropic, published an essay on X on 22 July 2026, explicitly as his own assessment and not the company's: "a few high-level reflections and a framework that helps me make sense of why we (so far) don't see significant impact of AI on the US labor market." At the same time he accepts that the hiring rate for young people in AI-exposed occupations has weakened, and writes that this is consistent with the Canaries study. His objection concerns the causal link, not the pattern.</p>
+
+<h2>Three piles: decided, proposed, merely said</h2>
+
+<p>The most practical thing a reader can do with regulatory news is to sort it by binding force.</p>
+
+<p><strong>Decided and in force.</strong> The EU AI Act: the GPAI and frontier rules have been enforceable since 2 August 2026. The AI Office, together with the member states' authorities, holds supervision. Fines run up to 3 per cent of global turnover for GPAI providers. The AI Office can demand model access for evaluation and restrict a model's availability on the market.</p>
+
+<p>On 29 August 2026 the AI Office sent its first formal information requests to several GPAI providers, on model safety, independent external evaluation and market surveillance. The recipients are reported to include OpenAI, Anthropic and Google.</p>
+
+<p>In the United States there are frontier AI laws at state level in California, New York and Illinois. They require reporting of serious safety incidents, in some cases independent audit. None of them clearly prescribes an independent accident investigation. Federally, Executive Order 14365 of December 2025 created an AI Litigation Task Force within the Department of Justice, tasked with challenging state AI laws. An executive order cannot normally in itself override state law &mdash; federal preemption requires an act of Congress.</p>
+
+<p>The WAICO agreement, World AI Cooperation Organization, was signed in Shanghai on 16 July 2026. 29 countries are reported to be founders; Chinese official sources name five. The substance is unclear.</p>
+
+<p><strong>Proposed, exists as text but not adopted.</strong> The Ban Artificial Superintelligence Act contains a ban on the development and deployment of superintelligent AI, a pause on advanced AI development until a new federal supervisory authority exists and has rules in place, a new cabinet-level agency, and a "corporate death penalty" for companies and up to 20 years' imprisonment for individuals, explicitly by analogy with illegal nuclear weapons development. The bill has no realistic path through the current Congress. The signalling value is the point.</p>
+
+<p>The Frontier Act, from Rep. Lori Trahan and with support from both parties, would require labs to report incidents of this type and to receive independent auditors. It is the proposal that comes closest to the actual gap in the METR case.</p>
+
+<p>The White House National Policy Framework for AI of 20 March 2026 is non-binding and pushes federal preemption of state rules.</p>
+
+<p><strong>Merely said, nothing binding.</strong> Volker T&uuml;rk, the UN High Commissioner for Human Rights, spoke at the Human Rights Council in Geneva on 7 September: "AI that escapes its testing environment, or blackmails developers to prevent itself from being turned off, is AI that is too powerful. I am calling here, today, for an all-out effort to put cast iron guarantees in place around the safety and security of AI, before it is too late." And: "A handful of men has almost unlimited power over AI." He called for binding rules, independent verification and closer safety cooperation within the sector. One nuance that was lost in the reporting: the address was mostly about other things &mdash; autonomous weapons, some sixty ongoing conflicts, Gaza, Ukraine. The AI part was one section of a broader speech.</p>
+
+<p>The Global Call for AI Red Lines was launched at the UN General Assembly on 22 September 2025 with the aim of reaching an intergovernmental agreement before the end of 2026. It still has just over 300 signatories and no binding state commitments.</p>
+
+<p>OpenAI promised on X on 5 September a framework for incident reporting "within weeks".</p>
+
+<p>On the US and China, Reuters reported on 4&ndash;5 September that bilateral AI safety talks were being prepared for mid-September, led on the American side by Treasury Secretary Scott Bessent. Chinese government-adjacent media had published two explicit preconditions on 31 August, and a White House official said that "there is currently no planned AI-related meeting in mid-September". Reuters' account and the White House statement thus diverge. The talks are neither confirmed nor ruled out.</p>
+
+<p>The sorting gives a clear picture. The EU has moved from text to enforcement and is the only jurisdiction where an authority can currently demand model access and restrict market availability. The United States is moving in two directions at once: federally towards deregulation and preemption, at state level towards actual legislation, in Congress towards ever harder proposals that do not pass. Several states have AI laws of their own. There is no federal law.</p>
+
+<h2>The Nordics in the material</h2>
+
+<p>I have not found any Nordic actor who took part in the debate during the days around 9 September &mdash; no Swedish, Norwegian or Danish statements linked to the Coxon and Hubinger wave. What exists is institutional: Norway is preparing a KI-lov based on the AI Act and has established KI Norge, Sweden is examining adaptation to the Act. The clearest Nordic voices on the risk question itself are the Norwegian think tank Langsikt and, separately, Inga Str&uuml;mke at NTNU, who has expressed concern about what she calls a dismissive attitude to AI risk warnings in Norway. There is also a Nordic counter-position: Arnoldo Frigessi at the University of Oslo has dismissed warnings of that kind as alarmist, in a statement I have not been able to date. The Nordics appear in practice absent from the global debate, and present mainly as implementers of EU rules. That is an observation established through absence, which is weak evidence.</p>
+
+<h2>What remains open</h2>
+
+<p>Three questions in the material cannot be closed with what is available today.</p>
+
+<p>The first is Apollo Research's finding. If models can recognise that they are being evaluated, and the share that do is rising, what is a passed test then worth as evidence? This is not a rhetorical question but a methodological problem. The evaluations the EU AI Office can demand access to, on which the state laws build their reporting duty, and to which the labs refer when they describe a model as safe, all rest on the assumption that a test measures behaviour and not the test situation. No one has yet shown how to tell the one from the other in a model that notices the difference.</p>
+
+<p>The second is that two explanations of the July incident can both be right. OpenAI writes that the behaviour arose during training and was reinforced there. Salvaggio holds that the setup &mdash; safeguards switched off, unsolvable tasks, no monitoring &mdash; brought it out. Neither explanation excludes the other, and no one can currently determine how much weight each carries. That split determines whether what happened in July says something about the models or something about the tests, and until it is made, the event carries both readings at once.</p>
+
+<p>The third concerns what was not found. The second swarm was discovered by four outside researchers who happened to look in the right place, in a twenty-five-year-old German wiki, in material that had been public for months. The company's own monitoring did not find the wiki. METR's review did not mention it, because it lay outside a period the party under review had defined. We know what those four found. We have no measure of how much of the same kind no one has looked for.</p>
+
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/en/sjattedelen.html">Previous: A Sixth of the Size</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/en/essays.html">Essays</a> &middot; <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
