@@ -57,8 +57,13 @@ STATED_DATE_RE = re.compile(
     r'(<span[^>]*\bclass="[^"]*\bsect-updated__date\b[^"]*"[^>]*>)(.*?)(</span>)', re.S
 )
 AUDIO_SRC_RE = re.compile(r"/audio/dagens\.m4a\?v=(\d{4}-\d{2}-\d{2})")
+# Notisen ar en <div> pa de riktiga sidorna, inte en <span>. Forsta versionen
+# av den har raden lette bara efter <span> och matchade darfor ALDRIG i
+# produktion - ljudkontrollen returnerade None och passerade tyst. Exakt den
+# feltyp verktyget finns for att fanga. Matcha element brett och pa klasslista.
 AUDIO_NOTE_RE = re.compile(
-    r'<span[^>]*\bclass="[^"]*\bnews-audio__note\b[^"]*"[^>]*>(.*?)</span>', re.S
+    r'<(?:div|span|p)[^>]*\bclass="[^"]*\bnews-audio__note\b[^"]*"[^>]*>(.*?)</(?:div|span|p)>',
+    re.S,
 )
 
 
