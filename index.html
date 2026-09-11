@@ -205,7 +205,7 @@ details.menu[open]>summary{color:var(--accent)}
 .filter button.filter-btn--norden{border-color:var(--accent);color:var(--accent);font-weight:800}
 .filter button.filter-btn--norden.is-active{background:var(--accent);color:#fff}
 
-  </style>
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:0 0 18px;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/</style>
 </head>
 <body>
 <a class="skip" href="#nyheter">Hoppa till nyheterna</a>
@@ -247,12 +247,12 @@ details.menu[open]>summary{color:var(--accent)}
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
       <!--AUDIO-BLOCK-START-->
-      <span class="strip__item news-audio__title"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h2.5a1.5 1.5 0 0 1 1.5 1.5v3A1.5 1.5 0 0 1 6.5 20H5a1 1 0 0 1-1-1z"/><path d="M20 14h-2.5a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5H19a1 1 0 0 0 1-1z"/></svg>Lyssna på nyheterna — engelsk uppläsning</span>
-      <audio controls preload="none" class="news-audio__player">
-        <source src="/audio/dagens.m4a?v=2026-09-08" type="audio/mp4">
-      </audio>
-      <!--AUDIO-BLOCK-END-->
-      <span class="strip__sep" aria-hidden="true"></span>
+<div class="news-audio" role="region" aria-label="Lyssna p&aring; nyheterna &mdash; engelsk uppl&auml;sning">
+  <div class="news-audio__row"><span class="news-audio__icon">&#127911;</span><div><div class="news-audio__title">Lyssna p&aring; nyheterna &mdash; engelsk uppl&auml;sning</div><div class="news-audio__note">Ett engelskt sp&aring;r f&ouml;r alla tre spr&aring;kversionerna. &middot; Uppl&auml;sning 11 september 2026</div></div></div>
+  <audio class="news-audio__player" controls preload="none"><source src="/audio/dagens.m4a?v=2026-09-11" type="audio/mp4"></audio>
+</div>
+<!--AUDIO-BLOCK-END-->
+<span class="strip__sep" aria-hidden="true"></span>
       <!--RSS-BLOCK-START-->
       <span class="strip__item"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6.2" cy="17.8" r="2.2"/><path d="M4 10.2a9.8 9.8 0 0 1 9.8 9.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M4 4.4A15.6 15.6 0 0 1 19.6 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>RSS-flöde</span>
       <span class="strip__url">https://ai-skiftet.se/rss.xml</span>
