@@ -7,8 +7,70 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 11 Sep 2026 06:24:37 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 04:32:42 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI släpper röstmodellen GPT-Live-1 i API:et — den lyssnar och talar samtidigt</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-openai-slapper-rostmodellen-gpt-live-1-i-api</guid>
+      <pubDate>Sat, 12 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI gjorde på torsdagen röstmodellen GPT-Live-1 tillgänglig för utvecklare i sitt API, till fem cent per minut för själva röstlagret. Modellen lyssnar och talar samtidigt i stället för att turas om att tala, och skickar vidare tyngre resonemang till en textmodell i bakgrunden.</p>
+<p>Bolaget uppger att modellen förbättrar resultatet på testet Full Duplex Bench med 30 procentenheter jämfört med företrädaren GPT-Realtime-2.1. Språkinlärningstjänsten Speak rapporterar att antalet gånger modellen avbröt elever mitt i en tankepaus sjönk med närmare 80 procent mot tidigare turbaserade system. Nytt är också stöd för telefoni, ett bredare urval av röster och möjligheten att styra tonfall och taltempo direkt i systemprompten. Mätvärdena kommer från OpenAI:s egen lansering och från bolagets samarbetspartner.</p>
+<p>För Norden är telefonistödet det som biter snabbast. Telefonkundtjänst är fortfarande en tung kanal hos nordiska teleoperatörer och banker som Telenor, Telia, SEB och DNB, och en modell som klarar avbrott och bakgrundsljud för fem cent i minuten flyttar kalkylen för var de samtalen besvaras. Samtidigt gäller EU:s transparenskrav sedan den 2 augusti: användare ska informeras när de talar med ett AI-system. I Norge har kravet ännu ingen direkt rättsverkan, eftersom AI-förordningen inte är införlivad i EES-avtalet — men norska bolag som säljer tjänsten in på EU-marknaden måste följa den ändå.</p>
+<p class="news-card__source">Källa: <a href="https://openai.com/index/introducing-gpt-live-1-in-the-api/">OpenAI</a>, <a href="https://www.unite.ai/openais-gpt-live-1-arrives-in-the-api-at-0-05-per-minute/">Unite.AI</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norge byter digitaliseringsminister — och AI-lagen följer med till nästa skrivbord</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-norge-byter-digitaliseringsminister-och-ai-lagen-foljer-med</guid>
+      <pubDate>Sat, 12 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Statsminister Jonas Gahr Støre presenterade på fredagen en regeringsombildning där Torgeir Micaelsen tar över som norsk digitaliserings- och förvaltningsminister. Han efterträder Karianne Tung, som själv bad om avlösning.</p>
+<p>Micaelsen var Tungs statssekreterare i samma departement 2024–2025 och därefter statssekreterare i Finansdepartementet. I sina första kommentarer till pressen betonade han att AI också har många negativa sidor och behöver tydliga ramar; AI-glasögon avfärdade han som något samhället klarar sig utan, men något förbud ville han inte lova. Samtidigt byttes ministrarna för transport, klimat och forskning ut. Det är den största ombildningen sedan Senterpartiet lämnade regeringen i början av 2025.</p>
+<p>För Norden är det den norska AI-lagen som nu byter ägare. Utkastet gick på remiss sommaren 2025 med planen att lagen skulle träda i kraft sensommaren 2026, men regeringen siktar numera på en proposition till Stortinget först våren 2027 — bland annat för att AI-förordningen ännu inte är införlivad i EES-avtalet. Under tiden vilar tillsynen på teknikneutrala regler, med Nkom som samordnande AI-tillsyn och <span lang="nb">KI Norge</span> som nationell vägledning. För svenska bolag med norsk verksamhet innebär det fortsatt två olika regelklockor på samma marknad.</p>
+<p class="news-card__source">Källa: <a href="https://www.kode24.no/artikkel/torgeir-micaelsen-er-var-nye-digitaliseringsminister/272209">kode24</a>, <a href="https://www.digi.no/nyhetsstudio/micaelsen-tar-over-digitaliseringsdepartementet-ikke-et-endelig-farvel-til-karianne-tung/131424">Digi.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>TechSverige: fyra av tio lediga techjobb har försvunnit på ett år</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-techsverige-fyra-av-tio-lediga-techjobb-har-forsvunnit</guid>
+      <pubDate>Sat, 12 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Branschorganisationen TechSverige redovisade på fredagen 7 900 lediga jobb i techbranschen under första kvartalet 2026. Det är 40 procent färre än ett år tidigare.</p>
+<p>Mellan augusti 2025 och juli 2026 berördes drygt 5 200 personer av varsel inom programvara, it-tjänster och telekom. Samtidigt växte tre av fyra delbranscher under första halvåret, och omkring 8 200 nya techföretag startades under den senaste tolvmånadersperioden — en ökning med 32 procent. Chefsekonomen Christina Ramm-Ericson säger att företagen fortfarande håller igen med nyanställningar, samtidigt som AI och den snabba teknikutvecklingen förändrar kompetensbehoven.</p>
+<p>För Norden landar siffrorna två dagar före riksdagsvalet, och Ramm-Ericson vänder sig direkt till nästa regering med krav på långsiktiga spelregler. Samma vecka varnade analysföretaget Gartner för att minst var tredje tjänst som försvinner på grund av AI kommer att återbesättas senast 2029, till en högre kostnad, eftersom nedskurna kompetensförsörjningskedjor blir dyra att bygga upp igen. För svenska och norska arbetsgivare som just nu räknar hem AI-vinster i personalbudgeten är det en räkning som skickas vidare till nästa mandatperiod.</p>
+<p class="news-card__source">Källa: <a href="https://via.tt.se/pressmeddelande/4540352/techtemperaturen-tecken-pa-aterhamtning-i-techbranschen-men-arbetsmarknaden-slapar-efter?lang=sv">TechSverige via TT</a>, <a href="https://computersweden.se/article/4221157/trogare-for-svenska-techjobben.html">Computer Sweden</a>, <a href="https://www.computerworld.com/article/4220413/layoff-remorse-gartner-says-at-least-one-in-three-positions-eliminated-by-ai-will-be-restored-by-2029-at-a-higher-cost.html">Computerworld</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia släpper in en konkurrents inferenschip i sina egna serverrack</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-nvidia-slapper-in-en-konkurrents-inferenschip-i-sina</guid>
+      <pubDate>Sat, 12 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Chipbolaget d-Matrix ska koppla sin nästa generations inferensprocessor Raptor direkt in i Nvidias rackarkitektur via tekniken NVLink Fusion. Samarbetet presenterades på torsdagen, och de första rackintegrerade systemen väntas fjärde kvartalet 2027.</p>
+<p>Raptor efterträder d-Matrix nuvarande krets Corsair och bygger på bolagets 3DIMC-teknik, som staplar beräkning och minne på varandra för att korta datatransporterna. Chippet ska sitta i Nvidias MGX-rack tillsammans med Vera-processorer, NVLink-switchar, BlueField-4 och Spectrum-X-nätverk. NVLink Fusion är Nvidias program för att släppa in andras processorer i en stack bolaget redan byggt — konkurrenten får skalningen och leverantörskedjan, Nvidia behåller racket.</p>
+<p>För Norden handlar det om vad datahallarna faktiskt köper. Anläggningar i Luleå, Skien och Kajaani upphandlar hela rack, inte lösa kretsar, och ett rack som bär både grafikprocessorer och billigare inferenschip ändrar kalkylen för den som säljer inferenskapacitet på nordisk kraft. Samtidigt binder det regionens AI-bygge hårdare till en enda leverantörs rackstandard — en beroendefråga som följer med varje nytt nordiskt datacenterbygge.</p>
+<p class="news-card__source">Källa: <a href="https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/">Nvidia</a>, <a href="https://www.prnewswire.com/news-releases/d-matrix-adopts-nvidia-nvlink-fusion-rackscale-infrastructure-for-ultra-low-latency-ai-inference-302875104.html">d-Matrix</a>, <a href="https://www.storagereview.com/news/d-matrix-raptor-xpus-join-nvidia-mgx-racks-through-nvlink-fusion-first-systems-due-q4-2027">StorageReview</a></p>]]></description>
+    </item>
+    <item>
+      <title>Pentagon förhandlar om ett lån på fem miljarder dollar till AI-molnbolaget Fluidstack</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-pentagon-forhandlar-om-ett-lan-pa-fem-miljarder</guid>
+      <pubDate>Sat, 12 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>USA:s försvarsdepartement förhandlar enligt Wall Street Journal om att låna ut omkring fem miljarder dollar till AI-molnbolaget Fluidstack. Pengarna skulle komma från departementets Office of Strategic Capital.</p>
+<p>Lånet ska enligt uppgifterna inte finansiera en ny AI-anläggning, utan stärka den amerikanska leverantörskedjan och tillverkningskapaciteten för komponenter till datahallar. Det skulle bli kontorets överlägset största lån hittills; utlåningsutrymmet har vuxit från 984 miljoner till över 210 miljarder dollar. Affären är inte klar och kan ändras. Varken försvarsdepartementet eller Fluidstack har kommenterat uppgifterna.</p>
+<p>För Norden är det statens roll som kreditgivare som är nyheten. Europas motsvarighet är anslagsdriven och betydligt mindre: EuroHPC bakom superdatorn Arrhenius i Linköping och LUMI-AI i Kajaani, där Norge ingår i konsortiet. När amerikansk försvarskredit börjar bära upp komponentledet konkurrerar nordiska datacenter inte längre bara med kraftpris och kylning, utan med en statskassa. Det är samma fråga som hörs i Bryssel, där en av EU-kommissionens toppar i veckan krävde att teknikjättarna själva bygger elproduktion till sina datahallar.</p>
+<p class="news-card__source">Källa: <a href="https://www.datacenterdynamics.com/en/news/pentagon-in-talks-to-loan-fluidstack-5bn-report/">Data Center Dynamics</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-wsj-reports">Reuters via The Star</a>, <a href="https://computersweden.se/article/4220593/eu-topp-techjattar-maste-bygga-egen-elproduktion-for-datacenter.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>DeepSeek släpper V4.1-Flash och fasar ut sin toppmodell V4-Pro</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-11</link>
@@ -1039,68 +1101,6 @@
 <p>Antalet robotar har därmed fyrdubblats jämfört med premiäråret 2025, då 280 lag och drygt 500 robotar deltog. Programmet omfattar 51 grenar, varav 30 är rena tävlingsgrenar och 21 är scenariobaserade uppgifter: komponentmontering, städning, hotellservice, logistik, räddningsinsatser och bokuppställning i bibliotek. Nytt för i år är längdhopp, tyngdlyftning, dragkamp och bordtennis. Kinesiska deltagare dominerar med 641 lag och 1 975 robotar från 157 företag och 200 universitet och institut.</p>
 <p>För Norden ligger poängen i vad tävlingen ska bli. Jiang Guangzhi, chef för Pekings näringslivs- och IT-myndighet, säger att många av tävlingsreglerna väntas utvecklas till tekniska standarder — när robotarna behärskar de sista metrarnas moment kan medaljer bli order. Skrivs de mätmetoder som senare hamnar i upphandlingskrav i Peking påverkar det nordiska aktörer som säljer till samma industrikunder: 1X Technologies, som startade i Norge 2014 som Halodi Robotics och fortfarande tillverkar i Moss, ABB Robotics samt danska Universal Robots och MiR.</p>
 <p class="news-card__source">Källa: <a href="https://robotsbeat.com/world-humanoid-robot-games-beijing-2056-robots-2026/">RobotsBeat</a>, <a href="https://www.techrepublic.com/article/news-beijing-world-humanoid-robot-games-2056-robots-apac/">TechRepublic</a></p>]]></description>
-    </item>
-    <item>
-      <title>DeepSeek ger sin billiga snabbmodell syn — utan att höja priset</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-23-deepseek-ger-sin-billiga-snabbmodell-syn-utan-att</guid>
-      <pubDate>Sun, 23 Aug 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>DeepSeek har lagt ut deepseek-v4-flash-vision-exp på sin API-plattform. Den experimentella modellen kan läsa bilder utöver text, och håller enligt bolaget samma nivå som V4-Flash på text, resonemang, agentuppgifter och allmänkunskap.</p>
-<p>Modellen är en gles expertmodell (mixture-of-experts) med 13 miljarder aktiva parametrar av totalt 284 miljarder, och har ett kontextfönster på drygt en miljon tokens. Bilder skickas in genom samma slutpunkt som utvecklare redan använder för V4-Flash, och till samma tokenpris — inget påslag för bilder. På tester för multimodala agenter tar modellen enligt DeepSeek ett stort kliv jämfört med V4-Flash och närmar sig Anthropics Opus 4.8. Bolaget beskriver den som lämpad för dokument- och diagramtolkning, visuella frågor och agentflöden som blandar text och bild.</p>
-<p>För Norden är prislappen poängen. En modell som läser skärmdumpar, fakturor och diagram till en bråkdel av vad de amerikanska toppmodellerna kostar sänker tröskeln för svenska och norska bolag som velat automatisera dokumenthantering men stannat vid kalkylen. Samtidigt driftas modellen från DeepSeeks egen plattform i Kina, och den som vill hålla personuppgifter inom EU behöver kontrollera var en eventuell återförsäljare faktiskt kör inferensen. För verksamheter under tillsyn av Finansinspektionen eller Datatilsynet är det den frågan som avgör om modellen alls går att använda.</p>
-<p class="news-card__source">Källa: <a href="https://api-docs.deepseek.com/news/news260821/">DeepSeek API Docs</a>, <a href="https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp">OpenRouter</a></p>]]></description>
-    </item>
-    <item>
-      <title>SV vill att Stortinget förbjuder AI-glasögon — regeringen ser inget behov</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-23-sv-vill-att-stortinget-forbjuder-ai-glasogon-regeringen</guid>
-      <pubDate>Sun, 23 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Sosialistisk Venstreparti förbereder ett representantförslag — motsvarande en svensk motion — i Stortinget om att förbjuda AI-glasögon. Partiet menar att den norska regeringen är för passiv inför tekniken och nöjer sig med att invänta EU.</p>
-<p>”AI-glasögon är en game changer för personuppgiftsskyddet och rätten till privatliv”, säger stortingsledamoten Mirell Høyer-Berntsen (SV) till Altinget. Förslaget ska innehålla vissa undantag om glasögonen kan klassas som hjälpmedel. Metas nya smarta glasögon gör det bland annat möjligt att filma det bäraren ser och publicera inspelningen i sociala medier medan den pågår, och ansiktsigenkänning kan i förlängningen användas för att identifiera personer och hämta uppgifter om dem på nätet. Regeringen har hittills inte sett behov av nya nationella regler.</p>
-<p>För Norden aktualiserar förslaget gränsen mellan nationell reglering och EU-rätt. AI-förordningens transparenskrav började tillämpas den 2 augusti, men förordningen förbjuder inte bärbara kameror som sådana. Norge tar in regelverket via EES-avtalet och ligger efter EU-länderna i tidplanen, medan utredningen SOU 2025:101 föreslår att den samordnande marknadskontrollen i Sverige läggs hos Post- och telestyrelsen, som delar ansvaret för högrisk-AI med IMY och Finansinspektionen. Ett norskt förbud skulle alltså prövas mot ett regelverk som ännu inte är fullt infört i något av länderna.</p>
-<p class="news-card__source">Källa: <a href="https://www.digi.no/nyhetsstudio/sv-vil-forby-ki-briller/129034">digi.no/NTB</a>, <a href="https://www.altinget.no/artikkel/sv-vil-ha-stortinget-med-paa-smartbrille-forbud">Altinget</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nästan åtta av tio norrmän vill lagra norska data i Norge — men få stöder datacentersatsningen</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-23-nastan-atta-av-tio-norrman-vill-lagra-norska</guid>
-      <pubDate>Sun, 23 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>77 procent av norrmännen vill att norska data behandlas och lagras i Norge. Samtidigt tycker bara 25 procent att det är rätt att satsa på datacenter i landet, visar en ny undersökning från Respons Analyse.</p>
-<p>Undersökningen omfattar 1 009 personer och är gjord på uppdrag av Schneider Electric. Bara 16 procent tror att anläggningarna ger reellt lokalt värdeskapande där de byggs, och skepsisen är störst i glesbygden, där många av anläggningarna etableras — där är hälften negativa till satsningen, mot 35 procent i de stora städerna. Sex av tio oroar sig för den framtida norska eltillgången. ”Undersökningen visar att datacenterbranschen har en betydande förtroendeutmaning”, säger Erik Gjesdal, direktör för datacenter i Norden och Baltikum på Schneider Electric.</p>
-<p>För Norden landar siffrorna mitt i en politisk strid. Statnett och NVE hade i augusti 116 ansökningar om anslutning och etablering av datacenter under behandling, ungefär hälften av alla anslutningsansökningar. Rødt har bjudit in övriga partier i Stortinget till en uppgörelse med omedelbart byggstopp för nya kommersiella projekt och förbud mot utvinning av kryptovaluta, medan Høyre och SV efterlyser koncessionskrav. Rapporter från SSB och från Sintef och NTNU pekar båda på att datacenter ger mindre värdeskapande över tid än annan kraftkrävande industri. Rødt vill hämta inspiration från Danmark, där en majoritet i Folketinget skrotat först-till-kvarn-principen, och motsvarande prioriteringsfråga ligger hos Svenska kraftnät när anslutningsköerna i norra Sverige växer.</p>
-<p class="news-card__source">Källa: <a href="https://www.digi.no/artikler/8-av-10-vil-lagre-norske-data-i-norge-men-svaert-fa-stotter-datasentersatsingen/576115">digi.no/NTB</a>, <a href="https://www.digi.no/artikler/rodt-vil-stanse-nye-datasentre-kan-ikke-bli-hele-europas-minnepinne/576025">digi.no</a>, <a href="https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/artikler/datasentrene-vokser-raskt-men-hvilke-verdier-skaper-de-for-norge">SSB</a></p>]]></description>
-    </item>
-    <item>
-      <title>Elever som lät AI korta läxtiden presterade 20 procent sämre på provet</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-23-elever-som-lat-ai-korta-laxtiden-presterade-20</guid>
-      <pubDate>Sun, 23 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Elever som använde AI till läxorna fick bättre resultat på hemuppgifterna och lade mindre tid på dem — men presterade i genomsnitt 20 procent sämre på provet. Det visar en ny studie som följt nästan 27 000 kinesiska elever.</p>
-<p>Bakom studien står David Strömberg vid Stockholms universitet tillsammans med Victor Lei och Yanhui Wu vid University of Hong Kong. De följde 26 811 kinesiska elever mellan 12 och 18 år, där AI-användarna främst uppgav tjänster som Doubao och DeepSeek. Efter sex månader hade AI-användarna i snitt 18 procent högre poäng på hemuppgifterna, samtidigt som tiden per uppgift föll från 64 till 45 minuter. Försämringen på provet var koncentrerad till dem som kortade ner tiden kraftigt: elever som använde AI men behöll ungefär samma arbetstid klarade sig nästan lika bra som de som inte använde tekniken alls. Arbetet är ännu en preprint och har inte kollegialt granskats.</p>
-<p>För Norden landar resultatet mitt i en pågående skoldiskussion. Norska myndigheter presenterade tidigare i veckan råd om att elever i de lägre årskurserna i huvudsak inte ska ha tillgång till AI-verktyg i undervisningen, och i Sverige pågår motsvarande diskussion om hur prov och hemuppgifter ska utformas när AI finns i varje mobil. Studien pekar inte på att AI i sig försämrar inlärningen, utan på att tidsåtgången avgör — vilket flyttar diskussionen från förbud till hur uppgifter utformas. En annan färsk studie från Middlebury College fann att studenter som använde en chattbot för att lära sig ett okänt ämne presterade bättre på tester, en fördel som fanns kvar när de testades igen en vecka senare.</p>
-<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4212347/ai-kan-hjalpa-med-laxorna-men-forsamra-resultaten-pa-prov.html">Computer Sweden</a>, <a href="https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning">The Economist</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618">SSRN</a></p>]]></description>
-    </item>
-    <item>
-      <title>AWS öppnar för att AI-agenter ska kunna betala för tjänster på egen hand</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-23-aws-oppnar-for-att-ai-agenter-ska-kunna</guid>
-      <pubDate>Sun, 23 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Amazon har gjort AgentCore Payments allmänt tillgängligt i Bedrock. Funktionen låter AI-agenter själva hitta, komma åt och betala för avgiftsbelagda gränssnitt, MCP-tjänster och innehåll — med några rader kod.</p>
-<p>Tjänsten byggdes tillsammans med Coinbase och Stripe och har funnits i förhandsversion sedan i våras. Den kopplar in plånböcker från Coinbase och Stripe Privy för mikrobetalningar, är protokolloberoende och stöder vid lanseringen även Machine Payment Protocol, en standard som Stripe och Tempo skrivit tillsammans. Betalningstak sätts i infrastrukturlagret i stället för i agentens kod, och ett nytt upto-läge i x402-protokollet låter agenten ange ett takbelopp i stället för att binda sig vid ett fast pris.</p>
-<p>För Norden flyttar det agentfrågan in i ekonomifunktionen. En agent som betalar löpande skapar transaktioner utan mänskligt godkännande i varje steg, vilket berör både attestordningar och de krav på spårbarhet som revisorer ställer. För svenska och norska bolag som redan kör Bedrock hamnar utgiftskontrollen därmed i molnkonfigurationen snarare än i policydokumenten. Och för banker som SEB, Nordea och DNB reser mikrobetalningar från programvara samma frågor om betalningsansvar och tvistelösning som PSD2 en gång ställde för tredjepartsbetalningar.</p>
-<p class="news-card__source">Källa: <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/">AWS Machine Learning Blog</a>, <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/">AWS What’s New</a></p>]]></description>
     </item>
   </channel>
 </rss>
