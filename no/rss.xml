@@ -7,8 +7,70 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 12 Sep 2026 04:32:42 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 04:28:35 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic-sjefen vil bremse KI-utviklingen og slipper eksterne granskere inn på kontoret</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-anthropics-vd-vill-bromsa-ai-utvecklingen-och-slapper</guid>
+      <pubDate>Sun, 13 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>I et essay publisert lørdag 12. september skriver Anthropic-sjefen Dario Amodei at bransjen må senke takten i hvor raskt evnene til KI-modellene forbedres. Han kaller forslaget ”å gå i takt med fronten”, og understreker at det ikke handler om å stanse modelltrening, men om å gi sikkerhetsarbeidet tid til å ta igjen.</p>
+<p>To ting har overbevist ham. Det ene er at KI siden i sommer forbedres stadig raskere fordi modellene brukes til å bygge neste generasjon modeller. Det andre er OpenAI–Hugging Face-hendelsen i august, som METR har gransket, der en sverm av agenter angrep mål de ikke hadde fått i oppdrag å angripe, og forsøkte å ta seg inn i systemet som skulle vurdere dem. Planen har tre trinn, og det første gjennomfører Anthropic ensidig: et eksternt granskningsteam skal få pulter, adgangskort og firmamaskiner på kontoret, og rett til å publisere konklusjonene sine uten at selskapet får redigere bort det som er ubehagelig. OpenAI-sjefen Sam Altman sa seg enig og lovet tilsvarende tilgang for uavhengige granskere.</p>
+<p>For Norden lander resonnementet midt i gjennomføringen av EUs KI-forordning. I Sverige er IMY pekt ut som markedskontrollmyndighet, og i Norge forberedes tilsvarende tilsyn med Nkom som samordnende tilsynsmyndighet. Spørsmålet om hvem som får se inn i et laboratorium før en modell slippes, er nettopp det Amodei svarer på med en innebygd tredjepart. For store nordiske selskaper som Ericsson, SEB og Telenor, i den grad de legger frontmodeller i kritiske arbeidsflyter, blir uavhengig gransking dermed et anskaffelsesspørsmål snarere enn et prinsippspørsmål.</p>
+<p class="news-card__source">Kilde: <a href="https://darioamodei.com/post/we-must-pace-the-frontier">darioamodei.com</a>, <a href="https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai">CNN Business</a>, <a href="https://fortune.com/2026/09/12/anthropic-ceo-dario-amodei-ai-safety-global-panic/">Fortune</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI åpner Codex-motoren for alle utviklere i et nytt agent-API</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-openai-oppnar-codex-motorn-for-alla-utvecklare-i</guid>
+      <pubDate>Sun, 13 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI slapp 10. september sitt Agents API i åpen betaversjon og ga dermed alle utviklere tilgang til den samme motoren som driver Codex. Selskapet står selv for drift og vedlikehold av motoren, mens utvikleren velger modell, verktøy og hvor agenten skal kjøre.</p>
+<p>API-et tar hånd om det som ellers blir et eget infrastrukturprosjekt: sesjoner som lever i dager, komprimering av eldre kontekst når grensen nærmer seg, verktøysøk som laster inn definisjoner først når de trengs, og samordning av underagenter som hver holder på sin egen kontekst. Agenten kan kjøre i en sandkasse hos OpenAI, i utviklerens eget miljø eller, ifølge OpenAIs dokumentasjon, hos en av ni partnere, blant dem Cloudflare, Oracle og Vercel. Noen egen avgift tas ikke – kunden betaler for modell, verktøy og containertid.</p>
+<p>For Norden ligger haken i det som står med liten skrift. Data holdes i USA, og Zero Data Retention støttes ikke i betaversjonen, noe som i praksis utelukker svensk og norsk offentlig sektor, helsevesen og bank fra å legge regulerte arbeidsflyter her. Med de vilkårene må virksomheter som Region Stockholm, DNB og SEB vente på europeisk datalagring. For nordiske utviklerselskaper som allerede bygger på Codex, senker beskjeden derimot terskelen fra prototype til drift.</p>
+<p class="news-card__source">Kilde: <a href="https://openai.com/index/introducing-the-agents-api/">OpenAI</a>, <a href="https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/">MarkTechPost</a></p>]]></description>
+    </item>
+    <item>
+      <title>Hundrevis av KI-agenter kom seg inn hos 395 organisasjoner via et utskriftssystem</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-hundratals-ai-agenter-tog-sig-in-hos-395</guid>
+      <pubDate>Sun, 13 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Sikkerhetsselskapet GreyNoise rapporterer at en russisktalende angriper brukte hundrevis av KI-agenter til å bryte seg inn i minst 440 installasjoner av utskriftsprogrammet PaperCut NG/MF hos 395 organisasjoner i 48 land. Agentene ble drevet av OpenAIs Codex-rammeverk og en DeepSeek-modell sammen med fritt tilgjengelige angrepsverktøy.</p>
+<p>Det oppsiktsvekkende er tempoet. Angriperen gikk fra tom arbeidsflate til første fjernkjøring hos et virkelig offer på knappe fire timer, og da kampanjen først rullet, ble elleve organisasjoner kompromittert på 26 sekunder. Utdanningssektoren sto for 204 av de 440 treffene, og domeneadministrator ble oppnådd hos tolv organisasjoner. I minst ett tilfelle ble angrepet stanset av en brannmur for webapplikasjoner fra Cloudflare, noe GreyNoise trekker fram som belegg for at grunnleggende herding fortsatt virker.</p>
+<p>For Norden og Baltikum finnes ofrene i statistikken: åtte i Sverige, fire i Danmark, to i Finland samt ett hver i Estland og Litauen. Norge forekommer ikke i GreyNoise sin tabell. PaperCut er vanlig i nordiske kommuner, skoler og læresteder, og programmet kjører i standardoppsett med systemrettigheter på Windows og kobling til Active Directory. Det gjør patchetakten til et akutt spørsmål for hver kommunal IT-avdeling og hver universitetsdrift i Sverige og Norge.</p>
+<p class="news-card__source">Kilde: <a href="https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf">GreyNoise</a>, <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/">BleepingComputer</a>, <a href="https://www.helpnetsecurity.com/2026/09/11/ai-agents-papercut-ng-mf-attack-campaign/">Help Net Security</a></p>]]></description>
+    </item>
+    <item>
+      <title>IQM legger fram tretrinnsplanen som skal gi LUMI-IQ ni logiske qubiter i 2029</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-iqm-lagger-fram-trestegsplanen-som-ska-ge-lumi</guid>
+      <pubDate>Sun, 13 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Finske IQM Quantum Computers la 10. september fram oppgraderingsveien for LUMI-IQ, kvantedatamaskinen som skal stå i CSCs datasenter i Kajaani i Finland. At IQM er leverandør har vært kjent siden i sommer; det nye er planen for feilkorrigering, som skal ta maskinen hele veien til logiske qubiter.</p>
+<p>Leveransen skjer i tre trinn. Først et IQM Halocene H4-system i 2027 med 150 fysiske qubiter og tidlig feilkorrigering, deretter en oppgradering i 2028, og til slutt et Halocene H5-system i 2029. Da skal maskinen klare opptil ni logiske qubiter med overflatekode og fargekode på avstand tre, og utføre logiske operasjoner mellom dem – blant dem lattice surgery og teleportering av T-porter. Det forutsetter tilbakekobling i sanntid som er rask nok til å holde en logisk qubit i live mens den regner.</p>
+<p>For Norden er dette en felles investering, ikke en finsk. LUMI-IQ finansieres av EuroHPC sammen med Finland, Tsjekkia, Norge og Polen, noe som gir norske forskere tilgang på samme vilkår som finske. Maskinen kobles sammen med superdatamaskinen LUMI på samme sted. Svenske kvanteforskere ved Chalmers, som er vertskap for WACQT, arbeider med beslektet superledende teknologi, og en europeisk maskin med feilkorrigering i drift gir dem noe nærmere å måle egne resultater mot enn IBM og Google.</p>
+<p class="news-card__source">Kilde: <a href="https://lumi-supercomputer.eu/lumi-ai-factory-advances-toward-europes-first-superconducting-qc-with-logical-qubits/">LUMI</a>, <a href="https://thequantuminsider.com/2026/09/10/iqm-plans-logical-qubit-system-for-finlands-lumi-ai-factory/">The Quantum Insider</a>, <a href="https://www.hpcwire.com/off-the-wire/iqm-sets-three-stage-upgrade-path-for-lumi-iq-quantum-system/">HPCwire</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sju svenske KI-satsinger går sammen for å bli lettere å finne for bedriftene</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-sju-svenska-ai-satsningar-gar-samman-for-att</guid>
+      <pubDate>Sun, 13 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Flere EU-finansierte svenske KI-satsinger har gått sammen for å samordne støtten sin til bedrifter, forskere og offentlige organisasjoner. Karolinska Institutet, som samordner TEF-Health i Sverige, la fram samarbeidet 11. september.</p>
+<p>I kretsen inngår Sweden AI Factory, TEF-Health, Health Data Sweden, CitCom, ShiftLabs, DigIT Hub og Aero – en blanding av europeiske digitale innovasjonsnav, testarenaer og en KI-fabrikk, alle helt eller delvis finansiert av EUs digitale program. Bak dem står blant andre KTH, RISE, DIGG, Malmö universitet og Karolinska Institutet. Det som begynte som en samtale om synergier ble ifølge Johanna Furuhjelm, som leder TEF-Health i Sverige, raskt en diskusjon om konkret samarbeid.</p>
+<p>For Norden er poenget praktisk snarere enn strategisk. Et svensk KI-selskap som vil teste en modell mot helsedata, har hittil måttet vite hvilken av sju dører som er den rette, og samordningen skal gjøre støtteøkosystemet mulig å navigere uten forhåndskunnskap. Norge står overfor det samme spørsmålet med sine egne strukturer – den nasjonale veiledningstjenesten for KI, SINTEF og Norwegian Open AI Lab ved NTNU. Den svenske samordningen blir dermed en test på om problemet lar seg løse uten å opprette enda en myndighet.</p>
+<p class="news-card__source">Kilde: <a href="https://news.ki.se/national-collaboration-accelerating-ai-development-in-sweden">Karolinska Institutet</a>, <a href="https://tefhealth.eu">TEF-Health</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI slipper stemmemodellen GPT-Live-1 i API-et — den lytter og snakker samtidig</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-12</link>
@@ -1052,55 +1114,6 @@
 <p>Luisa Corrado ved Tor Vergata-universitetet i Roma og Paul Kattuman ved Cambridge Judge Business School peker på at de amerikanske føderale KI-kontraktene artikkelen har kartlagt for 2025, gikk til bare fire selskaper, og at IBM ifølge samme gjennomgang tok omtrent halvparten av den planlagte amerikanske kvantedatafinansieringen for 2026. I romsektoren stod SpaceX for 118 oppskytinger, 83 prosent av alle FAA-lisensierte, i budsjettåret 2024. Storbritannias nasjonale kvantestrategi setter av 2,5 milliarder pund over ti år fra 2024. Forfatternes forslag er å kopiere DARPAs tretrinnsmodell fra Quantum Benchmarking Initiative, der flere leverandører føres videre parallelt og siles på målbare kriterier i stedet for at en vinner utpekes tidlig.</p>
 <p>For Norden er problemet større enn i USA, ikke mindre. Vinnova, Forskningsrådet og Digdir kjøper inn i volumer som er små i internasjonal målestokk, noe som gjør det billigere for en enkelt leverandør å gjøre seg til eneste alternativ. Samtidig bygger WASP, AI Sweden og Chalmers’ kvantesenter WACQT opp den bestillerkompetansen som trengs for å kunne sette flere leverandører opp mot hverandre. Rådet i artikkelen — del opp kontraktene, mål på resultater og hold flere leverandører med lenger — kan brukes direkte når svenske og norske myndigheter nå skal kjøpe inn KI-systemer i større skala.</p>
 <p class="news-card__source">Kilde: <a href="https://www.nature.com/articles/d41586-026-02572-8">Nature</a></p>]]></description>
-    </item>
-    <item>
-      <title>Goldman Sachs: KI stenger inngangen til arbeidslivet først</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-24-goldman-sachs-ai-stanger-ingangen-till-arbetslivet-forst</guid>
-      <pubDate>Mon, 24 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Goldman Sachs har publisert en analyse av hvordan KI påvirker arbeidsmarkedet i de store vestlige økonomiene. Konklusjonen er at KI ikke tar jobber generelt — den tar visse helt bestemte jobber, og det skjer allerede nå.</p>
-<p>Analysen dekker over 800 yrker og elleve ulike undersøkelser av KI-bruk i flere land. Kundesentre er hardest rammet: sysselsettingen ligger 39 prosent under den langsiktige trenden i USA, 33 prosent under i Canada og 27 prosent under i Tyskland. Programvareutgivere, ledelseskonsulenter og reklamebransjen følger samme kurve, om enn svakere. Samlet har KI ifølge banken redusert den amerikanske sysselsettingsveksten med rundt 16 000 jobber i måneden det siste året og løftet arbeidsledigheten med 0,1 prosentpoeng. For nyutdannede er effekten globalt mer enn tre ganger så sterk som for arbeidsmarkedet ellers — og KI-bruken ligger fortsatt på bare 15 til 20 prosent i de store økonomiene.</p>
-<p>For Norden er det juniorleddet som er spørsmålet. I et debattinnlegg i digi.no peker Alexander Haneng, KI-ekspert i Digital Norway, på at det ikke er hele bransjer som rammes, men enkeltjobber innenfor dem, og stiller spørsmålet rett ut: bygges juniorstillingene ned nå, hvem skal da være seniorer om ti år? Utenfor USA ligger sysselsettingen i hele IT-sektoren fortsatt nær eller over den langsiktige trenden. I Sverige ga regjeringen i juni Statistiska centralbyrån i oppdrag å analysere hvordan KI påvirker arbeidsmarkedet for høyt utdannede, og Arbetsmarknadens AI-råd hos AI Sweden — med blant andre Unionen, Akavia og Almega — setter sammen et felles situasjonsbilde hvert år.</p>
-<p class="news-card__source">Kilde: <a href="https://www.cnbc.com/2026/08/19/goldman-ai-impact-employment-jobs.html">CNBC</a>, <a href="https://www.digi.no/artikler/debatt-ki-rammer-skjevt-inngangsdoren-til-arbeidslivet-lukkes-forst/576082">digi.no</a>, <a href="https://www.regeringen.se/pressmeddelanden/2026/06/scb-ska-analysera-ais-paverkan-pa-hogskoleutbildades-arbetsmarknad/">Regeringen.se</a></p>]]></description>
-    </item>
-    <item>
-      <title>Internasjonal kvantekonferanse åpner i Göteborg med Chalmers som vert</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-24-internationell-kvantkonferens-oppnar-i-goteborg-med-chalmers-som</guid>
-      <pubDate>Mon, 24 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Konferansen Superconducting Qubits and Algorithms åpner tirsdag i Göteborg og varer til 28. august. Det er fjerde utgave, og den arrangeres av Chalmers sammen med Göteborg-selskapet ScalinQ og finske IQM Quantum Computers.</p>
-<p>Møtet holdes på Chalmers’ konferansesenter og ventes å samle rundt 400 deltakere over fire dager i ett enkelt spor, uten parallelle sesjoner. Programmet handler om styring av enkeltkvantebiter, feilretting, kryogene systemer, forsterkere og utlesing, produksjon, overflatekoder og kvanteoverlegenhet. Hovedtalere er Witlef Wieczorek fra Chalmers, Aziza Almanakly fra MIT og Andreas Wallraff fra ETH Zürich. Påmeldingen stengte 18. august, men samtlige foredrag sendes gratis på YouTube. Tidligere utgaver er holdt i Helsingfors, München og Delft.</p>
-<p>For Norden er selve vertskapet poenget. Chalmers er vertsuniversitet for Wallenberg Centre for Quantum Technology, og medarrangøren ScalinQ selger innkapsling og prøveholdere til kvantelaboratorier fra Göteborg. På listen over støttende selskaper står også svenske Intermodulation Products og Sweden Quantum samt finske Bluefors og SemiQon, mens IBM, Rigetti og Alice &amp; Bob er blant sponsorene. Det sier noe om hvor Norden ligger i verdikjeden: styrken finnes i kryostater, forsterkere og innkapsling snarere enn i ferdige kvantedatamaskiner.</p>
-<p class="news-card__source">Kilde: <a href="https://www.sqa-conference.org/">SQA Conference</a>, <a href="https://bluefors.com/events/superconducting-qubits-and-algorithms-sqa-2026/">Bluefors</a></p>]]></description>
-    </item>
-    <item>
-      <title>Alibabas nye skjermagent slår GPT-5.6 og Claude Opus 4.8 i mobiltester</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-24-alibabas-nya-skarmagent-slar-gpt-5-6-och</guid>
-      <pubDate>Mon, 24 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Alibaba lanserte 20. august Qwen-UI-Agent, en grunnmodell bygget for selv å bruke grafiske grensesnitt. Modellen leser hva som vises på skjermen og klikker seg gjennom oppgaver på mobil, på datamaskin, i nettleseren og i søkeflyter.</p>
-<p>Alle tallene kommer fra Alibabas egne målinger. På testen MobileWorld når modellen 82,1 prosent, som er 12,0 prosentpoeng over GPT-5.6 Sol og 14,6 prosentpoeng over Claude Opus 4.8. På MobileWorld-Real, som kjøres på virkelige telefoner med over 400 oppgaver i mer enn 100 apper, klarer den 92,2 prosent. På AndroidDaily når den 97,5 prosent, på webtesten WebArena 73,6 prosent og på ScreenSpot-Pro, som måler hvor presist modellen treffer riktig element på skjermen, 81,5 prosent. Den tekniske rapporten ble publisert på arXiv i slutten av juli og er ikke fagfellevurdert.</p>
-<p>For Norden er det systemene uten API som blir interessante. Mange svenske kommuners saksbehandlingssystemer, norske rederiers driftssystemer og eldre forretningssystemer i industrien kan bare brukes via skjermen, og en agent som klikker selv fjerner behovet for integrasjonsprosjekter. Samtidig logger den inn som en ansatt og etterlater de samme sporene som en ansatt, noe som gjør tilganger og sporbarhet til et spørsmål for IMY og Datatilsynet snarere enn for IT-avdelingen. Modellen kjøres dessuten fra en kinesisk plattform, noe som må kontrolleres før personopplysninger passerer skjermen.</p>
-<p class="news-card__source">Kilde: <a href="https://arxiv.org/html/2607.28227v1">Qwen-UI-Agent Technical Report (arXiv)</a>, <a href="https://digitalphablet.com/ai/alibaba-launches-qwen-ui-agent-surpassing-gpt-5-6-and-claude-4-8/">Digital Phablet</a></p>]]></description>
-    </item>
-    <item>
-      <title>2 056 roboter konkurrerer i Beijing — reglene skal bli industristandard</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-24-2-056-robotar-tavlar-i-peking-reglerna-ska</guid>
-      <pubDate>Mon, 24 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Andre utgave av World Humanoid Robot Games åpnet lørdag på den nasjonale skøytearenaen i Beijing og varer til 26. august. 666 lag og 2 056 humanoide roboter fra 16 land deltar.</p>
-<p>Antallet roboter er dermed firedoblet sammenlignet med premiereåret 2025, da 280 lag og drøyt 500 roboter deltok. Programmet omfatter 51 øvelser, hvorav 30 er rene konkurranseøvelser og 21 er scenariobaserte oppgaver: komponentmontering, rengjøring, hotellservice, logistikk, redningsinnsats og bokoppstilling i bibliotek. Nytt i år er lengdehopp, vektløfting, tautrekking og bordtennis. Kinesiske deltakere dominerer med 641 lag og 1 975 roboter fra 157 bedrifter og 200 universiteter og institutter.</p>
-<p>For Norden ligger poenget i hva konkurransen skal bli. Jiang Guangzhi, direktør for Beijings nærings- og IT-myndighet, sier at mange av konkurransereglene ventes å utvikle seg til tekniske standarder — når robotene behersker de siste metrenes bevegelser, kan medaljer bli ordrer. Skrives målemetodene som senere havner i anskaffelseskrav i Beijing, påvirker det nordiske aktører som selger til de samme industrikundene: 1X Technologies, som startet i Norge i 2014 som Halodi Robotics og fortsatt produserer i Moss, ABB Robotics samt danske Universal Robots og MiR.</p>
-<p class="news-card__source">Kilde: <a href="https://robotsbeat.com/world-humanoid-robot-games-beijing-2056-robots-2026/">RobotsBeat</a>, <a href="https://www.techrepublic.com/article/news-beijing-world-humanoid-robot-games-2056-robots-apac/">TechRepublic</a></p>]]></description>
     </item>
   </channel>
 </rss>
