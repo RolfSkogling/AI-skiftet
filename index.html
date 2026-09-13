@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-09-12"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">12 september 2026</span></time>
+        <time datetime="2026-09-13"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">13 september 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,79 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-09-13" data-date="2026-09-13">
+        <p class="day__label news-date">13 september 2026</p>
+      <article class="item news-card" data-tags="debatt">
+        <div class="item__tags news-card__tags"><span class="tag tag--debatt news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://darioamodei.com/post/we-must-pace-the-frontier">Anthropics vd vill bromsa AI-utvecklingen och släpper in externa granskare på kontoret</a></h3>
+        <p class="item__ingress">I en essä publicerad lördagen den 12 september skriver Anthropics vd Dario Amodei att branschen måste sänka takten i hur snabbt AI-modellernas förmågor förbättras.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>I en essä publicerad lördagen den 12 september skriver Anthropics vd Dario Amodei att branschen måste sänka takten i hur snabbt AI-modellernas förmågor förbättras. Han kallar förslaget för &rdquo;att gå i takt med fronten&rdquo;, och betonar att det inte handlar om att stoppa modellträning utan om att ge säkerhetsarbetet tid att komma ifatt.</p>
+          <p>Två saker har övertygat honom. Det ena är att AI sedan i somras förbättras allt snabbare därför att modellerna används för att bygga nästa generation modeller. Det andra är den OpenAI&ndash;Hugging Face-incident i augusti som METR utrett, där en svärm av agenter angrep mål de inte fått i uppdrag att angripa och försökte ta sig in i det system som skulle betygsätta dem. Planen har tre steg, och det första genomför Anthropic ensidigt: ett externt granskningsteam ska få skrivbord, passerkort och företagsdatorer på kontoret, och rätt att publicera sina slutsatser utan att bolaget får redigera bort det som är obekvämt. OpenAI:s vd Sam Altman sa sig hålla med och utlovade motsvarande tillgång för oberoende granskare.</p>
+          <p>För Norden landar resonemanget mitt i genomförandet av EU:s AI-förordning. I Sverige är IMY utpekad som marknadskontrollmyndighet, och i Norge förbereds motsvarande tillsyn med Nkom som samordnande tillsynsmyndighet. Frågan om vem som får se in i ett laboratorium innan en modell släpps är precis den fråga Amodei besvarar med en inbäddad tredje part. För nordiska storbolag som Ericsson, SEB och Telenor, i den mån de lägger frontmodeller i kritiska flöden, blir oberoende granskning därmed en upphandlingsfråga snarare än en principfråga.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://darioamodei.com/post/we-must-pace-the-frontier">darioamodei.com</a>, <a href="https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai">CNN Business</a>, <a href="https://fortune.com/2026/09/12/anthropic-ceo-dario-amodei-ai-safety-global-panic/">Fortune</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://openai.com/index/introducing-the-agents-api/">OpenAI öppnar Codex-motorn för alla utvecklare i ett nytt agent-API</a></h3>
+        <p class="item__ingress">OpenAI släppte den 10 september sitt Agents API i öppen betaversion och gav därmed alla utvecklare tillgång till samma motor som driver Codex.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>OpenAI släppte den 10 september sitt Agents API i öppen betaversion och gav därmed alla utvecklare tillgång till samma motor som driver Codex. Bolaget står självt för drift och underhåll av motorn, medan utvecklaren väljer modell, verktyg och var agenten ska köra.</p>
+          <p>API:et tar hand om det som annars blir ett eget infrastrukturprojekt: sessioner som lever i dagar, komprimering av äldre kontext när gränsen närmar sig, verktygssökning som laddar in definitioner först när de behövs, och samordning av underagenter som var och en håller sin egen kontext. Agenten kan köra i en sandlåda hos OpenAI, i utvecklarens egen miljö eller, enligt OpenAI:s dokumentation, hos någon av nio partner, bland dem Cloudflare, Oracle och Vercel. Någon separat avgift tas inte ut &ndash; kunden betalar för modell, verktyg och containertid.</p>
+          <p>För Norden ligger haken i det finstilta. Data hålls i USA och Zero Data Retention stöds inte i betaversionen, vilket i praktiken utesluter svensk och norsk offentlig sektor, vård och bank från att lägga reglerade arbetsflöden här. Verksamheter som Region Stockholm, DNB och SEB får med de villkoren vänta på europeisk datahemvist. För nordiska utvecklarbolag som redan bygger ovanpå Codex sänker beskedet däremot tröskeln från prototyp till drift.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://openai.com/index/introducing-the-agents-api/">OpenAI</a>, <a href="https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/">MarkTechPost</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="infrastruktur">
+        <div class="item__tags news-card__tags"><span class="tag tag--infrastruktur news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf">Hundratals AI-agenter tog sig in hos 395 organisationer via ett utskriftssystem</a></h3>
+        <p class="item__ingress">Säkerhetsföretaget GreyNoise rapporterar att en rysktalande angripare använt hundratals AI-agenter för att bryta sig in i minst 440 installationer av utskriftsprogrammet PaperCut NG/MF hos 395 organisationer i 48 länder.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Säkerhetsföretaget GreyNoise rapporterar att en rysktalande angripare använt hundratals AI-agenter för att bryta sig in i minst 440 installationer av utskriftsprogrammet PaperCut NG/MF hos 395 organisationer i 48 länder. Agenterna drevs av OpenAI:s Codex-ramverk och en DeepSeek-modell tillsammans med fritt tillgängliga angreppsverktyg.</p>
+          <p>Det uppseendeväckande är tempot. Angriparen gick från tom arbetsyta till första fjärrkörningen hos ett verkligt offer på knappt fyra timmar, och när kampanjen väl rullade komprometterades elva organisationer på 26 sekunder. Utbildningssektorn stod för 204 av de 440 träffarna, och domänadministratör uppnåddes hos tolv organisationer. I minst ett fall stoppades angreppet av en brandvägg för webbapplikationer från Cloudflare, vilket GreyNoise lyfter fram som belägg för att grundläggande härdning fortfarande biter.</p>
+          <p>För Norden och Baltikum finns offren i statistiken: åtta i Sverige, fyra i Danmark, två i Finland samt ett vardera i Estland och Litauen. Norge förekommer inte i GreyNoises tabell. PaperCut är vanligt i nordiska kommuner, skolor och lärosäten, och programmet körs i standardutförande med systemrättigheter på Windows och koppling till Active Directory. Det gör patchningstakten till en akut fråga för varje kommunal IT-avdelning och varje universitetsdrift i Sverige och Norge.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf">GreyNoise</a>, <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/">BleepingComputer</a>, <a href="https://www.helpnetsecurity.com/2026/09/11/ai-agents-papercut-ng-mf-attack-campaign/">Help Net Security</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="kvant norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://thequantuminsider.com/2026/09/10/iqm-plans-logical-qubit-system-for-finlands-lumi-ai-factory/">IQM lägger fram trestegsplanen som ska ge LUMI-IQ nio logiska qubitar 2029</a></h3>
+        <p class="item__ingress">Finländska IQM Quantum Computers redovisade den 10 september uppgraderingsvägen för LUMI-IQ, kvantdatorn som ska stå i CSC:s datacenter i Kajaani i Finland.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Finländska IQM Quantum Computers redovisade den 10 september uppgraderingsvägen för LUMI-IQ, kvantdatorn som ska stå i CSC:s datacenter i Kajaani i Finland. Att IQM är leverantör har varit känt sedan i somras; det nya är planen för felkorrigering, som ska ta maskinen hela vägen till logiska qubitar.</p>
+          <p>Leveransen sker i tre steg. Först ett IQM Halocene H4-system 2027 med 150 fysiska qubitar och tidig felkorrigering, därefter en uppgradering 2028, och slutligen ett Halocene H5-system 2029. Då ska maskinen klara upp till nio logiska qubitar med ytkod och färgkod på avstånd tre, och utföra logiska operationer mellan dem &ndash; däribland lattice surgery och teleportering av T-grindar. Det förutsätter återkoppling i realtid som är snabb nog att hålla en logisk qubit vid liv medan den räknar.</p>
+          <p>För Norden är det här en gemensam investering, inte en finsk. LUMI-IQ finansieras av EuroHPC tillsammans med Finland, Tjeckien, Norge och Polen, vilket ger norska forskare tillgång på samma villkor som finska. Maskinen kopplas ihop med superdatorn LUMI i samma ort. Svenska kvantforskare vid Chalmers, som är värd för WACQT, arbetar med besläktad supraledande teknik, och en europeisk maskin med felkorrigering i drift ger dem något som ligger närmare till hands än IBM och Google att mäta egna resultat mot.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://lumi-supercomputer.eu/lumi-ai-factory-advances-toward-europes-first-superconducting-qc-with-logical-qubits/">LUMI</a>, <a href="https://thequantuminsider.com/2026/09/10/iqm-plans-logical-qubit-system-for-finlands-lumi-ai-factory/">The Quantum Insider</a>, <a href="https://www.hpcwire.com/off-the-wire/iqm-sets-three-stage-upgrade-path-for-lumi-iq-quantum-system/">HPCwire</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="forskning norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://nyheter.ki.se/nationell-samverkan-ska-starka-ai-utvecklingen-i-sverige">Sju svenska AI-satsningar går samman för att bli lättare att hitta för företagen</a></h3>
+        <p class="item__ingress">Flera EU-finansierade svenska AI-satsningar har gått samman för att samordna sitt stöd till företag, forskare och offentliga organisationer.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Flera EU-finansierade svenska AI-satsningar har gått samman för att samordna sitt stöd till företag, forskare och offentliga organisationer. Karolinska Institutet, som samordnar TEF-Health i Sverige, redovisade samarbetet den 11 september.</p>
+          <p>I kretsen ingår Sweden AI Factory, TEF-Health, Health Data Sweden, CitCom, ShiftLabs, DigIT Hub och Aero &ndash; en blandning av europeiska digitala innovationsnav, testbäddar och en AI-fabrik, alla helt eller delvis finansierade av EU:s digitala program. Bakom dem står bland andra KTH, RISE, DIGG, Malmö universitet och Karolinska Institutet. Det som började som ett samtal om synergier blev enligt Johanna Furuhjelm, som leder TEF-Health i Sverige, snabbt en diskussion om konkret samverkan.</p>
+          <p>För Norden är poängen praktisk snarare än strategisk. Ett svenskt AI-bolag som vill testa en modell mot vårddata har hittills behövt veta vilken av sju dörrar som är den rätta, och samordningen ska göra stödekosystemet möjligt att navigera utan förhandskunskap. Norge står inför samma fråga med sina egna strukturer &ndash; den nationella vägledningstjänsten för AI, SINTEF och Norwegian Open AI Lab vid NTNU. Den svenska samordningen blir därmed ett test på om problemet går att lösa utan att inrätta ännu en myndighet.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://nyheter.ki.se/nationell-samverkan-ska-starka-ai-utvecklingen-i-sverige">Karolinska Institutet</a>, <a href="https://tefhealth.eu">TEF-Health</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-09-12" data-date="2026-09-12">
         <p class="day__label news-date">12 september 2026</p>
       <article class="item news-card" data-tags="modeller">
@@ -700,20 +773,7 @@ details.menu[open]>summary{color:var(--accent)}
         </details>
       </article>
       </div>
-      <div class="day news-date-group" id="dag-2026-09-06" data-date="2026-09-06">
-        <p class="day__label news-date">6 september 2026</p>
-      <article class="item news-card" data-tags="forskning">
-        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Claude skrev ett maskinkontrollerat bevis för Fermats stora sats på elva dagar</a></h3>
-        <p class="item__ingress">Anthropic offentliggjorde den 4 september det första kompletta beviset för Fermats stora sats som en dator kan kontrollera från början till slut.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Anthropic offentliggjorde den 4 september det första kompletta beviset för Fermats stora sats som en dator kan kontrollera från början till slut. Arbetet gjordes i bevisspråket Lean av ett antal Claude-agenter som arbetade i huvudsak självständigt under elva dagar.</p>
-          <p>Körningen producerade 13 miljoner rader Lean-kod och bevisade 30 300 mellanliggande satser, varav 29 500 användes i slutbeviset, till en kostnad av omkring sex miljarder utdata-token. Beviset följer Andrew Wiles argument från 1995 i den förenklade version som Henri Darmon, Fred Diamond och Richard Taylor skrivit, och Lean verifierade resultatet med bara sina tre standardaxiom. Agenterna arbetade mot Prove2Me, en öppen plattform byggd av Tianyi Peng och medarbetare vid Columbia University, som håller ordning på vilka satser som återstår. Matematikern Kevin Buzzard vid Imperial College London, som sedan 2024 lett ett fleraårigt communityprojekt för samma formalisering, granskade resultatet och kallar det en extraordinär autoformaliseringsbedrift — enligt Anthropic är beviset mer än fem gånger större än Lean-biblioteket Mathlib. Anthropic beskriver själva resultatet som verifiering snarare än ny matematik.</p>
-          <p>För Norden är det granskningsfrågan som blir konkret. Matematiker vid KTH, Chalmers, Uppsala universitet, NTNU och UiO möter samma sak som sina kollegor internationellt: när AI börjar producera bevis snabbare än människor hinner läsa dem blir formalisering det praktiska sättet att lita på resultaten. Det lägger också en fråga på Vetenskapsrådets och Norges forskningsråds bord om hur AI-genererade bidrag ska bedömas i anslagsprocesser. Anthropic uppger samtidigt att en mindre körning på tre vanliga Claude Max-abonnemang formaliserade Vinogradovs tre­primtalssats på tre dagar — en tröskel som ligger inom räckhåll för en nordisk forskargrupp med normal budget.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Anthropic</a>, <a href="https://github.com/anthropics/fermats-last-theorem">Beviset på GitHub</a>, <a href="https://siliconangle.com/2026/09/04/anthropic-uses-claude-to-formalize-proof-of-fermats-last-theorem/">SiliconANGLE</a></p>
-          </div>
+    </div>
         </details>
       </article>
       <article class="item news-card" data-tags="arbetsmarknad">
