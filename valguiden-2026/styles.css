@@ -87,6 +87,15 @@ nav a:hover {
   color: var(--ink);
 }
 
+.archive-note {
+  margin: 0;
+  padding: 14px clamp(18px, 5vw, 72px);
+  background: #eef3f1;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .hero {
   position: relative;
   min-height: 78vh;
