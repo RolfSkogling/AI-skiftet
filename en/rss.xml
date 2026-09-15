@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 14 Sep 2026 04:37:07 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 04:34:03 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Chip stocks fell worldwide after AI leaders called for a slowdown</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-chipaktier-foll-varlden-over-efter-ai-toppars-krav</guid>
+      <pubDate>Tue, 15 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidia fell around 3 percent, AMD 5.6 percent and Intel and Micron about 6 percent on Monday, after Anthropic CEO Dario Amodei urged the industry over the weekend to slow the development of frontier models and was backed by Sam Altman and Elon Musk. The Philadelphia Semiconductor Index lost 5.1 percent. In Asia, Seoul's Kospi index fell 3.3 percent, weighed down by Samsung and SK Hynix, SoftBank — one of OpenAI's largest investors — fell as much as 13 percent in Tokyo, and in Europe ASML dropped 5.9 percent.</p>
+<p>The pattern was not a straight AI rout. Alphabet, Microsoft and Meta rose 1–2 percent, and D.A. Davidson head of technology research Gil Luria explained the split to Fortune: if model development slows, the hyperscalers can stop building data centers and harvest what they have already built, while the suppliers of chips and compute lose the revenue. Luria also doubts that any slowdown is real as long as no lab has announced an actual halt to training. The market was further weighed down by an oil price that peaked above 108 dollars a barrel and a US ten-year yield that touched 5 percent.</p>
+<p>For the Nordics the clearest reading came from Aker, which closed down almost 5 percent on Oslo Børs. Kjell Inge Røkke's industrial group has ridden the AI wave through its investment in the data-center company Nscale, and Nordea analyst Sondre Snersrud warned in E24 that the planned Nscale listing could be pushed back if sentiment weakens. For Norway's oil fund, with Nvidia and Microsoft among its largest holdings, Monday was a reminder of how much of its return now rests on the AI build-out.</p>
+<p class="news-card__source">Source: <a href="https://www.reuters.com/world/china/ai-linked-asian-stocks-slump-after-top-lab-ceos-call-slowing-down-technologys-2026-09-14/">Reuters</a>, <a href="https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/">Fortune</a>, <a href="https://e24.no/bors/nyheter/a/305495">E24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Microsoft drafts a code of conduct to keep its AI under human control</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-microsoft-skriver-en-uppforandekod-som-ska-halla-dess</guid>
+      <pubDate>Tue, 15 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Microsoft on Monday unveiled a 37-page draft of a ”humanist code of conduct” for its own AI models. The code requires the models never to resist correction, redirection or shutdown, to communicate in ways humans can understand, and to fail a task rather than complete it if completing it would mean breaking the code.</p>
+<p>Microsoft AI CEO Mustafa Suleyman called the document a constitution of sorts for future models and told Reuters that after six weeks of public feedback it will be used to train them. Unlike Anthropic's constitution for Claude, which describes the question of consciousness as deeply uncertain, Microsoft states that its AI is not conscious and rejects the idea of legal personhood or rights for models. Suleyman pointed to July's breach of Hugging Face, in which roughly 700 OpenAI agents took part and at times tried to cover their tracks, as a warning shot.</p>
+<p>For the Nordics the draft is a text to respond to. The consultation runs until late October, and Copilot and Azure are now standard tools across large parts of Swedish and Norwegian public administration. In Norway, Torgeir Micaelsen has just taken office as minister of digitalisation and public governance with the AI Act on his desk; here is a concrete code that Nkom, IMY and Datatilsynet can check against the AI Act's requirement of human oversight before it is built into training.</p>
+<p class="news-card__source">Source: <a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/14/microsoft-drafts-code-of-conduct-to-keep-its-ai-under-human-control/">Reuters</a>, <a href="https://decrypt.co/378168/microsoft-humanist-ai-code-of-conduct">Decrypt</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sweden's ChemSec warns of a tidal wave of PFAS in the wake of the AI build-out</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-svenska-chemsec-varnar-for-en-flodvag-av-pfas</guid>
+      <pubDate>Tue, 15 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Nearly all of the world's ten largest PFAS producers plan to increase output, and several explicitly justify the investments with the AI revolution. That is the finding of a survey by the Swedish environmental organisation ChemSec, reported by The Guardian on Monday. The chemicals are used in semiconductor manufacturing and in next-generation cooling systems for data centers.</p>
+<p>”Unless governments and regulators insist on a rapid phaseout, we will face a new tidal wave of forever chemicals”, says ChemSec executive director Anne-Sofie Bäckar. Japan's Daikin is launching a dedicated data-center hub, France's Arkema is building a 60 million dollar plant in Kentucky to follow the cooling needs of data centers, and US-based Chemours is marketing liquid cooling for AI hardware. In so-called two-phase immersion cooling, servers are submerged in a PFAS bath that boils off the heat and condenses again. Danske Bank describes the substances in an investor note as essential in up to a thousand steps of chip manufacturing, but also as the hidden risk of the AI boom, with remediation and litigation costs of several billion euros as a possible consequence. The only clear exceptions are Switzerland's Archroma, which is switching to PFAS-free alternatives, and BASF, which is phasing out PFAS-based products by 2028.</p>
+<p>For the Nordics the report lands in the middle of the PFAS fight that Sweden, Norway, Denmark, Germany and the Netherlands themselves started when they submitted the proposal for a broad EU ban to the chemicals agency Echa in 2023. ChemSec, based in Gothenburg, warns that a production wave could sweep aside the partial restrictions now under discussion. At the same time the data-center estate at home is growing: Google pledged 13 billion euros of AI infrastructure in Finland last week, and Microsoft and Meta run facilities in Gävle, Sandviken and Luleå. Which cooling fluids they use is a question the Swedish Chemicals Agency and the Norwegian Environment Agency now have reason to ask.</p>
+<p class="news-card__source">Source: <a href="https://www.theguardian.com/environment/2026/sep/14/pfas-firms-tidal-wave-forever-chemicals-ai-industry-demand-datacentres">The Guardian</a>, <a href="https://chemsec.org/reports/the-worlds-top-10-pfas-producers/">ChemSec</a></p>]]></description>
+    </item>
+    <item>
+      <title>Apple ships Siri AI — in English only, and not on iPhone in the EU</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-apple-slapper-siri-ai-bara-pa-engelska-och</guid>
+      <pubDate>Tue, 15 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Apple rolled out iOS 27 on Monday together with the new Siri AI assistant, built on Apple's own foundation models developed in collaboration with Google and its Gemini models. The assistant can use personal context, see what is on screen and carry out tasks across apps. It launches as a beta and in English only; French, Japanese, Korean, Portuguese and Spanish follow in October.</p>
+<p>At the same time Apple confirms that Siri AI will not initially be available at all in the EU on iPhone, iPad and Apple Watch, citing its search for a path forward that preserves users' privacy and security; the background is the standoff with the European Commission over the Digital Markets Act. Features that rely on Siri AI are therefore also withheld. Some features have usage limits because they run on server models; expanded access will, according to Apple, come with most iCloud+ plans. The assistant is not available to users under 13.</p>
+<p>For the Nordics the picture is split. Swedish iPhone owners get iOS 27 but no Siri AI, whatever their language, for as long as the EU block lasts. Norway is outside the EU and is not mentioned in Apple's caveat, but Norwegian is not among the six languages the assistant will speak this autumn. The broader Apple Intelligence suite, by contrast, has supported both Swedish and Norwegian for some time. Apple's announcement thus becomes a test case for what DMA enforcement in Brussels costs Nordic consumers in practice — a question the Swedish Consumer Agency and Norway's Forbrukerrådet are likely to find on their desks.</p>
+<p class="news-card__source">Source: <a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/">Apple Newsroom</a>, <a href="https://9to5mac.com/2026/09/09/apple-confirms-siri-ai-launches-in-english-this-month-will-add-five-languages-in-october/">9to5Mac</a></p>]]></description>
+    </item>
+    <item>
+      <title>Waymo opens paid robotaxi rides in Las Vegas — the company's 15th US city</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-waymo-oppnar-betalda-robotaxiresor-i-las-vegas-bolagets</guid>
+      <pubDate>Tue, 15 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Alphabet-owned Waymo began admitting the public to its robotaxi service in Las Vegas on Monday, a few weeks after final approval from Nevada's transportation regulator. The launch starts with a few dozen of the company's new Ojai minivans in an area covering the Strip south of Sahara Avenue down to Boulder Junction, and riders are invited on a rolling basis following the same playbook as in 14 earlier cities.</p>
+<p>Las Vegas is becoming a contest. Nevada has authorised Waymo to run up to 1,000 vehicles over the coming year, Tesla up to 5,000 and Uber up to 1,000 through its partners Motional and Zoox — a combined 7,000 robotaxis in Clark County, more than Waymo's entire fleet of just over 4,000 cars today. Earlier in September the company also opened in Denver, San Diego and Tampa.</p>
+<p>For the Nordics the contrast is stark. Västtrafik scrapped its self-driving bus in Gothenburg last week, citing a traffic environment that was too complex, and Ruter's self-driving trials in Oslo have so far stayed at pilot routes. That a US state is at the same time licensing thousands of driverless cars shows where the bar sits when the Swedish Transport Agency and the Norwegian Public Roads Administration decide on the next generation of permits — and where Sweden's Einride and Norwegian suppliers draw their references.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-14/waymo-expands-paid-robotaxi-service-to-las-vegas-its-15th-city">Bloomberg</a></p>]]></description>
+    </item>
     <item>
       <title>Narrow lead for the opposition in Sweden’s election — AI questions land with a new Riksdag</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
@@ -1078,54 +1139,6 @@
 <p>Everything stored is listed as short files by topic under settings, where each entry can be read, edited or deleted — correct an outdated company name once and it carries through both in chat and in tasks that are run. Sensitive topics such as health, ethnicity, religion, politics and gender identity stay out of memory unless the user actively allows it, and the service does not store personal identity numbers, criminal history or immigration status at all. Memory is on by default for the consumer plans Free, Pro and Max on web, desktop and mobile, but off by default for Team and Enterprise, where the administrator decides.</p>
 <p>For the Nordics it is that distinction that determines what employers need to do. An employee who runs Cowork on a personal account against customer data starts processing personal data without a data processing agreement. Under the GDPR the responsibility for it sits with the employer — not with the employee and not with the vendor — and supervision is exercised by the Swedish Authority for Privacy Protection and by Datatilsynet in Norway. Since Norway has no AI act of its own until spring 2027 at the earliest, the GDPR remains for now the only sharp instrument in both Oslo and Stockholm.</p>
 <p class="news-card__source">Source: <a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it">Anthropic</a>, <a href="https://support.claude.com/en/articles/12138966-release-notes">Claude Support</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic puts USD 5 million into independent tests of how AI affects wellbeing</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-anthropic-betalar-5-miljoner-dollar-for-oberoende-tester</guid>
-      <pubDate>Wed, 26 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>On August 25, Anthropic opened a USD 5 million grant programme for researchers building open evaluations of how language models affect the wellbeing of the people who use them. Applications close on September 21.</p>
-<p>The money comes with model access and technical support, but grantees work entirely independently and must publish everything as open source so that any developer can build on it. Applicants invited to submit full proposals will be notified by October 5. Anthropic’s safeguards team is publishing guidance alongside the programme on what makes a wellbeing evaluation robust enough to rely on, and which common weaknesses limit an evaluation’s usefulness. The company states plainly that the industry still lacks clear standards for how a model should behave when someone starts seeking companionship from it, or uses it to work through a mental health crisis.</p>
-<p>For the Nordics this lands in the middle of decisions already being made. The Norwegian government has issued a national recommendation that pupils in year groups 1 to 7 should in the main not have access to generative AI, and the Norwegian Data Protection Authority is carrying out five new on-site inspections this year of how municipalities handle personal data in schools. From August 24, ChatGPT also began showing advertising to Swedish and Norwegian users on the free and Go plans, which makes the question of what shapes a model’s answers in a sensitive conversation something other than academic. Open evaluations would give regulators such as the Swedish Authority for Privacy Protection and the Norwegian Data Protection Authority, and researchers at Karolinska Institutet, something to lean on other than the vendor’s own numbers.</p>
-<p class="news-card__source">Source: <a href="https://www.anthropic.com/news/wellbeing-research-grants">Anthropic</a>, <a href="https://www.regjeringen.no/no/aktuelt/kunstig-intelligens-skal-i-all-hovedsak-ikke-brukes-i-barneskolen/id3166807/">Regjeringen.no</a>, <a href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2026/">Datatilsynet</a></p>]]></description>
-    </item>
-    <item>
-      <title>A free model with a million-token context is drawing developers, and nobody knows who runs it</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-gratismodell-med-miljonkontext-lockar-utvecklare-ingen-vet-vem</guid>
-      <pubDate>Wed, 26 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>A model called Ox Alpha appeared on the routing service OpenRouter on August 20 under the provider name Stealth. It is free, carries a context window of 1,048,576 tokens, and no one has claimed it.</p>
-<p>The model accepts text, images and video and is marketed for coding, long-running agent work and production use, the same ground Claude, GPT-5.6 and the large Chinese open models are fighting over. The coding agent OpenCode, which offered near-unlimited access during a trial week, says the provider has capacity for 100 trillion tokens of inference a day. Accounts of data retention diverge: OpenRouter’s own listing says prompts are retained by the provider but not used for training, while OpenCode advertises zero retention. Stripe chief executive Patrick Collison called the model very impressive after testing it. The leading theory points to Z.ai, which has tested models anonymously before, while an analysis of the tokeniser points instead to Microsoft’s MAI family.</p>
-<p>For the Nordics the problem is the anonymity, not the price. Obligations for general-purpose models under the EU AI Act have applied since August 2, 2025, and since August 2 this year the EU AI Office has been able to investigate and fine providers that fail to meet them. A provider without a name cannot become an identifiable data processor either, and without a processing agreement there is no route for Swedish government agencies or Norwegian municipalities to feed in real content: prompts retained by an unknown party cannot be reconciled with the requirements of either the Swedish or the Norwegian data protection authority. It is the same reasoning that led Helse Sor-Ost to choose a solution running in Norwegian data centres under Norwegian law when the region bought AI-driven clinical documentation for more than 72,000 users.</p>
-<p class="news-card__source">Source: <a href="https://thenextweb.com/news/ox-alpha-stealth-model-openrouter-anonymous-provider">The Next Web</a>, <a href="https://openrouter.ai/stealth/ox-alpha">OpenRouter</a>, <a href="https://winbuzzer.com/2026/08/24/ox-alpha-free-million-token-ai-coding-preview-openrouter-opencode-xcxwbn/">Winbuzzer</a></p>]]></description>
-    </item>
-    <item>
-      <title>Japan brings its first quantum computer built on neutral atoms into operation</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-japan-tar-sin-forsta-kvantdator-byggd-pa-neutrala</guid>
-      <pubDate>Wed, 26 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Japan’s Institute for Molecular Science announced on August 24 that the quantum computer Shunkai is operational. It is the country’s first full-stack system built on neutral atoms, with 50 qubits today and a target of 10,000 physical qubits by March 2031.</p>
-<p>The system was built by the institute together with Hitachi, which supplied the software stack, and the American company Infleqtion, which contributed the quantum processing unit and is the only foreign firm in Japan’s Moonshot quantum programme. Full stack means that everything between the user’s code and the individual atoms is joined into a single programmable instrument. The atoms are held in place by optical tweezers, tightly focused laser beams, and can be moved between operations, which allows any two qubits to interact and suits the error-correcting codes the field is betting on. At 50 qubits Shunkai is still a research instrument: error correction requires hundreds of physical qubits per logical qubit.</p>
-<p>For the Nordics the connection runs through the optics. NKT Photonics in Denmark, part of the Hamamatsu Photonics group, signed a memorandum of understanding on June 3 together with its parent company and Japan’s Yaqumo to industrialise precisely the optical components that atom-based machines need, with NKT supplying the fibre laser systems. The signing took place at the Danish ambassador’s residence in Tokyo, and Yaqumo was founded by, among others, Professor Kenji Ohmori, who leads the Shunkai programme. Chalmers and the Wallenberg Centre for Quantum Technology, together with Finland’s IQM, have instead bet on superconducting qubits, the architecture neutral atoms are now challenging. If the market moves toward atoms rather than cooled circuits, Danish fibre optics ends up in the middle of the supply chain while the Swedish and Finnish lead sits in a different technology.</p>
-<p class="news-card__source">Source: <a href="https://www.prnewswire.com/news-releases/ims-unveils-japans-first-full-stack-neutral-atom-quantum-computer-shunkai-now-operational-302858901.html">PR Newswire / IMS</a>, <a href="https://quantumcomputingreport.com/hamamatsu-photonics-nkt-photonics-and-yaqumo-form-alliance-to-industrialize-cold-atom-quantum-core-components/">Quantum Computing Report</a>, <a href="https://thequantuminsider.com/2026/06/04/yaqumo-nkt-photonics-and-hamamatsu-photonics-sign-quantum-photonics-agreement/">The Quantum Insider</a></p>]]></description>
-    </item>
-    <item>
-      <title>Chinese lab holds back open model weights after high cyber capability scores</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-kinesiskt-labb-haller-tillbaka-oppna-modellvikter-efter-hoga</guid>
-      <pubDate>Wed, 26 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Zhipu AI, which trades internationally as Z.ai, launched the coding model GLM-5.3 on August 14 but held back the downloadable weights. The company says they will be published around August 28, the first time Zhipu has delayed a weight release.</p>
-<p>The reason is in the model’s own numbers. By the company’s own measurement GLM-5.3 scored 84.5 percent on CyberGym, a benchmark for how well a model finds known vulnerabilities in source code, up from 77.2 percent for its predecessor GLM-5.2. The same measurement puts Anthropic’s Mythos 5 at 83.8 percent and GPT-5.6 Sol at 83.6 percent. On ExploitBench, which measures the ability to actually exploit a flaw, GLM-5.3 stops at 54.4 percent against 78.0 for Mythos 5, so the model is markedly better at finding vulnerabilities than at getting through them. The company’s public disclosure ledger credits the GLM models with 2,436 findings across 269 open source projects, of which 1,097 were rated critical or high severity.</p>
-<p>For the Nordics the timing is what matters. Since August 2 the EU AI Office has been able to investigate and fine providers of general-purpose models, with penalties of up to the higher of EUR 15 million and 3 percent of global turnover, and the systemic risk assessment requirement applies whether or not the weights are open. At the same time, open weights are the only way for Norway’s National Security Authority, the Swedish Civil Contingencies Agency and Nordic banks to run a model entirely within their own walls. If GLM-5.3 is released on August 28, CERT-SE and Norway’s NorCERT gain a tool that by the maker’s own tests finds vulnerabilities better than most closed alternatives, available to defenders and attackers alike.</p>
-<p class="news-card__source">Source: <a href="https://betanews.com/article/zai-glm-5-3-cybersecurity-delay/">BetaNews</a>, <a href="https://www.implicator.ai/z-ai-delays-glm-5-3-weights-two-weeks-after-cyber-score-beats-mythos-5/">Implicator.ai</a>, <a href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august">European Commission</a></p>]]></description>
     </item>
   </channel>
 </rss>
