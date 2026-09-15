@@ -7,8 +7,69 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 14 Sep 2026 04:37:07 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 04:34:03 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Brikkeaksjer falt verden over etter KI-toppenes krav om å bremse</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-chipaktier-foll-varlden-over-efter-ai-toppars-krav</guid>
+      <pubDate>Tue, 15 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidia falt rundt 3 prosent, AMD 5,6 prosent og Intel og Micron omtrent 6 prosent mandag, etter at Anthropic-sjef Dario Amodei i helgen ba bransjen bremse utviklingen av frontmodeller og fikk støtte fra Sam Altman og Elon Musk. Philadelphias halvlederindeks tapte 5,1 prosent. I Asia falt Seouls Kospi-indeks 3,3 prosent, tynget av Samsung og SK Hynix, SoftBank — en av OpenAIs største investorer — falt på det meste 13 prosent i Tokyo, og i Europa gikk ASML ned 5,9 prosent.</p>
+<p>Mønsteret var ikke et rent KI-ras. Alphabet, Microsoft og Meta steg 1–2 prosent, og Gil Luria, sjef for teknologianalyse i D.A. Davidson, forklarte skillet for Fortune: bremses modellutviklingen, kan skygigantene slutte å bygge datasentre og høste det de allerede har bygget, mens leverandørene av brikker og regnekraft mister inntektene. Luria tviler samtidig på at noen nedbremsing er reell så lenge ingen laboratorier har varslet en faktisk treningsstans. Markedet ble i tillegg tynget av en oljepris som toppet over 108 dollar og en amerikansk tiårsrente som så vidt nådde 5 prosent.</p>
+<p>For Norden var utslaget tydeligst i Aker, som endte ned nesten 5 prosent på Oslo Børs. Kjell Inge Røkkes industrikonsern har ridd KI-bølgen gjennom investeringen i datasenterselskapet Nscale, og Nordea-analytiker Sondre Snersrud advarte i E24 om at den planlagte Nscale-noteringen kan bli utsatt dersom sentimentet svekkes. For Oljefondet, med Nvidia og Microsoft blant sine største eierposter, ble mandagen en påminnelse om hvor mye av avkastningen som nå hviler på KI-utbyggingen.</p>
+<p class="news-card__source">Kilde: <a href="https://www.reuters.com/world/china/ai-linked-asian-stocks-slump-after-top-lab-ceos-call-slowing-down-technologys-2026-09-14/">Reuters</a>, <a href="https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/">Fortune</a>, <a href="https://e24.no/bors/nyheter/a/305495">E24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Microsoft skriver en atferdskodeks som skal holde selskapets KI under menneskelig kontroll</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-microsoft-skriver-en-uppforandekod-som-ska-halla-dess</guid>
+      <pubDate>Tue, 15 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Microsoft la mandag fram et 37 sider langt utkast til en ”humanistisk atferdskodeks” for sine egne KI-modeller. Kodeksen krever at modellene aldri motsetter seg korrigering, omdirigering eller avstenging, at de kommuniserer på en måte mennesker kan forstå, og at en oppgave som bare kan løses ved å bryte kodeksen, skal mislykkes i stedet for å fullføres.</p>
+<p>Microsoft AI-sjef Mustafa Suleyman kalte dokumentet en slags grunnlov for kommende modeller og sa til Reuters at det etter seks ukers åpen høring skal brukes i treningen av dem. I motsetning til Anthropics grunnlov for Claude, som beskriver spørsmålet om bevissthet som dypt usikkert, slår Microsoft fast at selskapets KI ikke er bevisst, og avviser tanken om juridisk personstatus eller rettigheter for modeller. Suleyman pekte på innbruddet hos Hugging Face i juli, der rundt 700 OpenAI-agenter deltok og tidvis forsøkte å skjule sporene sine, som et varselskudd.</p>
+<p>For Norden er utkastet en tekst å svare på. Høringen pågår til slutten av oktober, og Copilot og Azure er i dag standardverktøy i store deler av svensk og norsk offentlig forvaltning. I Norge har Torgeir Micaelsen nettopp tiltrådt som digitaliserings- og forvaltningsminister med KI-loven på bordet; her foreligger en konkret kodeks som Nkom, IMY og Datatilsynet kan vurdere opp mot KI-forordningens krav om menneskelig tilsyn før den bygges inn i treningen.</p>
+<p class="news-card__source">Kilde: <a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/14/microsoft-drafts-code-of-conduct-to-keep-its-ai-under-human-control/">Reuters</a>, <a href="https://decrypt.co/378168/microsoft-humanist-ai-code-of-conduct">Decrypt</a></p>]]></description>
+    </item>
+    <item>
+      <title>Svenske ChemSec advarer mot en flodbølge av PFAS i kjølvannet av KI-utbyggingen</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-svenska-chemsec-varnar-for-en-flodvag-av-pfas</guid>
+      <pubDate>Tue, 15 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Nesten alle av verdens ti største PFAS-produsenter planlegger å øke produksjonen, og flere begrunner investeringene uttrykkelig med KI-revolusjonen. Det viser en kartlegging fra den svenske miljøorganisasjonen ChemSec som The Guardian omtalte mandag. Kjemikaliene brukes i halvlederproduksjonen og i neste generasjons kjølesystemer for datasentre.</p>
+<p>”Med mindre regjeringer og tilsynsmyndigheter krever en rask utfasing, står vi overfor en ny flodbølge av evighetskjemikalier”, sier ChemSec-sjef Anne-Sofie Bäckar. Japanske Daikin starter en egen datasentersatsing, franske Arkema bygger et anlegg til 60 millioner dollar i Kentucky for å følge datasentrenes kjølebehov, og amerikanske Chemours markedsfører væskekjøling for KI-maskinvare. I såkalt tofase nedsenkingskjøling senkes serverne ned i et PFAS-bad som koker bort varmen og kondenserer igjen. Danske Bank beskriver stoffene i et investornotat som uunnværlige i opptil tusen trinn av brikkeproduksjonen, men også som KI-boomens skjulte risiko, med opprydnings- og rettskostnader på flere milliarder euro som mulig følge. De eneste tydelige unntakene er sveitsiske Archroma, som går over til PFAS-frie alternativer, og BASF, som faser ut PFAS-baserte produkter innen 2028.</p>
+<p>For Norden lander rapporten midt i den PFAS-striden som Sverige, Norge, Danmark, Tyskland og Nederland selv startet da de i 2023 leverte forslaget om et bredt EU-forbud til kjemikaliebyrået Echa. ChemSec, med sete i Göteborg, advarer om at en produksjonsbølge kan feie vekk de delvise begrensningene som nå diskuteres. Samtidig vokser datasenterparken på hjemmebane: Google lovet forrige uke 13 milliarder euro i KI-infrastruktur i Finland, og Microsoft og Meta driver anlegg i Gävle, Sandviken og Luleå. Hvilke kjølevæsker de bruker, er et spørsmål Kemikalieinspektionen og Miljødirektoratet nå har grunn til å stille.</p>
+<p class="news-card__source">Kilde: <a href="https://www.theguardian.com/environment/2026/sep/14/pfas-firms-tidal-wave-forever-chemicals-ai-industry-demand-datacentres">The Guardian</a>, <a href="https://chemsec.org/reports/the-worlds-top-10-pfas-producers/">ChemSec</a></p>]]></description>
+    </item>
+    <item>
+      <title>Apple slipper Siri AI — bare på engelsk, og ikke på iPhone i EU</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-apple-slapper-siri-ai-bara-pa-engelska-och</guid>
+      <pubDate>Tue, 15 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Apple rullet mandag ut iOS 27 og den nye assistenten Siri AI, bygget på Apples egne grunnmodeller utviklet sammen med Google og selskapets Gemini-modeller. Assistenten kan bruke personlig kontekst, se hva som vises på skjermen og utføre oppgaver på tvers av apper. Den lanseres som betaversjon og kun på engelsk; fransk, japansk, koreansk, portugisisk og spansk følger i oktober.</p>
+<p>Samtidig bekrefter Apple at Siri AI inntil videre ikke blir tilgjengelig i EU i det hele tatt på iPhone, iPad og Apple Watch, med henvisning til at selskapet leter etter en vei videre som bevarer brukernes personvern og sikkerhet; bakgrunnen er fastlåsningen med EU-kommisjonen om DMA-forordningen. Funksjoner som bygger på Siri AI, uteblir dermed også. Enkelte funksjoner får bruksgrenser fordi de kjører på servermodeller; utvidet tilgang skal ifølge Apple følge med de fleste iCloud+-abonnementene. Assistenten er ikke tilgjengelig for brukere under 13 år.</p>
+<p>For Norden blir situasjonen todelt. Svenske iPhone-eiere får iOS 27, men ingen Siri AI, uansett språk, så lenge EU-stoppen gjelder. Norge står utenfor EU og nevnes ikke i Apples forbehold, men norsk finnes ikke blant de seks språkene assistenten snakker i høst. Den bredere Apple Intelligence-pakken støtter derimot både svensk og norsk fra før. Apples beskjed blir dermed en prøvesak for hva DMA-håndhevingen i Brussel koster nordiske forbrukere i praksis — et spørsmål Konsumentverket og Forbrukerrådet trolig får på bordet.</p>
+<p class="news-card__source">Kilde: <a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/">Apple Newsroom</a>, <a href="https://9to5mac.com/2026/09/09/apple-confirms-siri-ai-launches-in-english-this-month-will-add-five-languages-in-october/">9to5Mac</a></p>]]></description>
+    </item>
+    <item>
+      <title>Waymo åpner betalte robotaxiturer i Las Vegas — selskapets femtende amerikanske by</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-waymo-oppnar-betalda-robotaxiresor-i-las-vegas-bolagets</guid>
+      <pubDate>Tue, 15 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Alphabet-eide Waymo begynte mandag å slippe allmennheten inn i robotaxitjenesten sin i Las Vegas, noen uker etter den endelige godkjenningen fra Nevadas transportmyndighet. Starten skjer med noen titalls av selskapets nye Ojai-minivaner i et område som dekker The Strip sør for Sahara Avenue ned til Boulder Junction, og kunder inviteres fortløpende etter samme mal som i 14 tidligere byer.</p>
+<p>Las Vegas blir en konkurransearena. Nevada har gitt Waymo tillatelse til inntil 1 000 kjøretøy det kommende året, Tesla inntil 5 000 og Uber inntil 1 000 via partnerne Motional og Zoox — til sammen 7 000 robotaxier i Clark County, flere enn hele Waymos flåte på drøyt 4 000 biler i dag. Tidligere i september åpnet selskapet også i Denver, San Diego og Tampa.</p>
+<p>For Norden er kontrasten skarp. Västtrafik la forrige uke ned den selvkjørende bussen sin i Göteborg med henvisning til at trafikkmiljøet var for komplekst, og Ruters selvkjørende forsøk i Oslo har hittil stoppet ved pilotlinjer. At en amerikansk delstat samtidig lisensierer tusenvis av førerløse biler, viser hvor lista ligger når Transportstyrelsen og Statens vegvesen skal ta stilling til neste generasjons tillatelser — og hvor svenske Einride og norske underleverandører henter referansene sine.</p>
+<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-14/waymo-expands-paid-robotaxi-service-to-las-vegas-its-15th-city">Bloomberg</a></p>]]></description>
+    </item>
     <item>
       <title>Knapp ledelse for opposisjonen i det svenske valget — KI-spørsmålene havner hos en ny riksdag</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-14</link>
@@ -1078,54 +1139,6 @@
 <p>Alt som lagres, listes som korte filer per tema under innstillingene, der hver oppføring kan leses, endres eller slettes — retter man et utdatert firmanavn én gang, slår det gjennom både i chatten og i oppgaver som kjøres. Sensitive temaer som helse, etnisitet, religion, politikk og kjønnsidentitet holdes utenfor hukommelsen med mindre brukeren aktivt tillater det, og tjenesten lagrer ikke fødselsnummer, straffehistorikk eller oppholdsstatus i det hele tatt. Hukommelsen er påslått som standard for privatabonnementene Free, Pro og Max på nett, datamaskin og mobil, men avslått som standard for Team og Enterprise, der administratoren bestemmer.</p>
 <p>For Norden er det nettopp den forskjellen som avgjør hva arbeidsgiverne må gjøre. En ansatt som kjører Cowork på en privat konto mot kundeopplysninger, starter en behandling av personopplysninger uten databehandleravtale. Ansvaret for den ligger etter personvernforordningen hos arbeidsgiveren — ikke hos den ansatte og ikke hos leverandøren — og tilsynet utøves av Integritetsskyddsmyndigheten i Sverige og Datatilsynet i Norge. Siden Norge mangler en egen KI-lov fram til tidligst våren 2027, er personvernforordningen inntil videre det eneste skarpe verktøyet både i Oslo og i Stockholm.</p>
 <p class="news-card__source">Kilde: <a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it">Anthropic</a>, <a href="https://support.claude.com/en/articles/12138966-release-notes">Claude Support</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic bruker 5 millioner dollar på uavhengige tester av hvordan KI påvirker velværet</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-anthropic-betalar-5-miljoner-dollar-for-oberoende-tester</guid>
-      <pubDate>Wed, 26 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic åpnet 25. august et tilskuddsprogram på 5 millioner dollar for forskere som bygger åpne målemetoder for hvordan språkmodeller påvirker velværet til dem som bruker dem. Søknadene må være inne innen 21. september.</p>
-<p>Pengene følges av modelltilgang og teknisk støtte, men mottakerne arbeider helt selvstendig og skal publisere alt som åpen kildekode slik at enhver utvikler kan bygge videre på det. De som går videre til full søknad, får beskjed innen 5. oktober. Anthropics sikkerhetsteam publiserer samtidig en veiledning om hva som gjør en velværeevaluering robust nok til å stole på, og hvilke vanlige svakheter som begrenser nytten av en evaluering. Selskapet skriver rett ut at bransjen fortsatt mangler tydelige normer for hvordan en modell bør oppføre seg når noen begynner å søke selskap hos den, eller bruker den til å komme seg gjennom en psykisk krise.</p>
-<p>For Norden lander dette midt i beslutninger som allerede tas. Den norske regjeringen har innført en nasjonal anbefaling om at elever på 1.–7. trinn i all hovedsak ikke skal ha tilgang til generativ KI, og Datatilsynet gjennomfører i år fem nye stedlige tilsyn med hvordan kommunene håndterer personopplysninger i skolen. Fra 24. august vises det dessuten reklame i ChatGPT for svenske og norske brukere på gratis- og Go-abonnementene, noe som gjør spørsmålet om hva som styrer modellens svar i en sårbar samtale til noe annet enn akademisk. Åpne målemetoder ville gitt tilsynsmyndigheter som Integritetsskyddsmyndigheten og Datatilsynet, og forskere ved Karolinska Institutet, noe annet å lene seg på enn leverandørens egne tall.</p>
-<p class="news-card__source">Kilde: <a href="https://www.anthropic.com/news/wellbeing-research-grants">Anthropic</a>, <a href="https://www.regjeringen.no/no/aktuelt/kunstig-intelligens-skal-i-all-hovedsak-ikke-brukes-i-barneskolen/id3166807/">Regjeringen.no</a>, <a href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2026/">Datatilsynet</a></p>]]></description>
-    </item>
-    <item>
-      <title>Gratismodell med millionkontekst trekker utviklere – ingen vet hvem som drifter den</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-gratismodell-med-miljonkontext-lockar-utvecklare-ingen-vet-vem</guid>
-      <pubDate>Wed, 26 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>En modell som kalles Ox Alpha dukket opp på formidlingstjenesten OpenRouter 20. august under leverandørnavnet Stealth. Den er gratis, har et kontekstvindu på 1 048 576 tokens, og ingen har villet vedkjenne seg den.</p>
-<p>Modellen tar imot tekst, bilde og video og markedsføres for koding, lange agentoppdrag og produksjonsbruk – den samme grunnen Claude, GPT-5.6 og de store kinesiske åpne modellene slåss om. Kodeagenten OpenCode, som ga nærmest ubegrenset tilgang i en prøveuke, oppgir at leverandøren har kapasitet for 100 billioner tokens inferens i døgnet. Opplysningene om datalagring spriker: OpenRouters egen oppføring sier at promptene lagres hos leverandøren, men ikke brukes til trening, mens OpenCode lover null lagring. Stripe-sjef Patrick Collison kalte modellen svært imponerende etter testing. Den ledende teorien peker mot Z.ai, som tidligere har testet modeller anonymt, mens en analyse av tokeniseringen i stedet peker mot Microsofts MAI-familie.</p>
-<p>For Norden er det anonymiteten som er problemet, ikke prisen. Pliktene for modeller til allmenne formål i EUs KI-forordning har gjeldt siden 2. august 2025, og siden 2. august i år kan EUs KI-kontor undersøke og bøtelegge leverandører som ikke oppfyller dem. En leverandør uten navn kan heller ikke bli en identifiserbar databehandler, og uten databehandleravtale finnes det ingen vei for svenske myndigheter eller norske kommuner til å mate inn reelt innhold: prompter som lagres hos en ukjent part, lar seg ikke forene med kravene verken fra Integritetsskyddsmyndigheten eller Datatilsynet. Det er den samme resonneringen som fikk Helse Sør-Øst til å velge en løsning som kjøres i norske datasentre under norsk lov da regionen kjøpte inn KI-drevet journalføring til drøyt 72 000 brukere.</p>
-<p class="news-card__source">Kilde: <a href="https://thenextweb.com/news/ox-alpha-stealth-model-openrouter-anonymous-provider">The Next Web</a>, <a href="https://openrouter.ai/stealth/ox-alpha">OpenRouter</a>, <a href="https://winbuzzer.com/2026/08/24/ox-alpha-free-million-token-ai-coding-preview-openrouter-opencode-xcxwbn/">Winbuzzer</a></p>]]></description>
-    </item>
-    <item>
-      <title>Japan setter sin første kvantedatamaskin bygget på nøytrale atomer i drift</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-japan-tar-sin-forsta-kvantdator-byggd-pa-neutrala</guid>
-      <pubDate>Wed, 26 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Institute for Molecular Science meldte 24. august at kvantedatamaskinen Shunkai er i drift. Det er Japans første fullstack-system bygget på nøytrale atomer, med 50 kvantebiter i dag og et mål om 10 000 fysiske kvantebiter i mars 2031.</p>
-<p>Systemet er bygget av instituttet sammen med Hitachi, som står for programvarelaget, og amerikanske Infleqtion, som har levert selve kvanteprosessoren og er det eneste utenlandske selskapet i Japans Moonshot-program for kvanteteknologi. Fullstack betyr at alt mellom brukerens kode og de enkelte atomene henger sammen til ett programmerbart instrument. Atomene holdes på plass av optiske pinsetter – hardt fokuserte laserstråler – og kan flyttes mellom operasjonene, noe som gir koblinger mellom vilkårlige kvantebiter og passer de feilrettende kodene fagfeltet satser på. Med 50 kvantebiter er Shunkai likevel et forskningsinstrument: feilretting krever hundrevis av fysiske kvantebiter per logiske kvantebit.</p>
-<p>For Norden går koblingen gjennom optikken. NKT Photonics i Danmark, som inngår i Hamamatsu Photonics-konsernet, undertegnet 3. juni en intensjonsavtale sammen med morselskapet og japanske Yaqumo om å industrialisere nettopp de optiske komponentene atommaskiner trenger, med NKT som leverandør av fiberlasersystemene. Undertegningen skjedde hos den danske ambassadøren i Tokyo, og Yaqumo ble grunnlagt av blant andre professor Kenji Ohmori, som leder Shunkai-programmet. Chalmers og Wallenberg Centre for Quantum Technology har sammen med finske IQM i stedet satset på superledende kvantebiter – arkitekturen nøytrale atomer nå utfordrer. Går markedet mot atomer framfor kjølte kretser, havner dansk fiberoptikk midt i leverandørkjeden, mens det svenske og finske forspranget ligger i en annen teknologi.</p>
-<p class="news-card__source">Kilde: <a href="https://www.prnewswire.com/news-releases/ims-unveils-japans-first-full-stack-neutral-atom-quantum-computer-shunkai-now-operational-302858901.html">PR Newswire / IMS</a>, <a href="https://quantumcomputingreport.com/hamamatsu-photonics-nkt-photonics-and-yaqumo-form-alliance-to-industrialize-cold-atom-quantum-core-components/">Quantum Computing Report</a>, <a href="https://thequantuminsider.com/2026/06/04/yaqumo-nkt-photonics-and-hamamatsu-photonics-sign-quantum-photonics-agreement/">The Quantum Insider</a></p>]]></description>
-    </item>
-    <item>
-      <title>Kinesisk laboratorium holder tilbake åpne modellvekter etter høye cybersikkerhetspoeng</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-08-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-26-kinesiskt-labb-haller-tillbaka-oppna-modellvikter-efter-hoga</guid>
-      <pubDate>Wed, 26 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Zhipu AI, som internasjonalt heter Z.ai, lanserte kodemodellen GLM-5.3 den 14. august, men holdt tilbake de nedlastbare vektene. Ifølge selskapet skal de legges ut rundt 28. august – første gang Zhipu utsetter et vektslipp.</p>
-<p>Grunnen finnes i modellens egne tall. Etter selskapets egen måling fikk GLM-5.3 84,5 prosent på CyberGym, et referansemål for hvor godt en modell finner kjente sårbarheter i kildekode, opp fra 77,2 prosent for forgjengeren GLM-5.2. Den samme målingen setter Anthropics Mythos 5 til 83,8 prosent og GPT-5.6 Sol til 83,6 prosent. På ExploitBench, som måler evnen til faktisk å utnytte et hull, stopper GLM-5.3 på 54,4 prosent mot 78,0 for Mythos 5 – modellen er altså klart bedre til å finne sårbarheter enn til å komme seg gjennom dem. Selskapets åpne rapporteringsregister tilskriver GLM-modellene 2 436 funn i 269 prosjekter med åpen kildekode, hvorav 1 097 klassifisert som kritiske eller alvorlige.</p>
-<p>For Norden er tidspunktet det interessante. Siden 2. august kan EUs KI-kontor undersøke og bøtelegge leverandører av modeller til allmenne formål, med sanksjoner på inntil det høyeste av 15 millioner euro og 3 prosent av global omsetning, og kravet om systemrisikovurdering gjelder uansett om vektene er åpne. Samtidig er åpne vekter den eneste måten Nasjonal sikkerhetsmyndighet, den svenske myndigheten for samfunnssikkerhet og beredskap og nordiske banker kan kjøre en modell helt innenfor egne vegger. Slippes GLM-5.3 den 28. august, får CERT-SE og norske NorCERT et verktøy som ifølge produsentens egne tester finner sårbarheter bedre enn de fleste lukkede alternativene – tilgjengelig for både forsvarere og angripere.</p>
-<p class="news-card__source">Kilde: <a href="https://betanews.com/article/zai-glm-5-3-cybersecurity-delay/">BetaNews</a>, <a href="https://www.implicator.ai/z-ai-delays-glm-5-3-weights-two-weeks-after-cyber-score-beats-mythos-5/">Implicator.ai</a>, <a href="https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august">Europakommisjonen</a></p>]]></description>
     </item>
   </channel>
 </rss>
