@@ -7,8 +7,69 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 15 Sep 2026 04:34:03 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 04:29:26 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google släpper Gemini 3.8 Live – röstmodellen tänker och talar samtidigt</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-google-slapper-gemini-3-8-live-rostmodellen-tanker</guid>
+      <pubDate>Wed, 16 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Google lanserade den 15 september två nya röstmodeller, Gemini 3.8 Live och Gemini 3.8 Live Extended Thinking, som bolaget kallar sina mest avancerade dialogmodeller hittills. Modellerna tål att bli avbrutna, känner igen och växlar mellan 97 språk mitt i samtalet och kör verktygsanrop i bakgrunden medan konversationen fortsätter.</p>
+<p>Extended Thinking-varianten resonerar och talar på samma gång och toppar, enligt Google, indexet Speech to Speech Quality Index från Artificial Analysis med 82,6 poäng, medan basmodellen är byggd för volym och låg kostnad. Basmodellen driver Search Live i Googles sök, och den tyngre varianten rullas ut i Gemini Live, Gmail, Docs och Keep samt via Gemini API. Lanseringen kommer tre dagar efter att OpenAI släppte röstmodellen GPT-Live-1, och de två bolagen tävlar nu öppet om att bli motorn i nästa generations kundtjänst- och assistentsamtal.</p>
+<p>För Norden är röstagenter den AI-tillämpning som ligger närmast vardagen i kundtjänsten hos Telia, Telenor, SEB och DNB, där samtalen förs på svenska och norska och ofta glider över i engelska. Att modellen byter språk mitt i samtalet sänker tröskeln i tvåspråkiga miljöer som Finland och i nordiska koncerner med engelska som arbetsspråk. Google meddelade dessutom i förra veckan en datacentersatsning på 13 miljarder euro i Finland, vilket kan ge nordiska användare kortare svarstider för just den här typen av realtidsmodeller.</p>
+<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Google</a>, <a href="https://9to5google.com/2026/09/15/gemini-3-8-live-announced/">9to5Google</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI bekräftar säkerhetssamtal med Anthropic och Google – vill ha externa granskare i lag</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-openai-bekraftar-sakerhetssamtal-med-anthropic-och-google-vill</guid>
+      <pubDate>Wed, 16 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>OpenAI:s policychef Chris Lehane sa den 15 september i Washington att bolaget i flera veckor har samarbetat med Anthropic och Google DeepMind om AI-säkerhet, rapporterar Bloomberg och TechCrunch. Bekräftelsen kommer tre dagar efter Dario Amodeis essä om att bromsa utvecklingen av frontmodeller, en essä som Sam Altman, Demis Hassabis och Elon Musk ställt sig bakom.</p>
+<p>Lehane sa också att OpenAI stöder en bestämmelse i FRONTIER Act, ett partiöverskridande förslag i representanthuset från republikanen Jay Obernolte och demokraten Lori Trahan, som skulle tvinga de största AI-labben att släppa in oberoende verifieringsorganisationer. Förslaget riktar sig mot utvecklare som lagt mer än en miljard dollar på modeller de senaste tre åren. Samtidigt avfärdar Trump-administrationen säkerhetsoron som överdriven, och Altman har själv pekat på att samordning mellan konkurrenter kan strida mot konkurrenslagstiftningen — Amodei föreslog ett snävt undantag, Lehane sa att något sådant inte behövs.</p>
+<p>För Norden är frågan om vem som granskar labben inifrån öppen. EU:s AI-förordning låter AI-byrån begära utvärderingar av modeller med systemrisk, men har ingen motsvarighet till granskare på plats i labben. I Norge krävde SimulaMet-direktören Klas Pettersen i VG i helgen ett norskt AI-säkerhetsinstitut efter brittisk modell, och Digitaliserings- och förvaltningsdepartementet svarade att det nationella AI-centret KI Norge och Nkom ska ge vägledning om säker användning. I Sverige ärver den nya riksdagen, som samlas den 28 september, frågan utan att något parti drivit den i valrörelsen.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/">TechCrunch</a>, <a href="https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety">Bloomberg Law</a>, <a href="https://www.politico.com/news/2026/09/15/openai-backs-bipartisan-house-plan-for-third-party-safety-assessments-01076588">Politico</a>, <a href="https://www.vg.no/nyheter/i/zOyMJ5/ai-ekspert-advarer-deler-bekymring-at-utviklingen-gaar-for-fort">VG</a></p>]]></description>
+    </item>
+    <item>
+      <title>AI-detektor flaggade 14 av 15 NRK-kommentarer – ”borde ha rensats bort”, svarar NRK</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-ai-detektor-flaggade-14-av-15-nrk-kommentarer</guid>
+      <pubDate>Wed, 16 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Manifest Media har kört 15 kommentarer av var och en av fem profilerade NRK-kommentatorer genom AI-detektorn Pangram. Fyra av dem fick noll utslag på samtliga texter, medan 14 av 15 texter av den tidigare ekonomikommentatorn Cecilie Langum Becker flaggades — två av dem, däribland minnesorden över Stein Erik Hagen, bedömdes som 100 procent AI-genererade.</p>
+<p>Langum Becker, som den 1 september lämnade NRK för en kommunikationstjänst på Aker ASA, säger att hon använt AI-verktyg i förarbetet till texterna sedan NRK införde dem, men att innehåll och bedömningar är hennes egna. Sofie Gran Aspunvik, redaktör för NRK:s avdelning Debatt och förklaring, säger till Dagbladet att ”här kan det ha kommit in saker som borde ha rensats bort” och att AI inte får användas för att föra in nya poänger som inte kommer från kommentatorn själv. Manifest påpekar självt att Pangram inte kan avgöra om en chattbot skrivit texten eller bara omarbetat ett mänskligt utkast; 15 äldre texter av Langum Becker, skrivna innan ChatGPT fanns, fick noll utslag.</p>
+<p>För Norden sätter fallet fingret på en gräns som SVT, Sveriges Radio och NRK alla dragit i sina AI-riktlinjer: verktygen får användas som hjälpmedel, men tankearbetet och ansvaret ska vara människans. Att en AI-detektor nu används av ett medium mot ett annat höjer insatsen för svenska ledarsidor och kommentatorer lika mycket som för norska, och både norska PFU och svenska Medieombudsmannen kan få pröva var språkputs slutar och medskrivande börjar.</p>
+<p class="news-card__source">Källa: <a href="https://www.dagbladet.no/nyheter/ki-alarm-14-av-15-tekster-flagget/85155507">Dagbladet</a>, <a href="https://www.aftenposten.no/kultur/i/Bx9Bxe/manifest-media-hevder-at-flere-nrk-kommentarer-er-ki-generert">Aftenposten</a>, <a href="https://www.manifestmedia.no/artikler/slik-testet-vi-nrk-for-ai-infeksjon">Manifest Media</a></p>]]></description>
+    </item>
+    <item>
+      <title>Cloudflare blockerar nu AI-robotar som blandar sök och träning – Googlebot kan stängas ute</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-cloudflare-blockerar-nu-ai-robotar-som-blandar-sok</guid>
+      <pubDate>Wed, 16 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Den 15 september trädde Cloudflares nya standardinställningar för AI-trafik i kraft. På sidor som visar annonser blockeras nu robotar för AI-träning och AI-agenter som förval, medan sökrobotar fortsatt släpps in. Samtidigt bedöms robotar med flera syften efter sin mest restriktiva klassning: Googlebot, Bingbot och Applebot, som både indexerar för sök och samlar data till AI, stängs därmed ute hos sajter som valt att stoppa AI-träning — om inte ägaren aktivt valt bort ändringen.</p>
+<p>Cloudflare presenterade policyn den 1 juli i år med det uttalade målet att pressa Google och andra att dela upp sina robotar efter syfte, eftersom en sammanslagen robot ger de etablerade sökbolagen ett försprång som utgivare inte kan blockera separat. De nya förvalen gäller nya kunder, nya sajter hos befintliga kunder och gratiskunder som inte ändrat sina inställningar. Google har Google-Extended för att stoppa Gemini-träning, men det är en instruktion i robots.txt, inte en separat robot, och ger ingen möjlighet att välja bort AI Overviews. Parallellt bygger Cloudflare ut betalmodellen Pay Per Use, en utbyggnad av Pay Per Crawl, där bland andra You.com och Ceramic.ai betalar för innehåll.</p>
+<p>För Norden ligger kravet på ersättning för AI-användning av innehåll redan på bordet hos Schibsted, Bonnier News och Aller, och Cloudflares förval ger även små utgivare ett verktyg som tidigare krävde egna förhandlingar. Baksidan är konkret: svenska och norska småföretag på Cloudflares gratisnivå som en gång kryssat i ”Blockera AI-robotar” kan nu falla ur Googles sökindex utan att själva ha ändrat något, eftersom Googlebot numera klassas efter sitt mest restriktiva syfte — ett läge som Internetstiftelsen och Nkom har skäl att uppmärksamma.</p>
+<p class="news-card__source">Källa: <a href="https://blog.cloudflare.com/content-independence-day-ai-options/">Cloudflare</a>, <a href="https://searchenginewatch.com/cloudflares-ai-block-could-shut-out-google-next-week-even-if-you-change-nothing/">Search Engine Watch</a>, <a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/">TechCrunch</a></p>]]></description>
+    </item>
+    <item>
+      <title>Intel-avknoppningen Cornelis tar in 205 miljoner dollar för att bryta Nvidias grepp om AI-nätverken</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-intel-avknoppningen-cornelis-tar-in-205-miljoner-dollar</guid>
+      <pubDate>Wed, 16 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nätverksbolaget Cornelis Networks, avknoppat från Intel 2020, meddelade den 14 september en finansieringsrunda på 205 miljoner dollar ledd av IAG Capital Partners. Samtidigt lanserade bolaget Active Compute Fabric, en öppen nätverksarkitektur där programmerbara RISC-V-kärnor i både nätverkskort och switchar bearbetar data medan de flyttas mellan GPU:erna.</p>
+<p>Poängen är att GPU:er i stora AI-kluster ofta står och väntar på data. Cornelis vill låta chipen räkna och skicka samtidigt och flytta kollektiva operationer in i själva nätverket. Arkitekturen är GPU-agnostisk och ställs mot Nvidias InfiniBand-nätverk och NVLink, som är optimerade för Nvidias egna chip. Dagens switch CN5000 på 400 gigabit per sekund levereras redan, en CN6000-generation på 800 gigabit planeras, och bolaget har inlett ett samarbete med Qualcomm, enligt SiliconANGLE.</p>
+<p>För Norden är frågan vad nästa generations AI-superdatorer ska byggas på. Berzelius i Linköping och Norges nya Olivia i Lefdal bygger båda på Nvidias stack, och när EuroHPC:s AI-fabriker i Linköping och Kajaani byggs ut är valet av nätverk lika avgörande som valet av chip. Öppna alternativ som Cornelis skulle kunna göra det möjligt för NAISS och Sigma2 att blanda leverantörer i stället för att köpa hela Nvidias paket.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/">TechCrunch</a>, <a href="https://siliconangle.com/2026/09/14/cornelis-networks-raises-205m-and-scales-up-and-scales-out-with-its-new-active-compute-fabric/">SiliconANGLE</a></p>]]></description>
+    </item>
     <item>
       <title>Chipaktier föll världen över efter AI-toppars krav på inbromsning</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
@@ -1089,56 +1150,6 @@
 <p>Tillförordnade arbetsmarknadsministern Keith Sonderling motiverar det med att myndigheten själv saknar dessa data. Bakgrunden är ett mätproblem: den officiella statistiken bygger på enkäter framtagna för en ekonomi där teknikskiften gick långsammare än AI-utrullningen gör nu, och därför är det svårt att skilja vanlig konjunktur från AI-driven förändring. I departementet ligger Bureau of Labor Statistics, vars sysselsättnings- och inflationssiffror Federal Reserve använder när räntan sätts. Att blanda in företagens egna data i det underlaget väcker frågor om metod, representativitet och insyn.</p>
 <p>För Norden är mätproblemet identiskt men beslutet inte fattat. Statistiska centralbyråns mätning av AI-användning i svenska företag bygger på enkäter, och samma enkätlogik ligger till grund för motsvarande statistik hos Arbetsförmedlingen, Statistisk sentralbyrå och Nav. Att i stället ta emot data från de bolag vars produkter driver förändringen skulle i båda länderna vara ett principbeslut — om offentlig statistik ska bygga på underlag som myndigheten inte själv kan granska.</p>
 <p class="news-card__source">Källa: <a href="https://www.axios.com/2026/08/26/labor-department-tech-giants-ai-jobs-data">Axios</a>, <a href="https://www.scb.se/pressmeddelande/svenska-foretag-i-topp-med-ai-anvandning/">SCB</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nvidias kvartalsintäkter dubblas på ett år — och bolaget guidar för mer</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-27-nvidias-kvartalsintakter-dubblas-pa-ett-ar-och-bolaget</guid>
-      <pubDate>Thu, 27 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Nvidia redovisade den 26 augusti intäkter på 96,2 miljarder dollar för kvartalet som slutade den 26 juli. Det är 106 procent mer än för ett år sedan och 18 procent mer än kvartalet innan.</p>
-<p>Datacenterdelen står för 89,0 miljarder dollar av summan, en ökning med 117 procent, driven av att plattformen Vera Rubin gått i full produktion med rack hos bland andra CoreWeave, Google Cloud, Microsoft Azure och Nebius. Bruttomarginalen låg på 75,0 procent och den justerade vinsten per aktie på 2,22 dollar mot väntade 2,09. För det pågående kvartalet guidar bolaget mot 108 miljarder dollar plus eller minus 2 procent, mot analytikernas omkring 104 miljarder — och då räknar Nvidia uttryckligen inte med några datacenterintäkter från Kina alls. Aktien rörde sig ändå bara marginellt på beskedet.</p>
-<p>För Norden är det här inte en utländsk not. Oljefonden hade per den 30 juni knappt 1,3 procent av Nvidia till ett värde av omkring 61,8 miljarder dollar, och bolaget var då fondens största enskilda aktieinnehav — varje norsk och svensk diskussion om koncentrationsrisk i pensionskapitalet går numera genom det här kvartalsbeskedet. På hemmaplan byggs samma efterfrågan ut fysiskt: i Tydal i Trøndelag reser Tydal Data Center en anläggning direkt för Vera Rubin-plattformen, med planerad drift från årsskiftet, och motsvarande etableringar pågår i Luleå och Strängnäs.</p>
-<p class="news-card__source">Källa: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027">NVIDIA</a>, <a href="https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html">CNBC</a>, <a href="https://fortune.com/2026/08/26/nvidia-results-q2-earnings/">Fortune</a>, <a href="https://i3-invest.com/2026/08/nbim-holdings-shows-how-passive-investors-are-forced-into-ai-bet/">i3 Insights</a>, <a href="https://www.digi.no/artikler/gigantkontrakt-for-ki-datasenter-verdi-pa-55-milliarder-kroner/575371">Digi.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>92 sekunder AI-bild i NRK-dokumentär — norska kreatörer rasar</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-27-92-sekunder-ai-bild-i-nrk-dokumentar-norska</guid>
-      <pubDate>Thu, 27 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Dokumentärserien <span lang="nb">”Vår verdensarv”</span> hade premiär på NRK förra veckan. Redan 33 sekunder in i första avsnittet möts tittaren av ett AI-genererat klipp, märkt <span lang="nb">”KI-generert visualisering”</span>.</p>
-<p>Enligt branschtidningen Journalisten har NRK fått minst 16 klagomål från publiken. Illustratören Flu Hartberg, som leder aktionsgruppen Kiki, kallar det ett svek från public service och menar att ett tiotal yrkesgrupper förbigås. Grafills verksamhetsledare Lene Renneflott varnar för att prispressen monterar ner den skapande branschen, och Filmforbundets förbundsordförande Elisabeth Sjaastad hänvisar till paragraf 17 i NRK-plakaten, som säger att NRK ska stimulera norska produktionsmiljöer. Regissören Jonny Westernes på produktionsbolaget Fabelaktiv svarar att AI-klippen utgör klart under en procent av serien, bara illustrerar händelser som är minst 300 år gamla, och att en filmad motsvarighet hade kostat tiotusentals kronor per scen. NRK:s inköpschef Fredrik Færden räknar till 92 sekunder av fyra timmars speltid och medger att det kunde ha lösts med arkivbilder i stället.</p>
-<p>För Norden är det här ett av de första gränstesten för EU:s transparenskrav, som började gälla den 2 augusti och kräver tydlig märkning av AI-genererat innehåll i frågor av allmänintresse. I Norge saknar kraven ännu direkt rättsverkan eftersom AI-förordningen inte är införlivad i EES-avtalet; regeringen siktar på en proposition om en norsk AI-lag först våren 2027, med Nkom som samordnande tillsynsmyndighet. Serien var korrekt märkt — kritiken gällde något annat, nämligen om public service ska använda AI för att hålla en budget. Samma fråga väntar SVT, KLYS och Journalistförbundet i Sverige, där märkningskraven däremot redan gäller fullt ut.</p>
-<p class="news-card__source">Källa: <a href="https://www.vg.no/nyheter/i/PdebQ6/kritikk-mot-nrk-brukte-ai-i-dokumentarserie">VG</a>, <a href="https://www.journalisten.no/nrk-forsvarer-ki-bruk-i-ny-tv-serie/680769">Journalisten</a>, <a href="https://www.digi.no/artikler/nye-eu-regler-for-ki-norge-og-eos-henger-enna-langt-etter/575266">Digi.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>85 procent av svensk industri har inte tagit AI förbi pilotstadiet</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-27-85-procent-av-svensk-industri-har-inte-tagit</guid>
-      <pubDate>Thu, 27 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>En nordisk undersökning från affärssystemleverantören IFS, publicerad den 24 augusti, visar att 85 procent av de svenska svarande fortfarande utforskar AI eller kör pilotprojekt. Bara 15 procent har gått vidare till skarp drift, och de 40 procent som inte använder några AI-verktyg alls ryms inom de 85.</p>
-<p>Hindret är inte ointresse utan data: 51 procent av de svenska svarande pekar ut datakvalitet och dataåtkomst som ett av de största hindren för att skala upp. Optimering av leveranskedjan rankas högst som värdeområde med 26 procent, följt av prediktivt underhåll. På en femgradig skala skattar de svenska svarande den egna organisationens förmåga att införa AI tillräckligt snabbt till 3,53, nära det nordiska snittet 3,55. Siffrorna bör läsas med försiktighet: de bygger på sammanlagt 294 svar från Sverige, Norge, Danmark och Finland, insamlade interaktivt under IFS eget kundevenemang den 23 april. Hur många av de svarande som var svenska anges inte. Det är ett självselekterat urval hos en leverantör med intresse i saken — en temperaturmätare, inte statistik över nordisk industri.</p>
-<p>För Norden pekar mönstret ändå på en kompetensfråga som sällan hamnar i rubrikerna. Det som saknas på verkstadsgolvet hos underleverantörerna till Volvo, Sandvik, SSAB och Kongsberg är inte fler modeller utan dataingenjörer, mätsystem och någon som äger processdatan — precis den roll som Vinnova, RISE och Sintef bygger program kring, och som Teknikföretagen och NHO återkommer till i sina kompetensprognoser. IFS Nordenchef Mattias Bolander formulerar det som att företagen inte saknar ambition, utan kopplingen mellan AI och den operativa verkligheten.</p>
-<p class="news-card__source">Källa: <a href="https://www.nordiskaprojekt.se/2026/08/24/85-procent-av-svenska-industriforetag-har-annu-inte-tagit-ai-bortom-pilotstadiet/">Nordiska Projekt</a>, <a href="https://www.ifs.com/">IFS</a></p>]]></description>
-    </item>
-    <item>
-      <title>Claude får ett enda minne för chatt och Cowork — påslaget som standard</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-08-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-27-claude-far-ett-enda-minne-for-chatt-och</guid>
-      <pubDate>Thu, 27 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Från den 25 augusti delar Anthropics Claude ett och samma minne mellan chatten och uppgiftsverktyget Cowork. Det modellen lärt sig i ett samtal finns med när den kör en uppgift i Cowork, och tvärtom.</p>
-<p>Allt som sparas listas som korta filer per ämne under inställningarna, där varje post går att läsa, ändra eller radera — rättar man ett föråldrat företagsnamn en gång slår det igenom både i chatten och i körda uppgifter. Känsliga ämnen som hälsa, etnicitet, religion, politik och könsidentitet hålls utanför minnet om användaren inte aktivt tillåter det, och tjänsten sparar inte personnummer, brottshistorik eller uppehållsstatus över huvud taget. Minnet är påslaget som standard för privatabonnemangen Free, Pro och Max på webb, dator och mobil, men avstängt som standard för Team och Enterprise, där administratören bestämmer.</p>
-<p>För Norden är det just den skillnaden som avgör vad arbetsgivarna behöver göra. En anställd som kör Cowork på ett privat konto mot kunduppgifter startar en personuppgiftsbehandling utan personuppgiftsbiträdesavtal. Ansvaret för den ligger enligt dataskyddsförordningen hos arbetsgivaren — inte hos den anställde och inte hos leverantören — och tillsynen utövas av Integritetsskyddsmyndigheten i Sverige och Datatilsynet i Norge. Eftersom Norge saknar en egen AI-lag fram till tidigast våren 2027 är dataskyddsförordningen tills vidare det enda skarpa verktyget både i Oslo och i Stockholm.</p>
-<p class="news-card__source">Källa: <a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it">Anthropic</a>, <a href="https://support.claude.com/en/articles/12138966-release-notes">Claude Support</a></p>]]></description>
     </item>
   </channel>
 </rss>
