@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 16 Sep 2026 04:29:26 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 04:35:56 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>The EU Kids Act pulls AI chatbots into the rules meant to protect children</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-eu-s-kids-act-drar-in-ai-chattbottar</guid>
+      <pubDate>Thu, 17 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>The European Commission presents its Kids Act on Thursday, treating AI chatbots and AI companions as a risk category of their own alongside social media and gaming platforms. Ursula von der Leyen announced the proposal in her State of the Union address in Strasbourg on Wednesday: no access to social media below the age of 13, no personal account before 15.</p>
+<p>The draft seen by the Financial Times is more detailed than the speech. Children under 13 may use the services only under a parent's supervision, while 13- and 14-year-olds need parental consent and get accounts with time limits and other restrictions. Companies offering AI companions and chatbots must avoid designs that encourage unhealthy emotional attachments. Age is to be verified through an official age verification app, and fines may reach six per cent of global annual revenue.</p>
+<p>For the Nordics the proposal changes the ground under two national laws already in motion. Norway's government wants an age limit starting 1 January of the year a person turns 16, and in August received word from both ESA and the European Commission that the proposal does not conflict with the DSA. Minister for Children and Families Lene Vågslid aims to put the bill before the Storting before the year is out. In Sweden, the interim report SOU 2026:35 proposed a limit of 15 in June, to take effect on 1 January 2028. Neither mentions AI chatbots explicitly — the EU proposal does, which puts the chatbot question on the desks of both the Storting and the Riksdag.</p>
+<p class="news-card__source">Source: <a href="https://edition.cnn.com/2026/09/16/europe/eu-social-media-ban-children-intl">CNN</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/09/16/eu039s-von-der-leyen-to-invite-frontier-labs-for-talks-on-tackling-ai-risks">Reuters</a>, <a href="https://www.ft.com/content/410db291-f133-4d72-b883-b2d5a32abbf8">Financial Times</a></p>]]></description>
+    </item>
+    <item>
+      <title>Twenty-five Fields medallists warn against the AI labs' race for mathematical breakthroughs</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-tjugofem-fieldsmedaljorer-varnar-for-ai-bolagens-jakt-pa</guid>
+      <pubDate>Thu, 17 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Twenty-five mathematicians, all of them Fields medallists, have signed a joint statement against the way AI companies handle mathematical research. The criticism is not aimed at the models but at the method: results are announced in haste, without time for a proper write-up, without isolating new methods and without citing the earlier work of others.</p>
+<p>The statement follows a conflict that has escalated through September. NYU professor Tristan Buckmaster accused OpenAI, according to TechCrunch, of pressuring him not to credit a collaborator working at Anthropic. The day before the declaration, an open letter from mathematicians at Caltech, with 771 signatories, had demanded that an AI-sponsored mathematics event in October be called off, after which OpenAI withdrew its sponsorship. The company's claimed solution to the Navier–Stokes problem remains unconfirmed.</p>
+<p>For the Nordics, the question of how AI-generated results should be judged is a concrete one. The article that spread in Sweden on Wednesday came from the Danish outlet Ingeniøren by way of Ny Teknik, and when OpenAI presented its Navier–Stokes work earlier in September, Ny Teknik had a professor at Chalmers explain what it means for the profession. The Knut and Alice Wallenberg Foundation, WASP, KTH, NTNU and the University of Oslo now face the same question in appointments and expert assessments: what counts as one's own work when a model did part of it, and who is responsible for checking the result.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/">TechCrunch</a>, <a href="https://proofsandprompts.com/2026/09/10/open-letter-about-the-mathathon/">Proofs and Prompts</a>, <a href="https://www.nyteknik.se/tech/400-matematiker-i-upprop-mot-ai-bolagen-ett-grundlaeggande-hot/4495632">Ny Teknik</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI finds that AI tasks outside your own job description become a habit</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-openai-ser-att-ai-uppgifter-utanfor-den-egna</guid>
+      <pubDate>Thu, 17 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Workers who use AI for tasks outside their own occupation keep coming back to them, according to a new report from OpenAI Economic Research. Among some 6,200 workers followed from April to July, the share of out-of-occupation tasks the users had already tried before rose from 13.1 to 25.9 per cent of occupation-specific AI use.</p>
+<p>The report is the second in the Work at the Frontier series and draws on more than 1.5 million work-related ChatGPT messages. The likelihood of returning to an out-of-occupation task the following month was 23.6 per cent, against 8.4 per cent for comparable workers who had not used it. The highest return rates were for discussing goods and services with customers (54 per cent), advertising copy (44) and marketing materials (37), while explaining financial information sat at around 15 per cent. The material is OpenAI's own and measures use of the company's own service, which is worth keeping in mind.</p>
+<p>For the Nordics this is a question about job descriptions and skills mapping rather than about jobs disappearing. The content of the work broadens while the title stays put, which makes it harder for Unionen, Akavia and Norway's LO to see what is actually changing in an occupation. At the same time, TechSverige reported earlier in September that the number of open tech jobs had fallen by around forty per cent in a year. For Swedish and Norwegian employers, the combination means that internal training and hiring profiles need to start from tasks, not from job titles.</p>
+<p class="news-card__source">Source: <a href="https://openai.com/index/unlocking-new-ways-of-working/">OpenAI</a>, <a href="https://via.tt.se/pressmeddelande/4540352/techtemperaturen-tecken-pa-aterhamtning-i-techbranschen-men-arbetsmarknaden-slapar-efter?lang=sv">TT</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nearly half of Norwegian students think their peers' AI use goes too far</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-nara-halften-av-norska-studenter-tycker-att-medstudenternas</guid>
+      <pubDate>Thu, 17 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Forty-six per cent of Norwegian students agree that other students cross the line in their use of AI, according to the large health and well-being survey SHoT. At the same time, 89.6 per cent say they have used AI tools themselves during the past term.</p>
+<p>The picture is not that students avoid the technology but that they are unsure where the line runs. 56.3 per cent of students used AI at least several times a week to understand course material and 30.4 per cent for language editing. 89.2 per cent said they follow the rules, while 65.5 per cent were worried about the consequences of AI use. Pressure to use the tools was highest among 23- to 25-year-olds (29.9 per cent) and lowest among 18- to 20-year-olds (21.7). Eva Franko Aas, head of the Norwegian Student Organisation, tells VG that a great deal is left to students' own judgement and that many are almost excessively afraid of cheating by accident.</p>
+<p>For the Nordics the figures point to a vacuum in the rules rather than to a cheating problem. Norway now has nationwide measurements across the student body, while Sweden lacks an equivalent of SHoT on that scale and its institutions set their own guidelines, sometimes course by course. As long as the judgement rests with the individual examiner, what grows is distrust of fellow students, not trust in the rules.</p>
+<p class="news-card__source">Source: <a href="https://www.vg.no/nyheter/i/9p1Vdd/naer-halvparten-av-norske-studenter-mener-medstudenter-har-en-uakseptabel-bruk-av-ai">VG</a>, <a href="https://studenthelse.no/">SHoT</a></p>]]></description>
+    </item>
+    <item>
+      <title>Fujitsu releases its quantum programming library as open source</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-fujitsu-slapper-sitt-kvantprogrammeringsbibliotek-som-oppen-kallkod</guid>
+      <pubDate>Thu, 17 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Fujitsu has released its development library for quantum applications, OpenQARP, as open source under the Apache License version 2.0. The package holds more than 100 components: some 70 composable building blocks and around 20 ready-made algorithms, from state preparation and ansatz layers to the quantum Fourier transform.</p>
+<p>The point is to avoid rebuilding the same code for every new problem. Fujitsu says a workflow using the ADAPT-VQE algorithm for calculating the electronic states of molecules went from about 130 lines of Python to under 40. The library runs on an ordinary computer with Python and can be attached as a backend to Nvidia's CUDA-Q for GPU acceleration and to Fujitsu's own 40-qubit simulator, built on 1,024 PRIMEHPC FX700 nodes with A64FX processors. More than 80 organisations have tested the beta version since February.</p>
+<p>For the Nordics this lowers the threshold for groups that have the quantum expertise but lack a software stack of their own. Chalmers and WACQT, NTNU, the Niels Bohr Institute and Finland's IQM, which is building LUMI-IQ, all work against hardware from different vendors, and a licence-free library that speaks to both simulators and CUDA-Q makes it easier to move algorithms between them. The Novo Nordisk Foundation is meanwhile putting some 400 million Danish kroner into the quantum chip plant Quantum Foundry Copenhagen, which is planned to be in production within two years — the hardware is being built in the Nordics, but the tools still come from outside.</p>
+<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/09/15/fujitsu-releases-open-quantum-application-research-package-as-open-source/">The Quantum Insider</a>, <a href="https://global.fujitsu/en-global/technology/research/quantum/openqarp">Fujitsu</a>, <a href="https://www.nyteknik.se/tech/novo-nordisk-aegaren-storsatsar-pa-kvantchip-da-ska-fabriken-sta-klar/4491550">Ny Teknik</a></p>]]></description>
+    </item>
     <item>
       <title>Google releases Gemini 3.8 Live – a voice model that thinks and talks at the same time</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-16</link>
@@ -1088,68 +1149,6 @@
 <p>The letter was published on 27 August with OpenAI as its originator, and signatories include Anthropic, Google, Microsoft, Amazon, Cisco, Oracle, Cloudflare, CrowdStrike and Palo Alto Networks, plus companies outside the tech sector such as Mastercard, Visa, General Motors and Shopify. CNBC counted 116 companies and entities. They warn that hospitals, water treatment plants and other critical infrastructure become exposed as models get better at finding vulnerabilities and writing attack code, and they call for a “defensive surge” with training, funding and access to the labs' most capable models for defenders during major incidents. Several signatories are simultaneously building the agents that make the threat larger.</p>
 <p>For the Nordics this lands in the middle of work already under way. Sweden and Norway are implementing the EU's NIS2 requirements through the Cybersecurity Act and the Digital Security Act respectively, with MSB and NSM in central roles. It is the regions in Sweden and the regional health enterprises in Norway that run precisely the hospital operations the letter flags as vulnerable, and municipal water utilities in both countries are small organisations with thin IT security staffing. If the standards for AI-driven cyber defence are written in an American industry forum, MSB, NSM and Digdir become recipients rather than co-authors.</p>
 <p class="news-card__source">Source: <a href="https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/08/27/ai-cyber-defense-letter.html">CNBC</a>, <a href="https://www.axios.com/2026/08/27/openai-anthropic-issue-dire-cyber-threat-warning">Axios</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic opens a standard for AI agents to operate physical machines</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-28-anthropic-oppnar-en-standard-for-att-ai-agenter</guid>
-      <pubDate>Fri, 28 Aug 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>On August 27 Anthropic released a research preview of the Model Hardware Standard, MHS — a shared specification for how AI agents should be able to operate physical devices safely.</p>
-<p>The preview goes first to a limited group of scientific research labs and advanced manufacturers, which will test how Claude behaves against real equipment and what safeguards are needed. The point is not a product but a shared interface: a way for models and machines to speak the same language regardless of who built which part. The same day the company also presented an expanded effort aimed at scientists. Bloomberg reported on the launch.</p>
-<p>For the Nordics this layer is already occupied. 1X Technologies in Moss builds the Neo humanoid, ABB Robotics in Västerås and Universal Robots and MiR in Odense supply industrial robots, Kongsberg develops autonomous systems and robotics research sits at Sintef and NTNU. If the standard for how a model may move a machine is set in California, Nordic engineering and process industry becomes an adopter rather than a co-designer — and anyone who wants to shape it should be in this preview, not the next one.</p>
-<p class="news-card__source">Source: <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview">Anthropic</a>, <a href="https://www.bloomberg.com/news/articles/2026-08-27/anthropic-tests-new-way-for-claude-to-work-with-robots-and-scientific-lab-tools">Bloomberg</a>, <a href="https://www.anthropic.com/news/expanding-support-for-scientists">Anthropic</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nvidia reported to buy Hugging Face — where the Nordic open language models live</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-28-nvidia-uppges-kopa-hugging-face-dar-nordens-oppna</guid>
-      <pubDate>Fri, 28 Aug 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Nvidia has, according to information given to The Information, agreed to buy Hugging Face for USD 12.9 billion. Neither Nvidia nor Hugging Face has confirmed any agreement.</p>
-<p>Hugging Face is the dominant distribution point for open models, datasets and developer tools. The price should be compared with the USD 4.5 billion valuation in the 2023 funding round, in which Nvidia itself took part. The reporting originates with The Information and has been relayed by CNBC, TechCrunch and Fortune among others, and no agreement has been confirmed by the companies. If the deal goes through, the hub for open models ends up owned by the manufacturer that already dominates the hardware those models run on.</p>
-<p>For the Nordics this is not an abstract ownership question. The National Library of Norway’s Norwegian language models, NorwAI at NTNU and AI Sweden’s GPT-SW3 are all distributed through Hugging Face, and the same goes for the NB-Whisper speech recognition models. The Nordic line has been that publicly funded language models should be open and independent — yet distribution has rested the whole time on a single American platform. If it becomes a subsidiary of a chipmaker, that is a sharp reason for Vinnova, the Research Council of Norway and the libraries to think through where the models should actually sit.</p>
-<p class="news-card__source">Source: <a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html">CNBC</a>, <a href="https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/">TechCrunch</a>, <a href="https://fortune.com/2026/08/27/nvidia-hugging-face-billion-dollar-deal-open-source-ai/">Fortune</a>, <a href="https://huggingface.co/NbAiLab">NbAiLab</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway gathers AI guidance and a regulatory sandbox in a single entry point</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-28-norge-samlar-ai-vagledning-och-regulatorisk-sandlada-i</guid>
-      <pubDate>Fri, 28 Aug 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The Norwegian Digitalisation Agency opens KI Norge in August, a national hub meant to bring together guidance, evidence and a regulatory sandbox for artificial intelligence.</p>
-<p>The government has allocated NOK 30 million for the establishment, the sandbox and AI supervision. The sandbox is run jointly by the Digitalisation Agency, the Data Protection Authority and Nkom, but sits organisationally inside KI Norge. Nkom becomes the coordinating market surveillance authority and national contact point for the AI Act and is to help ensure a uniform interpretation and application across the country, while the Data Protection Authority keeps responsibility for personal data questions. The stated target group is small and medium-sized enterprises and newly started companies, which are to receive legal guidance on risks to fundamental rights, health and safety before products reach the market.</p>
-<p>For the Nordics this means two different models sitting side by side. Norway gathers guidance and the experimental environment in one organisation and places the coordinating contact point with a single authority, while responsibility in Sweden is split across several authorities, with the Swedish Authority for Privacy Protection, the Post and Telecom Authority and the Financial Supervisory Authority sharing oversight. For a Swedish or Norwegian company selling in both markets, the difference means the same AI system meets one consolidated entry point in Norway and a divided one in Sweden. Norwegian SMEs therefore get a head start on what costs most in practice: knowing who to ask.</p>
-<p class="news-card__source">Source: <a href="https://www.digdir.no/kunstig-intelligens/digdir-etablerer-ki-norge/7412">Digdir</a>, <a href="https://nkom.no/ki/regulering/regulatorisk-sandkasse">Nkom</a>, <a href="https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2025/bygger-ki-sandkasse-med-digitaliseringsdirektoratet-og-nkom/">Datatilsynet</a>, <a href="https://ki.norge.no/sandkasse">KI Norge</a></p>]]></description>
-    </item>
-    <item>
-      <title>AI is said to have designed and verified an AI chip in under two weeks</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-28-ai-ska-ha-konstruerat-och-verifierat-ett-ai</guid>
-      <pubDate>Fri, 28 Aug 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>The startup Architect Labs says an AI system designed and verified the Redwood accelerator in under two weeks. Two human architects wrote the architecture specification.</p>
-<p>The circuit currently runs on an FPGA platform, where it performs inference on models with billions of parameters, including Llama and Qwen. The AI system is also said to have designed the firmware and the custom compute kernels. The decisive caveat is that the chip has not yet been manufactured in silicon — manufacturing is where problems with power, timing, yield and reliability tend to appear, and no simulation catches those. The company came out of stealth this summer with USD 24 million in seed funding.</p>
-<p>For the Nordics, circuit design is one of the few semiconductor niches where the region is genuinely strong. Nordic Semiconductor in Trondheim makes its living designing low-power chips without owning a fab, Ericsson designs its own silicon for radio networks and Chalmers microwave electronics researches circuit design. If the cost of producing a specialised chip falls from a year to a few weeks, the barrier drops for Nordic companies to build their own — but the same drop applies to every competitor, and the advantage then moves from design capability to access to manufacturing capacity.</p>
-<p class="news-card__source">Source: <a href="https://semiwiki.com/semiconductor-manufacturers/372758-ai-designed-chip-points-toward-a-faster-future-for-custom-silicon/">SemiWiki</a>, <a href="https://thenextweb.com/news/architect-labs-24m-seed-ai-custom-chip-design">TNW</a>, <a href="https://www.hpcwire.com/off-the-wire/architect-labs-raises-24m-seed-to-democratize-custom-chip-design/">HPCwire</a></p>]]></description>
-    </item>
-    <item>
-      <title>The US Labor Department takes AI data straight from the tech companies</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-08-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-08-28-usa-s-arbetsmarknadsdepartement-hamtar-ai-data-direkt-fran</guid>
-      <pubDate>Fri, 28 Aug 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>The US Department of Labor has signed memorandums of understanding with OpenAI, Google, Meta and Amazon among others in order to obtain data on how AI is actually being used at work.</p>
-<p>Acting Labor Secretary Keith Sonderling justifies it by saying the department does not have the data itself. Behind it lies a measurement problem: official statistics rest on surveys built for an economy where technology shifts moved more slowly than the AI rollout does now, which makes it hard to separate ordinary business cycles from AI-driven change. The department houses the Bureau of Labor Statistics, whose employment and inflation figures the Federal Reserve uses when setting interest rates. Mixing company data into that basis raises questions about method, representativeness and transparency.</p>
-<p>For the Nordics the measurement problem is identical but the decision has not been made. Statistics Sweden’s measurement of AI use in Swedish companies is based on surveys, and the same survey logic underpins the corresponding statistics at the Swedish Public Employment Service, Statistics Norway and Nav. Accepting data instead from the companies whose products drive the change would in both countries be a matter of principle — whether official statistics should rest on material the authority cannot itself examine.</p>
-<p class="news-card__source">Source: <a href="https://www.axios.com/2026/08/26/labor-department-tech-giants-ai-jobs-data">Axios</a>, <a href="https://www.scb.se/pressmeddelande/svenska-foretag-i-topp-med-ai-anvandning/">Statistics Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
