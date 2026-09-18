@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "om": "Redaktionell kö för ai-skiftet.se nyhetspipeline. Poster läggs här när en story ska med i en kommande körning men inte hittas av fri sökning. Hämtas i STEG 1 i skillen ai-skiftet-nyheter. Filen är generell — den är inte knuten till någon enskild nyhet.",
+  "faltbeskrivning": {
+    "id": "unik nyckel, kebab-case",
+    "tidigast": "YYYY-MM-DD, första dag posten får publiceras",
+    "senast": "YYYY-MM-DD, sista dag posten gäller. Efter det utgår den av sig själv även om PUT-tillbaka misslyckats.",
+    "kategori": "en av: modeller debatt arbetsmarknad reglering forskning infrastruktur hardvara fysisk-ai kvant",
+    "norden": "true om notisen ska ha norden-taggen i data-tags",
+    "dubblettnyckel": "strängar att söka efter i index.html senaste 7 dagarna. Träff = redan publicerad, flytta till publicerat och hoppa över.",
+    "vinkel": "vad notisen ska handla om",
+    "maste_med": "BINDANDE. Varje punkt ska återspeglas i notistexten och klistras in i korrekturprompten i STEG 6.5.",
+    "far_inte_pastas": "BINDANDE. Får inte skrivas som påstående. Formuleras som fråga eller utelämnas.",
+    "norden_stycke": "underlag till stycke 3",
+    "kallor": "URL:er att faktakontrollera mot",
+    "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
+  },
+  "ko": [
+    {
+      "id": "jev-typesafe-2026-09",
+      "tidigast": "2026-09-19",
+      "senast": "2026-09-22",
+      "kategori": "modeller",
+      "norden": false,
+      "dubblettnyckel": ["Jev", "TypeSafe"],
+      "vinkel": "Arkitekturavsteget: Jev genererar ingen text alls. Programtillstånd in, typade beslut med sannolikheter ut (Noul ja/nej, Choice, Score). Bolaget kallar det en System One-modell. Skriv om vad modellen ÄR — en annan sorts sak, inte en snabbare chattmodell — och inte om multiplikatorerna. Släppt 15 september 2026 av TypeSafe AI, Inc. i San Francisco, early access med väntelista. Distribuerad via Cloudflare Workers AI och Vercel AI Gateway.",
+      "maste_med": [
+        "Träffsäkerhet 67,8 procent — mittfältet. Exakt samma som Sonnet 5 och 6,3 procentenheter under toppen (sol, 74,1 procent). Jev är INTE mest träffsäker. Siffran saknas i all övrig rapportering och är notisens skarpaste bidrag — hör hemma i stycke 2.",
+        "Rubrikmultiplarna 193,6× snabbare och 444,6× billigare är valda mot den SÄMSTA jämförelsen: 193× mot Sonnet 5 (långsammast) och 444× mot Opus 5 (dyrast). Mot snabbaste konkurrenten (terra) blir det cirka 25×, mot billigaste (luna) cirka 8×. Omformulera enligt regeln om obelagda superlativ (ZuriQ-notisen 2026-07-29): attribuera till bolagets eget test och namnge jämförelsemodellen.",
+        "Diogo Almeida är INTE uppfinnare av RLHF. Han är medförfattare till InstructGPT (Ouyang m.fl. 2022), inte till Christiano m.fl. 2017 som allmänt räknas som RLHF:s ursprung. Korrekt formulering: medskapare av InstructGPT, forskningen bakom ChatGPT. Felet har gått igenom flera redaktioner — skriv inte av det.",
+        "\"Kan inte hallucinera\" gäller FORMATET, inte att svaret är rätt. En modell som med 0,87 sannolikhet dirigerar ett ärende fel har inte hallucinerat — den har haft fel. Skriv ut skillnaden (The Register).",
+        "Alla evalueringssiffror kommer ur bolagets EGEN evaluering på evals.typesafe.ai, där facit är samstämmighet mellan GPT-6 Astra och Claude Fable 5.1 — inte oberoende sanning. En modell kan därför inte överträffa referensen per konstruktion."
+      ],
+      "far_inte_pastas": [
+        "GDPR artikel 22-kopplingen är AI-skiftets egen läsning. Ingen källa påstår den. Formuleras som fråga eller utelämnas helt — aldrig som påstående.",
+        "Cloudflares datalokalisering för just Jev är overifierad. Påstå ingenting om att anrop kan hållas inom EU.",
+        "40 MUSD seed med DCVC som lead, och Hacker News-placeringen, är andrahandsuppgifter utan nådd primärkälla. Ta med bara med tydlig attribution, eller utelämna."
+      ],
+      "norden_stycke": "AI-förordningens tidslinje (förordning EU 2026/1744, i kraft 27 juli 2026, högriskbilaga III 2 december 2027) — en modellklass byggd för täta automatiserade beslut som inte producerar någon motivering går rakt in i den. Datatilsynet och IMY får en ny modellklass att förhålla sig till, där frågan om systemet kan förklara sitt beslut har ett obekvämt svar. Nordiska utvecklarteam når modellen redan i dag via Cloudflare Workers AI och Vercel AI Gateway, utan väntelista — vilket gör frågan praktisk, inte hypotetisk. Bank och försäkring (SEB, DNB) och industriell automation (Volvo, Ericsson, Equinor) är precis de miljöer där reviderbarhet är ett regulatoriskt krav.",
+      "kallor": [
+        "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "https://evals.typesafe.ai/",
+        "https://developers.cloudflare.com/ai/models/typesafe/jev/",
+        "https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711",
+        "https://www.infoworld.com/article/4223468/typesafe-ais-new-models-work-with-machines-not-humans.html"
+      ],
+      "underlag": "~/AI/scratch/jev-typesafe-2026-09-18.md",
+      "lagd": "2026-09-18"
+    }
+  ],
+  "publicerat": []
+}
