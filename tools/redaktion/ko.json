@@ -15,14 +15,18 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [
+  "ko": [],
+  "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
       "tidigast": "2026-09-19",
       "senast": "2026-09-22",
       "kategori": "modeller",
       "norden": false,
-      "dubblettnyckel": ["Jev", "TypeSafe"],
+      "dubblettnyckel": [
+        "Jev",
+        "TypeSafe"
+      ],
       "vinkel": "Arkitekturavsteget: Jev genererar ingen text alls. Programtillstånd in, typade beslut med sannolikheter ut (Noul ja/nej, Choice, Score). Bolaget kallar det en System One-modell. Skriv om vad modellen ÄR — en annan sorts sak, inte en snabbare chattmodell — och inte om multiplikatorerna. Släppt 15 september 2026 av TypeSafe AI, Inc. i San Francisco, early access med väntelista. Distribuerad via Cloudflare Workers AI och Vercel AI Gateway.",
       "maste_med": [
         "Träffsäkerhet 67,8 procent — mittfältet. Exakt samma som Sonnet 5 och 6,3 procentenheter under toppen (sol, 74,1 procent). Jev är INTE mest träffsäker. Siffran saknas i all övrig rapportering och är notisens skarpaste bidrag — hör hemma i stycke 2.",
@@ -45,8 +49,9 @@
         "https://www.infoworld.com/article/4223468/typesafe-ais-new-models-work-with-machines-not-humans.html"
       ],
       "underlag": "~/AI/scratch/jev-typesafe-2026-09-18.md",
-      "lagd": "2026-09-18"
+      "lagd": "2026-09-18",
+      "publicerad": "2026-09-19",
+      "commit": "a6d6a77cf1033e6c6992e53998e1c4cbde959eb5"
     }
-  ],
-  "publicerat": []
+  ]
 }
