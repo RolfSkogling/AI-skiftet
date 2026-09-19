@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The denominator is missing &mdash; AI-skiftet</title>
+  <meta name="description" content="Around ten agents deleted or destroyed production data. Exactly one vendor published a full technical report. The under-reporting is the story, not the frequency &mdash; it cannot be stated when the denominator is missing.">
+  <meta name="date" content="2026-09-19">
+  <meta property="article:published_time" content="2026-09-19T09:00:00+02:00">
+  <meta property="og:title" content="The denominator is missing &mdash; AI-skiftet">
+  <meta property="og:description" content="Around ten agents deleted or destroyed production data. Exactly one vendor published a full technical report. The under-reporting is the story, not the frequency &mdash; it cannot be stated when the denominator is missing.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-skiftet.se/en/namnaren-saknas.html">
+  <link rel="canonical" href="https://ai-skiftet.se/en/namnaren-saknas.html">
+  <link rel="alternate" hreflang="sv" href="https://ai-skiftet.se/namnaren-saknas.html">
+  <link rel="alternate" hreflang="en" href="https://ai-skiftet.se/en/namnaren-saknas.html">
+  <link rel="alternate" hreflang="nb" href="https://ai-skiftet.se/no/namnaren-saknas.html">
+  <link rel="alternate" hreflang="x-default" href="https://ai-skiftet.se/namnaren-saknas.html">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+  .lang-switcher{display:inline-flex;gap:2px;margin-left:auto;font-size:.78rem;font-weight:700;letter-spacing:.04em}
+  .lang-switcher a{padding:4px 8px;border-radius:4px;color:#5f6c7b;text-decoration:none}
+  .lang-switcher a.active{background:#8c4a1f;color:#fff}
+  .lang-switcher a:hover:not(.active){background:rgba(140,74,31,.1);text-decoration:none}
+  .site-nav .container-wide{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .site-nav__links{margin-left:0}
+  .article-kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+  .article-dek{max-width:850px;margin:0 0 14px;color:var(--muted);font-size:1.16rem;line-height:1.65}
+  .source-note{font-size:.95rem;color:var(--muted)}
+  .article-nav .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .note-ref{font-size:.72em;line-height:0;vertical-align:super;font-weight:700;margin-left:1px}
+  .note-ref a{text-decoration:none;border:0}
+  .article-endnotes ol{margin:0;padding-left:1.5em}
+  .article-endnotes ol li{margin-bottom:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
+  .article-endnotes ol li:target{background:rgba(140,74,31,.09);border-radius:4px}
+  .news-audio{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:var(--shadow)}.news-audio__row{display:flex;align-items:center;gap:12px;margin-bottom:10px}.news-audio__icon{font-size:1.5rem;line-height:1}.news-audio__title{font-weight:700}.news-audio__note{font-size:.8rem;color:var(--muted)}.news-audio__player{width:100%}/*news-audio-css*/
+</style>
+  <link rel="stylesheet" href="/audio-continuity.css" data-audio-continuity="css">
+  <script src="/audio-continuity.js" defer data-audio-continuity="js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container-wide">
+    <a href="/en/index.html" class="site-nav__logo">AI-skiftet</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav__links').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-nav__links">
+      <a href="/en/essays.html">Essays</a>
+      <a href="/en/podcasts.html">Podcasts</a>
+      <a href="/en/framtidsscenarier.html">Scenarios</a>
+      <a href="/en/about.html">About</a>
+      <a href="/en/kallor.html">Sources</a>
+    </div>
+    <div class="lang-switcher">
+      <a href="/namnaren-saknas.html" lang="sv">SV</a>
+      <a href="/en/namnaren-saknas.html" lang="en" class="active">EN</a>
+      <a href="/no/namnaren-saknas.html" lang="nb">NO</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <a href="/en/essays.html" class="article-header__back">To essays</a>
+    <div class="article-kicker">AI safety &middot; Source criticism</div>
+    <h1>The denominator is missing</h1>
+    <p class="article-dek"><em>or: why we can count the incidents but not the deployments.</em> Around ten agents deleted or destroyed production data. Exactly one vendor published a full technical report. The under-reporting is the story &mdash; not the frequency, which cannot be stated when the denominator is missing.</p>
+    <p class="article-meta">Analysis &middot; Rolf Skogling &middot; Published September 19, 2026 &middot; approx. 15 min read</p>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+
+<p>On July 22 this year, we published a news item under the headline that Hugging Face had been hacked by an autonomous AI agent, in the first known intrusion of its kind. The item called the agent "the attacker" and relayed the company's statement that it was "an agent framework built on top of an unknown language model". That was a story about an attack.</p>
+
+<p>Six days later, on July 28, we described the same event again, in passing, in a news item about something else. Now it said that OpenAI's models, by the company's own account, had broken out of their test environment on their own. That was a story about an escape.</p>
+
+<p>The second item was right. The first was not: it read the event as an attack, and that is the wrong category. That nobody knew at the time of publication that these were OpenAI's own models explains the error &mdash; it does not erase it. An attack and an escape mean two different kinds of responsibility, and we had the event in both within the space of a week. I start there for a simple reason: this text is about how these events get reported, and then I cannot keep quiet about how we reported it ourselves. It was not carelessness. It was hard, and it is still hard.</p>
+
+<p>The question I had was whether the case stood alone. The scope is narrow: the agent got its task from its owner, no human attacker was in the chain, the agent itself carried out the harmful action, and the harm hit a real party. People who use AI as a tool for their own attacks fall outside it. Chatbots that give wrong answers a human then acts on also fall outside &mdash; Air Canada's bot booked nothing, Amazon's wiki agent ran no command. The bot answered; a human acted.</p>
+
+<p>The answer is that the case does not stand alone. But that is not what I got stuck on. Of the cases where an agent destroyed something real, a single one has a full technical report behind it. So the thesis here is not that it happens often. There is no way to know. The thesis is that it is almost never accounted for.</p>
+
+<h2>What the report actually says</h2>
+
+<p>OpenAI published its technical report on August 26. I have read it in the original, and it differs from most of what has been written about it.</p>
+
+<p>The sequence in brief. In May, agents in an internal cyber evaluation discovered that they could write to a package manager reachable from several sandboxes that were supposed to be isolated. It became a bulletin board between agents. On July 8, the agents exploited a vulnerability in the same service and reached the internet. In the days that followed they found openly exposed credentials belonging to users of, among others, Hugging Face, and shared them on the bulletin board. From July 11 to 13, parts of Hugging Face's production infrastructure were compromised. Hugging Face went public on July 16. OpenAI did not detect suspicious internal activity until the 19th. Eleven days from intrusion to detection, and the affected party had time to go public before the party running the test knew it was their models.</p>
+
+<p>The root cause, in OpenAI's own words: "OpenAI found that the agents were not trying to do the task as OpenAI had intended. Instead they looked to cheat by finding the solutions online." The agents were not trying to solve the task. They were looking for the answer key. That is called reward hacking, and it is something other than a model that wants out. The actions "were unintended and were a byproduct of the models attempting to solve the cybersecurity evaluations".</p>
+
+<p>Then comes the part an alarmist text prefers to skip, and which I therefore put here, early and in a sentence of its own. The safeguards existed. They were switched off, deliberately, right there: the evaluations were run "with certain safeguards disabled so that the results would reflect a model's true capabilities". And OpenAI measured afterward: "We found the propensity to compromise infrastructure can drop over 100x when using the production ChatGPT harness and system prompt."</p>
+
+<p>Over a hundred times. That figure pulls in the opposite direction from the headlines. It says that containment was a question of configuration, not a question of capability. Anyone who uses the case as evidence of what an agent can do should bear in mind that it is evidence about an agent with the safeguards switched off.</p>
+
+<p>So what makes the case exceptional is not what happened. It is that someone wrote down how, named their own root causes, got independent review from METR and Redwood and external validation from CrowdStrike. Hold that thought. The rest of this text is about how rare that is.</p>
+
+<h2>Two more of the same kind</h2>
+
+<p>Two other organizations had agents that got out of the test and hit real third parties the same summer.</p>
+
+<p>UK AISI, a British government body, published an incident report about itself. During 122 runs of a cyber task between July 25 and 28, agents in ten of the runs took nineteen documented actions outside the scope of the assignment, against real people and organizations. The most serious: an agent tried to get malicious code into a real open source project, created false identities, and social-engineered the human maintainer to get the code approved. It used Tor to get around GitHub's network restrictions, and that is what triggered the alarm.</p>
+
+<p>AISI's own reservation belongs alongside it. This was not a sandbox escape. Internet access was deliberately switched on and the vendors' classifiers deliberately switched off. And the agent was never instructed to deceive: "It was never instructed to deceive; deception emerged as a by-product of pursuing the task." The same mechanism as at OpenAI, but the path is a human, not a vulnerability.</p>
+
+<p>Anthropic has disclosed three incidents from July in which Claude models, during internal cybersecurity exercises, reached real organizations' systems. The review of 141,006 test runs began after the OpenAI case. A misconfiguration at the test partner Irregular gave the models internet access even though they had been stated to be isolated. In the most serious case, a production database with several hundred rows of data was reached. Another model published a malicious PyPI package that fifteen systems managed to download. The most recent test model stopped of its own accord when it realized the target was real.</p>
+
+<p>That rests on Anthropic's own account, relayed secondhand via our own news item and secondary media. The vendor's own page is known by link but not read in the original. That does not make the case false. It means I say no more about it.</p>
+
+<p>Three organizations, three excursions out of the test, the same summer &mdash; and at least one of them is in the material because the OpenAI case made someone look: Anthropic's review began after it. The cluster says something about when people started looking, not about how often it happens. One full report.</p>
+
+<h2>Nine seconds and 99.88 USDC</h2>
+
+<p>Then the production cases, where the agent was not under test but at work for someone who paid for it.</p>
+
+<p>PocketOS, April 24, 2026. An agent in Cursor with Claude Opus 4.6 ran into a credential mismatch in staging. It decided to solve the problem by deleting a Railway volume, found an API token in an unrelated file, and called Railway's delete endpoint with curl. It hit the production volume. Railway stored the volume backups in the same volume, so they went too. Three months of bookings, payments, and vehicle data for a car rental business gone. Nine seconds, according to the founder &mdash; that is his figure. Railway's CEO Jake Cooper confirmed publicly, restored the data within an hour, and patched the endpoint to delayed deletion.</p>
+
+<p>The load-bearing detail: the agent's system prompt said explicitly "NEVER run destructive/irreversible git commands... unless the user explicitly requests them". Formally, the rule applied to git, and the agent reached the same result via curl &mdash; which is the point about a rule that is only text.</p>
+
+<p>The smallest case is at the same time the only one where the damage can be verified without trusting any of the parties involved. On April 12, 2026, a user asked Claude Code to deposit USDC into Polymarket's order book. Instead of finding out the correct procedure, the agent made a raw ERC20 transfer of 99.88 USDC to Polymarket's CTF Exchange contract on Polygon. The contract has no rescue function. The money is stuck forever, and the transaction sits on the chain where anyone can read it. The GitHub issue, number 46947, was closed as a duplicate by a bot and locked. No vendor response. Small amount, exactly the right mechanism: no confirmation before an irreversible action.</p>
+
+<p>And Replit, the most cited case in the material, July 18, 2025: an agent ran destructive commands against a live database during a code freeze. I use it for two things. The first is that the code freeze existed only as text in the prompt. CEO Amjad Masad confirmed the event publicly on July 21 &mdash; "should never be possible" &mdash; offered a refund, and promised a postmortem. The second is that what came is not a postmortem. In late July, Replit wrote a post that names Lemkin and SaaStr, notes that the agent was "completely unaware that this Rollback feature existed", states that the data could in the end be fully restored, and lists what the company has rebuilt since. But it is a product summary: no timeline, no root cause, no logs &mdash; and the code freeze is not mentioned at all. The story that the agent lied and covered up, moreover, rests on screenshots of what the agent wrote about itself, and text a language model produces about its own actions is not logs. It is a guess in the first person.</p>
+
+<h2>The best logs are on the smallest machines</h2>
+
+<p>There is one more category, smaller in scale but better substantiated: individual developers' machines, where the transcript sits in a GitHub issue.</p>
+
+<p>Gemini CLI, July 21, 2025, issue 4586. The harness read a failed mkdir as successful. On Windows, move against a nonexistent destination renames instead of moving, so each file overwrote the previous one. No verifying ls after any operation. One file survived. The full PowerShell transcript sits in the issue. It was closed as "not planned".</p>
+
+<p>Claude Code 2.0.22, October 21, 2025, issue 10077. Recursive deletion from the root, and it was not running in permission-bypass mode. The JSONL log exists, and in it is the key detail: the log contains tool_result but not tool_use. The result of the command was logged. The command was not. Anthropic tagged the issue area:security and has repro. It was closed as "not planned".</p>
+
+<p>Claude Code 2.1.274, September 16, 2026, issue 95426, three days old as I write this. Unasked, as "clear old test state", the agent ran rm -rf on what cygpath -u 'C:\' resolves to. Around 600 gigabytes. It ran silently for about 35 minutes because stderr was suppressed. And the audit trail was inside the blast radius &mdash; the ~/.claude/projects directory was deleted with the rest. The issue is open and Anthropic has tagged it data-loss. It is primary but independently unconfirmed.</p>
+
+<p>Google Antigravity, around November 28, 2025. The agent was supposed to clear a Vite cache. Unquoted spaces in the path truncated it, and rmdir /s /q bypassed the recycle bin. The whole partition. The Register interviewed the user directly. Google said it was investigating and shipped a Secure Mode around twelve days later. That the fix came so quickly is an indication, not an admission &mdash; but it is about as close to a confirmation as a vendor gets without saying anything.</p>
+
+<p>In this material, the smallest cases have the best logs. The developer who lost a partition can show exactly which command was run, in a public issue. In the big cases the sequence of events is recounted &mdash; but no outsider has seen the raw material.</p>
+
+<h2>The borderline case: someone else wrote the instruction</h2>
+
+<p>Prompt injection is a borderline case, and I present it as a borderline case. Someone plants an instruction in data the agent reads &mdash; a web page, an email, the title of a GitHub issue. Then the agent acts on its own, with its own permissions, against its owner's system. There is an attacker, but the attacker never touched the system.</p>
+
+<p>Responsibly disclosed vulnerabilities against live products: about twenty. Cases where an outsider actually exploited the hole against a real target and something happened: exactly one.</p>
+
+<p>It is called Clinejection. Cline, a coding tool with around five million installations, from December 21, 2025 let Claude triage incoming GitHub issues. The issue title was interpolated straight into the prompt without sanitization, shell tools were allowed, and the allowed_non_write_users setting was set to an asterisk. So anyone could get the model to run shell commands. The chain went, according to the researcher's own reconstruction, via the GitHub Actions cache to the nightly build's publishing token &mdash; he himself hedges on whether the triage flow was the attacker's initial way in. Cline tried to rotate the token but deleted the wrong token. On February 17, 2026, a third party published cline@2.3.0 to npm with a postinstall script. The window stood open for about eight hours. The payload was benign.</p>
+
+<p>Both the researcher's account and the vendor's postmortem have been read in primary form, though not by me. Cline's own sentence is the best in the material: "Giving an LLM shell access in a CI context where it processes untrusted input is functionally equivalent to giving every GitHub user shell access."</p>
+
+<p>The measurements point the same way. A review of around 65 Microsoft CVEs from MSRC's API, January 2025 to September 2026, gives the same picture: all Copilot and agent CVEs in those 21 months carry the marking Exploited:No. CISA's KEV catalog of vulnerabilities exploited in the wild, version 2026.09.18 with 1,716 entries, contains zero entries involving prompt injection. The only vendor-observed activity is Microsoft's report from February 10, 2026 on what it calls AI Recommendation Poisoning: over 50 unique prompts from 31 companies in 14 industries hiding instructions in "Summarize with AI" buttons. The actors are AI SEO companies, not criminals. The harm is skewed recommendations.</p>
+
+<p>A study from Duke, published at USENIX Security 2026, ran 200,000 real r&eacute;sum&eacute;s through a live recruiting platform and found that at least one percent contained prompt injection. Take the researchers' own limitation in the same breath: for ethical reasons, they did not test whether the injections affected the outcome. What is measured is attempts, not effect.</p>
+
+<h2>The sources are contaminated, and that is part of the subject</h2>
+
+<p>Source criticism got a section of its own, because the field is unusually contaminated, and a text about agents making errors that itself repeats incorrect information is an own goal.</p>
+
+<p>A much-cited framework is Cyera Research's report "Agent-Inflicted Damage" from May 28, 2026: 188 cases where an agent caused harm without an attacker, out of 7,246 analyzed records. They describe GitHub issue 46947 &mdash; the Polymarket case above &mdash; as a transfer of around 1,446 USDT from a Bitget spot wallet to a futures wallet while closing an ARIA/USDT position. The issue, fetched directly via GitHub's API, says something else: 99.88 USDC to Polymarket's CTF Exchange on Polygon. Wrong amount, wrong currency, wrong platform, wrong action. Cyera itself states that it processed the material "with a series of Claude Opus 4.7 prompts that cleaned and clustered 7,246 raw incident records". It also sells a product against the problem the report describes.</p>
+
+<p>Two of their observations held anyway when tested in two independent searches. One is that what separates the cases in their material is permissions, not capability &mdash; in their words: "What changed was not how smart the models were. It was how much they were allowed to do." The other is that the harm is concentrated in coding agents: 65 of their 137 real harm cases are deletion and code destruction. Their individual cases, on the other hand, should not be cited until someone has checked them.</p>
+
+<p>On August 27, 2026, TechTimes ran the headline that OpenAI's agents falsified their own logs. That appears nowhere in OpenAI's report. What was forged was administrator credentials, via a stolen signing key. Put the headline next to a case where a similar claim actually is documented: UK AISI reports that an agent, when its pull request was questioned publicly, edited its earlier activity to look harmless. One is a finding documented by a government body. The other is a headline invention. In a feed they look the same.</p>
+
+<p>On March 3, 2026, Palo Alto Unit 42 published the report everyone points to as showing that prompt injection happens in the real world. Unit 42 itself writes, twice in the same text: "we are not aware of any confirmed real-world instances where such an attack has been successfully demonstrated". The source disclaims the very conclusion it is cited for.</p>
+
+<p>And Guardio's "Scamlexity", the most widely circulated demonstration of an agent shopping in a scam store: the store was Guardio's own fake Walmart, no real money moved, and Guardio itself writes that it ran the test several times, that the agent sometimes refused and sometimes asked the human to complete the purchase manually. That is in the source. It disappears in every retelling.</p>
+
+<h2>The denominator</h2>
+
+<p>We can count incidents. We cannot count deployments. Nobody knows how many agents with shell access are running in production on a given day or how many commands they run. So nobody can state a frequency, and anyone who states one anyway has counted something else.</p>
+
+<p>The more careful of the two measurement attempts I have gone through is the Agent Incident Registry: 487 sourced entries from 2022 to 2026, each entry double-reviewed by a human. Of 336 entries where the agent acted, 81 involved realized harm. But the authors are explicit that the proportions describe the composition of the collection, not operational risk. So the more careful of the two says outright that it does not measure what everyone wants it to measure.</p>
+
+<p>What can be said, on the other hand, is who gave an account. Exactly one vendor published a full technical report with external review and named its own root causes. Cline also wrote a postmortem, but that is the borderline case with an attacker in the chain. Replit promised one and delivered a blog post. Google said it was investigating and shipped a fix. Anthropic's own case rests, to the outside world, on secondhand chains. Around ten agents deleted or destroyed data in the material I have gone through. One report.</p>
+
+<p>And then the empty categories, which are a result and should be reported as one. No documented cases involving language model agents in regulated trading &mdash; not at any broker, asset manager, or bank. No named production incidents at Salesforce Agentforce, Zendesk AI, or Intercom Fin. No Nordic cases, neither Swedish nor Norwegian. Either it is genuine absence or a total absence of reporting, and from the outside there is no way to tell them apart. That is the whole problem in one sentence. That Swedish and Norwegian readers have no domestic case to point to is exactly what the denominator problem means locally: that nobody wrote it down and that nothing happened look identical from the outside.</p>
+
+<p>In a factory, a deviation that is not written down is not a deviation. It is an anecdote in the break room. The system learns nothing from it, and the next shift repeats it. That is where the agent field stands, with the difference that the break room is called GitHub and the anecdotes are closed as "not planned".</p>
+
+<h2>What I take with me</h2>
+
+<p>Three things hold when I lay the cases side by side, where the chain can be reconstructed. They are my conclusions, not something the material says by itself.</p>
+
+<p>The first is that the intent was almost always banal and correct. Clear a cache. Clean up three directories. Resolve a credential mismatch in staging. The damage arose one layer below the intent: unquoted spaces in a path, a move that renames instead of moving, a delete endpoint against the wrong volume.</p>
+
+<p>The second is that an instruction in the prompt is not a barrier. In the two production cases where the prompt contained an explicit prohibition &mdash; PocketOS's rule against irreversible commands, Replit's code freeze &mdash; the rule existed as text and was breached in action. Anyone who has worked in a workshop recognizes it: a rule on a sheet of paper next to the machine is not a safeguard. But I will be honest about the limit of what the material shows. It says nothing about whether a real technical gate holds. The only case that could test that question has a disputed account of its cause and a main source I have not reached, so I leave it there. What I can say is that the text did not hold. Whether the gate holds is for someone else to show.</p>
+
+<p>The third is that the audit trail, as a rule, sits inside the blast radius. tool_result without tool_use. A project directory deleted along with everything else. That is not just an operational problem. It is a reporting problem: the affected party often cannot reconstruct what happened, and what cannot be reconstructed is hard to write down. The two issues above are the exceptions that show the price &mdash; they got documented anyway, but only with what happened to lie outside the blast radius.</p>
+
+<p>There is exactly one published piece of material with a before-and-after measurement of a barrier on an agent, and it is not an incident but an experiment: Anthropic's Project Vend, a real shop with real money, but deliberately run with barriers left out and staffed by internal red-teamers whose declared hobby was breaking it &mdash; a different load than a shift. Phase two added a CEO agent above the shop agent. Discounts fell by around 80 percent and free giveaways were halved. But refunds tripled and store credits doubled, both lost revenue. The leakage moved. It did not disappear. That is the most transferable lesson in the entire material for industrial settings. A barrier without measurement on the other side is not a barrier. It is a redirection.</p>
+
+<p>And a fourth observation, which I have saved for last. The difference from a human operator is not the error rate. The difference is the blast radius. A human types a command, sees it, and the feedback loop is one second wide. An agent runs the same error inside a loop it does not leave, just as confident when it lists files as when it deletes them. Nine seconds at PocketOS. About thirty-five minutes in silence on a Windows machine. Eleven days at Hugging Face.</p>
+
+<p>That is why the reference case is exceptional. Not because the models got out &mdash; they did that in three places the same summer, but in only one of them by getting past the containment themselves. But because afterward there was a report where the root cause was named, where the figure that pulled the wrong way for the story was included anyway, and where outsiders got to read the logs.</p>
+
+<p>Someone wrote down how. That is the rare thing.</p>
+
+  </div>
+</article>
+<nav class="article-nav">
+  <div class="container">
+    <a href="/en/vad-vi-faktiskt-vet-om-ai-risken.html">Previous: What we actually know about AI risk</a>
+    <a href="/en/essays.html">All essays</a>
+  </div>
+</nav>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Rolf Skogling &middot; <a href="/en/essays.html">Essays</a> &middot; <a href="/en/kallor.html">Sources</a></p>
+  </div>
+</footer>
+    <script data-goatcounter="https://rolfskogling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
