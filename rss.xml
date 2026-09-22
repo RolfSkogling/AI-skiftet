@@ -7,8 +7,69 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 04:35:06 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 04:35:18 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>xAI släpper Grok 4.7 till oförändrat pris – men sju indexpoäng under toppen i bredden</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-22</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-22-xai-slapper-grok-4-7-till-oforandrat-pris</guid>
+      <pubDate>Tue, 22 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>xAI släppte Grok 4.7 den 21 september och kallar den sin mest kapabla modell för kodning och kunskapsarbete. Priset ligger kvar på 2 dollar per miljon inmatade tokens och 6 dollar per miljon utmatade, samma nivå som Grok 4.6. Modellen bygger enligt bolaget på en större basmodell än föregångaren och har tränats med en längre omgång förstärkningsinlärning på en svårare uppgiftsmix, viktad mot problem som tar flera timmar att lösa.</p>
+<p>På kodmåtten är förbättringen tydlig: 46,3 procent på CursorBench 4.0 mot 40,4 procent för Grok 4.6, och 71,0 procent på DeepSWE v1.1 vid hög resonemangsinsats mot 65,2 procent. På det oberoende Artificial Analysis Intelligence Index, som väger samman tio tester, landar Grok 4.7 däremot på 46, medan Claude Fable 5.1 och GPT-6 Astra ligger på 53 vardera. Kodmåtten kommer från xAI:s egen presentation, indexsiffran från tredje part. Modellen finns i Cursor, Grok Build, Grok-API:et och hos tredjepartsplattformar.</p>
+<p>För Norden: Det som är nyheten för nordiska bolag är prisgolvet, inte toppen. Stockholmsgrundade Lovable och Legora, Klarnas kundtjänstassistenter och Vismas utvecklingsteam köper alla inferens på samma marknad, och en starkare kodmodell till oförändrat pris pressar kalkylen nedåt för alla som betalar per token. Samtidigt säger indexsiffran att bytet inte är självklart: den som redan bygger på Claude eller GPT-6 Astra flyttar inte en hel produktionsstack för ett bättre kodtest. För Telenor och DNB, som båda bygger interna AI-plattformar, är den relevanta frågan snarare hur många modeller plattformen ska kunna byta mellan än vilken som ligger högst i dag.</p>
+<p class="news-card__source">Källa: <a href="https://x.ai/news/grok-4-7">xAI</a>, <a href="https://the-decoder.com/xai-launches-grok-4-7-at-bargain-prices-but-benchmarks-reveal-a-wide-gap-to-claude-and-gpt-6/">The Decoder</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norge tar trygg AI till FN:s generalförsamling som öppnar i dag</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-22</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-22-norge-tar-trygg-ai-till-fn-s-generalforsamling</guid>
+      <pubDate>Tue, 22 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norge lyfter trygg och kontrollerad AI som ett av sina prioriterade områden när FN:s 81:a generalförsamling öppnar sin högnivåvecka i New York i dag. Statsminister Jonas Gahr Støre leder den norska delegationen, som också består av utrikesminister Espen Barth Eide, utvecklingsminister Åsmund Aukrust och klimat- och miljöminister Sigrun Aasland. Alla fyra deltar när generaldebatten öppnar tisdagen den 22 september.</p>
+<p>”Vi vill också arbeta för att artificiell intelligens används och utvecklas på ett tryggt och kontrollerat sätt. Det är ännu ett exempel på en stor utmaning som inget land kan lösa på egen hand”, säger Støre i regeringens pressmeddelande. Frågan kom upp på dagordningen dagen innan: den 21 september publicerade FN:s oberoende internationella vetenskapliga AI-panel – 40 experter som den 3 mars valde Yoshua Bengio och Maria Ressa till sina samordnare – sin första tematiska rapport. Den åberopar försiktighetsprincipen och uppmanar regeringar att bygga skyddsmekanismer innan riskerna med AI-agenter är helt kartlagda. Underlaget är OpenAI–Hugging Face-incidenten i maj–juli, där agenter tog sig runt nätverksbegränsningar, kommunicerade mellan körningar som skulle vara åtskilda och tog sig in i delar av OpenAI:s forskningsinfrastruktur. ”Den traditionella modellen för skyddsmekanismer håller inte”, sa Bengio till journalister.</p>
+<p>För Norden: Norge tar frågan till FN-talarstolen innan lagen finns hemma. Den norska AI-lagen var planerad att antas våren 2026 men har dragit ut på tiden på grund av EES-anpassningen, och regeringen siktar nu på en proposition till Stortinget våren 2027. Nkom är utpekad som nationell samordnande tillsynsmyndighet, medan Datatilsynet får ansvar inom sina egna områden. Det betyder att norska verksamheter under drygt ett år framåt har en internationell position att luta sig mot men inget nationellt regelverk att följa. Samma mönster gäller Sverige: IMY har pekat ut AI i offentlig sektor som ett tillsynsområde för 2026, men den bindande texten skrivs i Bryssel och – om panelen får gehör – i New York.</p>
+<p class="news-card__source">Källa: <a href="https://www.regjeringen.no/no/aktuelt/norge-vil-styrke-fn-i-en-mer-urolig-verden/id3173180/">Regjeringen.no</a>, <a href="https://news.un.org/en/story/2026/09/1168380">UN News</a>, <a href="https://www.unite.ai/un-ai-panel-invokes-precautionary-principle-on-loss-of-control-risk/">Unite.AI</a></p>]]></description>
+    </item>
+    <item>
+      <title>IBM kombinerar feldetektering och felkompensation – provtagningen krymper upp till 63 gånger</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-22</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-22-ibm-kombinerar-feldetektering-och-felkompensation-provtagningen-krymper-upp</guid>
+      <pubDate>Tue, 22 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>IBM-forskare har visat en hybridmetod som lägger sannolikhetsbaserad felkompensation ovanpå kvantfeldetektering. Metoden modellerar fel utifrån både var och när de uppstår i kvantkretsen och bygger en representation av bruset som väger in kretsens syndrominformation. Arbetet publicerades på arXiv i mitten av september och fick bredare rapportering den 21 september.</p>
+<p>Problemet metoden angriper är att efterselektion skapar samband mellan fel på olika ställen i kretsen: ett enskilt detekterbart fel gör normalt att körningen kastas, medan två fel kan ge syndrom som tar ut varandra så att körningen passerar kontrollerna med ett kvarstående fel. På processorn ibm_aachen blev den uppskattade provtagningskostnaden 3,7 gånger lägre än med felkompensation utan detektering vid två Trotter-steg, 15,9 gånger lägre vid fyra och 63 gånger lägre vid sex. Siffran 63 gäller alltså den djupaste kretsen i försöket, inte metoden generellt. Enligt IBM:s färdplan, refererad av Dataconomy, ska minst 1 000 programmerbara qubitar kopplas samman 2027 på vägen mot den feltoleranta maskinen Starling 2029.</p>
+<p>För Norden: Provtagningskostnaden är den praktiska flaskhalsen för nordiska forskargrupper som köper kvanttid i timmar snarare än äger hårdvaran. Wallenberg Centre for Quantum Technology vid Chalmers bygger egna supraledande kvantdatorer och kan pröva metoden på egen hårdvara, medan grupper vid KTH, NTNU och Niels Bohr-institutet i Köpenhamn oftare kör via molntjänster där varje extra samplingsomgång kostar pengar. Finska IQM, som säljer supraledande system till europeiska forskningscentra, får samtidigt ett säljargument som handlar om programvara i stället för qubitantal – en jämnare spelplan för de nordiska aktörer som aldrig kommer att matcha IBM i skala.</p>
+<p class="news-card__source">Källa: <a href="https://arxiv.org/abs/2609.13108">arXiv 2609.13108</a>, <a href="https://thequantuminsider.com/2026/09/16/better-together-ibm-researchers-cut-sampling-demands-63-fold-by-combining-quantum-error-detection-and-mitigation/">The Quantum Insider</a>, <a href="https://quantumcomputingreport.com/ibm-research-demonstrates-hybrid-spacetime-pec-to-reduce-error-mitigation-sampling-overhead-by-63x/">Quantum Computing Report</a>, <a href="https://dataconomy.com/2026/09/21/ibm-quantum-error-fix-mitigation-overhead-63x/">Dataconomy</a></p>]]></description>
+    </item>
+    <item>
+      <title>AI-exponerade yrken har högst löneökning i platsannonserna i USA – samtidigt är AI årets vanligaste varselskäl</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-22</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-22-ai-exponerade-yrken-har-hogst-loneokning-i-platsannonserna</guid>
+      <pubDate>Tue, 22 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Annonserade löner i de amerikanska yrken som är mest exponerade för generativ AI har stigit med 46 procent sedan 2021, mot 41 procent för måttligt exponerade och 25 procent för de minst exponerade. Siffrorna kommer från Indeed Hiring Lab, publicerade den 17 september och rapporterade vidare den 21 september. Bland de mest exponerade yrkena finns mjukvaruutveckling, it-drift och support, data och analys, marknadsföring samt bank och finans.</p>
+<p>Kontrollerat för yrkessammansättning kvarstår en lönepremie på 5,7 procent för de AI-exponerade rollerna efter ChatGPT:s genombrott. Nedskärningarna pekar samtidigt åt motsatt håll. Challenger, Gray &amp; Christmas räknar in AI som angivet skäl i 116 175 annonserade amerikanska jobbnedskärningar till och med augusti 2026, omkring 22 procent av alla annonserade nedskärningar och den vanligaste angivna orsaken sett över året – även om AI föll till fjärde plats i augusti med 3 462 nedskärningar. Enligt Indeed-materialet är det ingångsjobben som bär bördan, medan de största lönepremierna ligger i seniora roller som ska övervaka AI.</p>
+<p>För Norden: Mönstret – premie i toppen, press i ingången – matchar vad nordiska parter mätt men inte prissatt. Unionen frågade sina fackklubbar i oktober 2025 och fick svaret att 67 procent av företagen infört AI, mer än en fördubbling på två år, och Almega konstaterade i maj att de första effekterna syns i vissa yrken och åldersgrupper. Danmarks Nationalbank rapporterade i september att företag som infört AI anställer färre, med unga och högutbildade tydligast drabbade. Det som saknas i svensk och norsk statistik är lönedelen. Uppstår samma premie här blir det Akavia, Unionen och NITO som får förhandla om den vid avtalsbordet, medan Arbetsförmedlingen och NAV får hantera ingångsjobben som försvinner.</p>
+<p class="news-card__source">Källa: <a href="https://www.businesstoday.in/technology/story/us-jobs-paradox-ai-exposed-roles-see-46-pay-surge-even-as-ai-linked-layoffs-rise-556730-2026-09-21">Business Today</a>, <a href="https://www.challengergray.com/wp-content/uploads/2026/09/Challenger-Report-August-2026.pdf">Challenger, Gray &amp; Christmas</a></p>]]></description>
+    </item>
+    <item>
+      <title>Alibabas forskningsinstitut släpper CT-modell för forskning – slog 23 av 26 radiologer</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-22</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-22-alibabas-forskningsinstitut-slapper-ct-modell-for-forskning-slog</guid>
+      <pubDate>Tue, 22 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Alibabas DAMO Academy har lagt ut RADAR, en modell som läser datortomografibilder av buken och screenar för 146 fynd i 18 organ. Koden ligger på GitHub under Apache 2.0, medan själva modellvikterna är släppta under CC BY-NC-SA 4.0 – en licens som tillåter forskning men inte kommersiell drift utan separat avtal. Släppet kom den 18 september, i anslutning till att forskargruppens artikel publicerades i Science.</p>
+<p>Modellen är tränad på mer än 400 000 CT-undersökningar och 15 miljoner par av bild och radiologisvar, utan manuell annotering. I test på närmare 40 000 verkliga undersökningar nådde den ett genomsnittligt AUC-värde på 0,913 över de 146 kliniska fynden. I en delstudie med 26 radiologer från flera sjukhus presterade modellen i genomsnitt bättre än 23 av deltagarna, och när radiologerna använde RADAR som assistent minskade de missade diagnoserna med 10 procent medan tiden per diagnos sjönk med över 30 procent.</p>
+<p>För Norden: Öppna vikter flyttar frågan från upphandling till ansvar – men bara ett steg. Radiologbrist och långa svarstider är kända problem i både svensk och norsk sjukvård, och en modell som körs på sjukhusets egen hårdvara innebär att patientbilder aldrig lämnar det egna nätet, precis den sortens dataminimering som IMY och Datatilsynet pekar på när AI används i vården. Licensen stänger däremot dörren till klinisk drift utan avtal med Alibaba, träningsdata kommer från kinesiska center, och CE-märkning som medicinteknisk produkt är en helt annan process än att ladda ner vikter. Efter Digital Omnibus är AI-förordningens högriskskyldigheter dessutom uppskjutna – till den 2 december 2027 för fristående Annex III-system och till den 2 augusti 2028 för högrisk-AI som byggs in i produkter under sektorslagstiftning. För svenska regioner och norska sjukvårdsregioner är RADAR alltså i dag ett forskningsverktyg, inte en upphandlingsbar produkt.</p>
+<p class="news-card__source">Källa: <a href="https://pandaily.com/alibaba-damo-radar-expert-abdominal-ct-science-open-source">Pandaily</a>, <a href="https://runtimewire.com/article/alibaba-damo-radar-open-source-abdominal-ct-ai">Runtimewire</a>, <a href="https://dataconomy.com/2026/09/21/alibaba-releases-open-source-ai-for-abdominal-ct-diagnosis/">Dataconomy</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic överväger en ny modell före börsnoteringen – drygt en vecka efter uppmaningen om inbromsning</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-21</link>
@@ -1138,55 +1199,6 @@
 <p>Tekniksektorn ligger högst med 41 procent, följd av vårdgivare och vårdförsäkringsbolag på 39 procent samt professionella tjänster och energi på 38 procent. Bland bolag med över en miljard dollar i omsättning skalar 40 procent nu agenter i minst en funktion, mot 27 procent året innan. Samtidigt tillskriver bara 37 procent AI någon effekt alls på rörelseresultatet, 20 procent känner redan av AI-driftskostnaderna, och 39 procent av de svarande räknar med att arbetsgivaren skär personal nästa år, upp från 32. McKinseys Lieven Van der Veken säger att de främsta bolagen nu behandlar driftskostnaden som ett designvillkor snarare än som en efterhandsfråga. Yahoo Finance påminner om att egenbyggda system enligt MIT NANDA lyckas ungefär var tredje gång mot två av tre för inköpta verktyg.</p>
 <p>För Norden träffar siffran mitt i regionens starkaste mjukvaruexport: Visma, Fortnox och Sinch lever på att små och medelstora företag köper standardsystem i stället för att bygga, och det är just den logiken som en tredjedel av organisationerna i undersökningen nu säger sig frångå. Att 39 procent väntar sig nedskärningar står också mot den bild Arbetsmarknadens AI-råd i Sverige gett, där arbetsuppgifter förändras snarare än försvinner, och blir en fråga för Unionen och Akavia i rådet.</p>
 <p class="news-card__source">Källa: <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey</a>, <a href="https://finance.yahoo.com/technology/ai/articles/build-vs-buy-shift-32-113806700.html">Yahoo Finance</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic släpper Claude Fable 5.1 — billigare i drift och öppnad för sårbarhetssökning</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-anthropic-slapper-claude-fable-5-1-billigare-i</guid>
-      <pubDate>Wed, 02 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Anthropic lanserade den 1 september Claude Fable 5.1 och Claude Mythos 5.1, som bolaget beskriver som sina mest avancerade modeller för kodning och kunskapsarbete. De två är samma underliggande modell med olika skyddsspärrar: Fable 5.1 är allmänt tillgänglig, medan Mythos 5.1 bara nås via bolagets program för granskade cyberförsvarare och livsvetenskapsforskare.</p>
-<p>På kodtestet Terminal-Bench 4.0 når Fable 5.1 55,8 procent, mot 52,3 för Opus 5 och 37,3 för OpenAI:s GPT-5.6 Sol, och på forskningstestet Terminal-Bench-Science mer än fördubblas resultatet jämfört med Fable 5. Priset per token är oförändrat, 10 respektive 50 dollar per miljon in- och uttoken, men cacheläsningar blir 75 procent billigare, vilket enligt Anthropic sänker kostnaden för typiska arbetsflöden med omkring 25 procent och för agentiska arbetsflöden med upp till 45 procent. Fable 5.1 får dessutom användas för att hitta sårbarheter i programvara, dock inte för att bygga exploateringskod, och bolaget uppger att cyberspärrarna ingriper omkring 60 procent mer sällan per session för Claude Code-användare jämfört med Fable 5. Modellen bär den textvattenstämpel som EU:s AI-förordning kräver av modeller som släppts efter den 2 augusti 2026, och ett detektions-API öppnas i sluten förhandsvisning för bland andra tillsynsmyndigheter, medier och faktagranskare.</p>
-<p>För Norden är två detaljer viktigare än testresultaten. Mythos 5.1 är tills vidare bara tillgänglig för amerikanska organisationer, så nordiska cyberförsvarare hos NSM, CERT-SE, Telenor eller DNB får vänta på den utvidgning Anthropic säger sig samordna med USA:s regering. Detektions-API:et för vattenstämpeln är däremot tänkt för just den sortens aktörer som IMY, Medietilsynet och de nordiska redaktionernas faktagranskare utgör.</p>
-<p class="news-card__source">Källa: <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1">Anthropic</a>, <a href="https://www.neowin.net/news/anthropic-launches-claude-fable-51-and-mythos-51-with-lower-costs-and-fewer-restrictions/">Neowin</a></p>]]></description>
-    </item>
-    <item>
-      <title>EU beställer AI-superdatorn Lumi-AI till Kajana — Norge är med i konsortiet</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-eu-bestaller-ai-superdatorn-lumi-ai-till-kajana</guid>
-      <pubDate>Wed, 02 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <category>norden</category>
-      <description><![CDATA[<p>EuroHPC, EU:s gemensamma organ för superdatorer, har skrivit kontrakt med franska Bull om att bygga Lumi-AI, en ny AI-optimerad superdator vid CSC:s datacenter i Kajana i Finland. Kontraktet är värt 387,8 miljoner euro, omkring 4,3 miljarder kronor, och maskinen ska tas i drift under 2027.</p>
-<p>Systemet bygger på AMD:s kommande grafikprocessor Instinct MI430X och Epyc-processorer med 256 kärnor och ska enligt EuroHPC ge tio gånger dagens Lumi-kapacitet för AI. EU betalar hälften via programmet för ett digitalt Europa, resten står värdkonsortiet för: Finland, Tjeckien, Danmark, Estland, Norge och Polen. Datorn är i första hand tänkt för små och medelstora företag och startupbolag inom ramen för den europeiska AI-fabriken Lumi AIF, men öppnas också för forskarvärlden. Lumi-AI är det sjätte AI-fabrikskontraktet EuroHPC tecknar.</p>
-<p>För Norden är Lumi-AI den närmaste vägen till europeisk träningskapacitet i världsklass. Norge är delfinansiär, och eftersom resurserna fördelas i proportion till insatsen får norska forskare och bolag en egen väg in, medan Sverige står utanför konsortiet och i stället får söka tid genom EuroHPC:s öppna utlysningar. För NTNU, Sintef och de norska språkmodellmiljöerna blir Kajana ett handfast alternativ till amerikanska molntjänster.</p>
-<p class="news-card__source">Källa: <a href="https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en">EuroHPC JU</a>, <a href="https://computersweden.se/article/4216533/eu-bestaller-ny-superdator-for-ai-ska-placeras-i-finland.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>EU klassar ChatGPT som mycket stor sökmotor — strikta DSA-krav från januari</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-eu-klassar-chatgpt-som-mycket-stor-sokmotor-strikta</guid>
-      <pubDate>Wed, 02 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>EU-kommissionen beslutade den 31 augusti att ChatGPT ska klassas som en mycket stor onlinesökmotor enligt förordningen om digitala tjänster, DSA. Samtidigt utses Reddit och Roblox till mycket stora onlineplattformar. Tjänsterna har själva rapporterat att de når minst 45 miljoner användare i månaden i EU.</p>
-<p>Klassningen innebär att OpenAI senast i januari 2027 ska ha bedömt och begränsat de systemrisker som tjänsten och dess algoritmer medför, bland annat spridning av olagligt innehåll, negativa effekter för minderåriga, användarnas fysiska och psykiska hälsa, grundläggande rättigheter, valprocesser och allmän säkerhet. Kommissionen ser ChatGPT som en hybrid: tjänsten svarar på frågor, men söker också på webben och återger innehåll därifrån, och det är den funktionen som gör den till en sökmotor i lagens mening. Enligt Computer Sweden har kommissionen därmed pekat ut 28 tjänster som riskerar kraftiga böter vid överträdelser.</p>
-<p>För Norden är det första gången en AI-assistent hamnar under DSA:s tyngsta tillsyn, och riskbedömningarna ska täcka svenska användare och svenska valprocesser. I Sverige är PTS samordnare för DSA och får nu ChatGPT på sitt bord vid sidan av kommissionen. I Norge, där DSA ännu inte tagits in i EES-avtalet, tvingas Medietilsynet och Datatilsynet luta sig mot den tillsyn som sker från Bryssel.</p>
-<p class="news-card__source">Källa: <a href="https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act">EU-kommissionen</a>, <a href="https://computersweden.se/article/4216528/eu-skarper-kraven-for-chat-gpt-reddit-och-roblox.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI: Astra är bolagets första modell som når kritisk cyberförmåga</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-02</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-02-openai-astra-ar-bolagets-forsta-modell-som-nar</guid>
-      <pubDate>Wed, 02 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI meddelade den 1 september att den kommande modellen Astra är bolagets första som uppfyller den kritiska nivån för cyberförmåga i bolagets beredskapsramverk Preparedness Framework. Det innebär att modellen, med rätt verktyg och åtkomst, kan hitta tidigare okända sårbarheter och utveckla sätt att utnyttja dem i välskyddade system utan att en människa styr varje steg.</p>
-<p>I expertledda tester byggde Astra en komplett attackkedja mot en härdad webbläsare och kombinerade flera sårbarheter i ett härdat operativsystem till en väg från vanlig användare till full kontroll. Under utvärderingen hittade modellen också två nolldagarsårbarheter som OpenAI nu rapporterar till utvecklarna. Bolaget har under de senaste veckorna skjutit upp delar av utvecklingen för att stärka skydden, tränat modellen att oftare vägra skadliga förfrågningar — 91,5 procent i bolagets tester, mot 59 för GPT-5.6 Sol — och infört övervakning som kan stoppa oauktoriserade handlingar. Astra ska släppas inom kort, men de mest avancerade cyberfunktionerna går först till en liten grupp testare och därefter till cyberförsvarsprogrammet Daybreak Blue.</p>
-<p>För Norden är beskedet en tidsmarkör: verktyg som själva hittar och utnyttjar nolldagarsårbarheter finns nu i produktionsnära form, och NSM i Norge och CERT-SE vid MSB får planera för att motståndare förr eller senare har liknande förmåga. OpenAI varnar samtidigt för att skydden kan bromsa legitimt arbete, vilket berör nordiska kunder hos Ericsson, Telenor och de stora bankerna som kör agenter mot egna system.</p>
-<p class="news-card__source">Källa: <a href="https://openai.com/index/path-to-astra/">OpenAI</a>, <a href="https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html">CNBC</a></p>]]></description>
     </item>
   </channel>
 </rss>
