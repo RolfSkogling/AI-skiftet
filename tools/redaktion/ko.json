@@ -15,7 +15,48 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [],
+  "ko": [
+    {
+      "id": "claude-opus-5-5-2026-09",
+      "tidigast": "2026-09-23",
+      "senast": "2026-09-25",
+      "kategori": "modeller",
+      "norden": false,
+      "dubblettnyckel": [
+        "Opus 5.5",
+        "Claude Opus 5.5",
+        "Opus 5,5"
+      ],
+      "vinkel": "Anthropic släppte Claude Opus 5.5 den 22 september 2026, två månader efter Opus 5. Vinkeln är PRISET, inte prestandasiffrorna: ett lägre pris på frontlinjemodellen flyttar gränsen för vad som är praktiskt möjligt att bygga, och det är mer konkret för läsaren än en benchmarkrad. Men vinkeln håller bara om prisjämförelsen görs mot konkurrenterna och inte bara mot föregångaren — se måste_med punkt 2. Kontrollera också The New Stacks uppgift om att agentanrop tyst kan dirigeras till en äldre modell: är den bekräftad är den en egen och mer oberoende nyhet än själva släppet, och hör hemma i stycke 2.",
+      "maste_med": [
+        "Listprissänkningen är 20 procent per token, INTE 40: in 5 → 4 dollar och ut 25 → 20 dollar per miljon tokens. De 40 procenten är Anthropics egen modellering av kostnad per UPPGIFT, som kombinerar det lägre tokenpriset med påståendet att modellen använder färre tokens och genererar output över 30 procent snabbare. Skriv aldrig ”40 procent billigare” utan att säga vad som mäts och vem som räknat. Detta är notisens viktigaste precision.",
+        "Prisjämförelsen mot konkurrenterna ska med i stycke 2 när vinkeln är priset. Vid släppet: GPT-6 Astra 10/50 dollar och Gemini 3.1 Pro 2/12 dollar per miljon tokens in/ut. Opus 5.5 på 4/20 är alltså klart billigare än OpenAI:s toppmodell men DYRARE än Googles. Kontrollera alla tre siffrorna mot leverantörernas egna prissidor när notisen skrivs — prisuppgifter från tredjepartssajter föråldras snabbt.",
+        "Allt om prestanda, hastighet, kostnad per uppgift och alignment kommer från Anthropic själva. Det ska framgå i brödtexten, inte gömmas i källraden. Formulering i stil med ”enligt Anthropics eget släppmeddelande”.",
+        "Påståendet att modellen är den starkaste Anthropic testat avser bolagets EGEN automatiserade beteendeaudit. Attribuera, eller omformulera. Obelagda superlativ som ”starkast” och ”mest kapabel” får inte stå oattribuerade (ZuriQ-regeln 2026-07-29).",
+        "”Känns som Fable” återges som citat med avsändare, aldrig som en egenskap hos modellen. Det är marknadsföring, inte en mätning.",
+        "Extern förhandstestning gjordes av Frontier Design OCH METR — inte bara METR. Att en extern part har testat är inte samma sak som att den har publicerat ett resultat. Per 22 september 2026 hittades inga publicerade siffror från någondera. Sök på nytt när notisen skrivs: finns det då en publicerad oberoende mätning väger den tyngre än släppmeddelandet och hör hemma i stycke 2.",
+        "Sonnet 5.5 och Haiku 5.5 ”inom veckor” är ett löfte från Anthropic, inte ett datum. Attribuera."
+      ],
+      "far_inte_pastas": [
+        "Att prissänkningen är 40 procent på listpriset. Listpriset föll 20 procent.",
+        "Att Opus 5.5 är billigast bland frontlinjemodellerna. Gemini 3.1 Pro är billigare per token.",
+        "Att METR eller Frontier Design har bekräftat, validerat eller verifierat Anthropics prestanda- eller alignmentpåståenden. De testade före släpp; något publicerat resultat var inte funnet den 22 september.",
+        "Att ”känns som Fable” är en uppmätt eller verifierad egenskap.",
+        "Att modellen är starkast, mest kapabel eller bäst — oattribuerat.",
+        "Något om datalokalisering eller EU-intern körning som källorna inte säger. Anthropic anger tillgänglighet via AWS, Google Cloud och Azure samt efterlevnad av AI-förordningens märkningsregler; läs inte in mer än så."
+      ],
+      "norden_stycke": "Priset är den del som biter i Norden. En frontlinjemodell som kostar 4 dollar per miljon tokens in flyttar gränsen för vad ett mindre team har råd att köra i produktion — nordiska AI-startups, kommuner och mindre lärosäten har hittills valt bort toppmodellerna på kostnad och kört en billigare modell där den inte räcker till. Samtidigt är Google fortfarande billigare per token, så valet är inte självklart. Modellen nås via AWS, Google Cloud och Azure, alltså de plattformar där Ericsson, Telenor, DNB och SEB redan kör, och Anthropic uppger att den följer AI-förordningens märkningsregler (förordning EU 2026/1744, i kraft 27 juli 2026). För KTH, Chalmers, NTNU och UiO är tokenpriset direkt avgörande för hur mycket forskningsberäkning som ryms i ett anslag från Vinnova eller Forskningsrådet.",
+      "kallor": [
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+        "https://thenewstack.io/claude-opus-5-5-release/",
+        "https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing/",
+        "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/"
+      ],
+      "underlag": "",
+      "lagd": "2026-09-22"
+    }
+  ],
   "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
