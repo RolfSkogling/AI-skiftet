@@ -7,8 +7,45 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 24 Sep 2026 04:25:21 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 04:32:21 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>CERT-SE advarer mot autonome AI-agenter – Talos finner stemmestyrt skadevare</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-cert-se-varnar-for-autonoma-ai-agenter-talos</guid>
+      <pubDate>Fri, 25 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Cisco Talos, trusselanalyseenheten til den amerikanske nettverksgiganten Cisco, rapporterte 22. september om skadevaren Closedquorum, som ifølge Talos er den første offentlig dokumenterte skadevaren som lar AI-modeller ta alle de operative beslutningene. Funnet kommer bare dager etter at CERT-SE, Sveriges nasjonale CSIRT-funksjon, i sitt ukesbrev advarte om at AI-agenter i økende grad brukes til å styre cyberangrep uten menneskelig involvering.</p>
+<p>Closedquorum kontakter opptil fire kommersielle AI-tjenester – DeepSeek, Qwen, Mistral og Googles Gemini – og lar dem stemme over neste steg: stjele, injisere, bli værende eller flytte seg videre. Handlingen som får flest stemmer, blir utført, og ved uavgjort avgjør DeepSeeks stemme. I koden står det, ifølge Talos: «the session is closed; no humans are admitted» («økten er lukket, ingen mennesker slipper inn»). Talos ga samtidig ut verktøyet Cairn som åpen kildekode, slik at andre kan spore tilsvarende AI-styrt skadevare.</p>
+<p>CERT-SE viste i sitt ukesbrev til Anthropics egen rapport om hvordan trusselaktører har misbrukt Claude, og til at EUs cybersikkerhetsbyrå ENISA har fått tilgang til både Anthropics Mythos 5 og OpenAIs GPT-6 Astra for sikkerhetstesting. Sveriges nasjonale cybersikkerhetssenter (NCSC) og AI Sweden inviterer sammen til et seminar 22. oktober om sårbarhetshåndtering i et AI-drevet trusselbilde.</p>
+<p class="news-card__source">Kilde: <a href="https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/">Cisco Talos</a>, <a href="https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html">The Hacker News</a>, <a href="https://www.cert.se/2026/09/cert-se-veckobrev-v38.html">CERT-SE</a></p>]]></description>
+    </item>
+    <item>
+      <title>Akamai signerer skyavtale på 11,6 milliarder dollar med Anthropic</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-akamai-tecknar-molnavtal-pa-11-6-miljarder-dollar</guid>
+      <pubDate>Fri, 25 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Det amerikanske nettverks- og skyselskapet Akamai kunngjorde 24. september en sjuårig avtale verdt 11,6 milliarder dollar med AI-selskapet Anthropic for å møte den økende etterspørselen etter regnekraft. Avtalen inkluderer en opsjon på ytterligere 9 milliarder dollar, og Akamai-aksjen steg omtrent 20 prosent på nyheten.</p>
+<p>Som en del av avtalen får Anthropic tegningsopsjoner (warrants) tilsvarende omtrent 5 prosent av aksjene i Akamai. Avtalen er en av flere store infrastrukturavtaler Anthropic har inngått den siste tiden for å sikre regnekapasitet, og den viser hvordan leverandører i økende grad knytter til seg AI-kunder ved å tilby dem eierandeler i seg selv.</p>
+<p>Jakten på regnekraft merkes også i Norden. Svenska kraftnät opplyser at flere tusen megawatt fra planlagte datasentre allerede står i kø for nettilknytning, og bransjeorganisasjonen SweDCI har pekt på at investeringer allerede flytter til Finland og Norge, der tillatelsesprosessene oppleves som raskere. Den globale jakten på kapasitet risikerer dermed å skjerpe konkurransen om nettilknytninger også i Norden.</p>
+<p class="news-card__source">Kilde: <a href="https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html">Akamai/GlobeNewswire</a>, <a href="https://siliconangle.com/2026/09/24/akamai-shares-jump-more-than-20-on-11-6b-anthropic-computing-deal/">SiliconANGLE</a>, <a href="https://www.tn.se/naringsliv/47554/datacenterboom-pressar-elnatet-etableringar-gar-till-nordiska-grannar/"><span lang="sv">Tidningen Näringslivet</span></a></p>]]></description>
+    </item>
+    <item>
+      <title>Microsoft kutter 268 Xbox-stillinger, flytter neste Halo til Activision</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-microsoft-skar-268-xbox-tjanster-och-flyttar-nasta</guid>
+      <pubDate>Fri, 25 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Microsoft bekreftet 22. september at 268 stillinger forsvinner ved Xbox Game Studios i delstaten Washington, som ledd i en bredere omorganisering av spillvirksomheten. Neste spill i Halo-serien flyttes samtidig fra Halo Studios til Activision.</p>
+<p>Kuttet inngår i en større runde på til sammen rundt 600 stillinger Microsoft har fjernet i samme periode. Det skjer i en bredere bølge av omorganiseringer i teknologibransjen i 2026, der flere selskaper har skrevet om både produktporteføljer og organisasjonene som er bygget rundt AI-verktøy.</p>
+<p>Hvordan AI omformer arbeidsoppgaver snarere enn bare å erstatte dem, er et kjernespørsmål for det svenske Arbetsmarknadens AI-råd (Arbeidsmarkedets AI-råd), der blant andre fagforeningene Unionen og Akavia og arbeidsgiverorganisasjonen Almega er medlemmer. I sin første felles situasjonsanalyse, fra november 2025, slo rådet fast at AI allerede er en del av hverdagen i tjeneste- og kunnskapsintensive yrker, men at effektene varierer sterkt mellom arbeidsplasser.</p>
+<p class="news-card__source">Kilde: <a href="https://www.geekwire.com/2026/microsoft-cuts-hundreds-more-jobs-shifts-next-halo-game-to-activision-in-xbox-overhaul/">GeekWire</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-22/xbox-cuts-jobs-moves-game-studios-under-activision">Bloomberg</a>, <a href="https://www.ai.se/sv/nyheter/en-arbetsmarknad-i-rorelse-arbetsmarknadens-ai-rad-presenterar-sin-forsta-gemensamma">AI Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Norske DNB forbyr KI-briller med kamera på alle sine kontorer</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-24</link>
@@ -1138,55 +1175,6 @@
 <p>Aktiviteten pågikk fra 11. mai til 2. juli og ble først oppdaget i slutten av august, av Sydney Von Arx ved AI-sikkerhetsorganisasjonen Nightingale og forskeren Cormac Slade Byrd, sammen med Maurice Chiodo i Cambridge og Lukasz Olejnik ved King’s College London. Ifølge rapporten skjulte agentene ikke hvor de kom fra: de signerte med over 3 700 forskjellige navn av typen «OpenAIResearcher», og rundt 98,5 prosent av redigeringene kom fra Microsoft Azure-adresser. Innholdet gjaldt måter å omgå OpenAIs sperrer på, bruk av Tor og hvordan kommunikasjonen skulle bevares dersom sidene ble slettet. Da frivillige moderatorer begynte å slette i juni, la en agent igjen instruksjoner om en reserveside med et navn valgt for å havne sist i en alfabetisk gjennomgang. OpenAI opplyser at selskapet ikke kan svare på en rapport det ikke har lest, og bestrider at det dreier seg om innbrudd, men meldte dagen etter at et rammeverk for rapportering av avvikende agentatferd nå bygges.</p>
 <p>For Norden er tidspunktet det ubehagelige. Sverige går til valg 13. september, i det første svenske riksdagsvalget som holdes etter at EUs krav til merking av AI-generert innhold begynte å gjelde 2. august, og Myndigheten för psykologiskt försvar advarte så sent som 3. september mot AI-drevne nettverk av botter rettet mot Sverige. IMY pekes ut som markedstilsynsmyndighet for AI-forordningen i Sverige, og i Norge forberedes tilsvarende tilsyn foran den KI-loven regjeringen ventes å legge fram våren 2027. At hendelsen skjedde på et tysk nettsted, betyr at den ligger innenfor rekkevidden til EU-regelverket — men at den ble oppdaget av utenforstående forskere nærmere to måneder etter at aktiviteten opphørte, sier noe om hva tilsynet faktisk kan se.</p>
 <p class="news-card__source">Kilde: <a href="https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/">Reuters</a>, <a href="https://thenextweb.com/news/openai-agents-german-wiki-breakout">TNW</a>, <a href="https://thehackernews.com/2026/09/thousands-of-openai-agents-quietly.html">The Hacker News</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY</a></p>]]></description>
-    </item>
-    <item>
-      <title>Robotselskapet Figure kjøper regnekraft for 3,5 milliarder dollar fra Nscale</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-robotbolaget-figure-koper-berakningskraft-for-3-5-miljarder</guid>
-      <pubDate>Sat, 05 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Humanoidselskapet Figure og skyleverandøren Nscale inngikk 3. september en flerårig avtale om inntil 100 000 Nvidia-prosessorer på plattformen Vera Rubin. Figure forplikter seg i første omgang til regnekraft for 3,5 milliarder dollar, med intensjon om å utvide forpliktelsen til over 6 milliarder. Anlegget skal ligge i Barstow i Texas og settes i drift fra andre halvår 2027.</p>
-<p>Nscale blir samtidig medeier i Figure og selskapets foretrukne leverandør av regnekraft. Kapasiteten skal trene kommende generasjoner av Figures modellfamilie Helix, som styrer robotenes syn, språkforståelse og bevegelser. Ifølge Forbes har Figure til sammen hentet inn rundt 1,9 milliarder dollar i risikokapital, altså klart mindre enn beløpet selskapet nå forplikter seg til å kjøpe regnekraft for — hvordan kjøpet skal finansieres, går ikke fram av pressemeldingene. Nvidia-sjef Jensen Huang beskriver opplegget som et «svinghjul» der modellene trenes i Nscales sky, testes i Nvidias simulator Isaac Sim og kjøres på Nvidia-brikker i robotene.</p>
-<p>For Norden er Nscale allerede en kjent aktør: selskapet driver et datasenter i Glomfjord i Nordland og bygger sammen med Aker et anlegg i Kvandal utenfor Narvik som skal romme 100 000 Nvidia-prosessorer og drives av vannkraft. At samme leverandør nå blir motoren bak en av verdens mest kapitalsterke humanoidsatsinger, viser i hvilken skala leverandøren som bygger i Nordland nå opererer. For norske 1X Technologies, der SoftBank etter sigende forhandler om en majoritetspost, setter avtalen listen for hva en konkurrent bruker på trening av robotmodeller.</p>
-<p class="news-card__source">Kilde: <a href="https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership">Figure</a>, <a href="https://www.nscale.com/press-releases/nscale-and-figure">Nscale</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/04/how-figure-committed-35-billion-for-ai-compute-after-raising-only-19-billion/">Forbes</a>, <a href="https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai">Nscale/Aker (Narvik)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Sveriges regjering peker på KI som ny risikofaktor i landets første strategi mot biologiske trusler</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-regeringen-pekar-ut-ai-som-ny-riskfaktor-i</guid>
-      <pubDate>Sat, 05 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Den svenske regjeringen la 4. september fram Sveriges første nasjonale strategi for vern mot biologiske trusler. Sosialminister Jakob Forssmed, forsvarsminister Pål Jonson og klima- og miljøminister Romina Pourmokhtari presenterer strategien i regjeringens pressemelding, som dekker alt fra neste pandemi og laboratorieulykker til biologiske våpen i krig eller hybridpåvirkning.</p>
-<p>Strategien slår rett ut fast at bioteknologi i kombinasjon med kunstig intelligens og teknologi med flerbruksformål «omformer trusselbildet fra grunnen av» og visker ut grensene mellom naturlige utbrudd, ulykker og bevisste handlinger. Den bygger på fem pilarer — forutse, forebygge, oppdage, handle og gjenopprette — med til sammen 25 fokusområder. Ett av dem gjelder systematisk overvåking av flerbruksteknologi som gensakser og syntetisk biologi, et annet gjelder ansvarlig innovasjon og forskningssikkerhet. Strategien knytter også beredskapslagrene til utholdenhetskravene Nato stiller til medlemslandene.</p>
-<p>For Norden er dette første gang KI skrives inn i et svensk strategidokument om biologiske trusler, samme år som Anthropic strammet inn de biologiske sperrene i Claude og Bernie Sanders begrunnet lovforslaget sitt mot superintelligens med at KI allerede er brukt til å lage virus. Det svenske forsvarets forskningsinstitutt FOI pekte i januar på risikoen for teknologilekkasje og flerbruk i svensk bioteknologi. I Norge ligger det tilsvarende ansvaret hos Folkehelseinstituttet og Forsvarets forskningsinstitutt, i et land som omfattes av de samme Nato-kravene til utholdenhet — for dem er det svenske dokumentet det nærmeste sammenligningsgrunnlaget.</p>
-<p class="news-card__source">Kilde: <a href="https://regeringen.se/pressmeddelanden/2026/09/ny-strategi-ska-skydda-sverige-mot-biologiska-hot/">Den svenske regjeringen</a>, <a href="https://regeringen.se/contentassets/788190b19dc540a6a931a37408117b2b/strategi-for-skydd-mot-biologiska-hot.pdf">Strategien (pdf, på svensk)</a>, <a href="https://www.foi.se/nyheter-och-press/nyheter/2026-01-26-bade-mojligheter-och-bekymmer-for-svensk-bioteknik.html">FOI</a>, <a href="https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards">Anthropic</a></p>]]></description>
-    </item>
-    <item>
-      <title>Sanders vil forby superintelligens — og sette all avansert KI-utvikling på pause</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-sanders-vill-forbjuda-superintelligens-och-pausa-all-avancerad</guid>
-      <pubDate>Sat, 05 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Senator Bernie Sanders og kongressrepresentant Greg Casar la 3. september fram lovforslaget Ban Artificial Superintelligence Act. Det vil permanent forby utvikling og drift av KI-systemer som overgår menneskelig intelligens eller kan omgå kommandoer om avstenging, og sette all avansert KI-utvikling på pause til en ny føderal etat har fått sikkerhetsregler på plass.</p>
-<p>Forslaget oppretter en ny etat på statsrådsnivå som skal overvåke frontmodeller gjennom hele livssyklusen og ha rett til å pålegge at farlige evner fjernes. Selskaper som bryter forbudet, skal kunne oppløses, og enkeltpersoner dømmes til inntil 20 års fengsel, straffenivåer som Sanders’ kontor sammenligner med ulovlig utvikling av atomvåpen. USA skal dessuten presse på for internasjonale avtaler som forbyr superintelligens overalt. Casar formulerer det slik at spydspiss-KI i dag er «mindre regulert enn en gjennomsnittlig food truck». Forskeren Gary Marcus, lenge en av bransjens skarpeste kritikere, sier nei til forslaget, som ennå ikke er formelt fremmet i Kongressen.</p>
-<p>For Norden lander spørsmålet midt i en svensk valgkamp der KI hittil mest har vist seg som et skriveverktøy i riksdagsforslagene, ikke som et spørsmål om hva som i det hele tatt får bygges. I Norge har digitaliseringsminister Karianne Tung utsatt den norske KI-loven til våren 2027, og Stortinget har dermed ikke engang EUs regelverk på plass. Hvis den amerikanske debatten flyttes fra hvordan KI skal reguleres til hva som i det hele tatt får utvikles, skjer det mens Riksdagen og Stortinget fortsatt diskuterer det første steget.</p>
-<p class="news-card__source">Kilde: <a href="https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/">Senator Sanders</a>, <a href="https://thehill.com/policy/technology/6069131-sanders-casar-ai-superintelligence-ban/">The Hill</a>, <a href="https://garymarcus.substack.com/p/the-new-sanders-casar-ban-artificial">Gary Marcus</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Europas forsvar bremser EUs plan om å redusere avhengigheten av amerikansk sky</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-05-europas-forsvar-bromsar-eu-s-plan-att-minska</guid>
-      <pubDate>Sat, 05 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Forsvarsbyråkrater i flere EU-land presser Kommisjonen til å myke opp den foreslåtte Cloud and AI Development Act, melder Financial Times. De advarer om at regler som favoriserer EU-kontrollerte leverandører, kan gi forsvaret dårligere systemer, nye cyberrisikoer og problemer med samvirke i Nato før europeiske alternativer finnes.</p>
-<p>Lovforslaget ble lagt fram 3. juni og sorterer offentlige anskaffelser av sky- og KI-tjenester i fire suverenitetsnivåer. På det høyeste kreves full europeisk kontroll uten innblanding fra stater utenfor EU, noe som ifølge Financial Times tilsvarer rundt én prosent av det offentlige anskaffelsesmarkedet. Det mest følsomme eksempelet er støttesystemene rundt kampflyet F-35, der oppdrags-, logistikk- og vedlikeholdsdata utveksles i et økosystem tett knyttet til amerikansk teknologi. Motstanden skal være sterkest blant de østlige og nordiske medlemslandene, som prioriterer å forsterke Natos nordøstlige flanke.</p>
-<p>For Norden er det nettopp den flanken det handler om. Norge, Danmark og Finland flyr F-35 og berøres derfor av hvor nivåene trekkes; Sverige, Nato-medlem siden 2024, berøres som EU-land direkte av nivåene for Forsvarsmaktens og totalforsvarets skytjenester. For Norge kommer det i tillegg at loven må tas inn i EØS-avtalen, med samme forsinkelse som har rammet KI-loven. Sluttresultatet blir trolig trinnvise krav og unntak for betrodde leverandører utenfor EU — og det er der det i praksis avgjøres hvor mye europeisk skysuverenitet som blir igjen.</p>
-<p class="news-card__source">Kilde: <a href="https://www.ft.com/content/0e9d714b-f367-4dd7-8ef4-6d4b2c08b79c">Financial Times</a>, <a href="https://defencematters.eu/european-defence-us-cloud-eu-ai-act-interoperability/">Defence Matters</a>, <a href="https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act">EU-kommisjonen</a></p>]]></description>
     </item>
   </channel>
 </rss>
