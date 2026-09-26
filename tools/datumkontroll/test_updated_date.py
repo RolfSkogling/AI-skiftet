@@ -20,8 +20,10 @@ SIDA = """<div class="sect-head">
   <span class="sect-updated__date">{txt}</span></time>
 </div>
 <div class="strip news-audio">
+  <!--AUDIO-BLOCK-START-->
   <source src="/audio/dagens.m4a?v={av}" type="audio/mp4">
   <div class="news-audio__note">Ett engelskt spar. &middot; Upplasning {anote}</div>
+  <!--AUDIO-BLOCK-END-->
 </div>
 <div class="news-list" id="newsList">
   <div class="day news-date-group" id="dag-{g}" data-date="{g}">
@@ -142,6 +144,50 @@ def test_verklig_markup_flaggar_nar_notisen_ljuger():
     h = PROD.format(av="2026-09-11", anote="8 september 2026")
     src, note = U.audio_dates(h)
     assert not U._same_day(note, src), "notis 8 sept mot ?v=11 sept ska INTE anses lika"
+
+
+# --- Dubblettnotisen utanfor markorerna (felet fran 2026-09-26) -------------
+# Ombyggnaden 2026-09-08 lamnade en ANDRA kopia av ljudnotisen i strip__foot,
+# utanfor AUDIO-BLOCK-markorerna. publish_audio.py skriver bara mellan
+# markorerna, sa kopian frots pa 8 september och stod fel i 18 dygn i alla tre
+# spraken. Kontrollen sag den inte: den las FORSTA notisen, och den var ratt.
+
+FOT = ('  <p class="strip__foot"><span class="news-audio__note">Ett engelskt '
+       'spar. &middot; Upplasning 8 september 2026</span> &middot; Dagens '
+       "notiser som flode.</p>\n</div>")
+
+
+def test_dubblettnotis_utanfor_block_fangas():
+    """Exakt felet fran 2026-09-26: ratt notis i blocket, frusen kopia utanfor."""
+    h = sida().replace("</div>\n<div class=\"news-list\"",
+                       FOT + "\n<div class=\"news-list\"", 1)
+    assert U.check(sida()) == [], "utgangslaget ska vara rent"
+    p = U.check(h, "sv")
+    assert any("UTANFOR" in x for x in p), \
+        "dubblett utanfor markorerna ska flaggas, fick %r" % p
+
+
+def test_notis_utan_artal_flaggas_inte():
+    """Essasidornas notiser ("ca 7 min") har inget datum och kan inte glida."""
+    h = sida() + ('<p class="news-audio__note">Engelsk upplasning via Kokoro '
+                  "(bf_emma) &middot; ca 7 min</p>")
+    assert U.check(h, "sv") == [], U.check(h, "sv")
+
+
+def test_audio_notes_raknar_alla():
+    h = sida().replace("</div>\n<div class=\"news-list\"",
+                       FOT + "\n<div class=\"news-list\"", 1)
+    notes = U.audio_notes(h)
+    assert len(notes) == 2, "ska hitta bada notiserna, fick %r" % (notes,)
+    assert [n[1] for n in notes] == [True, False], notes
+
+
+def test_ren_sida_efter_rattningen():
+    """Sidan utan dubblett ska vara ren - det ar sluttillstandet vi publicerar."""
+    h = sida().replace("</div>\n<div class=\"news-list\"",
+                       '  <p class="strip__foot">Dagens notiser som flode.</p>\n'
+                       "</div>\n<div class=\"news-list\"", 1)
+    assert U.check(h, "sv") == [], U.check(h, "sv")
 
 
 if __name__ == "__main__":
