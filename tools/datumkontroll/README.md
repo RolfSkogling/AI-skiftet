@@ -22,7 +22,7 @@ hur noga man än fyller i det för hand.
 
 ## Hur det är löst
 
-Samma princip som `essay-count`: fältet räknar sig självt ur det det beskriver.
+Fältet räknar sig självt ur det det beskriver.
 Sidan har redan dagens datum i klartext i den översta dagsgruppens etikett, på
 rätt språk. Datumfältet **kopierar den strängen** i stället för att formatera
 ett eget datum — då finns ingen språkspecifik datumlogik som kan glida isär,
