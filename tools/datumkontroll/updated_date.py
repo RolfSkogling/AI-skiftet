@@ -30,6 +30,17 @@ stamma med ljudfilens ?v=-version, INTE med nyhetsdatumet. Ett ljud som ar tva
 dygn gammalt ska sta som tva dygn gammalt - att datera om notisen till dagens
 datum vore att dolja ett storre fel bakom ett snyggare falt.
 
+Tillagg 2026-09-26: ALLA ljudnotiser granskas, inte bara den forsta, och en
+notis med datum UTANFOR AUDIO-BLOCK-markorerna ar i sig ett fel. Samma
+ombyggnad (85d104d) lamnade en andra kopia av notisen i <p class="strip__foot">
+pa alla tre forstasidorna. publish_audio.py skriver bara mellan markorerna, sa
+kopian frots pa 8 september och stod fel i 18 dygn medan spelaren strax ovanfor
+visade ratt datum. Den har kontrollen missade den: den las forsta traffen, och
+forsta traffen var den riktiga notisen inne i blocket, som stamde. Lardomen ar
+att en kontroll som laser det forsta exemplaret av ett falt inte kan upptacka
+att det finns tva - och att ett falt ingen kod skriver alltid ar fel till slut,
+oavsett hur ratt det var den dag det skrevs in.
+
 Anvandning:
     updated_date.py check <fil> [...]     exit 1 vid isarglidning
     updated_date.py fix   <fil> [...]     skriver om HTML-fallbacken
@@ -65,6 +76,13 @@ AUDIO_NOTE_RE = re.compile(
     r'<(?:div|span|p)[^>]*\bclass="[^"]*\bnews-audio__note\b[^"]*"[^>]*>(.*?)</(?:div|span|p)>',
     re.S,
 )
+AUDIO_BLOCK_RE = re.compile(
+    r"<!--AUDIO-BLOCK-START-->.*?<!--AUDIO-BLOCK-END-->", re.S
+)
+# En notis "pastar ett datum" forst nar den innehaller ett artal. Essasidorna
+# har notiser utan datum ("ca 7 min") - de kan inte bli inaktuella och ska inte
+# flaggas.
+YEAR_RE = re.compile(r"\b20\d\d\b")
 
 
 def newest_day(html):
@@ -86,15 +104,42 @@ def stated(html):
     return m.group(2), (inner.group(2).strip() if inner else None)
 
 
+def _note_date(inner):
+    """Datumledet sist i en notistext, eller None."""
+    tail = inner.rsplit("&middot;", 1)[-1].rsplit("·", 1)[-1]
+    return tail.strip() or None
+
+
+def audio_notes(html):
+    """Alla ljudnotiser som [(datumtext, ligger_i_block)].
+
+    Sedan 2026-09-26 raknas ALLA notiser, inte bara den forsta. Bakgrund:
+    startsideombyggnaden 2026-09-08 lamnade en ANDRA kopia av notisen i
+    <p class="strip__foot">, utanfor AUDIO-BLOCK-markorerna. publish_audio.py
+    skriver bara mellan markorerna, sa kopian frots fast pa 8 september och
+    stod kvar i 18 dygn - i alla tre spraken. Den har kontrollen sag den inte,
+    eftersom den slog upp forsta traffen, och forsta traffen var den RIKTIGA
+    notisen inne i blocket, som stamde. En kontroll som bara laser det forsta
+    exemplaret av ett falt kan inte upptacka att det finns tva.
+    """
+    spans = [m.span() for m in AUDIO_BLOCK_RE.finditer(html)]
+
+    def inside(pos):
+        return any(a <= pos < b for a, b in spans)
+
+    return [(_note_date(m.group(1)), inside(m.start()))
+            for m in AUDIO_NOTE_RE.finditer(html)]
+
+
 def audio_dates(html):
-    """(version i ljudkallan, datumtext i ljudnotisen) - endera kan vara None."""
+    """(version i ljudkallan, datumtext i FORSTA ljudnotisen) - endera None.
+
+    Behalls for bakatkompatibilitet. Anvand audio_notes() for granskning.
+    """
     src = AUDIO_SRC_RE.search(html)
     note = AUDIO_NOTE_RE.search(html)
-    note_date = None
-    if note:
-        tail = note.group(1).rsplit("&middot;", 1)[-1].rsplit("·", 1)[-1]
-        note_date = tail.strip() or None
-    return (src.group(1) if src else None), note_date
+    return (src.group(1) if src else None,
+            _note_date(note.group(1)) if note else None)
 
 
 def _same_day(note_text, iso):
@@ -135,10 +180,20 @@ def check(html, name="<html>"):
                         % (name, said_text, label))
 
     # Ljudnotisen mats mot ljudfilen, aldrig mot nyhetsdatumet.
-    src_v, note_date = audio_dates(html)
-    if src_v and note_date and not _same_day(note_date, src_v):
-        problems.append('%s: ljudnotisen sager "%s" men spelaren laddar ?v=%s'
-                        % (name, note_date, src_v))
+    src_v = AUDIO_SRC_RE.search(html)
+    src_v = src_v.group(1) if src_v else None
+    for note_date, in_block in audio_notes(html):
+        if not note_date or not YEAR_RE.search(note_date):
+            continue  # notis utan artal kan inte bli inaktuell
+        if not in_block:
+            problems.append(
+                '%s: ljudnotis med datum ("%s") ligger UTANFOR '
+                "AUDIO-BLOCK-markorerna - ingen kod uppdaterar den, sa den "
+                "fryser fast. Ta bort datumet eller flytta in notisen."
+                % (name, note_date))
+        elif src_v and not _same_day(note_date, src_v):
+            problems.append('%s: ljudnotisen sager "%s" men spelaren laddar ?v=%s'
+                            % (name, note_date, src_v))
     return problems
 
 
