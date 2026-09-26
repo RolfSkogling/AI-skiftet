@@ -14,11 +14,11 @@ annat. Har matte det nar NAGON SENAST RORDE MALLEN, inte nar nyheterna
 publicerades. Ett sadant falt blir fel forr eller senare, hur noga man an
 fyller i det for hand.
 
-Losningen ar samma som for essay-count: faltet raknar sig sjalvt ur det det
-beskriver. Sidan har redan dagens datum i klartext i den oversta dagsgruppens
-etikett, pa ratt sprak. Datumfaltet KOPIERAR den strangen i stallet for att
-formatera ett eget datum - da finns ingen sprakspecifik datumlogik som kan
-glida isar, och ingen siffra att fylla i for hand.
+Losningen: faltet raknar sig sjalvt ur det det beskriver. Sidan har redan
+dagens datum i klartext i den oversta dagsgruppens etikett, pa ratt sprak.
+Datumfaltet KOPIERAR den strangen i stallet for att formatera ett eget datum -
+da finns ingen sprakspecifik datumlogik som kan glida isar, och ingen siffra
+att fylla i for hand.
 
 Tre lager, i den ordningen:
   1. HTML-fallbacken i filen (det som visas utan JavaScript) - satts av `fix`.
