@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 27 Sep 2026 04:44:13 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 04:41:31 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Northern European initiative to give 13,000 workers AI skills</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-nordeuropeiskt-initiativ-ska-ge-13-000-yrkesverksamma-ai</guid>
+      <pubDate>Mon, 28 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>AI Sweden is leading a new Northern European initiative that, backed by Google.org, will train around 13,000 working professionals in AI skills across Sweden, Denmark, Finland, Belgium and the Netherlands. Training begins on 31 January 2027 and targets occupations with high exposure to AI.</p>
+<p>In Sweden the work is led by education company AcadeMedia and adult-education association Medborgarskolan, in Denmark by the network Digital Dogme, in Finland by university of applied sciences Xamk together with Oamk and Tieke, in Belgium by the chamber of commerce Beci, and in the Netherlands by the organisation The Code to Change. According to AI Sweden, nearly two-thirds of jobs in the Swedish service sector are today medium- or highly exposed to AI.</p>
+<p>The initiative's centre of gravity is Nordic: Sweden's AI Sweden coordinates the whole effort, with Denmark's Digital Dogme and Finland's Xamk as partner organisations in their respective countries, while Belgium and the Netherlands are the only non-Nordic participants.</p>
+<p class="news-card__source">Source: <a href="https://www.ai.se/sv/nyheter/har-ar-organisationerna-som-ska-utbilda-13-000-arbetstagare-i-ai">AI Sweden</a>, <a href="https://via.tt.se/pressmeddelande/4560491/har-ar-organisationerna-som-ska-utbilda-13-000-arbetstagare-i-ai?lang=sv">TT/via.tt.se</a></p>]]></description>
+    </item>
+    <item>
+      <title>Researchers use quantum computer to simulate matter forming from the vacuum</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-forskare-simulerade-hur-materia-uppstar-ur-tomrummet-med</guid>
+      <pubDate>Mon, 28 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>An international research team led by Duke University has used a quantum computer with 13 trapped ions to simulate so-called string breaking – how new particles can form when quarks are pulled apart. The phenomenon belongs to the physics of the early universe, with links to both nuclear physics and cosmology.</p>
+<p>Using precisely controlled laser beams, the researchers encoded the model into a chain of 13 ytterbium ions and observed how the energy building up between the particles eventually becomes large enough to turn into entirely new particles, in line with Einstein's E=mc². The study, with Arinjoy De as lead author and Christopher Monroe among the senior researchers, was published in Nature Physics on 23 September 2026 and also involved researchers from the University of Maryland, Oxford, Caltech, Cornell and Belgium's KU Leuven.</p>
+<p>In Sweden, the Wallenberg Centre for Quantum Technology (WACQT) at Chalmers is working toward similar goals, though with a different technology – superconducting circuits – where quantum simulation of physical systems is one of the intended uses for future Swedish quantum computers.</p>
+<p class="news-card__source">Source: <a href="https://www.nature.com/articles/s41567-026-03422-0">Nature Physics</a>, <a href="https://pratt.duke.edu/news/quantum-simulation-string-breaking/">Duke Pratt School of Engineering</a></p>]]></description>
+    </item>
+    <item>
+      <title>China may let Alibaba and ByteDance buy new Nvidia chips</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-kina-kan-tillata-alibaba-och-bytedance-att-kopa</guid>
+      <pubDate>Mon, 28 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Chinese authorities have reportedly signalled, according to The Information, that Alibaba and ByteDance are likely to be allowed to buy Nvidia's new RTX Pro 5500 workstation card, after asking the companies how many chips they plan to buy and for what purpose.</p>
+<p>The RTX Pro 5500 is built on Nvidia's Blackwell architecture and has 84 gigabytes of memory. The chip has previously been hard to sell in China because of both US export restrictions on advanced AI chips and Beijing's own curbs favouring domestic manufacturers – a possible approval is described by observers as a cautious thaw, though it is limited to workstation cards rather than the most advanced AI processors.</p>
+<p>For the Nordics, access to Nvidia hardware is central to AI infrastructure investment: the Berzelius supercomputer at the National Supercomputer Centre in Linköping, funded by the Knut and Alice Wallenberg Foundation, runs on Nvidia GPUs, and global export policy therefore indirectly affects how quickly Swedish researchers and companies can scale up their AI models.</p>
+<p class="news-card__source">Source: <a href="https://www.cnbc.com/2026/09/27/china-bytedance-alibaba-nvidia-chips.html">CNBC</a>, <a href="https://thenextweb.com/news/china-alibaba-bytedance-nvidia-rtx-pro-5500">The Next Web</a></p>]]></description>
+    </item>
+    <item>
+      <title>US health insurers: AI coding has added $942 million in extra costs</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-amerikanska-sjukforsakringsbolag-ai-kodning-har-kostat-942-miljoner</guid>
+      <pubDate>Mon, 28 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>US industry group Blue Cross Blue Shield Association (BCBSA) claims in a new analysis that hospitals' use of AI tools for diagnostic coding in insurance billing has cost its member health plans an extra $942 million over two years, for care that has otherwise stayed largely unchanged.</p>
+<p>BCBSA says the share of hospital stays coded as medically complex rose from 37% to 40% between 2023 and 2025, without any corresponding change in the care actually delivered – which the organisation describes as a clear disconnect between coding and treatment. Abridge founder Shiv Rao acknowledges the risk of an escalating conflict between hospitals and insurers, but argues AI can ultimately lower costs rather than raise them.</p>
+<p>AI's spread into healthcare administration is already under scrutiny in the Nordics too, albeit in a different form: Sweden's data protection authority IMY opened an inspection in May 2026 into Region Gävleborg's AI-based speech transcription in primary care, focused on data protection and how transcription errors are handled. The US dispute is about billing codes rather than clinical documentation, but both cases show that AI's spread into healthcare paperwork is already raising questions regulators must address.</p>
+<p class="news-card__source">Source: <a href="https://www.fiercehealthcare.com/finance/hospitals-use-ai-coding-tools-cost-bcbsa-plans-942m-more-similar-care-analysis">Fierce Healthcare</a>, <a href="https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/">TechCrunch</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic's AI model Claude breaks three-year-old physics record</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-27</link>
@@ -1114,55 +1163,6 @@
 <p>Antioch was founded in May 2025 by, among others, Harry Mellsop, formerly of Tesla's Autopilot team, with co-founders from Google DeepMind and Meta's Reality Labs, and has now raised $44.75 million in total. Nvidia is a partner, and Antioch integrates Omniverse, Isaac Sim and Isaac Lab; cloud capacity comes from Nebius. Forbes describes the round as a bet against Figure AI's opposite strategy: in late August Figure launched the Index app, through which more than 16 million video uploads from 108 countries have been collected from paid contributors for $15 million, and has pledged over $1 billion to data and compute in the coming year.</p>
 <p>For the Nordics, the question of whether it is simulation or real-world data that decides how fast robots learn is at least as pressing. ABB Robotics in Västerås has sold its RobotStudio simulation tool since the 1990s and lets customers commission virtually before the robot is on the floor, while Norway's 1X in Moss is collecting training data in real homes ahead of deliveries of its Neo household robot in the United States later this year. Sintef and NTNU in Trondheim are building simulation environments for autonomous ships and underwater robots, where real-world data is expensive and dangerous to collect — precisely the niche Antioch says it is targeting.</p>
 <p class="news-card__source">Source: <a href="https://siliconangle.com/2026/09/08/antioch-raises-32m-to-move-robot-testing-into-simulation/">SiliconANGLE</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/08/heres-a-32-million-bet-that-robots-dont-need-a-billion-dollars-of-real-world-data/">Forbes</a>, <a href="https://www.humanoidsdaily.com/news/figure-ai-unveils-index-crowdsourcing-real-world-human-video-to-train-helix">Humanoids Daily</a></p>]]></description>
-    </item>
-    <item>
-      <title>UN human rights chief: A handful of men has almost unlimited power over AI</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-08</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-08-fn-s-manniskorattschef-en-handfull-man-har-nastan</guid>
-      <pubDate>Tue, 08 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>UN High Commissioner for Human Rights Volker Türk spoke on September 7 at the opening of the 63rd session of the Human Rights Council in Geneva with an unusually sharp warning about AI. “A handful of men has almost unlimited power over AI,” he said, adding that their talk of freedom, on closer inspection, turns out to be little more than the freedom to exploit our data. He said he shares the concerns of industry insiders that advanced AI could pose an existential risk to humanity.</p>
-<p>Türk pointed to systems that escape their testing environment or blackmail developers to avoid being switched off as examples of “AI that is too powerful,” and called for an all-out effort to put cast-iron guarantees in place around the safety and security of AI before it is too late. Concretely, he wants the countries hosting AI development and those in its supply chains to agree on red lines, independent verification to be introduced, and the industry to collaborate more on security. He will be writing to AI companies in the coming days. At the same time he welcomed the European Commission’s platform accountability, South Korea’s AI governance and the UN’s new global AI dialogue and scientific panel, and noted that it is little wonder people are rejecting AI or even refusing to use it.</p>
-<p>For the Nordics, the appeal lands in the middle of two political processes. Sweden votes on Sunday without AI having become an election issue, and the Centre Party’s demand for a national AI safety institute awaits the next Riksdag. In Norway, the government will send the EU’s simplification package for the AI Act out for consultation this autumn and present a bill for a new AI law in spring 2027. Türk’s call for a ban on fully autonomous weapons also raises the question for Saab and Kongsberg, and his example of AI leaving its testing environment points to the kind of model behaviour that supervisory authorities such as IMY and Datatilsynet will need to start dealing with.</p>
-<p class="news-card__source">Source: <a href="https://www.ohchr.org/en/statements-and-speeches/2026/09/high-commissioner-turk-updates-human-rights-council-human-rights">OHCHR</a>, <a href="https://www.digi.no/nyhetsstudio/fns-menneskerettssjef-advarer-en-haandfull-menn-kontrollerer-ki/130875">NTB/Digi.no</a>, <a href="https://thenextweb.com/news/un-rights-chief-ai-red-lines-existential-risk">The Next Web</a>, <a href="https://www.nyteknik.se/debatt/centerpartiet-lat-inte-trump-bestaemma-vilken-ai-som-aer-saeker/4485021">Ny Teknik</a>, <a href="https://www.tek.no/nyheter/nyhet/i/lnQjWe/nye-eu-regler-for-ai-norge-og-eoes-henger-ennaa-langt-etter">Tek.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>MIT’s new qubit has its own “arm” for talking to the rest of the circuit</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-08</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-08-mit-s-nya-qubit-har-en-egen-arm</guid>
-      <pubDate>Tue, 08 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Researchers at MIT presented on September 3 a new architecture for superconducting qubits that should let them interact much faster without losing their stability. The design, called the “arm qubit” and described in Physical Review Applied, splits the qubit into two connected parts: a data part that stores the information with a long coherence time, and an arm part that handles contact with other qubits and with the electronics that read out the result.</p>
-<p>The two parts are linked by a so-called quarton coupler that the group developed earlier, which gives strong nonlinear coupling with less unwanted mixing between the parts. In simulations the arm qubit reached coherence times on par with the best superconducting architectures while being faster in operations and readout, a combination that is otherwise hard to achieve. The circuit has not yet been fabricated; the next step is to build it and see whether the model holds. The work was done by lead author Jeremy Kline, a graduate student in EECS, Alec Yen, who received his PhD this spring, undergraduate Stanley Chen, and senior author Kevin O’Brien, associate professor at MIT’s Research Laboratory of Electronics.</p>
-<p>For the Nordics, the platform is a familiar one: superconducting qubits are the same technology the Wallenberg Centre for Quantum Technology is building its quantum computer on at Chalmers. The same week, the Novo Nordisk Foundation announced that its company Quantum Foundry Copenhagen is building a 5,300-square-metre quantum chip fabrication facility in Copenhagen due to open in 2027. According to TT, an initial investment of around DKK 400 million is planned, and CEO Peter Krogstrup says more money will be needed to get production running within two years as planned. The foundation has so far committed more than DKK 2.9 billion to quantum technology, and the facility is to offer fabrication to quantum companies worldwide, giving Nordic research groups at Chalmers, KTH and NTNU a shorter path from design to chip.</p>
-<p class="news-card__source">Source: <a href="https://news.mit.edu/2026/new-qubit-architecture-enables-faster-more-accurate-operations-0903">MIT News</a>, <a href="https://journals.aps.org/prapplied/abstract/10.1103/3l3b-7jsm">Physical Review Applied</a>, <a href="https://novonordiskfonden.dk/en/news/new-copenhagen-facility-to-strengthen-europes-quantum-manufacturing-capabilities/">Novo Nordisk Foundation</a>, <a href="https://www.nyteknik.se/tech/novo-nordisk-aegaren-storsatsar-pa-kvantchip-da-ska-fabriken-sta-klar/4491550">Ny Teknik/TT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic walks away from the $6 billion Decart deal</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-08</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-08-anthropic-drar-sig-ur-sexmiljardersaffaren-med-decart</guid>
-      <pubDate>Tue, 08 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Anthropic has decided not to proceed with the acquisition of AI company Decart, Bloomberg reported on September 8, citing people familiar with the process. The company had explored the deal and performed due diligence but chose to walk away. The deal, which Bloomberg revealed in August, valued Decart at about $6 billion, paid mostly in Anthropic stock, and would have been the company’s largest known acquisition. The reasons have not been communicated, but according to Bloomberg the companies may still collaborate in other forms.</p>
-<p>Decart was founded in 2023 by Israeli engineers Dean and Orian Leitersdorf and Moshe Shalev. The company builds so-called world models that simulate the physical world and can rewrite live video in real time, as well as software that makes AI chips work more efficiently at inference. It was the latter that attracted interest: the team would have joined Anthropic’s inference and performance organization and helped existing infrastructure meet growing demand. In May, Decart raised $300 million at a valuation of nearly $4 billion, in a round led by Radical Ventures with Nvidia, Sequoia and Benchmark among the investors. Anthropic has meanwhile continued to buy computing power, most recently a cloud deal with Lambda worth $35 billion, ahead of the IPO that Bloomberg describes as anticipated.</p>
-<p>For the Nordics, two things matter. The price per token for Swedish and Norwegian customers is ultimately set by how efficiently inference runs, and that is precisely the expertise Anthropic is now declining to buy in. And the oil fund’s CEO Nicolai Tangen has already warned of a sharp AI crash; an abandoned multibillion deal in the AI sector is exactly the kind of signal that Nordic asset managers with large technology holdings, from the oil fund to the Swedish AP funds, need to weigh.</p>
-<p class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-09-08/anthropic-said-to-walk-away-from-6-billion-decart-acquisition">Bloomberg</a>, <a href="https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/">Fortune/Bloomberg</a>, <a href="https://www.nyteknik.se/tech/ai-bolag-tecknar-mangmiljardavtal-med-lambda/4490523">Ny Teknik/TT</a>, <a href="https://www.nyteknik.se/tech/norska-oljefonden-tjaenar-miljarder-pa-tech-nu-varnar-vdn-foer-ai-ras/4485172">Ny Teknik</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway’s Fossefall builds a recycling chain for used AI graphics cards</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-08</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-08-norska-fossefall-bygger-atervinningskedja-for-begagnade-ai-grafikkort</guid>
-      <pubDate>Tue, 08 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Fossefall, which builds AI facilities in the Nordics and by its own account will invest at least $30 billion in graphics processors in the coming years, has teamed up with recycling group NG Nordic to build a system for reuse and recycling of GPUs, Digi.no reports. NG Nordic will handle the entire chain: collection, secure data wiping, testing, refurbishment and resale.</p>
-<p>According to Fossefall, the graphics cards are often far from worn out when they are phased out of the largest AI facilities. “AI factories must be built with responsibility for the whole life cycle,” says CEO Øyvind L. Vesterdal. The company is aiming for up to 1 gigawatt of AI capacity by 2030; by comparison, Norwegian data centres used about 3.3 terawatt-hours in all of 2025, according to NVE. The secondary market is already growing internationally: in July the US company Compute Exchange launched a marketplace for used Nvidia cards, where demand is above all for older H100 and A100 models, since many organizations do not need the latest hardware to run AI in production.</p>
-<p>For the Nordics, this is an early example of a Nordic data centre operator taking explicit responsibility for what happens to AI hardware after its first life. The same question awaits the operators in Luleå, Boden and Narvik and supervisory bodies such as the Swedish Environmental Protection Agency and Norway’s Miljødirektoratet, which administer producer responsibility for electronics. A functioning secondary market could at the same time give universities, hospitals and smaller companies in Sweden and Norway a cheaper route to their own computing power than renting time in the cloud.</p>
-<p class="news-card__source">Source: <a href="https://www.digi.no/artikler/fossefall-og-ng-nordic-gar-sammen-om-brukte-gpu-er/576639">Digi.no</a>, <a href="https://www.fossefall.ai/">Fossefall</a></p>]]></description>
     </item>
   </channel>
 </rss>
