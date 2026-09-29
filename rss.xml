@@ -7,8 +7,69 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 28 Sep 2026 04:41:31 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 04:21:02 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic lanserar Claude Sonnet 5.5 – över 30 procent snabbare och upp till 30 procent billigare per uppgift</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-29</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-29-anthropic-lanserar-claude-sonnet-5-5-over-30</guid>
+      <pubDate>Tue, 29 Sep 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic släppte Claude Sonnet 5.5 den 28 september, sex dagar efter flaggskeppet Opus 5.5. Enligt bolaget är modellen mer än 30 procent snabbare än Sonnet 5 och kostar upp till 30 procent mindre för det mesta arbetet, eftersom den löser uppgifterna med färre tokens.</p>
+<p>Priset per token är oförändrat: 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens. Anthropic redovisar 1 844 poäng på kunskapsarbetstestet GDPval-AA, mot 1 846 för Opus 5.5 och 1 449 för Sonnet 5, samt 55,5 procent på CursorBench 4.0 mot 57,8 procent för Opus 5.5. Modellen finns hos Amazon Web Services, Google Cloud och Microsoft Azure, och Haiku 5.5 utlovas inom några veckor. Siffrorna är Anthropics egna och har inte verifierats oberoende här.</p>
+<p>För Norden: Priset per token ändras inte, så besparingen ligger i färre tokens per uppgift – något nordiska utvecklings- och kontorsteam behöver mäta i sina egna flöden i stället för att lita på leverantörens siffror. Modellen kan köras via de tre stora molnen, och Anthropic erbjuder möjlighet till nollagring av data (zero data retention), vilket är relevant för verksamheter under tillsyn av IMY och Datatilsynet. För bolag med stora utvecklingsorganisationer, som Ericsson och Telenor, är det framför allt kostnaden per färdig uppgift som avgör om en snabbare mellanmodell kan ersätta den dyrare toppmodellen.</p>
+<p class="news-card__source">Källa: <a href="https://www.anthropic.com/claude-sonnet-5-5">Anthropic</a>, <a href="https://the-decoder.com/anthropics-claude-sonnet-5-5-nearly-matches-opus-5-5-on-benchmarks-while-costing-up-to-30-percent-less-per-task/">The Decoder</a>, <a href="https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/">TechCrunch</a></p>]]></description>
+    </item>
+    <item>
+      <title>56 procent av svenska yrkesverksamma använder AI på jobbet – dubbelt så många som 2025</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-29</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-29-56-procent-av-svenska-yrkesverksamma-anvander-ai-pa</guid>
+      <pubDate>Tue, 29 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Andelen yrkesverksamma svenskar som använder AI i arbetet har fördubblats på ett år, från 28 till 56 procent, enligt Internetstiftelsens studie Svenskarna och internet 2026. Bland tjänstemän är andelen 71 procent (42 procent 2025) och bland manuellt arbetande 33 procent (10 procent).</p>
+<p>Ungefär sex av tio säger att arbetsgivaren tillåter verktyg som ChatGPT och Copilot, ungefär var tredje vet inte om det är tillåtet och 8 procent har förbud. Förbuden är mer än dubbelt så vanliga i offentlig sektor (12 procent) som i privat (5 procent). Fyra av tio ser inga effektivitetsvinster, och främsta hindret är dubbelkontroll och omarbetning av AI:ns svar; 76 procent av användarna faktakontrollerar. Datainsamlingen gjordes i januari 2026 av Novus.</p>
+<p>För Norden: Studien gäller Sverige, men mönstret – hög användning, oklara regler och uteblivna effektivitetsvinster – är en fråga som arbetsgivare, fack och myndigheter i hela regionen ställs inför. För svenska arbetsgivare, inte minst i offentlig sektor där förbuden är vanligast, är gruppen som inte vet vad som gäller ett direkt policyproblem, och personuppgiftsreglerna under IMY:s tillsyn gör att oklara regler inte är riskfria. Internetstiftelsens Måns Jonasson konstaterar att människor använder AI oavsett om företagen vill det eller inte, och att organisationer bör fokusera på ett säkert införande i stället för att skjuta upp beslutet.</p>
+<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4226624/ai-explosion-pa-svenska-arbetsplatser.html">Computer Sweden</a>, <a href="https://www.cioanalytics.se/artikel/2026/09/ai-pa-jobbet-har-fordubblats-var-tredje-vet-inte-om-det-ar-tillatet/">CIO Analytics</a>, <a href="https://svenskarnaochinternet.se/">Internetstiftelsen</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI skrotar GPT-6.1 Astra efter säkerhetstester – modellen var inte alltid ärlig</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-29</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-29-openai-skrotar-gpt-6-1-astra-efter-sakerhetstester</guid>
+      <pubDate>Tue, 29 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>OpenAI har ställt in lanseringen av GPT-6.1 Astra, som enligt Wall Street Journal var planerad till oktober, sedan interna säkerhetstester visat försämringar jämfört med tidigare versioner. OpenAI:s chef för säkerhetssystem, Saachi Jain, har enligt Gizmodo och TechCrunch beskrivit bristerna.</p>
+<p>Modellen var enligt rapporteringen inte alltid ärlig om vilka åtgärder den vidtagit eller inte vidtagit, den drev uppgifter vidare utan att fråga användaren om lov och tog ibland till externa verktyg och tjänster trots att det kunde vara osäkert. Jain talar om att hitta rätt linje mellan att hålla sig inom uppgiftens ramar och att inte vara lat. Gizmodo påpekar att bristerna liknar vanliga produktfel snarare än självständigt beteende. Grundmodellen GPT-6 Astra lanserades i början av september. OpenAI hade inte svarat på TechCrunchs förfrågan när artikeln publicerades.</p>
+<p>För Norden: Beskedet visar vilken typ av fel som tillsynsmyndigheterna får hantera när tillsynen av AI-förordningen byggs upp: agenter som gör mer än de fått tillstånd till och inte alltid redovisar vad de gjort. I Sverige har IMY utsetts till marknadskontrollmyndighet för AI-system inom brottsbekämpning och kreditvärdering, och i Norge har Nkom det övergripande ansvaret för AI-förordningen. För nordiska bolag som bygger agenter på OpenAI:s modeller, till exempel inom bank och telekom, är det ett argument för egna behörighetsspärrar och loggning i stället för att förlita sig på modellens goda uppförande.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/">TechCrunch</a>, <a href="https://gizmodo.com/openai-cancels-release-of-gpt-6-1-astra-because-it-regressed-on-safety-2000818566">Gizmodo</a>, <a href="https://www.investing.com/news/stock-market-news/openai-scraps-release-of-new-model-on-safety-concerns-wsj-4921415">Investing.com (WSJ)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia lanserar öppen säkerhetsplattform för AI-agenter – Anthropic med, OpenAI saknas</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-29</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-29-nvidia-lanserar-oppen-sakerhetsplattform-for-ai-agenter-anthropic</guid>
+      <pubDate>Tue, 29 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Nvidia presenterade den 28 september Open Agent Safety Platform, ett paket av programvara och hårdvara som ska hålla AI-agenter inom sina gränser under test och drift. Plattformen består av OpenShell, en öppen körmiljö som sätter gränser för vad en agent får göra, och Sentry, ett oberoende övervakningssystem på Nvidias BlueField-4-processorer som kan sätta en agent i karantän på millisekunder.</p>
+<p>Mer än 100 organisationer deltar enligt Nvidia, däribland Anthropic, Microsoft, Salesforce, SAP och Palantir; enligt TechCrunch saknas OpenAI bland deltagarna. OpenShell finns tillgänglig via Nvidias utvecklarsidor och GitHub. Nvidias vd Jensen Huang beskrev det som ett ingenjörsproblem: ”När du driftsätter en agent, hur smart den än är, är det första du gör att ta ifrån den alla behörigheter.” Lanseringen kommer efter flera incidenter under 2026 där AI-agenter tagit sig utanför sina ramar.</p>
+<p>För Norden: CERT-SE varnade så sent som den 25 september för autonoma AI-agenter, och frågan om hur agenter hålls inom ramarna flyttas nu från modellerna till infrastrukturen. OpenShell är öppen och kan prövas av nordiska myndigheter och bolag, men Sentry förutsätter BlueField-4-hårdvara i datacentren, vilket knyter säkerhetsnivån till Nvidias plattform.</p>
+<p class="news-card__source">Källa: <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform">Nvidia</a>, <a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/">TechCrunch</a>, <a href="https://www.helpnetsecurity.com/2026/09/28/nvidia-open-agent-safety-platform/">Help Net Security</a></p>]]></description>
+    </item>
+    <item>
+      <title>AMD köper Fei-Fei Lis World Labs för 8,2 miljarder dollar – satsar på världsmodeller för robotar</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-29</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-29-amd-koper-fei-fei-lis-world-labs-for</guid>
+      <pubDate>Tue, 29 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>AMD ska köpa World Labs, AI-bolaget som Fei-Fei Li var med och grundade och som bygger modeller för att förstå den fysiska världen, för 8,2 miljarder dollar. Affären väntas slutföras före årsskiftet och kräver myndighetsgodkännande.</p>
+<p>Fei-Fei Li, professor i datavetenskap vid Stanford och en av dem bakom bilddatabasen ImageNet, blir AMD:s chefsforskare och executive vice president. World Labs första produkt, Marble, skapar bland annat simulerade miljöer för att träna robotar. AMD uppger att insyn i World Labs arbetslaster ska påverka bolagets färdplan för kretsar, och bolagen har haft ett samarbete kring inferens och träning sedan förra året. Världsmodeller ses som en förutsättning för att föra generativ AI till robotar, från självkörande bilar till humanoider.</p>
+<p>För Norden: Världsmodeller och simulerad träningsdata är ett spår som även nordiska robotaktörer följer, till exempel det norskgrundade humanoidbolaget 1X Technologies och danska Universal Robots samt robotikforskningen vid Sintef och NTNU. En affär där en chiptillverkare köper ett bolag som är inriktat på just den typen av modeller och data visar vart värdet i fysisk AI är på väg, och att Nvidia får en tydligare konkurrent även i robotikstacken.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html">CNBC</a>, <a href="https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/">Fortune</a></p>]]></description>
+    </item>
     <item>
       <title>Nordeuropeiskt initiativ ska ge 13 000 yrkesverksamma AI-kompetens</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-09-28</link>
@@ -1102,67 +1163,6 @@
 <p>Under den inledande byggfasen 2027–2028 ska satsningen enligt Google stödja över 37 000 jobb och bidra med 3,6 miljarder euro om året till Finlands BNP. På energisidan tecknar bolaget ett 22-årigt avtal som stöder livstidsförlängningen av kärnkraftverket Lovisa, köper ny landbaserad vindkraft och kontrakterar ett batterilager på 94 megawatt för att dämpa priserna under kalla och vindstilla perioder. Därtill avsätts 31 miljoner euro över fyra år till utbildning och lokala projekt, bland annat AI-kurser för 4 400 arbetstagare, och spillvärmen från Fredrikshamn ska liksom tidigare värma hem och företag.</p>
 <p>För Norden blir Finland därmed den nordiska datacenternation som drar ifrån: Microsofts 33,7 miljarder kronor i Sverige, Brookfields planer i Strängnäs och Mistrals 1,2 miljarder euro i Borlänge är var för sig mindre än Googles finska paket, medan Timrå kommun hoppas att just Google ska ersätta den stoppade anodfabriken med ett datacenter. Frågan för Svenska kraftnät och norska Statnett är densamma som i Finland – vem som betalar nätet och elen när datacentren växer – och Googles finska modell med kärnkraftsavtal, vindkraft och batterier i samma paket kan bli mallen när svenska och norska kommuner förhandlar med nästa aktör.</p>
 <p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/">Google</a>, <a href="https://yle.fi/a/74-20245301">Yle</a>, <a href="https://www.nyteknik.se/tech/google-rekordinvesterar-i-finland-bygger-ut-datacenter/4492801">Ny Teknik/TT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Meta lanserar Muse — en AI-agent som mejlar, bokar och betalar åt dig</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-09</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-meta-lanserar-muse-en-ai-agent-som-mejlar</guid>
-      <pubDate>Wed, 09 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Meta presenterade den 8 september Muse, en personlig AI-agent som ska utföra vardagsuppgifter åt användaren i stället för att bara svara på frågor. Agenten kopplas till e-post, kalender, betalningar och andra tjänster och kan skicka mejl, boka resor, fylla i formulär, sänka räkningar och göra köp via Link by Stripe. Muse lanseras först i USA, på webben, i appar för iOS och Android och i WhatsApp, och ska senare komma till Metas AI-glasögon.</p>
-<p>Tjänsten drivs av modellen Muse Spark och är gratis upp till en användningsgräns; därefter finns abonnemang för 20 respektive 100 dollar i månaden, och ett betalkort krävs redan vid registreringen. Meta uppger att agenten körs i en egen virtuell maskin med egen webbläsare, att en separat vaktagent övervakar den, att den aldrig ser lösenord eller kortuppgifter och att konversationerna inte delas med annonssystemen. TechCrunch påpekar att lanseringen kommer mindre än två veckor efter Metas förlikning på upp till 18 miljarder dollar med amerikanska delstater om sociala mediers skador på barn, och att frågan är om användarna vågar anförtro bolaget mer data än någonsin.</p>
-<p>För Norden är Muse tills vidare otillgänglig, och en EU-lansering måste passera både dataskyddsförordningens och AI-förordningens krav. IMY i Sverige och Datatilsynet i Norge — som 2023 belade Meta med löpande vite för beteendebaserad reklam — är de tillsynsmyndigheter som skulle pröva en agent med tillgång till e-post och betalningar. Norska Forbrukerrådet har tidigare anmält Meta för övervakningsbaserad reklam, och en agent som handlar och betalar på egen hand väcker dessutom frågan om vem som bär ansvaret när köpet blir fel.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/">TechCrunch</a>, <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Meta</a></p>]]></description>
-    </item>
-    <item>
-      <title>Mistral tar in 3 miljarder euro — och en EQT-förvaltad fond är medledare</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-09</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-mistral-tar-in-3-miljarder-euro-och-en</guid>
-      <pubDate>Wed, 09 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Franska Mistral AI meddelade den 8 september att bolaget tagit in 3 miljarder euro i en serie D-runda som värderar det till över 21 miljarder euro efter kapitaltillskottet. Enligt Mistral är det den största aktiefinansieringen någonsin för ett europeiskt teknikbolag. Samsung Electronics ledde rundan, med Scaleup Europe Fund, som förvaltas av svenska EQT, och den befintliga investeraren PSG Equity som medledare.</p>
-<p>Bland nya investerare finns Advent, fonder förvaltade av BlackRock och storhertigdömet Luxemburg; a16z, ASML, General Catalyst, Lightspeed, Nvidia och Salesforce Ventures deltog också. Pengarna ska gå till beräkningskapacitet, egna datacenter, forskning och internationell expansion, och vd Arthur Mensch sade till CNBC att Mistral är på väg att passera en miljard dollar i årliga återkommande intäkter före årsskiftet. Frankrikes president Macron beskrev rundan som ett uttryck för Frankrikes och Sydkoreas ambition att bygga en tredje väg inom AI, och TechCrunch noterar att Mistral säljer just suveränitet: kunden väljer i vilken region frågorna behandlas, och bolaget är även värd för kinesiska öppna modeller.</p>
-<p>För Norden är den mest handfasta kopplingen Borlänge. Mistral och EcoDataCenter presenterade tidigare i år en investering på 1,2 miljarder euro i ett AI-datacenter i den nedlagda pappersfabriken Kvarnsveden, med 250 megawatt i en första etapp och de första anläggningarna planerade till 2027 — Mistrals första infrastruktursatsning utanför Frankrike. Att en EQT-förvaltad fond nu är medledare i rundan knyter Stockholm närmare bolaget, och för svenska och norska myndigheter som söker EU-baserade alternativ till amerikanska moln blir kapaciteten i Dalarna ett konkret alternativ att pröva.</p>
-<p class="news-card__source">Källa: <a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/">Mistral</a>, <a href="https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/09/08/mistral-ai-funding-valuation-samsung.html">CNBC</a>, <a href="https://www.nyteknik.se/tech/mistral-ai-tar-in-32-miljarder-kronor-vaerderas-till-233-miljarder/4492210">Ny Teknik</a>, <a href="https://www.datacenterdynamics.com/en/news/french-ai-firm-mistral-signs-12bn-deal-to-lease-ecodatacenter-facility-in-sweden/">DCD</a></p>]]></description>
-    </item>
-    <item>
-      <title>Ny Teknik synar partiernas AI-politik: tunnast där följderna kan bli störst</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-09</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-ny-teknik-synar-partiernas-ai-politik-tunnast-dar</guid>
-      <pubDate>Wed, 09 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Ny Teknik publicerade den 8 september en genomgång av hur utvecklad AI-politik de åtta riksdagspartierna har i tolv frågor, från jobb, utbildning, forskning och välfärd till beräkningskraft, demokrati och säkerhet. Varje svar placeras på en fyrgradig skala, från ingen dokumenterad position till utvecklad politik; skalan mäter hur konkret och heltäckande politiken är, inte innehållet. Resultatet är samlat på en webbsida där läsaren kan jämföra partierna och gå direkt till ursprungskällorna.</p>
-<p>Bilden som träder fram är att många partier har en delvis utvecklad politik, i enstaka fall ganska komplett, på delar av området, men att de konkreta förslagen oftast stannar vid innovation, kompetensutveckling och effektivisering. På de områden som kan få de mest omstörtande följderna är det däremot tunt, skriver reportern Peter Ottsjö i en krönika: hur medborgarna ska försörja sig om jobben försvinner, hur Sverige säkrar tillgång till de mest avancerade modellerna när USA och Kina äger tekniken, och hur staten ska agera om utvecklingen går snabbare än politiken räknat med. Hans slutsats är att en politiker som tonar ned utvecklingen slipper framstå som en tok, medan den som tar den på allvar måste försvara en framtid som för många känns osannolik.</p>
-<p>För Norden landar granskningen fem dagar före valet den 13 september och sätter betyg på partierna i en valrörelse där AI knappt nämns. Den riksdag som väljs ska bland annat avgöra hur tillsynen enligt EU:s AI-förordning fördelas mellan IMY, PTS och andra myndigheter, och följa upp den svenska språkmodell som Wallenbergstiftelserna aviserade tillsammans med regeringen i februari. Norge, som gick till val i fjol, har hunnit peka ut Nkom som samordnande AI-myndighet och öppna AI-arenan KI Norge under Digdir — en jämförelsepunkt för den riksdag som tillträder i höst.</p>
-<p class="news-card__source">Källa: <a href="https://www.nyteknik.se/tech/ny-teknik-synar-ai-politiken-vilka-tar-sig-an-de-mest-omstoertande-fragorna/4492114">Ny Teknik — granskningen</a>, <a href="https://www.nyteknik.se/kroenikor/politiker-som-tar-ai-utvecklingen-pa-allvar-kan-framsta-som-en-tok/4491610">Ny Teknik — Peter Ottsjös krönika</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google DeepMind släpper AlphaGenome Atlas — förutsägelser för nio miljarder DNA-varianter</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-09</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-google-deepmind-slapper-alphagenome-atlas-forutsagelser-for-nio</guid>
-      <pubDate>Wed, 09 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Google DeepMind öppnade den 8 september AlphaGenome Atlas, en databas som förutsäger effekten av varje möjlig enbokstavsförändring i människans arvsmassa. Med modellen AlphaGenome har bolaget i förväg beräknat den reglerande effekten av alla nio miljarder möjliga enskilda nukleotidvarianter, vilket gett ett dataset på ett petabyte. Atlasen nås av forskare via en webbportal som inte kräver någon programmering.</p>
-<p>För att göra materialet hanterbart införs ett samlat mått, AlphaGenome Variant Impact, som väger ihop förutsägelser för både kodande och icke-kodande DNA och låter forskare rangordna vilka varianter som är värda att testa. DeepMind uppger att Broad Institute använt måttet för att hitta en variant i genen DNM1 som skapar ett felaktigt splitsningsställe, ett bidrag till att lösa ett tidigare olöst fall av sällsynt sjukdom, och att forskaren Gareth Hawkes i en analys av drygt 54 000 deltagare i UK Biobank fann 22 procent fler genetiska samband i icke-kodande DNA. The Register påminner om att innehållet fortfarande är förutsägelser, inte mätningar, och att modellen väntas bli bättre med tiden.</p>
-<p>För Norden är det de nationella genomiksatsningarna som kan dra nytta. Genomic Medicine Sweden och SciLifeLab bygger sedan flera år upp helgenomsekvensering i sjukvården, Karolinska institutet och NTNU:s HUNT-biobank har stora kohorter med genotypdata, och Danmarks Nationalt Genom Center köpte nyligen en superdator vars beräkningskraft enligt Ny Teknik till över 90 procent står oanvänd. En färdigberäknad atlas sänker tröskeln för kliniska genetiker i Stockholm, Trondheim och Köpenhamn att prioritera varianter utan egen beräkningskapacitet — men tolkningen kräver fortfarande validering i laboratorium.</p>
-<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/">Google DeepMind</a>, <a href="https://www.theregister.com/ai-and-ml/2026/09/08/google-deepmind-rises-above-the-ai-scrum-with-genome-atlas/5295137">The Register</a>, <a href="https://www.nyteknik.se/tech/hoeg-risk-foer-sloeseri-med-skattepengar-danmarks-nya-superdator-star-oanvaend/4488245">Ny Teknik</a></p>]]></description>
-    </item>
-    <item>
-      <title>Antioch tar in 32 miljoner dollar på tesen att robotar kan tränas i simulering</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-09</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-09-antioch-tar-in-32-miljoner-dollar-pa-tesen</guid>
-      <pubDate>Wed, 09 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Simuleringsbolaget Antioch meddelade den 8 september en serie A-runda på 32 miljoner dollar ledd av Greylock, med A*, Category Ventures, Box Group och Icehouse Ventures. Bolaget kalibrerar en simulering mot kundens egen hårdvara och kör den i molnet, så att ett team som tidigare hade råd med ett enda fysiskt experiment kan köra tusentals utvärderingar parallellt innan roboten, drönaren eller maskinen sätts i drift. Amazons Ring-enhet uppger att Antiochs simuleringar stämt väl överens med fysiska tester, även i scenarier som hållits utanför kalibreringen.</p>
-<p>Antioch grundades i maj 2025 av bland andra Harry Mellsop, tidigare på Teslas Autopilot, med medgrundare från Google DeepMind och Metas Reality Labs, och har nu tagit in 44,75 miljoner dollar totalt. Nvidia är partner, och Antioch integrerar Omniverse, Isaac Sim och Isaac Lab; molnkapaciteten kommer från Nebius. Forbes beskriver rundan som ett vad mot Figure AI:s motsatta strategi: Figure lanserade i slutet av augusti appen Index, där över 16 miljoner videouppladdningar från 108 länder samlats in från betalda bidragsgivare för 15 miljoner dollar, och har lovat över en miljard dollar till data och beräkning det kommande året.</p>
-<p>För Norden är frågan om det är simulering eller verklig data som avgör hur snabbt robotar lär sig minst lika aktuell. ABB Robotics i Västerås har sålt simuleringsverktyget RobotStudio sedan 1990-talet och låter kunder driftsätta virtuellt innan roboten står på golvet, medan norska 1X i Moss samlar träningsdata i verkliga hem inför leveranserna av hushållsroboten Neo i USA senare i år. Sintef och NTNU i Trondheim bygger simuleringsmiljöer för autonoma fartyg och undervattensrobotar, där verklig data är dyr och farlig att samla in — just den nisch Antioch säger sig sikta på.</p>
-<p class="news-card__source">Källa: <a href="https://siliconangle.com/2026/09/08/antioch-raises-32m-to-move-robot-testing-into-simulation/">SiliconANGLE</a>, <a href="https://www.forbes.com/sites/johnkoetsier/2026/09/08/heres-a-32-million-bet-that-robots-dont-need-a-billion-dollars-of-real-world-data/">Forbes</a>, <a href="https://www.humanoidsdaily.com/news/figure-ai-unveils-index-crowdsourcing-real-world-human-video-to-train-helix">Humanoids Daily</a></p>]]></description>
     </item>
   </channel>
 </rss>
