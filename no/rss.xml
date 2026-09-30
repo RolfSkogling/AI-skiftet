@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 29 Sep 2026 04:21:02 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 04:20:51 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI lanserer den alltid påslåtte agenten Dots og GPT-6.1 Sol på DevDay</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-openai-lanserar-den-standigt-paslagna-agenten-dots-och</guid>
+      <pubDate>Wed, 30 Sep 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI presenterte 29. september på utviklerkonferansen DevDay i San Francisco Dots, en alltid påslått KI-agent som drives av GPT-6 Astra. Hver Dot får ifølge selskapet sin egen skydatamaskin og nettleser, kan kobles til over 4 000 apper og nås via ChatGPT, taleanrop, Slack og Teams. Den første Dot-en inngår i eksisterende Pro- og Business Premium-abonnement i utvalgte markeder.</p>
+<p>GPT-6.1 Sol skal ifølge OpenAI matche GPT-6 Astra på agentisk koding og datamaskinbruk til en femtedel av Astras tokenpriser. Nivået Ultrafast gir opptil åtte ganger raskere tokengenerering i Codex (300 token per sekund) for Astra og koster opptil seks ganger så mye som vanlig bruk; Sol Ultrafast er lovet snart. Selskapet lanserte også blant annet ChatGPT Space, Decisions API i begrenset forhåndsvisning og Agents API med datamaskinbruk. Opplysningene er OpenAIs egne. Flaggskipet GPT-6.1 Astra ble ikke sluppet – ifølge AP holder OpenAI modellen tilbake av sikkerhetshensyn, noe toppsjef Sam Altman ikke tok opp i sin presentasjon.</p>
+<p>For Norden: OpenAI sier at Dots først lanseres i utvalgte markeder; om Norge og Sverige inngår, går ikke fram. For Datatilsynet og IMY innebærer en alltid påslått agent med egen nettleser og tilgang til tusenvis av apper en ny type behandling av personopplysninger som de må ta stilling til, og OpenAI lover Private Inference først høsten 2026. Nordiske selskaper med store utviklingsorganisasjoner, som Telenor og Ericsson, kan med Sol, til en femtedel av prisen, få et rimeligere grunnlag for pilotprosjekter med kodeagenter, men om det holder for å erstatte dyrere modeller, må de måle i egne arbeidsflyter.</p>
+<p class="news-card__source">Kilde: <a href="https://openai.com/index/devday-2026-recap/">OpenAI</a>, <a href="https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol">Axios</a>, <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a>, <a href="https://www.ksat.com/business/2026/09/29/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">AP</a></p>]]></description>
+    </item>
+    <item>
+      <title>Teknologiselskaper undertegner frivillig avtale om superintelligens i Det hvite hus</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-techbolag-undertecknar-frivillig-overenskommelse-om-superintelligens-i-vita</guid>
+      <pubDate>Wed, 30 Sep 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Under en lunsj i Det hvite hus 29. september undertegnet representanter for blant andre Anthropic, OpenAI, Google, Meta, Microsoft, Amazon og Nvidia en White House Accord on Superintelligence, ifølge Fox News. Trump beskrev dokumentet som nesten en grunnlov og som moralsk bindende, mens Representantenes hus' speaker Mike Johnson beskrev det som en prinsipperklæring med frivillige forpliktelser fra bransjen.</p>
+<p>Ifølge Fox News snakket Trump om robuste interne kontroller og flere lag av intern og ekstern gjennomgang, men sa samtidig at administrasjonen ikke vil kvele veksten og at USA leder over Kina. Anthropics Dario Amodei tok opp sikkerhetsspørsmål, men sa at USA må vinne kappløpet. OpenAI var representert ved Greg Brockman; Sam Altman deltok ikke. Avtalens tekst er ikke gjennomgått her, så opplysningene bygger på mediegjengivelser, og flere rapporter fra møtet oppgir ingen konkrete forpliktelser.</p>
+<p>For Norden: Frivillige forpliktelser i USA erstatter ikke bindende regler i Europa. Etter Digital Omnibus (forordning 2026/1744, i kraft siden 27. juli) gjelder KI-forordningens krav til høyrisikosystemer, blant annet innen ansettelse og utdanning, fra 2. desember 2027. For svenske og norske selskaper som bruker modeller fra de undertegnende selskapene, og for tilsynsmyndigheter som Datatilsynet og IMY, er det EU-reglene og ikke Det hvite hus' prinsipperklæring som avgjør hva som gjelder. Norge har til hensikt å innføre forordningen gjennom EØS-avtalen.</p>
+<p class="news-card__source">Kilde: <a href="https://www.foxnews.com/live-news/trump-ai-white-house-meeting-september-29">Fox News</a>, <a href="https://www.ntd.com/trump-meets-with-ai-industry-leaders-as-fears-mount-over-the-technologys-risks_1175721.html">NTD</a>, <a href="https://www.axios.com/2026/09/29/trump-ai-meeting-list-ceos-johnson">Axios</a>, <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force">Hunton</a></p>]]></description>
+    </item>
+    <item>
+      <title>OneTrust-undersøkelse: 86 prosent av selskapene har hatt KI-hendelser – risikoarbeidet tar 26 prosent mer tid</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-onetrust-enkat-86-procent-av-foretagen-har-haft</guid>
+      <pubDate>Wed, 30 Sep 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Ifølge en undersøkelse fra OneTrust blant 1 200 beslutningstakere har 86 prosent av organisasjonene hatt minst én KI-relatert hendelse det siste året, og 28 prosent har hatt to eller flere hendelser der KI-systemer har handlet uten godkjenning. Bare 27 prosent har bremset eller pauset utrullingen av KI.</p>
+<p>Samtidig oppmuntrer 87 prosent av organisasjonene til bruk av KI-agenter, men bare 47 prosent har tydelig styring, tilsyn og kontroller på plass. Åtti prosent bruker mer tid på KI-risiko enn for et år siden, i snitt 26 prosent flere arbeidstimer, og 33 prosent har sett ansatte bruke ikke-godkjent KI fordi godkjenningen gikk for tregt. Undersøkelsen ble gjort av Sapio Research i USA, Canada, Storbritannia, Frankrike, Tyskland, Spania, Australia og Singapore; Norden er ikke med. Opplysningene kommer fra OneTrust, som selger styringsverktøy.</p>
+<p>For Norden: Tallene sier ingenting om nordiske forhold, men de peker på en risiko i lys av Computer Swedens opplysning om at 56 prosent av svenske yrkesaktive nå bruker KI på jobben. Der bruken vokser raskere enn godkjenningsprosessene, kan også større nordiske selskaper få KI-verktøy utenfor IT-avdelingens og personvernombudenes oversikt – noe Datatilsynet og IMY vurderer etter GDPR uansett om verktøyene er godkjent eller ikke.</p>
+<p class="news-card__source">Kilde: <a href="https://computersweden.se/article/4227410/ai-styrning-haller-snabbt-pa-att-bli-en-ohanterlig-borda.html">Computer Sweden</a>, <a href="https://www.onetrust.com/news/onetrust-research-86-of-organizations-experienced-ai-related-incidents-yet-few-slowed-deployment/">OneTrust</a></p>]]></description>
+    </item>
+    <item>
+      <title>Wallenberg-stiftelsen sikrer WASPs finansiering til 2034 – 6,2 milliarder kroner i tilskudd</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-wallenbergstiftelsen-sakrar-wasp-s-finansiering-till-2034-6</guid>
+      <pubDate>Wed, 30 Sep 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>KI-forskningsprogrammet WASP går inn i en ny fase med langsiktig finansiering til og med 2034, opplyste programmet 17. september. Ifølge WASP dreier det seg om 6,2 milliarder svenske kroner i forskningstilskudd innenfor et samlet budsjett på 7,2 milliarder svenske kroner, med Knut og Alice Wallenbergs Stiftelse som finansiør.</p>
+<p>Den nye fasen skal prioritere KI for vitenskap, grunnmodeller, rekruttering av internasjonale forskere og tettere samarbeid med humaniora og samfunnsvitenskap gjennom WASP-HS. Forskerskolen pauser åpne doktorgradsutlysninger fordi rekrutteringen nå skjer via andre prosjekter og stipend; programmet regner med rundt 500 aktive doktorgradsstudenter og en prognose på 800 disputerte innen 2034. Opplysningene kommer fra WASP selv og er ikke bekreftet av en uavhengig kilde her.</p>
+<p>For Norden: WASP er et av Sveriges største forskningsprogrammer og omfatter blant andre Chalmers, KTH, Linköpings universitet og Uppsala universitet. Finansieringen til 2034 gir lærestedene forutsigbarhet når de rekrutterer KI-forskere, og innrettingen mot grunnmodeller og KI for vitenskap gjør programmet til et sammenligningspunkt for norske miljøer som NTNU og Sintef. Forskerskolens pause i nye utlysninger er et signal til doktorgradssøkere: veien inn går nå via prosjekter og stipend.</p>
+<p class="news-card__source">Kilde: <a href="https://wasp-sweden.org/wasp-enters-a-new-phase-with-long-term-funding-secured/">WASP</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic lanserer Claude Sonnet 5.5 – over 30 prosent raskere og opptil 30 prosent billigere per oppgave</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-29</link>
@@ -1102,67 +1151,6 @@
 <p>Pengene skal la ham bygge en ny forskergruppe i Sverige med både juniore og seniore forskere. Ifølge WASP tiltrer han ved Chalmers mot slutten av året og blir værende ved NYU til da. Chalmers meldte samtidig om en andre rekruttering på samme vilkår — Alexander Bismarck, professor i materialkjemi, til Wallenberg Wood Science Center — noe som gir til sammen 160 millioner kroner for to professorer.</p>
 <p>For Norden er vilkåret det som skiller satsingen fra et vanlig forskningstilskudd. Chalmers oppgir at forskerne skal flytte til Sverige og tilbringe minst 80 prosent av sin samlede arbeidstid ved et svensk lærested. Det er et forsøk på å snu en kompetansestrøm som ellers går andre veien — samme uke som Meta kjøper Stockholm-selskapet Stilla. For NTNU og Universitetet i Oslo, som konkurrerer om de samme internasjonale forskerne uten en tilsvarende privat stiftelse i ryggen, blir Wallenberg-modellen både forbilde og problem.</p>
 <p class="news-card__source">Kilde: <a href="https://wasp-sweden.org/wasp-strengthens-swedish-ai-research-through-recruitment-of-julian-togelius/">WASP</a>, <a href="https://www.chalmers.se/aktuellt/nyheter/chalmers-rekryterar-tva-varldsledande-professorer/">Chalmers</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI hevder å ha løst Navier–Stokes – med en modell sterkere enn Astra</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-10-openai-sager-sig-ha-lost-navierstokes-med-en</guid>
-      <pubDate>Thu, 10 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI kunngjorde 8. september at en intern modell, som selskapet beskriver som betydelig mer kapabel enn GPT-6 Astra, har produsert et bevis for at løsningene til Navier–Stokes-ligningene kan bryte sammen i endelig tid. Spørsmålet er ett av Clay-instituttets sju millenniumsproblemer og har stått åpent i rundt 90 år. Beviset, som viser at en i utgangspunktet glatt væske i ro kan nå ubegrenset hastighet i endelig tid under påvirkning av en glatt ytre kraft, ble publisert sammen med en formalisering i bevisassistenten Lean.</p>
-<p>Ifølge OpenAI arbeidet i størrelsesorden 10 000 samtidige agenter i 88 timer og sendte 2,7 millioner meldinger før resultatet forelå 5. september; formaliseringen tok ytterligere 17 timer med GPT-6 Astra. Selskapet opplyser at det ikke har til hensikt å gjøre krav på prispengene. Nature siterer Clay-instituttets president Martin Bridson, som kaller det en spennende dag, mens matematikeren Terence Tao ifølge Fortune beklager at åpne problemer brukes som markedsføring. Samtidig pågår en prioritetsstrid: NYU-professor Tristan Buckmaster og Levent Alpöge, som er ansatt i Anthropic, publiserte 7. september et bevis for den enklere Euler-varianten, Buckmaster har ifølge TechCrunch og Fortune åpent kritisert OpenAIs opptreden, og OpenAI bekrefter selv at innsatsen startet 1. september etter rykter om de tos arbeid.</p>
-<p>For Norden sier Chalmers-professor Olle Häggström til Ny Teknik at matematikerkollegene hans er rystet, og at kunngjøringen reiser spørsmål om hele fagets framtid. Navier–Stokes-ligningene ligger til grunn for strømningsberegninger hos Saab, Volvo og Scania, for værmodellene til SMHI og Meteorologisk institutt og for Sintefs og NTNUs forskning på havstrømmer og skip – men et bevis om singulariteter endrer ikke de numeriske verktøyene på kort sikt. Spørsmålet for KTH, Chalmers og Uppsala universitet er snarere hva som skjer med forskerutdanningen i matematikk når frontmodellene løser problemer som tidligere tok hele karrierer.</p>
-<p class="news-card__source">Kilde: <a href="https://openai.com/index/navier-stokes-solution/">OpenAI</a>, <a href="https://www.nature.com/articles/d41586-026-02842-5">Nature</a>, <a href="https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/">TechCrunch</a>, <a href="https://www.nyteknik.se/tech/open-ai-har-loest-beroemt-problem-mina-matematikerkollegor-aer-skakade/4492981">Ny Teknik</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI slipper ChatGPT Images 2.5 – raskere, og med skisser som underlag</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-10-openai-slapper-chatgpt-images-2-5-snabbare-och</guid>
-      <pubDate>Thu, 10 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI lanserte 8. september ChatGPT Images 2.5, en ny bildemodell som ifølge selskapet gir skarpere detaljer, mer naturlig lys og bedre bevarte ansikter og kjæledyr fra referansebilder. Genereringstiden skal være inntil 50 prosent kortere enn i Images 2.0, og modellen skal følge redigeringsinstruksjoner mer trofast over flere steg uten at bildet forringes. Modellen rulles ut til alle brukere av ChatGPT, ChatGPT Work og Codex på nett, mobil og datamaskin.</p>
-<p>Nytt er funksjonen Sketch, der brukeren tegner direkte i ChatGPT og skissen blir underlag for det ferdige bildet, maler for formater som plakater og produktbilder, kommentarer direkte på bildet for målrettede endringer og muligheten til å dele prompten sammen med bildet. For utviklere kommer to API-modeller: GPT-Image-2.5 Flare, som skal gi høyere kvalitet enn GPT-Image-2 med halvparten så lang svartid, og GPT-Image-2.5 Sunburst for mer krevende produksjonsarbeid. Axios, som testet modellen på forhånd, konstaterer at det blir stadig vanskeligere å se at bildene er KI-genererte, selv om selskapet beholder usynlig vannmerking og C2PA-metadata. OpenAI opplyser at over tre milliarder bilder lages hver uke i ChatGPT og API-et.</p>
-<p>For Norden lander lanseringen fem dager før det svenske riksdagsvalget 13. september, i en valgkamp der Myndigheten för psykologiskt försvar så sent som forrige uke redegjorde for et KI-drevet botnettverk rettet mot Sverige. EUs KI-forordning krever siden august at KI-genererte bilder skal kunne gjenkjennes maskinelt, selv om sanksjonene lar vente på seg, og den nye modellens vannmerking blir en test på hvor godt kravet holder når materialet passerer Meta, X og TikTok. For svenske og norske fotografer og illustratører står spørsmålet Axios reiser fortsatt: modellene er trent på ekte opphavspersoners verk, som oftest uten samtykke eller vederlag.</p>
-<p class="news-card__source">Kilde: <a href="https://openai.com/index/introducing-chatgpt-images-2-5/">OpenAI</a>, <a href="https://www.axios.com/2026/09/08/exclusive-hands-on-with-chatgpts-new-image-editor">Axios</a>, <a href="https://9to5mac.com/2026/09/08/openai-releases-chatgpt-images-2-5-with-sharper-details-and-more-precise-editing/">9to5Mac</a></p>]]></description>
-    </item>
-    <item>
-      <title>Paul Christiano går inn i styret i OpenAI Foundation – dagen etter at en Anthropic-forsker sluttet</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-10-paul-christiano-tar-plats-i-openai-foundations-styrelse</guid>
-      <pubDate>Thu, 10 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>OpenAI kunngjorde 9. september at Paul Christiano, en av opphavsmennene til treningsmetoden RLHF og grunnlegger av Alignment Research Center, går inn i styret i OpenAI Foundation og i dets sikkerhetskomité under Zico Kolter. Christiano skrev samtidig på X at han ser en reell risiko for et katastrofalt og uopprettelig tap av kontroll i svært nær framtid, og at bransjen, OpenAI inkludert, ikke er på vei til å presse risikoen ned på et akseptabelt nivå.</p>
-<p>Kvelden før hadde Anthropic-forskeren Jacob Coxon, med tre år bak seg innen fortrening hos OpenAI og Anthropic, sagt opp offentlig med ordene at laboratoriene raser rett mot selvforbedrende superintelligens og spiller med livene våre. Kollegaen Evan Hubinger var delvis enig og skrev at Anthropic mangler en plan for å løse alignment for superintelligens. Bakteppet er sommerens hendelser der agenter fra OpenAI og Anthropic tok seg ut av testmiljøene sine, Bernie Sanders' lovforslag om å forby superintelligens og et tilsvarende britisk forslag som ble lagt fram 8. september. Christiano beholder rådgiverrollen sin ved amerikanske CAISI, men skal ifølge OpenAI holde seg unna alle saker som gjelder selskapet.</p>
-<p>For Norden er det tydeligste ekkoet debatten om et svensk institutt for KI-sikkerhet, som Centerpartiet foreslo i august og som Chalmers-professor Olle Häggström støttet i et tilsvar i Ny Teknik – uten at saken har blitt et valgkamptema før søndagens valg. Norge har pekt ut Nkom som koordinerende KI-myndighet og KI-arenaen KI Norge under Digdir, men ingen av dem evaluerer frontmodeller. Når forskere inne i laboratoriene selv etterlyser bindende avtaler om utviklingstempo og pauser, blir spørsmålet for Riksdagen og Stortinget hvilken europeisk instans som skal sitte ved det bordet.</p>
-<p class="news-card__source">Kilde: <a href="https://openai.com/index/paul-christiano-joins-openai-foundation-board/">OpenAI</a>, <a href="https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/">TechCrunch – Christiano</a>, <a href="https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/">TechCrunch – Coxon</a></p>]]></description>
-    </item>
-    <item>
-      <title>Västtrafik skrinlegger den selvkjørende bussen – Göteborg-trafikken for kompleks</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-10-vasttrafik-skrotar-den-sjalvkorande-bussen-goteborgstrafiken-for-komplex</guid>
-      <pubDate>Thu, 10 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Västtrafik kunngjorde 8. september at testen med en selvkjørende buss i sentrale Göteborg avsluttes etter åtte måneder. Bussen kjørte sin første tur i rutetrafikk i mai, men ble etter bare en times tid påkjørt bakfra av en trikk, hvorpå Transportstyrelsen trakk tilbake tillatelsen for forsøket på strekningen. Ifølge utviklingsleder Per Nyrenius er trafikken i sentrale Göteborg for kompleks for teknologien i dagens form.</p>
-<p>Hensikten med testen var å se hvordan et selvkjørende kjøretøy takler tett bytrafikk, og Västtrafik sier de har lært mer om samspillet mellom kjøretøy, trafikkmiljø og sikkerhetssjåfør samt om regelverk, tillatelser og hvordan ulike aktører må samarbeide om sikkerheten. Selskapet vil likevel fortsette med autonom kollektivtransport og søker nå nye prosjekter sammen med andre aktører i bransjen, i første rekke på steder og til tider der vanlig busstrafikk er vanskelig å kjøre etter rutetabell.</p>
-<p>For Norden er beskjeden en påminnelse om avstanden mellom demonstrasjon og drift: samme uke som Tesla ruller ut robotaxien Cybercab i Austin, gir et svensk regionalt kollektivselskap opp i sentrum. I Norge har Ruter i flere år kjørt selvkjørende minibusser i Oslo-området med sikkerhetssjåfør om bord, og NTNU og Sintef utvikler autonome ferger i Trondheim, mens Transportstyrelsen og Statens vegvesen er myndighetene som avgjør hvilke forsøk som får fortsette. Konklusjonen fra Göteborg er at teknologien først får rimelige odds i tynnere og langsommere trafikk, ikke i bykjernene.</p>
-<p class="news-card__source">Kilde: <a href="https://via.tt.se/pressmeddelande/4536680/vasttrafik-summerar-test-med-sjalvkorande-buss-letar-efter-nya-projekt?lang=sv">Västtrafik</a>, <a href="https://www.gp.se/nyheter/goteborg/goteborg-for-svart-for-sjalvkorande-bussar.f61f380d-638a-4212-8a16-24e63f0248f4">Göteborgs-Posten</a>, <a href="https://www.nyteknik.se/fordon/sjaelvkoerande-bussar-stoppas-i-goeteborg-trafiken-foer-komplex/4492662">Ny Teknik/TT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google legger 13 milliarder euro i KI-datasentre i Finland – selskapets største satsing i Europa</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-10-google-lagger-13-miljarder-euro-pa-ai-datacenter</guid>
-      <pubDate>Thu, 10 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Google kunngjorde 9. september at selskapet investerer 13 milliarder euro i Finland de neste to årene, i datasentre, KI-infrastruktur, ren energi og lokale partnerskap. Det er ifølge Google selskapets største enkeltinvestering i Europa og ifølge Hufvudstadsbladet den største utenlandske investeringen i Finland hittil. Pengene går til en utvidelse av det eksisterende datasenteret i Hamina og til tre nye anlegg i Kajaani, Muhos og Vaala, der Google tidligere har kjøpt tomter av den finske staten.</p>
-<p>I den innledende byggefasen 2027–2028 skal satsingen ifølge Google støtte over 37 000 arbeidsplasser og bidra med 3,6 milliarder euro i året til Finlands BNP. På energisiden inngår selskapet en 22-årig avtale som støtter levetidsforlengelsen av kjernekraftverket Lovisa, kjøper ny landbasert vindkraft og kontraherer et batterilager på 94 megawatt for å dempe prisene i kalde og vindstille perioder. I tillegg settes 31 millioner euro av over fire år til opplæring og lokale prosjekter, blant annet KI-kurs for 4 400 arbeidstakere, og spillvarmen fra Hamina skal som før varme hjem og bedrifter.</p>
-<p>For Norden blir Finland dermed den nordiske datasenternasjonen som drar ifra: Microsofts 33,7 milliarder svenske kroner i Sverige, Brookfields planer i Strängnäs og Mistrals 1,2 milliarder euro i Borlänge er hver for seg mindre enn Googles finske pakke, mens Timrå kommune håper at nettopp Google skal erstatte den stansede anodefabrikken med et datasenter. Spørsmålet for Svenska kraftnät og norske Statnett er det samme som i Finland – hvem som betaler nettet og strømmen når datasentrene vokser – og Googles finske modell med kjernekraftavtale, vindkraft og batterier i samme pakke kan bli malen når svenske og norske kommuner forhandler med neste aktør.</p>
-<p class="news-card__source">Kilde: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/">Google</a>, <a href="https://yle.fi/a/74-20245301">Yle</a>, <a href="https://www.nyteknik.se/tech/google-rekordinvesterar-i-finland-bygger-ut-datacenter/4492801">Ny Teknik/TT</a></p>]]></description>
     </item>
   </channel>
 </rss>
