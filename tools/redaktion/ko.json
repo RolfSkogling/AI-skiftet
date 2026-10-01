@@ -15,59 +15,7 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [
-    {
-      "id": "gemini-4-argon-2026-09",
-      "tidigast": "2026-10-01",
-      "senast": "2026-10-04",
-      "kategori": "modeller",
-      "norden": false,
-      "dubblettnyckel": [
-        "Gemini 4 Argon",
-        "Argon",
-        "Fairwind"
-      ],
-      "vinkel": "Google annonserade Gemini 4 Argon den 30 september 2026. Vinkeln ar SLAPPFORMEN, inte benchmarksiffrorna: Googles frontlinjemodell gar forst till myndigheter och betrodda cyberforsvarare inom det kontrollerade Fairwind-programmet, med cyberskyddsracken borttagna for den gruppen och for Googles egna interna team, medan allmanheten och betalande kunder far vanta. VIKTIGT: Fairwind ar INTE nytt och byggdes inte for Argon - programmet lanserades 2 september 2026 med Gemini 3.8 Flash Cyber och sarbarhetsagenten CodeMender och hade da over 650 deltagande organisationer. Det nya ar alltsa att Googles FRAMSTA modell nu gar genom den kanalen forst, inte att kanalen finns. Skriv notisen sa - annars blir det en nyhet om ett program som ar en manad gammalt. Siffrorna hor i stycke 2, attribuerade till Google.",
-      "maste_med": [
-        "Datumet ar 30 september 2026, inte 1 oktober. Bekraftat av Axios, CNBC och 9to5Google samma dag. Skriv aldrig 1 oktober som lanseringsdatum.",
-        "Fairwind-programmet lanserades 2 september 2026 - fyra veckor FORE Argon - med modellen Gemini 3.8 Flash Cyber och sarbarhetsagenten CodeMender, och Google uppgav da over 650 deltagande organisationer: myndigheter, Google Cloud-kunder och cybersakerhetspartner, med foretrade for operatorer av kritisk infrastruktur och underhallare av mycket anvand programvara. Deltagare maste begransa atkomsten till personal som arbetar med cybersakerhet, incidenthantering och penetrationstestning, och anvanda skydd som flerfaktorsautentisering. Utan den bakgrunden lader notisen fel: Argon ar den framsta modellen in i ett befintligt program, inte upprinnelsen till programmet.",
-        "Tillgangligheten ar notisens karna: modellen gar FORST till betrodda cyberforsvarare och amerikanska myndigheter inom Fairwind, inte till betalande kunder. Betald API-atkomst och Google AI Ultra kommer efter. Allmanheten nar inte modellen vid slappet.",
-        "Uppgiften att modellen slapps UTAN cyberskyddsracken galler betrodda forsvarare OCH Googles egna interna team, och kommer fran Google sjalvt. Attribuera i brodtexten - det ar en policyuppgift fran bolaget, inte en observation. Utelamna inte de interna teamen; det gor uppgiften mildare an den ar. Skriv den samtidigt utan att antyda vad kapabiliteten kan anvandas till offensivt.",
-        "Utdatagransen ar 1 miljon tokens, upp fran 64 000. Skilj UTDATA fran KONTEXTFONSTER - tva olika mattal. Utdatagransen ar det tydligaste tekniska steget och hor i stycke 2.",
-        "ALLA prestandasiffror kommer fran Google: 77,9 procent pa DeepSWE v1.1, 68 procent och delad forstaplats pa CWE-bench v1, 51,3 procent pa AutomationBench. Ingen oberoende matning fanns publicerad vid slappet - och eftersom modellen inte ar allmant tillganglig kan den inte matas oberoende, vilket ar en egen poang om granskningsbarhet. ZuriQ-regeln 2026-07-29 galler: attribuera, inga oattribuerade superlativ. VentureBeats formulering om att Google retar benchmarkledningen ar VentureBeats lasning av Googles egna siffror.",
-        "Priset: introduktionspris 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens, darefter 4 respektive 20. Cachad indata 95 procent rabatt. Notera att ett annonserat pris for en modell allmanheten inte nar ar ett lofte, inte en tillganglig produkt.",
-        "Kavukcuoglu sa den 23 september pa The Informations AI Agenda Live att Gemini 4 gatt in i tidig post-training och att Google avsag slappa ett tidigt post-training-resultat sa snart som mojligt, mycket tidigare an slutet av 2026. Han angav INGET datum. Skriv att utfallet sju dagar senare var forenligt med uttalandet - inte att han forutsade det.",
-        "Namnfragan: uppgiften att Argon var ett internt kodnamn kommer fran ETT enskilt X-konto den 14 september och har aldrig bekraftats av Google eller LMArena; all senare rapportering aterbrukar samma kalla. Skriv inte rykten i plural som om de var oberoende av varandra. Om den checkpoint som observerades pa LMArena ar samma modell som den slappta Argon gar inte att avgora - formulera som oppen fraga.",
-        "Google uppger att bolaget deltar i den amerikanska regeringens frivilliga process for forhandsatkomst till modeller. Attribuera till Google."
-      ],
-      "far_inte_pastas": [
-        "Att lanseringen skedde 1 oktober 2026. Den skedde 30 september.",
-        "Att Fairwind ar nytt, lanserades tillsammans med Argon eller byggdes for Argon. Programmet fanns fran 2 september 2026 med Gemini 3.8 Flash Cyber och CodeMender.",
-        "Att Argon ar samma produkt som det vantade Gemini 4 Pro, ELLER att den bevisligen ar en annan. Forhallandet mellan dem ar inte faststallt: bevakningen beskriver Argon som Gemini 4-generationens frontlinjeklass och kodnamnet som befordrat till produktnamn, men Google har inte uttalat sig. Nagon produkt vid namn Gemini 4 Pro har inte slappts per 1 oktober 2026. Formulera oppet, pasta inget i nagon riktning.",
-        "Att lackans uppgift om 256 000 tokens utdata beskriver den slappta modellen. En siffra for en tidig checkpoint och en siffra for en fardig modell ar inte samma pastaende - stall dem inte mot varandra som om lackan darmed var motbevisad.",
-        "Att kontextfonstret ar 2 miljoner tokens. Obekraftat, och lackans egen text sa att beslutet inte var taget.",
-        "Att LMArena-observationerna den 14 september gallde Argon. Inte faststallt, och varken Google eller LMArena har kommenterat.",
-        "Att nagon oberoende part har verifierat, validerat eller bekraftat Googles prestandasiffror.",
-        "Att modellen ar bast, starkast, mest kapabel eller leder - oattribuerat.",
-        "Nagot om EU-tillganglighet, datalokalisering eller vilka lander och myndigheter som ingar i Fairwind som kallorna inte sager. Om nordiska myndigheter har atkomst ar inte kant - formulera som fraga eller utelamna.",
-        "Att modellen kan anvandas offensivt, eller nagon beskrivning av hur skyddsracken kringgas. Notisen redovisar att Google tagit bort dem for en avgransad grupp, inget mer."
-      ],
-      "norden_stycke": "Slappformen ar det som biter i Norden. Fairwind ar enligt Google ett program med kontrollerad atkomst dar foretrade ges till operatorer av kritisk infrastruktur och underhallare av mycket anvand programvara, och som i september uppgavs ha over 650 deltagande organisationer - da blir fragan om svenska och norska myndigheter och bolag ar innanfor eller utanfor konkret, inte akademisk. MSB och Nationellt cybersakerhetscenter i Sverige, NSM och Nkom i Norge har uppdrag som matchar programmets beskrivning; om nagon av dem har atkomst ar inte kant och ska staa som en oppen fraga. AI-forordningen (forordning EU 2026/1744, i kraft 27 juli 2026) staller krav pa modeller med allman anvandning och pa systemrisk - en modell som medvetet slapps utan delar av sina skyddsracken till utvalda mottagare ar precis det fall reglerna ska fanga, och Datatilsynet och IMY far en ny sorts modell att forhalla sig till. For nordiska bolag - Ericsson, Telenor, Equinor, Volvo, DNB, SEB - ar det praktiska laget att priset ar annonserat men modellen inte tillganglig: det gar inte att planera en arkitektur kring en modell man inte nar. For KTH, Chalmers, NTNU och UiO ar poangen granskningsbarhet: en modell som bara betrodda forsvarare kan kora gar inte att forska pa oberoende.",
-      "kallor": [
-        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-        "https://deepmind.google/fairwind-program/",
-        "https://securityboulevard.com/2026/09/google-launches-fairwind-program/",
-        "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release",
-        "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
-        "https://www.axios.com/2026/09/30/google-gemini-4",
-        "https://www.marktechpost.com/2026/09/30/google-deepmind-unveils-gemini-4-argon-with-1m-output-tokens-for-coding-knowledge-work-and-cyber-defense/",
-        "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/"
-      ],
-      "underlag": "",
-      "lagd": "2026-10-01",
-      "reviderad": "2026-10-01 (faktakoll: Fairwind fanns fran 2 sep; Pro-forhallandet oppet; lackan en enda kalla)"
-    }
-  ],
+  "ko": [],
   "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
@@ -146,6 +94,59 @@
       "lagd": "2026-09-22",
       "publicerad": "2026-09-23",
       "commit": "54e72d296ec2e33f20e29d69355dde5e09a44fe6"
+    },
+    {
+      "id": "gemini-4-argon-2026-09",
+      "tidigast": "2026-10-01",
+      "senast": "2026-10-04",
+      "kategori": "modeller",
+      "norden": false,
+      "dubblettnyckel": [
+        "Gemini 4 Argon",
+        "Argon",
+        "Fairwind"
+      ],
+      "vinkel": "Google annonserade Gemini 4 Argon den 30 september 2026. Vinkeln ar SLAPPFORMEN, inte benchmarksiffrorna: Googles frontlinjemodell gar forst till myndigheter och betrodda cyberforsvarare inom det kontrollerade Fairwind-programmet, med cyberskyddsracken borttagna for den gruppen och for Googles egna interna team, medan allmanheten och betalande kunder far vanta. VIKTIGT: Fairwind ar INTE nytt och byggdes inte for Argon - programmet lanserades 2 september 2026 med Gemini 3.8 Flash Cyber och sarbarhetsagenten CodeMender och hade da over 650 deltagande organisationer. Det nya ar alltsa att Googles FRAMSTA modell nu gar genom den kanalen forst, inte att kanalen finns. Skriv notisen sa - annars blir det en nyhet om ett program som ar en manad gammalt. Siffrorna hor i stycke 2, attribuerade till Google.",
+      "maste_med": [
+        "Datumet ar 30 september 2026, inte 1 oktober. Bekraftat av Axios, CNBC och 9to5Google samma dag. Skriv aldrig 1 oktober som lanseringsdatum.",
+        "Fairwind-programmet lanserades 2 september 2026 - fyra veckor FORE Argon - med modellen Gemini 3.8 Flash Cyber och sarbarhetsagenten CodeMender, och Google uppgav da over 650 deltagande organisationer: myndigheter, Google Cloud-kunder och cybersakerhetspartner, med foretrade for operatorer av kritisk infrastruktur och underhallare av mycket anvand programvara. Deltagare maste begransa atkomsten till personal som arbetar med cybersakerhet, incidenthantering och penetrationstestning, och anvanda skydd som flerfaktorsautentisering. Utan den bakgrunden lader notisen fel: Argon ar den framsta modellen in i ett befintligt program, inte upprinnelsen till programmet.",
+        "Tillgangligheten ar notisens karna: modellen gar FORST till betrodda cyberforsvarare och amerikanska myndigheter inom Fairwind, inte till betalande kunder. Betald API-atkomst och Google AI Ultra kommer efter. Allmanheten nar inte modellen vid slappet.",
+        "Uppgiften att modellen slapps UTAN cyberskyddsracken galler betrodda forsvarare OCH Googles egna interna team, och kommer fran Google sjalvt. Attribuera i brodtexten - det ar en policyuppgift fran bolaget, inte en observation. Utelamna inte de interna teamen; det gor uppgiften mildare an den ar. Skriv den samtidigt utan att antyda vad kapabiliteten kan anvandas till offensivt.",
+        "Utdatagransen ar 1 miljon tokens, upp fran 64 000. Skilj UTDATA fran KONTEXTFONSTER - tva olika mattal. Utdatagransen ar det tydligaste tekniska steget och hor i stycke 2.",
+        "ALLA prestandasiffror kommer fran Google: 77,9 procent pa DeepSWE v1.1, 68 procent och delad forstaplats pa CWE-bench v1, 51,3 procent pa AutomationBench. Ingen oberoende matning fanns publicerad vid slappet - och eftersom modellen inte ar allmant tillganglig kan den inte matas oberoende, vilket ar en egen poang om granskningsbarhet. ZuriQ-regeln 2026-07-29 galler: attribuera, inga oattribuerade superlativ. VentureBeats formulering om att Google retar benchmarkledningen ar VentureBeats lasning av Googles egna siffror.",
+        "Priset: introduktionspris 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens, darefter 4 respektive 20. Cachad indata 95 procent rabatt. Notera att ett annonserat pris for en modell allmanheten inte nar ar ett lofte, inte en tillganglig produkt.",
+        "Kavukcuoglu sa den 23 september pa The Informations AI Agenda Live att Gemini 4 gatt in i tidig post-training och att Google avsag slappa ett tidigt post-training-resultat sa snart som mojligt, mycket tidigare an slutet av 2026. Han angav INGET datum. Skriv att utfallet sju dagar senare var forenligt med uttalandet - inte att han forutsade det.",
+        "Namnfragan: uppgiften att Argon var ett internt kodnamn kommer fran ETT enskilt X-konto den 14 september och har aldrig bekraftats av Google eller LMArena; all senare rapportering aterbrukar samma kalla. Skriv inte rykten i plural som om de var oberoende av varandra. Om den checkpoint som observerades pa LMArena ar samma modell som den slappta Argon gar inte att avgora - formulera som oppen fraga.",
+        "Google uppger att bolaget deltar i den amerikanska regeringens frivilliga process for forhandsatkomst till modeller. Attribuera till Google."
+      ],
+      "far_inte_pastas": [
+        "Att lanseringen skedde 1 oktober 2026. Den skedde 30 september.",
+        "Att Fairwind ar nytt, lanserades tillsammans med Argon eller byggdes for Argon. Programmet fanns fran 2 september 2026 med Gemini 3.8 Flash Cyber och CodeMender.",
+        "Att Argon ar samma produkt som det vantade Gemini 4 Pro, ELLER att den bevisligen ar en annan. Forhallandet mellan dem ar inte faststallt: bevakningen beskriver Argon som Gemini 4-generationens frontlinjeklass och kodnamnet som befordrat till produktnamn, men Google har inte uttalat sig. Nagon produkt vid namn Gemini 4 Pro har inte slappts per 1 oktober 2026. Formulera oppet, pasta inget i nagon riktning.",
+        "Att lackans uppgift om 256 000 tokens utdata beskriver den slappta modellen. En siffra for en tidig checkpoint och en siffra for en fardig modell ar inte samma pastaende - stall dem inte mot varandra som om lackan darmed var motbevisad.",
+        "Att kontextfonstret ar 2 miljoner tokens. Obekraftat, och lackans egen text sa att beslutet inte var taget.",
+        "Att LMArena-observationerna den 14 september gallde Argon. Inte faststallt, och varken Google eller LMArena har kommenterat.",
+        "Att nagon oberoende part har verifierat, validerat eller bekraftat Googles prestandasiffror.",
+        "Att modellen ar bast, starkast, mest kapabel eller leder - oattribuerat.",
+        "Nagot om EU-tillganglighet, datalokalisering eller vilka lander och myndigheter som ingar i Fairwind som kallorna inte sager. Om nordiska myndigheter har atkomst ar inte kant - formulera som fraga eller utelamna.",
+        "Att modellen kan anvandas offensivt, eller nagon beskrivning av hur skyddsracken kringgas. Notisen redovisar att Google tagit bort dem for en avgransad grupp, inget mer."
+      ],
+      "norden_stycke": "Slappformen ar det som biter i Norden. Fairwind ar enligt Google ett program med kontrollerad atkomst dar foretrade ges till operatorer av kritisk infrastruktur och underhallare av mycket anvand programvara, och som i september uppgavs ha over 650 deltagande organisationer - da blir fragan om svenska och norska myndigheter och bolag ar innanfor eller utanfor konkret, inte akademisk. MSB och Nationellt cybersakerhetscenter i Sverige, NSM och Nkom i Norge har uppdrag som matchar programmets beskrivning; om nagon av dem har atkomst ar inte kant och ska staa som en oppen fraga. AI-forordningen (forordning EU 2026/1744, i kraft 27 juli 2026) staller krav pa modeller med allman anvandning och pa systemrisk - en modell som medvetet slapps utan delar av sina skyddsracken till utvalda mottagare ar precis det fall reglerna ska fanga, och Datatilsynet och IMY far en ny sorts modell att forhalla sig till. For nordiska bolag - Ericsson, Telenor, Equinor, Volvo, DNB, SEB - ar det praktiska laget att priset ar annonserat men modellen inte tillganglig: det gar inte att planera en arkitektur kring en modell man inte nar. For KTH, Chalmers, NTNU och UiO ar poangen granskningsbarhet: en modell som bara betrodda forsvarare kan kora gar inte att forska pa oberoende.",
+      "kallor": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "https://deepmind.google/fairwind-program/",
+        "https://securityboulevard.com/2026/09/google-launches-fairwind-program/",
+        "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release",
+        "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+        "https://www.axios.com/2026/09/30/google-gemini-4",
+        "https://www.marktechpost.com/2026/09/30/google-deepmind-unveils-gemini-4-argon-with-1m-output-tokens-for-coding-knowledge-work-and-cyber-defense/",
+        "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/"
+      ],
+      "underlag": "",
+      "lagd": "2026-10-01",
+      "reviderad": "2026-10-01 (faktakoll: Fairwind fanns fran 2 sep; Pro-forhallandet oppet; lackan en enda kalla)",
+      "publicerad": "2026-10-01",
+      "commit": "b5ca5e887dc93c58898cf23ecf7ebbf1b9dd4526"
     }
   ]
 }
