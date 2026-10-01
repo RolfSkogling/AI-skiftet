@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-09-30"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">30 september 2026</span></time>
+        <time datetime="2026-10-01"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">1 oktober 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,51 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-10-01" data-date="2026-10-01">
+        <p class="day__label news-date">1 oktober 2026</p>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google släpper Gemini 4 Argon &ndash; men först till betrodda cyberförsvarare, inte till allmänheten</a></h3>
+        <p class="item__ingress">Google presenterade den 30 september Gemini 4 Argon, som bolaget kallar sin mest kraftfulla modell hittills.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Google presenterade den 30 september Gemini 4 Argon, som bolaget kallar sin mest kraftfulla modell hittills. Modellen går först till betrodda cyberförsvarare inom Googles kontrollerade program Fairwind, därefter till betalande API-kunder och prenumeranter på Google AI Ultra; allmänheten når den inte vid släppet, och något datum för bredare lansering har Google inte angett.</p>
+          <p>Fairwind är inte nytt: Google lanserade programmet den 2 september, fyra veckor före Argon, med modellen Gemini 3.8 Flash Cyber och sårbarhetsagenten CodeMender, och uppgav då över 650 deltagande organisationer &ndash; myndigheter, Google Cloud-kunder och cybersäkerhetspartner, med företräde för operatörer av kritisk infrastruktur och underhållare av mycket använd programvara. Deltagarna måste begränsa åtkomsten till personal inom cybersäkerhet, incidenthantering och penetrationstestning och använda skydd som flerfaktorsautentisering. Nytt är att Argon nu går in genom den kanalen först. Enligt Google släpps Argon utan cyberskyddsräcken för de betrodda försvararna och för Googles egna interna team, medan spärrar mot kemiska, biologiska, radiologiska och nukleära hot samt mot cyberattacker riktade mot allmänheten finns kvar &ndash; en policyuppgift från bolaget självt. Utdatagränsen höjs till 1&nbsp;miljon tokens från 64&nbsp;000 tokens; det gäller utdata, inte kontextfönstret, som Google inte redovisat. Alla prestandasiffror är Googles egna: 77,9 procent på DeepSWE v1.1, 68 procent och delad förstaplats på CWE-bench v1 och 51,3 procent på AutomationBench. Någon oberoende mätning fanns inte publicerad vid släppet, och så länge modellen inte är allmänt tillgänglig är oberoende mätning svår att genomföra. MarkTechPost återger jämförelsesiffror enligt vilka Argon ligger efter på FrontierSWE v2 (55,0 procent mot GPT-6 Astras 65,5) och Terminal-Bench 4.0 (57,4 procent mot Claude Opus 5.5:s 66,4); även de uppgifterna är inte oberoende mätta. Introduktionspriset är 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens, därefter 4 respektive 20 dollar, med 95 procents rabatt på cachad indata &ndash; men ett pris för en modell allmänheten inte når är ett löfte, inte en tillgänglig produkt. Google uppger att bolaget deltar i den amerikanska regeringens frivilliga process för förhandsåtkomst till modeller. Googles Koray Kavukcuoglu sade vid The Informations AI Agenda Live att Gemini 4 gått in i tidig post-training och att Google ville släppa ett tidigt resultat så snart som möjligt, långt före slutet av 2026, utan att ange datum; utfallet är förenligt med uttalandet. Uppgiften att Argon var ett internt kodnamn kommer från ett enskilt konto på X och är obekräftad. Om Argon är samma modell som den checkpoint som observerats på LMArena, och hur den förhåller sig till ett väntat Gemini 4 Pro, går inte att avgöra utifrån tillgängliga källor &ndash; det är en öppen fråga.</p>
+          <p>För Norden: Släppformen är det som biter. Fairwind prioriterar enligt Google operatörer av kritisk infrastruktur och underhållare av mycket använd programvara, så frågan om svenska och norska aktörer är innanför eller utanför blir konkret. Myndigheten för civilt försvar och Nationellt cybersäkerhetscenter i Sverige samt NSM och Nkom i Norge har uppdrag som matchar programmets beskrivning, men om någon av dem har åtkomst, och vilka länder som ingår, framgår inte. EU:s AI-förordning ställer krav på modeller för allmänna ändamål med systemrisk, och en modell som medvetet släpps utan delar av sina skyddsräcken till utvalda mottagare är ett fall som EU:s AI-byrå, som har tillsyn över sådana modeller, kan behöva ta ställning till &ndash; hur reglerna tillämpas här är inte avgjort, och om modellen alls erbjuds inom EU framgår inte. För nordiska bolag som Ericsson, Telenor, Equinor, Volvo, DNB och SEB är läget att priset är annonserat men modellen inte tillgänglig: det går inte att planera en arkitektur kring en modell man inte når. För KTH, Chalmers, NTNU och UiO är poängen granskningsbarhet &ndash; en modell som i nuläget bara betrodda försvarare och Googles egna team kan köra går inte att forska på oberoende.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google</a>, <a href="https://deepmind.google/fairwind-program/">Google DeepMind (Fairwind)</a>, <a href="https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/">TechCrunch</a>, <a href="https://www.marktechpost.com/2026/09/30/google-deepmind-unveils-gemini-4-argon-with-1m-output-tokens-for-coding-knowledge-work-and-cyber-defense/">MarkTechPost</a>, <a href="https://securityboulevard.com/2026/09/google-launches-fairwind-program/">Security Boulevard</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="reglering norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.imy.se/nyheter/webbinarium-saker-ai-anvandning-i-varden/">IMY och Läkemedelsverket bjuder in till webbinarium om säker AI i vården</a></h3>
+        <p class="item__ingress">Integritetsskyddsmyndigheten (IMY) och Läkemedelsverket håller den 21 oktober ett webbinarium om säker AI-användning i vården.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Integritetsskyddsmyndigheten (IMY) och Läkemedelsverket håller den 21 oktober ett webbinarium om säker AI-användning i vården. Det riktar sig till vårdgivare som inför AI-baserade system och handlar om dataskyddsreglerna i GDPR och produktsäkerhetskraven i EU:s förordning om medicintekniska produkter (MDR).</p>
+          <p>Enligt IMY tar webbinariet upp när ett AI-system räknas som en medicinteknisk produkt, vilka säkerhetskrav som gäller enligt de två regelverken samt exempel på användning som journalhantering och bildanalys. EU:s AI-förordning finns med som sammanhang. Webbinariet ingår i kampanjen &rdquo;Tänk säkert&rdquo; under EU:s cybersäkerhetsmånad i oktober.</p>
+          <p>För Norden: Att IMY och Läkemedelsverket går ut gemensamt visar att AI i vården bedöms som ett område där två myndigheters regelverk möts. IMY har dessutom enligt egen uppgift utsetts till marknadskontrollmyndighet för AI-förordningen, särskilt för AI i brottsbekämpning, och samarbetar med PTS och Finansinspektionen om genomförandet; regeringen har bedömt att uppdraget kräver ökad finansiering. För regioner och sjukhus som Sahlgrenska universitetssjukhuset och Karolinska universitetssjukhuset är frågan praktisk: samma AI-system kan beröra både dataskydd och krav på medicintekniska produkter. Norska aktörer berörs inte direkt av webbinariet, som riktar sig till svensk vård.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.imy.se/nyheter/webbinarium-saker-ai-anvandning-i-varden/">IMY (webbinarium)</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY (marknadskontroll)</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="fysisk-ai">
+        <div class="item__tags news-card__tags"><span class="tag tag--fysisk-ai news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+        <h3><a href="https://technode.com/2026/09/29/china-accounts-for-77-9-of-global-humanoid-robot-shipments-in-h1-idc-says/">IDC: Kina stod för 77,9 procent av världens humanoidleveranser första halvåret 2026</a></h3>
+        <p class="item__ingress">Enligt analysföretaget IDC levererade Kina mer än 19&nbsp;000 humanoida robotar under första halvåret 2026, vilket motsvarar 77,9 procent av världens leveranser.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Enligt analysföretaget IDC levererade Kina mer än 19&nbsp;000 humanoida robotar under första halvåret 2026, vilket motsvarar 77,9 procent av världens leveranser. Globalt levererades nästan 25&nbsp;000 enheter, en ökning med 432,1 procent på årsbasis.</p>
+          <p>IDC har samtidigt höjt sin prognos för 2030 till över 750&nbsp;000 levererade enheter per år. Siffrorna går isär mellan källorna: Digitimes anger i en rubrik att kinesiska leverantörer står för över 95 procent av de globala leveranserna, och Global Times angav i augusti 97 procent för halvåret. Vilket mått och vilken definition som används framgår inte i alla återgivningar, så siffrorna bör inte jämföras rakt av.</p>
+          <p>För Norden: Ett nordiskt exempel är norskgrundade 1X Technologies, som enligt The Next Web öppnade en fabrik i Hayward i Kalifornien med målet 10&nbsp;000 enheter första året och säljer NEO för 20&nbsp;000 dollar eller 499 dollar i månaden. Den nya fabriken ligger alltså i USA, och de återgivna IDC-siffrorna redovisar inga enskilda leverantörer, så 1X:s andel är okänd. För nordisk industri som Kongsberg, Volvo och Equinor är frågan om och när humanoider blir köpbara på marknadsmässiga villkor öppen &ndash; tillgången avgörs i dag främst i Kina och USA.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://technode.com/2026/09/29/china-accounts-for-77-9-of-global-humanoid-robot-shipments-in-h1-idc-says/">TechNode</a>, <a href="https://www.digitimes.com/news/a20261001PD208/robot-shipments-market-2026-idc.html">Digitimes</a>, <a href="https://www.globaltimes.cn/page/202608/1367923.shtml">Global Times</a>, <a href="https://thenextweb.com/news/1x-neo-humanoid-factory-hayward-10000-home-robots">The Next Web (1X)</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-09-30" data-date="2026-09-30">
         <p class="day__label news-date">30 september 2026</p>
       <article class="item news-card" data-tags="modeller">
@@ -631,65 +676,6 @@ details.menu[open]>summary{color:var(--accent)}
       </article>
       </div>
 
-      <div class="day news-date-group" id="dag-2026-09-24" data-date="2026-09-24">
-        <p class="day__label news-date">24 september 2026</p>
-      <article class="item news-card" data-tags="reglering norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
-        <h3><a href="https://www.digi.no/artikler/dnb-forbyr-ki-briller/577337">Norska storbanken DNB f&ouml;rbjuder AI-glas&ouml;gon med kamera p&aring; sina kontor</a></h3>
-        <p class="item__ingress">En av Norges st&ouml;rsta banker, DNB, f&ouml;rbjuder fr&aring;n och med nu att anst&auml;llda och bes&ouml;kare b&auml;r AI-glas&ouml;gon i bankens lokaler.</p>
-        <details>
-          <summary><span class="more">L&auml;s hela notisen</span><span class="less">F&auml;ll ihop</span></summary>
-          <div class="item__full">
-          <p>En av Norges st&ouml;rsta banker, DNB, f&ouml;rbjuder fr&aring;n och med nu att anst&auml;llda och bes&ouml;kare b&auml;r AI-glas&ouml;gon i bankens lokaler. Kommunikationsdirekt&ouml;r Liselotte Lunde s&auml;ger att banken vill ha en arbetsplats d&auml;r ingen ska beh&ouml;va undra om kollegor eller kunder filmas i smyg.</p>
-          <p>F&ouml;rbudet beslutades den 22 september och g&auml;ller alla bankens kontor. Glas&ouml;gonen ser ut som vanliga glas&ouml;gon men inneh&aring;ller kamera, mikrofon och AI-teknik som kan f&aring;nga upp k&auml;nslig kundinformation, aff&auml;rshemligheter och privata samtal utan att n&aring;gon m&auml;rker det. &rdquo;Vi kan inte acceptera den risken, s&aring; vi har satt en tydlig gr&auml;ns fr&aring;n och med i dag&rdquo;, s&auml;ger Lunde. Norge saknar i dag lagstiftning som specifikt reglerar AI-glas&ouml;gon.</p>
-          <p>Beslutet kommer samtidigt som den norska regeringen &ouml;verv&auml;ger fr&aring;gan. Digitaliserings- och f&ouml;rvaltningsminister Karianne Tung har sagt att hon &ouml;verv&auml;ger ett f&ouml;rbud mot ansiktsigenk&auml;nning i AI-glas&ouml;gon, men n&aring;gon lag finns &auml;nnu inte &ndash; en lucka DNB nu fyller p&aring; egen hand.</p>
-          <p class="item__source news-card__source">K&auml;lla: <a href="https://www.digi.no/artikler/dnb-forbyr-ki-briller/577337">digi.no</a>, <a href="https://www.kode24.no/artikkel/dnb-forbyr-ansatte-a-bruke-smartbriller/273153">kode24.no</a>, <a href="https://www.vg.no/nyheter/i/oE8qVa/digitaliseringsminister-karianne-tung-om-smartbriller-vurderer-aa-forby">VG</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="hardvara">
-        <div class="item__tags news-card__tags"><span class="tag tag--hardvara news-card__tag news-card__tag--hardvara">H&aring;rdvara</span></div>
-        <h3><a href="https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/">Meta lanserar sina f&ouml;rsta kamerafria AI-glas&ouml;gon efter h&aring;rd kritik</a></h3>
-        <p class="item__ingress">Meta presenterade p&aring; sin utvecklarkonferens Connect den 23 september sina f&ouml;rsta kamerafria AI-glas&ouml;gon, Ray-Ban Meta Audio.</p>
-        <details>
-          <summary><span class="more">L&auml;s hela notisen</span><span class="less">F&auml;ll ihop</span></summary>
-          <div class="item__full">
-          <p>Meta presenterade p&aring; sin utvecklarkonferens Connect den 23 september sina f&ouml;rsta kamerafria AI-glas&ouml;gon, Ray-Ban Meta Audio. Glas&ouml;gonen saknar helt kamera men erbjuder musik, samtal och simultan&ouml;vers&auml;ttning via AI-assistenten Muse. De kostar fr&aring;n 349 dollar, med f&ouml;rhandsbest&auml;llning fr&aring;n den 13 oktober.</p>
-          <p>Vd Mark Zuckerberg sa att bolaget ins&aring;g att det kunde skapa en helt ny kategori glas&ouml;gon byggd kring ljud i st&auml;llet f&ouml;r bild. Beskedet kommer efter upprepad kritik mot Metas kamerabestyckade AI-glas&ouml;gon, som anklagats f&ouml;r att g&ouml;ra smygfilmning enklare &ndash; trots en inbyggd lampa som ska varna omgivningen n&auml;r kameran &auml;r p&aring;. Samma dag visade Meta ocks&aring; en uppdaterad kameramodell, Ray-Ban Meta Gen 3, f&ouml;r 449 dollar.</p>
-          <p>Kritiken mot kameraglas&ouml;gon &auml;r redan h&ouml;gaktuell i Norden. Norska DNB f&ouml;rbj&ouml;d i veckan AI-glas&ouml;gon p&aring; sina kontor, och Norges digitaliseringsminister Karianne Tung &ouml;verv&auml;ger ett f&ouml;rbud mot ansiktsigenk&auml;nning i AI-glas&ouml;gon. Metas kamerafria variant saknar visserligen kamera, men har fortfarande mikrofon och AI-assistent &ndash; tv&aring; av de faktorer DNB pekar ut i sitt f&ouml;rbud.</p>
-          <p class="item__source news-card__source">K&auml;lla: <a href="https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/">TechCrunch</a>, <a href="https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/">9to5Mac</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="forskning">
-        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/">Anthropics AI-modell Claude hittade ett nytt enzymsystem i virus-DNA</a></h3>
-        <p class="item__ingress">Anthropic meddelade den 23 september att bolagets AI-modell Claude, med hj&auml;lp av forskare, hittat ett enzymsystem i bakteriofagers DNA som kan klippa, kopiera och klistra in DNA &ndash; en funktion som liknar gentekniken CRISPR.</p>
-        <details>
-          <summary><span class="more">L&auml;s hela notisen</span><span class="less">F&auml;ll ihop</span></summary>
-          <div class="item__full">
-          <p>Anthropic meddelade den 23 september att bolagets AI-modell Claude, med hj&auml;lp av forskare, hittat ett enzymsystem i bakteriofagers DNA som kan klippa, kopiera och klistra in DNA &ndash; en funktion som liknar gentekniken CRISPR.</p>
-          <p>Uppt&auml;ckten gjordes i Anthropics biologilabb i Bay Area, som byggdes upp under v&aring;ren 2026 och d&auml;r allt fysiskt labbarbete fortfarande sk&ouml;ts av m&auml;nskliga forskare. Enligt vd Dario Amodei stod Claude f&ouml;r st&ouml;rre delen av arbetet, som enligt bolaget tog omkring 21 timmar med runt 950 AI-agenter och 210 miljoner token. Amodei betonar att fyndet m&aring;ste valideras av det bredare forskarsamh&auml;llet. Ett liknande system har tidigare hittats av forskare vid Stanford.</p>
-          <p>F&ouml;r Norden &auml;r AI-driven biologiforskning redan en strategisk fr&aring;ga. Anthropic har sedan tidigare ett samarbete med danska Novo Nordisk om l&auml;kemedelsutveckling med Claude, och fr&aring;gan om hur AI-genererade uppt&auml;ckter ska valideras &ndash; den Amodei sj&auml;lv lyfter &ndash; &auml;r relevant &auml;ven f&ouml;r svenska och danska forskningsfinansi&auml;rer och l&auml;kemedelsbolag som satsar p&aring; AI i biologisk forskning.</p>
-          <p class="item__source news-card__source">K&auml;lla: <a href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/">TechCrunch</a>, <a href="https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/">Engadget</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="kvant">
-        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
-        <h3><a href="https://thequantuminsider.com/2026/09/23/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder/">Kvantbolaget IonQ visar realtidsfelkorrigering f&ouml;r kvantdatorer p&aring; vanlig processor</a></h3>
-        <p class="item__ingress">Amerikanska kvantbolaget IonQ meddelade den 23 september att man testat en realtidsavkodare f&ouml;r kvantfel som k&ouml;rs p&aring; en vanlig standardprocessor, utan att kr&auml;va specialbyggd h&aring;rdvara.</p>
-        <details>
-          <summary><span class="more">L&auml;s hela notisen</span><span class="less">F&auml;ll ihop</span></summary>
-          <div class="item__full">
-          <p>Amerikanska kvantbolaget IonQ meddelade den 23 september att man testat en realtidsavkodare f&ouml;r kvantfel som k&ouml;rs p&aring; en vanlig standardprocessor, utan att kr&auml;va specialbyggd h&aring;rdvara. Systemet hanterade simulerade kretsar med upp till 408 logiska qubitar och &ouml;ver 31,5 miljoner kvantoperationer.</p>
-          <p>Resultatet ska enligt bolaget l&ouml;sa ett klassiskt flaskhalsproblem: vanliga datorer som ska r&auml;tta kvantfel i realtid brukar bli &ouml;verbelastade och tvinga kvantsystemet att pausa. IonQs l&ouml;sning klarar enligt bolaget arbetet i bakgrunden med bara 0,02 procent extra ber&auml;kningsbelastning. Forskningschefen Nicolas Delfosse kallar resultatet &rdquo;en viktig milstolpe&rdquo; p&aring; v&auml;gen mot kvantdatorer med tusentals qubitar, l&aring;ngt fler &auml;n de 256 qubitar IonQs nuvarande system har. Aktien steg omkring 12 procent p&aring; beskedet.</p>
-          <p>F&ouml;r Norden &auml;r felkorrigering k&auml;rnfr&aring;gan i kappl&ouml;pningen om en anv&auml;ndbar kvantdator. Wallenbergcentret f&ouml;r kvantteknologi (WACQT) vid Chalmers arbetar med samma problem f&ouml;r sina svenska qubitar, och finska IQM bygger egna kvantdatorer. USA:s energidepartement utlyste nyligen en t&auml;vling p&aring; 215 miljoner dollar om just feltoleranta kvantdatorer &ndash; ett f&auml;lt d&auml;r b&aring;de amerikanska och nordiska forskargrupper nu satsar h&aring;rt.</p>
-          <p class="item__source news-card__source">K&auml;lla: <a href="https://thequantuminsider.com/2026/09/23/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder/">The Quantum Insider</a>, <a href="https://www.cnbc.com/2026/09/23/ionq-shares-rally-after-company-says-it-made-a-major-quantum-computing-breakthrough.html">CNBC</a></p>
-          </div>
-        </details>
-      </article>
-      </div>
 <!-- LATEST-ANALYSES-PREV-START (raderna [2]-[3]. Kort [1] ligger i toppen,
            se LATEST-ANALYSES-1. Roteras BADA vid ny essa - se E2.) -->
       <div class="deep">
