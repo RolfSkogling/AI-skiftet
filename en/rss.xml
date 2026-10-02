@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 01 Oct 2026 04:23:26 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 04:21:32 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Finland and Norway rally countries behind call for control of frontier AI – Sweden stays out</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-02-finland-och-norge-samlar-lander-bakom-krav-pa</guid>
+      <pubDate>Fri, 02 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Finnish President Alexander Stubb and Norwegian Prime Minister Jonas Gahr Støre launched an international call on September 21 for stronger control of the most advanced AI models. In the paper they state that AI must remain under human leadership, oversight and control, and according to the Finnish Presidential Office the call has won backing from 31 leaders from 29 countries.</p>
+<p>The call points to three routes: developers should have transparent safety protocols with mandatory pre-deployment testing and independent evaluation, states should coordinate standards and share information on serious AI incidents, and UN member states should explore an international body that sets standards, enables verification and convenes countries when certain capability thresholds are crossed. The rationale is that safety and security risks can evolve faster than the tools for evaluation and oversight. The call was presented during the high-level week of the UN General Assembly in New York.</p>
+<p>For the Nordics: Denmark and Iceland are among the signatories, which makes Sweden the only Nordic country missing. The Prime Minister’s Office has said Sweden has a caretaker government and that the time was too short to take a position, while Social Democrat MEP Adnan Dibrani says Sweden cannot continue with Tidö’s passive AI policy. How a new Swedish government will view pre-deployment testing and a UN body is an open question. In the meantime, Norway and Finland have in practice taken the role of Nordic voices in the international discussion on frontier AI.</p>
+<p class="news-card__source">Source: <a href="https://www.presidentti.fi/en/president-stubb-and-prime-minister-of-norway-the-rapid-development-of-ai-requires-international-cooperation/">Office of the President of Finland</a>, <a href="https://news.fundsforngos.org/2026/09/25/finland-norway-call-stronger-control-frontier-ai-models/">fundsforNGOs</a>, <a href="https://www.gp.se/nyheter/sverige/darfor-saknas-sverige-i-upprop-mot-ai-utveckling.7639bc85-b38b-4e07-9473-4bfd2365a4a7">Göteborgs-Posten</a></p>]]></description>
+    </item>
+    <item>
+      <title>Huawei claims Ascend has overtaken Nvidia in China – but shows no figures</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-02-huawei-havdar-att-ascend-gatt-forbi-nvidia-i</guid>
+      <pubDate>Fri, 02 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Huawei rotating chairman Eric Xu says the company’s Ascend chips have overtaken Nvidia in the Chinese AI market. He conceded that data on Nvidia’s market share in China is hard to collect, but argued that the data Huawei has gathered shows Ascend ahead; the statement was made at Huawei Connect on September 18 and relayed by The Register on September 30, but Xu gave no figures.</p>
+<p>Huawei admits its chips are less advanced than Nvidia’s but offers supply certainty. Xu expects much of China’s AI model training to run on superclusters with the Ascend 950DT from next year, and the company is rolling out an Atlas 950 cluster with 256,000 cards. Nvidia’s H200 shipments to China made up less than 1 percent of its data center revenue in Nvidia’s second fiscal quarter, and DeepSeek released tools this week that make Ascend easier to use. Xu himself explained the success mainly by geopolitics and customers’ wish for multiple suppliers, not technical superiority.</p>
+<p>For the Nordics: according to The Register, the supply of Ascend chips outside China is extremely limited, so Nordic buyers of AI capacity are not directly affected, and projects from the EU’s AI factories to the Wallenberg sphere’s AI supercomputer continue to rest on Nvidia. What could matter in the longer run is the emergence of a software stack that does not rely on CUDA. Until independent market data exists, the claim should be read as a company assertion, not an established market share.</p>
+<p class="news-card__source">Source: <a href="https://www.theregister.com/systems/2026/09/30/huawei-boss-claims-homegrown-ai-chip-sales-top-nvidia-in-china/5300266">The Register</a>, <a href="https://www.digitimes.com/news/a20261001PD232/huawei-ascend-ai-chip-china-nvidia.html">Digitimes</a>, <a href="https://www.huaweicentral.com/ascend-chips-took-over-nvidia-in-chinas-ai-market-huawei/">Huawei Central</a></p>]]></description>
+    </item>
+    <item>
+      <title>Xanadu and Finland’s Bluefors to develop compact cooling for large-scale quantum computers</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-02-xanadu-och-finlandska-bluefors-ska-utveckla-kompakt-kylning</guid>
+      <pubDate>Fri, 02 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Canadian photonic quantum company Xanadu and Helsinki-based Bluefors announced a multi-million-dollar strategic partnership on September 29. The goal is a prototype for cryogenic cooling for Xanadu’s planned quantum data center for utility-scale quantum computing, built as a module that can be mass-produced.</p>
+<p>The module is to be designed for single-photon detectors and is expected to make industrial-scale cryoplants unnecessary. Xanadu CEO Christian Weedbrook says the collaboration has produced a concept that integrates Bluefors’ most advanced technology into a compact module, which should improve scalability and economics. The partners have not disclosed cooling capacity, qubit counts or a timeline, so this is a concept, not a demonstrated product.</p>
+<p>For the Nordics: Bluefors in Helsinki makes dilution refrigerators and other ultra-low-temperature cooling systems, equipment that quantum computers with superconducting qubits normally need. The region is building such machines: IQM’s LUMI-IQ in Kajaani, funded by EuroHPC together with Finland, Norway and others, and the research at Chalmers and the Wallenberg Centre for Quantum Technology. Nordic quantum industry is thus both customer and supplier as quantum computers scale up.</p>
+<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/09/29/xanadu-bluefors-cryogenic-infrastructure-utility-scale-quantum/">The Quantum Insider</a>, <a href="https://www.globenewswire.com/news-release/2026/09/29/3370680/0/en/xanadu-and-bluefors-partner-to-redefine-cryogenic-infrastructure-for-utility-scale-quantum-computing.html">GlobeNewswire (press release)</a>, <a href="https://www.hpcwire.com/off-the-wire/xanadu-and-bluefors-target-compact-cooling-for-utility-scale-quantum-computing/">HPCwire</a></p>]]></description>
+    </item>
+    <item>
+      <title>TSMC weighs multi-fab Texas campus for AI chips, Bloomberg reports</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-02</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-02-tsmc-overvager-flerfabrikscampus-i-texas-for-ai-chip</guid>
+      <pubDate>Fri, 02 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>TSMC is considering building a new multi-fab campus in Texas to make AI chips and is also looking at Singapore as an alternative, Bloomberg reported on October 1. The company declined to comment, saying it does not comment on market rumors.</p>
+<p>Each fab would cost at least $20 billion, according to The Next Web, and TSMC has already committed $265 billion to Arizona. The decision hinges, per the same source, on a 35 percent manufacturing tax credit: construction must start before year-end, and an extension is not expected to pass Congress this year.</p>
+<p>For the Nordics: TSMC’s only European fab, the ESMC joint venture in Dresden, has a budget above €10 billion and €5 billion in approved German state aid, but is to make older nodes (28 to 12 nanometers) unsuited to AI accelerators; production starts in 2027. Nordic AI data centers, such as Nscale’s 230-megawatt facility near Narvik where Microsoft has contracted 30,000 Nvidia Rubin GPUs for delivery in 2027, therefore remain dependent on chips made outside Europe. That makes chip supply a question both for EU industrial policy and for the Nordic players building out AI capacity.</p>
+<p class="news-card__source">Source: <a href="https://www.bloomberg.com/news/articles/2026-10-01/tsmc-mulls-multibillion-dollar-texas-campus-for-more-ai-chips">Bloomberg</a>, <a href="https://thenextweb.com/news/tsmc-texas-fabs-europe-gap">The Next Web</a>, <a href="https://www.datacenterdynamics.com/en/news/microsoft-contracts-30000-nvidia-rubin-gpus-from-nscale-at-data-center-in-narvik-norway/">Data Center Dynamics (Narvik)</a></p>]]></description>
+    </item>
     <item>
       <title>Google releases Gemini 4 Argon – but first to trusted cyber defenders, not the public</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-01</link>
@@ -1062,68 +1111,6 @@
 <p>The group comprises Sweden AI Factory, TEF-Health, Health Data Sweden, CitCom, ShiftLabs, DigIT Hub and Aero – a mix of European digital innovation hubs, testing and experimentation facilities and an AI factory, all funded wholly or partly by the EU digital programme. Behind them stand KTH, RISE, DIGG, Malmö University and Karolinska Institutet, among others. What began as a conversation about synergies quickly turned into a discussion of concrete collaboration, according to Johanna Furuhjelm, who leads TEF-Health in Sweden.</p>
 <p>For the Nordic countries the point is practical rather than strategic. A Swedish AI company wanting to test a model against healthcare data has so far needed to know which of seven doors is the right one, and the coordination is meant to make the support ecosystem navigable without prior knowledge. Norway faces the same question with structures of its own – the national advisory service for AI, SINTEF and the Norwegian Open AI Lab at NTNU. The Swedish effort therefore becomes a test of whether the problem can be solved without setting up yet another agency.</p>
 <p class="news-card__source">Source: <a href="https://news.ki.se/national-collaboration-accelerating-ai-development-in-sweden">Karolinska Institutet</a>, <a href="https://tefhealth.eu">TEF-Health</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI brings the GPT-Live-1 voice model to its API — it listens and speaks at once</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-openai-slapper-rostmodellen-gpt-live-1-i-api</guid>
-      <pubDate>Sat, 12 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI made its GPT-Live-1 voice model available to developers through its API on Thursday, at five cents a minute for the voice layer itself. The model listens and speaks at the same time instead of taking turns, and hands heavier reasoning to a text model running behind it.</p>
-<p>The company says the model improves on the Full Duplex Bench test by 30 percentage points compared with its predecessor GPT-Realtime-2.1. The language-learning service Speak reports that the number of times the model cut in while a learner was pausing to think fell by close to 80 percent against earlier turn-based systems. Also new are telephony support, a wider selection of voices and the ability to steer tone and pace directly in the system prompt. The figures come from OpenAI's own launch material and from the company's partners.</p>
-<p>For the Nordics, the telephony support is what bites first. Phone-based customer service is still a heavy channel at Nordic operators and banks such as Telenor, Telia, SEB and DNB, and a model that copes with interruptions and background noise for five cents a minute shifts the calculation for where those calls get answered. At the same time the EU transparency requirement has applied since 2 August: users must be told when they are talking to an AI system. In Norway the requirement has no direct legal force yet, because the AI Act has not been incorporated into the EEA Agreement — but Norwegian companies selling the service into the EU market must follow it regardless.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/introducing-gpt-live-1-in-the-api/">OpenAI</a>, <a href="https://www.unite.ai/openais-gpt-live-1-arrives-in-the-api-at-0-05-per-minute/">Unite.AI</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway changes digitalisation minister — and the AI bill moves to a new desk</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-norge-byter-digitaliseringsminister-och-ai-lagen-foljer-med</guid>
-      <pubDate>Sat, 12 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Prime Minister Jonas Gahr Støre presented a cabinet reshuffle on Friday in which Torgeir Micaelsen takes over as Norway's minister of digitalisation and public governance. He succeeds Karianne Tung, who had asked to be relieved.</p>
-<p>Micaelsen was Tung's state secretary in the same ministry in 2024–2025 and then state secretary at the Ministry of Finance. In his first comments to the press he stressed that AI also has many negative sides and needs clear boundaries; AI glasses he dismissed as something society can do without, though he would not promise a ban. The ministers for transport, climate and research were replaced at the same time. It is the largest reshuffle since the Centre Party left the government in early 2025.</p>
-<p>For the Nordics, it is Norway's AI bill that now changes hands. The draft went out for consultation in the summer of 2025 with the law due to take effect in late summer 2026, but the government is now aiming to put a bill before the Storting only in the spring of 2027 — in part because the AI Act has not yet been incorporated into the EEA Agreement. Until then oversight rests on technology-neutral rules, with Nkom as the coordinating AI authority and <span lang="nb">KI Norge</span> providing national guidance. For Swedish companies with Norwegian operations, that means two different regulatory clocks on the same market.</p>
-<p class="news-card__source">Source: <a href="https://www.kode24.no/artikkel/torgeir-micaelsen-er-var-nye-digitaliseringsminister/272209">kode24</a>, <a href="https://www.digi.no/nyhetsstudio/micaelsen-tar-over-digitaliseringsdepartementet-ikke-et-endelig-farvel-til-karianne-tung/131424">Digi.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Swedish tech body: four in ten job openings have vanished in a year</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-techsverige-fyra-av-tio-lediga-techjobb-har-forsvunnit</guid>
-      <pubDate>Sat, 12 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The industry body TechSverige reported 7,900 job openings in the Swedish tech sector in the first quarter of 2026 in figures released on Friday. That is 40 percent fewer than a year earlier.</p>
-<p>Between August 2025 and July 2026, just over 5,200 people were affected by redundancy notices in software, IT services and telecoms. At the same time three of four sub-sectors grew during the first half of the year, and around 8,200 new tech companies were started over the past twelve months — an increase of 32 percent. Chief economist Christina Ramm-Ericson says firms are still holding back on hiring, while AI and the rapid pace of technical change are reshaping what skills they need.</p>
-<p>For the Nordics, the figures land two days before the Swedish general election, and Ramm-Ericson addresses the next government directly with a demand for long-term ground rules. In the same week the analyst firm Gartner warned that at least one in three positions eliminated because of AI will be refilled by 2029, at a higher cost, because hollowed-out talent pipelines are expensive to rebuild. For Swedish and Norwegian employers now booking AI gains into their staffing budgets, that is a bill passed on to the next parliamentary term.</p>
-<p class="news-card__source">Source: <a href="https://via.tt.se/pressmeddelande/4540352/techtemperaturen-tecken-pa-aterhamtning-i-techbranschen-men-arbetsmarknaden-slapar-efter?lang=sv">TechSverige via TT</a>, <a href="https://computersweden.se/article/4221157/trogare-for-svenska-techjobben.html">Computer Sweden</a>, <a href="https://www.computerworld.com/article/4220413/layoff-remorse-gartner-says-at-least-one-in-three-positions-eliminated-by-ai-will-be-restored-by-2029-at-a-higher-cost.html">Computerworld</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nvidia lets a rival's inference chip into its own server racks</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-nvidia-slapper-in-en-konkurrents-inferenschip-i-sina</guid>
-      <pubDate>Sat, 12 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>The chip company d-Matrix will plug its next-generation inference processor Raptor directly into Nvidia's rack architecture using NVLink Fusion. The collaboration was announced on Thursday, and the first rack-integrated systems are expected in the fourth quarter of 2027.</p>
-<p>Raptor succeeds d-Matrix's current Corsair chip and builds on the company's 3DIMC technology, which stacks compute and memory on top of each other to shorten data transfers. The chip is to sit in Nvidia's MGX racks alongside Vera processors, NVLink switches, BlueField-4 and Spectrum-X networking. NVLink Fusion is Nvidia's programme for letting other vendors' processors into a stack it has already built — the rival gets the scale-up domain and the supply chain, Nvidia keeps the rack.</p>
-<p>For the Nordics, this is about what the data halls actually buy. Sites in Luleå, Skien and Kajaani procure whole racks, not loose chips, and a rack that carries both graphics processors and cheaper inference silicon changes the maths for anyone selling inference capacity on Nordic power. At the same time it ties the region's AI build-out more tightly to a single vendor's rack standard — a dependency question that follows every new Nordic data-centre project.</p>
-<p class="news-card__source">Source: <a href="https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/">Nvidia</a>, <a href="https://www.prnewswire.com/news-releases/d-matrix-adopts-nvidia-nvlink-fusion-rackscale-infrastructure-for-ultra-low-latency-ai-inference-302875104.html">d-Matrix</a>, <a href="https://www.storagereview.com/news/d-matrix-raptor-xpus-join-nvidia-mgx-racks-through-nvlink-fusion-first-systems-due-q4-2027">StorageReview</a></p>]]></description>
-    </item>
-    <item>
-      <title>Pentagon in talks over a five-billion-dollar loan to AI cloud firm Fluidstack</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-12-pentagon-forhandlar-om-ett-lan-pa-fem-miljarder</guid>
-      <pubDate>Sat, 12 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>The US Department of Defense is in talks to lend around five billion dollars to the AI cloud company Fluidstack, according to the Wall Street Journal. The money would come from the department's Office of Strategic Capital.</p>
-<p>According to the reports the loan would not fund a new AI facility, but would shore up the American supply chain and manufacturing capacity for data-centre components. It would be by far the office's largest loan to date; its lending authority has grown from 984 million to more than 210 billion dollars. The deal is not final and may change. Neither the Department of Defense nor Fluidstack has commented on the reports.</p>
-<p>For the Nordics, the news is the state's role as lender. Europe's equivalent is grant-driven and considerably smaller: EuroHPC behind the Arrhenius supercomputer in Linköping and LUMI-AI in Kajaani, where Norway is part of the consortium. Once American defence credit starts underwriting the component layer, Nordic data centres are no longer competing only on power prices and cooling, but against a national treasury. It is the same question being heard in Brussels, where a senior European Commission figure this week demanded that the tech giants build their own power generation for their data halls.</p>
-<p class="news-card__source">Source: <a href="https://www.datacenterdynamics.com/en/news/pentagon-in-talks-to-loan-fluidstack-5bn-report/">Data Center Dynamics</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-wsj-reports">Reuters via The Star</a>, <a href="https://computersweden.se/article/4220593/eu-topp-techjattar-maste-bygga-egen-elproduktion-for-datacenter.html">Computer Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
