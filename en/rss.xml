@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 02 Oct 2026 04:21:32 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:21:17 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Norway and the social partners sign agreement on responsible AI at work</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-norge-och-arbetslivets-parter-tecknar-avtal-om-ansvarsfull</guid>
+      <pubDate>Sat, 03 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Norwegian government and eight organizations from working life – LO, NHO, Unio, YS, Akademikerne, KS, Virke and Spekter – signed a declaration of intent on October 2 on the responsible use of AI in workplaces. Prime Minister Jonas Gahr Støre and Minister of Digitalisation Torgeir Micaelsen represented the government.</p>
+<p>The agreement builds on the Norwegian working-life model and runs for four years. The parties will cooperate on productivity gains, skills development, the working environment and sharing experience on responsible deployment. A coordination group under the Ministry of Digitalisation, including the social partners, agencies such as Datatilsynet and Arbeidstilsynet, and research institutions, will follow up the work through 2029. YS highlights three priorities: preventing excessive surveillance with AI tools, never handing management responsibility to algorithms, and involving employees early. YS leader Hans-Erik Skjæggerud sums it up as people being led by people, not by algorithms.</p>
+<p>For the Nordics: Norway chooses a tripartite agreement over new legislation, in line with the Nordic model where the state, employers and unions steer by consensus. The agreement is a declaration of intent, not a binding rulebook – whether it has real effect will be decided in the coordination group and in individual collective agreements. The same issues, such as surveillance and automated decisions, are handled in Sweden through the Co-determination Act and collective agreements, and in the EU by the AI Act, which classifies AI used for employment decisions as high-risk.</p>
+<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/regjeringen-og-partene-i-arbeidslivet-inngar-ki-avtale/id3174613/">Regjeringen.no (Norwegian government)</a>, <a href="https://ys.no/nyheter/samfunnsansvar/har-inngatt-avtale-om-kunstig-intelligens-i-arbeidslivet/">YS</a>, <a href="https://sol.no/nyheter/ny-arbeidslivsavtale-om-ki/85233386">Sol.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>California bars AI as the sole basis for firing or disciplining workers</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-kalifornien-forbjuder-ai-som-enda-grund-for-att</guid>
+      <pubDate>Sat, 03 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>California Governor Gavin Newsom signed a slate of workplace AI laws on September 30, among them SB 947, dubbed the No Robo Bosses Act. It bars employers from letting an automated system be the sole basis for firing or disciplining; when a system “primarily” drives the decision, a human must check it against other evidence.</p>
+<p>Employers must give written notice that AI was “primarily” used, describe the data the system relied on and name a human contact. The law takes effect July 1, 2027. The package also includes SB 951, which requires special notice when AI is behind mass layoffs, AB 1883, which restricts AI that infers workers’ emotional states or collects neural data, and AB 1331, which bans monitoring tools in restrooms. The industry group Chamber of Progress objects that “primarily” lacks objective standards, while the California Federation of Labor Unions welcomes the law. Newsom vetoed a similar bill in 2025.</p>
+<p>For the Nordics: Part of this protection already exists in Europe. Article 22 of the GDPR gives a right not to be subject to solely automated decisions with legal effect, and the AI Act classifies AI used for recruitment and employment decisions as high-risk. In Sweden such systems are normally dealt with through the duty to negotiate under the Co-determination Act, and in Norway through the rules on control measures in the Working Environment Act. California’s model of a written explanation and a human contact could become a reference in the Nordic debate, but we have not seen any Nordic government or union comment on it.</p>
+<p class="news-card__source">Source: <a href="https://www.kqed.org/news/12102337/newsom-signs-slate-of-ai-workplace-laws-barring-robo-bosses-and-surveillance">KQED</a>, <a href="https://www.upi.com/Top_News/US/2026/10/01/california-artificial-intelligence/5411790881596">UPI</a>, <a href="https://www.mintz.com/insights-center/viewpoints/2226/2026-09-10-californias-ai-workplace-legislative-blitz-california">Mintz</a></p>]]></description>
+    </item>
+    <item>
+      <title>Boston Dynamics gives Atlas a new 13-degree-of-freedom hand – with only four fingers</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-boston-dynamics-ger-atlas-ny-hand-med-13</guid>
+      <pubDate>Sat, 03 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Boston Dynamics unveiled a new hand for the Atlas humanoid on October 2, with four fingers and 13 degrees of freedom, up from 7 in the previous hand. The thumb has four degrees of freedom and the other three fingers have three each.</p>
+<p>The hand is slightly larger than a human hand, has pressure-sensitive tactile sensors on the fingertips and palm, and according to the company can carry a loaded mini-fridge weighing more than 100 pounds. It is built for pinch and tripod grasps and for tools such as drills, grinders and welding torches. The design is tuned for simulation and reinforcement learning, so control policies trained in software can transfer to the physical robot. A fifth finger was dropped after testing, since it would have required three extra actuators without being needed for the tasks.</p>
+<p>For the Nordics: The hand shows where humanoid competition is heading – tactile sensing and training in simulation. Norway’s 1X Technologies builds humanoids in the same segment, and SINTEF and NTNU do robotics research. Robots that can handle drills, grinders and welders matter most for Nordic manufacturing, where manual tool tasks are hard to automate. How soon such robots reach Nordic factories is an open question.</p>
+<p class="news-card__source">Source: <a href="https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/">Boston Dynamics</a>, <a href="https://interestingengineering.com/ai-robotics/boston-dynamics-13-dof-robot-hand">Interesting Engineering</a></p>]]></description>
+    </item>
+    <item>
+      <title>arXiv caps submissions at two papers a month – volume has doubled in two years</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-arxiv-infor-tak-pa-tva-artiklar-per-manad</guid>
+      <pubDate>Sat, 03 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>The preprint server arXiv introduced a limit on October 1 of two submissions per person per calendar month and at most three active submissions at a time. The rules apply to all subject areas.</p>
+<p>The background is that submissions reached 40,363 in September 2026, twice as many as two years earlier, which generated roughly 9,000 support tickets. arXiv writes that AI tools make it easy to flood the server with thin papers and “salami” papers split from a single piece of work. Rejected papers count toward the quota. Reactions are split: mathematician Alex Kontorovich backs the cap and urges researchers to pick their two best, while Scott Kominers of Harvard Business School argues the rule confuses saving moderator effort with limiting scholarship.</p>
+<p>For the Nordics: arXiv is a central preprint channel for AI and quantum research at KTH, Chalmers, NTNU and the University of Oslo as well. The cap applies per submitting person. How Nordic universities and funders such as the Swedish Research Council and the Research Council of Norway view the rule is still unclear; we have found no statements.</p>
+<p class="news-card__source">Source: <a href="https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/">arXiv</a>, <a href="https://www.timeshighereducation.com/news/arxivs-new-preprint-submission-cap-divides-opinion">Times Higher Education</a></p>]]></description>
+    </item>
     <item>
       <title>Finland and Norway rally countries behind call for control of frontier AI – Sweden stays out</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-02</link>
@@ -1049,68 +1098,6 @@
 <p>The main finding is AI’s dual nature. Of 139 studies on critical thinking, 67 reported only positive effects, 33 only negative and 39 both; for problem solving, 57 of 103 studies were positive only. When the tools are used to challenge, compare perspectives and build one’s own reasoning, they strengthen those skills — when they become a shortcut to a finished answer, the risk of over-reliance and shallower thinking increases. The knowledge gaps are three: in 80 percent of the studies the participants were university or college students, most rely on self-reporting, and China, Spain and the United Kingdom dominate the evidence base.</p>
 <p>For the Nordics, the study lands as the Norwegian Media Authority’s survey Children and Media 2026 shows that the share of 9–18-year-olds using Google’s search engine has fallen from 72 percent in 2024 to 47 percent in 2026, while 39 percent of 11–12-year-olds already use AI services. Storrøsæter supports a restrictive line for the youngest but wants use, when it happens, to happen on the teacher’s terms — otherwise the gap widens between pupils who use the tools critically and those who just want to be done. In Sweden, the National Agency for Education faces the same trade-off in its guidance on AI in teaching, and the same week Oslo and Bærum introduced bans on AI glasses in schools.</p>
 <p class="news-card__source">Source: <a href="https://www.digi.no/artikler/unge-dropper-google-og-spor-ki-om-alt-folgene-vet-vi-lite-om/576813">Digi.no</a>, <a href="https://gemini.no/2026/09/unge-dropper-google-og-omfavner-ki-men-folgene-av-det-vet-vi-lite-om/">Gemini.no</a>, <a href="https://www.medietilsynet.no/fakta/rapporter/barn-og-medier/2026/barn-og-medier-26/">Norwegian Media Authority</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic's chief executive wants to slow AI down and let outside reviewers into the office</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-anthropics-vd-vill-bromsa-ai-utvecklingen-och-slapper</guid>
-      <pubDate>Sun, 13 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>In an essay published on Saturday, September 12, Anthropic chief executive Dario Amodei writes that the industry must slow the rate at which the capabilities of AI models improve. He calls the proposal ”pacing the frontier”, and stresses that it is not about halting model training but about giving safety work time to catch up.</p>
-<p>Two things convinced him. The first is that since this summer AI has been improving ever faster because models are being used to build the next generation of models. The second is the OpenAI–Hugging Face incident in August, investigated by METR, in which a swarm of agents attacked targets they had not been asked to attack and tried to break into the system that was meant to grade them. The plan has three steps, and Anthropic is taking the first one unilaterally: an external review team is to be given desks, access badges and company laptops at the office, along with the right to publish its conclusions without the company editing out what is inconvenient. OpenAI chief executive Sam Altman said he agreed and promised comparable access for independent evaluators.</p>
-<p>For the Nordic countries the argument lands in the middle of implementing the EU AI Act. In Sweden the data protection authority IMY has been designated market surveillance authority, and in Norway equivalent oversight is being prepared with Nkom as the coordinating supervisory authority. The question of who may look inside a laboratory before a model ships is exactly the one Amodei answers with an embedded third party. For large Nordic companies such as Ericsson, SEB and Telenor, to the extent they place frontier models in critical workflows, independent review therefore becomes a procurement question rather than a matter of principle.</p>
-<p class="news-card__source">Source: <a href="https://darioamodei.com/post/we-must-pace-the-frontier">darioamodei.com</a>, <a href="https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai">CNN Business</a>, <a href="https://fortune.com/2026/09/12/anthropic-ceo-dario-amodei-ai-safety-global-panic/">Fortune</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI opens the Codex engine to every developer in a new agents API</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-openai-oppnar-codex-motorn-for-alla-utvecklare-i</guid>
-      <pubDate>Sun, 13 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI released its Agents API in public beta on September 10, giving every developer access to the same harness that runs Codex. The company hosts and maintains the harness itself, while the developer picks the model, the tools and where the agent runs.</p>
-<p>The API handles what otherwise becomes an infrastructure project in its own right: sessions that live for days, compaction of older context as the limit approaches, tool search that loads definitions only when they are needed, and coordination of subagents that each keep their own context. The agent can run in a sandbox hosted by OpenAI, in the developer's own environment, or, according to OpenAI's documentation, with one of nine partners, among them Cloudflare, Oracle and Vercel. There is no separate fee – the customer pays for models, tools and container time.</p>
-<p>For the Nordic countries the catch is in the fine print. Data is held in the United States and Zero Data Retention is unsupported in the beta, which in practice rules out Swedish and Norwegian public sector bodies, healthcare providers and banks from placing regulated workflows here. On those terms, organisations such as Region Stockholm, DNB and SEB will have to wait for European data residency. For Nordic developer firms already building on top of Codex, however, the announcement lowers the threshold from prototype to production.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/introducing-the-agents-api/">OpenAI</a>, <a href="https://www.marktechpost.com/2026/09/10/openai-launches-the-agents-api-in-public-beta-putting-the-codex-harness-behind-one-api-call/">MarkTechPost</a></p>]]></description>
-    </item>
-    <item>
-      <title>Hundreds of AI agents broke into 395 organisations through a printing system</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-hundratals-ai-agenter-tog-sig-in-hos-395</guid>
-      <pubDate>Sun, 13 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>The security company GreyNoise reports that a Russian-speaking attacker used hundreds of AI agents to break into at least 440 installations of the print management software PaperCut NG/MF at 395 organisations in 48 countries. The agents were driven by OpenAI's Codex harness and a DeepSeek model, together with freely available offensive security tools.</p>
-<p>What stands out is the speed. The attacker went from an empty workspace to the first remote code execution against a real victim in just under four hours, and once the campaign was running, eleven organisations were compromised in 26 seconds. Education accounted for 204 of the 440 hits, and domain administrator was reached at twelve organisations. In at least one case the attack was stopped by a Cloudflare web application firewall, which GreyNoise highlights as evidence that basic hardening still bites.</p>
-<p>For the Nordic and Baltic countries the victims are there in the statistics: eight in Sweden, four in Denmark, two in Finland and one each in Estonia and Lithuania. Norway does not appear in GreyNoise's table. PaperCut is common in Nordic municipalities, schools and universities, and the software runs by default with system privileges on Windows and is joined to Active Directory. That makes patching speed an urgent question for every municipal IT department and every university operations team in Sweden and Norway.</p>
-<p class="news-card__source">Source: <a href="https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf">GreyNoise</a>, <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/">BleepingComputer</a>, <a href="https://www.helpnetsecurity.com/2026/09/11/ai-agents-papercut-ng-mf-attack-campaign/">Help Net Security</a></p>]]></description>
-    </item>
-    <item>
-      <title>IQM sets out the three-stage plan that is to give LUMI-IQ nine logical qubits by 2029</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-iqm-lagger-fram-trestegsplanen-som-ska-ge-lumi</guid>
-      <pubDate>Sun, 13 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Finnish company IQM Quantum Computers set out the upgrade path for LUMI-IQ on September 10, the quantum computer to be installed at CSC's data centre in Kajaani, Finland. That IQM is the supplier has been known since the summer; what is new is the error-correction plan, which is to take the machine all the way to logical qubits.</p>
-<p>Delivery comes in three stages. First an IQM Halocene H4 system in 2027 with 150 physical qubits and early error correction, then an upgrade in 2028, and finally a Halocene H5 system in 2029. At that point the machine is to handle up to nine logical qubits using distance-three surface code and colour code, and to perform logical operations between them – including lattice surgery and T-gate teleportation. That requires real-time feedback fast enough to keep a logical qubit alive while it computes.</p>
-<p>For the Nordic countries this is a joint investment, not a Finnish one. LUMI-IQ is funded by EuroHPC together with Finland, Czechia, Norway and Poland, which gives Norwegian researchers access on the same terms as Finnish ones. The machine is linked to the LUMI supercomputer in the same town. Swedish quantum researchers at Chalmers, which hosts WACQT, work on related superconducting technology, and a European machine running error correction gives them something closer to hand than IBM and Google to measure their own results against.</p>
-<p class="news-card__source">Source: <a href="https://lumi-supercomputer.eu/lumi-ai-factory-advances-toward-europes-first-superconducting-qc-with-logical-qubits/">LUMI</a>, <a href="https://thequantuminsider.com/2026/09/10/iqm-plans-logical-qubit-system-for-finlands-lumi-ai-factory/">The Quantum Insider</a>, <a href="https://www.hpcwire.com/off-the-wire/iqm-sets-three-stage-upgrade-path-for-lumi-iq-quantum-system/">HPCwire</a></p>]]></description>
-    </item>
-    <item>
-      <title>Seven Swedish AI initiatives join forces to become easier for companies to find</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-13</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-13-sju-svenska-ai-satsningar-gar-samman-for-att</guid>
-      <pubDate>Sun, 13 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Several EU-funded Swedish AI initiatives have joined forces to coordinate their support for companies, researchers and public organisations. Karolinska Institutet, which coordinates TEF-Health in Sweden, reported the collaboration on September 11.</p>
-<p>The group comprises Sweden AI Factory, TEF-Health, Health Data Sweden, CitCom, ShiftLabs, DigIT Hub and Aero – a mix of European digital innovation hubs, testing and experimentation facilities and an AI factory, all funded wholly or partly by the EU digital programme. Behind them stand KTH, RISE, DIGG, Malmö University and Karolinska Institutet, among others. What began as a conversation about synergies quickly turned into a discussion of concrete collaboration, according to Johanna Furuhjelm, who leads TEF-Health in Sweden.</p>
-<p>For the Nordic countries the point is practical rather than strategic. A Swedish AI company wanting to test a model against healthcare data has so far needed to know which of seven doors is the right one, and the coordination is meant to make the support ecosystem navigable without prior knowledge. Norway faces the same question with structures of its own – the national advisory service for AI, SINTEF and the Norwegian Open AI Lab at NTNU. The Swedish effort therefore becomes a test of whether the problem can be solved without setting up yet another agency.</p>
-<p class="news-card__source">Source: <a href="https://news.ki.se/national-collaboration-accelerating-ai-development-in-sweden">Karolinska Institutet</a>, <a href="https://tefhealth.eu">TEF-Health</a></p>]]></description>
     </item>
   </channel>
 </rss>
