@@ -7,8 +7,46 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 04:21:17 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 04:20:46 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic: kinesiska GLM-5.3 skapar fungerande exploits – och skyddet går att kringgå</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-anthropic-kinesiska-glm-5-3-skapar-fungerande-exploits</guid>
+      <pubDate>Sun, 04 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropics Frontier Red Team publicerade den 29 september en bedömning av Zhipu AI:s öppna modell GLM-5.3. I riktmärket ExploitBench skapade modellen fungerande exploits i 50 av 410 uppgifter, nära Claude Mythos Preview som klarade 56, medan äldre modeller låg nära noll.</p>
+<p>Skyddet är svagt enligt Anthropics egna tester: vilseledande prompter kringgick avslagen i 64 procent av fallen, förifyllda resonemangstoken i 92 procent och en så kallad abliterad version, där modellens vägran att svara har tagits bort, i 100 procent. Claude-modellerna låg på 0 procent under motsvarande villkor. I en demonstration omvandlades en känd Chrome-sårbarhet till en fungerande exploit på cirka 20 minuters mänsklig insats och 20,40 dollar i API-kostnad. NIST:s Center for AI Standards and Innovation betecknade redan den 17 september GLM-5.3 som den öppna modell med störst cyberförmåga som släppts hittills och bedömde att den ligger ungefär fyra månader efter de främsta amerikanska modellerna. Anthropic är konkurrent till Zhipu och siffrorna är bolagets egna mätningar; någon kommentar från Zhipu har vi inte hittat.</p>
+<p>För Norden: Eftersom vikterna är öppna går skyddsräckena att montera bort, vilket flyttar tyngdpunkten från modellleverantören till dem som ska försvara systemen. För Nationellt cybersäkerhetscenter (NCSC) vid FRA och norska Nasjonal sikkerhetsmyndighet (NSM) är frågan hur snabbt kända sårbarheter måste lagas när tiden mellan publicering och fungerande exploit krymper, och för bolag som SEB, DNB, Ericsson och Equinor om patchrutinerna håller ett sådant tempo.</p>
+<p class="news-card__source">Källa: <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">Anthropic</a>, <a href="https://www.newsbytesapp.com/news/science/anthropic-warns-china-s-glm-5-3-model-can-build-cyber-exploits-autonomously/story">NewsBytes</a>, <a href="https://aiweekly.co/alerts/anthropic-glm-53-marks-step-change-in-attacker-cyber-tools">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norska regeringen föreslår drygt 120 miljoner norska kronor till AI i budgeten för 2027</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-norska-regeringen-foreslar-drygt-120-miljoner-norska-kronor</guid>
+      <pubDate>Sun, 04 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Den norska regeringen föreslår att drygt 120 miljoner norska kronor ska gå till AI-åtgärder i statsbudgeten för 2027, som läggs fram den 7 oktober. Det rapporterade E24 och kode24 den 30 september.</p>
+<p>De största posterna är 30 miljoner till säkerhet och utvärdering av AI-modeller hos AI Norway inom Digitaliseringsdirektoratet (Digdir) och 25 miljoner till en gemensam grund för generativ AI i offentlig sektor. 20 miljoner går till en offentlig hälsochatt via Helsenorge, som ska lanseras 2027 och ge kvalificerade hälsoråd dygnet runt om symtom och provsvar, och 20 miljoner till generativ AI i koncessionsprövningen hos Norges vassdrags- och energidirektorat (NVE). Därtill kommer 21,3 miljoner för införande i departementen och 5 miljoner för förhandlingar om AI-avtal i staten. Statistisk sentralbyrå (SSB) har fått i uppdrag att studera AI:s ekonomiska effekter. Finansminister Jens Stoltenberg säger att AI förändrar Norge och ekonomin.</p>
+<p>För Norden: Beloppet är litet i förhållande till statsbudgeten men visar att regeringen lägger de största posterna på gemensam infrastruktur och modellutvärdering. Det är ett förslag och inte ett beslut, eftersom Stortinget ska behandla budgeten. Samma avvägning mellan gemensam grund och enskilda piloter gäller för svenska myndigheter som Digg.</p>
+<p class="news-card__source">Källa: <a href="https://e24.no/boers-og-finans/i/ln6LOL/regjeringen-vil-bruke-120-millioner-paa-ai-tiltak">E24</a>, <a href="https://www.kode24.no/artikkel/vil-bruke-120-millioner-kr-pa-ki-tiltak-og-ny-helsechat/273988">kode24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Undersökning: 74 procent av AI-användarna ställer enstaka frågor – få automatiserar</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-undersokning-74-procent-av-ai-anvandarna-staller-enstaka</guid>
+      <pubDate>Sun, 04 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>En ny undersökning från rekryterings- och konsultföretaget TNG, som Computer Sweden återgav den 29 september, visar att 74 procent av AI-användarna använder chattbotar för enstaka frågor. 22 procent har byggt egna GPT:er för återkommande uppgifter, 9 procent använder agentläge och 4 procent har helt automatiserade flöden där AI sköter hela processer.</p>
+<p>Resultaten kommer efter Internetstiftelsens rapport Svenskarna och internet 2026, enligt vilken över hälften av yrkesverksamma svenskar nu använder AI på jobbet, dubbelt så många som året innan. TNG:s vd Åsa Edman Källströmer menar att de flesta bara skrapar på ytan och att produktivitetsvinsterna därför uteblir, och att arbetsgivare måste stötta medarbetarna aktivt i stället för att uppmuntra användning och hoppas på resultat. Vi har inte kunnat granska urval eller metod bakom siffrorna.</p>
+<p>För Norden: Skillnaden mellan bred och djup användning är en fråga för svenska arbetsgivare och för fackliga organisationer som Unionen och LO: ska kompetensinsatser mäta hur många som använder AI eller hur de använder den? Den norska parallellen är avtalet mellan regeringen och arbetsmarknadens parter från den 2 oktober, där kompetensutveckling är en av punkterna.</p>
+<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4228192/lag-mognad-i-svenskarnas-ai-anvandning.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Norge och arbetslivets parter tecknar avtal om ansvarsfull AI på jobbet</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-03</link>
@@ -1036,68 +1074,6 @@
 <p>Las Vegas blir en konkurrensarena. Nevada har gett Waymo tillstånd för upp till 1 000 fordon det kommande året, Tesla för 5 000 och Uber för 1 000 via partnerna Motional och Zoox — sammanlagt 7 000 robotaxibilar i Clark County, fler än Waymos hela flotta på drygt 4 000 bilar i dag. Tidigare i september öppnade bolaget också i Denver, San Diego och Tampa.</p>
 <p>För Norden är kontrasten skarp. Västtrafik lade förra veckan ned sin självkörande buss i Göteborg med hänvisning till att trafikmiljön var för komplex, och Ruters självkörande försök i Oslo har hittills stannat vid pilotlinjer. Att en amerikansk delstat samtidigt licensierar tusentals förarlösa bilar visar var ribban ligger när Transportstyrelsen och Statens vegvesen ska ta ställning till nästa generations tillstånd — och var svenska Einride och norska underleverantörer hämtar sina referenser.</p>
 <p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-14/waymo-expands-paid-robotaxi-service-to-las-vegas-its-15th-city">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Knapp ledning för oppositionen i riksdagsvalet — AI-frågorna hamnar hos en ny riksdag</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-knapp-ledning-for-oppositionen-i-riksdagsvalet-ai-fragorna</guid>
-      <pubDate>Mon, 14 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Söndagens riksdagsval ser ut att ge oppositionen en knapp majoritet. Med 93 procent av valdistrikten räknade hade S, V, MP och C 176 mandat mot Tidöpartiernas 173. Siffrorna är Valmyndighetens preliminära räkning strax före klockan tre på måndagsmorgonen; marginalen har pendlat mellan ett och tre mandat under natten, och det slutliga resultatet väntas först helgen efter valet, när sent inkomna förtidsröster och brevröster också räknats.</p>
-<p>Socialdemokraterna får 28,1 procent, Moderaterna 19,9 och Sverigedemokraterna 17,6, en tillbakagång med tre procentenheter för SD. Valdeltagandet ligger preliminärt på 80,4 procent. AI var i praktiken frånvarande i valrörelsen, men den riksdag som nu tillträder ärver en rad AI-beslut: hur tillsynen enligt EU:s AI-förordning ska fördelas mellan IMY, PTS och andra myndigheter, den svenska språkmodell som regeringen och Wallenbergstiftelserna aviserade i februari, och datacenterkön som väntar på el och tillstånd. Under valrörelsen skrev partiledarna för S och C en gemensam debattartikel om AI och tillväxt, och Centerpartiet har krävt ett svenskt institut för AI-säkerhet.</p>
-<p>För Norden innebär en regeringsbildning med S och C i centrum att de två partier som faktiskt formulerat en gemensam AI-linje kan hamna vid samma bord — men Vänsterpartiets krav på ministerposter och Centerpartiets nej till V gör vägen dit oviss. Civilminister Erik Slottner (KD), som ansvarar för digitaliseringsfrågorna, och forskningsminister Lotta Edholm (L) lämnar sina poster, och med dem ansvaret för AI-strategin och forskningsmålet. I Norge, som gick till val i fjol, tog Torgeir Micaelsen nyligen över som digitaliseringsminister med AI-lagen på sitt bord; Sverige får nu ett motsvarande ministerbyte mitt i genomförandet av AI-förordningen, om resultatet står sig.</p>
-<p class="news-card__source">Källa: <a href="https://valresultat.svt.se/2026/">SVT Valresultat (Valmyndighetens data)</a>, <a href="https://www.euronews.com/my-europe/2026/09/14/sweden-votes-in-tight-election-as-far-right-eyes-historic-breakthrough">Euronews</a>, <a href="https://www.val.se/valresultat-och-statistik/riksdags--region--och-kommunval/valresultat-2026">Valmyndigheten</a></p>]]></description>
-    </item>
-    <item>
-      <title>Altman: OpenAI börsnoteras inte 2026 — ”ett illa valt ögonblick” med tanke på säkerheten</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-altman-openai-borsnoteras-inte-2026-ett-illa-valt</guid>
-      <pubDate>Mon, 14 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>OpenAI går inte till börsen i år. Det beskedet gav vd Sam Altman i en intervju med Fortunes chefredaktör Alyson Shontell, publicerad lördagen den 12 september. Bolaget lämnade in en konfidentiell ansökan om notering i juni, men Altman sade att det med tanke på allt som händer kring säkerhet vore ett illa valt ögonblick att börsnoteras, och att OpenAI inte känner någon press.</p>
-<p>På frågan om 2026 därmed är uteslutet svarade Altman att bolaget har mycket kvar att göra, bland annat att möta de krav på säkerhet och alignment — att modellerna följer mänskliga avsikter — som situationen ställer, och att få branschen och regeringarna att arbeta tillsammans. Enligt New York Times hade OpenAI i juni anlitat banker och jurister med sikte på en notering under tredje eller fjärde kvartalet 2026, men lutade redan då åt 2027. Beskedet kom samma helg som Anthropics vd Dario Amodei föreslog att branschen ska sänka takten, och Altman lovade i sociala medier att OpenAI ska ge oberoende granskare tillgång motsvarande en anställds.</p>
-<p>För Norden skjuts en notering som skulle bli en av de största någonsin minst ett år fram. Norges oljefond, som äger omkring en och en halv procent av världens börsnoterade bolag, och svenska AP7 hade via sina indexmandat blivit ägare kort efter noteringen; nu får nordiska pensionssparare fortsatt sin OpenAI-exponering på omvägar, genom Microsoft och Nvidia. För Nasdaq Stockholm och Oslobörsen dröjer också den prislapp på ett frontlabb som varje nordiskt AI-bolag på väg mot börsen skulle ha mätts mot.</p>
-<p class="news-card__source">Källa: <a href="https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/">Fortune</a>, <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-12/openai-ipo-won-t-happen-until-2027-sam-altman-tells-fortune">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Obama vill göra AI till demokraternas kärnfråga — Trump avfärdar oron och skyller på ”negativa krafter”</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-obama-vill-gora-ai-till-demokraternas-karnfraga-trump</guid>
-      <pubDate>Mon, 14 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>USA:s politiska svar på Dario Amodeis bromsförslag blev under helgen känt från två håll. Barack Obama uppmanade demokraterna att göra AI till en kärnfråga med en tydlig plan. Donald Trump sade till reportrar på söndagen att den som vinner AI vinner, och att många av dem som lyfter riskerna inte borde göra det.</p>
-<p>Obamas kommentarer föll i torsdags vid ett insamlingsmöte där han intervjuades av demokraternas ledare i representanthuset, Hakeem Jeffries, och återgavs av New York Times på söndagen. Utvecklingen går mycket fort i privata händer, sade Obama, och om politiken inte får kontroll över den kan den bli farlig — med kontroll tror han i stället på snabbare läkemedelsutveckling. Han ska enligt tidningen ha erbjudit sig som bollplank åt AI-cheferna och talat med både Amodei och OpenAI:s Sam Altman. Trump, som talade vid en golftävling på Irland, sade enligt Bloomberg att USA är världens mest sofistikerade land, att skyddsräcken går att sätta upp, men att riskdebatten drivs av negativa krafter. Altman och Elon Musk hade dagen innan, på lördagen, ställt sig positiva till Amodeis plan.</p>
-<p>För Norden är kontrasten mot söndagens svenska val slående: i USA är AI på väg att bli en partiskiljande fråga, i Sverige nämndes den knappt i valrörelsen, och den nya riksdagen ärver tillsynen enligt EU:s AI-förordning utan att ha debatterat den. I Norge sköts AI-lagen nyligen upp till 2027. Det som avgörs i Washington har direkt bäring här: AI-förordningen förutsätter att de amerikanska frontbolagen samarbetar med europeisk tillsyn, och Obamas och Trumps olika svar visar hur olika förutsättningarna för det samarbetet kan bli beroende på vem som kontrollerar kongressen efter mellanårsvalet i november.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/">TechCrunch</a>, <a href="https://www.nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html">New York Times</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-13/trump-downplays-ai-concerns-as-ceos-call-for-slowing-technology">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Salesforce lanserar sju namngivna AI-agenter som ska ta hela jobb, inte bara svara på frågor</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-salesforce-lanserar-sju-namngivna-ai-agenter-som-ska</guid>
-      <pubDate>Mon, 14 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Salesforce presenterade den 11 september sju färdigbyggda AI-agenter med egna namn och arbetsbeskrivningar. Casey sköter kundtjänst, Paige it- och HR-support, Carter e-handel, Hunter utgående försäljning, Marshall leveranskedjan, Piper inkommande leads och Fin kundärenden. Sex av dem är tillgängliga nu; Hunter körs i pilot och släpps brett i november.</p>
-<p>Nyheten under huven är en körtidsmiljö för långa uppdrag: agenten får minne mellan sessioner, kan hålla en plan vid liv i veckor och justera den efter användarens återkoppling. Hunter är den första agenten på den — en säljare kan be den rädda kvartalets affärer i riskzonen, varpå agenten bygger en plan, avgör vilka steg den får ta själv och när säljaren måste godkänna dem. Salesforce uppger att bolaget levererat 7 miljarder så kallade agentiska arbetsenheter, varav 3,2 miljarder under andra kvartalet, och att Fin — som kom med ett förvärv i juni för 3,6 miljarder dollar — på egen hand löser 79 procent av de kundsamtal den hanterar åt Anthropic. I det finstilta medger bolaget samtidigt att flera funktioner ännu inte är släppta.</p>
-<p>För Norden är det kundtjänst- och innesäljjobben som står först i tur. Salesforce är brett använt hos nordiska bolag, och agenter som säljs med en arbetsbeskrivning i stället för en funktionslista gör det enklare för en ledning att räkna på hela befattningar, inte bara på timmar. TechSverige redovisade i fredags att antalet lediga techjobb under första kvartalet var 40 procent färre än ett år tidigare, och för Unionen i Sverige och Handel og Kontor i Norge blir frågan hur omställningen för kundtjänstpersonal ska förhandlas när leverantören redan gett ersättaren ett namn.</p>
-<p class="news-card__source">Källa: <a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/">Salesforce</a>, <a href="https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/">SiliconANGLE</a></p>]]></description>
-    </item>
-    <item>
-      <title>NTNU-forskare gick igenom 173 studier: AI kan både stärka och försvaga studenters och elevers tänkande</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-ntnu-forskare-gick-igenom-173-studier-ai-kan</guid>
-      <pubDate>Mon, 14 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Vi vet påfallande lite om hur AI-användning påverkar yngre elevers grundläggande färdigheter. Det är slutsatsen när forskare vid NTNU analyserat 173 studier om generativ AI i skolan. Arbetet, lett av doktoranden Hilde Storrøsæter vid NTNU:s lärarutbildning tillsammans med kollegor vid tjeckiska universitet, presenterades av NTNU och Gemini.no den 13 september.</p>
-<p>Huvudfyndet är AI:s dubbla natur. Av 139 studier om kritiskt tänkande rapporterade 67 enbart positiva effekter, 33 enbart negativa och 39 båda; för problemlösning var 57 av 103 studier enbart positiva. Används verktygen för att utmana, jämföra perspektiv och bygga egna resonemang, stärker de färdigheterna — blir de en genväg till ett färdigt svar, ökar risken för överberoende och ytligare tänkande. Kunskapsluckorna är tre: i 80 procent av studierna var deltagarna universitets- eller högskolestudenter, de flesta bygger på självrapportering, och Kina, Spanien och Storbritannien dominerar underlaget.</p>
-<p>För Norden landar studien samtidigt som norska Medietilsynets undersökning Barn og medier 2026 visar att andelen 9–18-åringar som använder Googles sökmotor fallit från 72 procent 2024 till 47 procent 2026, medan 39 procent av 11–12-åringarna redan använder AI-tjänster. Storrøsæter stöder en restriktiv linje för de yngsta men vill att användningen, när den sker, sker på lärarens villkor — annars växer klyftan mellan elever som använder verktygen kritiskt och dem som bara vill bli klara. I Sverige står Skolverket inför samma avvägning i sin vägledning om AI i undervisningen, och samma vecka införde Oslo och Bærum förbud mot AI-glasögon i skolan.</p>
-<p class="news-card__source">Källa: <a href="https://www.digi.no/artikler/unge-dropper-google-og-spor-ki-om-alt-folgene-vet-vi-lite-om/576813">Digi.no</a>, <a href="https://gemini.no/2026/09/unge-dropper-google-og-omfavner-ki-men-folgene-av-det-vet-vi-lite-om/">Gemini.no</a>, <a href="https://www.medietilsynet.no/fakta/rapporter/barn-og-medier/2026/barn-og-medier-26/">Medietilsynet</a></p>]]></description>
     </item>
   </channel>
 </rss>
