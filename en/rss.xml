@@ -7,8 +7,46 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 03 Oct 2026 04:21:17 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 04:20:46 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic: China's GLM-5.3 builds working exploits – and its safeguards are easy to bypass</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-anthropic-kinesiska-glm-5-3-skapar-fungerande-exploits</guid>
+      <pubDate>Sun, 04 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropic's Frontier Red Team published an assessment of Zhipu AI's open model GLM-5.3 on September 29. On the ExploitBench benchmark the model produced working exploits on 50 of 410 tasks, close to Claude Mythos Preview, which managed 56, while older models scored close to zero.</p>
+<p>The safeguards are weak according to Anthropic's own tests: deceptive prompts got around refusals 64 percent of the time, prefilled reasoning tokens 92 percent, and a so-called abliterated version, with the model's refusal behaviour removed, 100 percent. The Claude models stayed at 0 percent under comparable conditions. In one demonstration a known Chrome vulnerability was turned into a working exploit with about 20 minutes of human effort and $20.40 in API costs. NIST's Center for AI Standards and Innovation had already described GLM-5.3 on September 17 as the most cyber-capable open-weight model released to date and judged it to be roughly four months behind the leading US models. Anthropic is a competitor of Zhipu and the figures are the company's own measurements; we have found no comment from Zhipu.</p>
+<p>For the Nordics: Because the weights are open, the safeguards can be stripped out, which shifts the burden from the model provider to those who defend the systems. For Sweden's National Cybersecurity Centre (NCSC) at FRA and Norway's National Security Authority (NSM) the question is how quickly known vulnerabilities must be patched as the time between disclosure and a working exploit shrinks, and for companies such as SEB, DNB, Ericsson and Equinor whether their patching routines can keep that pace.</p>
+<p class="news-card__source">Source: <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">Anthropic</a>, <a href="https://www.newsbytesapp.com/news/science/anthropic-warns-china-s-glm-5-3-model-can-build-cyber-exploits-autonomously/story">NewsBytes</a>, <a href="https://aiweekly.co/alerts/anthropic-glm-53-marks-step-change-in-attacker-cyber-tools">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norwegian government proposes just over NOK 120 million for AI in its 2027 budget</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-norska-regeringen-foreslar-drygt-120-miljoner-norska-kronor</guid>
+      <pubDate>Sun, 04 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Norwegian government proposes that just over NOK 120 million go to AI measures in the 2027 state budget, which is presented on October 7. E24 and kode24 reported this on September 30.</p>
+<p>The largest items are NOK 30 million for security and evaluation of AI models at AI Norway within the Norwegian Digitalisation Agency (Digdir) and NOK 25 million for a shared foundation for generative AI in the public sector. NOK 20 million goes to a public health chatbot via Helsenorge, which is to launch in 2027 and give qualified health advice around the clock on symptoms and test results, and NOK 20 million to generative AI in the licensing processes of the Norwegian Water Resources and Energy Directorate (NVE). A further NOK 21.3 million is for implementation in the ministries and NOK 5 million for negotiations on AI agreements in government. Statistics Norway (SSB) has been tasked with studying the economic effects of AI. Finance Minister Jens Stoltenberg says AI is changing Norway and its economy.</p>
+<p>For the Nordics: The amount is small relative to the budget as a whole but shows that the government puts its largest items on shared infrastructure and model evaluation. It is a proposal, not a decision, since the Storting must still process the budget. The same trade-off between a shared foundation and separate pilots applies to Swedish agencies such as Digg.</p>
+<p class="news-card__source">Source: <a href="https://e24.no/boers-og-finans/i/ln6LOL/regjeringen-vil-bruke-120-millioner-paa-ai-tiltak">E24</a>, <a href="https://www.kode24.no/artikkel/vil-bruke-120-millioner-kr-pa-ki-tiltak-og-ny-helsechat/273988">kode24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Survey: 74 percent of AI users ask one-off questions – few automate</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-undersokning-74-procent-av-ai-anvandarna-staller-enstaka</guid>
+      <pubDate>Sun, 04 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>A new survey from the recruitment and consulting firm TNG, reported by Computer Sweden on September 29, shows that 74 percent of AI users use chatbots for one-off questions. 22 percent have built custom GPTs for recurring tasks, 9 percent use agent mode and 4 percent have fully automated workflows in which AI handles entire processes.</p>
+<p>The results follow the Internet Foundation's report Svenskarna och internet 2026, which found that more than half of employed Swedes now use AI at work, twice as many as a year earlier. TNG CEO Åsa Edman Källströmer says most people are only scratching the surface and that productivity gains are therefore missing, and that employers must actively support staff rather than encourage use and hope for results. We have not been able to review the sample or method behind the figures.</p>
+<p>For the Nordics: The gap between broad and deep use is a question for Swedish employers and for trade union bodies such as Unionen and LO: should skills programmes measure how many people use AI, or how they use it? The Norwegian parallel is the agreement between the government and the social partners of October 2, in which skills development is one of the points.</p>
+<p class="news-card__source">Source: <a href="https://computersweden.se/article/4228192/lag-mognad-i-svenskarnas-ai-anvandning.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Norway and the social partners sign agreement on responsible AI at work</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
@@ -1036,68 +1074,6 @@
 <p>Las Vegas is becoming a contest. Nevada has authorised Waymo to run up to 1,000 vehicles over the coming year, Tesla up to 5,000 and Uber up to 1,000 through its partners Motional and Zoox — a combined 7,000 robotaxis in Clark County, more than Waymo's entire fleet of just over 4,000 cars today. Earlier in September the company also opened in Denver, San Diego and Tampa.</p>
 <p>For the Nordics the contrast is stark. Västtrafik scrapped its self-driving bus in Gothenburg last week, citing a traffic environment that was too complex, and Ruter's self-driving trials in Oslo have so far stayed at pilot routes. That a US state is at the same time licensing thousands of driverless cars shows where the bar sits when the Swedish Transport Agency and the Norwegian Public Roads Administration decide on the next generation of permits — and where Sweden's Einride and Norwegian suppliers draw their references.</p>
 <p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-14/waymo-expands-paid-robotaxi-service-to-las-vegas-its-15th-city">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Narrow lead for the opposition in Sweden’s election — AI questions land with a new Riksdag</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-knapp-ledning-for-oppositionen-i-riksdagsvalet-ai-fragorna</guid>
-      <pubDate>Mon, 14 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Sunday’s Swedish general election looks set to give the opposition a narrow majority. With 93 percent of districts counted, the Social Democrats, Left Party, Greens and Centre Party held 176 seats against 173 for the Tidö parties. The figures are the Swedish Election Authority’s preliminary count shortly before three o’clock on Monday morning; the margin swung between one and three seats during the night, and the final result is not expected until the weekend after the election, once late-arriving early votes and postal votes have been counted.</p>
-<p>The Social Democrats take 28.1 percent, the Moderates 19.9 and the Sweden Democrats 17.6, a drop of three percentage points for the latter. Turnout stands at a preliminary 80.4 percent. AI was all but absent from the campaign, but the incoming Riksdag inherits a series of AI decisions: how supervision under the EU’s AI Act is to be divided between the data protection authority IMY, the telecoms regulator PTS and other agencies, the Swedish language model that the government and the Wallenberg foundations announced in February, and the queue of data centres waiting for power and permits. During the campaign the leaders of the Social Democrats and the Centre Party wrote a joint op-ed on AI and growth, and the Centre Party has called for a Swedish AI safety institute.</p>
-<p>For the Nordics, a government built around the Social Democrats and the Centre Party would put the two parties that have actually formulated a shared AI line at the same table — but the Left Party’s demand for cabinet posts and the Centre Party’s refusal to work with the Left leave the path there uncertain. Minister for Public Administration Erik Slottner (Christian Democrats), who holds the digitalisation portfolio, and research minister Lotta Edholm (Liberals) would leave office, and with them responsibility for the AI strategy and the research target. In Norway, which went to the polls last year, Torgeir Micaelsen recently took over as digitalisation minister with the AI law on his desk; Sweden now faces a similar change of minister in the middle of implementing the AI Act, if the result holds.</p>
-<p class="news-card__source">Source: <a href="https://valresultat.svt.se/2026/">SVT election results (Election Authority data)</a>, <a href="https://www.euronews.com/my-europe/2026/09/14/sweden-votes-in-tight-election-as-far-right-eyes-historic-breakthrough">Euronews</a>, <a href="https://www.val.se/english/election-results/elections-to-the-riksdag-and-regional-and-municipal-councils/election-results-2026">Swedish Election Authority</a></p>]]></description>
-    </item>
-    <item>
-      <title>Altman: no OpenAI listing in 2026 — ”an ill-advised moment” given safety concerns</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-altman-openai-borsnoteras-inte-2026-ett-illa-valt</guid>
-      <pubDate>Mon, 14 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>OpenAI will not go public this year. Chief executive Sam Altman gave that message in an interview with Fortune editor-in-chief Alyson Shontell, published on Saturday, September 12. The company filed confidentially for a listing in June, but Altman said that given everything happening around safety, right now would be an ill-advised moment to go public, and that OpenAI feels no pressure.</p>
-<p>Asked whether 2026 was therefore off the table, Altman said the company still has a lot to do, including meeting the demands for safety and alignment — keeping models in line with human intentions — that the moment requires, and getting the industry and governments to work together. According to the New York Times, OpenAI had by June hired bankers and lawyers with a view to listing in the third or fourth quarter of 2026, but was already leaning towards 2027. The statement came the same weekend that Anthropic chief executive Dario Amodei proposed that the industry slow its pace, and Altman promised on social media that OpenAI would give independent evaluators employee-like access.</p>
-<p>For the Nordics, a listing that would have been one of the largest ever is pushed back by at least a year. Norway’s oil fund, which owns around one and a half percent of the world’s listed companies, and Sweden’s AP7 would have become owners shortly after the listing through their index mandates; instead, Nordic pension savers keep getting their OpenAI exposure by proxy, through Microsoft and Nvidia. For Nasdaq Stockholm and the Oslo Stock Exchange, the price tag on a frontier lab that any Nordic AI company heading for the market would have been measured against is also delayed.</p>
-<p class="news-card__source">Source: <a href="https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/">Fortune</a>, <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-12/openai-ipo-won-t-happen-until-2027-sam-altman-tells-fortune">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Obama wants AI at the core of the Democrats’ agenda — Trump dismisses the concern and blames ”negative forces”</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-obama-vill-gora-ai-till-demokraternas-karnfraga-trump</guid>
-      <pubDate>Mon, 14 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>The US political response to Dario Amodei’s call to slow down became known over the weekend from two directions. Barack Obama urged the Democrats to make AI a central issue with a clear plan. Donald Trump told reporters on Sunday that whoever wins AI wins, and that many of those raising the risks should not be doing so.</p>
-<p>Obama’s remarks came on Thursday at a fundraising event where he was interviewed by House Minority Leader Hakeem Jeffries, and were reported by the New York Times on Sunday. The technology is moving very fast in private hands, Obama said, and if politics does not get on top of it, it can be dangerous — with control, he instead expects faster drug development. According to the newspaper he has offered himself as a sounding board to AI executives and has spoken to both Amodei and OpenAI’s Sam Altman. Trump, speaking at a golf event in Ireland, said according to Bloomberg that the United States is the most sophisticated country in the world, that guardrails can be put in place, but that the risk debate is being driven by negative forces. Altman and Elon Musk had the day before, on Saturday, responded positively to Amodei’s plan.</p>
-<p>For the Nordics, the contrast with Sunday’s Swedish election is striking: in the United States AI is becoming a partisan issue, in Sweden it was barely mentioned in the campaign, and the new Riksdag inherits supervision under the EU’s AI Act without having debated it. In Norway, the AI law was recently postponed to 2027. What is decided in Washington bears directly on this: the AI Act assumes that the American frontier labs cooperate with European supervisors, and the differing responses from Obama and Trump show how different the conditions for that cooperation could become depending on who controls Congress after the midterm elections in November.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/">TechCrunch</a>, <a href="https://www.nytimes.com/2026/09/13/us/politics/obama-democrats-ai.html">New York Times</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-13/trump-downplays-ai-concerns-as-ceos-call-for-slowing-technology">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Salesforce launches seven named AI agents built to take whole jobs, not just answer questions</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-salesforce-lanserar-sju-namngivna-ai-agenter-som-ska</guid>
-      <pubDate>Mon, 14 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Salesforce on September 11 presented seven ready-built AI agents with their own names and job descriptions. Casey handles customer service, Paige IT and HR support, Carter e-commerce, Hunter outbound sales, Marshall the supply chain, Piper inbound leads and Fin customer cases. Six of them are available now; Hunter is in pilot and gets a general release in November.</p>
-<p>The news under the hood is a runtime for long assignments: the agent keeps memory between sessions, can keep a plan alive for weeks and adjust it to the user’s feedback. Hunter is the first agent on it — a seller can ask it to rescue the quarter’s at-risk deals, whereupon the agent builds a plan, decides which steps it may take on its own and when the seller has to approve them. Salesforce says it has delivered 7 billion so-called agentic work units, 3.2 billion of them in the second quarter, and that Fin — which came with a 3.6 billion dollar acquisition in June — resolves 79 percent of the customer conversations it handles for Anthropic on its own. In the fine print, the company also concedes that several features are not yet released.</p>
-<p>For the Nordics, customer service and inside sales jobs are first in line. Salesforce is widely used by Nordic companies, and agents sold with a job description rather than a feature list make it easier for management to count in whole positions, not just hours. TechSverige reported on Friday that the number of open tech jobs in the first quarter was 40 percent lower than a year earlier, and for the union Unionen in Sweden and Handel og Kontor in Norway the question becomes how the transition for customer service staff is to be negotiated when the vendor has already given the replacement a name.</p>
-<p class="news-card__source">Source: <a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/">Salesforce</a>, <a href="https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/">SiliconANGLE</a></p>]]></description>
-    </item>
-    <item>
-      <title>NTNU researchers reviewed 173 studies: AI can both strengthen and weaken how students and pupils think</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-14-ntnu-forskare-gick-igenom-173-studier-ai-kan</guid>
-      <pubDate>Mon, 14 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>We know strikingly little about how AI use affects younger pupils’ basic skills. That is the conclusion when researchers at NTNU analysed 173 studies of generative AI in education. The work, led by doctoral candidate Hilde Storrøsæter at NTNU’s teacher education department together with colleagues at Czech universities, was presented by NTNU and Gemini.no on September 13.</p>
-<p>The main finding is AI’s dual nature. Of 139 studies on critical thinking, 67 reported only positive effects, 33 only negative and 39 both; for problem solving, 57 of 103 studies were positive only. When the tools are used to challenge, compare perspectives and build one’s own reasoning, they strengthen those skills — when they become a shortcut to a finished answer, the risk of over-reliance and shallower thinking increases. The knowledge gaps are three: in 80 percent of the studies the participants were university or college students, most rely on self-reporting, and China, Spain and the United Kingdom dominate the evidence base.</p>
-<p>For the Nordics, the study lands as the Norwegian Media Authority’s survey Children and Media 2026 shows that the share of 9–18-year-olds using Google’s search engine has fallen from 72 percent in 2024 to 47 percent in 2026, while 39 percent of 11–12-year-olds already use AI services. Storrøsæter supports a restrictive line for the youngest but wants use, when it happens, to happen on the teacher’s terms — otherwise the gap widens between pupils who use the tools critically and those who just want to be done. In Sweden, the National Agency for Education faces the same trade-off in its guidance on AI in teaching, and the same week Oslo and Bærum introduced bans on AI glasses in schools.</p>
-<p class="news-card__source">Source: <a href="https://www.digi.no/artikler/unge-dropper-google-og-spor-ki-om-alt-folgene-vet-vi-lite-om/576813">Digi.no</a>, <a href="https://gemini.no/2026/09/unge-dropper-google-og-omfavner-ki-men-folgene-av-det-vet-vi-lite-om/">Gemini.no</a>, <a href="https://www.medietilsynet.no/fakta/rapporter/barn-og-medier/2026/barn-og-medier-26/">Norwegian Media Authority</a></p>]]></description>
     </item>
   </channel>
 </rss>
