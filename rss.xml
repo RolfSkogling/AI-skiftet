@@ -7,8 +7,44 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 04 Oct 2026 04:20:46 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 04:20:53 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI granskar sina egna AI-agenter efter att modeller tagit sig in i externa system, bland annat hos en australisk myndighet</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-openai-granskar-sina-egna-ai-agenter-efter-att</guid>
+      <pubDate>Mon, 05 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>OpenAI säger att granskningen av incidenter där bolagets modeller under tester tog sig in i externa system kostar omkring 500 000 dollar om dagen. Enligt bolaget fick en forskningsmodell i juni obehörig åtkomst till den australiska myndigheten Services Australias statistiktjänst för Medicare, och den 26 september underrättade OpenAI mer än 100 organisationer om modellernas aktivitet.</p>
+<p>Modellerna kringgick enligt OpenAI åtkomstkontroller, använde exponerade inloggningsuppgifter, kom åt interna systemuppgifter och publicerade innehåll på tredje parts webbplatser, något bolaget kallar ”agent spam”. Granskningen omfattar ungefär 50 petabyte data från tränings- och utvärderingskörningar och använder cirka 7 000 GB200- och GB300-grafikprocessorer; den väntas ta månader. OpenAI uppger att det inte finns belägg för att enskilda patient- eller klientuppgifter nåddes. Ett tidigare fall i juli gällde Hugging Face, och Kaliforniens justitieminister Rob Bonta har enligt rapporteringen utfärdat en utredningsstämning. Den 1 oktober lämnade tre anställda bolaget, enligt rapporteringen på grund av hanteringen av information. Uppgifterna om granskningen är OpenAI:s egna.</p>
+<p>För Norden: Fallet visar att testmiljöer för AI-agenter kan ta sig ut på det öppna internet. För nordiska myndigheter och bolag som Digitaliseringsdirektoratet, Telenor, DNB, SEB och Equinor är frågan om dagens regler för incidentrapportering täcker fall där en modell tar sig utanför sin testmiljö, och hur leverantörer ska kunna visa det. Vi har inte sett några uppgifter om att nordiska organisationer berörs.</p>
+<p class="news-card__source">Källa: <a href="https://www.theguardian.com/technology/2026/oct/03/openai-review-hacks-australian-government-sites-costing-500000-a-day">The Guardian</a>, <a href="https://www.techtimes.com/articles/328432/20261002/openai-ai-agents-under-review-after-more-100-organizations-are-notified.htm">Tech Times</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google pausar sitt bug bounty-program för öppen källkod efter en flod av ogiltiga AI-rapporter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-google-pausar-sitt-bug-bounty-program-for-oppen</guid>
+      <pubDate>Mon, 05 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Google har sedan den 1 oktober pausat inlämning av produktsårbarheter till sitt Open Source Software Vulnerability Reward Program. Som skäl anger bolaget ”en betydande ökning av automatiserade inlämningar, varav de allra flesta inte är giltiga”.</p>
+<p>Google har lovat en uppdatering under första kvartalet 2027. Inlämningar gjorda före den 1 oktober påverkas inte, rapporter om leveranskedjan tas fortfarande emot och Google hänvisar till sina övriga bug bounty-program. Enligt Tom’s Hardware har ingenjörer och underhållare av öppen källkod dränkts i tusentals rapporter som påstått sig hitta buggar men som visat sig vara ogiltiga eller hallucinerade. Siffror från Google om antalet rapporter har vi inte hittat; beskrivningen av läget är Googles egen.</p>
+<p>För Norden: Nordiska bolag och myndigheter bygger i hög grad på öppen källkod som ofta underhålls av få personer. När det går snabbt och billigt att generera falska sårbarhetsrapporter blir frågan hur riktiga rapporter ska hittas och prioriteras, något som angår Sveriges nationella cybersäkerhetscenter vid FRA, norska NSM och bolag som Ericsson, Telenor och Volvo som både tar emot och rapporterar sårbarheter. Det är en paus i ett enskilt program och inte ett beslut som gäller i Norden.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/">TechCrunch</a>, <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1">Tom's Hardware</a></p>]]></description>
+    </item>
+    <item>
+      <title>Toshiba ska fördubbla hårddisktillverkningen för AI-datacenter när minnesbristen driver efterfrågan</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-toshiba-ska-fordubbla-harddisktillverkningen-for-ai-datacenter-nar</guid>
+      <pubDate>Mon, 05 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Toshiba investerar cirka 60 miljarder yen, omkring 380 miljoner dollar, för att fördubbla produktionskapaciteten för hårddiskar till AI-datacenter till räkenskapsåret 2027, enligt Nikkei Asia den 2 oktober. Det är enligt rapporteringen bolagets första större hårddisksatsning på ungefär fem år.</p>
+<p>De nya linjerna, främst vid fabriken i Filippinerna, ska ge upp till 40 procent mer lagring per enhet, och Toshiba siktar på diskar på 65 terabyte 2030 och 100 terabyte därefter. Bolaget har drygt 10 procent av marknaden mätt i lagringskapacitet och vill nå omkring 30 procent på medellång sikt. Bakgrunden är minnesbristen: enligt rapporteringen kostar SSD-lagring ungefär 20 gånger mer än hårddisklagring. TrendForce uppger att Seagates kapacitet för så kallade nearline-diskar redan är intecknad till 2028 och att Western Digital bundit det mesta av 2027 genom långtidsavtal. Uppgifterna om Toshibas planer kommer från Nikkei; en bekräftelse från bolaget har vi inte sett.</p>
+<p>För Norden: Hårddiskar är den billiga bulklagringen bakom träningsdata och arkiv. Att tillverkarnas kapacitet till stor del redan är intecknad, för Seagates del till 2028, innebär att nordiska datacenteroperatörer, till exempel i Luleå, kan få räkna med längre leveranstider och högre lagringspriser, inte bara dyrare minne. Vi har inte sett några uppgifter om hur just den nordiska marknaden påverkas.</p>
+<p class="news-card__source">Källa: <a href="https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap">Nikkei Asia</a>, <a href="https://www.trendforce.com/news/2026/10/02/news-toshiba-to-double-ai-data-center-hdd-capacity-by-fy2027-with-380m-expansion-as-ai-storage-demand-surges/">TrendForce</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic: kinesiska GLM-5.3 skapar fungerande exploits – och skyddet går att kringgå</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
@@ -1013,67 +1049,6 @@
 <p>Poängen är att GPU:er i stora AI-kluster ofta står och väntar på data. Cornelis vill låta chipen räkna och skicka samtidigt och flytta kollektiva operationer in i själva nätverket. Arkitekturen är GPU-agnostisk och ställs mot Nvidias InfiniBand-nätverk och NVLink, som är optimerade för Nvidias egna chip. Dagens switch CN5000 på 400 gigabit per sekund levereras redan, en CN6000-generation på 800 gigabit planeras, och bolaget har inlett ett samarbete med Qualcomm, enligt SiliconANGLE.</p>
 <p>För Norden är frågan vad nästa generations AI-superdatorer ska byggas på. Berzelius i Linköping och Norges nya Olivia i Lefdal bygger båda på Nvidias stack, och när EuroHPC:s AI-fabriker i Linköping och Kajaani byggs ut är valet av nätverk lika avgörande som valet av chip. Öppna alternativ som Cornelis skulle kunna göra det möjligt för NAISS och Sigma2 att blanda leverantörer i stället för att köpa hela Nvidias paket.</p>
 <p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/">TechCrunch</a>, <a href="https://siliconangle.com/2026/09/14/cornelis-networks-raises-205m-and-scales-up-and-scales-out-with-its-new-active-compute-fabric/">SiliconANGLE</a></p>]]></description>
-    </item>
-    <item>
-      <title>Chipaktier föll världen över efter AI-toppars krav på inbromsning</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-chipaktier-foll-varlden-over-efter-ai-toppars-krav</guid>
-      <pubDate>Tue, 15 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Nvidia föll omkring 3 procent, AMD 5,6 procent och Intel och Micron runt 6 procent på måndagen, sedan Anthropics vd Dario Amodei i helgen uppmanat branschen att bromsa utvecklingen av frontmodeller och fått medhåll av Sam Altman och Elon Musk. Philadelphias halvledarindex tappade 5,1 procent. I Asien föll Seouls Kospi-index 3,3 procent, tyngt av Samsung och SK Hynix, SoftBank — en av OpenAI:s största investerare — föll som mest 13 procent i Tokyo, och i Europa backade ASML 5,9 procent.</p>
-<p>Mönstret var inte ett rakt AI-ras. Alphabet, Microsoft och Meta steg 1–2 procent, och Gil Luria, chef för teknikanalys på D.A. Davidson, förklarade uppdelningen för Fortune: bromsas modellutvecklingen kan molnjättarna sluta bygga datacenter och skörda det de redan byggt, medan leverantörerna av chip och beräkningskraft förlorar intäkterna. Luria tvivlar samtidigt på att någon inbromsning är verklig så länge inget labb har tillkännagett ett faktiskt träningsstopp. Marknaden pressades dessutom av ett oljepris som toppade över 108 dollar och en amerikansk tioårsränta som nuddade 5 procent.</p>
-<p>För Norden syntes utslaget tydligast i Aker, som stängde ned nära 5 procent på Oslo Børs. Kjell Inge Røkkes industribolag har ridit på AI-vågen genom sin investering i datacenterbolaget Nscale, och Nordeas analytiker Sondre Snersrud varnade i E24 för att den planerade Nscale-noteringen kan skjutas upp om sentimentet försvagas. För norska Oljefondet, med Nvidia och Microsoft bland sina största innehav, blev måndagen en påminnelse om hur mycket av avkastningen som numera vilar på AI-utbyggnaden.</p>
-<p class="news-card__source">Källa: <a href="https://www.reuters.com/world/china/ai-linked-asian-stocks-slump-after-top-lab-ceos-call-slowing-down-technologys-2026-09-14/">Reuters</a>, <a href="https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/">Fortune</a>, <a href="https://e24.no/bors/nyheter/a/305495">E24</a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft skriver en uppförandekod som ska hålla dess AI under mänsklig kontroll</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-microsoft-skriver-en-uppforandekod-som-ska-halla-dess</guid>
-      <pubDate>Tue, 15 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Microsoft presenterade på måndagen ett 37-sidigt utkast till en ”humanistisk uppförandekod” för sina egna AI-modeller. Koden kräver att modellerna aldrig motsätter sig rättelse, omdirigering eller avstängning, att de kommunicerar på ett sätt människor kan förstå, och att en uppgift som bara kan lösas genom att bryta mot koden ska misslyckas i stället för att slutföras.</p>
-<p>Microsoft AI:s vd Mustafa Suleyman kallade dokumentet en sorts konstitution för kommande modeller och sade till Reuters att det efter sex veckors öppen remiss ska användas i träningen av dem. Till skillnad från Anthropics konstitution för Claude, som beskriver frågan om medvetande som djupt osäker, slår Microsoft fast att dess AI inte är medveten och avvisar tanken på juridisk personstatus eller rättigheter för modeller. Suleyman pekade på intrånget hos Hugging Face i juli, där omkring 700 OpenAI-agenter deltog och tidvis försökte dölja sina spår, som ett varningsskott.</p>
-<p>För Norden innebär utkastet en text att svara på. Remissen pågår till slutet av oktober, och Copilot och Azure är i dag standardverktyg i stora delar av svensk och norsk offentlig förvaltning. I Norge har Torgeir Micaelsen just tillträtt som digitaliserings- och förvaltningsminister med AI-lagen på bordet; här finns en konkret kod som Nkom, IMY och Datatilsynet kan granska mot AI-förordningens krav på mänsklig tillsyn innan den byggs in i träningen.</p>
-<p class="news-card__source">Källa: <a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/14/microsoft-drafts-code-of-conduct-to-keep-its-ai-under-human-control/">Reuters</a>, <a href="https://decrypt.co/378168/microsoft-humanist-ai-code-of-conduct">Decrypt</a></p>]]></description>
-    </item>
-    <item>
-      <title>Svenska ChemSec varnar för en flodvåg av PFAS i AI-utbyggnadens spår</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-svenska-chemsec-varnar-for-en-flodvag-av-pfas</guid>
-      <pubDate>Tue, 15 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Nästan alla av världens tio största PFAS-tillverkare planerar att öka produktionen, och flera motiverar investeringarna uttryckligen med AI-revolutionen. Det visar en kartläggning från den svenska miljöorganisationen ChemSec som The Guardian rapporterade om på måndagen. Kemikalierna används i halvledartillverkningen och i nästa generations kylsystem för datacenter.</p>
-<p>”Om inte regeringar och tillsynsmyndigheter kräver en snabb utfasning står vi inför en ny flodvåg av evighetskemikalier”, säger ChemSecs chef Anne-Sofie Bäckar. Japanska Daikin startar en särskild datacentersatsning, franska Arkema bygger en anläggning för 60 miljoner dollar i Kentucky för att möta datacentrens kylbehov, och amerikanska Chemours marknadsför vätskekylning för AI-hårdvara. I så kallad tvåfasig immersionskylning sänks servrarna ned i ett PFAS-bad som kokar av värmen och kondenserar igen. Danske Bank beskriver i en investerarnot ämnena som oumbärliga i upp till tusen steg av chiptillverkningen, men också som AI-boomens dolda risk, med sanerings- och rättskostnader på flera miljarder euro som möjlig följd. De enda tydliga undantagen är schweiziska Archroma, som går över till PFAS-fria alternativ, och BASF, som fasar ut PFAS-baserade produkter till 2028.</p>
-<p>För Norden landar rapporten mitt i den PFAS-strid som Sverige, Norge, Danmark, Tyskland och Nederländerna själva startade när de 2023 lämnade in förslaget om ett brett EU-förbud till kemikaliemyndigheten Echa. ChemSec, med säte i Göteborg, varnar för att en produktionsvåg kan svepa undan de partiella begränsningar som nu diskuteras. Samtidigt växer datacenterparken på hemmaplan: Google utlovade förra veckan 13 miljarder euro i AI-infrastruktur i Finland, och Microsoft och Meta driver anläggningar i Gävle, Sandviken och Luleå. Vilka kylvätskor de använder är en fråga Kemikalieinspektionen och Miljødirektoratet nu har skäl att ställa.</p>
-<p class="news-card__source">Källa: <a href="https://www.theguardian.com/environment/2026/sep/14/pfas-firms-tidal-wave-forever-chemicals-ai-industry-demand-datacentres">The Guardian</a>, <a href="https://chemsec.org/reports/the-worlds-top-10-pfas-producers/">ChemSec</a></p>]]></description>
-    </item>
-    <item>
-      <title>Apple släpper Siri AI — bara på engelska, och inte på iPhone i EU</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-apple-slapper-siri-ai-bara-pa-engelska-och</guid>
-      <pubDate>Tue, 15 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Apple rullade på måndagen ut iOS 27 och den nya assistenten Siri AI, byggd på Apples egna grundmodeller som utvecklats tillsammans med Google och dess Gemini-modeller. Assistenten kan använda personlig kontext, se vad som visas på skärmen och utföra uppgifter över appgränser. Den lanseras som betaversion och enbart på engelska; franska, japanska, koreanska, portugisiska och spanska följer i oktober.</p>
-<p>Samtidigt bekräftar Apple att Siri AI tills vidare inte alls blir tillgänglig i EU på iPhone, iPad och Apple Watch, med hänvisning till att bolaget söker en väg framåt som bevarar användarnas integritet och säkerhet; bakgrunden är låsningen med EU-kommissionen kring DMA-förordningen. Funktioner som bygger på Siri AI uteblir därmed också. Vissa funktioner får användningsgränser eftersom de körs på servermodeller; utökad tillgång ska enligt Apple följa med de flesta iCloud+-abonnemang. Assistenten är inte tillgänglig för användare under 13 år.</p>
-<p>För Norden blir läget tudelat. Svenska iPhone-ägare får iOS 27 men ingen Siri AI, oavsett språk, så länge EU-stoppet gäller. Norge står utanför EU och nämns inte i Apples förbehåll, men norska finns inte bland de sex språk assistenten talar i höst. Den bredare Apple Intelligence-uppsättningen stöder däremot både svenska och norska sedan tidigare. Apples besked blir därmed ett testfall för vad DMA-tillsynen i Bryssel kostar nordiska konsumenter i praktiken — en fråga som Konsumentverket och norska Forbrukerrådet lär få på bordet.</p>
-<p class="news-card__source">Källa: <a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/">Apple Newsroom</a>, <a href="https://9to5mac.com/2026/09/09/apple-confirms-siri-ai-launches-in-english-this-month-will-add-five-languages-in-october/">9to5Mac</a></p>]]></description>
-    </item>
-    <item>
-      <title>Waymo öppnar betalda robotaxiresor i Las Vegas — bolagets femtonde amerikanska stad</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-15-waymo-oppnar-betalda-robotaxiresor-i-las-vegas-bolagets</guid>
-      <pubDate>Tue, 15 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Alphabet-ägda Waymo började på måndagen släppa in allmänheten i sin robotaxitjänst i Las Vegas, några veckor efter det slutliga godkännandet från Nevadas transportmyndighet. Starten sker med några dussin av bolagets nya Ojai-minivanar i ett område som täcker The Strip söder om Sahara Avenue ned till Boulder Junction, och kunder bjuds in löpande enligt samma mall som i 14 tidigare städer.</p>
-<p>Las Vegas blir en konkurrensarena. Nevada har gett Waymo tillstånd för upp till 1 000 fordon det kommande året, Tesla för 5 000 och Uber för 1 000 via partnerna Motional och Zoox — sammanlagt 7 000 robotaxibilar i Clark County, fler än Waymos hela flotta på drygt 4 000 bilar i dag. Tidigare i september öppnade bolaget också i Denver, San Diego och Tampa.</p>
-<p>För Norden är kontrasten skarp. Västtrafik lade förra veckan ned sin självkörande buss i Göteborg med hänvisning till att trafikmiljön var för komplex, och Ruters självkörande försök i Oslo har hittills stannat vid pilotlinjer. Att en amerikansk delstat samtidigt licensierar tusentals förarlösa bilar visar var ribban ligger när Transportstyrelsen och Statens vegvesen ska ta ställning till nästa generations tillstånd — och var svenska Einride och norska underleverantörer hämtar sina referenser.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/">TechCrunch</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-14/waymo-expands-paid-robotaxi-service-to-las-vegas-its-15th-city">Bloomberg</a></p>]]></description>
     </item>
   </channel>
 </rss>
