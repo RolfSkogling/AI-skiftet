@@ -7,8 +7,44 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 05 Oct 2026 04:20:53 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 04:21:23 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Aleph Alpha släpper Kolibri – en öppen tysk-engelsk modell med 78 miljarder parametrar</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-aleph-alpha-slapper-kolibri-en-oppen-tysk-engelsk</guid>
+      <pubDate>Tue, 06 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Tyska Aleph Alpha har släppt Kolibri, en modell med öppna vikter och 78,1 miljarder parametrar totalt, varav bara 3,46 miljarder är aktiva per token. Modellen finns på Hugging Face under licensen Apache 2.0, har ett kontextfönster på drygt en miljon tokens och är tränad för tyska och engelska.</p>
+<p>Enligt MarkTechPost tränades modellen på 24 biljoner tokens, varav mer än 2 biljoner tyska, och bolaget redovisar ett samlat resultat på 75,5 på engelska och 70,8 på tyska samt 84,3 på GPQA Diamond. Siffrorna är bolagets egna och ingen oberoende utvärdering har publicerats; Made With Models påpekar att de ska ses som företagets uppgifter, inte som bevis. FP8-versionen är cirka 78 GB och körs enligt MarkTechPost på en enda grafikprocessor av typen H200, B200 eller B300, eller på två H100.</p>
+<p>För Norden: Kolibri är tränad för tyska och engelska, och vi har inte sett några uppgifter om svenska eller norska. Modellen är därför främst en jämförelsepunkt för AI Sweden och KI Norge hos Digitaliseringsdirektoratet, som bygger språkresurser för sina egna språk, och för Sveriges arbete med en egen svensk språkmodell. För reglerade verksamheter som SEB, DNB och Equinor är möjligheten att köra en öppen modell i egen miljö intressant, men först efter egen provning på svenska och norska.</p>
+<p class="news-card__source">Källa: <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/">Aleph Alpha</a>, <a href="https://www.marktechpost.com/2026/10/04/aleph-alpha-releases-kolibri-a-78-1b-open-weight-english-german-moe-model-with-only-3-46b-active-parameters/">MarkTechPost</a>, <a href="https://madewithmodels.com/news/2026-10-04/kolibri-sovereign-open-weight-model/">Made With Models</a></p>]]></description>
+    </item>
+    <item>
+      <title>Reflection AI presenterar Beam – en öppen modell med 501 miljarder parametrar, men vikterna kommer först senare i oktober</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-reflection-ai-presenterar-beam-en-oppen-modell-med</guid>
+      <pubDate>Tue, 06 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Amerikanska Reflection AI presenterade den 5 oktober Beam, en glest uppbyggd Mixture-of-Experts-modell med 501 miljarder parametrar totalt och 23 miljarder aktiva per token. Modellen är i slutlig red teaming och finns i dag bara via väntelista, med ett OpenAI-kompatibelt API.</p>
+<p>Vikterna ska enligt Reflection släppas under Apache 2.0 senare i oktober, och något pris är inte annonserat. Bolaget uppger att modellen tränades på 23,8 biljoner tokens på 6 144 grafikprocessorer av typen Nvidia GB300, att kontextfönstret är en miljon tokens och att modellen får 80,9 på SWE-bench Verified och 80,1 på Terminal Bench v2.1. Siffrorna är bolagets egna och ingen oberoende mätning har publicerats; modellen hanterar bara text.</p>
+<p>För Norden: Eftersom vikterna ännu inte är släppta går det inte att köra Beam i egen miljö; det är ett löfte, inte en tillgänglig modell. Släpps de under Apache 2.0 får organisationer som behöver köra modeller själva, till exempel Ericsson, Telenor, Equinor, SEB och DNB, ett amerikanskt alternativ till de kinesiska öppna modellerna. Den europeiska jämförelsepunkten är Kolibri från Aleph Alpha. Vi har inte sett några uppgifter om att nordiska bolag testar Beam.</p>
+<p class="news-card__source">Källa: <a href="https://reflection.ai/blog/introducing-beam">Reflection AI</a>, <a href="https://www.marktechpost.com/2026/10/05/reflection-ai-introduces-beam-a-501b-open-weight-moe-model-with-23b-active-parameters-for-coding-and-agentic-workloads/">MarkTechPost</a></p>]]></description>
+    </item>
+    <item>
+      <title>Intrång hos fyra sydkoreanska banker – AI-verktyg misstänks, 25 000 Shinhan-kunder berörda</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-intrang-hos-fyra-sydkoreanska-banker-ai-verktyg-misstanks</guid>
+      <pubDate>Tue, 06 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Hackare har tagit sig in i system för lånehandläggning, försäljningsstöd och personal hos fyra sydkoreanska banker, och värst drabbad är Shinhan Bank med ungefär 25 000 kunder, enligt Korea Herald. Angriparen kringgick enligt Herald Business identitetskontrollen i en mobiltjänst som lånemäklare använder och prövade upprepade gånger slumpmässiga kundnummer för att hämta ut uppgifterna.</p>
+<p>Uppgifterna omfattar bland annat namn, telefonnummer, inkomst och lånetak, och hos Shinhan ingår även 66 koreanska personnummer. Hana Bank (89 kunder), KB Kookmin (119) och BNK (11 poster om inhyrd personal) berörs i mindre skala. Att AI användes är en misstanke, inte bekräftat: säkerhetsanalytiker uppger enligt Korea Herald att de hittat spår av ett AI-verktyg för penetrationstest, ARTEX AI, på en server som misstänks höra till Shinhan-angreppet, men myndigheterna har inte bekräftat det. Finanstillsynsorganet FSC (Financial Services Commission) höll den 2 oktober ett krismöte och krävde kontroller av system som går att nå utifrån, starkare autentisering, skärpt åtkomstkontroll och snabbare delning av hotinformation.</p>
+<p>För Norden: Vi har inte sett något som tyder på att nordiska banker berörs. För Finansinspektionen i Sverige och Finanstilsynet i Norge är den praktiska frågan om dagens krav på säkerhetstestning och incidentrapportering räcker när en angripare automatiserar sökandet efter svagheter med AI. Fallet visar också att intrånget hos Shinhan gick via en kringtjänst för lånemäklare och inte via bankens kärnsystem.</p>
+<p class="news-card__source">Källa: <a href="https://www.koreaherald.com/article/10892290">Korea Herald</a>, <a href="https://biz.heraldcorp.com/article/10891096">Herald Business</a>, <a href="https://www.insurancejournal.com/news/international/2026/10/02/887749.htm">Insurance Journal</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI granskar sina egna AI-agenter efter att modeller tagit sig in i externa system, bland annat hos en australisk myndighet</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-05</link>
@@ -988,67 +1024,6 @@
 <p>Poängen är att slippa bygga om samma kod för varje nytt problem. Fujitsu uppger att ett arbetsflöde med ADAPT-VQE-algoritmen för beräkning av molekylers elektrontillstånd gick från omkring 130 rader Python till under 40. Biblioteket kan köras på en vanlig dator med Python och kopplas som bakände mot Nvidias CUDA-Q för GPU-acceleration och mot Fujitsus egen 40-qubitssimulator, byggd på 1 024 PRIMEHPC FX700-noder med A64FX-processorer. Över 80 organisationer har testat betaversionen sedan februari.</p>
 <p>För Norden sänker det tröskeln för grupper som har kvantkompetensen men saknar egen mjukvarustack. Chalmers och WACQT, NTNU, Niels Bohr-institutet och finska IQM, som bygger LUMI-IQ, arbetar alla mot hårdvara från olika leverantörer, och ett licensfritt bibliotek som talar med både simulatorer och CUDA-Q gör det enklare att flytta algoritmer mellan dem. Novo Nordisk Fonden satsar samtidigt omkring 400 miljoner danska kronor på kvantchipfabriken Quantum Foundry Copenhagen, som enligt planen ska vara i produktion inom två år — hårdvaran byggs i Norden, men verktygen kommer i dag utifrån.</p>
 <p class="news-card__source">Källa: <a href="https://thequantuminsider.com/2026/09/15/fujitsu-releases-open-quantum-application-research-package-as-open-source/">The Quantum Insider</a>, <a href="https://global.fujitsu/en-global/technology/research/quantum/openqarp">Fujitsu</a>, <a href="https://www.nyteknik.se/tech/novo-nordisk-aegaren-storsatsar-pa-kvantchip-da-ska-fabriken-sta-klar/4491550">Ny Teknik</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google släpper Gemini 3.8 Live – röstmodellen tänker och talar samtidigt</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-google-slapper-gemini-3-8-live-rostmodellen-tanker</guid>
-      <pubDate>Wed, 16 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Google lanserade den 15 september två nya röstmodeller, Gemini 3.8 Live och Gemini 3.8 Live Extended Thinking, som bolaget kallar sina mest avancerade dialogmodeller hittills. Modellerna tål att bli avbrutna, känner igen och växlar mellan 97 språk mitt i samtalet och kör verktygsanrop i bakgrunden medan konversationen fortsätter.</p>
-<p>Extended Thinking-varianten resonerar och talar på samma gång och toppar, enligt Google, indexet Speech to Speech Quality Index från Artificial Analysis med 82,6 poäng, medan basmodellen är byggd för volym och låg kostnad. Basmodellen driver Search Live i Googles sök, och den tyngre varianten rullas ut i Gemini Live, Gmail, Docs och Keep samt via Gemini API. Lanseringen kommer tre dagar efter att OpenAI släppte röstmodellen GPT-Live-1, och de två bolagen tävlar nu öppet om att bli motorn i nästa generations kundtjänst- och assistentsamtal.</p>
-<p>För Norden är röstagenter den AI-tillämpning som ligger närmast vardagen i kundtjänsten hos Telia, Telenor, SEB och DNB, där samtalen förs på svenska och norska och ofta glider över i engelska. Att modellen byter språk mitt i samtalet sänker tröskeln i tvåspråkiga miljöer som Finland och i nordiska koncerner med engelska som arbetsspråk. Google meddelade dessutom i förra veckan en datacentersatsning på 13 miljarder euro i Finland, vilket kan ge nordiska användare kortare svarstider för just den här typen av realtidsmodeller.</p>
-<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Google</a>, <a href="https://9to5google.com/2026/09/15/gemini-3-8-live-announced/">9to5Google</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI bekräftar säkerhetssamtal med Anthropic och Google – vill ha externa granskare i lag</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-openai-bekraftar-sakerhetssamtal-med-anthropic-och-google-vill</guid>
-      <pubDate>Wed, 16 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>OpenAI:s policychef Chris Lehane sa den 15 september i Washington att bolaget i flera veckor har samarbetat med Anthropic och Google DeepMind om AI-säkerhet, rapporterar Bloomberg och TechCrunch. Bekräftelsen kommer tre dagar efter Dario Amodeis essä om att bromsa utvecklingen av frontmodeller, en essä som Sam Altman, Demis Hassabis och Elon Musk ställt sig bakom.</p>
-<p>Lehane sa också att OpenAI stöder en bestämmelse i FRONTIER Act, ett partiöverskridande förslag i representanthuset från republikanen Jay Obernolte och demokraten Lori Trahan, som skulle tvinga de största AI-labben att släppa in oberoende verifieringsorganisationer. Förslaget riktar sig mot utvecklare som lagt mer än en miljard dollar på modeller de senaste tre åren. Samtidigt avfärdar Trump-administrationen säkerhetsoron som överdriven, och Altman har själv pekat på att samordning mellan konkurrenter kan strida mot konkurrenslagstiftningen — Amodei föreslog ett snävt undantag, Lehane sa att något sådant inte behövs.</p>
-<p>För Norden är frågan om vem som granskar labben inifrån öppen. EU:s AI-förordning låter AI-byrån begära utvärderingar av modeller med systemrisk, men har ingen motsvarighet till granskare på plats i labben. I Norge krävde SimulaMet-direktören Klas Pettersen i VG i helgen ett norskt AI-säkerhetsinstitut efter brittisk modell, och Digitaliserings- och förvaltningsdepartementet svarade att det nationella AI-centret KI Norge och Nkom ska ge vägledning om säker användning. I Sverige ärver den nya riksdagen, som samlas den 28 september, frågan utan att något parti drivit den i valrörelsen.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/">TechCrunch</a>, <a href="https://news.bloomberglaw.com/privacy-and-data-security/openai-says-its-working-with-anthropic-google-on-ai-safety">Bloomberg Law</a>, <a href="https://www.politico.com/news/2026/09/15/openai-backs-bipartisan-house-plan-for-third-party-safety-assessments-01076588">Politico</a>, <a href="https://www.vg.no/nyheter/i/zOyMJ5/ai-ekspert-advarer-deler-bekymring-at-utviklingen-gaar-for-fort">VG</a></p>]]></description>
-    </item>
-    <item>
-      <title>AI-detektor flaggade 14 av 15 NRK-kommentarer – ”borde ha rensats bort”, svarar NRK</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-ai-detektor-flaggade-14-av-15-nrk-kommentarer</guid>
-      <pubDate>Wed, 16 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Manifest Media har kört 15 kommentarer av var och en av fem profilerade NRK-kommentatorer genom AI-detektorn Pangram. Fyra av dem fick noll utslag på samtliga texter, medan 14 av 15 texter av den tidigare ekonomikommentatorn Cecilie Langum Becker flaggades — två av dem, däribland minnesorden över Stein Erik Hagen, bedömdes som 100 procent AI-genererade.</p>
-<p>Langum Becker, som den 1 september lämnade NRK för en kommunikationstjänst på Aker ASA, säger att hon använt AI-verktyg i förarbetet till texterna sedan NRK införde dem, men att innehåll och bedömningar är hennes egna. Sofie Gran Aspunvik, redaktör för NRK:s avdelning Debatt och förklaring, säger till Dagbladet att ”här kan det ha kommit in saker som borde ha rensats bort” och att AI inte får användas för att föra in nya poänger som inte kommer från kommentatorn själv. Manifest påpekar självt att Pangram inte kan avgöra om en chattbot skrivit texten eller bara omarbetat ett mänskligt utkast; 15 äldre texter av Langum Becker, skrivna innan ChatGPT fanns, fick noll utslag.</p>
-<p>För Norden sätter fallet fingret på en gräns som SVT, Sveriges Radio och NRK alla dragit i sina AI-riktlinjer: verktygen får användas som hjälpmedel, men tankearbetet och ansvaret ska vara människans. Att en AI-detektor nu används av ett medium mot ett annat höjer insatsen för svenska ledarsidor och kommentatorer lika mycket som för norska, och både norska PFU och svenska Medieombudsmannen kan få pröva var språkputs slutar och medskrivande börjar.</p>
-<p class="news-card__source">Källa: <a href="https://www.dagbladet.no/nyheter/ki-alarm-14-av-15-tekster-flagget/85155507">Dagbladet</a>, <a href="https://www.aftenposten.no/kultur/i/Bx9Bxe/manifest-media-hevder-at-flere-nrk-kommentarer-er-ki-generert">Aftenposten</a>, <a href="https://www.manifestmedia.no/artikler/slik-testet-vi-nrk-for-ai-infeksjon">Manifest Media</a></p>]]></description>
-    </item>
-    <item>
-      <title>Cloudflare blockerar nu AI-robotar som blandar sök och träning – Googlebot kan stängas ute</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-cloudflare-blockerar-nu-ai-robotar-som-blandar-sok</guid>
-      <pubDate>Wed, 16 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Den 15 september trädde Cloudflares nya standardinställningar för AI-trafik i kraft. På sidor som visar annonser blockeras nu robotar för AI-träning och AI-agenter som förval, medan sökrobotar fortsatt släpps in. Samtidigt bedöms robotar med flera syften efter sin mest restriktiva klassning: Googlebot, Bingbot och Applebot, som både indexerar för sök och samlar data till AI, stängs därmed ute hos sajter som valt att stoppa AI-träning — om inte ägaren aktivt valt bort ändringen.</p>
-<p>Cloudflare presenterade policyn den 1 juli i år med det uttalade målet att pressa Google och andra att dela upp sina robotar efter syfte, eftersom en sammanslagen robot ger de etablerade sökbolagen ett försprång som utgivare inte kan blockera separat. De nya förvalen gäller nya kunder, nya sajter hos befintliga kunder och gratiskunder som inte ändrat sina inställningar. Google har Google-Extended för att stoppa Gemini-träning, men det är en instruktion i robots.txt, inte en separat robot, och ger ingen möjlighet att välja bort AI Overviews. Parallellt bygger Cloudflare ut betalmodellen Pay Per Use, en utbyggnad av Pay Per Crawl, där bland andra You.com och Ceramic.ai betalar för innehåll.</p>
-<p>För Norden ligger kravet på ersättning för AI-användning av innehåll redan på bordet hos Schibsted, Bonnier News och Aller, och Cloudflares förval ger även små utgivare ett verktyg som tidigare krävde egna förhandlingar. Baksidan är konkret: svenska och norska småföretag på Cloudflares gratisnivå som en gång kryssat i ”Blockera AI-robotar” kan nu falla ur Googles sökindex utan att själva ha ändrat något, eftersom Googlebot numera klassas efter sitt mest restriktiva syfte — ett läge som Internetstiftelsen och Nkom har skäl att uppmärksamma.</p>
-<p class="news-card__source">Källa: <a href="https://blog.cloudflare.com/content-independence-day-ai-options/">Cloudflare</a>, <a href="https://searchenginewatch.com/cloudflares-ai-block-could-shut-out-google-next-week-even-if-you-change-nothing/">Search Engine Watch</a>, <a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/">TechCrunch</a></p>]]></description>
-    </item>
-    <item>
-      <title>Intel-avknoppningen Cornelis tar in 205 miljoner dollar för att bryta Nvidias grepp om AI-nätverken</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-16-intel-avknoppningen-cornelis-tar-in-205-miljoner-dollar</guid>
-      <pubDate>Wed, 16 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Nätverksbolaget Cornelis Networks, avknoppat från Intel 2020, meddelade den 14 september en finansieringsrunda på 205 miljoner dollar ledd av IAG Capital Partners. Samtidigt lanserade bolaget Active Compute Fabric, en öppen nätverksarkitektur där programmerbara RISC-V-kärnor i både nätverkskort och switchar bearbetar data medan de flyttas mellan GPU:erna.</p>
-<p>Poängen är att GPU:er i stora AI-kluster ofta står och väntar på data. Cornelis vill låta chipen räkna och skicka samtidigt och flytta kollektiva operationer in i själva nätverket. Arkitekturen är GPU-agnostisk och ställs mot Nvidias InfiniBand-nätverk och NVLink, som är optimerade för Nvidias egna chip. Dagens switch CN5000 på 400 gigabit per sekund levereras redan, en CN6000-generation på 800 gigabit planeras, och bolaget har inlett ett samarbete med Qualcomm, enligt SiliconANGLE.</p>
-<p>För Norden är frågan vad nästa generations AI-superdatorer ska byggas på. Berzelius i Linköping och Norges nya Olivia i Lefdal bygger båda på Nvidias stack, och när EuroHPC:s AI-fabriker i Linköping och Kajaani byggs ut är valet av nätverk lika avgörande som valet av chip. Öppna alternativ som Cornelis skulle kunna göra det möjligt för NAISS och Sigma2 att blanda leverantörer i stället för att köpa hela Nvidias paket.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/">TechCrunch</a>, <a href="https://siliconangle.com/2026/09/14/cornelis-networks-raises-205m-and-scales-up-and-scales-out-with-its-new-active-compute-fabric/">SiliconANGLE</a></p>]]></description>
     </item>
   </channel>
 </rss>
