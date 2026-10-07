@@ -7,8 +7,58 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 06 Oct 2026 04:21:23 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 04:22:28 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic launches Sonnet 5.5 – a faster model at the same price as its predecessor</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-anthropic-lanserar-sonnet-5-5-snabbare-modell-till</guid>
+      <pubDate>Wed, 07 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic released Claude Sonnet 5.5 on September 28. According to the company, the model is more than 30 percent faster in output speed than the previous generation and costs the same as Sonnet 5: $2 per million input tokens and $10 per million output tokens.</p>
+<p>Anthropic says the cost per task falls by up to 30 percent, mainly because the model uses fewer tokens and fewer tool calls, not because of a lower list price. On GDPval-AA, a test of occupational tasks, Sonnet 5.5 scores 1,844 against 1,846 for Opus 5.5, and it reaches 70.6 percent on the coding benchmark Terminal-Bench 4.0. The figures come from the company and its customers; independent measurements are not yet available. Haiku 5.5 is promised within weeks.</p>
+<p>For the Nordics: Stockholm-based Lovable is among the customers cited – in its tests the number of tool calls fell by about a third and shell executions by roughly half. Because the list price is unchanged, it is the efficiency gain rather than a price cut that shapes the calculation for Nordic software companies and IT consultancies building agents on Claude. The model is available through AWS, Google Cloud and Microsoft Azure, so Nordic organizations can buy it through cloud agreements they already have.</p>
+<p class="news-card__source">Source: <a href="https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/">SiliconANGLE</a>, <a href="https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls">VentureBeat</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI watermarks ChatGPT text in the EU ahead of the AI Act labelling deadline</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-openai-vattenmarker-text-fran-chatgpt-i-eu-infor</guid>
+      <pubDate>Wed, 07 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>OpenAI announced on October 5 that text from ChatGPT and Codex in the EU is to be marked over the coming weeks with textGrain, an invisible statistical watermark built into word choice. In the API the marking is switched off by default and must be enabled per project or organization.</p>
+<p>The background is Article 50(2) of the EU AI Act, which requires AI-generated content to be marked in a machine-readable format; systems already on the market before August 2, 2026 must comply by December 2, 2026. According to OpenAI's technical report, the watermark is detected in about 95 percent of 400-token passages but only 17 percent after heavy rewriting, and the detector is initially open only to selected researchers and organizations, including Cornell, ETH Zurich and Slovakia's KInIT. According to ActuIA and Tech Jack Solutions, Anthropic instead applies its marking globally.</p>
+<p>For the Nordics: Because the watermark is not on by default in the API, responsibility may fall on Swedish and Norwegian companies building customer-facing services on OpenAI's models – they may need to switch it on themselves before December 2 if the service targets users in the EU. Sweden faces the same deadline, and Norway intends to incorporate the regulation through the EEA Agreement. Whether the obligation sits with the provider or with the Nordic company building the service is something each company must assess for itself.</p>
+<p class="news-card__source">Source: <a href="https://www.actuia.com/en/news/openai-will-watermark-chatgpt-in-the-eu-but-leaves-the-api-opt-in/">ActuIA</a>, <a href="https://techjacksolutions.com/ai-brief/openai-textgrain-watermarking-eu-ai-act-article-50/">Tech Jack Solutions</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norwegian Consumer Council wants AI glasses off the shelves – government plans temporary ban</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-forbrukerradet-vill-stoppa-forsaljningen-av-ai-glasogon-i</guid>
+      <pubDate>Wed, 07 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Norwegian Consumer Council (Forbrukerrådet) has asked the country's optician chains to stop selling glasses with built-in AI until the authorities have clarified what is lawful. Director Finn Myrstad argues that the glasses lay the ground for a surveillance society that most people do not want.</p>
+<p>According to BT, Synsam, Brilleland and Interoptik are among the chains selling Ray-Ban Meta glasses; none responded to NTB's questions on Monday, and Specsavers says it does not stock smart glasses. On Monday the government announced a temporary ban on AI glasses in public spaces, schools, kindergartens and other places where children spend time, as well as health institutions, and Digitalisation Minister Torgeir Micaelsen said a bill will go to the Storting as quickly as possible. Sales of Ray-Ban Meta have, according to CNBC as cited by BT, risen from 2 million units in 2023–2024 to over 7 million in 2025.</p>
+<p>For the Nordics: Norway is moving ahead of Sweden. In August Karianne Tung, then digitalisation minister, said the government wanted to consider banning facial recognition of others through smart glasses, with an expert group due to advise this autumn; Datatilsynet and the Consumer Council had already called for stricter rules. Any ban must fit within the GDPR, EEA rules and the EU AI Act. We have not found a corresponding proposal in Sweden.</p>
+<p class="news-card__source">Source: <a href="https://www.bt.no/innenriks/i/w38Q3A/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">BT</a>, <a href="https://www.altaposten.no/norgeogverden/n/jvzrnL/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">Altaposten</a>, <a href="https://inyheter.no/25/08/2026/vurderer-forbud-mot-ansiktsgjenkjenning-i-smartbriller/">iNyheter</a></p>]]></description>
+    </item>
+    <item>
+      <title>Half of the applications to the G7–Nordic quantum call include Nordic partners</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-halften-av-ansokningarna-till-g7nordens-kvantanrop-har-nordiska</guid>
+      <pubDate>Wed, 07 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <category>norden</category>
+      <description><![CDATA[<p>According to Quantum Zeitgeist, citing NordForsk, 93 of the 186 applications submitted to the joint Canada–G7–Nordic call on quantum technologies include Nordic partners, or 50 percent. The Nordic part is administered by NordForsk.</p>
+<p>The Nordic budget is up to NOK 84 million, with a maximum of NOK 7 million per project, and the aim is to fund about twelve projects for up to three years. Nordic consortia must include research-performing organizations in at least two Nordic countries. The funders are Innovation Fund Denmark, the Research Council of Finland, the Research Council of Norway and the Swedish Research Council.</p>
+<p>For the Nordics: With at most NOK 84 million and about twelve projects, competition will be fierce – roughly one in eight Nordic applications could be funded, by our own calculation from the figures above. The requirement of at least two Nordic countries pushes Nordic collaboration rather than national efforts, with the Swedish Research Council and the Research Council of Norway among the four funders. Which research environments have applied is not stated, and NordForsk does not say in the material we have seen when decisions will be made.</p>
+<p class="news-card__source">Source: <a href="https://www.nordforsk.org/canada-g7-nordic-call-proposals-quantum-technologies">NordForsk</a>, <a href="https://quantumzeitgeist.com/nordforsk-nordic-funding-sees-groups/">Quantum Zeitgeist</a></p>]]></description>
+    </item>
     <item>
       <title>Aleph Alpha releases Kolibri – an open German-English model with 78 billion parameters</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-06</link>
@@ -963,67 +1013,6 @@
 <p>Around the model, OpenAI is building a structure for confidentiality and control: firms admitted to the program get zero data retention on the API, and usage in ChatGPT Enterprise is excluded from human review by default. Latham &amp; Watkins is helping to design permissions, ethical walls and firm oversight. OpenAI's forward-deployed engineers have already built custom tools with Sullivan &amp; Cromwell, Ropes &amp; Gray and Cooley, from agreement review to IPO preparation, and 26 partner-built plugins connect ChatGPT to systems such as iManage, Intapp, Relativity and Thomson Reuters HighQ. At the same time, ChatGPT for Word is made generally available.</p>
 <p>For the Nordics, the most concrete link is Legora, the legal AI company founded in Stockholm that is now among the first allowed to build on Astra for Law. The search index, however, is entirely American: for firms such as Mannheimer Swartling, Vinge, Wiersholm and Thommessen, the value depends on how well the model is connected to Lovdata in Norway and to the Swedish courts' guiding rulings and the commercial legal databases in Sweden. The Trusted Access program's promise of zero data retention is at the same time exactly the kind of condition that the Swedish Bar Association and the Norwegian Bar Association need to be able to test against lawyers' duty of confidentiality before the tools are let into client matters.</p>
 <p class="news-card__source">Source: <a href="https://openai.com/index/astra-for-law/">OpenAI</a>, <a href="https://www.lawnext.com/2026/09/openai-releases-astra-for-law-a-gpt-6-model-configured-for-legal-work.html">LawSites</a>, <a href="https://www.abajournal.com/news/article/openai-introduces-new-ai-model-for-law-firms">ABA Journal</a></p>]]></description>
-    </item>
-    <item>
-      <title>The EU Kids Act pulls AI chatbots into the rules meant to protect children</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-eu-s-kids-act-drar-in-ai-chattbottar</guid>
-      <pubDate>Thu, 17 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>The European Commission presents its Kids Act on Thursday, treating AI chatbots and AI companions as a risk category of their own alongside social media and gaming platforms. Ursula von der Leyen announced the proposal in her State of the Union address in Strasbourg on Wednesday: no access to social media below the age of 13, no personal account before 15.</p>
-<p>The draft seen by the Financial Times is more detailed than the speech. Children under 13 may use the services only under a parent's supervision, while 13- and 14-year-olds need parental consent and get accounts with time limits and other restrictions. Companies offering AI companions and chatbots must avoid designs that encourage unhealthy emotional attachments. Age is to be verified through an official age verification app, and fines may reach six per cent of global annual revenue.</p>
-<p>For the Nordics the proposal changes the ground under two national laws already in motion. Norway's government wants an age limit starting 1 January of the year a person turns 16, and in August received word from both ESA and the European Commission that the proposal does not conflict with the DSA. Minister for Children and Families Lene Vågslid aims to put the bill before the Storting before the year is out. In Sweden, the interim report SOU 2026:35 proposed a limit of 15 in June, to take effect on 1 January 2028. Neither mentions AI chatbots explicitly — the EU proposal does, which puts the chatbot question on the desks of both the Storting and the Riksdag.</p>
-<p class="news-card__source">Source: <a href="https://edition.cnn.com/2026/09/16/europe/eu-social-media-ban-children-intl">CNN</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/09/16/eu039s-von-der-leyen-to-invite-frontier-labs-for-talks-on-tackling-ai-risks">Reuters</a>, <a href="https://www.ft.com/content/410db291-f133-4d72-b883-b2d5a32abbf8">Financial Times</a></p>]]></description>
-    </item>
-    <item>
-      <title>Twenty-five Fields medallists warn against the AI labs' race for mathematical breakthroughs</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-tjugofem-fieldsmedaljorer-varnar-for-ai-bolagens-jakt-pa</guid>
-      <pubDate>Thu, 17 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Twenty-five mathematicians, all of them Fields medallists, have signed a joint statement against the way AI companies handle mathematical research. The criticism is not aimed at the models but at the method: results are announced in haste, without time for a proper write-up, without isolating new methods and without citing the earlier work of others.</p>
-<p>The statement follows a conflict that has escalated through September. NYU professor Tristan Buckmaster accused OpenAI, according to TechCrunch, of pressuring him not to credit a collaborator working at Anthropic. The day before the declaration, an open letter from mathematicians at Caltech, with 771 signatories, had demanded that an AI-sponsored mathematics event in October be called off, after which OpenAI withdrew its sponsorship. The company's claimed solution to the Navier–Stokes problem remains unconfirmed.</p>
-<p>For the Nordics, the question of how AI-generated results should be judged is a concrete one. The article that spread in Sweden on Wednesday came from the Danish outlet Ingeniøren by way of Ny Teknik, and when OpenAI presented its Navier–Stokes work earlier in September, Ny Teknik had a professor at Chalmers explain what it means for the profession. The Knut and Alice Wallenberg Foundation, WASP, KTH, NTNU and the University of Oslo now face the same question in appointments and expert assessments: what counts as one's own work when a model did part of it, and who is responsible for checking the result.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/">TechCrunch</a>, <a href="https://proofsandprompts.com/2026/09/10/open-letter-about-the-mathathon/">Proofs and Prompts</a>, <a href="https://www.nyteknik.se/tech/400-matematiker-i-upprop-mot-ai-bolagen-ett-grundlaeggande-hot/4495632">Ny Teknik</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI finds that AI tasks outside your own job description become a habit</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-openai-ser-att-ai-uppgifter-utanfor-den-egna</guid>
-      <pubDate>Thu, 17 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Workers who use AI for tasks outside their own occupation keep coming back to them, according to a new report from OpenAI Economic Research. Among some 6,200 workers followed from April to July, the share of out-of-occupation tasks the users had already tried before rose from 13.1 to 25.9 per cent of occupation-specific AI use.</p>
-<p>The report is the second in the Work at the Frontier series and draws on more than 1.5 million work-related ChatGPT messages. The likelihood of returning to an out-of-occupation task the following month was 23.6 per cent, against 8.4 per cent for comparable workers who had not used it. The highest return rates were for discussing goods and services with customers (54 per cent), advertising copy (44) and marketing materials (37), while explaining financial information sat at around 15 per cent. The material is OpenAI's own and measures use of the company's own service, which is worth keeping in mind.</p>
-<p>For the Nordics this is a question about job descriptions and skills mapping rather than about jobs disappearing. The content of the work broadens while the title stays put, which makes it harder for Unionen, Akavia and Norway's LO to see what is actually changing in an occupation. At the same time, TechSverige reported earlier in September that the number of open tech jobs had fallen by around forty per cent in a year. For Swedish and Norwegian employers, the combination means that internal training and hiring profiles need to start from tasks, not from job titles.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/unlocking-new-ways-of-working/">OpenAI</a>, <a href="https://via.tt.se/pressmeddelande/4540352/techtemperaturen-tecken-pa-aterhamtning-i-techbranschen-men-arbetsmarknaden-slapar-efter?lang=sv">TT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nearly half of Norwegian students think their peers' AI use goes too far</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-nara-halften-av-norska-studenter-tycker-att-medstudenternas</guid>
-      <pubDate>Thu, 17 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Forty-six per cent of Norwegian students agree that other students cross the line in their use of AI, according to the large health and well-being survey SHoT. At the same time, 89.6 per cent say they have used AI tools themselves during the past term.</p>
-<p>The picture is not that students avoid the technology but that they are unsure where the line runs. 56.3 per cent of students used AI at least several times a week to understand course material and 30.4 per cent for language editing. 89.2 per cent said they follow the rules, while 65.5 per cent were worried about the consequences of AI use. Pressure to use the tools was highest among 23- to 25-year-olds (29.9 per cent) and lowest among 18- to 20-year-olds (21.7). Eva Franko Aas, head of the Norwegian Student Organisation, tells VG that a great deal is left to students' own judgement and that many are almost excessively afraid of cheating by accident.</p>
-<p>For the Nordics the figures point to a vacuum in the rules rather than to a cheating problem. Norway now has nationwide measurements across the student body, while Sweden lacks an equivalent of SHoT on that scale and its institutions set their own guidelines, sometimes course by course. As long as the judgement rests with the individual examiner, what grows is distrust of fellow students, not trust in the rules.</p>
-<p class="news-card__source">Source: <a href="https://www.vg.no/nyheter/i/9p1Vdd/naer-halvparten-av-norske-studenter-mener-medstudenter-har-en-uakseptabel-bruk-av-ai">VG</a>, <a href="https://studenthelse.no/">SHoT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Fujitsu releases its quantum programming library as open source</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-17-fujitsu-slapper-sitt-kvantprogrammeringsbibliotek-som-oppen-kallkod</guid>
-      <pubDate>Thu, 17 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Fujitsu has released its development library for quantum applications, OpenQARP, as open source under the Apache License version 2.0. The package holds more than 100 components: some 70 composable building blocks and around 20 ready-made algorithms, from state preparation and ansatz layers to the quantum Fourier transform.</p>
-<p>The point is to avoid rebuilding the same code for every new problem. Fujitsu says a workflow using the ADAPT-VQE algorithm for calculating the electronic states of molecules went from about 130 lines of Python to under 40. The library runs on an ordinary computer with Python and can be attached as a backend to Nvidia's CUDA-Q for GPU acceleration and to Fujitsu's own 40-qubit simulator, built on 1,024 PRIMEHPC FX700 nodes with A64FX processors. More than 80 organisations have tested the beta version since February.</p>
-<p>For the Nordics this lowers the threshold for groups that have the quantum expertise but lack a software stack of their own. Chalmers and WACQT, NTNU, the Niels Bohr Institute and Finland's IQM, which is building LUMI-IQ, all work against hardware from different vendors, and a licence-free library that speaks to both simulators and CUDA-Q makes it easier to move algorithms between them. The Novo Nordisk Foundation is meanwhile putting some 400 million Danish kroner into the quantum chip plant Quantum Foundry Copenhagen, which is planned to be in production within two years — the hardware is being built in the Nordics, but the tools still come from outside.</p>
-<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/09/15/fujitsu-releases-open-quantum-application-research-package-as-open-source/">The Quantum Insider</a>, <a href="https://global.fujitsu/en-global/technology/research/quantum/openqarp">Fujitsu</a>, <a href="https://www.nyteknik.se/tech/novo-nordisk-aegaren-storsatsar-pa-kvantchip-da-ska-fabriken-sta-klar/4491550">Ny Teknik</a></p>]]></description>
     </item>
   </channel>
 </rss>
