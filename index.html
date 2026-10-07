@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-10-06"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">6 oktober 2026</span></time>
+        <time datetime="2026-10-07"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">7 oktober 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,65 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-10-07" data-date="2026-10-07">
+        <p class="day__label news-date">7 oktober 2026</p>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/">Anthropic lanserar Sonnet 5.5 &ndash; snabbare modell till samma pris som föregångaren</a></h3>
+        <p class="item__ingress">Anthropic släppte Claude Sonnet 5.5 den 28 september.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Anthropic släppte Claude Sonnet 5.5 den 28 september. Enligt bolaget är modellen mer än 30 procent snabbare i utmatningshastighet än föregående generation och kostar lika mycket som Sonnet 5: 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens.</p>
+          <p>Anthropic uppger att kostnaden per uppgift sjunker med upp till 30 procent, framför allt eftersom modellen använder färre tokens och färre verktygsanrop, inte på grund av ett lägre listpris. På GDPval-AA, ett test av yrkesuppgifter, får Sonnet 5.5 1&nbsp;844 poäng mot 1&nbsp;846 för Opus 5.5, och på kodtestet Terminal-Bench 4.0 uppnår den 70,6 procent. Siffrorna kommer från bolaget och dess kunder; oberoende mätningar saknas ännu. Haiku 5.5 utlovas inom några veckor.</p>
+          <p>För Norden: Stockholmsbolaget Lovable är bland de kunder som citeras &ndash; i deras tester minskade antalet verktygsanrop med omkring en tredjedel och antalet shell-körningar med ungefär hälften. Eftersom listpriset är oförändrat är det effektivitetsvinsten, inte en prissänkning, som styr kalkylen för nordiska mjukvarubolag och IT-konsulter som bygger agenter på Claude. Modellen finns via AWS, Google Cloud och Microsoft Azure, så nordiska organisationer kan köpa den genom molnavtal de redan har.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/">SiliconANGLE</a>, <a href="https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls">VentureBeat</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="reglering">
+        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.actuia.com/en/news/openai-will-watermark-chatgpt-in-the-eu-but-leaves-the-api-opt-in/">OpenAI vattenmärker text från ChatGPT i EU inför AI-förordningens märkningskrav</a></h3>
+        <p class="item__ingress">OpenAI meddelade den 5 oktober att text från ChatGPT och Codex i EU under de kommande veckorna ska märkas med textGrain, en osynlig statistisk vattenmärkning som ligger i själva ordvalet.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>OpenAI meddelade den 5 oktober att text från ChatGPT och Codex i EU under de kommande veckorna ska märkas med textGrain, en osynlig statistisk vattenmärkning som ligger i själva ordvalet. I API:et är märkningen avstängd som standard och måste aktiveras per projekt eller organisation.</p>
+          <p>Bakgrunden är artikel 50.2 i EU:s AI-förordning, som kräver att AI-genererat innehåll märks maskinläsbart; system som redan fanns på marknaden före 2 augusti 2026 ska uppfylla kravet senast 2 december 2026. Enligt OpenAI:s tekniska rapport upptäcks märkningen i ungefär 95 procent av fallen i texter på 400 tokens men bara i 17 procent efter kraftig omskrivning, och detektorn är till en början öppen bara för utvalda forskare och organisationer, bland dem Cornell, ETH Zürich och slovakiska KInIT. Enligt Actuia och Tech Jack Solutions tillämpar Anthropic i stället sin märkning globalt.</p>
+          <p>För Norden: Eftersom märkningen inte är påslagen som standard i API:et kan ansvaret hamna hos svenska och norska bolag som bygger kundnära tjänster på OpenAI:s modeller &ndash; de kan behöva aktivera den själva före 2 december om tjänsten riktar sig till användare i EU. Sverige står inför samma frist, och Norge avser att införa förordningen via EES-avtalet. Om skyldigheten ligger hos leverantören eller hos det nordiska bolag som bygger tjänsten måste varje bolag själv bedöma.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.actuia.com/en/news/openai-will-watermark-chatgpt-in-the-eu-but-leaves-the-api-opt-in/">ActuIA</a>, <a href="https://techjacksolutions.com/ai-brief/openai-textgrain-watermarking-eu-ai-act-article-50/">Tech Jack Solutions</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="debatt norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--debatt news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://www.bt.no/innenriks/i/w38Q3A/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">Forbrukerrådet vill stoppa försäljningen av AI-glasögon i Norge &ndash; regeringen planerar tillfälligt förbud</a></h3>
+        <p class="item__ingress">Norska Forbrukerrådet har bett landets optikerkedjor att sluta sälja glasögon med inbyggd AI tills myndigheterna har klargjort vad som är lagligt.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Norska Forbrukerrådet har bett landets optikerkedjor att sluta sälja glasögon med inbyggd AI tills myndigheterna har klargjort vad som är lagligt. Fackdirektör Finn Myrstad menar att glasögonen lägger grunden för ett övervakningssamhälle som de flesta inte vill ha.</p>
+          <p>Enligt BT är Synsam, Brilleland och Interoptik bland kedjorna som säljer Ray-Ban Meta-glasögonen; ingen av dem svarade på NTB:s frågor på måndagen, och Specsavers säger att de inte har smarta glasögon. På måndagen aviserade regeringen ett tillfälligt förbud mot AI-glasögon på offentliga platser, i skolor, förskolor och andra platser där barn vistas samt vid vårdinrättningar, och digitaliseringsminister Torgeir Micaelsen sade att lagförslaget ska läggas fram för Stortinget så snabbt som möjligt. Försäljningen av Ray-Ban Meta har enligt CNBC, som BT hänvisar till, ökat från 2 miljoner enheter 2023&ndash;2024 till över 7 miljoner 2025.</p>
+          <p>För Norden: Norge går före Sverige. I augusti sade Karianne Tung, som då var digitaliseringsminister, att regeringen ville överväga att förbjuda ansiktsigenkänning av andra via smarta glasögon, och en expertgrupp skulle ge råd i höst; Datatilsynet och Forbrukerrådet hade redan krävt strängare regler. Ett eventuellt förbud måste rymmas inom GDPR, EES-reglerna och EU:s AI-förordning. Vi har inte hittat något motsvarande förslag i Sverige.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.bt.no/innenriks/i/w38Q3A/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">BT</a>, <a href="https://www.altaposten.no/norgeogverden/n/jvzrnL/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">Altaposten</a>, <a href="https://inyheter.no/25/08/2026/vurderer-forbud-mot-ansiktsgjenkjenning-i-smartbriller/">iNyheter</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="kvant norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://www.nordforsk.org/canada-g7-nordic-call-proposals-quantum-technologies">Hälften av ansökningarna till G7&ndash;Nordens kvantanrop har nordiska partner</a></h3>
+        <p class="item__ingress">Enligt Quantum Zeitgeist, som citerar NordForsk, innehåller 93 av de 186 ansökningar som lämnats in till det gemensamma kanadensiska&ndash;G7&ndash;nordiska anropet om kvantteknologi nordiska partner, alltså 50 procent.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Enligt Quantum Zeitgeist, som citerar NordForsk, innehåller 93 av de 186 ansökningar som lämnats in till det gemensamma kanadensiska&ndash;G7&ndash;nordiska anropet om kvantteknologi nordiska partner, alltså 50 procent. Den nordiska delen administreras av NordForsk.</p>
+          <p>Den nordiska budgeten är upp till 84 miljoner norska kronor, högst 7 miljoner norska kronor per projekt, och avsikten är att finansiera omkring tolv projekt under upp till tre år. Nordiska konsortier måste omfatta forskningsutförare i minst två nordiska länder. Finansiärer är Innovationsfonden i Danmark, Finlands Akademi, Forskningsrådet i Norge och Vetenskapsrådet.</p>
+          <p>För Norden: Med högst 84 miljoner norska kronor och omkring tolv projekt blir konkurrensen hård &ndash; ungefär var åttonde nordisk ansökan kan få finansiering, enligt vår egen beräkning av siffrorna ovan. Kravet på minst två nordiska länder driver fram nordiskt samarbete snarare än nationella satsningar, med Vetenskapsrådet och Forskningsrådet som två av de fyra finansiärerna. Vilka miljöer som har sökt framgår inte av uppgifterna, och NordForsk anger inte i det material vi har sett när besluten fattas.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.nordforsk.org/canada-g7-nordic-call-proposals-quantum-technologies">NordForsk</a>, <a href="https://quantumzeitgeist.com/nordforsk-nordic-funding-sees-groups/">Quantum Zeitgeist</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-10-06" data-date="2026-10-06">
         <p class="day__label news-date">6 oktober 2026</p>
       <article class="item news-card" data-tags="modeller">
@@ -570,65 +629,6 @@ details.menu[open]>summary{color:var(--accent)}
           <p>IDC har samtidigt höjt sin prognos för 2030 till över 750&nbsp;000 levererade enheter per år. Siffrorna går isär mellan källorna: Digitimes anger i en rubrik att kinesiska leverantörer står för över 95 procent av de globala leveranserna, och Global Times angav i augusti 97 procent för halvåret. Vilket mått och vilken definition som används framgår inte i alla återgivningar, så siffrorna bör inte jämföras rakt av.</p>
           <p>För Norden: Ett nordiskt exempel är norskgrundade 1X Technologies, som enligt The Next Web öppnade en fabrik i Hayward i Kalifornien med målet 10&nbsp;000 enheter första året och säljer NEO för 20&nbsp;000 dollar eller 499 dollar i månaden. Den nya fabriken ligger alltså i USA, och de återgivna IDC-siffrorna redovisar inga enskilda leverantörer, så 1X:s andel är okänd. För nordisk industri som Kongsberg, Volvo och Equinor är frågan om och när humanoider blir köpbara på marknadsmässiga villkor öppen &ndash; tillgången avgörs i dag främst i Kina och USA.</p>
           <p class="item__source news-card__source">Källa: <a href="https://technode.com/2026/09/29/china-accounts-for-77-9-of-global-humanoid-robot-shipments-in-h1-idc-says/">TechNode</a>, <a href="https://www.digitimes.com/news/a20261001PD208/robot-shipments-market-2026-idc.html">Digitimes</a>, <a href="https://www.globaltimes.cn/page/202608/1367923.shtml">Global Times</a>, <a href="https://thenextweb.com/news/1x-neo-humanoid-factory-hayward-10000-home-robots">The Next Web (1X)</a></p>
-          </div>
-        </details>
-      </article>
-      </div>
-      <div class="day news-date-group" id="dag-2026-09-30" data-date="2026-09-30">
-        <p class="day__label news-date">30 september 2026</p>
-      <article class="item news-card" data-tags="modeller">
-        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://openai.com/index/devday-2026-recap/">OpenAI lanserar den ständigt påslagna agenten Dots och GPT-6.1 Sol på DevDay</a></h3>
-        <p class="item__ingress">OpenAI presenterade den 29 september på utvecklarkonferensen DevDay i San Francisco den ständigt påslagna AI-agenten Dots, som drivs av GPT-6 Astra.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>OpenAI presenterade den 29 september på utvecklarkonferensen DevDay i San Francisco den ständigt påslagna AI-agenten Dots, som drivs av GPT-6 Astra. Varje Dot får enligt bolaget en egen molndator och webbläsare, kan kopplas till över 4&nbsp;000 appar och nås via ChatGPT, röstsamtal, Slack och Teams. En första Dot ingår i befintliga Pro- och Business Premium-abonnemang på vissa marknader.</p>
-          <p>GPT-6.1 Sol ska enligt OpenAI matcha GPT-6 Astra på agentiskt kodande och datoranvändning till en femtedel av Astras tokenpriser. Nivån Ultrafast ger upp till åtta gånger snabbare tokengenerering i Codex (300 token per sekund) för Astra och kostar upp till sex gånger så mycket som ordinarie användning; Sol Ultrafast utlovas inom kort. Bolaget lanserade också bland annat ChatGPT Space, Decisions API i begränsad förhandsvisning och Agents API med datoranvändning. Uppgifterna är OpenAI:s egna. Flaggskeppet GPT-6.1 Astra släpptes inte &ndash; enligt AP håller OpenAI inne modellen av säkerhetsskäl, något vd Sam Altman inte tog upp i sitt anförande.</p>
-          <p>För Norden: OpenAI säger att Dots först lanseras på vissa marknader; om Sverige och Norge ingår framgår inte. För IMY och Datatilsynet innebär en ständigt påslagen agent med egen webbläsare och åtkomst till tusentals appar en ny typ av personuppgiftsbehandling att ta ställning till, och OpenAI utlovar Private Inference först under hösten 2026. Nordiska bolag med stora utvecklingsorganisationer, som Ericsson och Telenor, kan med Sol, till en femtedel av priset, få ett billigare underlag för pilotprojekt med kodagenter, men om det räcker för att ersätta dyrare modeller måste de mäta i egna flöden.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://openai.com/index/devday-2026-recap/">OpenAI</a>, <a href="https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol">Axios</a>, <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a>, <a href="https://www.ksat.com/business/2026/09/29/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">AP</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="reglering">
-        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
-        <h3><a href="https://www.foxnews.com/live-news/trump-ai-white-house-meeting-september-29">Techbolag undertecknar frivillig överenskommelse om superintelligens i Vita huset</a></h3>
-        <p class="item__ingress">Vid en lunch i Vita huset den 29 september undertecknade företrädare för bland andra Anthropic, OpenAI, Google, Meta, Microsoft, Amazon och Nvidia en White House Accord on Superintelligence, enligt Fox News.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Vid en lunch i Vita huset den 29 september undertecknade företrädare för bland andra Anthropic, OpenAI, Google, Meta, Microsoft, Amazon och Nvidia en White House Accord on Superintelligence, enligt Fox News. Trump beskrev dokumentet som nästan en konstitution och som moraliskt bindande, medan talmannen Mike Johnson beskrev det som en principförklaring med frivilliga åtaganden från branschen.</p>
-          <p>Enligt Fox News talade Trump om robusta interna kontroller och flera lager av intern och extern granskning, men sa samtidigt att administrationen inte tänker kväva tillväxten och att USA ligger före Kina. Anthropics Dario Amodei tog upp säkerhetsfrågor men sa att USA måste vinna kapplöpningen. OpenAI företräddes av Greg Brockman; Sam Altman deltog inte. Överenskommelsens text har inte granskats här, så uppgifterna bygger på mediernas återgivning, och flera rapporter från mötet redovisar inga konkreta åtaganden.</p>
-          <p>För Norden: Frivilliga åtaganden i USA ersätter inte bindande regler i Europa. Enligt Digital Omnibus (förordning 2026/1744, i kraft sedan den 27 juli) gäller AI-förordningens krav för högrisksystem, bland annat inom anställning och utbildning, från den 2 december 2027. För svenska och norska bolag som använder modeller från de undertecknande företagen, och för tillsynsmyndigheter som IMY och Datatilsynet, är det EU-reglerna och inte Vita husets principförklaring som avgör vad som gäller. Norge avser att införa förordningen via EES-avtalet.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.foxnews.com/live-news/trump-ai-white-house-meeting-september-29">Fox News</a>, <a href="https://www.ntd.com/trump-meets-with-ai-industry-leaders-as-fears-mount-over-the-technologys-risks_1175721.html">NTD</a>, <a href="https://www.axios.com/2026/09/29/trump-ai-meeting-list-ceos-johnson">Axios</a>, <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force">Hunton</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="arbetsmarknad">
-        <div class="item__tags news-card__tags"><span class="tag tag--arbetsmarknad news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
-        <h3><a href="https://computersweden.se/article/4227410/ai-styrning-haller-snabbt-pa-att-bli-en-ohanterlig-borda.html">OneTrust-enkät: 86 procent av företagen har haft AI-incidenter &ndash; riskarbetet tar 26 procent mer tid</a></h3>
-        <p class="item__ingress">Enligt en undersökning från OneTrust bland 1&nbsp;200 beslutsfattare har 86 procent av organisationerna haft minst en AI-relaterad incident under det senaste året, och 28 procent har haft två eller fler incidenter där AI-system…</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Enligt en undersökning från OneTrust bland 1&nbsp;200 beslutsfattare har 86 procent av organisationerna haft minst en AI-relaterad incident under det senaste året, och 28 procent har haft två eller fler incidenter där AI-system vidtagit åtgärder utan godkännande. Bara 27 procent har bromsat eller pausat sin AI-utrullning.</p>
-          <p>Samtidigt uppmuntrar 87 procent av organisationerna användning av AI-agenter, men bara 47 procent har tydlig styrning, tillsyn och kontroller på plats. Åttio procent lägger mer tid på AI-risker än för ett år sedan, i snitt 26 procent fler arbetstimmar, och 33 procent har sett anställda använda AI som inte godkänts eftersom godkännandet gick för långsamt. Undersökningen gjordes av Sapio Research i USA, Kanada, Storbritannien, Frankrike, Tyskland, Spanien, Australien och Singapore; Norden ingår inte. Uppgifterna kommer från OneTrust, som säljer styrningsverktyg.</p>
-          <p>För Norden: Siffrorna säger inget om nordiska förhållanden, men de pekar på en risk i ljuset av Computer Swedens uppgift om att 56 procent av svenska yrkesverksamma nu använder AI på jobbet. Där användningen växer snabbare än godkännandeprocesserna kan även större nordiska bolag få AI-verktyg utanför IT-avdelningens och dataskyddsombudens överblick &ndash; något IMY och Datatilsynet bedömer utifrån GDPR oavsett om verktygen är godkända eller inte.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://computersweden.se/article/4227410/ai-styrning-haller-snabbt-pa-att-bli-en-ohanterlig-borda.html">Computer Sweden</a>, <a href="https://www.onetrust.com/news/onetrust-research-86-of-organizations-experienced-ai-related-incidents-yet-few-slowed-deployment/">OneTrust</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="forskning norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://wasp-sweden.org/wasp-enters-a-new-phase-with-long-term-funding-secured/">Wallenbergstiftelsen säkrar WASP:s finansiering till 2034 &ndash; 6,2 miljarder kronor i anslag</a></h3>
-        <p class="item__ingress">AI-forskningsprogrammet WASP går in i en ny fas med långsiktig finansiering till och med 2034, meddelade programmet den 17 september.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>AI-forskningsprogrammet WASP går in i en ny fas med långsiktig finansiering till och med 2034, meddelade programmet den 17 september. Enligt WASP rör det sig om 6,2 miljarder kronor i forskningsanslag inom en total budget på 7,2 miljarder kronor, med Knut och Alice Wallenbergs Stiftelse som finansiär.</p>
-          <p>Den nya fasen ska prioritera AI för vetenskap, grundmodeller, rekrytering av internationella forskare och ett närmare samarbete med humaniora och samhällsvetenskap genom WASP-HS. Forskarskolan pausar öppna doktorandutlysningar eftersom rekryteringen sker via andra projekt och stipendier; programmet räknar med omkring 500 aktiva doktorander och en prognos på 800 disputerade till 2034. Uppgifterna kommer från WASP självt och har inte bekräftats av en oberoende källa här.</p>
-          <p>För Norden: WASP är ett av Sveriges största forskningsprogram och omfattar bland andra Chalmers, KTH, Linköpings universitet och Uppsala universitet. Finansieringen till 2034 ger lärosätena planeringsförutsättningar när de rekryterar AI-forskare, och inriktningen på grundmodeller och AI för vetenskap gör programmet till en jämförelsepunkt för norska miljöer som NTNU och Sintef. Att forskarskolan pausar nya utlysningar är en signal till doktorandsökande: vägen in går nu via projekt och stipendier.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://wasp-sweden.org/wasp-enters-a-new-phase-with-long-term-funding-secured/">WASP</a></p>
           </div>
         </details>
       </article>
