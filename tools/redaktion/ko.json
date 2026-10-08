@@ -15,7 +15,69 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [],
+  "ko": [
+    {
+      "id": "dnb-ai-nedbemanning-2026-10",
+      "tidigast": "2026-10-09",
+      "senast": "2026-10-13",
+      "kategori": "arbetsmarknad",
+      "norden": true,
+      "dubblettnyckel": [
+        "400 årsverk",
+        "Technology & Services",
+        "DNB 400"
+      ],
+      "vinkel": "DNB meddelade tisdag 6 oktober 2026 kl 09:00 i en börsmelding att bemanningen i divisionen Technology & Services minskar med cirka 400 årsverk, och anger SJÄLV agentisk AI som drivkraft. Vinkeln är att hålla tre nivåer åtskilda, för det är där övrig rapportering glider: (1) att AI är skälet är i det här fallet BANKENS EGEN formulering, inte en journalistisk pålagring eller en analytikertolkning — det är ovanligt och ska sägas rakt ut; (2) samtidigt har DNB inte kvantifierat en enda AI-vinst och inte brutit ned de 400 årsverken per funktion, så hur stor del AI förklarar är oredovisat; (3) mekanismen — uppsägning eller frivillighet — är inte fastställd av banken, medan facket kräver frivillighet. Rubrikerna i norsk och engelsk press har eskalerat i två steg: årsverk blir anställda, och AI tar över uppgifter blir AI ersätter människor. Notisens bidrag är att inte göra någon av de två eskaleringarna. Lagd efter att körningen 2026-10-07 missade storyn.",
+      "maste_med": [
+        "Talet är cirka 400 ÅRSVERK, inte 400 anställda, och det gäller divisionen Technology & Services — inte hela banken. DNB angav talet först, i egen börsmelding 2026-10-06 kl 09:00; ingen media räknade fram det. Skillnaden årsverk mot anställda är notisens viktigaste precision.",
+        "AI-kopplingen är DNB:s EGEN angivna drivkraft, inte en tolkning utifrån. Det ska framgå uttryckligen, eftersom det skiljer det här fallet från merparten av AI-och-neddragningsnyheter. Ur releasen: agentisk AI har införts i flera delar av verksamheten och ersätter uppgifter som tidigare utfördes manuellt, med KYC, kontroll av kunddata samt teknologiutveckling och kodning som angivna exempel. Koncernchef Kjerstin Braathen, återgiven på norska i E24, NRK och NTB: ”Kunstig intelligens endrer hvordan vi jobber og hvordan vi leverer tjenester til kundene våre. Vi ser allerede betydelige gevinster, og derfor tilpasser vi nå organisasjonen til en ny virkelighet.” Norska citat markeras med lang-attribut enligt undantaget i STEG 6.6.",
+        "DNB har INTE publicerat någon kvantifiering av AI-vinsterna — ingen siffra för sparad tid, färre fel eller snabbare kundhantering — och har inte brutit ned de 400 årsverken per funktion. Det negativa fyndet ska stå i brödtexten, inte utelämnas.",
+        "AI är en av flera samtidiga motiveringar i releasen: bättre kundupplevelser, ökad effektivitet och framtida kundbehov, plus ambitionen att bli Norges mest kostnadseffektiva bank. Skriv inte AI som enda orsak.",
+        "Mekanismen är inte fastställd. DNB ska erbjuda en virkemiddelpakke vars innehåll inte är publicerat; pressekontakt Kari Vartdal Riise uppger till E24 att virkemiddelpakke och sluttpakke är två ord för samma sak. Uppsägningar är varken bekräftade eller uteslutna. DNB säger att processen sker enligt lag och i tät dialog med de tillitsvalgte.",
+        "Tidsplanen: nedbemanningen ska vara GENOMFÖRD under Q4 2026, medan full kostnadseffekt i räkenskaperna kommer först från Q2 2027. Blanda inte ihop de två — flera engelskspråkiga sajter har gjort just det. Totalkostnaden är inte offentliggjord.",
+        "Facket: Finansforbundet kritiserar tempot. Nestleder Arne Fredrik Håstein: ”vi må passe oss for å gjøre KI til en naturlov som automatisk betyr færre ansatte”. Konsernhovedtillitsvalgt Lillian Hattrem: ”Dette gjør vondt.” Finansforbundet menar också att alla möjligheter för medarbetarna måste prövas innan någon sägs upp, och att det är svårt att se hur det ska hinnas med innan nyår.",
+        "Merparten av den norska täckningen är EN text: NTB-artikeln syndikerad till ett dussin titlar (bt.no, adressa.no, fvn.no, smp.no, ba.no, ostlendingen.no med flera). Oberoende rapportering finns hos E24 (som fick egen precisering från DNB), NRK, Finansavisen, TV 2 och FinansFokus. Källraden får inte ge intryck av bred oberoende bekräftelse där det i praktiken är en text.",
+        "Nämnaren: koncernen hade 10 603 årsverk och 11 649 anställda vid utgången av 2025 enligt årsrapporten. 400 årsverk är knappt 4 procent av årsverken. Blanda inte de två talen."
+      ],
+      "far_inte_pastas": [
+        "Att DNB säger upp 400 anställda. Det är cirka 400 årsverk, och uppsägning som mekanism är inte bekräftad.",
+        "Att 400 personer mister jobbet. Personantalet är okänt — ingen källa anger det.",
+        "Att DNB ersätter 400 anställda med AI. DNB säger att AI tar över UPPGIFTER, inte att AI ersätter 400 individer.",
+        "Att AI är orsaken till nedskärningen, oattribuerat. AI är bankens egen angivna drivkraft men en av flera motiveringar, och hur stor del AI förklarar är oredovisat.",
+        "Att DNB skär ned 400 av 10 600 anställda. 10 603 är årsverk; antalet anställda var 11 649.",
+        "Att nedskärningen gäller hela DNB. Den gäller divisionen Technology & Services.",
+        "Att nedskärningen ska ske fram till 2027. Den ska vara genomförd under Q4 2026; det är kostnadseffekten som sträcker sig till Q2 2027.",
+        "Att omställningen kostar ett visst belopp. Ingen kostnadssiffra är offentliggjord.",
+        "Att DNB redovisar en kvantifierad AI-vinst — sparade timmar, procent effektivisering, färre fel. Ingen sådan siffra finns.",
+        "Att analytiker bedömer nedskärningen som måttlig, väntad eller otillräcklig. Ingen analytikerkommentar om denna runda har kunnat hittas; den Nordea-kommentar som cirkulerar gäller 2024-rundan på 500 årsverk.",
+        "Att experter bekräftar att DNB använder AI som förevändning för att nedbemanna. AI-rådgivaren Anders Eidesvik gör en generell varning, inte ett påstående om DNB.",
+        "Att Finanstilsynet, LO eller arbeidsministeren har reagerat. Inget sådant har hittats — det är ett negativt fynd, inte en lucka att fylla.",
+        "Att facket har accepterat nedskärningen. Finansforbundet och konserntillitsvalgt uttalar motstånd mot både omfattningen av KI-användningen och nedskärningens storlek.",
+        "Att Reuters rapporterar något i saken. Reuters-publicering är inte bekräftad — bara en aggregator påstår det. Citera inte Reuters.",
+        "Att nyheten bekräftas av ett stort antal norska tidningar. Merparten är samma NTB-text.",
+        "Att divisionen har 2 210 eller 2 000 anställda, oattribuerat. Källorna är oöverens (E24 anger cirka 2 000, NTB anger 2 210 enligt DNB). Ange båda med attribution eller utelämna talet.",
+        "Att kunderna kommer att märka förändringen. DNB hävdar motsatsen.",
+        "Att nedskärningen redan var aviserad i en kvartalsrapport eller på en kapitalmarknadsdag. Talet 400 är nytt, och kopplingen till det äldre kostnadsprogrammet är inte primärverifierad.",
+        "Att DNB är De Nederlandsche Bank eller en centralbank. Det felet förekommer i syndikerad engelsk text; DNB Bank ASA är en affärsbank."
+      ],
+      "norden_stycke": "Notisen har nordisk primärvinkel, så stycke 3 ska dra ut konsekvensen bredare — inte upprepa att DNB är norskt. Tre trådar, i den ordningen: (1) Tidsföljden är skarp och ska redovisas som tidsföljd, inte som orsak: den 2 oktober 2026 tecknade norska regeringen och arbetslivets parter — LO, NHO, Unio, KS, Akademikerne, Virke, YS och Spekter — ett avtal om ansvarsfull AI i arbetslivet, och fyra dagar senare meddelade landets största bank 400 årsverk med AI som angiven drivkraft. Om avtalet är avsett att täcka ett fall som detta är en öppen fråga, inte ett påstående. (2) Danmarks Nationalbank publicerade den 16 september en analys som pekade på att företag som infört AI anställer färre, och att unga och högutbildade märker det först; DNB-beskedet är det första stora enskilda nordiska fallet där ett bolag SJÄLVT anger AI som skäl, vilket gör den analysen konkret. (3) För svensk del är parallellen SEB och Nordea, som kör i samma teknikmiljöer och har samma kostnadspress; Finansforbundet i Norge och Finansförbundet respektive Unionen i Sverige får ett prejudikat att förhålla sig till. Avslutningsvis, och viktigt för att inte lämna läsaren med ett felaktigt antagande: AI-förordningen (förordning EU 2026/1744, i kraft 27 juli 2026) reglerar modellerna och deras användning, inte bemanningsbeslut — det finns ingen regel som kräver att en arbetsgivare redovisar vad AI faktiskt sparat innan personal dras ned.",
+      "kallor": [
+        "https://www.ir.dnb.no/press-and-reports/press-releases/dnb-making-organisational-changes-technology-services-2485833",
+        "https://e24.no/boers-og-finans/i/b8zly3/dnb-varsler-nedbemanning-kutter-400-aarsverk",
+        "https://e24.no/boers-og-finans/i/kv325L/kritisk-til-dnbs-ai-kutt-vi-maa-passe-oss",
+        "https://www.nrk.no/nyheter/dnb-kutter-400-arsverk-1.18046519",
+        "https://www.finansavisen.no/finans/2026/10/06/8385490/dnb-kutter-400-arsverk",
+        "https://www.finansforbundet.no/folk-og-fag/forbundsnytt/dnb-kutter-400-arsverk-for-fort/",
+        "https://kommunikasjon.ntb.no/pressemelding/19093155/finansforbundet-vi-ma-passe-oss-for-a-gjore-ki-til-en-naturlov-som-automatisk-betyr-faerre-ansatte?lang=no",
+        "https://finansfokus.no/2026/10/06/dnb-kutter-400-i-technology-services",
+        "https://www.bt.no/innenriks/i/w38lXn/dnb-varsler-omstilling-og-kutter-400-aarsverk",
+        "https://www.ir.dnb.no/sites/default/files/arsrapport_2025_DNB_konsernet.pdf"
+      ],
+      "underlag": "",
+      "lagd": "2026-10-08",
+      "lagd_av": "Cowork-session efter bortfall i körningen 2026-10-07. Faktaunderlaget är framtaget med WebSearch; INGEN primärkälla har lästs i sin helhet. Den norska ordalydelsen i DNB:s egen release är INTE verifierad ordagrant — de norska citaten i maste_med kommer från norska nyhetsartiklar, inte från DNB:s norska release. Körningen som skriver notisen ska attribuera citaten till de norska nyhetsartiklarna, eller verifiera mot releasen först."
+    }
+  ],
   "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
