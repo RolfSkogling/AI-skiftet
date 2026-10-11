@@ -7,8 +7,69 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 10 Oct 2026 04:20:29 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 04:23:03 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Mistral lanserer Large 4 – billionmodell med åpne vekter lovet innen utgangen av oktober</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-mistral-lanserar-large-4-biljonmodell-med-oppna-vikter</guid>
+      <pubDate>Sun, 11 Oct 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Mistral AI slapp 6. oktober Mistral Large 4, en multimodal modell med omtrent én billion parametere, hvorav 52 milliarder er aktive per token. Modellen er tilgjengelig som forhåndsversjon i Mistral Studio, og selskapet lover å slippe vektene innen utgangen av måneden.</p>
+<p>Mistral opplyser at modellen er trent fra grunnen av på 3 800 Nvidia Grace Blackwell-prosessorer i egne datasentre i Europa. Prisen er 1,36 dollar per million inndata-tokens og 4,18 dollar per million utdata-tokens. Ytelsestallene kommer fra Mistral selv: 82 prosent på en test der sårbarheter skal gjenskapes og tettes, og 61,7 prosent på kodetesten DeepSWE v1.1. I en menneskelig kodevurdering fra Surge AI havner modellen på andreplass av fem, bak Claude Opus 5. Lisensen er ikke oppgitt. Ifølge TechCrunch kommer lanseringen etter at Frankrikes president Macron har snakket om «en tredje vei» i KI, og Mistral posisjonerer modellen som et alternativ både til lukkede modeller og til åpne modeller som ofte kommer fra Kina.</p>
+<p>For Norden: Mistral har siden februar opplyst at selskapet investerer 1,2 milliarder euro i KI-datasentre i Sverige sammen med EcoDataCenter, og anlegget skal etter planen åpne i 2027. Det er ennå uklart om Large 4 kommer til å kjøre der. Åpne vekter vil gjøre det mulig for banker som SEB og DNB og for offentlige virksomheter å drive modellen på egen infrastruktur, noe som er relevant for IMY og Datatilsynet når personopplysninger skal holdes innenfor EU/EØS og under egen kontroll. Lisensvilkårene avgjør hvor langt det rekker.</p>
+<p class="news-card__source">Kilde: <a href="https://mistral.ai/news/mistral-large-4/">Mistral AI</a>, <a href="https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/">TechCrunch</a>, <a href="https://www.vktr.com/ai-news/mistral-commits-12b-to-swedish-ai-data-centers-in-sovereignty-push/">VKTR</a></p>]]></description>
+    </item>
+    <item>
+      <title>Regjeringen og partene i arbeidslivet inngår intensjonsavtale om ansvarlig KI i arbeidslivet</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-norska-regeringen-och-arbetslivets-parter-tecknar-avsiktsavtal-om</guid>
+      <pubDate>Sun, 11 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>2. oktober undertegnet regjeringen og partene i arbeidslivet en intensjonsavtale om ansvarlig innføring og bruk av kunstig intelligens i arbeidslivet. Statsminister Jonas Gahr Støre og digitaliseringsminister Torgeir Micaelsen møtte NHO, KS, Virke og Spekter på arbeidsgiversiden og LO, Unio, Akademikerne og YS på arbeidstakersiden.</p>
+<p>Avtalen skal bygge innføringen av KI på den norske arbeidslivsmodellen, og partene deler ansvaret for å bruke eksisterende lover og avtaler slik at KI innføres trygt og rettferdig. En koordineringsgruppe med alle partene skal prioritere temaer og organisere arbeidet. Micaelsen sier at KI ikke må bli en teknologi folk frykter og unngår å bruke, og at Norge og Europa bør utvikle flere egne språkmodeller ved siden av de kommersielle. 5. oktober rapporterte digi.no at regjeringen skal erstatte den første nasjonale KI-strategien fra 2020 med en ny, som ventes i første halvår 2027.</p>
+<p>For Norden: avtalen gjelder norsk arbeidsliv, men trepartsmodellen med staten, NHO og LO rundt samme bord er et sammenligningsgrunnlag for Sverige, der tilsvarende parter blant andre er Svenskt Näringsliv, LO, TCO og Saco. Det er en intensjonsavtale, og i de gjennomgåtte kildene finnes ingen bindende regler eller tidsfrister. Micaelsen sier at den raske utviklingen av avanserte KI-modeller utfordrer sikkerhet, personvern og trygghet på nye måter; for personvernspørsmålene er Datatilsynet tilsynsmyndighet.</p>
+<p class="news-card__source">Kilde: <a href="https://www.regjeringen.no/no/aktuelt/regjeringa-og-partane-i-arbeidslivet-inngar-ki-avtale/id3173698/">Regjeringen.no</a>, <a href="https://www.digi.no/kunstig-intelligens/ny-arbeidslivsavtale-om-ki-skal-ivareta-ansattes-rettigheter/7142704">digi.no</a>, <a href="https://www.digi.no/kunstig-intelligens/norges-ki-strategi-er-fra-2020-na-skal-den-skrives-pa-nytt/7143602">digi.no (AI-strategin)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic oppdaterer bruksreglene – forbyr vedvarende, meningsløs grusomhet mot Claude</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-anthropic-uppdaterar-anvandarpolicyn-forbud-mot-ihallande-meningslos-elakhet</guid>
+      <pubDate>Sun, 11 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropic publiserte 8. oktober oppdaterte retningslinjer for bruk som trer i kraft 12. november. Blant nyhetene er et forbud mot vedvarende og unødvendig krenkende eller grusom oppførsel mot selskapets modeller.</p>
+<p>Ifølge Anthropic gjelder forbudet bare ekstreme tilfeller der brukere gjentatte ganger er grusomme uten noe synlig formål, ikke vanlig frustrasjon, motstand, mørke kreative temaer eller testing. Claude kan allerede avslutte samtaler med vedvarende skadelige eller krenkende brukere, og det forblir det viktigste verktøyet. Retningslinjene får også et samlet avsnitt om bedragerske kampanjer, for eksempel falske kontoer og fabrikkerte nettsteder for nyheter. Valgavsnittet begrenses til å villede velgere eller forstyrre valg, og det tidligere generelle forbudet mot personlig tilpassede stemme- og kampanjebudskap fjernes. Våpenforbudet omfatter uttrykkelig styringsprogramvare for våpen, blant annet å bevæpne droner og andre autonome kjøretøy, og Claude kan ikke brukes til å avgjøre eller anbefale hvem som skal etterforskes, pågripes eller siktes.</p>
+<p>For Norden: reglene gjelder alle brukere i regionen fra 12. november. Presiseringen om våpenprogramvare og autonome kjøretøy er relevant for forsvarsindustrien, der selskaper som Saab og Kongsberg bygger systemer med KI-komponenter; hvordan grensen trekkes i praksis, er et åpent spørsmål. Forbudet mot å la Claude avgjøre hvem som skal etterforskes eller siktes er en grense som myndigheter som Kripos og Politidirektoratet må kjenne til hvis de bruker modellen. Computer Sweden omtalte forbudet mot grusomhet mot Claude 9. oktober.</p>
+<p class="news-card__source">Kilde: <a href="https://www.anthropic.com/news/2026-usage-policy-update">Anthropic</a>, <a href="https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/">TechCrunch</a>, <a href="https://computersweden.se/article/4233112/anthropic-forbjuder-anvandare-att-vara-elaka-mot-claude.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Uber og Pony.ai skal teste robotaksier i London innen noen uker</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-uber-och-pony-ai-ska-testa-robotaxibilar-i</guid>
+      <pubDate>Sun, 11 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Uber og kinesiske Pony.ai planlegger å begynne å teste Pony.ais syvende generasjon robotaksier i London innen noen uker. Selskapene beskriver det som et testprosjekt og har ikke varslet noen tidsplan for passasjertrafikk.</p>
+<p>Utvidelsen er en del av et samarbeid som i august fikk som mål å sette inn over 2 000 Pony.ai-robotaksier i Europa. Opplegget følger modellen fra Zagreb, der Pony.ai leverer kjøresystem og kjøretøy, kroatiske Verne eier og driver flåten og Uber står for tilgangen til sin plattform for bestilling av turer. Hvem som skal eie og drive flåten i London, er ikke sagt. Uber tilbyr dessuten siden 3. september overvåkede selvkjørende turer i London med britiske Wayve, med fører om bord. Storbritannia har åpnet for søknader til småskala pilotprosjekter for selvkjørende persontransport, før et fullt tillatelsessystem som ventes i andre halvår 2027.</p>
+<p>For Norden: ingen nordiske selskaper nevnes i rapporteringen om London-planene. Det er et åpent spørsmål hvor raskt Transportstyrelsen i Sverige og Statens vegvesen i Norge kan gi tilsvarende tillatelser til forsøksvirksomhet, og om nordiske bilprodusenter som Volvo Cars blir leverandører eller konkurrenter til kinesiske systemer som Pony.ais i Europa. Kinesiske systemer på europeiske veier kan dessuten reise spørsmål om datastrømmer, et område der IMY og Datatilsynet er tilsynsmyndigheter.</p>
+<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/">TechCrunch</a>, <a href="https://runtimewire.com/article/uber-pony-ai-london-robotaxi-tests">RuntimeWire</a></p>]]></description>
+    </item>
+    <item>
+      <title>Schneider Electric kjøper PTC for 22,6 milliarder dollar – og bygger videre på norske Cognite</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-11</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-schneider-electric-koper-ptc-for-22-6-miljarder</guid>
+      <pubDate>Sun, 11 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>5. oktober avtalte Schneider Electric å kjøpe programvareselskapet PTC kontant for 205 dollar per aksje. Det verdsetter PTCs egenkapital til rundt 22,6 milliarder dollar, og styrene i begge selskapene har enstemmig godkjent avtalen.</p>
+<p>Schneider begrunner kjøpet med industriell KI: PTCs konstruksjonsdata skal kobles med driftsdata slik at KI-agenter får den konteksten de trenger. Konsernet eier allerede AVEVA og avtalte i juni å kjøpe Cognite til en bedriftsverdi på 3,1 milliarder dollar. Konsernsjef Olivier Blum snakker om en digital tråd for neste generasjon industriell KI. Avtalen krever godkjenning fra PTCs aksjonærer og fra myndigheter og ventes gjennomført senest i tredje kvartal 2027.</p>
+<p>For Norden: Cognite er et norsk programvareselskap rettet mot industriell KI, og Aker, TCV og Accel er blant selgerne. Schneiders kombinasjon av AVEVA, Cognite og PTC kan påvirke hvor mye av nordisk industris data- og designverktøy som havner hos én leverandør. Det er relevant for industrikonsern som AB Volvo, Saab og Kongsberg når de velger plattformer for industriell KI, og et åpent spørsmål for konkurransemyndighetene, blant dem norske Konkurransetilsynet.</p>
+<p class="news-card__source">Kilde: <a href="https://www.robotics247.com/article/schneider-electric-to-acquire-ptc-for-22.6-billion">Robotics 24/7</a>, <a href="https://www.houthoff.com/insights/deals-and-matters/cognite-to-be-acquired-by-schneider-electric/">Houthoff</a></p>]]></description>
+    </item>
     <item>
       <title>Google lanserer en universell Gemini-agent for arbeidslivet – rettet mot bedriftskunder</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-10</link>
@@ -879,67 +940,6 @@
 <p>Modellen er trent på mer enn 400 000 CT-undersøkelser og 15 millioner par av bilde og radiologisvar, uten manuell annotering. I test på nær 40 000 virkelige undersøkelser nådde den en gjennomsnittlig AUC-verdi på 0,913 over de 146 kliniske funnene. I en delstudie med 26 radiologer fra flere sykehus presterte modellen i gjennomsnitt bedre enn 23 av deltakerne, og da radiologene brukte RADAR som assistent, falt de missede diagnosene med 10 prosent mens tiden per diagnose sank med over 30 prosent.</p>
 <p>For Norden: Åpne vekter flytter spørsmålet fra anskaffelse til ansvar – men bare ett steg. Radiologmangel og lange svartider er kjente problemer i både svensk og norsk helsetjeneste, og en modell som kjører på sykehusets egen maskinvare, betyr at pasientbilder aldri forlater det egne nettet – nettopp den typen dataminimering IMY og Datatilsynet peker på når AI brukes i helsetjenesten. Lisensen stenger derimot døren til klinisk drift uten avtale med Alibaba, treningsdataene kommer fra kinesiske sentre, og CE-merking som medisinsk utstyr er en helt annen prosess enn å laste ned vekter. Etter Digital Omnibus er AI-forordningens høyrisikoplikter dessuten utsatt – til 2. desember 2027 for frittstående Annex III-systemer og til 2. august 2028 for høyrisiko-AI som bygges inn i produkter under sektorlovgivning. For svenske regioner og norske helseforetak er RADAR altså et forskningsverktøy i dag, ikke et anskaffbart produkt.</p>
 <p class="news-card__source">Kilde: <a href="https://pandaily.com/alibaba-damo-radar-expert-abdominal-ct-science-open-source">Pandaily</a>, <a href="https://runtimewire.com/article/alibaba-damo-radar-open-source-abdominal-ct-ai">Runtimewire</a>, <a href="https://dataconomy.com/2026/09/21/alibaba-releases-open-source-ai-for-abdominal-ct-diagnosis/">Dataconomy</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic vurderer en ny modell før børsnoteringen – drøyt en uke etter oppfordringen om å bremse</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-21-anthropic-overvager-en-ny-modell-fore-borsnoteringen-drygt</guid>
-      <pubDate>Mon, 21 Sep 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Anthropic vurderer å slippe en ny KI-modell for å møte OpenAIs fremgang siden lanseringen av GPT-6 Astra, melder Reuters med henvisning til tre kilder. Vurderingene kommer før en ventet børsnotering og drøyt en uke etter at toppsjef Dario Amodei i et essay 12. september oppfordret hele bransjen til å senke tempoet i utviklingen av modellenes evner. Ifølge en av kildene vurderer selskapet nå sikkerheten i neste modell som en del av beslutningen, og Anthropic avslår å kommentere.</p>
-<p>Bakgrunnen er at Astra, som ble sluppet 3. september, raskt har vunnet terreng blant bedriftskunder. Ifølge utgiftsplattformen Ramp står Astra for rundt 13 prosent av den bedrifts-KI-bruken plattformen måler, mot rundt 8 prosent for Anthropics Claude Fable, og på utviklerplattformen OpenRouter brukte brukerne forrige uke mer penger på OpenAIs modeller enn på Anthropics – for første gang på over to og et halvt år. Samtidig melder Reuters at Anthropics årlige inntektstakt passerte 65 milliarder dollar ved utgangen av juli, at Meta – en av de største kundene – vil redusere avhengigheten av selskapets modeller, og at noteringen kan bli utsatt til etter det amerikanske mellomvalget i november.</p>
-<p>For Norden: Ramp-tallene måler amerikanske bedriftskort, ikke nordiske innkjøp, men dragkampen er allerede synlig her – Novo Nordisk valgte forrige uke Claude til legemiddelforskningen sin, mens Stockholm-grunnlagte Legora bygger juristmodellen sin på GPT-6. Svarer Anthropic på Amodeis egen oppfordring med et nytt slipp, får kunder som Novo Nordisk og utviklere som Legora nok en modellgenerasjon å vurdere, og Oljefondet, som er medeier i tusenvis av børsnoterte selskaper, får en av de mest ventede teknologinoteringene å ta stilling til, dersom den skjer etter november.</p>
-<p class="news-card__source">Kilde: <a href="https://www.tbsnews.net/tech/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-1547746">Reuters (via The Business Standard)</a>, <a href="https://www.investing.com/news/stock-market-news/exclusiveanthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-4908007">Investing.com (Reuters)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Toyota planlegger 400 000 humanoide roboter i fabrikkene – med start i 2028</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-21-toyota-planerar-400-000-humanoida-robotar-i-fabrikerna</guid>
-      <pubDate>Mon, 21 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Toyota planlegger å fase inn 400 000 egenutviklede humanoide roboter i konsernets fabrikker verden over, melder Nikkei. Utrullingen skal følge oppgraderingen av aldrende anlegg som Toyota og konsernselskapene fra 2028 vil bruke rundt én billion yen i året på – 150 000 roboter i Toyotas egne fabrikker og 250 000 hos konsernselskapene, fordelt på rundt seksti produksjonssteder.</p>
-<p>Roboten veier rundt 50 kilo, har to fingre per hånd, ruller på hjul i stedet for å gå og drives av batteri eller kabel. Den lærer ved at arbeidere bærer et fingerlignende verktøy og gjentar rutineoppgaver; under en teknologigjennomgang for investorer i Europa brettet en robot en t-skjorte nesten feilfritt etter 1 500 repetisjoner over to uker. Toyota vil bygge treningsdata med utgangspunkt i Toyota Production System ved hjelp av sine 18 000 mesterarbeidere, såkalte takumi, og spre det sentralt innlærte til fabrikker i alle land – på sikt skal robotene også lære opp nyansatte. «Robotene skal ikke erstatte mennesker, vi sikter mot en verden der de sameksisterer med mennesker», sier visekonsernsjef Hiroki Nakajima.</p>
-<p>For Norden: Nikkei presiserer ikke hvilke konsernselskaper som inngår, men Toyota Industries – som eier Toyotas største truckfabrikk i Europa, i Mjölby i Sverige med rundt 2 500 ansatte – er ett av dem, og Scania og Volvo bygger begge produksjonssystemene sine på Toyotas modell. I Sverige og Norge kan en robotutrulling i den skalaen ikke gjennomføres uten forhandling etter medbestemmelsesloven og Hovedavtalen, noe som gjør IF Metall og Fellesforbundet til parter i saken snarere enn tilskuere – mens Hyundais fagforening i Sør-Korea, ifølge en lederartikkel i Seoul Economic Daily, krever vetorett over hver eneste nye robot.</p>
-<p class="news-card__source">Kilde: <a href="https://asia.nikkei.com/business/technology/toyota-to-deploy-400-000-humanoid-robots-to-work-alongside-factory-staff">Nikkei Asia</a>, <a href="https://news.sbs.co.kr/english/article.do?news_id=N1008760026">SBS News</a>, <a href="https://en.sedaily.com/international/2026/09/19/toyota-to-deploy-400000-humanoid-robots-at-plants-worldwide">Seoul Economic Daily</a></p>]]></description>
-    </item>
-    <item>
-      <title>Plugin4Shell: nullklikk-sårbarhet i Claude Code, Codex, Copilot og Gemini CLI – Copilot fortsatt uten fiks</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-21-plugin4shell-nollklickssarbarhet-i-claude-code-codex-copilot-och</guid>
-      <pubDate>Mon, 21 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Sikkerhetsselskapet AIR har avdekket en sårbarhet, døpt Plugin4Shell, som gjør at en utvidelsesoppdatering kan kjøre angriperens kode i fire av de største KI-kodeagentene – Claude Code, Codex, GitHub Copilot og Gemini CLI – uten at brukeren må klikke, godkjenne eller reinstallere noe. AIR kaller det den første leverandørkjedesårbarheten i KI-agentenes økosystem, og den rammer også utviklere som har gjort alt riktig: det holder å ha en utvidelse installert fra en betrodd markedsplass.</p>
-<p>Feilen ligger i den såkalte SHA-låsingen, mekanismen som skal binde en utvidelse til en gjennomgått versjon av koden. Agentene sjekker ut den låste commit-hashen, men kontrollerer aldri at utsjekkingen havnet der; en angriper som kontrollerer utvidelsens kodelager, kan gi en gren samme 40 tegn som hashen og få git til å velge grenen. GitHub avviser slike grennavn, men Bitbucket og selvdriftede git-servere tillater dem, og fordi Claude Code og Codex oppdaterer utvidelser i bakgrunnen som standard, når byttet allerede installerte utvidelser. AIR fant feilen i mai og meldte den i juni: Anthropic har rettet Claude Code i versjon 2.1.179 og OpenAI Codex i 0.146.0, Microsoft har ennå ingen fiks for Copilot, og Google avvikler Gemini CLI i stedet for å reparere det og viser til etterfølgeren Antigravity. Ingen utnyttelse i praksis er rapportert.</p>
-<p>For Norden: mest utsatt er organisasjoner som kjører egne git-servere – vanlig i bank, forsvar og offentlig sektor i både Sverige og Norge – og som lar utviklerne bruke kodeagenter med utvidelser. Svenske CERT-SE hos MSB og norske NSM NCSC har dermed en konkret oppdateringsoppfordring å sende ut, og utviklingsavdelinger som har standardisert på Gemini CLI, står overfor et verktøybytte snarere enn en patch.</p>
-<p class="news-card__source">Kilde: <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/">Help Net Security</a>, <a href="https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335">The Register</a>, <a href="https://www.air.security/blog-posts/plugin4shell">AIR</a></p>]]></description>
-    </item>
-    <item>
-      <title>Svenske KI-stjerner Lovable og Legora er registrert i Delaware – Vinge-ekspert ser stor risiko</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-21-svenska-ai-stjarnorna-lovable-och-legora-ar-registrerade</guid>
-      <pubDate>Mon, 21 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Lovable og Legora, to av Sveriges mest omtalte KI-selskaper, har morselskapene sine registrert i Delaware i USA, og Dagens industri løfter nå risikoen ved opplegget. Da det EU-finansierte fondet Scaleup Europe, som forvaltes av EQT, i sommer gikk inn i Lovables milliardrunde, var budskapet at selskapet skulle vokse globalt med Europa som base – men formelt er Lovable et amerikansk selskap med et svensk datterselskap. «Jeg ser en stor risiko i dette», sier Mattias Schömer, skatteekspert i advokatfirmaet Vinge, til DI.</p>
-<p>Opplegget kalles Delaware-flip og er vanlig fordi tunge amerikanske venturekapitalister ofte krever et amerikansk morselskap; Lovable valgte det helt fra starten. Computer Swedens sjefredaktør Marcus Jerräng påpekte i august at registreringen først fikk oppmerksomhet da selskapet viste seg å ha gått glipp av momsinnbetalinger i Sverige, og at Scaleup Europe – EU-kommisjonens fond på fem milliarder euro som skal holde strategiske scaleups i Europa – dermed gjorde sin andre investering i et selskap som juridisk ikke er europeisk. Lovable hentet i august 400 millioner dollar til en verdsettelse på 13,3 milliarder dollar, med Menlo Ventures som ledende investor og Scaleup Europe som medleder.</p>
-<p>For Norden: spørsmålet lander hos Riksdagen, som samles 28. september, og hos regjeringen Magdalena Andersson har fått i oppdrag å sondere – den nasjonale KI-strategien sikter mot en topp ti-plass, men hovedkontor og ansatte i Stockholm veier mindre dersom eierskap, skatt og en fremtidig børsnotering havner i USA. For pensjonsforvaltere som de svenske AP-fondene og Oljefondet betyr det at avkastningen fra den nordiske KI-bølgen kan bli priset på Nasdaq snarere enn på Stockholm-børsen.</p>
-<p class="news-card__source">Kilde: <a href="https://www.pressen.se/1362615244.html">Dagens industri (via Pressen.se, betalmur)</a>, <a href="https://computersweden.se/article/4212334/spelar-det-nagon-roll-att-svenska-techsuccen-inte-ar-svensk.html">Computer Sweden</a>, <a href="https://lovable.dev/blog/series-c">Lovable</a></p>]]></description>
-    </item>
-    <item>
-      <title>Huang: Nvidia selger dobbelt så mange brikker neste år – og avviser en bred nedbremsing</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-21-huang-nvidia-saljer-dubbelt-sa-manga-chip-nasta</guid>
-      <pubDate>Mon, 21 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Nvidia-sjef Jensen Huang regner med at selskapet selger dobbelt så mange brikker neste år som i år. Det sa han torsdag på et toppmøte om KI-sikkerhet i Skottland med kong Charles III som vert, der også Google DeepMind, OpenAI og Anthropic deltok, melder CNBC. «I nesten hvert eneste land vi er i, vil folk investere i KI», sa Huang.</p>
-<p>Nvidia oppgir ikke antall solgte brikker; sist selskapet ga et volum, var på GTC i oktober 2025, da Huang opplyste at seks millioner Blackwell-prosessorer var levert på fire kvartaler. Finansdirektør Colette Kress har guidet for rundt 70 prosent inntektsvekst i regnskapsåret som slutter i januar 2028, og Huang selv venter at investeringene i KI-infrastruktur når tre til fire billioner dollar innen 2030. På spørsmål om bransjens krav om lavere tempo svarte han at «når et produkt ikke er trygt, bør vi holde det tilbake og fortsette å utvikle det» – men en bredere nedbremsing avviser han.</p>
-<p>For Norden: et doblet brikkevolum drar med seg minst en dobling av effektbehovet, siden effekten per brikke stiger mellom generasjonene, og det havner i tilknytningskøene hos Svenska kraftnät og Statnett. Nscales og Akers Stargate Norway i Narvik skal romme 100 000 Nvidia-prosessorer, Sferical AI i Linköping – med Ericsson, Saab, AstraZeneca, SEB og Wallenberg Investments som partnere – bygger KI-fabrikken sin sammen med Nvidia, og Skottland, der Huang talte, kunngjorde forrige uke en pause på inntil ett år for beslutninger om nye store KI-datasentre.</p>
-<p class="news-card__source">Kilde: <a href="https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html">CNBC</a>, <a href="https://www.benzinga.com/markets/tech/26/09/61862259/nvidia-ceo-jensen-huang-expects-chip-sales-to-double-next-year-as-he-downplays-ai-slowdown-calls-when-a-product-is-not-safe">Benzinga</a>, <a href="https://www.euronews.com/next/2026/09/17/scotland-halts-new-hyperscale-ai-data-centre-approvals-amid-environmental-concerns">Euronews</a></p>]]></description>
     </item>
   </channel>
 </rss>
