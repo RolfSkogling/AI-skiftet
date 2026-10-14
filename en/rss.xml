@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 13 Oct 2026 04:27:26 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 04:23:10 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Microsoft unveils Maia 300 – in-house AI chip for reasoning models aims to cut reliance on Nvidia</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-microsoft-visar-maia-300-eget-ai-chip-for</guid>
+      <pubDate>Wed, 14 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Microsoft presented Maia 300 on 12 October, the third generation of its in-house AI chip, built for inference with reasoning models and agents. According to Microsoft the chip is to become the primary inference solution for the company’s own products and services, with deployment after the turn of the year. According to The Verge, as cited by Computerworld, it should reduce reliance on Nvidia and AMD.</p>
+<p>Scott Guthrie, Microsoft’s head of cloud and AI, says the company expects Maia 300 to deliver 40 percent more tokens per megawatt than “leading GPU-based systems”, but neither the comparison systems nor the test conditions are given, so the figure is a vendor claim that cannot yet be verified. Microsoft says the Azure Maia family is to scale to multi-gigawatt deployments starting in 2027. The predecessor Maia 200 launched in January 2026 and now runs Copilot workloads, with GitHub Copilot and Microsoft Foundry expected to follow before the end of the year. Details on manufacturing process, memory configuration and absolute performance are missing from the sources we read.</p>
+<p>For the Nordics: Neither source says where Maia 300 will be deployed or whether customers can choose hardware. Swedish and Norwegian companies using Copilot or Foundry may eventually see their inference run on Microsoft’s own silicon. If the efficiency claim holds, it could matter where grid capacity constrains data-centre projects, but any cost saving reaches Nordic customers only if Microsoft passes it on in pricing, which neither source addresses.</p>
+<p class="news-card__source">Source: <a href="https://www.computerworld.com/article/4234722/microsoft-unveils-new-maia-300-ai-chip.html">Computerworld</a>, <a href="https://computersweden.se/article/4234196/microsoft-visar-upp-nya-ai-chippet-maia-300.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Character.AI files for Chapter 11 – Disney makes the opening bid for parts of the company</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-character-ai-ansoker-om-konkursskydd-disney-lagger-forsta</guid>
+      <pubDate>Wed, 14 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>The chatbot platform Character.AI announced on 12 October that it had filed for Chapter 11 bankruptcy protection in the US and has agreed to sell certain assets to Disney for $20 million. Disney is the so-called stalking horse bidder, which means other parties can submit competing bids.</p>
+<p>According to TechCrunch the platform is to keep running during the court-supervised sale process, expected to close in November or early December, and if no buyer emerges the service is to be wound down. Disney also receives, per the same reporting, a non-exclusive perpetual licence to the technology, and several former employees, including ex-CEO Karandeep Singh Anand, have joined Disney. CEO Colin Adams cites legal, regulatory and operational headwinds. The company has been sued in several cases over the safety of its AI companions and has banned minors, and in 2024 Google paid $2.7 billion to license its models, after which the founders returned to Google.</p>
+<p>For the Nordics: Neither source says how many Nordic users the service has. The EU AI Act has required since 2 August 2026 that users are informed when they interact with an AI system, but the cases against Character.AI concern the safety of young users rather than labelling. The question for Nordic parents and schools is what happens to user data and chat history when a platform is sold off in pieces, and neither source says anything about that.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/">TechCrunch</a>, <a href="https://www.fastcompany.com/91622790/character-ai-bankrupt-chatbot-platform-sell-disney">Fast Company</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nature Will unveils Natura-1 – 50-billion-parameter foundation model for robot hands</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-nature-will-presenterar-natura-1-grundmodell-med-50</guid>
+      <pubDate>Wed, 14 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>The physical-AI lab Nature Will, with offices in San Francisco, presented Natura-1 on 13 October, a foundation model with 50 billion parameters and a mixture-of-experts architecture for controlling robot hands. The model is, according to the company, pretrained on roughly a million hours of egocentric video of human hands, trained jointly on language, images, video and action, and runs a 100-millisecond control loop, which Forbes describes as slower than ideal for dexterous manipulation.</p>
+<p>The results are the company’s own. Natura-1 scores 53.4 (Base) and 59.1 (Agentic) in the company’s own test across twelve capabilities on dexterous hands, and the compared models produced no scores on that platform. On a separate gripper platform π0.5 scored 13.5 and GPT-6-Astra 16.7, so the scores are not directly comparable. The company calls the model a “research preview” and mentions neither open weights, an API nor pricing, and Forbes notes that the model controls hands only, not locomotion or balance, and that comparisons and independent testing are still missing.</p>
+<p>For the Nordics: Neither source mentions Nordic partners or Nordic access to the model. If it becomes available, the question for Swedish and Norwegian industry is whether it works outside the lab, which has not yet been tested independently. Until then Natura-1 is a vendor claim without independent evidence.</p>
+<p class="news-card__source">Source: <a href="https://www.forbes.com/sites/johnkoetsier/2026/10/13/startup-releases-50-billion-parameter-physical-general-foundation-model-for-instant-robot-intelligence/">Forbes</a>, <a href="https://www.naturewill.com/blog/natura-1">Nature Will</a></p>]]></description>
+    </item>
+    <item>
+      <title>Swedes would rather ask AI than their boss – one in six prefer AI when they don’t want to disturb anyone</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-svenskar-fragar-hellre-ai-an-chefen-var-sjatte</guid>
+      <pubDate>Wed, 14 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>According to a Norstat survey commented on by Advania Sverige in a press release, 57 percent of Swedish employees prefer to ask AI when they need quick answers at work. Computer Sweden reported the results on 7 October.</p>
+<p>The survey ran from 17 April to 8 May 2026 in Norstat’s web panel among 1,011 employees aged 18–70, of whom 32 percent worked in the public and 67 percent in the private sector. The share preferring AI for quick answers is 61 percent among men, 68 percent in upper Norrland and 68 percent among high earners, but the sizes of the subgroups are not reported. 31 percent turn to AI when they feel unsure, more women (34 percent) than men (27 percent). 16 percent prefer AI over asking colleagues or their boss when they do not want to disturb anyone, and 7 percent for sensitive questions. 17 percent say AI influenced major organisational decisions to some or a high degree over the past year. These are self-reported answers, not measured usage.</p>
+<p>For the Nordics: Magnus Wemby, HR chief at Advania Sverige, says AI is becoming a natural colleague that lowers the threshold for awkward questions, but that employers need to pay attention if the technology replaces dialogue with managers and colleagues. The survey covers Sweden only, and no equivalent Norwegian figures are reported. The question for Swedish employers and unions is how AI-supported decisions should be documented and which tools are permitted, and neither source reports any such guidelines.</p>
+<p class="news-card__source">Source: <a href="https://computersweden.se/article/4231821/svenskarna-fragar-hellre-ai-an-chefen.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Meta releases Muse Wonder – the company sets the model against Anthropic and OpenAI</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-13</link>
@@ -879,55 +928,6 @@
 <p>The cuts are part of a broader round of roughly 600 job losses Microsoft has made in the same period. It comes amid a wider wave of reorganisations across the tech industry in 2026, as companies rewrite both product line-ups and the organisations built around AI tools.</p>
 <p>How AI reshapes jobs, rather than simply replacing them, is a core question for Sweden's own Arbetsmarknadens AI-råd (Labour Market AI Council), whose members include the unions Unionen and Akavia alongside employer group Almega. In its first joint assessment, from November 2025, the council found that AI is already part of daily work in service- and knowledge-intensive occupations, though the effects vary sharply between workplaces.</p>
 <p class="news-card__source">Source: <a href="https://www.geekwire.com/2026/microsoft-cuts-hundreds-more-jobs-shifts-next-halo-game-to-activision-in-xbox-overhaul/">GeekWire</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-22/xbox-cuts-jobs-moves-game-studios-under-activision">Bloomberg</a>, <a href="https://www.ai.se/sv/nyheter/en-arbetsmarknad-i-rorelse-arbetsmarknadens-ai-rad-presenterar-sin-forsta-gemensamma">AI Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway's DNB bank bans camera-equipped AI glasses at its offices</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-norska-storbanken-dnb-forbjuder-ai-glasogon-med-kamera</guid>
-      <pubDate>Thu, 24 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>One of Norway's largest banks, DNB, has banned employees and visitors from wearing AI glasses in its premises with immediate effect. Communications director Liselotte Lunde says the bank wants a workplace where no one has to wonder if colleagues or customers are being secretly filmed.</p>
-<p>The ban was decided on September 22 and applies to all of DNB's offices. The glasses look like ordinary glasses but contain a camera, microphone and AI technology that can capture sensitive customer information, trade secrets and private conversations without anyone noticing. ”We can't accept that risk, so we've set a clear line from today”, Lunde says. Norway currently has no legislation specifically regulating AI glasses.</p>
-<p>The decision comes as the Norwegian government is weighing the issue. Digitalisation minister Karianne Tung has said she is considering a ban on facial recognition in AI glasses, but no law is yet in place – a gap DNB is now filling on its own.</p>
-<p class="news-card__source">Source: <a href="https://www.digi.no/artikler/dnb-forbyr-ki-briller/577337">digi.no</a>, <a href="https://www.kode24.no/artikkel/dnb-forbyr-ansatte-a-bruke-smartbriller/273153">kode24.no</a>, <a href="https://www.vg.no/nyheter/i/oE8qVa/digitaliseringsminister-karianne-tung-om-smartbriller-vurderer-aa-forby">VG</a></p>]]></description>
-    </item>
-    <item>
-      <title>Meta launches its first camera-free AI glasses after privacy backlash</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-meta-lanserar-sina-forsta-kamerafria-ai-glasogon-efter</guid>
-      <pubDate>Thu, 24 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Meta unveiled its first camera-free AI glasses, the Ray-Ban Meta Audio, at its Connect developer conference on September 23. The glasses have no camera at all but offer music, calls and live translation through the Muse AI assistant. They start at 349 dollars, with pre-orders opening October 13.</p>
-<p>CEO Mark Zuckerberg said the company realised it could create an entirely new glasses category built around audio instead of video. The announcement follows repeated criticism of Meta's camera-equipped AI glasses, accused of making covert filming easier – despite a built-in light meant to alert others when the camera is on. The same day, Meta also showed an updated camera model, Ray-Ban Meta Gen 3, priced at 449 dollars.</p>
-<p>Criticism of camera glasses is already a live issue in the Nordics. Norway's DNB bank banned AI glasses in its offices this week, and Norwegian digitalisation minister Karianne Tung is weighing a ban on facial recognition in AI glasses. Meta's camera-free model still has a microphone and an AI assistant – two of the very risks DNB points to in its ban.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/">TechCrunch</a>, <a href="https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/">9to5Mac</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic's Claude found a new gene-editing-like tool in virus DNA</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-anthropics-ai-modell-claude-hittade-ett-nytt-enzymsystem</guid>
-      <pubDate>Thu, 24 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Anthropic said on September 23 that its Claude model, working with human researchers, had found an enzyme system in bacteriophage DNA able to cut, copy and paste DNA – a function resembling the gene-editing tool CRISPR.</p>
-<p>The discovery was made in Anthropic's biology lab in the Bay Area, set up in spring 2026, where all physical lab work is still carried out by human scientists. According to CEO Dario Amodei, Claude did most of the work, which the company says took about 21 hours using roughly 950 AI agents and 210 million tokens. Amodei stressed the finding still needs validation by the wider research community. A similar system had previously been found by researchers at Stanford.</p>
-<p>AI-driven biology research is already a strategic question for the Nordics. Anthropic has an existing collaboration with Denmark's Novo Nordisk on drug discovery using Claude, and the validation question Amodei himself raises is relevant to Swedish and Danish research funders and pharmaceutical companies investing in AI-driven biology.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/">TechCrunch</a>, <a href="https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/">Engadget</a></p>]]></description>
-    </item>
-    <item>
-      <title>Quantum firm IonQ shows real-time error correction on ordinary hardware</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-kvantbolaget-ionq-visar-realtidsfelkorrigering-for-kvantdatorer-pa-vanlig</guid>
-      <pubDate>Thu, 24 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>US quantum company IonQ said on September 23 that it had tested an end-to-end real-time quantum error decoder running on an ordinary standard processor, with no specialised hardware required. The system handled simulated circuits with up to 408 logical qubits and more than 31.5 million quantum operations.</p>
-<p>The result, the company says, addresses a classic bottleneck: the classical computers that correct quantum errors in real time typically get overwhelmed, forcing the quantum system to pause. IonQ's solution handles the work in the background with only 0.02 percent extra computing overhead, according to the company. Research lead Nicolas Delfosse called the result ”an important milestone” on the road to quantum computers with thousands of qubits, far more than the 256 qubits IonQ's current system has. The stock rose about 12 percent on the news.</p>
-<p>For the Nordics, error correction is the core question in the race for a usable quantum computer. Chalmers' Wallenberg Centre for Quantum Technology (WACQT) works on the same problem for its Swedish qubits, and Finland's IQM builds its own quantum computers. The US Department of Energy recently launched a 215 million dollar competition specifically for fault-tolerant quantum computers – a field where both American and Nordic research groups are now investing heavily.</p>
-<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/09/23/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder/">The Quantum Insider</a>, <a href="https://www.cnbc.com/2026/09/23/ionq-shares-rally-after-company-says-it-made-a-major-quantum-computing-breakthrough.html">CNBC</a></p>]]></description>
     </item>
   </channel>
 </rss>
