@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 13 Oct 2026 04:27:26 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 04:23:10 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Microsoft viser Maia 300 – egen AI-brikke for resonneringsmodeller skal redusere avhengigheten av Nvidia</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-microsoft-visar-maia-300-eget-ai-chip-for</guid>
+      <pubDate>Wed, 14 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Microsoft presenterte 12. oktober Maia 300, tredje generasjon av selskapets egenutviklede AI-brikke, beregnet på inferens med resonneringsmodeller og agenter. Brikken skal ifølge Microsoft bli den primære inferensløsningen for selskapets egne produkter og tjenester og tas i bruk etter nyttår. Ifølge The Verge, som Computerworld siterer, skal den redusere avhengigheten av Nvidia og AMD.</p>
+<p>Scott Guthrie, Microsofts sjef for sky og AI, sier at selskapet forventer at Maia 300 gir 40 prosent flere tokens per megawatt enn ”ledende GPU-baserte systemer”, men verken sammenligningssystemer eller testforhold oppgis, så tallet er en leverandørpåstand som ennå ikke kan kontrolleres. Microsoft sier at Azure Maia-familien skal skaleres opp til flere gigawatt fra 2027. Forgjengeren Maia 200 ble lansert i januar 2026 og kjører i dag arbeidsbelastninger for Copilot, og GitHub Copilot og Microsoft Foundry ventes å følge før årets slutt. Opplysninger om produksjonsteknologi, minnekonfigurasjon og ytelse i absolutte tall mangler i kildene vi har lest.</p>
+<p>For Norden: Ingen av kildene oppgir hvor Maia 300 skal settes i drift eller om kunder kan velge maskinvare. Norske og svenske selskaper som bruker Copilot eller Foundry kan på sikt få inferensen kjørt på Microsofts eget silisium. Hvis effektivitetstallet holder, kan det være relevant der kraftkapasiteten begrenser datasenterbygg, men en eventuell kostnadsgevinst når nordiske kunder bare hvis Microsoft viderefører den i prisingen, noe ingen av kildene sier noe om.</p>
+<p class="news-card__source">Kilde: <a href="https://www.computerworld.com/article/4234722/microsoft-unveils-new-maia-300-ai-chip.html">Computerworld</a>, <a href="https://computersweden.se/article/4234196/microsoft-visar-upp-nya-ai-chippet-maia-300.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Character.AI søker konkursbeskyttelse – Disney legger første bud på deler av selskapet</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-character-ai-ansoker-om-konkursskydd-disney-lagger-forsta</guid>
+      <pubDate>Wed, 14 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Chatbot-plattformen Character.AI meldte 12. oktober at den har søkt om konkursbeskyttelse etter Chapter 11 i USA og har blitt enig om å selge visse eiendeler til Disney for 20 millioner dollar. Disney er såkalt stalking horse-budgiver, noe som betyr at andre interessenter kan legge inn konkurrerende bud.</p>
+<p>Ifølge TechCrunch skal plattformen holdes i gang under den rettsovervåkede salgsprosessen, som ventes avsluttet i november eller tidlig i desember, og finnes det ingen kjøper skal tjenesten avvikles. Disney får ifølge de samme opplysningene også en ikke-eksklusiv, evig lisens til teknologien, og flere tidligere medarbeidere, blant dem tidligere toppsjef Karandeep Singh Anand, har gått til Disney. Toppsjefen Colin Adams viser til rettslig, regulatorisk og operativ motvind. Selskapet er saksøkt i flere saker om sikkerheten i AI-selskapene sine og har forbudt mindreårige, og Google betalte i 2024 2,7 milliarder dollar for lisens til selskapets modeller, hvoretter gründerne vendte tilbake til Google.</p>
+<p>For Norden: Ingen av kildene oppgir hvor mange nordiske brukere tjenesten har. EUs AI-forordning krever siden 2. august 2026 at brukere informeres når de samhandler med et AI-system, men sakene mot Character.AI gjelder sikkerheten for unge brukere snarere enn merking. Spørsmålet for nordiske foreldre og skoler er hva som skjer med brukerdata og chattehistorikk når en plattform selges ut i deler, og ingen av kildene sier noe om det.</p>
+<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/">TechCrunch</a>, <a href="https://www.fastcompany.com/91622790/character-ai-bankrupt-chatbot-platform-sell-disney">Fast Company</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nature Will presenterer Natura-1 – grunnmodell med 50 milliarder parametere for robothender</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-nature-will-presenterar-natura-1-grundmodell-med-50</guid>
+      <pubDate>Wed, 14 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Fysisk-AI-laboratoriet Nature Will, med kontor i San Francisco, presenterte 13. oktober Natura-1, en grunnmodell med 50 milliarder parametere og mixture-of-experts-arkitektur for styring av robothender. Modellen er ifølge selskapet forhåndstrent på omtrent en million timer egosentrisk video av menneskers hender, trent samlet på språk, bilde, video og handling, og styrer med en reguleringssløyfe på 100 millisekunder, noe Forbes beskriver som tregere enn ønskelig for fingerferdig manipulasjon.</p>
+<p>Resultatene er selskapets egne. Natura-1 får 53,4 poeng (Base) og 59,1 (Agentic) i selskapets egen test over tolv evner på fingerferdige hender, og de sammenlignede modellene fikk ingen poeng på den plattformen. På en separat griperplattform fikk π0.5 13,5 poeng og GPT-6-Astra 16,7, så poengene er ikke direkte sammenlignbare. Selskapet kaller modellen en ”research preview” og nevner verken åpne vekter, API eller pris, og Forbes peker på at modellen bare styrer hender, ikke gange eller balanse, og at sammenligninger og uavhengige tester ennå mangler.</p>
+<p>For Norden: Ingen av kildene nevner nordiske partnere eller nordisk tilgang til modellen. Blir den tilgjengelig, er spørsmålet for norsk og svensk industri om den fungerer utenfor laboratoriet, noe som ennå ikke er prøvd uavhengig. Inntil da er Natura-1 en leverandørpåstand uten uavhengig belegg.</p>
+<p class="news-card__source">Kilde: <a href="https://www.forbes.com/sites/johnkoetsier/2026/10/13/startup-releases-50-billion-parameter-physical-general-foundation-model-for-instant-robot-intelligence/">Forbes</a>, <a href="https://www.naturewill.com/blog/natura-1">Nature Will</a></p>]]></description>
+    </item>
+    <item>
+      <title>Svensker spør heller AI enn sjefen – hver sjette foretrekker AI når de ikke vil forstyrre noen</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-svenskar-fragar-hellre-ai-an-chefen-var-sjatte</guid>
+      <pubDate>Wed, 14 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Ifølge en Norstat-undersøkelse som Advania Sverige har kommentert i en pressemelding, foretrekker 57 prosent av svenske ansatte å spørre AI når de trenger raske svar på jobben. Computer Sweden rapporterte resultatene 7. oktober.</p>
+<p>Undersøkelsen ble gjennomført 17. april–8. mai 2026 i Norstats nettpanel blant 1 011 ansatte i alderen 18–70 år, hvorav 32 prosent i offentlig og 67 prosent i privat sektor. Andelen som foretrekker AI for raske svar er 61 prosent blant menn, 68 prosent i øvre Norrland og 68 prosent blant høyinntektsgrupper, men størrelsen på undergruppene oppgis ikke. 31 prosent vender seg til AI når de er usikre, flere kvinner (34 prosent) enn menn (27 prosent). 16 prosent foretrekker AI framfor å spørre kolleger eller sjef når de ikke vil forstyrre noen, og 7 prosent for følsomme spørsmål. 17 prosent oppgir at AI har påvirket store organisatoriske beslutninger i noen eller høy grad det siste året. Dette er selvrapporterte svar, ikke målt bruk.</p>
+<p>For Norden: Magnus Wemby, HR-sjef i Advania Sverige, sier at AI er i ferd med å bli en naturlig kollega som senker terskelen for ubehagelige spørsmål, men at arbeidsgivere må være oppmerksomme hvis teknologien erstatter dialogen med sjef og kolleger. Undersøkelsen gjelder bare Sverige, og tilsvarende norske tall er ikke oppgitt. Spørsmålet for svenske arbeidsgivere og fagforeninger er hvordan AI-støttede beslutninger skal dokumenteres og hvilke verktøy som er tillatt, og ingen av kildene oppgir slike retningslinjer.</p>
+<p class="news-card__source">Kilde: <a href="https://computersweden.se/article/4231821/svenskarna-fragar-hellre-ai-an-chefen.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Meta lanserer Muse Wonder – selskapet stiller modellen mot Anthropic og OpenAI</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-13</link>
@@ -879,55 +928,6 @@
 <p>Kuttet inngår i en større runde på til sammen rundt 600 stillinger Microsoft har fjernet i samme periode. Det skjer i en bredere bølge av omorganiseringer i teknologibransjen i 2026, der flere selskaper har skrevet om både produktporteføljer og organisasjonene som er bygget rundt AI-verktøy.</p>
 <p>Hvordan AI omformer arbeidsoppgaver snarere enn bare å erstatte dem, er et kjernespørsmål for det svenske Arbetsmarknadens AI-råd (Arbeidsmarkedets AI-råd), der blant andre fagforeningene Unionen og Akavia og arbeidsgiverorganisasjonen Almega er medlemmer. I sin første felles situasjonsanalyse, fra november 2025, slo rådet fast at AI allerede er en del av hverdagen i tjeneste- og kunnskapsintensive yrker, men at effektene varierer sterkt mellom arbeidsplasser.</p>
 <p class="news-card__source">Kilde: <a href="https://www.geekwire.com/2026/microsoft-cuts-hundreds-more-jobs-shifts-next-halo-game-to-activision-in-xbox-overhaul/">GeekWire</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-22/xbox-cuts-jobs-moves-game-studios-under-activision">Bloomberg</a>, <a href="https://www.ai.se/sv/nyheter/en-arbetsmarknad-i-rorelse-arbetsmarknadens-ai-rad-presenterar-sin-forsta-gemensamma">AI Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norske DNB forbyr KI-briller med kamera på alle sine kontorer</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-norska-storbanken-dnb-forbjuder-ai-glasogon-med-kamera</guid>
-      <pubDate>Thu, 24 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>En av Norges største banker, DNB, forbyr fra nå av at ansatte og besøkende bruker KI-briller i bankens lokaler. Kommunikasjonsdirektør Liselotte Lunde sier banken vil ha en arbeidsplass der ingen skal måtte lure på om kolleger eller kunder blir filmet i smug.</p>
-<p>Forbudet ble besluttet 22. september og gjelder alle DNBs kontorer. Brillene ser ut som vanlige briller, men inneholder kamera, mikrofon og KI-teknologi som kan fange opp sensitiv kundeinformasjon, forretningshemmeligheter og private samtaler uten at noen merker det. ”Vi kan ikke akseptere den risikoen, så vi har satt en klar grense fra i dag”, sier Lunde. Norge mangler i dag lovgivning som spesifikt regulerer KI-briller.</p>
-<p>Beslutningen kommer mens den norske regjeringen vurderer saken. Digitaliserings- og forvaltningsminister Karianne Tung har sagt at hun vurderer et forbud mot ansiktsgjenkjenning i KI-briller, men noen lov er ennå ikke på plass – et hull DNB nå fyller på egen hånd.</p>
-<p class="news-card__source">Kilde: <a href="https://www.digi.no/artikler/dnb-forbyr-ki-briller/577337">digi.no</a>, <a href="https://www.kode24.no/artikkel/dnb-forbyr-ansatte-a-bruke-smartbriller/273153">kode24.no</a>, <a href="https://www.vg.no/nyheter/i/oE8qVa/digitaliseringsminister-karianne-tung-om-smartbriller-vurderer-aa-forby">VG</a></p>]]></description>
-    </item>
-    <item>
-      <title>Meta lanserer sine første kamerafrie KI-briller etter kritikk om skjult filming</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-meta-lanserar-sina-forsta-kamerafria-ai-glasogon-efter</guid>
-      <pubDate>Thu, 24 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Meta presenterte på utviklerkonferansen Connect 23. september sine første kamerafrie KI-briller, Ray-Ban Meta Audio. Brillene har ikke kamera i det hele tatt, men tilbyr musikk, samtaler og simultanoversettelse via KI-assistenten Muse. De koster fra 349 dollar, med forhåndsbestilling fra 13. oktober.</p>
-<p>Konsernsjef Mark Zuckerberg sa at selskapet innså at det kunne skape en helt ny kategori briller bygget rundt lyd i stedet for bilde. Beskjeden kommer etter gjentatt kritikk mot Metas kamerabrukende KI-briller, som er anklaget for å gjøre skjult filming enklere – til tross for en innebygd lampe som skal varsle omgivelsene når kameraet er på. Samme dag viste Meta også en oppdatert kameramodell, Ray-Ban Meta Gen 3, til 449 dollar.</p>
-<p>Kritikken mot kamerabriller er allerede høyaktuell i Norden. Norske DNB forbød denne uken KI-briller på sine kontorer, og digitaliseringsminister Karianne Tung vurderer et forbud mot ansiktsgjenkjenning i KI-briller. Metas kamerafrie modell mangler riktignok kamera, men har fortsatt mikrofon og KI-assistent – to av risikoene DNB selv peker på i sitt forbud.</p>
-<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/">TechCrunch</a>, <a href="https://9to5mac.com/2026/09/23/meta-announces-camera-free-glasses-dedicated-muse-ai-gadget-more/">9to5Mac</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropics KI-modell Claude fant et nytt enzymsystem i virus-DNA</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-anthropics-ai-modell-claude-hittade-ett-nytt-enzymsystem</guid>
-      <pubDate>Thu, 24 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Anthropic meldte 23. september at selskapets KI-modell Claude, med hjelp fra forskere, har funnet et enzymsystem i bakteriofagers DNA som kan klippe, kopiere og lime inn DNA – en funksjon som ligner genteknologien CRISPR.</p>
-<p>Funnet ble gjort i Anthropics biologilab i Bay Area, som ble bygget opp våren 2026 og der alt fysisk labarbeid fortsatt utføres av menneskelige forskere. Ifølge konsernsjef Dario Amodei sto Claude for det meste av arbeidet, som ifølge selskapet tok rundt 21 timer med om lag 950 KI-agenter og 210 millioner token. Amodei understreker at funnet må valideres av det bredere forskersamfunnet. Et lignende system er tidligere funnet av forskere ved Stanford.</p>
-<p>For Norden er KI-drevet biologiforskning allerede et strategisk spørsmål. Anthropic har fra før et samarbeid med danske Novo Nordisk om legemiddelutvikling med Claude, og spørsmålet om hvordan KI-genererte funn skal valideres – det Amodei selv løfter frem – er relevant også for svenske og danske forskningsfinansiører og legemiddelselskaper som satser på KI i biologisk forskning.</p>
-<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/">TechCrunch</a>, <a href="https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/">Engadget</a></p>]]></description>
-    </item>
-    <item>
-      <title>Amerikanske kvanteselskapet IonQ viser sanntids feilkorrigering på vanlig prosessor</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-09-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-24-kvantbolaget-ionq-visar-realtidsfelkorrigering-for-kvantdatorer-pa-vanlig</guid>
-      <pubDate>Thu, 24 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Amerikanske kvanteselskapet IonQ meldte 23. september at de har testet en sanntidsavkoder for kvantefeil som kjører på en vanlig standardprosessor, uten behov for spesialbygget maskinvare. Systemet håndterte simulerte kretser med opptil 408 logiske qubits og over 31,5 millioner kvanteoperasjoner.</p>
-<p>Resultatet skal ifølge selskapet løse et klassisk flaskehalsproblem: vanlige datamaskiner som skal rette kvantefeil i sanntid, blir gjerne overbelastet og tvinger kvantesystemet til å pause. IonQs løsning klarer ifølge selskapet jobben i bakgrunnen med bare 0,02 prosent ekstra beregningsbelastning. Forskningssjef Nicolas Delfosse kaller resultatet ”en viktig milepæl” på veien mot kvantedatamaskiner med tusenvis av qubits, langt flere enn de 256 qubitene IonQs nåværende system har. Aksjen steg rundt 12 prosent på nyheten.</p>
-<p>For Norden er feilkorrigering kjernespørsmålet i kappløpet om en brukbar kvantedatamaskin. Wallenberg-senteret for kvanteteknologi (WACQT) ved Chalmers jobber med samme problem for sine svenske qubits, og finske IQM bygger egne kvantedatamaskiner. USAs energidepartement lyste nylig ut en konkurranse på 215 millioner dollar om nettopp feiltolerante kvantedatamaskiner – et felt der både amerikanske og nordiske forskergrupper nå satser tungt.</p>
-<p class="news-card__source">Kilde: <a href="https://thequantuminsider.com/2026/09/23/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder/">The Quantum Insider</a>, <a href="https://www.cnbc.com/2026/09/23/ionq-shares-rally-after-company-says-it-made-a-major-quantum-computing-breakthrough.html">CNBC</a></p>]]></description>
     </item>
   </channel>
 </rss>
