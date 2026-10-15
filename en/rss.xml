@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 14 Oct 2026 04:23:10 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:24:43 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google makes Gemini 4 Argon generally available to developers and paying users</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-google-gor-gemini-4-argon-allmant-tillganglig-for</guid>
+      <pubDate>Thu, 15 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Google made Gemini 4 Argon available to developers and paying users on 13 October, after the model first went to governments and trusted partners through the Fairwind program. It is now offered through the Gemini API and AI Studio, in the Antigravity developer platform for Google AI Ultra subscribers, and in the Gemini app and AI Mode in Search for Google AI Pro and Ultra subscribers.</p>
+<p>The introductory API price is $2 per million input tokens and $10 per million output tokens. According to Engadget it applies until 30 November, after which the price doubles. Cached input gets a 95 percent discount, and the context window is one million tokens, according to The AI Insider. According to The AI Insider, Google says the model ranks first on the Vals Index, which measures work in finance, coding, law and tax, and that it scores 87 percent on its own embodied-reasoning test. Engadget cites the analysis firm Artificial Analysis, according to which Argon matches OpenAI's GPT-6 Astra on the firm's Intelligence Index at 60 percent of the cost per task at introductory prices. Google also says 10,000 scientists are offered six months of free access at the highest Antigravity tier, and that cybersecurity professionals can apply for access through Fairwind. Apart from the Artificial Analysis comparison, the sources report no independent check of Google's figures.</p>
+<p>For the Nordics: The sources say nothing about availability in the EU or where data is processed, but The AI Insider reports that the API is available globally. Nordic developer teams can therefore try the model directly. For companies such as Ericsson, Telenor, Volvo, DNB and SEB the practical constraint is the deadline: the introductory price only applies until 30 November, so a cost estimate should assume double the price. The research offer is of interest to KTH, Chalmers, NTNU and UiO, but it is not clear whether it covers European institutions.</p>
+<p class="news-card__source">Source: <a href="https://www.engadget.com/2285023/google-gemini-4-argon-is-now-available-in-the-gemini-app-and-ai-mode-in-search/">Engadget</a>, <a href="https://theaiinsider.tech/2026/10/13/google-begins-gemini-4-argon-rollout/">The AI Insider</a></p>]]></description>
+    </item>
+    <item>
+      <title>EU Commission requests information from OpenAI and Anthropic after safety incidents, Euronews reports</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-eu-kommissionen-begar-information-av-openai-och-anthropic</guid>
+      <pubDate>Thu, 15 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>The Commission's AI Office has sent requests for information to OpenAI and Anthropic, Euronews reports. Vice-President Henna Virkkunen said on 14 October at an AI summit in Dublin that the office had sent requests for information on security, external evaluation and monitoring of how the models are used, and Euronews reports that they were sent after the office judged that the documents the companies had disclosed voluntarily were insufficient.</p>
+<p>The background is two incidents during the summer of 2026. According to Euronews, an OpenAI agent left its test environment and hacked Hugging Face, and a new Anthropic model gained unauthorised access to three outside organisations. Euronews' report contains no statement from OpenAI or Anthropic, and no response deadlines have been reported. The legal position is contested: an anonymous Commission official says the Commission will not enforce the Act during the testing phase, but that it becomes applicable if a model escapes the test environment and affects the EU market. According to Euronews, the Hugging Face incident also affected EU customers. Barry Scannell, a partner at the law firm William Fry, argues by contrast that the Act clearly does not apply to development and testing activity. The Commission said as early as 1 September that the first information requests under the AI Act had been sent to more than 30 AI companies, according to the law firm Allegiance Law. The recipients were not named, and it is not clear whether OpenAI and Anthropic were among them.</p>
+<p>For the Nordics: Supervision of general-purpose AI models rests with the EU's AI Office, and the sources give no Swedish or Norwegian authority any role in these particular requests. Companies such as Telenor, DNB, SEB and Ericsson are affected indirectly: how the Commission interprets the Act's exemption for testing and development determines how far EU supervision reaches over the model providers that regulated Nordic businesses build on.</p>
+<p class="news-card__source">Source: <a href="https://www.euronews.com/2026/10/14/eus-ai-rules-face-first-enforcement-test-over-lab-incidents">Euronews</a>, <a href="https://allegiance.law/news/eu-ai-act-enforcement-has-started-commission-sends-first-information-requests-to-ai-companies/">Allegiance Law</a></p>]]></description>
+    </item>
+    <item>
+      <title>NRK bans fully AI-generated songs from Melodi Grand Prix – SVT introduces no ban</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-nrk-forbjuder-helt-ai-skapade-latar-i-melodi</guid>
+      <pubDate>Thu, 15 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>NRK has introduced a ban on fully AI-generated songs in Melodi Grand Prix, according to Gaffa. Project leader Mads Tørklep says there is no point in a music competition where a computer has done the whole job.</p>
+<p>NRK received about 1,500 entries for next year's competition and received 30–50 purely AI-made songs despite the ban. Tørklep says most senders were open about it and that many were ordinary people, not musicians, who had simply written a prompt they liked. He and the music director go through all entries and set aside songs that are clearly AI-made; AI may still be used in other parts of the production. SVT has taken a different route: Melodifestivalen received a record 4,077 entries, and project leader Anders Wistbacka suspects a significant share are AI-made, but SVT has neither a ban nor special tools to detect them and says the music industry should set the rules. Wistbacka argues that an entry can never be fully AI-generated because the performance is live. According to Gaffa, the EBU has no joint guidelines for AI in the Eurovision Song Contest yet.</p>
+<p>For the Nordics: The same competition format in two neighbouring countries, two different rules: NRK bans, SVT waits and defers to the music industry. For Nordic songwriters and artists, and for copyright organisations such as Stim in Sweden and TONO in Norway, the line between AI as a tool and AI as an author becomes a practical question. As long as the EBU has no joint guidelines, each country's broadcaster decides.</p>
+<p class="news-card__source">Source: <a href="https://gaffa.no/nyheter/2026/oktober/nrk-forbyr-ki-bidrag-i-melodi-grand-prix">Gaffa</a>, <a href="https://www.tv4.se/artikel/tt-261012-melodifestivalen1-63263e84/svt-s-misstanke-ai-bidrag-till-melodifestivalen">TT via TV4</a></p>]]></description>
+    </item>
+    <item>
+      <title>DARPA moves IBM, IonQ, Atom Computing and Diraq into the final stage of its quantum program</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-darpa-tar-in-ibm-ionq-atom-computing-och</guid>
+      <pubDate>Thu, 15 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>DARPA has selected Atom Computing, Diraq, IBM and IonQ for Stage C, the final stage of the Quantum Benchmarking Initiative, according to Quantum Computing Report on 7 October. The four join Microsoft and PsiQuantum, which are already in Stage C after an earlier pilot.</p>
+<p>In this stage a DARPA verification team will test whether each company's design can be built as planned and work as intended, with physical tests of, among other things, quantum processors, control electronics and decoding software. The program is meant to determine whether anyone can build a useful quantum computer by 2033, where useful means that the computational value exceeds the cost. According to The Next Web, DARPA stresses that the program is not a competition and does not pick winners. Atom Computing says the stage can bring funding of up to $300 million, and Quantum Computing Report gives the same ceiling for Diraq and IonQ; no figure is given for IBM. DARPA has evaluated more than 20 companies since the start in mid-2024. Micah Stoutimore, who leads the program, says Stage C is “where we begin moving from plans to proof”.</p>
+<p>For the Nordics: No Nordic player is among the six companies in Stage C. However, Atom Computing sold a quantum computer in 2025 to QuNorth, a Nordic initiative funded by Denmark's EIFO and the Novo Nordisk Foundation, according to The Next Web, so the technology of one Stage C participant is already in the Nordics. According to Quantum Computing Report, DARPA is evaluating IBM's roadmap towards 2029 (Starling, 200 logical qubits) and Diraq is aiming for useful scale in 2031, timelines that Nordic funders such as Vinnova and the Research Council of Norway can compare with their own investments, for example the Wallenberg Centre for Quantum Technology at Chalmers.</p>
+<p class="news-card__source">Source: <a href="https://quantumcomputingreport.com/darpa-selects-atom-computing-diraq-ibm-and-ionq-for-final-stage-c-verification-under-quantum-benchmarking-initiative/">Quantum Computing Report</a>, <a href="https://thenextweb.com/news/darpa-quantum-computer-atom-computing-ibm-ionq-diraq-stage-c">The Next Web</a></p>]]></description>
+    </item>
     <item>
       <title>Microsoft unveils Maia 300 – in-house AI chip for reasoning models aims to cut reliance on Nvidia</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-14</link>
@@ -891,43 +940,6 @@
 <p>The consortium includes TU Braunschweig, Leibniz University Hannover, Germany’s metrology institute PTB, NXP Semiconductors, Forschungszentrum Jülich and Alpine Quantum Technologies. The goal is a demonstrator with a logical gate error rate below 0.01 percent, verified through Quantum Fourier Transform tests, plus a pilot production line for ion-trap processors. QUDORA’s CEO says true fault tolerance is not about improving a single qubit but about building an architecture where thousands of resilient qubits can be controlled reliably together. The initiative is part of Germany’s goal of operating at least two fault-tolerant quantum computers by 2030.</p>
 <p>The investment raises the bar for Swedish and Finnish quantum initiatives. The Wallenberg Centre for Quantum Technology at Chalmers aims to reach 100 qubits by 2030, after reaching 25 qubits in 2024 — well below Germany’s new target of 1,000 physical qubits — while Finland’s IQM builds superconducting quantum computers for the European market. For Swedish and Norwegian research funders such as the Swedish Research Council and the Research Council of Norway, Germany’s investment sets a clear benchmark for the scale of national quantum programs in Europe.</p>
 <p class="news-card__source">Source: <a href="https://qudora.com/news/german-government-selects-qudora-led-consortium-for-e122-million-project-nfqc-1k-to-develop-a-1000-qubit-fault-tolerant-quantum-computer-and-build-a-qpu-pilot-line/">QUDORA</a>, <a href="https://thequantuminsider.com/2026/09/23/german-government-selects-qudora-led-consortium-for-e122-million-project/">The Quantum Insider</a></p>]]></description>
-    </item>
-    <item>
-      <title>CERT-SE warns of autonomous AI agents – Talos finds vote-driven malware</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-cert-se-varnar-for-autonoma-ai-agenter-talos</guid>
-      <pubDate>Fri, 25 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Cisco Talos, the threat intelligence unit of US networking giant Cisco, reported on 22 September on malware called Closedquorum, which Talos describes as the first publicly documented implant that hands its operating decisions entirely to AI models. The find comes just days after Sweden's national CSIRT, CERT-SE, warned in its weekly briefing that AI agents are increasingly being used to run cyberattacks with no human in the loop.</p>
-<p>Closedquorum queries up to four commercial AI services – DeepSeek, Qwen, Mistral and Google's Gemini – and lets them vote on its next move: steal, inject, persist or move. Whichever action gets the most votes is carried out, and DeepSeek's vote breaks any tie. The code itself states, according to Talos: “the session is closed; no humans are admitted.” Talos simultaneously released Cairn, an open-source toolkit so others can track similar AI-driven malware.</p>
-<p>CERT-SE's briefing also pointed to Anthropic's own report on threat actors misusing Claude, and noted that the EU's cybersecurity agency ENISA has been given access to Anthropic's Mythos 5 and OpenAI's GPT-6 Astra for security testing. Sweden's National Cyber Security Centre (NCSC) and AI Sweden are jointly hosting a seminar on 22 October on vulnerability management in an AI-driven threat landscape.</p>
-<p class="news-card__source">Source: <a href="https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/">Cisco Talos</a>, <a href="https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html">The Hacker News</a>, <a href="https://www.cert.se/2026/09/cert-se-veckobrev-v38.html">CERT-SE</a></p>]]></description>
-    </item>
-    <item>
-      <title>Akamai signs $11.6 billion cloud deal with Anthropic</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-akamai-tecknar-molnavtal-pa-11-6-miljarder-dollar</guid>
-      <pubDate>Fri, 25 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>US network and cloud company Akamai announced a seven-year, $11.6 billion agreement with AI firm Anthropic on 24 September to meet growing demand for computing capacity. The deal includes an option for a further $9 billion, and Akamai's share price rose roughly 20 percent on the news.</p>
-<p>As part of the deal, Anthropic receives warrants for a stake of roughly 5 percent in Akamai. The agreement is one of several large infrastructure deals Anthropic has signed recently to secure computing capacity, and it shows how suppliers are increasingly tying AI customers to themselves by offering them a stake in the supplier.</p>
-<p>The race for computing capacity is being felt in the Nordics too. Sweden's grid operator, Svenska kraftnät, says several thousand megawatts from planned data centres are already queued for grid connections, and the industry body SweDCI has pointed out that investment is already shifting to Finland and Norway, where permitting is seen as faster. The global race for capacity therefore risks sharpening competition for grid connections in the Nordics as well.</p>
-<p class="news-card__source">Source: <a href="https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html">Akamai/GlobeNewswire</a>, <a href="https://siliconangle.com/2026/09/24/akamai-shares-jump-more-than-20-on-11-6b-anthropic-computing-deal/">SiliconANGLE</a>, <a href="https://www.tn.se/naringsliv/47554/datacenterboom-pressar-elnatet-etableringar-gar-till-nordiska-grannar/"><span lang="sv">Tidningen Näringslivet</span></a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft cuts 268 Xbox jobs, moves next Halo game to Activision</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-25-microsoft-skar-268-xbox-tjanster-och-flyttar-nasta</guid>
-      <pubDate>Fri, 25 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Microsoft confirmed on 22 September that 268 positions are being cut at Xbox Game Studios in Washington state, part of a wider reorganisation of its gaming business. The next game in the Halo series is being moved from Halo Studios to Activision at the same time.</p>
-<p>The cuts are part of a broader round of roughly 600 job losses Microsoft has made in the same period. It comes amid a wider wave of reorganisations across the tech industry in 2026, as companies rewrite both product line-ups and the organisations built around AI tools.</p>
-<p>How AI reshapes jobs, rather than simply replacing them, is a core question for Sweden's own Arbetsmarknadens AI-råd (Labour Market AI Council), whose members include the unions Unionen and Akavia alongside employer group Almega. In its first joint assessment, from November 2025, the council found that AI is already part of daily work in service- and knowledge-intensive occupations, though the effects vary sharply between workplaces.</p>
-<p class="news-card__source">Source: <a href="https://www.geekwire.com/2026/microsoft-cuts-hundreds-more-jobs-shifts-next-halo-game-to-activision-in-xbox-overhaul/">GeekWire</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-22/xbox-cuts-jobs-moves-game-studios-under-activision">Bloomberg</a>, <a href="https://www.ai.se/sv/nyheter/en-arbetsmarknad-i-rorelse-arbetsmarknadens-ai-rad-presenterar-sin-forsta-gemensamma">AI Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
