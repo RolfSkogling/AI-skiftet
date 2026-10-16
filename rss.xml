@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 15 Oct 2026 04:24:43 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 04:22:06 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI stänger GPT-4o och GPT-4.1 i API:et den 14 januari 2027</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-openai-stanger-gpt-4o-och-gpt-4-1</guid>
+      <pubDate>Fri, 16 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI meddelade den 14 oktober att GPT-4o, GPT-4o mini, GPT-4.1 och GPT-4.1 mini tas bort ur API:et den 14 januari 2027. Bolaget pekar utvecklare mot gpt-6-luna som ersättare, och finjusterade versioner följer samma tidtabell som sina basmodeller.</p>
+<p>Enligt daily.dev är varslet ungefär tre månader, trots att OpenAI enligt egen policy ska ge minst sex månaders varsel för allmänt tillgängliga modeller. Självbetjäningsfinjustering upphör den 6 januari 2027. Ett byte av modell-ID räcker inte, skriver samma källa: gpt-6-luna har som standard medelhög resonemangsnivå, funktionsanrop via Chat Completions fungerar bara när reasoning_effort är satt till none, och om resonemang slås på stängs parametrar som temperature och top_p av. Luna kostar 0,10 dollar per miljon indatatokens och 0,50 dollar per miljon utdatatokens med ett kontextfönster på 1,05 miljoner tokens, men över 272 000 indatatokens stiger priset för hela anropet. OpenAI:s dokumentation anger dessutom att den äldre versionen gpt-4o-2024-05-13 och modellen gpt-4.1-nano stängs redan den 23 oktober 2026, enligt ett besked från april.</p>
+<p>För Norden: Källorna säger ingenting om nordiska kunder, så det här är en konsekvensbedömning och inte ett rapporterat faktum. Svenska och norska team som byggt kundtjänst, interna assistenter eller finjusterade modeller på GPT-4o eller GPT-4.1 har knappt tre månader på sig att migrera och testa om. Verksamheter som dokumenterat en bestämd modell i en dataskyddskonsekvensbedömning eller i sitt AI-register inför tillsyn av IMY eller Datatilsynet kan behöva uppdatera den dokumentationen när modellen byts.</p>
+<p class="news-card__source">Källa: <a href="https://developers.openai.com/api/docs/deprecations">OpenAI</a>, <a href="https://daily.dev/posts/openai-promised-developers-six-months-notice-gpt-4o-users-got-three--srbz67kxw">daily.dev</a></p>]]></description>
+    </item>
+    <item>
+      <title>EDPB: Tillverkare av smarta glasögon kan inte lägga ansvaret på bäraren</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-edpb-tillverkare-av-smarta-glasogon-kan-inte-lagga</guid>
+      <pubDate>Fri, 16 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Europeiska dataskyddsstyrelsen EDPB publicerade den 13 oktober ett preliminärt, icke bindande uttalande om smarta glasögon med kamera och mikrofon. Tillverkare och leverantörer av tillhörande AI-tjänster kan enligt styrelsen inte förlita sig på att bäraren informerar människor i närheten för att uppfylla sina egna GDPR-skyldigheter.</p>
+<p>Om bäraren är personuppgiftsansvarig avgörs av användningen: privat bruk kan omfattas av undantaget för personligt bruk, som ska tolkas snävt, medan publicering på ett offentligt konto eller yrkesmässig eller politisk användning gör bäraren personuppgiftsansvarig. Tillverkaren eller AI-leverantören kan vara ansvarig själv eller gemensamt med bäraren, och när leverantören analyserar kamerans bild för att besvara en fråga från bäraren om omgivningen är leverantören personuppgiftsansvarig. EDPB vill se tydliga inspelningsindikatorer som är svåra att stänga av, till exempel lysdioder och ljudsignaler, samt dataminimering, geofencing på känsliga platser och integritetsvänliga standardinställningar som oskärpa på utomståendes identitet. Ordförande Anu Talus säger att människor förtjänar ”tydliga varningar, inte dolda överraskningar”.</p>
+<p>För Norden: Norges regering vill enligt Al Jazeera införa ett tillfälligt förbud mot smarta glasögon på vissa offentliga platser, och Oslo har redan förbjudit kameraglasögon i skolor. Uttalandet pekar ut tillverkarna som ansvariga, medan den norska debatten hittills har handlat om förbud mot platser och försäljning. I Sverige publicerade IMY den 14 oktober en egen nyhet om uttalandet.</p>
+<p class="news-card__source">Källa: <a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">Europrivacy</a>, <a href="https://ppc.land/edpb-says-smart-glasses-makers-cant-rely-on-wearers-to-meet-gdpr-duties/">PPC Land</a>, <a href="https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when">Al Jazeera</a>, <a href="https://www.imy.se/nyheter/">IMY</a></p>]]></description>
+    </item>
+    <item>
+      <title>Konverteringen av datacentret i Mo i Rana till AI-anläggning har startat</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-konverteringen-av-datacentret-i-mo-i-rana-till</guid>
+      <pubDate>Fri, 16 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Det börsnoterade bolaget VivoPower meddelade den 12 oktober att bygget har startat för att konvertera datacentret i Mo i Rana i norra Norge till en AI-anläggning med 40 megawatt i första fasen. Bolaget köpte den fungerande anläggningen den 21 april 2026.</p>
+<p>Enligt Bebeez, som anger kapaciteten till 42 megawatt, köpte VivoPower anläggningen av Cowa och den byggdes 2018 av Bitfury som kryptovalutagruva. VivoPower har valt en icke namngiven hyresgäst, som bolaget kallar en ”global AI industry leader”, som föredragen hyresgäst, men hyresavtalen är inte klara. Entreprenaden för mekanik och el ska enligt bolaget tilldelas inom kort, någon tidpunkt för driftstart anges inte, och 30 megawatt av den befintliga anläggningen är anmäld till nätbalanseringstjänster. Bolaget utreder om spillvärmen kan återanvändas, men inga avtal finns. Investeringens storlek och kraftkällan redovisas inte, och uppgifterna kommer i huvudsak från bolagets eget pressmeddelande.</p>
+<p>För Norden: Entreprenörerna är norska, Øijord &amp; Aanes Entreprenørforretning för markarbeten, TH Blikk och IMTAS, medan bolaget är noterat på Nasdaq och hyresgästen är okänd. Konverteringen sker medan datacenterfrågan är het i Norge: NVE räknar med att norska datacenter mer än fördubblar sin elförbrukning till 2030, enligt en tidigare notis här. Hur anläggningen påverkar elnätet i Nordland framgår inte av källorna.</p>
+<p class="news-card__source">Källa: <a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">GlobeNewswire (VivoPower)</a>, <a href="https://bebeez.eu/2026/10/13/vivopower-starts-construction-at-42mw-mo-i-rana-data-center-in-norway/">Bebeez</a></p>]]></description>
+    </item>
+    <item>
+      <title>Åtta amerikanska delstater stämmer OpenAI – ChatGPT anklagas för att skada barn och unga</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-atta-amerikanska-delstater-stammer-openai-chatgpt-anklagas-for</guid>
+      <pubDate>Fri, 16 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Åtta amerikanska delstater lämnade den 14 oktober in stämningar mot OpenAI och hävdar att ChatGPT marknadsförts som säker trots att tjänsten är utformad för att bekräfta användare och efterlikna känslomässig kontakt. Florida var först med en stämning, i juni.</p>
+<p>Delstaterna är Iowa, Kansas, Arizona, Arkansas, Idaho, Montana, Nebraska och West Virginia, och stämningarna lämnades enligt Quartz in vid delstatsdomstolar. Quartz uppger också att Arkansas justitiedepartement räknar upp Utah, vilket skulle ge nio. Enligt Al Jazeera och Quartz hävdar de att ChatGPT förstärker vanföreställningar, uppmuntrar farligt beteende och har hjälpt användare att planera våld, och att OpenAI därmed brutit mot konsumentskyddslagar. Arkansas yrkar enligt Quartz bland annat på återbetalning, civilrättsliga viten, tydlig riskinformation och ett förbud mot vidare testning av avancerad AI och utveckling av modeller som kan förbättra sig själva rekursivt tills tillräckliga skyddsåtgärder finns. OpenAI:s talesperson Drew Pusateri säger att bolaget har skydd för yngre användare som många andra AI-produkter saknar, nämner föräldrakontroller och pauspåminnelser, och medger att ingen lösning kan vara perfekt. Anklagelserna är delstaternas påståenden och inte prövade i domstol.</p>
+<p>För Norden: Källorna nämner inga nordiska åtgärder. I EU pågår ett separat spår: EU-kommissionens AI-kontor har enligt gårdagens notis här begärt information av OpenAI och Anthropic efter säkerhetsincidenter. Vilka nordiska myndigheter, till exempel IMY, Datatilsynet eller konsumentmyndigheterna, som kan agera mot chattbotar och barn framgår inte av källorna.</p>
+<p class="news-card__source">Källa: <a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera</a>, <a href="https://qz.com/states-sue-openai-chatgpt-child-safety-101526">Quartz</a></p>]]></description>
+    </item>
     <item>
       <title>Google gör Gemini 4 Argon allmänt tillgänglig för utvecklare och betalande användare</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-15</link>
@@ -891,55 +940,6 @@
 <p>Trots produktionsökningen kvarstår grundproblemet: robotarna generaliserar inte mellan uppgifter, och det tar enligt uppgift flera dagar för Optimus att lära sig även enkla moment. De flesta robotar som satts i drift hålls fortfarande inom avgränsade, övervakade områden och utför bara specifika, förprogrammerade uppgifter. Handen och underarmen innehåller över 100 skruvar och smådelar som fortfarande måste monteras för hand, och kvalitetsproblem hos externa leverantörer av motorer och precisionsväxlar är en utmaning vid större volymer.</p>
 <p>För Norden är utvecklingen relevant för robotikbolag som ABB Robotics och danska Universal Robots, samt det norskgrundade humanoidbolaget 1X Technologies – bolag där generalisering mellan olika arbetsuppgifter är en central utmaning även för deras egna robotar. Frågan är vem som löser handproblematiken i stor skala först.</p>
 <p class="news-card__source">Källa: <a href="https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/">Electrek</a>, <a href="https://www.analyticsinsight.net/news/tesla-optimus-production-hits-hundreds-weekly-hands-remain-challenge">Analytics Insight</a></p>]]></description>
-    </item>
-    <item>
-      <title>SSB: AI-användningen ökar allt snabbare i norskt näringsliv och i norska hem</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-26-ssb-ai-anvandningen-okar-allt-snabbare-i-norskt</guid>
-      <pubDate>Sat, 26 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Statistiska centralbyrån i Norge, SSB, rapporterar kraftigt ökad AI-användning både bland företag och privatpersoner. Nästan hälften av alla norska företag med minst tio anställda använder nu AI-teknik, en ökning från tre av tio förra året. Samtidigt uppger 69 procent av norrmän mellan 16 och 79 år att de använt generativ AI det senaste kvartalet, upp från 54 procent förra året.</p>
-<p>Tillväxttakten har fördubblats jämfört med den årliga ökningen på cirka tio procentenheter 2023–2025, säger SSB:s sektionschef Erik Fjærli. Stora företag med minst 100 anställda ligger i topp med åtta av tio användare, medan mindre företag med 10–19 anställda ligger på fyra av tio – en klyfta som växer. Bland privatpersoner är ökningen som starkast i de äldsta åldersgrupperna: användningen bland 75–79-åringar steg med 23 procentenheter, och könsskillnaden har krympt från tolv till fem procentenheter sedan 2024. Enligt Eurostat hade Norge redan 2025 den högsta andelen användare av generativ AI bland de europeiska länder som jämförelsen omfattar.</p>
-<p>För Norden är siffrorna en tydlig signal om hur snabbt AI normaliseras i arbetslivet och vardagen. Nio av tio norrmän mellan 16 och 24 år använder redan generativ AI, vilket kan sätta press på svenska och danska myndigheter och arbetsgivare att följa efter med kompetenssatsningar och riktlinjer. Siffrorna blir en tydlig jämförelsepunkt när svenska SCB och Danmarks Statistik så småningom publicerar motsvarande statistik för Sverige och Danmark.</p>
-<p class="news-card__source">Källa: <a href="https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-naeringslivet/artikler/bruken-av-ki-i-naeringslivet-akselererer">SSB (näringsliv)</a>, <a href="https://www.ssb.no/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-husholdningene/artikler/kunstig-intelligens-i-nesten-alle-hjem">SSB (hushåll)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft slår ihop Copilot till en företagsprodukt – lämnar kapplöpningen om konsumenterna</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-26-microsoft-slar-ihop-copilot-till-en-foretagsprodukt-lamnar</guid>
-      <pubDate>Sat, 26 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Microsoft slår ihop sina konsument- och företagsversioner av AI-assistenten Copilot till en enda produkt riktad mot företagskunder. Enligt Bloomberg är omläggningen resultatet av sex månaders utvecklingsarbete och innebär att Microsoft i praktiken lämnar kapplöpningen om vanliga AI-chattanvändare.</p>
-<p>Enligt Bloomberg är bakgrunden att den fristående konsumentmarknaden visat sig alltför konkurrensutsatt – ChatGPT har passerat en miljard användare och Googles Gemini är brett utrullat på Android-telefoner. Den nya, sammanslagna Copilot får dokumentredigering direkt i Word och Excel, en kodningsassistent och en omdöpt agentfunktion (tidigare Scout, nu Autopilot). Microsoft har redan omkring 30 miljoner Copilot-prenumerationer och cirka 90 miljoner betalande användare av Microsoft 365; utrullningen av den nya versionen inleds inom några veckor.</p>
-<p>För Norden – där både privata företag och offentliga myndigheter redan använder Microsoft 365 – innebär sammanslagningen att den AI-assistent många anställda vant sig vid nu byggs om i grunden. Nordiska IT-avdelningar kan använda omläggningen som tillfälle att jämföra Copilot med Googles Gemini för Workspace och europeiska AI-alternativ, mot bakgrund av EU:s pågående debatt om digital suveränitet.</p>
-<p class="news-card__source">Källa: <a href="https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot">Bloomberg</a>, <a href="https://finance.yahoo.com/technology/ai/articles/microsoft-unveils-unified-copilot-cedes-130416272.html">Yahoo Finance</a></p>]]></description>
-    </item>
-    <item>
-      <title>Trump-administrationen vill att OpenAI och Anthropic håller inne nya AI-modeller från brittiskt AI-säkerhetsinstitut</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-26-trump-administrationen-vill-att-openai-och-anthropic-haller</guid>
-      <pubDate>Sat, 26 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Enligt Bloomberg har Trump-administrationen bett OpenAI och Anthropic att inte lämna ut nya AI-modeller till brittiska AI Security Institute (AISI) utan att USA först godkänt det. Kravet riskerar att undergräva vad Bloomberg beskriver som ett av världens mest välfinansierade statliga AI-säkerhetsorgan.</p>
-<p>Enligt källor som Bloomberg talat med vill Washington säkerställa att amerikanska modeller är säkra innan de delas med allierade som Storbritannien. Den brittiska regeringen svarar att landet fortsätter samarbeta nära med USA och beskriver sig som världsledande inom AI-säkerhet, medan Trump själv har avfärdat global AI-reglering som ett ”globalistiskt projekt”. Bakgrunden är att Storbritanniens premiärminister Andy Burnham nyligen positionerat landet som en ”ärlig mäklare” i AI-utvecklingen inför FN:s generalförsamling.</p>
-<p>För Norden är striden en påminnelse om att internationellt AI-säkerhetssamarbete är politiskt känsligt även mellan allierade. Blir det svårare för brittiska AISI att få tillgång till nya amerikanska modeller kan det på sikt påverka hela det internationella nätverk av AI-säkerhetsorgan som även nordiska aktörer följer. Inom EU har AI-kontoret redan, genom AI-förordningen, egna befogenheter att utvärdera de mest kraftfulla AI-modellerna som säljs i unionen – en granskningsrätt som svenska IMY och Vinnova förhåller sig till, och som striden med Storbritannien nu kan sätta ytterligare fokus på.</p>
-<p class="news-card__source">Källa: <a href="https://www.bloomberg.com/news/articles/2026-09-25/trump-tells-openai-anthropic-to-withhold-models-from-uk-agency">Bloomberg</a>, <a href="https://www.business-standard.com/world-news/donald-trump-tells-openai-anthropic-to-withhold-models-from-uk-agency-126092501029_1.html">Business Standard</a></p>]]></description>
-    </item>
-    <item>
-      <title>Tyskland satsar 122 miljoner euro på kvantdator med 1 000 fysiska qubit</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-26-tyskland-satsar-122-miljoner-euro-pa-kvantdator-med</guid>
-      <pubDate>Sat, 26 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Tyska forskningsministeriet har valt ut ett konsortium lett av företaget Qudora för att bygga en felkorrigerad, jonfällebaserad kvantdator med minst 1 000 fysiska qubit och 50 logiska qubit. Projektet, kallat NFQC-1k, får 122 miljoner euro fördelade på fem år.</p>
-<p>Konsortiet består bland annat av TU Braunschweig, Leibniz Universität Hannover, tyska metrologimyndigheten PTB, NXP Semiconductors, Forschungszentrum Jülich och Alpine Quantum Technologies. Målet är en demonstrator med en logisk felfrekvens under 0,01 procent, verifierad genom kvant-Fouriertransform-tester, samt en pilotlinje för tillverkning av jonfälleprocessorer. Qudoras vd säger att verklig feltolerans inte handlar om att förbättra en enskild qubit utan om att bygga en arkitektur där tusentals motståndskraftiga qubit kan styras tillförlitligt tillsammans. Satsningen är en del av Tysklands mål att ha minst två feltoleranta kvantdatorer i drift senast 2030.</p>
-<p>Satsningen höjer ribban för svenska och finska kvantinitiativ. Wallenberg Centre for Quantum Technology vid Chalmers har som mål att nå 100 qubit till 2030, efter att ha nått 25 qubit 2024 – en bra bit under Tysklands nya målsättning på 1 000 fysiska qubit – medan finska IQM bygger supraledande kvantdatorer för den europeiska marknaden. För svenska och norska forskningsfinansiärer som Vetenskapsrådet och Forskningsrådet blir den tyska satsningen ett tydligt riktmärke för nivån på nationella kvantprogram i Europa.</p>
-<p class="news-card__source">Källa: <a href="https://qudora.com/news/german-government-selects-qudora-led-consortium-for-e122-million-project-nfqc-1k-to-develop-a-1000-qubit-fault-tolerant-quantum-computer-and-build-a-qpu-pilot-line/">QUDORA</a>, <a href="https://thequantuminsider.com/2026/09/23/german-government-selects-qudora-led-consortium-for-e122-million-project/">The Quantum Insider</a></p>]]></description>
     </item>
   </channel>
 </rss>
