@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-10-15"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">15 oktober 2026</span></time>
+        <time datetime="2026-10-16"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">16 oktober 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,65 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-10-16" data-date="2026-10-16">
+        <p class="day__label news-date">16 oktober 2026</p>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://developers.openai.com/api/docs/deprecations">OpenAI stänger GPT-4o och GPT-4.1 i API:et den 14 januari 2027</a></h3>
+        <p class="item__ingress">OpenAI meddelade den 14 oktober att GPT-4o, GPT-4o mini, GPT-4.1 och GPT-4.1 mini tas bort ur API:et den 14 januari 2027.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>OpenAI meddelade den 14 oktober att GPT-4o, GPT-4o mini, GPT-4.1 och GPT-4.1 mini tas bort ur API:et den 14 januari 2027. Bolaget pekar utvecklare mot gpt-6-luna som ersättare, och finjusterade versioner följer samma tidtabell som sina basmodeller.</p>
+          <p>Enligt daily.dev är varslet ungefär tre månader, trots att OpenAI enligt egen policy ska ge minst sex månaders varsel för allmänt tillgängliga modeller. Självbetjäningsfinjustering upphör den 6 januari 2027. Ett byte av modell-ID räcker inte, skriver samma källa: gpt-6-luna har som standard medelhög resonemangsnivå, funktionsanrop via Chat Completions fungerar bara när reasoning_effort är satt till none, och om resonemang slås på stängs parametrar som temperature och top_p av. Luna kostar 0,10 dollar per miljon indatatokens och 0,50 dollar per miljon utdatatokens med ett kontextfönster på 1,05 miljoner tokens, men över 272&nbsp;000 indatatokens stiger priset för hela anropet. OpenAI:s dokumentation anger dessutom att den äldre versionen gpt-4o-2024-05-13 och modellen gpt-4.1-nano stängs redan den 23 oktober 2026, enligt ett besked från april.</p>
+          <p>För Norden: Källorna säger ingenting om nordiska kunder, så det här är en konsekvensbedömning och inte ett rapporterat faktum. Svenska och norska team som byggt kundtjänst, interna assistenter eller finjusterade modeller på GPT-4o eller GPT-4.1 har knappt tre månader på sig att migrera och testa om. Verksamheter som dokumenterat en bestämd modell i en dataskyddskonsekvensbedömning eller i sitt AI-register inför tillsyn av IMY eller Datatilsynet kan behöva uppdatera den dokumentationen när modellen byts.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://developers.openai.com/api/docs/deprecations">OpenAI</a>, <a href="https://daily.dev/posts/openai-promised-developers-six-months-notice-gpt-4o-users-got-three--srbz67kxw">daily.dev</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="reglering">
+        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
+        <h3><a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">EDPB: Tillverkare av smarta glasögon kan inte lägga ansvaret på bäraren</a></h3>
+        <p class="item__ingress">Europeiska dataskyddsstyrelsen EDPB publicerade den 13 oktober ett preliminärt, icke bindande uttalande om smarta glasögon med kamera och mikrofon.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Europeiska dataskyddsstyrelsen EDPB publicerade den 13 oktober ett preliminärt, icke bindande uttalande om smarta glasögon med kamera och mikrofon. Tillverkare och leverantörer av tillhörande AI-tjänster kan enligt styrelsen inte förlita sig på att bäraren informerar människor i närheten för att uppfylla sina egna GDPR-skyldigheter.</p>
+          <p>Om bäraren är personuppgiftsansvarig avgörs av användningen: privat bruk kan omfattas av undantaget för personligt bruk, som ska tolkas snävt, medan publicering på ett offentligt konto eller yrkesmässig eller politisk användning gör bäraren personuppgiftsansvarig. Tillverkaren eller AI-leverantören kan vara ansvarig själv eller gemensamt med bäraren, och när leverantören analyserar kamerans bild för att besvara en fråga från bäraren om omgivningen är leverantören personuppgiftsansvarig. EDPB vill se tydliga inspelningsindikatorer som är svåra att stänga av, till exempel lysdioder och ljudsignaler, samt dataminimering, geofencing på känsliga platser och integritetsvänliga standardinställningar som oskärpa på utomståendes identitet. Ordförande Anu Talus säger att människor förtjänar ”tydliga varningar, inte dolda överraskningar”.</p>
+          <p>För Norden: Norges regering vill enligt Al Jazeera införa ett tillfälligt förbud mot smarta glasögon på vissa offentliga platser, och Oslo har redan förbjudit kameraglasögon i skolor. Uttalandet pekar ut tillverkarna som ansvariga, medan den norska debatten hittills har handlat om förbud mot platser och försäljning. I Sverige publicerade IMY den 14 oktober en egen nyhet om uttalandet.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">Europrivacy</a>, <a href="https://ppc.land/edpb-says-smart-glasses-makers-cant-rely-on-wearers-to-meet-gdpr-duties/">PPC Land</a>, <a href="https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when">Al Jazeera</a>, <a href="https://www.imy.se/nyheter/">IMY</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="infrastruktur norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--infrastruktur news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">Konverteringen av datacentret i Mo i Rana till AI-anläggning har startat</a></h3>
+        <p class="item__ingress">Det börsnoterade bolaget VivoPower meddelade den 12 oktober att bygget har startat för att konvertera datacentret i Mo i Rana i norra Norge till en AI-anläggning med 40 megawatt i första fasen.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Det börsnoterade bolaget VivoPower meddelade den 12 oktober att bygget har startat för att konvertera datacentret i Mo i Rana i norra Norge till en AI-anläggning med 40 megawatt i första fasen. Bolaget köpte den fungerande anläggningen den 21 april 2026.</p>
+          <p>Enligt Bebeez, som anger kapaciteten till 42 megawatt, köpte VivoPower anläggningen av Cowa och den byggdes 2018 av Bitfury som kryptovalutagruva. VivoPower har valt en icke namngiven hyresgäst, som bolaget kallar en &rdquo;global AI industry leader&rdquo;, som föredragen hyresgäst, men hyresavtalen är inte klara. Entreprenaden för mekanik och el ska enligt bolaget tilldelas inom kort, någon tidpunkt för driftstart anges inte, och 30 megawatt av den befintliga anläggningen är anmäld till nätbalanseringstjänster. Bolaget utreder om spillvärmen kan återanvändas, men inga avtal finns. Investeringens storlek och kraftkällan redovisas inte, och uppgifterna kommer i huvudsak från bolagets eget pressmeddelande.</p>
+          <p>För Norden: Entreprenörerna är norska, Øijord &amp; Aanes Entreprenørforretning för markarbeten, TH Blikk och IMTAS, medan bolaget är noterat på Nasdaq och hyresgästen är okänd. Konverteringen sker medan datacenterfrågan är het i Norge: NVE räknar med att norska datacenter mer än fördubblar sin elförbrukning till 2030, enligt en tidigare notis här. Hur anläggningen påverkar elnätet i Nordland framgår inte av källorna.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">GlobeNewswire (VivoPower)</a>, <a href="https://bebeez.eu/2026/10/13/vivopower-starts-construction-at-42mw-mo-i-rana-data-center-in-norway/">Bebeez</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="debatt">
+        <div class="item__tags news-card__tags"><span class="tag tag--debatt news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Åtta amerikanska delstater stämmer OpenAI &ndash; ChatGPT anklagas för att skada barn och unga</a></h3>
+        <p class="item__ingress">Åtta amerikanska delstater lämnade den 14 oktober in stämningar mot OpenAI och hävdar att ChatGPT marknadsförts som säker trots att tjänsten är utformad för att bekräfta användare och efterlikna känslomässig kontakt.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Åtta amerikanska delstater lämnade den 14 oktober in stämningar mot OpenAI och hävdar att ChatGPT marknadsförts som säker trots att tjänsten är utformad för att bekräfta användare och efterlikna känslomässig kontakt. Florida var först med en stämning, i juni.</p>
+          <p>Delstaterna är Iowa, Kansas, Arizona, Arkansas, Idaho, Montana, Nebraska och West Virginia, och stämningarna lämnades enligt Quartz in vid delstatsdomstolar. Quartz uppger också att Arkansas justitiedepartement räknar upp Utah, vilket skulle ge nio. Enligt Al Jazeera och Quartz hävdar de att ChatGPT förstärker vanföreställningar, uppmuntrar farligt beteende och har hjälpt användare att planera våld, och att OpenAI därmed brutit mot konsumentskyddslagar. Arkansas yrkar enligt Quartz bland annat på återbetalning, civilrättsliga viten, tydlig riskinformation och ett förbud mot vidare testning av avancerad AI och utveckling av modeller som kan förbättra sig själva rekursivt tills tillräckliga skyddsåtgärder finns. OpenAI:s talesperson Drew Pusateri säger att bolaget har skydd för yngre användare som många andra AI-produkter saknar, nämner föräldrakontroller och pauspåminnelser, och medger att ingen lösning kan vara perfekt. Anklagelserna är delstaternas påståenden och inte prövade i domstol.</p>
+          <p>För Norden: Källorna nämner inga nordiska åtgärder. I EU pågår ett separat spår: EU-kommissionens AI-kontor har enligt gårdagens notis här begärt information av OpenAI och Anthropic efter säkerhetsincidenter. Vilka nordiska myndigheter, till exempel IMY, Datatilsynet eller konsumentmyndigheterna, som kan agera mot chattbotar och barn framgår inte av källorna.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera</a>, <a href="https://qz.com/states-sue-openai-chatgpt-child-safety-101526">Quartz</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-10-15" data-date="2026-10-15">
         <p class="day__label news-date">15 oktober 2026</p>
       <article class="item news-card" data-tags="modeller">
@@ -640,51 +699,6 @@ details.menu[open]>summary{color:var(--accent)}
           <p>Systemet testades inom systembiologi på jäst, Saccharomyces cerevisiae, och fick omfattande information om organismens genom, ämnesomsättning och tidigare forskning som kunskapsbas. Det bygger på stora språkmodeller och automatiserat resonemang, kopplade till en laboratoriedel där labbresultaten styr nästa experiment. Arbetet bygger vidare på Ross Kings tidigare robotforskare Adam och Eve, och studien, Agentic AI integrated with scientific knowledge: laboratory validation in systems biology, är publicerad i Journal of the Royal Society Interface. Forskarna betonar att systemet inte ska ersätta människor: Ross King säger att människor fortfarande avgör forskningens prioriteringar, tolkar den bredare vetenskapliga betydelsen och säkerställer den etiska tillsynen. Chalmers redovisar inte hur många hypoteser som genererats eller bekräftats.</p>
           <p>För Norden: arbetet finansieras av Wallenbergprogrammet WASP, brittiska EPSRC, Chalmers AI Research Centre (CHAIR) och Formas, och är ett exempel på svensk AI-forskning som rör sig från beslutsstöd mot system som själva producerar kunskap. När ett system föreslår och utför experiment är frågan för lärosäten som Chalmers, Göteborgs universitet, KTH och Karolinska institutet hur resultat ska granskas och krediteras, och hur mycket labbarbete inom svensk bioteknik och läkemedelsforskning som en sådan loop på sikt kan ta över.</p>
           <p class="item__source news-card__source">Källa: <a href="https://www.chalmers.se/en/current/news/ai-scientist-autonomously-generates-and-validates-new-biological-discoveries/">Chalmers</a>, <a href="https://evertiq.se/news/2026-10-01-chalmers-ai-robot-kan-forska-helt-sjalv">Evertiq</a></p>
-          </div>
-        </details>
-      </article>
-      </div>
-      <div class="day news-date-group" id="dag-2026-10-09" data-date="2026-10-09">
-        <p class="day__label news-date">9 oktober 2026</p>
-      <article class="item news-card" data-tags="modeller">
-        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/">OpenAI lanserar GPT-6 med Intelligent UI &ndash; ChatGPT svarar med knappar, diagram och kalkylatorer</a></h3>
-        <p class="item__ingress">OpenAI började den 7 oktober rulla ut Intelligent UI i ChatGPT i samband med en ny GPT-6-modell.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>OpenAI började den 7 oktober rulla ut Intelligent UI i ChatGPT i samband med en ny GPT-6-modell. Funktionen låter ChatGPT visa delar av svaren som interaktiva element, till exempel tryckbara knappar, uppgiftsanpassade kalkylatorer samt redigerbara diagram och grafer. Användare med Plus, Pro, Business och Enterprise fick tillgång den 7 oktober, och användare av gratisversionen och Go-nivån följde den 8 oktober.</p>
-          <p>Enligt OpenAI:s interna tester, som TechStartups återger, börjar GPT-6 Instant svara på webbsökningsfrågor i genomsnitt 44 procent tidigare än GPT-5.6 Instant. Måttet gäller när svaret börjar visas, inte när det är klart. GPT-6 Extra High börjar svara ungefär lika snabbt som GPT-5.6 Medium. Enligt TechStartups får betalnivåerna GPT-6 Sol och gratisnivåerna GPT-6 Luna, och ändringen gäller bara chattupplevelsen, inte modellerna i Work och Codex. OpenAI medger att Intelligent UI fortfarande är under utveckling, särskilt i hur systemet väljer layout och interaktiva element, och ChatGPT har enligt TechStartups över 1,2 miljarder veckoanvändare. Hastighetssiffrorna kommer från OpenAI; oberoende mätningar saknas.</p>
-          <p>För Norden: i Enterprise-versionen styr arbetsplatsens administratörer enligt TechStartups åtkomsten, så det är nordiska bolag och myndigheter som själva avgör om funktionen slås på. För organisationer under GDPR, som banker som SEB och DNB och offentlig sektor, är det en öppen fråga om interaktiva element som genereras i samtalet påverkar vilka uppgifter som lämnar organisationen. OpenAI har inte uttalat sig om det i de källor vi granskat, och någon bedömning från IMY eller Datatilsynet har vi inte funnit.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/">TechCrunch</a>, <a href="https://techstartups.com/2026/10/07/openai-launches-gpt-6-with-intelligent-ui-turning-chatgpt-into-an-interactive-visual-experience/">TechStartups</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="arbetsmarknad norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--arbetsmarknad news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
-        <h3><a href="https://www.ir.dnb.no/press-and-reports/press-releases/dnb-making-organisational-changes-technology-services-2485833">DNB drar ned cirka 400 årsverk i teknikdivisionen &ndash; och anger själv AI som drivkraft</a></h3>
-        <p class="item__ingress">DNB meddelade den 6 oktober klockan 09.00 i ett börsmeddelande att bemanningen i divisionen Technology &amp; Services minskar med cirka 400 årsverk.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>DNB meddelade den 6 oktober klockan 09.00 i ett börsmeddelande att bemanningen i divisionen Technology &amp; Services minskar med cirka 400 årsverk. Banken anger själv att agentisk AI har införts i flera delar av verksamheten och att AI-agenter kan ge betydande effektiviseringsvinster, med kontroll av kunddata, KYC-arbete samt teknologiutveckling och kodning som exempel. Det är bankens egen formulering, inte en tolkning utifrån. Koncernchef Kjerstin Braathen säger att AI förändrar hur banken arbetar och hur den levererar tjänster till kunderna.</p>
-          <p>Talet gäller årsverk, inte anställda, och bara Technology &amp; Services, inte hela banken. Koncernen hade vid utgången av 2025 enligt årsrapporten 10&nbsp;603 årsverk och 11&nbsp;649 anställda, så 400 årsverk är knappt 4 procent av årsverken. Nedbemanningen ska vara genomförd under fjärde kvartalet 2026, medan full kostnadseffekt syns i räkenskaperna först från andra kvartalet 2027; någon kostnadssiffra är inte offentliggjord. DNB har inte redovisat någon kvantifierad AI-vinst och inte brutit ned årsverken per funktion, så hur stor del av neddragningen AI förklarar är oredovisat. AI är dessutom en av flera motiveringar, men banken anger också bättre kundupplevelser, ökad effektivitet och kundernas framtida behov. Om det blir uppsägningar eller frivilliga lösningar har banken inte fastställt; processen ska ske enligt gällande regler och i nära dialog med de förtroendevalda. Finansforbundets vice ordförande Arne Fredrik Håstein kritiserar tempot i E24: han varnar för att göra AI till en naturlag som automatiskt betyder färre anställda, och menar att alla möjligheter för medarbetarna måste prövas innan någon sägs upp.</p>
-          <p>För Norden: tidsföljden är skarp. Den 2 oktober tecknade den norska regeringen och arbetslivets parter ett avtal om ansvarsfull AI i arbetslivet, och fyra dagar senare meddelade DNB att 400 årsverk dras ned med AI som angiven drivkraft. Om avtalet är avsett att täcka ett fall som detta är en öppen fråga, och att händelserna följer på varandra i tid är inte detsamma som ett orsakssamband. För Sverige blir DNB-beskedet en referenspunkt som SEB, Nordea och Finansförbundet kan jämföra med. EU:s AI-förordning reglerar AI-system och deras användning, inte enskilda bemanningsbeslut.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.ir.dnb.no/press-and-reports/press-releases/dnb-making-organisational-changes-technology-services-2485833">DNB</a>, <a href="https://e24.no/boers-og-finans/i/kv325L/kritisk-til-dnbs-ai-kutt-vi-maa-passe-oss">E24</a>, <a href="https://www.regjeringen.no/no/aktuelt/regjeringa-og-partane-i-arbeidslivet-inngar-ki-avtale/id3173698/">Norska regeringen</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="hardvara">
-        <div class="item__tags news-card__tags"><span class="tag tag--hardvara news-card__tag news-card__tag--hardvara">Hårdvara</span></div>
-        <h3><a href="https://pr.cld.tsmc.com/english/news/3343">TSMC:s septemberintäkter upp 54,6 procent &ndash; men något under augusti</a></h3>
-        <p class="item__ingress">TSMC redovisade den 8 oktober konsoliderade intäkter på cirka 511,86 miljarder taiwanesiska dollar för september 2026. Det är 54,6 procent mer än i september 2025 men 0,6 procent mindre än i augusti.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>TSMC redovisade den 8 oktober konsoliderade intäkter på cirka 511,86 miljarder taiwanesiska dollar för september 2026. Det är 54,6 procent mer än i september 2025 men 0,6 procent mindre än i augusti. Under årets nio första månader uppgick intäkterna till cirka 3&nbsp;898,7 miljarder taiwanesiska dollar, en ökning på 41,1 procent jämfört med samma period 2025.</p>
-          <p>Augusti låg på 514,81 miljarder taiwanesiska dollar, så septembertalet är en marginell nedgång månad för månad. Intäktsrapporten bryter inte ut hur stor del som kommer från AI-chip, så kopplingen till AI-efterfrågan är branschpressens tolkning och inte något TSMC redovisar i den månatliga rapporten. Månadstal är dessutom en grov indikator: intäkterna påverkas av leveranstidpunkter och växelkurser, och kvartalsrapporten ger en fullständigare bild.</p>
-          <p>För Norden: de nordiska datacenterbyggena vilar på samma tillverkningskedja. Stargate Norway i Kvandal utanför Narvik, som ska ägas av ett samriskbolag mellan Nscale och Aker, är ett exempel på en investering där tillgången på AI-chip påverkar hur snabbt kapaciteten kan tas i drift; Nvidias chip tillverkas enligt allmänna uppgifter till stor del av TSMC. Ett fortsatt högt TSMC-tal säger inget om just nordiska leveranstider, men det visar att efterfrågan på tillverkningen inte har avtagit.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://pr.cld.tsmc.com/english/news/3343">TSMC (september)</a>, <a href="https://pr.tsmc.com/english/news/3340">TSMC (augusti)</a></p>
           </div>
         </details>
       </article>
