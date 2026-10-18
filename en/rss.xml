@@ -7,8 +7,70 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 17 Oct 2026 04:22:10 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 04:18:11 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>DeepSeek updates V4.1-Flash and opens a search API at $0.75 per thousand calls</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-deepseek-uppdaterar-v4-1-flash-och-oppnar-sok</guid>
+      <pubDate>Sun, 18 Oct 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>DeepSeek released V4.1-Flash-1017 on October 17, a new post-training version of V4.1-Flash available in the company's app, on the web and through its API, where it is called deepseek-flash. The model is a mixture-of-experts system with a one-million-token context window, and the company is opening search and fetch APIs at $0.75 per thousand successful requests.</p>
+<p>By DeepSeek's own figures, 1017 beats the earlier version on all reported benchmarks, by 2.0 to 11.1 points, and scores 77.0 on DeepSWE against 74.0 for Claude Opus 5. Opus 5 still leads on, among others, Terminal-Bench 4.0 (51.8 vs. 42.3) and HLE without tools (56.3 vs. 42.6). The figures come from the company itself and are not independently verified, and the sources differ on whether the weights for the 1017 version specifically are open – the weights for the September version are MIT-licensed.</p>
+<p>For the Nordics: The sources say nothing about Nordic users, so this is an assessment of consequences, not a reported fact. Low prices and long context may appeal to Swedish and Norwegian developers, but an API run by a Chinese company raises questions about which personal data leaves the EU/EEA, where IMY and Datatilsynet are the supervisory authorities. If the weights are open, the model can instead be run in-house or at a Nordic or European provider; the license should be checked before building it into a product.</p>
+<p class="news-card__source">Source: <a href="https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/">MarkTechPost</a>, <a href="https://aiweekly.co/alerts/deepseek-opens-v41-flash-1017-weights-and-075-search-api">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI publishes hundreds of math manuscripts from an unreleased model – review has barely begun</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-openai-publicerade-hundratals-matematikmanuskript-fran-en-oslappt-modell</guid>
+      <pubDate>Sun, 18 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>OpenAI published 722 mathematical manuscripts on October 6, reportedly produced by an internal frontier model that was given about 4,000 problems to work on. On October 15 the Simons Foundation announced an initiative to examine and build on AI-produced results, to which OpenAI is contributing $5 million.</p>
+<p>The results are at different stages of verification: OpenAI shares formalizations in the Lean proof assistant for many of the proofs but not all, and three manuscripts were reportedly withdrawn after a sign error while 14 were revised. The most talked-about result lies close to the Riemann hypothesis but is not a proof of the hypothesis itself. Several mathematicians have told The Verge that a full review could take years. The Simons initiative is a partnership between the Simons Foundation, Anthropic and OpenAI and totals $15 million in funding and resources, according to the foundation; how much Anthropic contributes has not been disclosed.</p>
+<p>For the Nordics: The sources say nothing about the Nordics, so this is an assessment. The question of how machine-produced mathematics should be reviewed also reaches Nordic mathematics departments, including at KTH, Chalmers, the University of Oslo and NTNU. In Norway the Abel Prize is awarded by the Norwegian Academy of Science and Letters, which makes the assessment of AI-produced proofs a question for Norwegian prize institutions too. How the Research Council of Norway and the Swedish Research Council will treat AI-assisted results in grant applications is still open, and we do not know whether the results hold.</p>
+<p class="news-card__source">Source: <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI</a>, <a href="https://inyheter.no/16/10/2026/openai-med-mulig-matematisk-gjennombrudd-ville-gitt-fields-medalje/">iNyheter</a>, <a href="https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/">Simons Foundation</a></p>]]></description>
+    </item>
+    <item>
+      <title>Vinnova proposes an AI programme with at least one billion kronor in 2027 – government has not decided</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-vinnova-foreslar-ai-program-med-minst-en-miljard</guid>
+      <pubDate>Sun, 18 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>On October 12 Vinnova presented the report Roadmaps for Strategic Technologies (Färdplaner för strategiska tekniker), in which the agency proposes seven state acceleration programmes: AI, 6G, semiconductors, quantum technology, materials and production, biotechnology and space technology. The AI programme, AI Acceleration Sweden, is proposed to start in January 2027 with at least SEK 1 billion in state funding in its first year.</p>
+<p>The other programmes would normally receive at least SEK 200 million a year from 2028 and at least SEK 1 billion in state funds from 2032. Vinnova also proposes a national investment fund with SEK 75 billion in state capital and up to SEK 150 billion in guarantees, and that state R&D investment reach at least 1 percent of GDP in 2030 (0.77 percent in 2024). These are proposals: the money has not yet been decided by the government.</p>
+<p>For the Nordics: The proposal concerns Sweden. The sources name no individual institutions, but in our assessment it affects, among others, Chalmers and WACQT (Wallenberg Centre for Quantum Technology), KTH and RISE, as well as the Wallenberg foundations' AI and quantum efforts, including WASP. The decision rests with the government and ultimately the Riksdag. The Research Council of Norway and counterparts in Denmark and Finland get a point of comparison when their own AI and quantum investments are discussed.</p>
+<p class="news-card__source">Source: <a href="https://www.newsoresund.se/innovationsmyndigheten-vinnova-vill-miljardsatsa-pa-sju-tekniker-ai-forst-ut/">News Øresund</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">Hurbra</a></p>]]></description>
+    </item>
+    <item>
+      <title>Venstre wants tax relief for companies that upskill staff instead of replacing them with AI</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-venstre-vill-ge-skatteavdrag-till-foretag-som-kompetensutvecklar</guid>
+      <pubDate>Sun, 18 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norway's Venstre party wants to introduce a tax deduction scheme, called Kompetansefunn, for companies that invest in their employees' skills instead of replacing them with AI. The proposal was put forward by party leader Guri Melby in connection with Venstre's national conference in Lillestrøm on Saturday, October 17, according to Adressa/NTB.</p>
+<p>The idea is to change the calculation so that retraining and new tasks become more profitable than swapping staff for AI. Melby pointed out that many of the jobs disappearing are entry-level positions, and warned that if juniors disappear now, companies will lack senior staff in ten years. Adressa cites DNB and Posten Bring as examples of cuts where AI is given as a contributing factor; on October 6 DNB announced that the bank is cutting 400 full-time positions as its technology and services division is reorganized.</p>
+<p>For the Nordics: This is a party proposal and not decided policy, but it touches on an issue under way across the Nordics. Finansforbundet has questioned whether the cuts can be carried out properly before New Year, and the proposal highlights how the gains from AI should be shared between owners, customers and employees, a question that concerns the Storting, NHO and LO. We have not seen a corresponding proposal in Sweden.</p>
+<p class="news-card__source">Source: <a href="https://www.adressa.no/nyheter/innenriks/i/n9n3gx/venstre-vil-redde-jobber-fra-ki-kutt-foreslaar-beloenning">Adressa</a>, <a href="https://www.fagbladet.no/nyheter/ki-tar-over-jobben-dnb-varsler-omstilling-og-kutter-400-arsverk/760199">Fagbladet</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic leases capacity in EverWind's Nova Scotia data centre – its first in Canada</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-anthropic-hyr-kapacitet-i-everwinds-datacenter-i-nova</guid>
+      <pubDate>Sun, 18 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Anthropic has confirmed a long-term lease for capacity in EverWind's planned data centre at Point Tupper in Nova Scotia, the company's first data centre in Canada. EverWind says the investment totals C$10 billion, of which C$8 billion is for the data centre and C$2 billion for onshore wind power.</p>
+<p>The first 95 MW phase is due to be operating in late 2027, with a 325 MW expansion targeted for 2028, subject to regulatory approval, and 420 MW at full build-out. The project is expected to create around 2,000 construction jobs and 215 permanent positions, with a closed-loop cooling system and several hundred megawatt-hours of battery storage. Nova Scotia NDP leader Claudia Chender has called for regulation, and a consortium linked to Membertou First Nation is negotiating a possible ownership stake.</p>
+<p>For the Nordics: The development shows how AI companies are seeking power and land outside the United States, and Nordic places such as Luleå and Mo i Rana, where a data centre is now being converted into an AI facility, compete for the same kind of investment. Questions about the grid, renewable power and local benefit, which Svenska kraftnät and Statnett also handle, decide which projects get built. The sources say nothing about the Nordics, so the connection is an assessment.</p>
+<p class="news-card__source">Source: <a href="https://globalnews.ca/news/12105095/everwind-nova-scotia-data-centre/">Global News</a>, <a href="https://money.usnews.com/investing/news/articles/2026-10-16/anthropic-signs-lease-for-first-canadian-data-center">US News/Reuters</a></p>]]></description>
+    </item>
     <item>
       <title>Meta releases Muse Spark Open – open weights for an 816-billion-parameter model</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-17</link>
@@ -892,55 +954,6 @@
 <p>Fei-Fei Li, a Stanford computer science professor and one of the people behind the ImageNet image database, becomes AMD’s chief scientist and executive vice president. World Labs’ first product, Marble, creates among other things simulated environments for training robots. AMD says insight into World Labs’ workloads will shape the company’s chip roadmap, and the two companies have had a partnership on inference and training since last year. World models are seen as a prerequisite for bringing generative AI to robots, from self-driving cars to humanoids.</p>
 <p>For the Nordics: World models and simulated training data are a track that Nordic robotics players also follow, for example the Norwegian-founded humanoid company 1X Technologies and Denmark’s Universal Robots, as well as robotics research at Sintef and NTNU. A deal in which a chipmaker buys a company focused on exactly this kind of model and data shows where the value in physical AI is heading, and that Nvidia gains a clearer competitor in the robotics stack too.</p>
 <p class="news-card__source">Source: <a href="https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html">CNBC</a>, <a href="https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/">Fortune</a></p>]]></description>
-    </item>
-    <item>
-      <title>Northern European initiative to give 13,000 workers AI skills</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-nordeuropeiskt-initiativ-ska-ge-13-000-yrkesverksamma-ai</guid>
-      <pubDate>Mon, 28 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>AI Sweden is leading a new Northern European initiative that, backed by Google.org, will train around 13,000 working professionals in AI skills across Sweden, Denmark, Finland, Belgium and the Netherlands. Training begins on 31 January 2027 and targets occupations with high exposure to AI.</p>
-<p>In Sweden the work is led by education company AcadeMedia and adult-education association Medborgarskolan, in Denmark by the network Digital Dogme, in Finland by university of applied sciences Xamk together with Oamk and Tieke, in Belgium by the chamber of commerce Beci, and in the Netherlands by the organisation The Code to Change. According to AI Sweden, nearly two-thirds of jobs in the Swedish service sector are today medium- or highly exposed to AI.</p>
-<p>The initiative's centre of gravity is Nordic: Sweden's AI Sweden coordinates the whole effort, with Denmark's Digital Dogme and Finland's Xamk as partner organisations in their respective countries, while Belgium and the Netherlands are the only non-Nordic participants.</p>
-<p class="news-card__source">Source: <a href="https://www.ai.se/sv/nyheter/har-ar-organisationerna-som-ska-utbilda-13-000-arbetstagare-i-ai">AI Sweden</a>, <a href="https://via.tt.se/pressmeddelande/4560491/har-ar-organisationerna-som-ska-utbilda-13-000-arbetstagare-i-ai?lang=sv">TT/via.tt.se</a></p>]]></description>
-    </item>
-    <item>
-      <title>Researchers use quantum computer to simulate matter forming from the vacuum</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-forskare-simulerade-hur-materia-uppstar-ur-tomrummet-med</guid>
-      <pubDate>Mon, 28 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>An international research team led by Duke University has used a quantum computer with 13 trapped ions to simulate so-called string breaking – how new particles can form when quarks are pulled apart. The phenomenon belongs to the physics of the early universe, with links to both nuclear physics and cosmology.</p>
-<p>Using precisely controlled laser beams, the researchers encoded the model into a chain of 13 ytterbium ions and observed how the energy building up between the particles eventually becomes large enough to turn into entirely new particles, in line with Einstein's E=mc². The study, with Arinjoy De as lead author and Christopher Monroe among the senior researchers, was published in Nature Physics on 23 September 2026 and also involved researchers from the University of Maryland, Oxford, Caltech, Cornell and Belgium's KU Leuven.</p>
-<p>In Sweden, the Wallenberg Centre for Quantum Technology (WACQT) at Chalmers is working toward similar goals, though with a different technology – superconducting circuits – where quantum simulation of physical systems is one of the intended uses for future Swedish quantum computers.</p>
-<p class="news-card__source">Source: <a href="https://www.nature.com/articles/s41567-026-03422-0">Nature Physics</a>, <a href="https://pratt.duke.edu/news/quantum-simulation-string-breaking/">Duke Pratt School of Engineering</a></p>]]></description>
-    </item>
-    <item>
-      <title>China may let Alibaba and ByteDance buy new Nvidia chips</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-kina-kan-tillata-alibaba-och-bytedance-att-kopa</guid>
-      <pubDate>Mon, 28 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Chinese authorities have reportedly signalled, according to The Information, that Alibaba and ByteDance are likely to be allowed to buy Nvidia's new RTX Pro 5500 workstation card, after asking the companies how many chips they plan to buy and for what purpose.</p>
-<p>The RTX Pro 5500 is built on Nvidia's Blackwell architecture and has 84 gigabytes of memory. The chip has previously been hard to sell in China because of both US export restrictions on advanced AI chips and Beijing's own curbs favouring domestic manufacturers – a possible approval is described by observers as a cautious thaw, though it is limited to workstation cards rather than the most advanced AI processors.</p>
-<p>For the Nordics, access to Nvidia hardware is central to AI infrastructure investment: the Berzelius supercomputer at the National Supercomputer Centre in Linköping, funded by the Knut and Alice Wallenberg Foundation, runs on Nvidia GPUs, and global export policy therefore indirectly affects how quickly Swedish researchers and companies can scale up their AI models.</p>
-<p class="news-card__source">Source: <a href="https://www.cnbc.com/2026/09/27/china-bytedance-alibaba-nvidia-chips.html">CNBC</a>, <a href="https://thenextweb.com/news/china-alibaba-bytedance-nvidia-rtx-pro-5500">The Next Web</a></p>]]></description>
-    </item>
-    <item>
-      <title>US health insurers: AI coding has added $942 million in extra costs</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-28-amerikanska-sjukforsakringsbolag-ai-kodning-har-kostat-942-miljoner</guid>
-      <pubDate>Mon, 28 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>US industry group Blue Cross Blue Shield Association (BCBSA) claims in a new analysis that hospitals' use of AI tools for diagnostic coding in insurance billing has cost its member health plans an extra $942 million over two years, for care that has otherwise stayed largely unchanged.</p>
-<p>BCBSA says the share of hospital stays coded as medically complex rose from 37% to 40% between 2023 and 2025, without any corresponding change in the care actually delivered – which the organisation describes as a clear disconnect between coding and treatment. Abridge founder Shiv Rao acknowledges the risk of an escalating conflict between hospitals and insurers, but argues AI can ultimately lower costs rather than raise them.</p>
-<p>AI's spread into healthcare administration is already under scrutiny in the Nordics too, albeit in a different form: Sweden's data protection authority IMY opened an inspection in May 2026 into Region Gävleborg's AI-based speech transcription in primary care, focused on data protection and how transcription errors are handled. The US dispute is about billing codes rather than clinical documentation, but both cases show that AI's spread into healthcare paperwork is already raising questions regulators must address.</p>
-<p class="news-card__source">Source: <a href="https://www.fiercehealthcare.com/finance/hospitals-use-ai-coding-tools-cost-bcbsa-plans-942m-more-similar-care-analysis">Fierce Healthcare</a>, <a href="https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/">TechCrunch</a></p>]]></description>
     </item>
   </channel>
 </rss>
