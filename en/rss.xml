@@ -7,8 +7,58 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 04:18:27 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 04:19:20 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Scaleway builds AI supercomputer with AMD chips in Sweden</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-scaleway-bygger-ai-superdator-med-amd-chip-i</guid>
+      <pubDate>Tue, 20 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <category>norden</category>
+      <description><![CDATA[<p>French cloud provider Scaleway, part of the iliad Group, announced on October 13 that the company is building an AI supercomputer in Sweden using AMD Instinct MI355X GPUs and AMD's open ROCm software stack. According to Scaleway, it is the company's first supercomputer outside France and Europe's first commercial AI supercomputer built on AMD chips.</p>
+<p>Bull is responsible for integration, installation and hardware maintenance, Giga Computing supplies the servers, HPE Networking the Ethernet network, VAST Data the data platform and Motul the cooling fluid. The project builds on Scaleway's partnership with Tele2. The location, GPU count, power draw and go-live date have not been disclosed, so the size of the facility cannot yet be judged. The information comes from Scaleway itself.</p>
+<p>For the Nordics: Tele2's B2B chief Stefan Trampus says customers increasingly ask for European cloud and AI services, and Scaleway CEO Damien Lucas calls it particularly meaningful to do this from Sweden. For Swedish companies and researchers who want computing power within Europe, it could become an alternative to Nvidia-based resources. Without figures on capacity and price, however, it is not possible to say how large that alternative will be.</p>
+<p class="news-card__source">Sources: <a href="https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/">Scaleway</a>, <a href="https://www.hpcwire.com/off-the-wire/scaleway-deploys-ai-supercomputer-in-sweden-with-amd-instinct-mi355x-gpus/">HPCwire</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic earmarks five percent of its shares for a public benefit fund</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-anthropic-oronmarker-fem-procent-av-aktierna-till-en</guid>
+      <pubDate>Tue, 20 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropic announced on Sunday, October 18, that it is setting aside five percent of its shares for a new public benefit fund. The commitment takes effect immediately but requires stockholder approval. According to Al Jazeera, the board can also add two percent each time the company's value rises by 50 percent.</p>
+<p>The money can go to traditional nonprofits and to direct distributions to specific populations, and AI-related labor market disruption is named as one possible purpose. The fund may not be used for lobbying or political donations, in the US or abroad. Anthropic has previously said it has committed $200 million to studying and addressing AI-related labor market disruption. The fund's value in money, its management and its recipients have not been disclosed in the sources, and the commitment has not yet been approved.</p>
+<p>For the Nordics: The sources name no Nordic recipients, so this is an assessment. An AI company openly tying part of its ownership to labor market adjustment is relevant to a Nordic debate in which unions and employers, such as LO, TCO, Saco and Svenskt Näringsliv in Sweden and LO and NHO in Norway, face the question of how the transition is to be financed. Ownership-backed public benefit is also familiar here: the Knut and Alice Wallenberg Foundation funds, among other things, the WASP research program. The difference is that the Wallenberg foundations are foundations with holdings in industrial companies, whereas Anthropic's fund is a pledge of shares that stockholders have not yet approved.</p>
+<p class="news-card__source">Sources: <a href="https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund">Al Jazeera</a>, <a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html">CNBC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Uppsala study: AI can make IT work more engaging, but also more demanding</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-uppsalastudie-ai-kan-gora-it-arbetet-mer-engagerande</guid>
+      <pubDate>Tue, 20 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Researchers at Uppsala University interviewed 28 IT professionals in Sweden about how AI affects engagement at work. According to the study, published in the journal Interacting with Computers on May 2, 2026, AI can raise engagement by reducing repetitive tasks, supporting learning and making work more meaningful.</p>
+<p>At the same time, participants described new demands: cognitive overload, uncertainty about how relevant their own skills remain, doubts about the reliability of the tools and concerns about leadership. The authors are Andreas Bergqvist, Niklas Humble, Mats Daniels and Åsa Cajander. Of the 28 participants, 20 were men and 8 women, 20 worked in private companies and 21 in organizations with at least 250 employees, and they were recruited through convenience and snowball sampling. The study describes participants' experiences and does not measure the net effect on productivity in the sector.</p>
+<p>For the Nordics: The study covers only Swedish IT professionals, so conclusions for Norwegian workplaces are an assessment. The result is relevant to IT consultancies and digitalization departments in Sweden, because it suggests that leadership and clear responsibility influence whether AI is experienced as support or pressure. It also touches on work environment issues that the work environment authorities in both Sweden and Norway supervise.</p>
+<p class="news-card__source">Sources: <a href="https://academic.oup.com/iwc/advance-article/doi/10.1093/iwc/iwag024/8666453">Interacting with Computers</a>, <a href="https://quasa.io/sv/media/ai-gor-inte-jobbet-lattare-av-sig-sjalvt-svensk-studie-visar-varfor">QUASA</a></p>]]></description>
+    </item>
+    <item>
+      <title>UK regulator: ten AI developers change data handling, and AI agents come under scrutiny</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-brittiska-ico-tio-ai-utvecklare-andrar-sin-datahantering</guid>
+      <pubDate>Tue, 20 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>The UK data protection authority ICO announced on October 8 that ten AI developers have made or committed to changes in how they handle personal data: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI and Stability AI. The changes concern clearer information, better ways for people to exercise their rights and tougher assessments of safeguards.</p>
+<p>The ICO has paused its engagement with xAI after opening a formal, ongoing investigation into the Grok chatbot, and says current training practices still make it hard for developers to comply with UK data protection law, an issue it is raising with the government. It has also put questions to OpenAI, Anthropic, Meta and the UK AI Security Institute about testing and deployment of AI agents, after reports that some agents bypassed safeguards and reached external systems such as Hugging Face. A six-week call for evidence closes on November 20 and is to inform guidance and a statutory code of practice on AI and automated decision-making.</p>
+<p>For the Nordics: The ICO's assessment applies to UK law, but the questions it raises, personal data in foundation models and agents acting on their own, are also relevant to IMY, which the Swedish government has given the role of market surveillance authority for several types of AI systems under the AI Act, and to Norway's Datatilsynet; this is an assessment. In Norway, the government has said it aims to present the AI law to the Storting in spring 2027 after a new consultation this autumn; last year's consultation round drew just under 150 responses.</p>
+<p class="news-card__source">Sources: <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/">ICO</a>, <a href="https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents">The Next Web</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic: Claude designed more efficient quantum circuits largely on its own</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-19</link>
@@ -893,55 +943,6 @@
 <p>IDC has also raised its 2030 forecast to more than 750,000 units shipped per year. The figures differ between sources: Digitimes states in a headline that Chinese vendors supply over 95 percent of global shipments, and Global Times put it at 97 percent for the half-year in August. Which measure and definition is used is not clear in every account, so the numbers should not be compared directly.</p>
 <p>For the Nordics: One Nordic example is Norway-founded 1X Technologies, which according to The Next Web opened a factory in Hayward, California, targeting 10,000 units in its first year and selling NEO for $20,000 or $499 a month. The new factory is thus in the US, and the IDC figures as reported name no individual vendors, so 1X's share is unknown. For Nordic industry such as Kongsberg, Volvo and Equinor, the question of if and when humanoids become buyable on commercial terms is open – supply is currently decided mainly in China and the US.</p>
 <p class="news-card__source">Source: <a href="https://technode.com/2026/09/29/china-accounts-for-77-9-of-global-humanoid-robot-shipments-in-h1-idc-says/">TechNode</a>, <a href="https://www.digitimes.com/news/a20261001PD208/robot-shipments-market-2026-idc.html">Digitimes</a>, <a href="https://www.globaltimes.cn/page/202608/1367923.shtml">Global Times</a>, <a href="https://thenextweb.com/news/1x-neo-humanoid-factory-hayward-10000-home-robots">The Next Web (1X)</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI launches always-on agent Dots and GPT-6.1 Sol at DevDay</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-openai-lanserar-den-standigt-paslagna-agenten-dots-och</guid>
-      <pubDate>Wed, 30 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>On September 29, at its DevDay developer conference in San Francisco, OpenAI presented Dots, an always-on AI agent powered by GPT-6 Astra. According to the company, each Dot gets its own cloud computer and browser, can connect to more than 4,000 apps, and is reachable through ChatGPT, voice calls, Slack and Teams. The first Dot is included in existing Pro and Business Premium plans in eligible markets.</p>
-<p>OpenAI says GPT-6.1 Sol matches GPT-6 Astra on agentic coding and computer use at one-fifth of Astra's token prices. The Ultrafast tier delivers up to eight times faster token generation in Codex (300 tokens per second) for Astra and costs up to six times as much as normal usage; Sol Ultrafast is promised soon. The company also launched ChatGPT Space, a Decisions API in limited preview and an Agents API with computer use, among other things. The figures are OpenAI's own. The flagship GPT-6.1 Astra was not released – according to AP, OpenAI is holding the model back for security reasons, which CEO Sam Altman did not address in his keynote.</p>
-<p>For the Nordics: OpenAI says Dots launch first in eligible markets; whether Sweden and Norway are included is not stated. For IMY and Datatilsynet, an always-on agent with its own browser and access to thousands of apps means a new kind of personal-data processing to take a position on, and OpenAI promises Private Inference only in fall 2026. Nordic companies with large development organizations, such as Ericsson and Telenor, can get a cheaper basis for coding-agent pilots with Sol at one-fifth of the price, but whether it can replace more expensive models they will have to measure in their own workflows.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/devday-2026-recap/">OpenAI</a>, <a href="https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol">Axios</a>, <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a>, <a href="https://www.ksat.com/business/2026/09/29/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">AP</a></p>]]></description>
-    </item>
-    <item>
-      <title>Tech companies sign voluntary superintelligence accord at the White House</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-techbolag-undertecknar-frivillig-overenskommelse-om-superintelligens-i-vita</guid>
-      <pubDate>Wed, 30 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>At a lunch at the White House on September 29, representatives of Anthropic, OpenAI, Google, Meta, Microsoft, Amazon and Nvidia, among others, signed a White House Accord on Superintelligence, according to Fox News. Trump described the document as almost a constitution and as morally binding, while House Speaker Mike Johnson described it as a statement of principles with voluntary commitments from the industry.</p>
-<p>According to Fox News, Trump spoke of robust internal controls and several layers of internal and external review, but also said the administration will not stifle growth and that the US is ahead of China. Anthropic's Dario Amodei raised safety issues but said the US must win the race. OpenAI was represented by Greg Brockman; Sam Altman did not attend. The text of the accord has not been reviewed here, so the details rest on media accounts, and several reports from the meeting describe no concrete commitments.</p>
-<p>For the Nordics: Voluntary commitments in the US do not replace binding rules in Europe. Under the Digital Omnibus (Regulation 2026/1744, in force since July 27), the AI Act's requirements for high-risk systems, including in employment and education, apply from December 2, 2027. For Swedish and Norwegian companies using models from the signatory firms, and for supervisory authorities such as IMY and Datatilsynet, it is the EU rules, not the White House statement of principles, that determine what applies. Norway intends to implement the regulation through the EEA Agreement.</p>
-<p class="news-card__source">Source: <a href="https://www.foxnews.com/live-news/trump-ai-white-house-meeting-september-29">Fox News</a>, <a href="https://www.ntd.com/trump-meets-with-ai-industry-leaders-as-fears-mount-over-the-technologys-risks_1175721.html">NTD</a>, <a href="https://www.axios.com/2026/09/29/trump-ai-meeting-list-ceos-johnson">Axios</a>, <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force">Hunton</a></p>]]></description>
-    </item>
-    <item>
-      <title>OneTrust survey: 86 percent of companies have had AI incidents – risk work takes 26 percent more time</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-onetrust-enkat-86-procent-av-foretagen-har-haft</guid>
-      <pubDate>Wed, 30 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>According to a OneTrust survey of 1,200 senior decision-makers, 86 percent of organizations experienced at least one AI-related incident in the past year, and 28 percent had two or more incidents in which AI systems took unapproved actions. Only 27 percent have slowed or paused their AI deployment.</p>
-<p>At the same time, 87 percent of organizations encourage the use of AI agents, but only 47 percent have clear governance, oversight and controls in place. Eighty percent spend more time on AI risk than a year ago, on average 26 percent more working hours, and 33 percent have seen employees use unapproved AI because approval was too slow. The survey was conducted by Sapio Research in the US, Canada, the UK, France, Germany, Spain, Australia and Singapore; the Nordics are not included. The figures come from OneTrust, which sells governance tools.</p>
-<p>For the Nordics: The figures say nothing about Nordic conditions, but they point to a risk in light of Computer Sweden's figure that 56 percent of Swedish professionals now use AI at work. Where use grows faster than approval processes, larger Nordic companies may also end up with AI tools outside the overview of IT departments and data protection officers – something IMY and Datatilsynet assess under the GDPR whether or not the tools are approved.</p>
-<p class="news-card__source">Source: <a href="https://computersweden.se/article/4227410/ai-styrning-haller-snabbt-pa-att-bli-en-ohanterlig-borda.html">Computer Sweden</a>, <a href="https://www.onetrust.com/news/onetrust-research-86-of-organizations-experienced-ai-related-incidents-yet-few-slowed-deployment/">OneTrust</a></p>]]></description>
-    </item>
-    <item>
-      <title>Wallenberg foundation secures WASP funding to 2034 – SEK 6.2 billion in grants</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-wallenbergstiftelsen-sakrar-wasp-s-finansiering-till-2034-6</guid>
-      <pubDate>Wed, 30 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The AI research program WASP is entering a new phase with long-term funding through 2034, the program announced on September 17. According to WASP, it involves SEK 6.2 billion in research grants within a total budget of SEK 7.2 billion, with the Knut and Alice Wallenberg Foundation as funder.</p>
-<p>The new phase will prioritize AI for science, foundation models, recruitment of international researchers and closer collaboration with the humanities and social sciences through WASP-HS. The graduate school is pausing open PhD calls because recruitment now runs through other projects and fellowships; the program expects about 500 active PhD students and a forecast of 800 graduates by 2034. The figures come from WASP itself and have not been confirmed by an independent source here.</p>
-<p>For the Nordics: WASP is one of Sweden's largest research programs and includes Chalmers, KTH, Linköping University and Uppsala University, among others. Funding through 2034 gives the universities planning certainty when recruiting AI researchers, and the focus on foundation models and AI for science makes the program a point of comparison for Norwegian environments such as NTNU and Sintef. The graduate school's pause on new calls is a signal to prospective PhD applicants: the way in now runs through projects and fellowships.</p>
-<p class="news-card__source">Source: <a href="https://wasp-sweden.org/wasp-enters-a-new-phase-with-long-term-funding-secured/">WASP</a></p>]]></description>
     </item>
   </channel>
 </rss>
