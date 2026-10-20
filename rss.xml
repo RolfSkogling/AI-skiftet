@@ -7,8 +7,58 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 04:18:27 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 04:19:20 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Scaleway bygger AI-superdator med AMD-chip i Sverige</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-scaleway-bygger-ai-superdator-med-amd-chip-i</guid>
+      <pubDate>Tue, 20 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Det franska molnbolaget Scaleway, som ingår i iliad-koncernen, meddelade den 13 oktober att bolaget bygger en AI-superdator i Sverige med AMD Instinct MI355X-grafikprocessorer och AMD:s öppna programvarustack ROCm. Enligt Scaleway är det bolagets första superdator utanför Frankrike och Europas första kommersiella AI-superdator med AMD-chip.</p>
+<p>Bull ansvarar för integration, installation och underhåll av hårdvaran, Giga Computing levererar servrarna, HPE Networking Ethernet-nätverket, VAST Data dataplattformen och Motul kylvätskan. Projektet bygger på Scaleways samarbete med Tele2. Ort, antal GPU:er, effekt och driftsättningsdatum har inte redovisats, så anläggningens storlek går ännu inte att bedöma. Uppgifterna kommer från Scaleway självt.</p>
+<p>För Norden: Tele2:s B2B-chef Stefan Trampus säger att kunderna alltmer efterfrågar europeiska moln- och AI-tjänster, och Scaleways vd Damien Lucas kallar det särskilt betydelsefullt att göra detta från Sverige. För svenska företag och forskare som vill ha beräkningskraft inom Europa kan det bli ett alternativ till Nvidia-baserade resurser. Utan uppgifter om kapacitet och pris går det dock inte att säga hur stort alternativet blir.</p>
+<p class="news-card__source">Källor: <a href="https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/">Scaleway</a>, <a href="https://www.hpcwire.com/off-the-wire/scaleway-deploys-ai-supercomputer-in-sweden-with-amd-instinct-mi355x-gpus/">HPCwire</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic öronmärker fem procent av aktierna till en allmännyttig fond</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-anthropic-oronmarker-fem-procent-av-aktierna-till-en</guid>
+      <pubDate>Tue, 20 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropic meddelade söndagen den 18 oktober att bolaget avsätter fem procent av sina aktier till en ny allmännyttig fond, en så kallad public benefit fund. Åtagandet gäller omedelbart men förutsätter godkännande av aktieägarna. Enligt Al Jazeera kan styrelsen dessutom lägga till två procent varje gång bolagets värde ökar med 50 procent.</p>
+<p>Medlen kan gå till traditionella ideella organisationer och till direkta utbetalningar till särskilda befolkningsgrupper, och störningar på arbetsmarknaden till följd av AI nämns som ett möjligt ändamål. Fonden får inte användas till lobbying eller politiska bidrag, varken i USA eller utomlands. Anthropic har sedan tidigare sagt sig ha avsatt 200 miljoner dollar för att studera och hantera AI-relaterade störningar på arbetsmarknaden. Fondens värde i pengar, förvaltning och mottagare har inte redovisats i källorna, och åtagandet är ännu inte godkänt.</p>
+<p>För Norden: Källorna nämner inga nordiska mottagare, så det här är en bedömning. Att ett AI-bolag öppet kopplar en del av ägandet till omställningen på arbetsmarknaden är relevant för en nordisk debatt där fack och arbetsgivare, som LO, TCO, Saco och Svenskt Näringsliv i Sverige och LO och NHO i Norge, står inför frågan om hur omställningen ska finansieras. Ägarstyrd allmännytta är dessutom välkänd här: Knut och Alice Wallenbergs Stiftelse finansierar bland annat forskningsprogrammet WASP. Skillnaden är att Wallenbergstiftelserna är stiftelser med ägande i industribolag, medan Anthropics fond är ett löfte om aktier som aktieägarna ännu inte har godkänt.</p>
+<p class="news-card__source">Källor: <a href="https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund">Al Jazeera</a>, <a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html">CNBC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Uppsalastudie: AI kan göra IT-arbetet mer engagerande men också mer krävande</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-uppsalastudie-ai-kan-gora-it-arbetet-mer-engagerande</guid>
+      <pubDate>Tue, 20 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Forskare vid Uppsala universitet har intervjuat 28 IT-yrkesverksamma i Sverige om hur AI påverkar engagemanget i arbetet. Enligt studien, som publicerades i tidskriften Interacting with Computers den 2 maj 2026, kan AI öka engagemanget genom att minska repetitiva uppgifter, stödja lärande och göra arbetet mer meningsfullt.</p>
+<p>Samtidigt beskrev deltagarna nya krav: kognitiv överbelastning, osäkerhet om hur relevanta de egna kunskaperna är, tvivel på verktygens tillförlitlighet och oro kring ledarskapet. Författarna är Andreas Bergqvist, Niklas Humble, Mats Daniels och Åsa Cajander. Av de 28 deltagarna var 20 män och 8 kvinnor, 20 arbetade i privata bolag och 21 i organisationer med minst 250 anställda, och de rekryterades genom bekvämlighets- och snöbollsurval. Studien beskriver deltagarnas upplevelser och mäter inte nettoeffekten på produktiviteten i branschen.</p>
+<p>För Norden: Studien gäller bara svenska IT-yrkesverksamma, så slutsatser för norska arbetsplatser är en bedömning. Resultatet är relevant för IT-konsultbolag och digitaliseringsavdelningar i Sverige, eftersom det tyder på att ledarskap och tydligt ansvar påverkar om AI upplevs som stöd eller press. Det berör också arbetsmiljöfrågor som arbetsmiljömyndigheterna i både Sverige och Norge har tillsyn över.</p>
+<p class="news-card__source">Källor: <a href="https://academic.oup.com/iwc/advance-article/doi/10.1093/iwc/iwag024/8666453">Interacting with Computers</a>, <a href="https://quasa.io/sv/media/ai-gor-inte-jobbet-lattare-av-sig-sjalvt-svensk-studie-visar-varfor">QUASA</a></p>]]></description>
+    </item>
+    <item>
+      <title>Brittiska ICO: tio AI-utvecklare ändrar sin datahantering – nu granskas även AI-agenter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-brittiska-ico-tio-ai-utvecklare-andrar-sin-datahantering</guid>
+      <pubDate>Tue, 20 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Den brittiska dataskyddsmyndigheten ICO meddelade den 8 oktober att tio AI-utvecklare har gjort eller åtagit sig ändringar i hur de hanterar personuppgifter: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI och Stability AI. Ändringarna gäller tydligare information, bättre sätt för människor att utöva sina rättigheter och hårdare bedömningar av skyddsåtgärder.</p>
+<p>ICO har pausat sitt arbete med xAI sedan myndigheten inlett en formell utredning av chattboten Grok, som pågår, och säger att dagens träningsmetoder fortfarande gör det svårt för utvecklare att följa brittisk dataskyddslag, en fråga myndigheten tar upp med regeringen. Myndigheten har dessutom ställt frågor till OpenAI, Anthropic, Meta och Storbritanniens AI Security Institute om test och användning av AI-agenter, efter uppgifter om att vissa agenter kringgått skydd och nått externa system som Hugging Face. En sex veckor lång insamling av underlag (call for evidence) stänger den 20 november och ska ligga till grund för vägledning och en lagstadgad uppförandekod för AI och automatiserat beslutsfattande.</p>
+<p>För Norden: ICO:s bedömning gäller brittisk lag, men de frågor den tar upp, personuppgifter i grundmodeller och agenter som agerar på egen hand, är också relevanta för IMY, som den svenska regeringen gett rollen som marknadskontrollmyndighet för flera typer av AI-system enligt AI-förordningen, och för norska Datatilsynet; det här är en bedömning. I Norge har regeringen sagt att den vill lägga den norska AI-lagen på Stortingets bord våren 2027 efter en ny remiss i höst; förra årets remissomgång gav knappt 150 svar.</p>
+<p class="news-card__source">Källor: <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/">ICO</a>, <a href="https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents">The Next Web</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic: Claude utformade effektivare kvantkretsar till stor del på egen hand</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-19</link>
@@ -893,55 +943,6 @@
 <p>IDC har samtidigt höjt sin prognos för 2030 till över 750 000 levererade enheter per år. Siffrorna går isär mellan källorna: Digitimes anger i en rubrik att kinesiska leverantörer står för över 95 procent av de globala leveranserna, och Global Times angav i augusti 97 procent för halvåret. Vilket mått och vilken definition som används framgår inte i alla återgivningar, så siffrorna bör inte jämföras rakt av.</p>
 <p>För Norden: Ett nordiskt exempel är norskgrundade 1X Technologies, som enligt The Next Web öppnade en fabrik i Hayward i Kalifornien med målet 10 000 enheter första året och säljer NEO för 20 000 dollar eller 499 dollar i månaden. Den nya fabriken ligger alltså i USA, och de återgivna IDC-siffrorna redovisar inga enskilda leverantörer, så 1X:s andel är okänd. För nordisk industri som Kongsberg, Volvo och Equinor är frågan om och när humanoider blir köpbara på marknadsmässiga villkor öppen – tillgången avgörs i dag främst i Kina och USA.</p>
 <p class="news-card__source">Källa: <a href="https://technode.com/2026/09/29/china-accounts-for-77-9-of-global-humanoid-robot-shipments-in-h1-idc-says/">TechNode</a>, <a href="https://www.digitimes.com/news/a20261001PD208/robot-shipments-market-2026-idc.html">Digitimes</a>, <a href="https://www.globaltimes.cn/page/202608/1367923.shtml">Global Times</a>, <a href="https://thenextweb.com/news/1x-neo-humanoid-factory-hayward-10000-home-robots">The Next Web (1X)</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI lanserar den ständigt påslagna agenten Dots och GPT-6.1 Sol på DevDay</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-openai-lanserar-den-standigt-paslagna-agenten-dots-och</guid>
-      <pubDate>Wed, 30 Sep 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI presenterade den 29 september på utvecklarkonferensen DevDay i San Francisco den ständigt påslagna AI-agenten Dots, som drivs av GPT-6 Astra. Varje Dot får enligt bolaget en egen molndator och webbläsare, kan kopplas till över 4 000 appar och nås via ChatGPT, röstsamtal, Slack och Teams. En första Dot ingår i befintliga Pro- och Business Premium-abonnemang på vissa marknader.</p>
-<p>GPT-6.1 Sol ska enligt OpenAI matcha GPT-6 Astra på agentiskt kodande och datoranvändning till en femtedel av Astras tokenpriser. Nivån Ultrafast ger upp till åtta gånger snabbare tokengenerering i Codex (300 token per sekund) för Astra och kostar upp till sex gånger så mycket som ordinarie användning; Sol Ultrafast utlovas inom kort. Bolaget lanserade också bland annat ChatGPT Space, Decisions API i begränsad förhandsvisning och Agents API med datoranvändning. Uppgifterna är OpenAI:s egna. Flaggskeppet GPT-6.1 Astra släpptes inte – enligt AP håller OpenAI inne modellen av säkerhetsskäl, något vd Sam Altman inte tog upp i sitt anförande.</p>
-<p>För Norden: OpenAI säger att Dots först lanseras på vissa marknader; om Sverige och Norge ingår framgår inte. För IMY och Datatilsynet innebär en ständigt påslagen agent med egen webbläsare och åtkomst till tusentals appar en ny typ av personuppgiftsbehandling att ta ställning till, och OpenAI utlovar Private Inference först under hösten 2026. Nordiska bolag med stora utvecklingsorganisationer, som Ericsson och Telenor, kan med Sol, till en femtedel av priset, få ett billigare underlag för pilotprojekt med kodagenter, men om det räcker för att ersätta dyrare modeller måste de mäta i egna flöden.</p>
-<p class="news-card__source">Källa: <a href="https://openai.com/index/devday-2026-recap/">OpenAI</a>, <a href="https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol">Axios</a>, <a href="https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced">Decrypt</a>, <a href="https://www.ksat.com/business/2026/09/29/openai-ceo-announces-new-ai-agent-and-avoids-mention-of-security-concerns-at-developer-conference/">AP</a></p>]]></description>
-    </item>
-    <item>
-      <title>Techbolag undertecknar frivillig överenskommelse om superintelligens i Vita huset</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-techbolag-undertecknar-frivillig-overenskommelse-om-superintelligens-i-vita</guid>
-      <pubDate>Wed, 30 Sep 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Vid en lunch i Vita huset den 29 september undertecknade företrädare för bland andra Anthropic, OpenAI, Google, Meta, Microsoft, Amazon och Nvidia en White House Accord on Superintelligence, enligt Fox News. Trump beskrev dokumentet som nästan en konstitution och som moraliskt bindande, medan talmannen Mike Johnson beskrev det som en principförklaring med frivilliga åtaganden från branschen.</p>
-<p>Enligt Fox News talade Trump om robusta interna kontroller och flera lager av intern och extern granskning, men sa samtidigt att administrationen inte tänker kväva tillväxten och att USA ligger före Kina. Anthropics Dario Amodei tog upp säkerhetsfrågor men sa att USA måste vinna kapplöpningen. OpenAI företräddes av Greg Brockman; Sam Altman deltog inte. Överenskommelsens text har inte granskats här, så uppgifterna bygger på mediernas återgivning, och flera rapporter från mötet redovisar inga konkreta åtaganden.</p>
-<p>För Norden: Frivilliga åtaganden i USA ersätter inte bindande regler i Europa. Enligt Digital Omnibus (förordning 2026/1744, i kraft sedan den 27 juli) gäller AI-förordningens krav för högrisksystem, bland annat inom anställning och utbildning, från den 2 december 2027. För svenska och norska bolag som använder modeller från de undertecknande företagen, och för tillsynsmyndigheter som IMY och Datatilsynet, är det EU-reglerna och inte Vita husets principförklaring som avgör vad som gäller. Norge avser att införa förordningen via EES-avtalet.</p>
-<p class="news-card__source">Källa: <a href="https://www.foxnews.com/live-news/trump-ai-white-house-meeting-september-29">Fox News</a>, <a href="https://www.ntd.com/trump-meets-with-ai-industry-leaders-as-fears-mount-over-the-technologys-risks_1175721.html">NTD</a>, <a href="https://www.axios.com/2026/09/29/trump-ai-meeting-list-ceos-johnson">Axios</a>, <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force">Hunton</a></p>]]></description>
-    </item>
-    <item>
-      <title>OneTrust-enkät: 86 procent av företagen har haft AI-incidenter – riskarbetet tar 26 procent mer tid</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-onetrust-enkat-86-procent-av-foretagen-har-haft</guid>
-      <pubDate>Wed, 30 Sep 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Enligt en undersökning från OneTrust bland 1 200 beslutsfattare har 86 procent av organisationerna haft minst en AI-relaterad incident under det senaste året, och 28 procent har haft två eller fler incidenter där AI-system vidtagit åtgärder utan godkännande. Bara 27 procent har bromsat eller pausat sin AI-utrullning.</p>
-<p>Samtidigt uppmuntrar 87 procent av organisationerna användning av AI-agenter, men bara 47 procent har tydlig styrning, tillsyn och kontroller på plats. Åttio procent lägger mer tid på AI-risker än för ett år sedan, i snitt 26 procent fler arbetstimmar, och 33 procent har sett anställda använda AI som inte godkänts eftersom godkännandet gick för långsamt. Undersökningen gjordes av Sapio Research i USA, Kanada, Storbritannien, Frankrike, Tyskland, Spanien, Australien och Singapore; Norden ingår inte. Uppgifterna kommer från OneTrust, som säljer styrningsverktyg.</p>
-<p>För Norden: Siffrorna säger inget om nordiska förhållanden, men de pekar på en risk i ljuset av Computer Swedens uppgift om att 56 procent av svenska yrkesverksamma nu använder AI på jobbet. Där användningen växer snabbare än godkännandeprocesserna kan även större nordiska bolag få AI-verktyg utanför IT-avdelningens och dataskyddsombudens överblick – något IMY och Datatilsynet bedömer utifrån GDPR oavsett om verktygen är godkända eller inte.</p>
-<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4227410/ai-styrning-haller-snabbt-pa-att-bli-en-ohanterlig-borda.html">Computer Sweden</a>, <a href="https://www.onetrust.com/news/onetrust-research-86-of-organizations-experienced-ai-related-incidents-yet-few-slowed-deployment/">OneTrust</a></p>]]></description>
-    </item>
-    <item>
-      <title>Wallenbergstiftelsen säkrar WASP:s finansiering till 2034 – 6,2 miljarder kronor i anslag</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-09-30</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-09-30-wallenbergstiftelsen-sakrar-wasp-s-finansiering-till-2034-6</guid>
-      <pubDate>Wed, 30 Sep 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>AI-forskningsprogrammet WASP går in i en ny fas med långsiktig finansiering till och med 2034, meddelade programmet den 17 september. Enligt WASP rör det sig om 6,2 miljarder kronor i forskningsanslag inom en total budget på 7,2 miljarder kronor, med Knut och Alice Wallenbergs Stiftelse som finansiär.</p>
-<p>Den nya fasen ska prioritera AI för vetenskap, grundmodeller, rekrytering av internationella forskare och ett närmare samarbete med humaniora och samhällsvetenskap genom WASP-HS. Forskarskolan pausar öppna doktorandutlysningar eftersom rekryteringen sker via andra projekt och stipendier; programmet räknar med omkring 500 aktiva doktorander och en prognos på 800 disputerade till 2034. Uppgifterna kommer från WASP självt och har inte bekräftats av en oberoende källa här.</p>
-<p>För Norden: WASP är ett av Sveriges största forskningsprogram och omfattar bland andra Chalmers, KTH, Linköpings universitet och Uppsala universitet. Finansieringen till 2034 ger lärosätena planeringsförutsättningar när de rekryterar AI-forskare, och inriktningen på grundmodeller och AI för vetenskap gör programmet till en jämförelsepunkt för norska miljöer som NTNU och Sintef. Att forskarskolan pausar nya utlysningar är en signal till doktorandsökande: vägen in går nu via projekt och stipendier.</p>
-<p class="news-card__source">Källa: <a href="https://wasp-sweden.org/wasp-enters-a-new-phase-with-long-term-funding-secured/">WASP</a></p>]]></description>
     </item>
   </channel>
 </rss>
