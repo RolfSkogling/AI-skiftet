@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-10-22"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">22 oktober 2026</span></time>
+        <time datetime="2026-10-23"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">23 oktober 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,79 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-10-23" data-date="2026-10-23">
+        <p class="day__label news-date">23 oktober 2026</p>
+      <article class="item news-card" data-tags="infrastruktur norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--infrastruktur news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
+        <h3><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">AI-hittade PHP-brister fick finsk och dansk offentlig sektor att ta webbtjänster offline</a></h3>
+        <p class="item__ingress">Finlands statliga it-central Valtori stängde på onsdagen den 21 oktober statens publika webbtjänster som en försiktighetsåtgärd, sedan två kritiska sårbarheter i programspråket PHP offentliggjorts.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Finlands statliga it-central Valtori stängde på onsdagen den 21 oktober statens publika webbtjänster som en försiktighetsåtgärd, sedan två kritiska sårbarheter i programspråket PHP offentliggjorts. Valtori uppger att man inte sett några försök att utnyttja bristerna och att avbrottet inte beror på något dataintrång.</p>
+          <p>Bristerna ska enligt rapporteringen ha legat i koden i över tio år och hittades med AI: OpenAI uppger att säkerhetsbolaget Calif hittade ett kritiskt fel med GPT-5.6 Sol, och Wiz hittade båda sårbarheterna oberoende. Det danska kommunala it-bolaget Kombit stängde enligt The Daily Record flera tjänster, bland dem den nationella skolkommunikationsplattformen, och myndigheter i bland annat Nederländerna och Frankrike gick också offline. Enligt Censys-data körde cirka 1,5 miljoner av 2,6 miljoner undersökta värdar en PHP-version utan rättning. OpenAI kallar tiden mellan AI-fyndet och offentliggörandet för &quot;Defender's Window&quot;.</p>
+          <p>För Norden: Finland och Danmark valde att koppla bort tjänster hellre än att riskera intrång, en avvägning som även svenska och norska myndigheter, kommuner och regioner med PHP-baserade webbplatser kan ställas inför. Vi har inte funnit uppgifter om att några svenska eller norska myndigheter stängt tjänster. Frågan är om NIS2-arbetet och de nationella tillsynsmyndigheterna är rustade för en tid då AI hittar mer än tio år gamla fel snabbare än organisationer hinner rätta dem.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI</a>, <a href="https://thedailyrecord.com/2026/10/21/government-websites-go-dark-after-ai-discovered-flaw-sparks-security-scramble/">The Daily Record</a>, <a href="https://www.devdiscourse.com/article/international/3995774-finland-takes-public-government-websites-offline-as-precaution-over-php-concern">Devdiscourse</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://claude.com/resources/articles/claude-duet">Anthropic lanserar Claude Duet &ndash; en proaktiv agent byggd på Opus 5.5</a></h3>
+        <p class="item__ingress">Anthropic presenterade den 21 oktober Claude Duet, en app där Claude arbetar som proaktiv agent.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Anthropic presenterade den 21 oktober Claude Duet, en app där Claude arbetar som proaktiv agent. Den är en forskningsförhandsvisning byggd kring Claude Opus 5.5 och öppnas via väntelista för Pro- och Max-prenumeranter i USA, på iOS, Android och claude.ai.</p>
+          <p>Duet skickar ett morgonbrev, bevakar anslutna appar och hör av sig bara när något kräver uppmärksamhet. Den körs i en egen virtuell maskin med webbläsare och kan arbeta vidare när användaren är borta. Enligt Anthropic frågar den innan den skickar meddelanden, betalar, signerar eller raderar, och den ska aldrig handla med värdepapper eller flytta pengar mellan konton. Anthropic medger att den kan feltolka samtal eller brådska och att personliga ärenden som biljettbokning fungerar sämre.</p>
+          <p>För Norden: Tjänsten är i dag begränsad till USA, så svenska och norska användare står utanför väntelistan. När en agent som läser e-post och kan betala via anslutna konton når Europa väcker den frågor för IMY och Datatilsynet om GDPR och för tillsynen över EU:s AI-förordning. Bankerna är redan vaksamma: enligt Axios, refererat av The Neuron, försöker Morgan Stanley och Bank of America begränsa riskerna med tredjepartsagenter som når kundkonton, en fråga som även nordiska banker som SEB och DNB får förhålla sig till.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://claude.com/resources/articles/claude-duet">Anthropic</a>, <a href="https://aiweekly.co/ai-news-today/edition/2026-10-22">AI Weekly</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="forskning">
+        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
+        <h3><a href="https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/">Microsofts diagnossystem MAI-DxO slår allmänläkare i simulerade svåra fall, visar Science-studie</a></h3>
+        <p class="item__ingress">Microsoft AI har i tidskriften Science publicerat en studie av MAI-DxO, ett system där flera AI-agenter fungerar som en läkarpanel som frågar ut patienten, beställer prover och diskuterar en diagnos.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Microsoft AI har i tidskriften Science publicerat en studie av MAI-DxO, ett system där flera AI-agenter fungerar som en läkarpanel som frågar ut patienten, beställer prover och diskuterar en diagnos. På komplicerade fall ur New England Journal of Medicine hade systemet rätt i 83 procent av fallen, mot 36 procent för allmänläkare och internister som arbetade ensamma med referensmaterial.</p>
+          <p>Mycket av förbättringen kommer från de underliggande modellerna: GPT-5.5 ensam nådde 72 procent och med DxO nästan 87 procent, medan Gemini 2.5 Flash gick från 46,4 till nästan 69 procent. På akutfall gav systemet ingen eller liten vinst. Resultaten kommer från en simulering, inte från verkliga patienter, och jämförelsen omfattade varken specialister eller läkarteam. En utvärdering tillsammans med Beth Israel Deaconess Medical Center är planerad men saknar resultat.</p>
+          <p>För Norden: Studien säger inget om nordisk sjukvård, men den lyfter en fråga för Socialstyrelsen och Helsedirektoratet: hur ett system som presterat väl i simulering ska prövas på verkliga patienter innan svenska regioner eller norska helseforetak använder det. Vi har inte funnit några uppgifter om nordiska prövningar av systemet.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/">TechCrunch</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="hardvara">
+        <div class="item__tags news-card__tags"><span class="tag tag--hardvara news-card__tag news-card__tag--hardvara">Hårdvara</span></div>
+        <h3><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Introduces-DSX-POD-AI-Factories-to-Accelerate-Europes-Infrastructure-Deployment/default.aspx">Nvidia presenterar DSX POD &ndash; containerbaserade AI-fabriker som ska korta driftsättningen från sex månader till 14 dagar</a></h3>
+        <p class="item__ingress">Nvidia presenterade den 21 oktober på GTC Berlin DSX POD, en referensdesign för kompletta Vera Rubin-AI-fabriker som partner bygger i moduler och validerar på fabrik innan leverans.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Nvidia presenterade den 21 oktober på GTC Berlin DSX POD, en referensdesign för kompletta Vera Rubin-AI-fabriker som partner bygger i moduler och validerar på fabrik innan leverans. På plats ska enheterna bara kopplas till färdig el, kylning och nätverk.</p>
+          <p>Enligt Nvidia kortas driftsättningen på plats från cirka sex månader till så lite som 14 dagar, och leveranser planeras till tidigt 2027. Bland partnerna finns Dell, HPE, Lenovo, Foxconn, Schneider Electric, Vertiv och franska Bull. Pressmeddelandet innehåller inga kvantifierade effektivitetssiffror och namnger inga europeiska kunder; det är hastigheten som är löftet.</p>
+          <p>För Norden: Snabbare driftsättning kan få betydelse för de nordiska datacenterprojekt som byggs just nu, som Fossefalls anläggning i Fyresdal och Scaleways AI-superdator i Sverige. Inga nordiska kunder har uppgetts för DSX POD, och containrarna löser inte tillgången till kraft och nätanslutning som de nordiska projekten också är beroende av.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Introduces-DSX-POD-AI-Factories-to-Accelerate-Europes-Infrastructure-Deployment/default.aspx">Nvidia</a>, <a href="https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts">AI Weekly</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="arbetsmarknad">
+        <div class="item__tags news-card__tags"><span class="tag tag--arbetsmarknad news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+        <h3><a href="https://aiweekly.co/alerts/micron-taoyuan-union-begins-taiwans-first-semiconductor-strike">Micron-anställda i Taiwan strejkar för del av AI-minnesvinsterna</a></h3>
+        <p class="item__ingress">Facket vid Microns fabrik i Taoyuan inledde torsdagen den 22 oktober en 24 timmar lång strejk, som Nikkei Asia enligt AI Weekly beskriver som Taiwans första i halvledarbranschen.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Facket vid Microns fabrik i Taoyuan inledde torsdagen den 22 oktober en 24 timmar lång strejk, som Nikkei Asia enligt AI Weekly beskriver som Taiwans första i halvledarbranschen. Enligt AI Weekly röstade 99 procent av 1&nbsp;994 röstande medlemmar för strejk. Taoyuan är enligt AI Weekly en DRAM-fabrik med omkring 3&nbsp;000 anställda.</p>
+          <p>Facket kräver en engångsbonus på cirka 83 månadslöner för räkenskapsåret 2026 och en permanent andel på 15 procent av kvartalets rörelseresultat från 2027. Enligt AI Weekly har Micron erbjudit upp till 68 månadslöner, vilket facket avvisat som en engångslösning. Samsungs fack har fått bonusen knuten till 10,5 procent av chipdivisionens rörelseresultat, och SK Hynix har enligt samma källa gått med på 10 procent. I Taichung, där HBM-paketering sker, skrevs ett kollektivavtal under den 21 oktober. Enligt AI Weekly hade inga produktionsstörningar bekräftats.</p>
+          <p>För Norden: Konflikten gäller en fråga som även nordiska fack driver, nämligen hur vinsten från AI-boomen delas mellan ägare och dem som tillverkar komponenterna. Vi har inte sett något svenskt eller norskt fack kommentera strejken, men frågan om vinstdelning kan nå nordiska förhandlingsbord där industrin traditionellt sätter märket.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://aiweekly.co/alerts/micron-taoyuan-union-begins-taiwans-first-semiconductor-strike">AI Weekly</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/20/micron-union-in-taiwan-to-launch-strike-as-bonus-dispute-escalates">The Star</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
       <div class="day news-date-group" id="dag-2026-10-22" data-date="2026-10-22">
         <p class="day__label news-date">22 oktober 2026</p>
       <article class="item news-card" data-tags="infrastruktur norden">
@@ -640,65 +713,6 @@ details.menu[open]>summary{color:var(--accent)}
           <p>Enligt News-Medical, som återger studiens siffror, var oddsen bland de 8&nbsp;709 av 101&nbsp;243 patienter som hade detekterbart brunt fett 58 procent lägre för typ 2-diabetes och 47 procent lägre för kronisk ischemisk hjärtsjukdom, och detekterbart brunt fett var även kopplat till lägre odds för depressiva episoder och ångestsyndrom. Patienter som tog angiotensinreceptorblockerare hade högre aktivitet i brunt fett. Blodtrycksläkemedlet losartan ökade aktiviteten i odlade brunfettceller och energiförbrukningen hos möss, medan kroppsvikten var oförändrad, men effekten hos människor har inte testats. Studien är retrospektiv och visar samband, inte orsak och verkan.</p>
           <p>För Norden: Källorna nämner ingen nordisk part, så det här är en bedömning. Materialet kommer från cancerpatienter som undersökts med PET-CT och kan inte rakt av överföras till svenska eller norska patienter, och losartans effekt på brunt fett hos människor återstår att visa i kliniska studier. Nordens breda hälsoregister gör prospektiva uppföljningar tänkbara, men det är en möjlighet och inget som källorna rapporterar.</p>
           <p class="item__source news-card__source">Källa: <a href="https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat">NIH</a>, <a href="https://www.news-medical.net/news/20261015/AI-study-of-101000-patients-links-brown-fat-to-heart-and-mental-health.aspx">News-Medical</a></p>
-          </div>
-        </details>
-      </article>
-      </div>
-      <div class="day news-date-group" id="dag-2026-10-16" data-date="2026-10-16">
-        <p class="day__label news-date">16 oktober 2026</p>
-      <article class="item news-card" data-tags="modeller">
-        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
-        <h3><a href="https://developers.openai.com/api/docs/deprecations">OpenAI stänger GPT-4o och GPT-4.1 i API:et den 14 januari 2027</a></h3>
-        <p class="item__ingress">OpenAI meddelade den 14 oktober att GPT-4o, GPT-4o mini, GPT-4.1 och GPT-4.1 mini tas bort ur API:et den 14 januari 2027.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>OpenAI meddelade den 14 oktober att GPT-4o, GPT-4o mini, GPT-4.1 och GPT-4.1 mini tas bort ur API:et den 14 januari 2027. Bolaget pekar utvecklare mot gpt-6-luna som ersättare, och finjusterade versioner följer samma tidtabell som sina basmodeller.</p>
-          <p>Enligt daily.dev är varslet ungefär tre månader, trots att OpenAI enligt egen policy ska ge minst sex månaders varsel för allmänt tillgängliga modeller. Självbetjäningsfinjustering upphör den 6 januari 2027. Ett byte av modell-ID räcker inte, skriver samma källa: gpt-6-luna har som standard medelhög resonemangsnivå, funktionsanrop via Chat Completions fungerar bara när reasoning_effort är satt till none, och om resonemang slås på stängs parametrar som temperature och top_p av. Luna kostar 0,10 dollar per miljon indatatokens och 0,50 dollar per miljon utdatatokens med ett kontextfönster på 1,05 miljoner tokens, men över 272&nbsp;000 indatatokens stiger priset för hela anropet. OpenAI:s dokumentation anger dessutom att den äldre versionen gpt-4o-2024-05-13 och modellen gpt-4.1-nano stängs redan den 23 oktober 2026, enligt ett besked från april.</p>
-          <p>För Norden: Källorna säger ingenting om nordiska kunder, så det här är en konsekvensbedömning och inte ett rapporterat faktum. Svenska och norska team som byggt kundtjänst, interna assistenter eller finjusterade modeller på GPT-4o eller GPT-4.1 har knappt tre månader på sig att migrera och testa om. Verksamheter som dokumenterat en bestämd modell i en dataskyddskonsekvensbedömning eller i sitt AI-register inför tillsyn av IMY eller Datatilsynet kan behöva uppdatera den dokumentationen när modellen byts.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://developers.openai.com/api/docs/deprecations">OpenAI</a>, <a href="https://daily.dev/posts/openai-promised-developers-six-months-notice-gpt-4o-users-got-three--srbz67kxw">daily.dev</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="reglering">
-        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
-        <h3><a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">EDPB: Tillverkare av smarta glasögon kan inte lägga ansvaret på bäraren</a></h3>
-        <p class="item__ingress">Europeiska dataskyddsstyrelsen EDPB publicerade den 13 oktober ett preliminärt, icke bindande uttalande om smarta glasögon med kamera och mikrofon.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Europeiska dataskyddsstyrelsen EDPB publicerade den 13 oktober ett preliminärt, icke bindande uttalande om smarta glasögon med kamera och mikrofon. Tillverkare och leverantörer av tillhörande AI-tjänster kan enligt styrelsen inte förlita sig på att bäraren informerar människor i närheten för att uppfylla sina egna GDPR-skyldigheter.</p>
-          <p>Om bäraren är personuppgiftsansvarig avgörs av användningen: privat bruk kan omfattas av undantaget för personligt bruk, som ska tolkas snävt, medan publicering på ett offentligt konto eller yrkesmässig eller politisk användning gör bäraren personuppgiftsansvarig. Tillverkaren eller AI-leverantören kan vara ansvarig själv eller gemensamt med bäraren, och när leverantören analyserar kamerans bild för att besvara en fråga från bäraren om omgivningen är leverantören personuppgiftsansvarig. EDPB vill se tydliga inspelningsindikatorer som är svåra att stänga av, till exempel lysdioder och ljudsignaler, samt dataminimering, geofencing på känsliga platser och integritetsvänliga standardinställningar som oskärpa på utomståendes identitet. Ordförande Anu Talus säger att människor förtjänar ”tydliga varningar, inte dolda överraskningar”.</p>
-          <p>För Norden: Norges regering vill enligt Al Jazeera införa ett tillfälligt förbud mot smarta glasögon på vissa offentliga platser, och Oslo har redan förbjudit kameraglasögon i skolor. Uttalandet pekar ut tillverkarna som ansvariga, medan den norska debatten hittills har handlat om förbud mot platser och försäljning. I Sverige publicerade IMY den 14 oktober en egen nyhet om uttalandet.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">Europrivacy</a>, <a href="https://ppc.land/edpb-says-smart-glasses-makers-cant-rely-on-wearers-to-meet-gdpr-duties/">PPC Land</a>, <a href="https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when">Al Jazeera</a>, <a href="https://www.imy.se/nyheter/">IMY</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="infrastruktur norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--infrastruktur news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
-        <h3><a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">Konverteringen av datacentret i Mo i Rana till AI-anläggning har startat</a></h3>
-        <p class="item__ingress">Det börsnoterade bolaget VivoPower meddelade den 12 oktober att bygget har startat för att konvertera datacentret i Mo i Rana i norra Norge till en AI-anläggning med 40 megawatt i första fasen.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Det börsnoterade bolaget VivoPower meddelade den 12 oktober att bygget har startat för att konvertera datacentret i Mo i Rana i norra Norge till en AI-anläggning med 40 megawatt i första fasen. Bolaget köpte den fungerande anläggningen den 21 april 2026.</p>
-          <p>Enligt Bebeez, som anger kapaciteten till 42 megawatt, köpte VivoPower anläggningen av Cowa och den byggdes 2018 av Bitfury som kryptovalutagruva. VivoPower har valt en icke namngiven hyresgäst, som bolaget kallar en &rdquo;global AI industry leader&rdquo;, som föredragen hyresgäst, men hyresavtalen är inte klara. Entreprenaden för mekanik och el ska enligt bolaget tilldelas inom kort, någon tidpunkt för driftstart anges inte, och 30 megawatt av den befintliga anläggningen är anmäld till nätbalanseringstjänster. Bolaget utreder om spillvärmen kan återanvändas, men inga avtal finns. Investeringens storlek och kraftkällan redovisas inte, och uppgifterna kommer i huvudsak från bolagets eget pressmeddelande.</p>
-          <p>För Norden: Entreprenörerna är norska, Øijord &amp; Aanes Entreprenørforretning för markarbeten, TH Blikk och IMTAS, medan bolaget är noterat på Nasdaq och hyresgästen är okänd. Konverteringen sker medan datacenterfrågan är het i Norge: NVE räknar med att norska datacenter mer än fördubblar sin elförbrukning till 2030, enligt en tidigare notis här. Hur anläggningen påverkar elnätet i Nordland framgår inte av källorna.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">GlobeNewswire (VivoPower)</a>, <a href="https://bebeez.eu/2026/10/13/vivopower-starts-construction-at-42mw-mo-i-rana-data-center-in-norway/">Bebeez</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="debatt">
-        <div class="item__tags news-card__tags"><span class="tag tag--debatt news-card__tag news-card__tag--debatt">Debatt</span></div>
-        <h3><a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Åtta amerikanska delstater stämmer OpenAI &ndash; ChatGPT anklagas för att skada barn och unga</a></h3>
-        <p class="item__ingress">Åtta amerikanska delstater lämnade den 14 oktober in stämningar mot OpenAI och hävdar att ChatGPT marknadsförts som säker trots att tjänsten är utformad för att bekräfta användare och efterlikna känslomässig kontakt.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Åtta amerikanska delstater lämnade den 14 oktober in stämningar mot OpenAI och hävdar att ChatGPT marknadsförts som säker trots att tjänsten är utformad för att bekräfta användare och efterlikna känslomässig kontakt. Florida var först med en stämning, i juni.</p>
-          <p>Delstaterna är Iowa, Kansas, Arizona, Arkansas, Idaho, Montana, Nebraska och West Virginia, och stämningarna lämnades enligt Quartz in vid delstatsdomstolar. Quartz uppger också att Arkansas justitiedepartement räknar upp Utah, vilket skulle ge nio. Enligt Al Jazeera och Quartz hävdar de att ChatGPT förstärker vanföreställningar, uppmuntrar farligt beteende och har hjälpt användare att planera våld, och att OpenAI därmed brutit mot konsumentskyddslagar. Arkansas yrkar enligt Quartz bland annat på återbetalning, civilrättsliga viten, tydlig riskinformation och ett förbud mot vidare testning av avancerad AI och utveckling av modeller som kan förbättra sig själva rekursivt tills tillräckliga skyddsåtgärder finns. OpenAI:s talesperson Drew Pusateri säger att bolaget har skydd för yngre användare som många andra AI-produkter saknar, nämner föräldrakontroller och pauspåminnelser, och medger att ingen lösning kan vara perfekt. Anklagelserna är delstaternas påståenden och inte prövade i domstol.</p>
-          <p>För Norden: Källorna nämner inga nordiska åtgärder. I EU pågår ett separat spår: EU-kommissionens AI-kontor har enligt gårdagens notis här begärt information av OpenAI och Anthropic efter säkerhetsincidenter. Vilka nordiska myndigheter, till exempel IMY, Datatilsynet eller konsumentmyndigheterna, som kan agera mot chattbotar och barn framgår inte av källorna.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera</a>, <a href="https://qz.com/states-sue-openai-chatgpt-child-safety-101526">Quartz</a></p>
           </div>
         </details>
       </article>
