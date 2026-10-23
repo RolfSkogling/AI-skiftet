@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 22 Oct 2026 04:18:04 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 16:28:49 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>AI-found PHP flaws push Finnish and Danish public-sector services offline</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-ai-hittade-php-brister-fick-finsk-och-dansk</guid>
+      <pubDate>Fri, 23 Oct 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Finland's state IT center Valtori took the government's public web services offline on Wednesday, October 21, as a precaution after two critical vulnerabilities in the PHP programming language were disclosed. Valtori says it has seen no attempts to exploit the flaws and that the outage is not the result of a data breach.</p>
+<p>The flaws reportedly sat in the code for more than ten years and were found with AI: OpenAI says the security firm Calif found a critical bug using GPT-5.6 Sol, and Wiz independently found both vulnerabilities. According to The Daily Record, Denmark's municipal IT company Kombit shut down several services, including the national school communication platform, and agencies in the Netherlands and France also went offline. Censys data show roughly 1.5 million of 2.6 million surveyed hosts running a PHP version with no fix. OpenAI calls the time between an AI discovery and public disclosure the "Defender's Window".</p>
+<p>For the Nordics: Finland and Denmark chose to disconnect services rather than risk intrusion, a trade-off that Swedish and Norwegian agencies, municipalities and regions running PHP-based sites may also face. We have found no reports that any Swedish or Norwegian agencies took services offline. The question is whether NIS2 implementation and the national supervisory authorities are ready for a time when AI finds bugs more than a decade old faster than organizations can fix them.</p>
+<p class="news-card__source">Source: <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI</a>, <a href="https://thedailyrecord.com/2026/10/21/government-websites-go-dark-after-ai-discovered-flaw-sparks-security-scramble/">The Daily Record</a>, <a href="https://www.devdiscourse.com/article/international/3995774-finland-takes-public-government-websites-offline-as-precaution-over-php-concern">Devdiscourse</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic launches Claude Duet, a proactive agent built on Opus 5.5</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-anthropic-lanserar-claude-duet-en-proaktiv-agent-byggd</guid>
+      <pubDate>Fri, 23 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic introduced Claude Duet on October 21, an app in which Claude works as a proactive agent. It is a research preview built around Claude Opus 5.5 and opens by waitlist to Pro and Max subscribers in the US, on iOS, Android and claude.ai.</p>
+<p>Duet sends a morning brief, watches connected apps and contacts the user only when something needs attention. It runs on its own virtual machine with a browser and can keep working while the user is away. According to Anthropic it asks before sending messages, making payments, signing or deleting, and it will never trade securities or move money between accounts. Anthropic acknowledges that it can misread conversations or urgency and that personal errands such as booking tickets work less well.</p>
+<p>For the Nordics: The service is limited to the US today, so Swedish and Norwegian users are outside the waitlist. If an agent that reads email and can pay through connected accounts reaches Europe, it raises GDPR questions for IMY and Datatilsynet and for supervision under the EU AI Act. Banks are already wary: according to Axios, relayed by The Neuron, Morgan Stanley and Bank of America are trying to contain the risks of third-party agents that reach customer accounts, a question Nordic banks such as SEB and DNB also have to address.</p>
+<p class="news-card__source">Source: <a href="https://claude.com/resources/articles/claude-duet">Anthropic</a>, <a href="https://aiweekly.co/ai-news-today/edition/2026-10-22">AI Weekly</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>]]></description>
+    </item>
+    <item>
+      <title>Microsoft's MAI-DxO diagnosis system beats general practitioners on hard simulated cases, Science study finds</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-microsofts-diagnossystem-mai-dxo-slar-allmanlakare-i-simulerade</guid>
+      <pubDate>Fri, 23 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Microsoft AI has published a study in Science of MAI-DxO, a system in which several AI agents act as a panel of doctors that questions the patient, orders tests and debates a diagnosis. On complex cases from the New England Journal of Medicine the system was right 83 percent of the time, against 36 percent for general practitioners and internists working alone with reference materials.</p>
+<p>Much of the improvement comes from the underlying models: GPT-5.5 alone reached 72 percent and with DxO nearly 87 percent, while Gemini 2.5 Flash went from 46.4 to nearly 69 percent. On emergency cases the system gave little or no gain. The results come from a simulation, not real patients, and the comparison included neither specialists nor physician teams. An evaluation with Beth Israel Deaconess Medical Center is planned but has no results.</p>
+<p>For the Nordics: The study says nothing about Nordic health care, but it raises a question for Socialstyrelsen and Helsedirektoratet: how a system that has performed well in simulation should be tested on real patients before Swedish regions or Norwegian health trusts use it. We have found no reports of Nordic trials of the system.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/">TechCrunch</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia unveils DSX POD, containerized AI factories meant to cut deployment from six months to 14 days</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-nvidia-presenterar-dsx-pod-containerbaserade-ai-fabriker-som</guid>
+      <pubDate>Fri, 23 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>At GTC Berlin on October 21, Nvidia introduced DSX POD, a reference design for complete Vera Rubin AI factories that partners build in modules and validate at the factory before delivery. On site, the units only need to be connected to prepared power, cooling and networking.</p>
+<p>According to Nvidia, on-site deployment drops from about six months to as little as 14 days, with deliveries planned for early 2027. Partners include Dell, HPE, Lenovo, Foxconn, Schneider Electric, Vertiv and France's Bull. The press release contains no quantified efficiency figures and names no European customers; speed is the promise.</p>
+<p>For the Nordics: Faster deployment could matter for the Nordic data center projects now under construction, such as Fossefall's facility in Fyresdal and Scaleway's AI supercomputer in Sweden. No Nordic customers have been named for DSX POD, and the containers do not solve access to power and grid connection, on which Nordic projects also depend.</p>
+<p class="news-card__source">Source: <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Introduces-DSX-POD-AI-Factories-to-Accelerate-Europes-Infrastructure-Deployment/default.aspx">Nvidia</a>, <a href="https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Micron workers in Taiwan strike over a share of AI memory profits</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-micron-anstallda-i-taiwan-strejkar-for-del-av</guid>
+      <pubDate>Fri, 23 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>The union at Micron's Taoyuan fab began a 24-hour strike on Thursday, October 22, which Nikkei Asia, according to AI Weekly, describes as Taiwan's first in the semiconductor industry. According to AI Weekly, 99 percent of 1,994 voting members backed the strike. According to AI Weekly, Taoyuan is a DRAM fab with about 3,000 employees.</p>
+<p>The union demands a one-time bonus of about 83 months' salary for fiscal 2026 and a permanent 15 percent share of quarterly operating profit from 2027. According to AI Weekly, Micron has offered up to 68 months' pay, which the union rejected as a one-off. Samsung's union has had bonuses tied to 10.5 percent of chip-division operating profit, and SK Hynix has agreed to 10 percent, per the same source. In Taichung, where HBM packaging takes place, a collective agreement was signed on October 21. According to AI Weekly, no production disruptions had been confirmed.</p>
+<p>For the Nordics: The dispute concerns a question Nordic unions also pursue, namely how the profits of the AI boom are shared between owners and those who make the components. We have seen no Swedish or Norwegian union comment on the strike, but the question of profit sharing could reach Nordic bargaining tables where industry traditionally sets the benchmark.</p>
+<p class="news-card__source">Source: <a href="https://aiweekly.co/alerts/micron-taoyuan-union-begins-taiwans-first-semiconductor-strike">AI Weekly</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/20/micron-union-in-taiwan-to-launch-strike-as-bonus-dispute-escalates">The Star</a></p>]]></description>
+    </item>
     <item>
       <title>Fossefall has started building its first AI data center in Fyresdal, Telemark</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-22</link>
@@ -906,55 +967,6 @@
 <p>The results follow the Internet Foundation's report Svenskarna och internet 2026, which found that more than half of employed Swedes now use AI at work, twice as many as a year earlier. TNG CEO Åsa Edman Källströmer says most people are only scratching the surface and that productivity gains are therefore missing, and that employers must actively support staff rather than encourage use and hope for results. We have not been able to review the sample or method behind the figures.</p>
 <p>For the Nordics: The gap between broad and deep use is a question for Swedish employers and for trade union bodies such as Unionen and LO: should skills programmes measure how many people use AI, or how they use it? The Norwegian parallel is the agreement between the government and the social partners of October 2, in which skills development is one of the points.</p>
 <p class="news-card__source">Source: <a href="https://computersweden.se/article/4228192/lag-mognad-i-svenskarnas-ai-anvandning.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway and the social partners sign agreement on responsible AI at work</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-norge-och-arbetslivets-parter-tecknar-avtal-om-ansvarsfull</guid>
-      <pubDate>Sat, 03 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The Norwegian government and eight organizations from working life – LO, NHO, Unio, YS, Akademikerne, KS, Virke and Spekter – signed a declaration of intent on October 2 on the responsible use of AI in workplaces. Prime Minister Jonas Gahr Støre and Minister of Digitalisation Torgeir Micaelsen represented the government.</p>
-<p>The agreement builds on the Norwegian working-life model and runs for four years. The parties will cooperate on productivity gains, skills development, the working environment and sharing experience on responsible deployment. A coordination group under the Ministry of Digitalisation, including the social partners, agencies such as Datatilsynet and Arbeidstilsynet, and research institutions, will follow up the work through 2029. YS highlights three priorities: preventing excessive surveillance with AI tools, never handing management responsibility to algorithms, and involving employees early. YS leader Hans-Erik Skjæggerud sums it up as people being led by people, not by algorithms.</p>
-<p>For the Nordics: Norway chooses a tripartite agreement over new legislation, in line with the Nordic model where the state, employers and unions steer by consensus. The agreement is a declaration of intent, not a binding rulebook – whether it has real effect will be decided in the coordination group and in individual collective agreements. The same issues, such as surveillance and automated decisions, are handled in Sweden through the Co-determination Act and collective agreements, and in the EU by the AI Act, which classifies AI used for employment decisions as high-risk.</p>
-<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/regjeringen-og-partene-i-arbeidslivet-inngar-ki-avtale/id3174613/">Regjeringen.no (Norwegian government)</a>, <a href="https://ys.no/nyheter/samfunnsansvar/har-inngatt-avtale-om-kunstig-intelligens-i-arbeidslivet/">YS</a>, <a href="https://sol.no/nyheter/ny-arbeidslivsavtale-om-ki/85233386">Sol.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>California bars AI as the sole basis for firing or disciplining workers</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-kalifornien-forbjuder-ai-som-enda-grund-for-att</guid>
-      <pubDate>Sat, 03 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>California Governor Gavin Newsom signed a slate of workplace AI laws on September 30, among them SB 947, dubbed the No Robo Bosses Act. It bars employers from letting an automated system be the sole basis for firing or disciplining; when a system “primarily” drives the decision, a human must check it against other evidence.</p>
-<p>Employers must give written notice that AI was “primarily” used, describe the data the system relied on and name a human contact. The law takes effect July 1, 2027. The package also includes SB 951, which requires special notice when AI is behind mass layoffs, AB 1883, which restricts AI that infers workers’ emotional states or collects neural data, and AB 1331, which bans monitoring tools in restrooms. The industry group Chamber of Progress objects that “primarily” lacks objective standards, while the California Federation of Labor Unions welcomes the law. Newsom vetoed a similar bill in 2025.</p>
-<p>For the Nordics: Part of this protection already exists in Europe. Article 22 of the GDPR gives a right not to be subject to solely automated decisions with legal effect, and the AI Act classifies AI used for recruitment and employment decisions as high-risk. In Sweden such systems are normally dealt with through the duty to negotiate under the Co-determination Act, and in Norway through the rules on control measures in the Working Environment Act. California’s model of a written explanation and a human contact could become a reference in the Nordic debate, but we have not seen any Nordic government or union comment on it.</p>
-<p class="news-card__source">Source: <a href="https://www.kqed.org/news/12102337/newsom-signs-slate-of-ai-workplace-laws-barring-robo-bosses-and-surveillance">KQED</a>, <a href="https://www.upi.com/Top_News/US/2026/10/01/california-artificial-intelligence/5411790881596">UPI</a>, <a href="https://www.mintz.com/insights-center/viewpoints/2226/2026-09-10-californias-ai-workplace-legislative-blitz-california">Mintz</a></p>]]></description>
-    </item>
-    <item>
-      <title>Boston Dynamics gives Atlas a new 13-degree-of-freedom hand – with only four fingers</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-boston-dynamics-ger-atlas-ny-hand-med-13</guid>
-      <pubDate>Sat, 03 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Boston Dynamics unveiled a new hand for the Atlas humanoid on October 2, with four fingers and 13 degrees of freedom, up from 7 in the previous hand. The thumb has four degrees of freedom and the other three fingers have three each.</p>
-<p>The hand is slightly larger than a human hand, has pressure-sensitive tactile sensors on the fingertips and palm, and according to the company can carry a loaded mini-fridge weighing more than 100 pounds. It is built for pinch and tripod grasps and for tools such as drills, grinders and welding torches. The design is tuned for simulation and reinforcement learning, so control policies trained in software can transfer to the physical robot. A fifth finger was dropped after testing, since it would have required three extra actuators without being needed for the tasks.</p>
-<p>For the Nordics: The hand shows where humanoid competition is heading – tactile sensing and training in simulation. Norway’s 1X Technologies builds humanoids in the same segment, and SINTEF and NTNU do robotics research. Robots that can handle drills, grinders and welders matter most for Nordic manufacturing, where manual tool tasks are hard to automate. How soon such robots reach Nordic factories is an open question.</p>
-<p class="news-card__source">Source: <a href="https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/">Boston Dynamics</a>, <a href="https://interestingengineering.com/ai-robotics/boston-dynamics-13-dof-robot-hand">Interesting Engineering</a></p>]]></description>
-    </item>
-    <item>
-      <title>arXiv caps submissions at two papers a month – volume has doubled in two years</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-03-arxiv-infor-tak-pa-tva-artiklar-per-manad</guid>
-      <pubDate>Sat, 03 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>The preprint server arXiv introduced a limit on October 1 of two submissions per person per calendar month and at most three active submissions at a time. The rules apply to all subject areas.</p>
-<p>The background is that submissions reached 40,363 in September 2026, twice as many as two years earlier, which generated roughly 9,000 support tickets. arXiv writes that AI tools make it easy to flood the server with thin papers and “salami” papers split from a single piece of work. Rejected papers count toward the quota. Reactions are split: mathematician Alex Kontorovich backs the cap and urges researchers to pick their two best, while Scott Kominers of Harvard Business School argues the rule confuses saving moderator effort with limiting scholarship.</p>
-<p>For the Nordics: arXiv is a central preprint channel for AI and quantum research at KTH, Chalmers, NTNU and the University of Oslo as well. The cap applies per submitting person. How Nordic universities and funders such as the Swedish Research Council and the Research Council of Norway view the rule is still unclear; we have found no statements.</p>
-<p class="news-card__source">Source: <a href="https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/">arXiv</a>, <a href="https://www.timeshighereducation.com/news/arxivs-new-preprint-submission-cap-divides-opinion">Times Higher Education</a></p>]]></description>
     </item>
   </channel>
 </rss>
