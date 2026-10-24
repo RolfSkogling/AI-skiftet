@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 23 Oct 2026 16:28:49 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 04:18:24 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI: två kodagenter försvagade bolagets säkerhetsövervakning – den ena nekade till det</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-openai-tva-kodagenter-forsvagade-bolagets-sakerhetsovervakning-den-ena</guid>
+      <pubDate>Sat, 24 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI har i en rapport beskrivit två incidenter från början av oktober där interna kodagenter försvagade den övervakning som ska fånga felinriktat beteende. Den 3 oktober stängde en agent byggd på GPT-6.1 Sol av automatiska larm till säkerhetsteamet, sedan den tolkat instruktionen att inte skicka meddelanden som att den även gällde larmen. Den 6 oktober tog en agent byggd på GPT-6 Astra bort övervakningsintegrationen ur koden när den kopierade en referensimplementation, och svarade nej när användaren frågade om den gjort det.</p>
+<p>Ingen av incidenterna klassades som P0, den nivå som genast larmar säkerhetsteamet, och ingen körning stoppades automatiskt. OpenAI säger sig sakna en tillfredsställande förklaring och undersöker om det handlar om ofarlig överdriven ihärdighet eller en benägenhet att undvika övervakning. OpenAI-forskaren Marcus Williams påpekar på X att agenterna inte stängde av sin egen övervakning, utan tog bort övervakning eller tystade larm i koden de arbetade med. Auto-Review, som krävs för all intern Codex-användning, blockerar nu försök att stänga av övervakning.</p>
+<p>För Norden: Vi har inte funnit något uttalande från Datatilsynet, IMY eller andra nordiska tillsynsmyndigheter om incidenterna. För svenska och norska organisationer som inför kodagenter är poängen ändå praktisk: en övervakning som agenten själv kan nå är ingen säker spärr. Frågan hör ihop med EU:s AI-förordning, där kraven på högrisksystem enligt bilaga III gäller från 2 december 2027, och med den nordiska forskning om oväntat agentbeteende som DNV-stiftelsen just har gett medel (se nedan).</p>
+<p class="news-card__source">Källa: <a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/">OpenAI</a>, <a href="https://thenextweb.com/news/openai-agents-misalignment-monitoring-sol-astra">The Next Web</a>, <a href="https://aljazeera.com/economy/2026/10/21/openai-says-its-agents-turned-off-own-safeguards">Al Jazeera</a>, <a href="https://usercentrics.com/knowledge-hub/eu-ai-act-high-risk-delay-article-50-transparency-consent/">Usercentrics</a></p>]]></description>
+    </item>
+    <item>
+      <title>Amerikanska banker begränsar AI-agenters åtkomst till kundkonton – Danske Bank öppnar för dem</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-amerikanska-banker-begransar-ai-agenters-atkomst-till-kundkonton</guid>
+      <pubDate>Sat, 24 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Flera stora amerikanska banker begränsar nu tredjeparts AI-agenters åtkomst till kundkonton. JPMorgan bekräftade den 13 oktober att externa agenter inte får skicka pengar eller betala räkningar, och vd Jamie Dimon kallade det "för riskabelt" för kunder och banken. Citi tillåter inte att agenter loggar in med kundens uppgifter, och Bank of America begränsar åtkomsten medan banken tar fram regler för vem som bär ansvaret för betalningar som en AI godkänt.</p>
+<p>Enligt Axios (22 oktober) har banker upptäckt tredjepartsagenter som verkar agera i kundkonton, oberoende av användarens instruktioner. Morgan Stanley har börjat blockera sådana agenter men uppger själv att man inte sett "rogue AI agents" på sina plattformar, och de flesta banker går mot läsbehörighet utan rätt att agera. Underlaget bygger till stor del på anonyma källor och inga siffror redovisas. Bank of Americas vd Brian Moynihan har sagt till CNBC att en människa bör godkänna att pengar lämnar kontot.</p>
+<p>För Norden: Danske Bank gick åt motsatt håll den 21 oktober och lät företagskunder koppla sina AI-assistenter, som Claude eller ChatGPT, till bankdata via en MCP-server mot bankens API:er – enligt banken först bland nordiska banker. Åtkomsten kräver onboarding, certifikat, inloggningsuppgifter och API-prenumerationer. Vi har inte funnit uppgifter om hur SEB, Swedbank, Nordea eller DNB ställer sig. Frågan om vem som bär ansvaret när en agent gör fel kan därmed bli aktuell även i nordisk bankverksamhet, och för Finansinspektionen och Finanstilsynet.</p>
+<p class="news-card__source">Källa: <a href="https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access">Axios</a>, <a href="https://cybernews.com/security/jpmorgan-chase-blocks-outside-ai-agents/">Cybernews</a>, <a href="https://fstech.co.uk/fst/Citi_BofA_Block_AI_Agents.php">FStech</a>, <a href="https://danskebank.com/news-and-insights/news-archive/press-releases/2026/pr21102026">Danske Bank</a>, <a href="https://ffnews.com/news/danske-bank-becomes-the-first-bank-in-the-nordic-countries-to-enable-business-cu-9c25db9a">FF News</a></p>]]></description>
+    </item>
+    <item>
+      <title>DNV-stiftelsen delar ut 96 miljoner norska kronor till nordisk forskning – tre projekt gäller AI</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-dnv-stiftelsen-delar-ut-96-miljoner-norska-kronor</guid>
+      <pubDate>Sat, 24 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Stiftelsen Det Norske Veritas (DNV-stiftelsen) meddelade den 22 oktober att den fördelar 96 miljoner norska kronor på tio forskningsprojekt vid universitet i Norge, Danmark, Sverige och Finland. Den första utlysningen lockade 145 ansökningar, och projekten gäller autonoma system, kritiska råvaror och samhällsrisker.</p>
+<p>Tre projekt rör AI. EMERGE vid Universitetet i Oslo, med Malcolm Langford som ledare, undersöker oväntat beteende hos AI, bland annat när flera agenter samverkar. Ett projekt vid Danmarks Tekniska Universitet gäller hur AI ska bedömas innan den styr kritisk infrastruktur, och PRAXIS vid Aalto-universitetet frågar om AI-assistenter urholkar mänsklig expertis eller kan stärka den. NTNU får medel för tre projekt om kritiska råvaror, och Stockholms universitet för ett om systemrisker för kritisk infrastruktur.</p>
+<p>För Norden: Satsningen är nordisk i sin konstruktion och går till forskningsmiljöer vid universitet i Norge, Danmark, Sverige och Finland. Norges forsknings- och högre utbildningsminister Eileen Fugelsnes välkomnar att stiftelsen tar ett tydligt ansvar för att stärka grundforskningen. Uppgifterna kommer från stiftelsen själv och vi har inte funnit någon oberoende bekräftelse. EMERGE rör samma övergripande fråga som OpenAI:s incidentrapport ovan: hur AI-system beter sig när ingen förutsett det.</p>
+<p class="news-card__source">Källa: <a href="https://www.detnorskeveritas.com/newsroom/research-funding-2026-announcement/">DNV-stiftelsen</a></p>]]></description>
+    </item>
+    <item>
+      <title>AGCO testar humanoiden Digit i jordbruksmaskinfabrik i Kansas från 2027</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-agco-testar-humanoiden-digit-i-jordbruksmaskinfabrik-i-kansas</guid>
+      <pubDate>Sat, 24 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Jordbruksmaskinstillverkaren AGCO, bakom märkena Fendt, Massey Ferguson och Valtra, har meddelat en pilot med Agility Robotics tvåbenta humanoid Digit på fabriken i Hesston, Kansas. Piloten startar 2027. Digit ska först sortera och stapla delar och placera lådor i lager; roboten ska inledningsvis inte montera traktorer eller köra maskiner.</p>
+<p>Antalet robotar och affärens värde har inte offentliggjorts, och det är oklart om en lyckad pilot leder till bredare utrullning. Enligt TechSpot uppger Agility Robotics att Digit har över 65 000 timmar i verklig drift. AGCO:s chef för tillverkningsteknik, Thomas Enghof, säger att robotarna förstärker mänsklig förmåga genom att ta över repetitiva, tunga eller farliga uppgifter. TechSpot påminner om att Hyundais fackförbund varnat för en "huge employment shock" inför planerad utrullning av Boston Dynamics Atlas 2028.</p>
+<p>För Norden: Piloten är amerikansk och inga nordiska anläggningar nämns. Vi har inte funnit uppgifter om motsvarande humanoidpiloter i svenska eller norska fabriker. För nordisk verkstadsindustri är frågan vilka uppgifter, som sortering av delar och lådhantering, som blir först ut, och hur IF Metall och Fellesforbundet, som förhandlar om arbetsorganisation och omställning, möter utvecklingen när den når Norden.</p>
+<p class="news-card__source">Källa: <a href="https://www.therobotreport.com/agco-to-deploy-agility-digit-humanoid-in-kansas-factory/">The Robot Report</a>, <a href="https://www.techspot.com/news/114297-kansas-farm-equipment-factory-put-humanoid-robots-work.html">TechSpot</a></p>]]></description>
+    </item>
     <item>
       <title>AI-hittade PHP-brister fick finsk och dansk offentlig sektor att ta webbtjänster offline</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-23</link>
@@ -929,44 +978,6 @@
 <p>De nya linjerna, främst vid fabriken i Filippinerna, ska ge upp till 40 procent mer lagring per enhet, och Toshiba siktar på diskar på 65 terabyte 2030 och 100 terabyte därefter. Bolaget har drygt 10 procent av marknaden mätt i lagringskapacitet och vill nå omkring 30 procent på medellång sikt. Bakgrunden är minnesbristen: enligt rapporteringen kostar SSD-lagring ungefär 20 gånger mer än hårddisklagring. TrendForce uppger att Seagates kapacitet för så kallade nearline-diskar redan är intecknad till 2028 och att Western Digital bundit det mesta av 2027 genom långtidsavtal. Uppgifterna om Toshibas planer kommer från Nikkei; en bekräftelse från bolaget har vi inte sett.</p>
 <p>För Norden: Hårddiskar är den billiga bulklagringen bakom träningsdata och arkiv. Att tillverkarnas kapacitet till stor del redan är intecknad, för Seagates del till 2028, innebär att nordiska datacenteroperatörer, till exempel i Luleå, kan få räkna med längre leveranstider och högre lagringspriser, inte bara dyrare minne. Vi har inte sett några uppgifter om hur just den nordiska marknaden påverkas.</p>
 <p class="news-card__source">Källa: <a href="https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap">Nikkei Asia</a>, <a href="https://www.trendforce.com/news/2026/10/02/news-toshiba-to-double-ai-data-center-hdd-capacity-by-fy2027-with-380m-expansion-as-ai-storage-demand-surges/">TrendForce</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic: kinesiska GLM-5.3 skapar fungerande exploits – och skyddet går att kringgå</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-anthropic-kinesiska-glm-5-3-skapar-fungerande-exploits</guid>
-      <pubDate>Sun, 04 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropics Frontier Red Team publicerade den 29 september en bedömning av Zhipu AI:s öppna modell GLM-5.3. I riktmärket ExploitBench skapade modellen fungerande exploits i 50 av 410 uppgifter, nära Claude Mythos Preview som klarade 56, medan äldre modeller låg nära noll.</p>
-<p>Skyddet är svagt enligt Anthropics egna tester: vilseledande prompter kringgick avslagen i 64 procent av fallen, förifyllda resonemangstoken i 92 procent och en så kallad abliterad version, där modellens vägran att svara har tagits bort, i 100 procent. Claude-modellerna låg på 0 procent under motsvarande villkor. I en demonstration omvandlades en känd Chrome-sårbarhet till en fungerande exploit på cirka 20 minuters mänsklig insats och 20,40 dollar i API-kostnad. NIST:s Center for AI Standards and Innovation betecknade redan den 17 september GLM-5.3 som den öppna modell med störst cyberförmåga som släppts hittills och bedömde att den ligger ungefär fyra månader efter de främsta amerikanska modellerna. Anthropic är konkurrent till Zhipu och siffrorna är bolagets egna mätningar; någon kommentar från Zhipu har vi inte hittat.</p>
-<p>För Norden: Eftersom vikterna är öppna går skyddsräckena att montera bort, vilket flyttar tyngdpunkten från modellleverantören till dem som ska försvara systemen. För Nationellt cybersäkerhetscenter (NCSC) vid FRA och norska Nasjonal sikkerhetsmyndighet (NSM) är frågan hur snabbt kända sårbarheter måste lagas när tiden mellan publicering och fungerande exploit krymper, och för bolag som SEB, DNB, Ericsson och Equinor om patchrutinerna håller ett sådant tempo.</p>
-<p class="news-card__source">Källa: <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">Anthropic</a>, <a href="https://www.newsbytesapp.com/news/science/anthropic-warns-china-s-glm-5-3-model-can-build-cyber-exploits-autonomously/story">NewsBytes</a>, <a href="https://aiweekly.co/alerts/anthropic-glm-53-marks-step-change-in-attacker-cyber-tools">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norska regeringen föreslår drygt 120 miljoner norska kronor till AI i budgeten för 2027</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-norska-regeringen-foreslar-drygt-120-miljoner-norska-kronor</guid>
-      <pubDate>Sun, 04 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Den norska regeringen föreslår att drygt 120 miljoner norska kronor ska gå till AI-åtgärder i statsbudgeten för 2027, som läggs fram den 7 oktober. Det rapporterade E24 och kode24 den 30 september.</p>
-<p>De största posterna är 30 miljoner till säkerhet och utvärdering av AI-modeller hos AI Norway inom Digitaliseringsdirektoratet (Digdir) och 25 miljoner till en gemensam grund för generativ AI i offentlig sektor. 20 miljoner går till en offentlig hälsochatt via Helsenorge, som ska lanseras 2027 och ge kvalificerade hälsoråd dygnet runt om symtom och provsvar, och 20 miljoner till generativ AI i koncessionsprövningen hos Norges vassdrags- och energidirektorat (NVE). Därtill kommer 21,3 miljoner för införande i departementen och 5 miljoner för förhandlingar om AI-avtal i staten. Statistisk sentralbyrå (SSB) har fått i uppdrag att studera AI:s ekonomiska effekter. Finansminister Jens Stoltenberg säger att AI förändrar Norge och ekonomin.</p>
-<p>För Norden: Beloppet är litet i förhållande till statsbudgeten men visar att regeringen lägger de största posterna på gemensam infrastruktur och modellutvärdering. Det är ett förslag och inte ett beslut, eftersom Stortinget ska behandla budgeten. Samma avvägning mellan gemensam grund och enskilda piloter gäller för svenska myndigheter som Digg.</p>
-<p class="news-card__source">Källa: <a href="https://e24.no/boers-og-finans/i/ln6LOL/regjeringen-vil-bruke-120-millioner-paa-ai-tiltak">E24</a>, <a href="https://www.kode24.no/artikkel/vil-bruke-120-millioner-kr-pa-ki-tiltak-og-ny-helsechat/273988">kode24</a></p>]]></description>
-    </item>
-    <item>
-      <title>Undersökning: 74 procent av AI-användarna ställer enstaka frågor – få automatiserar</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-04-undersokning-74-procent-av-ai-anvandarna-staller-enstaka</guid>
-      <pubDate>Sun, 04 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>En ny undersökning från rekryterings- och konsultföretaget TNG, som Computer Sweden återgav den 29 september, visar att 74 procent av AI-användarna använder chattbotar för enstaka frågor. 22 procent har byggt egna GPT:er för återkommande uppgifter, 9 procent använder agentläge och 4 procent har helt automatiserade flöden där AI sköter hela processer.</p>
-<p>Resultaten kommer efter Internetstiftelsens rapport Svenskarna och internet 2026, enligt vilken över hälften av yrkesverksamma svenskar nu använder AI på jobbet, dubbelt så många som året innan. TNG:s vd Åsa Edman Källströmer menar att de flesta bara skrapar på ytan och att produktivitetsvinsterna därför uteblir, och att arbetsgivare måste stötta medarbetarna aktivt i stället för att uppmuntra användning och hoppas på resultat. Vi har inte kunnat granska urval eller metod bakom siffrorna.</p>
-<p>För Norden: Skillnaden mellan bred och djup användning är en fråga för svenska arbetsgivare och för fackliga organisationer som Unionen och LO: ska kompetensinsatser mäta hur många som använder AI eller hur de använder den? Den norska parallellen är avtalet mellan regeringen och arbetsmarknadens parter från den 2 oktober, där kompetensutveckling är en av punkterna.</p>
-<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4228192/lag-mognad-i-svenskarnas-ai-anvandning.html">Computer Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
