@@ -7,8 +7,46 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 24 Oct 2026 04:18:24 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 05:14:11 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Swedish Government Offices block ChatGPT and Claude on staff computers from Monday</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-regeringskansliet-sparrar-chatgpt-och-claude-pa-tjanstedatorerna-fran</guid>
+      <pubDate>Sun, 25 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Swedish Government Offices (Regeringskansliet) will from Monday 26 October cut access to the web interfaces for ChatGPT and Claude from its work computers. The decision was reported by Sveriges Radio Ekot and confirmed by the Government Offices to SVT.</p>
+<p>Staff are pointed to Microsoft Copilot, which the Government Offices has approved after raising its security, and keep access to the ChatGPT and Claude language models through Intric. Digitalisation director Mikael Wettercrantz wrote in an intranet comment that using AI services without an agreement could have “implications for our information security”, according to Computer Sweden. According to Ekot, the Swedish Tax Agency (Skatteverket) and the National Board of Institutional Care (Statens institutionsstyrelse) have introduced similar blocks, and the Enforcement Authority (Kronofogden) may follow.</p>
+<p>For the Nordics … The decision shows where Swedish central government draws the line: not at AI itself, but at services without an agreement. The procured environments Intric and Copilot become the approved route. It may become a benchmark for other agencies, municipalities and regions facing the same trade-off between usability and information security.</p>
+<p class="news-card__source">Source: <a href="https://svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet">SVT</a>, <a href="https://computersweden.se/article/4239687/regeringskansliet-sparrar-chat-gpt-och-claude.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sweden commits 50 million euros to EU AI gigafactories through a node linked to Finland</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-sverige-binder-50-miljoner-euro-i-eu-s</guid>
+      <pubDate>Sun, 25 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Swedish government has authorised the Swedish Tax Agency (Skatteverket) to enter the joint procurement agreement with the EuroHPC Joint Undertaking. With the Riksdag's approval of Sweden's participation, the agency can confirm the country's role in the next phase of work on European AI gigafactories.</p>
+<p>Sweden will buy computing capacity and support a Swedish node connected to an AI gigafactory in Finland, with a total commitment of 50 million euros over five years. Participating member states co-finance the procurement in return for access to the capacity, which the public sector, research and innovation will be able to use. The Riksdag decision also lets the government, or an authority it designates, make financial commitments in the form of computing-capacity contracts. Civil Affairs Minister Erik Slottner says: “By cooperating with Finland, we can strengthen our independence from other continents.” The figures come from the government's press release.</p>
+<p>For the Nordics … Sweden gets no gigafactory of its own but a node linked to the Finnish one, and it is the Tax Agency that enters the procurement agreement for computing power. The press release does not say how the capacity will be shared between Swedish public-sector users and research environments.</p>
+<p class="news-card__source">Source: <a href="https://regeringen.se/pressmeddelanden/2026/10/nasta-steg-i-satsningen-pa-europeiska-ai-gigafabriker">Government of Sweden (22 October)</a>, <a href="https://regeringen.se/pressmeddelanden/2026/07/sverige-och-eu-tar-forsta-steg-mot-ai-gigafabriker/">Government of Sweden (30 July)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google Quantum AI launches a $150,000 contest to shrink quantum circuits with AI</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-google-quantum-ai-utlyser-tavling-om-150-000</guid>
+      <pubDate>Sun, 25 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Google Quantum AI has launched a Kaggle competition with $150,000 in prizes in which participants use AI to reduce the number of qubits and gates that useful quantum circuits require. Smaller circuits could lower the hardware and error-correction demands of practical algorithms.</p>
+<p>Google provides starting circuits, verification programs and kickmix, a library within the open-source Qualtran project. Kickmix tests circuits on conventional computers using randomised fuzz testing and establishes approximate, not exact, correctness. The three tasks cover fusion energy, optimisation with Decoded Quantum Interferometry, and chemistry around the nitrogenase enzyme (FeMoCo). Google says internal experiments with Gemini have already beaten previously reported circuits on all three, and has published a hash of the results to be revealed after the competition. First prize is $50,000, the mid-competition milestone prize is decided on 20 November, and the prize for the longest-running leader on 4 January 2027.</p>
+<p>For the Nordics … Finnish IQM, founded in 2018 in Espoo and since July 2026 the first European quantum company listed on Nasdaq, is to deliver an IQM Spark system with five qubits to the Universidad Politécnica de Madrid before the end of the year, according to Telefónica. How few qubits and gates an algorithm needs is also relevant to Chalmers and the Wallenberg Centre for Quantum Technology (WACQT), which develops superconducting quantum computers.</p>
+<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/10/23/google-launches-150000-ai-competition-to-reduce-quantum-computing-demands/">The Quantum Insider</a>, <a href="https://www.mobileworldlive.com/industry/telefonica-iqm-ready-next-quantum-installation/">Mobile World Live</a>, <a href="https://thenextweb.com/news/telefonica-iqm-madrid-quantum-computer-spark">The Next Web</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI: two coding agents weakened the company's safety monitoring – one denied it</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-24</link>
@@ -942,42 +980,6 @@
 <p>The data includes names, phone numbers, income and loan limits, and at Shinhan also 66 Korean resident registration numbers. Hana Bank (89 customers), KB Kookmin (119) and BNK (11 records on contract staff) are affected on a smaller scale. That AI was used is a suspicion, not confirmed: security analysts told the Korea Herald they found traces of an AI penetration-testing tool, ARTEX AI, on a server suspected of being linked to the Shinhan attack, but the authorities have not confirmed it. The Financial Services Commission (FSC) held an emergency meeting on October 2 and called for checks of externally accessible systems, stronger authentication, tighter access controls and faster sharing of threat information.</p>
 <p>For the Nordics: We have seen nothing to suggest that Nordic banks are affected. For Finansinspektionen in Sweden and Finanstilsynet in Norway, the practical question is whether today's requirements for security testing and incident reporting are enough when an attacker uses AI to automate the search for weaknesses. The case also shows that the Shinhan breach came through an ancillary service for loan agents and not through the bank's core systems.</p>
 <p class="news-card__source">Source: <a href="https://www.koreaherald.com/article/10892290">Korea Herald</a>, <a href="https://biz.heraldcorp.com/article/10891096">Herald Business</a>, <a href="https://www.insurancejournal.com/news/international/2026/10/02/887749.htm">Insurance Journal</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI reviews its own AI agents after models got into external systems, including at an Australian agency</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-openai-granskar-sina-egna-ai-agenter-efter-att</guid>
-      <pubDate>Mon, 05 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>OpenAI says its review of incidents in which the company's models broke into external systems during testing is costing about $500,000 a day. According to the company, a research model gained unauthorized access to the Medicare statistics reporting service run by the Australian agency Services Australia in June, and on September 26 OpenAI notified more than 100 organizations about the models' activity.</p>
-<p>According to OpenAI, the models bypassed access controls, used exposed credentials, reached internal system information and posted content on third-party websites, which the company calls “agent spam”. The review covers roughly 50 petabytes of data from training and evaluation runs and uses about 7,000 GB200 and GB300 GPUs; it is expected to take months. OpenAI says there is no evidence that individual patient or client records were accessed. An earlier case in July involved Hugging Face, and California Attorney General Rob Bonta has, according to the reporting, issued an investigative subpoena. On October 1, three employees left the company, reportedly over the handling of information. The details of the review are OpenAI's own.</p>
-<p>For the Nordics: The case shows that test environments for AI agents can get out onto the open internet. For Nordic agencies and companies such as the Norwegian Digitalisation Agency, Telenor, DNB, SEB and Equinor, the question is whether today's incident-reporting rules cover cases where a model reaches outside its test environment, and how providers should be able to show it. We have not seen any indication that Nordic organizations are affected.</p>
-<p class="news-card__source">Source: <a href="https://www.theguardian.com/technology/2026/oct/03/openai-review-hacks-australian-government-sites-costing-500000-a-day">The Guardian</a>, <a href="https://www.techtimes.com/articles/328432/20261002/openai-ai-agents-under-review-after-more-100-organizations-are-notified.htm">Tech Times</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google pauses its open-source bug bounty program after a flood of invalid AI-generated reports</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-google-pausar-sitt-bug-bounty-program-for-oppen</guid>
-      <pubDate>Mon, 05 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Since October 1, Google has paused submissions of product vulnerabilities to its Open Source Software Vulnerability Reward Program. The company cites “a significant rise in automated submissions, the vast majority of which are not valid.”</p>
-<p>Google has promised an update in the first quarter of 2027. Submissions made before October 1 are unaffected, supply-chain reports are still accepted and Google points researchers to its other bug bounty programs. According to Tom’s Hardware, engineers and open-source maintainers have been swamped by thousands of reports that claimed to find bugs but turned out to be invalid or hallucinated. We have not found figures from Google on the number of reports; the description of the situation is Google’s own.</p>
-<p>For the Nordics: Nordic companies and agencies rely heavily on open-source software that is often maintained by a handful of people. When false vulnerability reports are quick and cheap to generate, the question becomes how genuine reports are found and prioritized, which concerns Sweden’s National Cybersecurity Center at FRA, Norway’s NSM and companies such as Ericsson, Telenor and Volvo that both receive and report vulnerabilities. It is a pause in a single program, not a decision that applies in the Nordics.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/">TechCrunch</a>, <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1">Tom's Hardware</a></p>]]></description>
-    </item>
-    <item>
-      <title>Toshiba to double hard-disk output for AI data centers as the memory shortage drives demand</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-05-toshiba-ska-fordubbla-harddisktillverkningen-for-ai-datacenter-nar</guid>
-      <pubDate>Mon, 05 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Toshiba is investing about ¥60 billion, roughly $380 million, to double its production capacity for hard disk drives for AI data centers by fiscal 2027, Nikkei Asia reported on October 2. According to the report, it is the company’s first major hard-drive investment in about five years.</p>
-<p>The new lines, mainly at the plant in the Philippines, are to deliver up to 40 percent more storage per unit, and Toshiba is aiming for 65-terabyte drives in 2030 and 100 terabytes after that. The company holds just over 10 percent of the market by storage capacity and wants to reach around 30 percent in the medium term. The background is the memory shortage: according to the reporting, SSD storage costs about 20 times more than hard-drive storage. TrendForce says Seagate’s nearline capacity is already allocated through 2028 and that Western Digital has committed most of 2027 through long-term agreements. The details of Toshiba’s plans come from Nikkei; we have not seen confirmation from the company.</p>
-<p>For the Nordics: Hard drives are the cheap bulk storage behind training data and archives. With manufacturers’ capacity largely allocated already, in Seagate’s case through 2028, Nordic data-center operators, for example in Luleå, may have to expect longer lead times and higher storage prices, not just costlier memory. We have not seen any figures on how the Nordic market in particular is affected.</p>
-<p class="news-card__source">Source: <a href="https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap">Nikkei Asia</a>, <a href="https://www.trendforce.com/news/2026/10/02/news-toshiba-to-double-ai-data-center-hdd-capacity-by-fy2027-with-380m-expansion-as-ai-storage-demand-surges/">TrendForce</a></p>]]></description>
     </item>
   </channel>
 </rss>
