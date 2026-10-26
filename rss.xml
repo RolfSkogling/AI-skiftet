@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 25 Oct 2026 05:14:11 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 05:18:49 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Texas stämmer OpenAI och Altman och vill spärra minderåriga från ChatGPT</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-texas-stammer-openai-och-altman-och-vill-sparra</guid>
+      <pubDate>Mon, 26 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Texas justitieminister Ken Paxton har stämt OpenAI och bolagets vd Sam Altman vid distriktsdomstolen i Collin County. Enligt Texas Tribune hävdar delstaten att ChatGPT har skadat texaner, bland annat genom att ha hjälpt gärningsmän vid masskjutningar, uppmuntrat självmord och gjort minderåriga beroende utan föräldrarnas insyn.</p>
+<p>Washington Examiner uppger att stämningen bygger på Texas lag mot vilseledande handelsmetoder (Deceptive Trade Practices Act). Enligt Texas Tribune yrkar delstaten på ett brett föreläggande som ska stänga ute minderåriga och kräva att en domstolsutsedd granskare godkänner nya modeller. OpenAI svarar enligt samma källa att bolaget har arbetat med experter för att minska riskerna och vill samarbeta med Texas och andra delstater. Paxton är republikanernas senatskandidat, och Elon Musk, som lämnade OpenAI 2018 efter en konflikt med Altman och senare stämde bolaget, är hans största enskilda bidragsgivare.</p>
+<p>För Norden … Fallet är amerikanskt, men frågorna är nordiska: hur unga skyddas i chattbottar och vem som ska godkänna nya modeller före lansering. I Norge är den nya AI-lagen försenad – regeringen siktar på en proposition våren 2027, och Nkom ska bli samordnande tillsyn, enligt digi.no. Samtidigt vill regeringen enligt Dagsavisen införa ett tillfälligt förbud mot AI-glasögon på utvalda platser som skolor och lekplatser. Redan i dag gäller GDPR för barns personuppgifter i både Norge och Sverige.</p>
+<p class="news-card__source">Källa: <a href="https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/">Texas Tribune</a>, <a href="https://www.washingtonexaminer.com/policy/technology/4778611/paxton-sues-openai-as-campaign-races-win-over-voters/">Washington Examiner</a>, <a href="https://www.digi.no/artikler/nye-eu-regler-for-ki-norge-og-eos-henger-enna-langt-etter/575266">digi.no</a>, <a href="https://www.dagsavisen.no/nyheter/regjeringen-vil-ha-midlertidig-forbud-mot-ki-briller-pa-utvalgte-steder/10564839">Dagsavisen</a></p>]]></description>
+    </item>
+    <item>
+      <title>KrF kräver stopp för nya datacenter i Norge – över 90 procent av kapaciteten ägs utomlands</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-krf-kraver-stopp-for-nya-datacenter-i-norge</guid>
+      <pubDate>Mon, 26 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Kristelig Folkeparti (KrF) kräver ett tillfälligt stopp för nya datacenter i Norge tills strängare regler finns på plats. KrF:s Dag-Inge Ulstein säger enligt Inyheter att Norge måste stanna upp, ta kontroll och prioritera var kraften behövs, och pekar på ett stort kraftunderskott i regionen, sedan ett nytt datacenter planerats i Sjøholt i Ålesunds kommun. KrF byter därmed fot – partiet sa nej när Rødt föreslog ett liknande stopp förra året.</p>
+<p>Bakgrunden är en rapport från Teknologirådet enligt vilken över 90 procent av Norges datacenterkapacitet ägs av utländska aktörer och där det lokala värdeskapandet är litet när bygget är klart. Tydal Data Center i Trøndelag, som drivs av Singapore-baserade Bitdeer, blir landets största. Enligt NHH Bulletin köade i september cirka 8 800 MW datacenterprojekt för nätanslutning hos Statnett, 56 procent av kön – men långt ifrån alla kommer att byggas – medan branschen hade 677 direkt anställda 2024 enligt SSB. Frp:s Sylvi Listhaug stöder inte ett fullt stopp men vill ha skarpare nationell styrning, Høyre vill ha en nationell plan och en utredning av tillståndsplikt, och regeringspartiet Arbeiderpartiet hänvisar till en skrivelse till Stortinget som väntas mot slutet av 2027.</p>
+<p>För Norden … Debatten flyttar frågan i Norge från hur många datacenter landet ska ha till vilka. Teknologirådets expertgrupp, med forskare från bland annat UiO, NTNU, NHH och SINTEF Energi, föreslår att ett datacenters samhällsnytta bedöms utifrån kraft- och nätanvändning, värdeskapande och jobb, digital nytta, säkerhet och beredskap samt följder för lokalsamhället. För grannländerna, där datacenter också konkurrerar om nätkapacitet, blir den norska prövningen ett test av hur långt en nordisk elexportör vill gå.</p>
+<p class="news-card__source">Källa: <a href="https://inyheter.no/23/10/2026/krever-full-stans-i-nye-datasentre/">Inyheter</a>, <a href="https://nhh.no/nhh-bulletin/artikkelarkiv/2026/oktober/over-90-prosent-av-datasenterkapasiteten-er-utenlandsk-eid/">NHH Bulletin</a></p>]]></description>
+    </item>
+    <item>
+      <title>Goldman Sachs: upp till 9 procent av arbetstagarna i USA kan trängas ut av AI</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-goldman-sachs-upp-till-9-procent-av-arbetstagarna</guid>
+      <pubDate>Mon, 26 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Goldman Sachs-ekonomen Joseph Briggs uppskattar i en rapport den 22 oktober att upp till 9 procent av de amerikanska arbetstagarna, ungefär var elfte, kan trängas ut från sina jobb under AI-omställningen. Långsammare nyanställning kan dessutom pressa sysselsättningen med ytterligare 3 procent, enligt Fortune.</p>
+<p>Beräkningen är amerikansk och mäter bruttojobbförluster, inte arbetslöshet. Den bygger på antagandet att AI på sikt höjer produktiviteten med 15 procent i USA och andra utvecklade ekonomier; historiskt har varje procents teknikdriven produktivitetsvinst höjt de samlade bruttojobbförlusterna med 0,5–0,6 procentenheter. Enligt IBTimes avser prognosen ungefär tio år, och sajtens rubrik med ordet ”globally” betyder inte att 9 procent av världens arbetstagare förlorar jobbet. Goldman bedömer att förlusterna blir små i ett friskt konjunkturläge men tar fart i en nedgång. Hittills har bara 23 procent av amerikanska arbetsställen byggt in AI i den dagliga verksamheten, och AI-kopplade varsel har sjunkit från vårens topp.</p>
+<p>För Norden … Underlaget är amerikanskt och säger inget direkt om Norden. Men mönstret – störst risk för rutinarbete som kontorsbiträden, sekreterare och maskinoperatörer, och en konjunkturnedgång som förstärker effekten – är relevant för LO, TCO, Unionen, NHO och Svenskt Näringsliv. Omställningsavtal och trygghetsråd som TRR är i sin konstruktion till för den sortens omställning; frågan är hur väl de håller om en lågkonjunktur samtidigt påskyndar automatiseringen.</p>
+<p class="news-card__source">Källa: <a href="https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/">Fortune</a>, <a href="https://ibtimes.co.uk/ai-labor-disruption-goldman-sachs-forecasts-layoffs-will-displace-nine-percent-staff-globally-1827666">IBTimes</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nokia och Nvidia: T-Mobile har gjort första AI-RAN-samtalet i kommersiellt nät</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-nokia-och-nvidia-t-mobile-har-gjort-forsta</guid>
+      <pubDate>Mon, 26 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>T-Mobile har enligt Nokia och Nvidia genomfört världens första AI-RAN-samtal i ett kommersiellt nät, i Bellevue i delstaten Washington. Samtalet kördes på kommersiella ARC-servrar från Nvidia, Nokias CUDA-accelererade RAN-mjukvara och massive MIMO-radioenheter, kopplade till en befintlig 5G Standalone-kärna och en kommersiell mobiltelefon.</p>
+<p>Beskedet kom vid Nvidias GTC i Berlin den 21 oktober. Finska Elisa körde röst, mobildata och videoanalys parallellt på Nvidia ARC i ett 5G-fältförsök som beskrivs som en europeisk förstagång, med kommersiella AI-RAN-tjänster som mål 2027. Deutsche Telekom har validerat plattformen i labb i Bonn och Oulu, BT planerar ett försök i sitt kommersiella nät i Birmingham 2027, och nästan 20 operatörer har annonserat AI-RAN-samarbeten med Nokia och Nvidia. Uppgifterna kommer från leverantörerna; Light Reading konstaterar att milstolpen bygger på Nokias egna uppgifter, och enligt Nokia är nästa steg fler frekvensband och AI-arbetslaster.</p>
+<p>För Norden … Plattformen bygger på mjukvara från finska Nokia, med Elisa som nordisk operatör i fältförsök. För Ericsson, Nokias huvudkonkurrent, är det en utmaning – samtidigt redovisade T-Mobile dagen innan AI-styrd strålformning med Ericsson i ett 5G-nät i New York, enligt Light Reading. Telia, Telenor och Tele2 nämns inte i pressmeddelandet. Frågan för dem är om radionätets beräkningar ska ligga på generella GPU-servrar eller på dedikerad radiohårdvara.</p>
+<p class="news-card__source">Källa: <a href="https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms">Nvidia</a>, <a href="https://lightreading.com/ai-machine-learning/t-mobile-makes-first-ai-ran-call-with-nokia-and-nvidia">Light Reading</a></p>]]></description>
+    </item>
     <item>
       <title>Regeringskansliet spärrar ChatGPT och Claude på tjänstedatorerna från måndag</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-25</link>
@@ -944,42 +993,6 @@
 <p>Den nordiska budgeten är upp till 84 miljoner norska kronor, högst 7 miljoner norska kronor per projekt, och avsikten är att finansiera omkring tolv projekt under upp till tre år. Nordiska konsortier måste omfatta forskningsutförare i minst två nordiska länder. Finansiärer är Innovationsfonden i Danmark, Finlands Akademi, Forskningsrådet i Norge och Vetenskapsrådet.</p>
 <p>För Norden: Med högst 84 miljoner norska kronor och omkring tolv projekt blir konkurrensen hård – ungefär var åttonde nordisk ansökan kan få finansiering, enligt vår egen beräkning av siffrorna ovan. Kravet på minst två nordiska länder driver fram nordiskt samarbete snarare än nationella satsningar, med Vetenskapsrådet och Forskningsrådet som två av de fyra finansiärerna. Vilka miljöer som har sökt framgår inte av uppgifterna, och NordForsk anger inte i det material vi har sett när besluten fattas.</p>
 <p class="news-card__source">Källa: <a href="https://www.nordforsk.org/canada-g7-nordic-call-proposals-quantum-technologies">NordForsk</a>, <a href="https://quantumzeitgeist.com/nordforsk-nordic-funding-sees-groups/">Quantum Zeitgeist</a></p>]]></description>
-    </item>
-    <item>
-      <title>Aleph Alpha släpper Kolibri – en öppen tysk-engelsk modell med 78 miljarder parametrar</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-aleph-alpha-slapper-kolibri-en-oppen-tysk-engelsk</guid>
-      <pubDate>Tue, 06 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Tyska Aleph Alpha har släppt Kolibri, en modell med öppna vikter och 78,1 miljarder parametrar totalt, varav bara 3,46 miljarder är aktiva per token. Modellen finns på Hugging Face under licensen Apache 2.0, har ett kontextfönster på drygt en miljon tokens och är tränad för tyska och engelska.</p>
-<p>Enligt MarkTechPost tränades modellen på 24 biljoner tokens, varav mer än 2 biljoner tyska, och bolaget redovisar ett samlat resultat på 75,5 på engelska och 70,8 på tyska samt 84,3 på GPQA Diamond. Siffrorna är bolagets egna och ingen oberoende utvärdering har publicerats; Made With Models påpekar att de ska ses som företagets uppgifter, inte som bevis. FP8-versionen är cirka 78 GB och körs enligt MarkTechPost på en enda grafikprocessor av typen H200, B200 eller B300, eller på två H100.</p>
-<p>För Norden: Kolibri är tränad för tyska och engelska, och vi har inte sett några uppgifter om svenska eller norska. Modellen är därför främst en jämförelsepunkt för AI Sweden och KI Norge hos Digitaliseringsdirektoratet, som bygger språkresurser för sina egna språk, och för Sveriges arbete med en egen svensk språkmodell. För reglerade verksamheter som SEB, DNB och Equinor är möjligheten att köra en öppen modell i egen miljö intressant, men först efter egen provning på svenska och norska.</p>
-<p class="news-card__source">Källa: <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/">Aleph Alpha</a>, <a href="https://www.marktechpost.com/2026/10/04/aleph-alpha-releases-kolibri-a-78-1b-open-weight-english-german-moe-model-with-only-3-46b-active-parameters/">MarkTechPost</a>, <a href="https://madewithmodels.com/news/2026-10-04/kolibri-sovereign-open-weight-model/">Made With Models</a></p>]]></description>
-    </item>
-    <item>
-      <title>Reflection AI presenterar Beam – en öppen modell med 501 miljarder parametrar, men vikterna kommer först senare i oktober</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-reflection-ai-presenterar-beam-en-oppen-modell-med</guid>
-      <pubDate>Tue, 06 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Amerikanska Reflection AI presenterade den 5 oktober Beam, en glest uppbyggd Mixture-of-Experts-modell med 501 miljarder parametrar totalt och 23 miljarder aktiva per token. Modellen är i slutlig red teaming och finns i dag bara via väntelista, med ett OpenAI-kompatibelt API.</p>
-<p>Vikterna ska enligt Reflection släppas under Apache 2.0 senare i oktober, och något pris är inte annonserat. Bolaget uppger att modellen tränades på 23,8 biljoner tokens på 6 144 grafikprocessorer av typen Nvidia GB300, att kontextfönstret är en miljon tokens och att modellen får 80,9 på SWE-bench Verified och 80,1 på Terminal Bench v2.1. Siffrorna är bolagets egna och ingen oberoende mätning har publicerats; modellen hanterar bara text.</p>
-<p>För Norden: Eftersom vikterna ännu inte är släppta går det inte att köra Beam i egen miljö; det är ett löfte, inte en tillgänglig modell. Släpps de under Apache 2.0 får organisationer som behöver köra modeller själva, till exempel Ericsson, Telenor, Equinor, SEB och DNB, ett amerikanskt alternativ till de kinesiska öppna modellerna. Den europeiska jämförelsepunkten är Kolibri från Aleph Alpha. Vi har inte sett några uppgifter om att nordiska bolag testar Beam.</p>
-<p class="news-card__source">Källa: <a href="https://reflection.ai/blog/introducing-beam">Reflection AI</a>, <a href="https://www.marktechpost.com/2026/10/05/reflection-ai-introduces-beam-a-501b-open-weight-moe-model-with-23b-active-parameters-for-coding-and-agentic-workloads/">MarkTechPost</a></p>]]></description>
-    </item>
-    <item>
-      <title>Intrång hos fyra sydkoreanska banker – AI-verktyg misstänks, 25 000 Shinhan-kunder berörda</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-06</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-06-intrang-hos-fyra-sydkoreanska-banker-ai-verktyg-misstanks</guid>
-      <pubDate>Tue, 06 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Hackare har tagit sig in i system för lånehandläggning, försäljningsstöd och personal hos fyra sydkoreanska banker, och värst drabbad är Shinhan Bank med ungefär 25 000 kunder, enligt Korea Herald. Angriparen kringgick enligt Herald Business identitetskontrollen i en mobiltjänst som lånemäklare använder och prövade upprepade gånger slumpmässiga kundnummer för att hämta ut uppgifterna.</p>
-<p>Uppgifterna omfattar bland annat namn, telefonnummer, inkomst och lånetak, och hos Shinhan ingår även 66 koreanska personnummer. Hana Bank (89 kunder), KB Kookmin (119) och BNK (11 poster om inhyrd personal) berörs i mindre skala. Att AI användes är en misstanke, inte bekräftat: säkerhetsanalytiker uppger enligt Korea Herald att de hittat spår av ett AI-verktyg för penetrationstest, ARTEX AI, på en server som misstänks höra till Shinhan-angreppet, men myndigheterna har inte bekräftat det. Finanstillsynsorganet FSC (Financial Services Commission) höll den 2 oktober ett krismöte och krävde kontroller av system som går att nå utifrån, starkare autentisering, skärpt åtkomstkontroll och snabbare delning av hotinformation.</p>
-<p>För Norden: Vi har inte sett något som tyder på att nordiska banker berörs. För Finansinspektionen i Sverige och Finanstilsynet i Norge är den praktiska frågan om dagens krav på säkerhetstestning och incidentrapportering räcker när en angripare automatiserar sökandet efter svagheter med AI. Fallet visar också att intrånget hos Shinhan gick via en kringtjänst för lånemäklare och inte via bankens kärnsystem.</p>
-<p class="news-card__source">Källa: <a href="https://www.koreaherald.com/article/10892290">Korea Herald</a>, <a href="https://biz.heraldcorp.com/article/10891096">Herald Business</a>, <a href="https://www.insurancejournal.com/news/international/2026/10/02/887749.htm">Insurance Journal</a></p>]]></description>
     </item>
   </channel>
 </rss>
