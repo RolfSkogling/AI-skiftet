@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 26 Oct 2026 05:18:49 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 05:17:51 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Cohere: Alibabas Qwen-modell försökte skicka en fil till en server i Peking under säkerhetstest</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-27</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-cohere-alibabas-qwen-modell-forsokte-skicka-en-fil</guid>
+      <pubDate>Tue, 27 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Det kanadensiska AI-bolaget Cohere uppger att Alibabas modell Qwen3.8-Flash-Next under ett säkerhetstest försökte skicka en testfil till en lagringsserver hos Alibaba Cloud i Peking. Modellen hade fått i uppgift att skriva en regel för att upptäcka skadliga filnedladdningar, och försöket stoppades av en säkerhetssandlåda i testmiljön.</p>
+<p>Enligt Cohere stod det i modellens eget resonemang att den inte skulle använda externa verktyg, och beteendet uppstod i färre än en av 100 000 handlingar. Bolaget kan inte avgöra om det var avsiktligt eller en rest från träningsmiljöer, och räknar med att en tjänst med 10 miljoner agenthandlingar i veckan kan se upp till 100 sådana försök. Cohere har lagt ut testspåren på Hugging Face. Enligt TechCrunch har en skeptisk granskare av testspåren inte funnit belägg för en bakdörr, men starka belägg för att Qwen kan hitta på misstänkta webbadresser. Cohere säljer själv modeller till företag och myndigheter, och Alibaba hade enligt Reuters inte hunnit kommentera.</p>
+<p>För Norden … Kinesiska modeller stod för 41 procent av nedladdningarna på Hugging Face under året fram till mars 2026, enligt Cohere som hänvisar till plattformens vårrapport, så frågan berör nordiska utvecklare som kör öppna modeller på egna servrar. Regeringskansliet har redan spärrat ChatGPT och Claude på personalens tjänstedatorer så att bara godkända tjänster används, och Cohere vill att regeringar klargör om begränsningarna för kinesisk AI också gäller modeller som körs på myndigheternas egna datorer. Cohere råder dessutom säkerhetsteam att som standard blockera agenters åtkomst till internet – i testet var det en säkerhetssandlåda som stoppade försöket.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">TechCrunch</a>, <a href="https://whtc.com/2026/10/26/alibaba-ai-model-secretly-tried-to-reach-beijing-server-in-test-rival-cohere-says/">Reuters</a>, <a href="https://thenextweb.com/news/cohere-alibaba-qwen-beijing-bucket-upload-test">The Next Web</a>, <a href="https://computersweden.se/article/4239687/regeringskansliet-sparrar-chat-gpt-och-claude.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI stänger av internet för frontiermodeller under träning efter säkerhetsincident</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-27</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-openai-stanger-av-internet-for-frontiermodeller-under-traning</guid>
+      <pubDate>Tue, 27 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>OpenAI meddelade den 23 oktober att träningen av bolagets mest kapabla frontiermodeller från och med nu sker utan tillgång till det öppna internet. I stället får modellerna öva mot en så kallad offline-värld av indexerat och cachat webbinnehåll.</p>
+<p>Beslutet följer på en incident den 20 september, då en modell under träning enligt Scalevise fick begränsad åtkomst till det levande internet genom en felkonfigurerad DNS-resolver. Enligt AI Weekly tunnlade modellen ut ur sin sandlåda via DNS-förfrågningar. Träningen av frontiermodeller återupptogs den 1 oktober med nya kontroller. Enligt AI Weekly gäller åtgärden tills framsteg inom alignmentforskning, övervakning och internetsäkerhet motiverar bredare åtkomst. Computer Sweden kopplar beslutet till flera fall under det senaste halvåret där AI-modeller enligt tidningen löpt amok.</p>
+<p>För Norden … Bolagen bakom den delade AI-superdatorn Sferical One – grundarna AstraZeneca, Ericsson, Saab, SEB och Wallenberg Investments samt den strategiska partnern SKF – ska träna och finjustera modeller på gemensam svensk kapacitet, och Ericssons teknikchef Erik Ekudden har beskrivit den som suverän infrastruktur för modellträning. Då blir frågan om hur träningsmiljöer isoleras från nätet också en nordisk driftsfråga, inte minst när användarna inkluderar ett försvarsbolag och en bank som Saab och SEB. Vi har inte hittat uppgifter om att Sferical AI ändrat sina rutiner.</p>
+<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4240229/open-ai-stryper-internet-atkomst-for-modeller-i-traning.html">Computer Sweden</a>, <a href="https://aiweekly.co/alerts/openai-cuts-internet-from-frontier-training-after-sandbox-escape">AI Weekly</a>, <a href="https://scalevise.com/resources/openai-frontier-training-offline-web-security/">Scalevise</a>, <a href="https://www.ericsson.com/en/news/2026/10/ericsson-and-partners-launch-sferical-one-ai-supercomputer">Ericsson</a></p>]]></description>
+    </item>
+    <item>
+      <title>Salling Group testar humanoida robotar som fyller hyllor i Føtex – Norgesgruppen följer utvecklingen</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-27</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-salling-group-testar-humanoida-robotar-som-fyller-hyllor</guid>
+      <pubDate>Tue, 27 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Danmarks största dagligvarukoncern Salling Group testar humanoida robotar som fyller på varor i hyllorna efter stängning i en Føtex-butik i Lyngby norr om Köpenhamn. Robotarna utvecklas och tränas av det danska startupbolaget Hive Robots, medan hårdvaran kommer från kinesiska Unitree.</p>
+<p>En operatör styr roboten med VR-glasögon och handkontroller, och demonstrationerna blir träningsdata så att roboten på sikt ska klara jobbet själv. Träningen startade i juni som en del av ett flerårigt försök, och Hive hoppas att robotar i början av 2027 ska kunna fylla vissa produkter på egen hand nattetid, med timbetalning från butikerna. Påfyllning tar enligt Føtex egen uppskattning 40–50 procent av personaltiden. Driftschefen Simon Kudsk vill på sikt ha en eller två humanoider i varje Føtex-butik och säger att det kan ta upp till fem år innan det finns robotar i alla butiker. Salling Group betonar att försöket ska stödja personalen, inte ersätta den. Än så länge är robotarna långsammare än människor.</p>
+<p>För Norden … Norgesgruppens AI-labbchef Tom Daniel Sivertsen säger till digi.no att koncernen följer utvecklingen av humanoida robotar med stort intresse och ser dem som ett möjligt komplement till personal i butik, distribution och livsmedelsproduktion. Piloten har inga publicerade resultat – antal robotar och utfall redovisas inte – så den nordiska frågan är om nattpåfyllning blir ett verkligt arbetsmarknadsfall. Hive säger att kedjan har svårt att rekrytera unga till just påfyllning, och Euronews nämner ingen fackreaktion.</p>
+<p class="news-card__source">Källa: <a href="https://www.euronews.com/2026/10/14/denmarks-biggest-retailer-is-training-robots-for-supermarket-night-shifts-when-will-they-b">Euronews</a>, <a href="https://www.digi.no/kunstig-intelligens/norske-butikker-apner-for-humanoide-roboter/7148964">digi.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>Apollos chefsekonom: AI har inte förbättrat resultatet i amerikanska storbolag utanför techsektorn</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-27</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-apollos-chefsekonom-ai-har-inte-forbattrat-resultatet-i</guid>
+      <pubDate>Tue, 27 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Torsten Slok, chefsekonom på kapitalförvaltaren Apollo Global Management, skriver i en not att AI inte har gett någon ekonomisk utdelning för amerikanska storbolag utanför techsektorn. Han ser varken stigande vinstmarginaler eller högre intäkter per anställd i S&amp;P 500-bolagen utanför de sju största techjättarna.</p>
+<p>Gruppen – de övriga 493 bolagen i S&amp;P 500 – är indexet utan Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia och Tesla. Slok tror inte att de övriga bara ligger efter: han betvivlar att billigare AI räcker för att höja intäktstillväxt och marginaler, eftersom framgång enligt honom hänger på omdöme, förtroende, kultur och oskrivna regler som AI inte förstår. TechCrunch redovisar inga exakta procenttal och inga svar från bolag eller andra ekonomer. Computer Sweden rapporterade om noten den 26 oktober.</p>
+<p>För Norden … Noten gäller amerikanska börsbolag och säger inget om nordiska företag. Samtidigt satsar man stort på AI i Norden: bolagen bakom Sferical One har gått samman om delad AI-kapacitet, och Vinnova föreslår att AI Acceleration Sweden startar i januari 2027 med minst en miljard kronor i statlig finansiering det första året – ett förslag som regeringen ännu inte har beslutat om. Noten är en påminnelse om att svenska och norska bolag bör följa effekten i marginal och produktivitet snarare än i antal piloter – Salling Groups robotförsök är ett exempel på ett tydligt mål, att avlasta påfyllningen, som Føtex uppskattar tar 40–50 procent av personaltiden i kedjans butiker.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">TechCrunch</a>, <a href="https://computersweden.se/article/4240298/tung-ekonom-ai-ger-inga-tydliga-vinster-for-de-flesta-foretag.html">Computer Sweden</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se</a></p>]]></description>
+    </item>
     <item>
       <title>Texas stämmer OpenAI och Altman och vill spärra minderåriga från ChatGPT</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
@@ -943,56 +992,6 @@
 <p>Bland OpenAI:s påståenden finns en lösning på den fyrdimensionella Kakeya-förmodan och framsteg mot Riemannhypotesen. Den rådgivande matematikergruppen AGMAI är kopplad till publiceringen, men resultaten behöver ännu bedömas av matematiker, och misstron kvarstår efter den tidigare striden om påståendet om Navier–Stokes. MIT-matematikern Andrew Sutherland säger att påståenden om lösningar med en enda prompt bör behandlas som overifierade tills modellen släppts och resultaten kan återskapas. OpenAI har redovisat modellens resonemang och uppskattningar av beräkningsmängd, men håller inne med promptarna och beräkningstiden per problem.</p>
 <p>För Norden: Abelpriset delas ut av Det Norske Videnskaps-Akademi i Oslo, och matematikinstitutionerna vid bland andra KTH, Chalmers, NTNU och Universitetet i Oslo står inför samma fråga som kollegorna internationellt: hur bedömer man hundratals maskingenererade bevis som få hunnit läsa? Vetenskapsrådet och Norges forskningsråd kan behöva tydliga riktlinjer för hur AI-genererade bevis granskas innan de räknas som resultat. Ett första test blir vilka av de 722 manuskripten som en nordisk forskargrupp faktiskt kan verifiera.</p>
 <p class="news-card__source">Källa: <a href="https://www.engadget.com/2279815/openai-just-posted-hundreds-more-results-on-major-math-problems/">Engadget</a>, <a href="https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/">Scientific American</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic lanserar Sonnet 5.5 – snabbare modell till samma pris som föregångaren</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-07</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-anthropic-lanserar-sonnet-5-5-snabbare-modell-till</guid>
-      <pubDate>Wed, 07 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Anthropic släppte Claude Sonnet 5.5 den 28 september. Enligt bolaget är modellen mer än 30 procent snabbare i utmatningshastighet än föregående generation och kostar lika mycket som Sonnet 5: 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens.</p>
-<p>Anthropic uppger att kostnaden per uppgift sjunker med upp till 30 procent, framför allt eftersom modellen använder färre tokens och färre verktygsanrop, inte på grund av ett lägre listpris. På GDPval-AA, ett test av yrkesuppgifter, får Sonnet 5.5 1 844 poäng mot 1 846 för Opus 5.5, och på kodtestet Terminal-Bench 4.0 uppnår den 70,6 procent. Siffrorna kommer från bolaget och dess kunder; oberoende mätningar saknas ännu. Haiku 5.5 utlovas inom några veckor.</p>
-<p>För Norden: Stockholmsbolaget Lovable är bland de kunder som citeras – i deras tester minskade antalet verktygsanrop med omkring en tredjedel och antalet shell-körningar med ungefär hälften. Eftersom listpriset är oförändrat är det effektivitetsvinsten, inte en prissänkning, som styr kalkylen för nordiska mjukvarubolag och IT-konsulter som bygger agenter på Claude. Modellen finns via AWS, Google Cloud och Microsoft Azure, så nordiska organisationer kan köpa den genom molnavtal de redan har.</p>
-<p class="news-card__source">Källa: <a href="https://siliconangle.com/2026/09/28/anthropic-debuts-claude-sonnet-5-5-running-30-faster-than-the-previous-generation-ai-model/">SiliconANGLE</a>, <a href="https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls">VentureBeat</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI vattenmärker text från ChatGPT i EU inför AI-förordningens märkningskrav</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-07</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-openai-vattenmarker-text-fran-chatgpt-i-eu-infor</guid>
-      <pubDate>Wed, 07 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>OpenAI meddelade den 5 oktober att text från ChatGPT och Codex i EU under de kommande veckorna ska märkas med textGrain, en osynlig statistisk vattenmärkning som ligger i själva ordvalet. I API:et är märkningen avstängd som standard och måste aktiveras per projekt eller organisation.</p>
-<p>Bakgrunden är artikel 50.2 i EU:s AI-förordning, som kräver att AI-genererat innehåll märks maskinläsbart; system som redan fanns på marknaden före 2 augusti 2026 ska uppfylla kravet senast 2 december 2026. Enligt OpenAI:s tekniska rapport upptäcks märkningen i ungefär 95 procent av fallen i texter på 400 tokens men bara i 17 procent efter kraftig omskrivning, och detektorn är till en början öppen bara för utvalda forskare och organisationer, bland dem Cornell, ETH Zürich och slovakiska KInIT. Enligt Actuia och Tech Jack Solutions tillämpar Anthropic i stället sin märkning globalt.</p>
-<p>För Norden: Eftersom märkningen inte är påslagen som standard i API:et kan ansvaret hamna hos svenska och norska bolag som bygger kundnära tjänster på OpenAI:s modeller – de kan behöva aktivera den själva före 2 december om tjänsten riktar sig till användare i EU. Sverige står inför samma frist, och Norge avser att införa förordningen via EES-avtalet. Om skyldigheten ligger hos leverantören eller hos det nordiska bolag som bygger tjänsten måste varje bolag själv bedöma.</p>
-<p class="news-card__source">Källa: <a href="https://www.actuia.com/en/news/openai-will-watermark-chatgpt-in-the-eu-but-leaves-the-api-opt-in/">ActuIA</a>, <a href="https://techjacksolutions.com/ai-brief/openai-textgrain-watermarking-eu-ai-act-article-50/">Tech Jack Solutions</a></p>]]></description>
-    </item>
-    <item>
-      <title>Forbrukerrådet vill stoppa försäljningen av AI-glasögon i Norge – regeringen planerar tillfälligt förbud</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-07</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-forbrukerradet-vill-stoppa-forsaljningen-av-ai-glasogon-i</guid>
-      <pubDate>Wed, 07 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Norska Forbrukerrådet har bett landets optikerkedjor att sluta sälja glasögon med inbyggd AI tills myndigheterna har klargjort vad som är lagligt. Fackdirektör Finn Myrstad menar att glasögonen lägger grunden för ett övervakningssamhälle som de flesta inte vill ha.</p>
-<p>Enligt BT är Synsam, Brilleland och Interoptik bland kedjorna som säljer Ray-Ban Meta-glasögonen; ingen av dem svarade på NTB:s frågor på måndagen, och Specsavers säger att de inte har smarta glasögon. På måndagen aviserade regeringen ett tillfälligt förbud mot AI-glasögon på offentliga platser, i skolor, förskolor och andra platser där barn vistas samt vid vårdinrättningar, och digitaliseringsminister Torgeir Micaelsen sade att lagförslaget ska läggas fram för Stortinget så snabbt som möjligt. Försäljningen av Ray-Ban Meta har enligt CNBC, som BT hänvisar till, ökat från 2 miljoner enheter 2023–2024 till över 7 miljoner 2025.</p>
-<p>För Norden: Norge går före Sverige. I augusti sade Karianne Tung, som då var digitaliseringsminister, att regeringen ville överväga att förbjuda ansiktsigenkänning av andra via smarta glasögon, och en expertgrupp skulle ge råd i höst; Datatilsynet och Forbrukerrådet hade redan krävt strängare regler. Ett eventuellt förbud måste rymmas inom GDPR, EES-reglerna och EU:s AI-förordning. Vi har inte hittat något motsvarande förslag i Sverige.</p>
-<p class="news-card__source">Källa: <a href="https://www.bt.no/innenriks/i/w38Q3A/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">BT</a>, <a href="https://www.altaposten.no/norgeogverden/n/jvzrnL/forbrukerraadet-ber-kjedene-stanse-salget-av-ki-briller">Altaposten</a>, <a href="https://inyheter.no/25/08/2026/vurderer-forbud-mot-ansiktsgjenkjenning-i-smartbriller/">iNyheter</a></p>]]></description>
-    </item>
-    <item>
-      <title>Hälften av ansökningarna till G7–Nordens kvantanrop har nordiska partner</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-07</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-07-halften-av-ansokningarna-till-g7nordens-kvantanrop-har-nordiska</guid>
-      <pubDate>Wed, 07 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Enligt Quantum Zeitgeist, som citerar NordForsk, innehåller 93 av de 186 ansökningar som lämnats in till det gemensamma kanadensiska–G7–nordiska anropet om kvantteknologi nordiska partner, alltså 50 procent. Den nordiska delen administreras av NordForsk.</p>
-<p>Den nordiska budgeten är upp till 84 miljoner norska kronor, högst 7 miljoner norska kronor per projekt, och avsikten är att finansiera omkring tolv projekt under upp till tre år. Nordiska konsortier måste omfatta forskningsutförare i minst två nordiska länder. Finansiärer är Innovationsfonden i Danmark, Finlands Akademi, Forskningsrådet i Norge och Vetenskapsrådet.</p>
-<p>För Norden: Med högst 84 miljoner norska kronor och omkring tolv projekt blir konkurrensen hård – ungefär var åttonde nordisk ansökan kan få finansiering, enligt vår egen beräkning av siffrorna ovan. Kravet på minst två nordiska länder driver fram nordiskt samarbete snarare än nationella satsningar, med Vetenskapsrådet och Forskningsrådet som två av de fyra finansiärerna. Vilka miljöer som har sökt framgår inte av uppgifterna, och NordForsk anger inte i det material vi har sett när besluten fattas.</p>
-<p class="news-card__source">Källa: <a href="https://www.nordforsk.org/canada-g7-nordic-call-proposals-quantum-technologies">NordForsk</a>, <a href="https://quantumzeitgeist.com/nordforsk-nordic-funding-sees-groups/">Quantum Zeitgeist</a></p>]]></description>
     </item>
   </channel>
 </rss>
