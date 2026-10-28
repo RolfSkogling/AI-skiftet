@@ -44,19 +44,19 @@ ARKIV = "nyheter/index.html"
 # Flöden verifierade 2026-10-28 genom hämtning och posträkning, inte genom
 # att adressen såg rimlig ut. Antalet i kommentaren är vad som räknades då.
 #
-# Adresserna är de SLUTLIGA, efter omdirigering. Tre av dem stod till och med
-# 2026-10-28 i sin pre-omdirigeringsform (deepmind.google/blog/feed,
-# mistral.ai/rss.xml, blog.google/technology/ai/rss/) och svarade då 302, 301
-# och 301 med tom kropp på en vanlig curl UTAN -L. Det här skriptet märkte
-# inget, eftersom urllib följer omdirigeringar av sig själv — men skillens
-# föreskrivna curl-rad gjorde det inte, och den läste tre av fyra flöden som
-# tomma. Håll därför adresserna här identiska med tabellen i LED 0 i
-# ai-skiftet-nyheter: när de glider isär är det instrumentet som ljuger.
+# ADRESSERNA ÄR DE SLUTLIGA, EFTER OMDIRIGERING. Det är inte kosmetik.
+# Första versionen av den här filen listade deepmind.google/blog/feed,
+# mistral.ai/rss.xml och blog.google/technology/ai/rss/ — tre adresser som
+# svarar 302, 301 och 301. Skriptet rapporterade dem ändå som gröna, för
+# urllib följer omdirigeringar av sig själv, medan `curl` utan -L i skillens
+# eget kommando fick tom kropp. Instrumentet visade alltså grönt på exakt det
+# fel det var byggt för att hitta. Därför loggar hamta() numera varje
+# omdirigering i stället för att svälja den.
 FLODEN = {
-    "Google DeepMind": "https://deepmind.google/blog/rss.xml",                    # 100 poster
-    "OpenAI":          "https://openai.com/news/rss.xml",                         # 1331 poster
-    "Mistral":         "https://mistral.ai/news/rss",                             # 92 poster
-    "Google AI-blogg": "https://blog.google/innovation-and-ai/technology/ai/rss/",# 20 poster
+    "Google DeepMind": "https://deepmind.google/blog/rss.xml",                  # 100 poster
+    "OpenAI":          "https://openai.com/news/rss.xml",                       # 1331 poster
+    "Mistral":         "https://mistral.ai/news/rss",                           # 92 poster
+    "Google AI-blogg": "https://blog.google/innovation-and-ai/technology/ai/rss/",  # 20 poster
 }
 
 # Labb UTAN användbart flöde per 2026-10-28. Alla kandidatadresser nedan
@@ -88,19 +88,35 @@ STOPP = {
 }
 
 
+class LoggaOmdirigering(urllib.request.HTTPRedirectHandler):
+    """urllib följer omdirigeringar tyst. Det maskerade 2026-10-28 att tre av
+    fyra konfigurerade flöden låg på fel adress — skillens `curl` utan -L fick
+    tom kropp medan det här skriptet rapporterade grönt. Nu bokförs hoppen."""
+
+    def __init__(self):
+        self.hopp = []
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        self.hopp.append((req.full_url, code, newurl))
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
 def hamta(url, timeout=25):
-    """Returnerar (status, bytes). Hanterar gzip — utan det blir XML:en binärsörja."""
+    """Returnerar (status, bytes, hopp). Hanterar gzip — utan det blir XML:en
+    binärsörja — och rapporterar omdirigeringar i stället för att svälja dem."""
+    h = LoggaOmdirigering()
+    op = urllib.request.build_opener(h)
     req = urllib.request.Request(url, headers=HEADERS)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as f:
+        with op.open(req, timeout=timeout) as f:
             data = f.read()
             if f.headers.get("Content-Encoding") == "gzip":
                 data = gzip.decompress(data)
-            return f.getcode(), data
+            return f.getcode(), data, h.hopp
     except urllib.error.HTTPError as e:
-        return e.code, b""
+        return e.code, b"", h.hopp
     except Exception as e:
-        return f"FEL:{type(e).__name__}", b""
+        return f"FEL:{type(e).__name__}", b"", h.hopp
 
 
 def las_token():
@@ -152,14 +168,14 @@ def parsa_datum(txt):
 
 
 def flodesposter(url):
-    """(poster, fel). poster = lista av (datum, rubrik, länk)."""
-    status, body = hamta(url)
+    """(poster, fel, hopp). poster = lista av (datum, rubrik, länk)."""
+    status, body, hopp = hamta(url)
     if status != 200 or not body:
-        return [], f"status {status}"
+        return [], f"status {status}", hopp
     try:
         rot = ET.fromstring(body)
     except ET.ParseError as e:
-        return [], f"trasig XML ({e.__class__.__name__})"
+        return [], f"trasig XML ({e.__class__.__name__})", hopp
     ut = []
     for it in rot.findall(".//item"):
         d = parsa_datum(it.findtext("pubDate"))
@@ -177,8 +193,8 @@ def flodesposter(url):
         ut.append((d, (it.findtext(f"{ns}title") or "").strip(),
                    (lnk.get("href") if lnk is not None else "")))
     if not ut:
-        return [], "noll daterade poster"
-    return ut, None
+        return [], "noll daterade poster", hopp
+    return ut, None, hopp
 
 
 def termer(rubrik):
@@ -264,8 +280,14 @@ def main():
 
     fel = []
     resultat = {}
+    omdirigeringar = []
     for labb, url in FLODEN.items():
-        poster, f = flodesposter(url)
+        poster, f, hopp = flodesposter(url)
+        if hopp:
+            # En konfigurerad adress som omdirigerar är ett FEL, inte en detalj:
+            # skillens curl-kommando utan -L får tom kropp på exakt den adressen.
+            for fran_u, kod, till_u in hopp:
+                omdirigeringar.append(f"{labb}: {fran_u} —{kod}→ {till_u}")
         if f:
             fel.append(f"{labb}: {url} — {f}")
             resultat[labb] = {"fel": f, "url": url}
@@ -297,9 +319,10 @@ def main():
     if a.json:
         print(json.dumps({"fran": a.fran, "till": till.isoformat(), "slapp": a.slapp,
                           "dagsgrupper_i_arkivet": len(dagar),
-                          "resultat": resultat, "fel": fel},
+                          "resultat": resultat, "fel": fel,
+                          "omdirigeringar": omdirigeringar},
                          ensure_ascii=False, indent=2))
-        return 2 if fel else 0
+        return 2 if (fel or omdirigeringar) else 0
 
     print(f"TÄCKNINGSMÄTNING  {a.fran} .. {till.isoformat()}   "
           f"slack {a.slapp} dgr   arkivet: {len(dagar)} dagsgrupper")
@@ -334,12 +357,16 @@ def main():
     print(f"Alla poster: {tot_alla_t} täckta av {tot_alla}  ({andel2})   "
           f"(referens — inte vad regeln kräver)")
     print(f"Labb utan flöde (måste ligga kvar på sökning): {', '.join(UTAN_FLODE)}")
+    if omdirigeringar:
+        print("\nFÄLLER — konfigurerad adress omdirigerar. Skillens curl utan -L får")
+        print("tom kropp här. Skriv in SLUTADRESSEN i FLODEN och i skillens LED 0-tabell:")
+        for o in omdirigeringar:
+            print("  " + o)
     if fel:
         print("\nFÄLLER — flöden som inte svarade:")
         for f in fel:
             print("  " + f)
-        return 2
-    return 0
+    return 2 if (fel or omdirigeringar) else 0
 
 
 if __name__ == "__main__":
