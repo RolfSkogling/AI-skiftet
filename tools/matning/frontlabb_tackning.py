@@ -43,11 +43,20 @@ ARKIV = "nyheter/index.html"
 
 # Flöden verifierade 2026-10-28 genom hämtning och posträkning, inte genom
 # att adressen såg rimlig ut. Antalet i kommentaren är vad som räknades då.
+#
+# Adresserna är de SLUTLIGA, efter omdirigering. Tre av dem stod till och med
+# 2026-10-28 i sin pre-omdirigeringsform (deepmind.google/blog/feed,
+# mistral.ai/rss.xml, blog.google/technology/ai/rss/) och svarade då 302, 301
+# och 301 med tom kropp på en vanlig curl UTAN -L. Det här skriptet märkte
+# inget, eftersom urllib följer omdirigeringar av sig själv — men skillens
+# föreskrivna curl-rad gjorde det inte, och den läste tre av fyra flöden som
+# tomma. Håll därför adresserna här identiska med tabellen i LED 0 i
+# ai-skiftet-nyheter: när de glider isär är det instrumentet som ljuger.
 FLODEN = {
-    "Google DeepMind": "https://deepmind.google/blog/feed",            # 100 poster
-    "OpenAI":          "https://openai.com/news/rss.xml",              # 1331 poster
-    "Mistral":         "https://mistral.ai/rss.xml",                   # 92 poster
-    "Google AI-blogg": "https://blog.google/technology/ai/rss/",       # 20 poster
+    "Google DeepMind": "https://deepmind.google/blog/rss.xml",                    # 100 poster
+    "OpenAI":          "https://openai.com/news/rss.xml",                         # 1331 poster
+    "Mistral":         "https://mistral.ai/news/rss",                             # 92 poster
+    "Google AI-blogg": "https://blog.google/innovation-and-ai/technology/ai/rss/",# 20 poster
 }
 
 # Labb UTAN användbart flöde per 2026-10-28. Alla kandidatadresser nedan
