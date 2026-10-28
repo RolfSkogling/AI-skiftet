@@ -15,7 +15,46 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [],
+  "ko": [
+    {
+      "id": "genie-4-deepmind-2026-10",
+      "tidigast": "2026-10-29",
+      "senast": "2026-11-05",
+      "kategori": "modeller",
+      "norden": false,
+      "dubblettnyckel": [
+        "Genie 4",
+        "Genie-4",
+        "Project Genie"
+      ],
+      "vinkel": "Google DeepMind annonserade Genie 4 den 27 oktober 2026 — en realtidsvärldsmodell som genererar en interaktiv värld och dess ljud samtidigt. Skriv om vad modellen ÄR: inte en videogenerator och inte en chattmodell, utan en simulering som svarar på inmatning medan den körs, med Gemini-modeller i loopen. Arkitekturen är poängen, inte demonstrationerna. Posten ligger i kön för att den ordinarie körningen 28 oktober inte fångade släppet — fri sökning i standardläge hade ännu inte indexerat det.",
+      "maste_med": [
+        "Genie 4 är en RESEARCH PREVIEW för 'trusted testers'. Den är inte allmänt tillgänglig. DeepMind skriver att den är på väg till Google AI Ultra-prenumeranter i Project Genie och till early access-partner i Gemini API och Google AI Studio, men anger inget datum. Det finns en väntelista för Genie 4 i Project Genie. Skriv ut att inget releasedatum angetts.",
+        "Nativt ljud är den skarpaste nyheten. DeepMind skriver ordagrant att Genie 4 är 'our first real-time world model to generate audio natively' — omgivningsljud, musik och interaktiv dialog samtidigt med bilden. Bloggen skriver också att karaktärer samtalar och reagerar på användarens inmatning eller på händelser i världen, i realtid.",
+        "Fysik och mänsklig rörelse lyfts i bloggen som kärnförbättringar vid sidan av ljudet: aerodynamik, kollisioner, och framför allt att människor rör sig naturligt och kan styras interaktivt medan simuleringen pågår. DeepMind kallar personsimuleringen 'the most dramatic leap'. Hör hemma i stycke 2 — det är vad modellen är, inte en demonstration.",
+        "Genie 4 är inte en ensam modell utan en konstruktion med Gemini i loopen. Bloggen anger Gemini Omni som det som förankrar simuleringen i verkligt utseende och beteende, och skriver ordagrant att 'Gemini 3.8 Flash serves as a guiding agent in the loop' — den bryter ned mål i steg och granskar inkommande bildrutor för att verifiera att varje steg lyckats. Bloggen beskriver dessutom experiment där Gemini 4 Argon bryter ned en uppgift i steg som matas till Genie 4 som textbildtexter, i samarbete med Gemini Robotics. Rubriken 'hybrid world models' står under FRAMTIDA ARBETE i bloggen — skriv den som riktning, inte som färdig arkitektur.",
+        "Allt video och ljud som Genie 4 genererar bär SynthID, DeepMinds vattenmärkning. Konkret spårbarhetsuppgift, ska med.",
+        "DeepMind publicerar inga tekniska specifikationer, inga benchmarkresultat och ingen numerisk jämförelse mot Genie 3. Avsaknaden är i sig en uppgift och bör skrivas ut — den bär både förbudet mot upplösningssiffror och förbudet mot superlativ nedan.",
+        "Begränsningarna står i primärkällan och ska redovisas, inte tonas ned: visuella detaljer och objektpermanens kan driva över tid, särskilt i längre sessioner, efter flera komplexa promptändringar och vid förflyttning i scenen. Komplexa fysiska interaktioner, ljudets realtidsnoggrannhet, läsbar text, spatial noggrannhet och långtidskonsistens anges alla som öppna forskningsproblem."
+      ],
+      "far_inte_pastas": [
+        "ATT SCENEN HÅLLER I TVÅ MINUTER, DUBBELT MOT GENIE 3. Uppgiften står INTE i DeepMinds blogginlägg — den kommer från TechCrunch. Får bara skrivas med uttrycklig attribution till TechCrunch, aldrig som DeepMinds egen uppgift, och helst utelämnas. DeepMind anger ingen sessionslängd i siffror.",
+        "Upplösning, bildfrekvens och parameterantal (720p, 24 fps och liknande) finns inte i primärkällan och förs runt i flera utlägg utan belägg för just Genie 4. Utelämna helt.",
+        "Att Alphabets aktie steg på beskedet. Andrahandsuppgift från finansmedia dagen före kvartalsrapporten, siffrorna spretar mellan utläggen, och flera blandar ihop beskedet med Gemini 4 Argon-lanseringen några veckor tidigare. Orsakssambandet är inte belagt.",
+        "Att Genie 4 kan användas av nordiska bolag i dag. Det kan den inte — endast trusted testers har tillgång. Framtida tillgång formuleras som väntelista, inte som tillgänglighet.",
+        "Att SynthID uppfyller eller möter AI-förordningens märkningskrav. Det är en rättslig bedömning som ingen källa gör. Namnge heller ingen tillsynsmyndighet i den kopplingen — tillsyn över förordningens transparensbestämmelser är inte detsamma som dataskyddstillsyn, och Norge omfattas inte automatiskt av förordningen.",
+        "Jämförelser i form av 'bäst', 'ledande' eller 'överlägsen' mot andra världsmodeller. Ingen oberoende utvärdering finns, och DeepMind publicerar inga jämförande tal."
+      ],
+      "norden_stycke": "Den konkreta nordiska ingången är robotträning. DeepMind anger säkra träningsmiljöer för robotar och agenter som ett av flera användningsområden, och beskriver experiment där Genie 4 kopplas till Gemini Robotics med en planerare som matar in stegen som textbildtexter medan simuleringen renderas. Det är relevant för 1X Technologies (norskgrundat humanoidbolag), Universal Robots och MiR i Danmark samt robotikforskningen vid SINTEF och NTNU. Formulera vad det betyder för dem som en öppen fråga, inte som ett konstaterande — ingen källa säger något om de enskilda bolagens utvecklingsläge eller om vad simulerad träningsdata kostar dem. Den andra ingången är spårbarhet: att allt genererat ljud och video bär SynthID aktualiserar AI-förordningens bestämmelser om märkning av syntetiskt innehåll. Skriv den kopplingen som en iakttagelse — ingen källa påstår att DeepMind anpassat sig efter EU-regler, och ingen bedömer om märkningen räcker.",
+      "kallor": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "https://deepmind.google/models/genie/",
+        "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+      ],
+      "lagd": "2026-10-28"
+    }
+  ],
   "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
