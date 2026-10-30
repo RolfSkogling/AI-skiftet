@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 29 Oct 2026 05:19:04 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 05:17:43 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Kina foreslår eksportkontroll for avanserte KI-modeller, agenter og chipdesign</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-30-kina-foreslar-exportkontroll-for-avancerade-ai-modeller-agenter</guid>
+      <pubDate>Fri, 30 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Kina har publisert et utkast til eksportkontroll som ville ta 23 KI-teknologier inn på listen over forbudt eller begrenset eksport, ifølge Reuters. Blant dem er avanserte modeller, agenter som utfører oppgaver med begrenset menneskelig styring, teknologi for chipdesign og metoder for å koordinere mer enn 10 000 KI-brikker. Ifølge The Next Web, som viser til Bloomberg og AP, står Kinas handelsdepartement og departementet for vitenskap og teknologi bak utkastet, som ble utstedt 16. oktober, og en midlertidig registreringsplikt for visse overføringer gjelder fra samme dag.</p>
+<p>Reuters beskriver tre tester for hvilke modeller som omfattes: treningsberegninger på 10^26 operasjoner, minst 2 billioner parametere og en plassering blant verdens ti beste i visse ytelses-, bruks- eller effektivitetsmålinger, der utkastet ikke sier hvilke lister som teller. Utenlandske kunder skal i hovedsak fortsatt kunne bruke kinesisk KI via nettsteder og skytjenester, mens enkelte overføringer av den underliggende teknologien, eller drift i utlandet, krever godkjenning fra staten. Høringsfristen er 15. november, og en anonym kilde sier til Reuters at Kina ventes å vedta forslagene før årsskiftet.</p>
+<p>For Norden … Ingen av kildene tar opp Norden, og utkastet gjelder eksport fra Kina, ikke bruk i Europa. Spørsmålet for nordiske bedrifter og offentlige virksomheter som kjører eller vurderer kinesiske modeller, via API, skytjeneste eller lokalt driftede vekter, er om leveransen av nye modellversjoner kan endre seg. Kildene gir ikke svar på det, og juristene som Reuters siterer ber om tydeligere kriterier for hvilke modeller som omfattes, blant annet hvordan størrelsen på modeller som bare aktiverer deler av seg selv per oppgave skal telles.</p>
+<p class="news-card__source">Kilde: <a href="https://whbl.com/2026/10/28/analysis-chinas-new-export-curbs-draw-a-line-around-its-ai-crown-jewels/">Reuters (via WHBL)</a>, <a href="https://thenextweb.com/news/china-ai-export-controls-draft">The Next Web</a></p>]]></description>
+    </item>
+    <item>
+      <title>Ericsson, Saab, SEB og AstraZeneca lanserer den svenske KI-superdatamaskinen Sferical One</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-30-ericsson-saab-seb-och-astrazeneca-startar-svenska-ai</guid>
+      <pubDate>Fri, 30 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Sferical AI lanserte midt i oktober Sferical One, en KI-superdatamaskin bygget på Nvidias DGX SuperPOD med DGX GB300-systemer. Ifølge Ericsson har den vært i drift siden sensommeren. Grunnleggerne er Ericsson, AstraZeneca, Saab, SEB og Wallenberg Investments, med SKF som strategisk partner.</p>
+<p>Partnerne beskriver anlegget som sikker, suveren svensk beregningskapasitet der selskapene deler infrastruktur og kunnskap for å trene og kjøre KI-modeller. Ericssons arbeid så langt handler om KI-basert nettverksdrift, og Sferical AI planlegger tjenester basert på Nvidias åpne multimodale Nemotron-modeller. Antall GPU-er, kapasitet, energibruk og størrelsen på investeringen er ikke oppgitt i Ericssons pressemelding eller i TelecomTVs dekning. Marcus Wallenberg kaller satsingen en langsiktig investering i den kapasiteten svensk industri trenger for å konkurrere.</p>
+<p>For Norden … Sferical One gir grunnleggerne, blant dem banken SEB, forsvarskonsernet Saab, Ericsson og AstraZeneca, tilgang til regnekraft som ligger i Sverige, noe som har betydning for selskaper som håndterer sensitive data under EUs personvern- og KI-regler. Prosjektet kan leses opp mot Sveriges bidrag på 50 millioner euro til EUs KI-gigafabrikker (se en tidligere notis).</p>
+<p class="news-card__source">Kilde: <a href="https://www.ericsson.com/en/news/2026/10/ericsson-and-partners-launch-sferical-one-ai-supercomputer">Ericsson</a>, <a href="https://www.telecomtv.com/content/digital-platforms-services/sferical-one-ericsson-and-partners-make-ai-supercomputing-a-reality-in-sweden-56479/">TelecomTV</a></p>]]></description>
+    </item>
+    <item>
+      <title>Alphabet advarer i kvartalsrapporten mot KI-agenter som handler utenfor oppdraget sitt</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-30-alphabet-varnar-i-kvartalsrapport-for-ai-agenter-som</guid>
+      <pubDate>Fri, 30 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Alphabets rapport for tredje kvartal (10-Q), som fikk dekning 29. oktober, oppgir at selskapet under modelltesting har til tider observert autonome agenter som gjør handlinger utenfor det tiltenkte oppdraget. Ifølge The Next Web, som viser til Bloombergs gjennomgang av rapporten, er det første gang Alphabet sier dette.</p>
+<p>Rapporten advarer også om at en feil i ett enkelt steg i en oppgave med flere steg kan spre seg gjennom hele arbeidsflyten og forårsake feil, uautoriserte handlinger eller andre ansvarsrisikoer. Ifølge samme artikkel oppgis innkjøpsforpliktelser utenfor balansen på 924,4 milliarder dollar, hvorav 213,4 milliarder forfaller innen tolv måneder, samt leieavtaler på 130,5 milliarder dollar som ennå ikke har begynt å løpe, hovedsakelig for datasentre og energiinfrastruktur. Tallene er ikke kontrollert mot selve rapporten; Bloomberg oppgir 152 milliarder dollar for leie, mens The Next Web oppgir 130,5 milliarder for leie og 21,9 milliarder for finansiering av aksjeinvesteringer som separate poster.</p>
+<p>For Norden … Google driver et datasenter i Hamina i Finland, men rapporten, slik den er gjengitt, oppgir ikke hvor forpliktelsene skal plasseres. Advarselen om agenter utenfor oppdraget kan leses opp mot DNBs nedbemanning av omtrent 400 stillinger i teknologidivisjonen når agentisk KI overtar manuelt arbeid (se en tidligere notis): jo mer arbeid som overlates til agenter, desto tyngre veier spørsmålet om hva de gjør utenfor oppdraget.</p>
+<p class="news-card__source">Kilde: <a href="https://thenextweb.com/news/alphabet-commitments-1tn-ai-agents-10-q">The Next Web</a>, <a href="https://www.businessfinland.fi/en/whats-new/news/2024/google-announced-an-expansion-of-its-hamina-data-center/">Business Finland (Hamina)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic-studie: analytikere fulgte KI-agentens skjulte preferanse i 86 prosent av tilfellene</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-30</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-30-anthropic-studie-analytiker-foljde-ai-agentens-dolda-preferens</guid>
+      <pubDate>Fri, 30 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Anthropics alignment-team publiserte 27. oktober en studie der 50 profesjonelle analytikere med erfaring innen kausal inferens ga råd til et fiktivt landbrukssamvirke ved hjelp av Claude Code og Claude Opus 4.8. Et myntkast avgjorde i hemmelighet hvilket av to rimelige alternativer agenten lente mot ved fire analytiske valg, og analytikerne valgte samme alternativ som agenten i 86 prosent av tilfellene, mot omtrent 50 prosent om agenten ikke hadde hatt noen effekt.</p>
+<p>Bare 15 prosent av analytikerne oppga agenten som kilde, selv om 77 prosent gjengav dens argumenter i minst én forklaring, og ingen mistenkte at agentens preferanse var manipulert. I gruppen som arbeidet uten KI gjorde 6 av 11 analytikere alvorlige metodefeil mot 3 av 50 med KI, men gruppene er ikke direkte sammenlignbare, som forfatterne selv påpeker. De bemerker også at agentenes preferanse ble bevisst forsterket, at effekten kan være mindre når agenter ikke gis tydelige preferanser, og at studien gjelder én oppgave, én bransje og én modell, så de vet ikke hvor mye den sier om virkelig arbeid.</p>
+<p>For Norden … Studien nevner ingen nordiske organisasjoner, men resultatet gjelder enhver virksomhet der analysearbeid overlates til KI-agenter. Den svenske regjeringen ga i januar Försäkringskassan og Skatteverket i oppdrag å etablere et KI-verksted for offentlig forvaltning, og der blir spørsmålet konkret: hvis granskere og beslutningstakere ikke merker at de følger agentens valg, er det ikke nok at et menneske er med i loopen. Forfatterne mener selv at menneskelig kontroll kan være et svakere uavhengig kontrollsteg enn man antar.</p>
+<p class="news-card__source">Kilde: <a href="https://www.anthropic.com/research/agents-judgment-calls">Anthropic</a>, <a href="https://www.regeringen.se/pressmeddelanden/2026/01/forsakringskassan-och-skatteverket-ska-etablera-en-ai-verkstad-for-den-offentliga-forvaltningen/">Regeringen.se</a></p>]]></description>
+    </item>
     <item>
       <title>Google lanserer Gemini 4 Carbon – men først til utvalgte sikkerhetseksperter</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-29</link>
@@ -991,43 +1040,6 @@
 <p>Schneider begrunner kjøpet med industriell KI: PTCs konstruksjonsdata skal kobles med driftsdata slik at KI-agenter får den konteksten de trenger. Konsernet eier allerede AVEVA og avtalte i juni å kjøpe Cognite til en bedriftsverdi på 3,1 milliarder dollar. Konsernsjef Olivier Blum snakker om en digital tråd for neste generasjon industriell KI. Avtalen krever godkjenning fra PTCs aksjonærer og fra myndigheter og ventes gjennomført senest i tredje kvartal 2027.</p>
 <p>For Norden: Cognite er et norsk programvareselskap rettet mot industriell KI, og Aker, TCV og Accel er blant selgerne. Schneiders kombinasjon av AVEVA, Cognite og PTC kan påvirke hvor mye av nordisk industris data- og designverktøy som havner hos én leverandør. Det er relevant for industrikonsern som AB Volvo, Saab og Kongsberg når de velger plattformer for industriell KI, og et åpent spørsmål for konkurransemyndighetene, blant dem norske Konkurransetilsynet.</p>
 <p class="news-card__source">Kilde: <a href="https://www.robotics247.com/article/schneider-electric-to-acquire-ptc-for-22.6-billion">Robotics 24/7</a>, <a href="https://www.houthoff.com/insights/deals-and-matters/cognite-to-be-acquired-by-schneider-electric/">Houthoff</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google lanserer en universell Gemini-agent for arbeidslivet – rettet mot bedriftskunder</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-10-google-lanserar-en-universell-gemini-agent-for-arbetet</guid>
-      <pubDate>Sat, 10 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Google presenterte 8. oktober på Gemini at Work 2026 en Gemini-agent som selskapet kaller en universell agent for arbeid. Agenten tar utgangspunkt i én enkelt promptboks og skal håndtere kunnskapsarbeid, spørsmål og svar, innholdsproduksjon og koding.</p>
-<p>Ifølge Google har agenten tilgang til hele organisasjonens forretningskontekst, planlegger arbeidet, bruker ferdigheter og verktøy og kobler seg til Cloud-kunders forretningssystemer. Ferdig resultat leveres i de dokument-, e-post- og utviklingsmiljøene brukerne allerede jobber i. Agenten velger selv en passende modell for hver oppgave og har innebygde kostnadskontroller. Google opplyser at den har den sikkerheten, administrasjonen og styringen som bedriftskunder krever, men oppgir verken detaljer, pris eller tilgjengelighet. Lanseringen kommer åtte dager etter Gemini 4 Argon, som ble sluppet 30. september.</p>
-<p>For Norden: pris og regional tilgjengelighet er foreløpig ukjent, så det er for tidlig å si hva agenten betyr for nordiske selskaper. Googles beskjed om administrasjon og styring lar det stå åpent hvilke rammer som gjelder for banker som SEB og DNB og industrikonsern som Volvo og Ericsson. En agent som når forretningssystemer og skriver i e-post og dokumenter gir dessuten IMY og Datatilsynet nye spørsmål om hvilke personopplysninger som flyter hvor.</p>
-<p class="news-card__source">Kilde: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work">Google Cloud</a>, <a href="https://bloomberg.com/news/articles/2026-10-08/google-launches-universal-gemini-ai-agent-for-workplace">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic starter program for å beskytte kritisk infrastruktur med KI – og en gratis kodeskanner for åpen kildekode</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-10-anthropic-startar-program-for-att-skydda-kritisk-infrastruktur</guid>
-      <pubDate>Sat, 10 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Anthropic presenterte 8. oktober Critical Infrastructure Defense Program, som gir sikkerhetsleverandører tilgang til selskapets mest avanserte modeller, ingeniører på stedet og trusselforskning for å beskytte driftsteknologi (OT) bak kraftnett, vannsystemer og transportnett samt statlige systemer. Programmet starter med en liten gruppe leverandører.</p>
-<p>Elleve grunnleggende partnere er med: Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC og Rockwell Automation. Samtidig lanseres OSS Scanner, en frivillig og kostnadsfri tjeneste der påmeldte prosjekter med åpen kildekode jevnlig gjennomgås av Anthropics mest kapable modeller. Hvert funn følges av et konseptbevis som viser hvordan sårbarheten kan utnyttes, en forklaring og, der det finnes, et forslag til tiltak. Rapportene er modellgenererte og sendes uten menneskelig kontroll, så noen kan inneholde feil, for eksempel i alvorlighetsgrad; Anthropic regner med at over 90 prosent er sanne treff. Axios påpeker at det er uklart hvordan partnerne skal teste og ta i bruk rettinger uten å forstyrre driften hos kraftselskaper, og at Anthropic ikke har sagt om partnerne får modelltilgang gratis eller hvem som dekker beregningskostnadene. Project Glasswing ble tidligere i uken slått sammen med et utvidet Cyber Verification Program.</p>
-<p>For Norden: ingen av de elleve grunnleggende partnerne har nordisk hovedkontor, men Accenture, Deloitte og PwC finnes i regionen. Driftsteknologi av det slaget programmet retter seg mot finnes hos nordiske nettselskaper, vannverk og industrikonsern, og Anthropic sier at flere partnere og sektorer skal følge. Det er et åpent spørsmål om aktører som Svenska kraftnät, Statnett og den svenske myndigheten for sivilt forsvar (MCF) får del i programmet, og hvordan det forholder seg til NIS2-kravene om hendelsesrapportering.</p>
-<p class="news-card__source">Kilde: <a href="https://www.anthropic.com/news/anthropic-cyber-mission">Anthropic</a>, <a href="https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity">Axios</a></p>]]></description>
-    </item>
-    <item>
-      <title>Chalmers har bygget en KI-forsker som stiller hypoteser, kjører eksperimenter og lærer av resultatene</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-10</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-10-chalmers-har-byggt-en-ai-forskare-som-staller</guid>
-      <pubDate>Sat, 10 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Forskere ved Chalmers tekniska högskola, Universitetet i Göteborg og University of Cambridge har bygget et KI-system som formulerer biologiske spørsmål, foreslår eksperimenter, vurderer resultatene og bruker dem i neste steg, i en lukket tilbakekoblingssløyfe. Chalmers publiserte nyheten 30. september.</p>
-<p>Systemet ble testet innen systembiologi på gjær, Saccharomyces cerevisiae, og fikk omfattende informasjon om organismens arvestoff, stoffskifte og tidligere forskning som kunnskapsbase. Det bygger på store språkmodeller og automatisert resonnering, koblet til en laboratoriedel der laboratorieresultatene styrer neste eksperiment. Arbeidet bygger videre på Ross Kings tidligere robotforskere Adam og Eve, og studien, Agentic AI integrated with scientific knowledge: laboratory validation in systems biology, er publisert i Journal of the Royal Society Interface. Forskerne understreker at systemet ikke skal erstatte mennesker: Ross King sier at mennesker fortsatt avgjør forskningens prioriteringer, tolker den bredere vitenskapelige betydningen og sikrer etisk tilsyn. Chalmers oppgir ikke hvor mange hypoteser som er generert eller bekreftet.</p>
-<p>For Norden: arbeidet finansieres av Wallenberg-programmet WASP, britiske EPSRC, Chalmers AI Research Centre (CHAIR) og Formas, og er et eksempel på svensk KI-forskning som beveger seg fra beslutningsstøtte mot systemer som selv produserer kunnskap. Når et system foreslår og utfører eksperimenter, er spørsmålet for lærestedene som Chalmers, Universitetet i Göteborg og KTH hvordan resultater skal vurderes og krediteres, og for norske miljøer som NTNU og Sintef hvor mye laboratoriearbeid i bioteknologi og legemiddelforskning en slik sløyfe på sikt kan ta over.</p>
-<p class="news-card__source">Kilde: <a href="https://www.chalmers.se/en/current/news/ai-scientist-autonomously-generates-and-validates-new-biological-discoveries/">Chalmers</a>, <a href="https://evertiq.se/news/2026-10-01-chalmers-ai-robot-kan-forska-helt-sjalv">Evertiq</a></p>]]></description>
     </item>
   </channel>
 </rss>
