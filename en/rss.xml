@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 30 Oct 2026 05:17:43 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 05:14:54 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Mistral opens the weights of Large 4 – roughly one trillion parameters, aimed at coding and cybersecurity</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-mistral-oppnar-vikterna-till-large-4-omkring-en</guid>
+      <pubDate>Sat, 31 Oct 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Mistral has released open weights for Mistral Large 4, a multimodal MoE model with roughly one trillion parameters, available on Hugging Face and through Mistral's API. According to Mistral, the model was trained from scratch on European infrastructure and is aimed at programming and defensive cybersecurity, and a dedicated cyber variant is in preview with selected enterprise partners such as Orange Cyberdefense. The release was announced on October 29, after a public preview earlier in the month.</p>
+<p>The figures come from Mistral itself. The model scores 48 percent on the Artificial Analysis Coding Agent Index, on par with the Chinese open model GLM-5.3 while using 47 percent fewer tokens per task, and 41 percent on Terminal-Bench 4.0. The license is a modified MIT license: free to use, modify and commercialize, but anyone selling the model as a service needs a separate agreement with Mistral. API pricing is $0.70 per million input tokens and $2.10 per million output tokens. The material contains no independent evaluation, and the technical report has not yet been published.</p>
+<p>For the Nordics … Because the weights can be run in-house, the release is of interest to Nordic organizations that, for confidentiality or sovereignty reasons, do not want to send sensitive data to US cloud services, for example authorities, regions and banks in Sweden and Norway that must meet the requirements of IMY and Datatilsynet on the handling of personal data. Mistral itself argues that companies and states should not depend on OpenAI or Anthropic. That is a possibility rather than an announcement: the material contains no information on Nordic users, and Nordic cloud providers that want to offer the model as a service must first sign a commercial agreement with Mistral.</p>
+<p class="news-card__source">Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral</a>, <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/">TechCrunch</a></p>]]></description>
+    </item>
+    <item>
+      <title>TSMC weighs price increase of up to 20 percent on CoWoS packaging for AI chips</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-tsmc-overvager-upp-till-20-procents-prishojning-pa</guid>
+      <pubDate>Sat, 31 Oct 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>TSMC is weighing a price increase of up to 20 percent on its advanced chip packaging CoWoS, according to industry reports. The claim comes from Tom's Hardware, which cites TrendForce, supply-chain sources and local media; TSMC has not confirmed it.</p>
+<p>The background is the pressure from Nvidia's Blackwell and Rubin chips. Testing time for Blackwell is reported to be three to four times longer than for Hopper, and up to seven times longer for Rubin, and equipment lead times have reportedly grown from three to six months to as much as eight. TrendForce estimates TSMC's capacity at over 106 000 wafers a month in 2026, with a target of 227 000 in 2027. GlobalFoundries will make CoWoS interposers in the US under a five-year, $2 billion contract, with production from the first half of 2028, but that alone does not solve the shortage because the interposer is only one part of the packaging. The same reporting says wafer prices on advanced nodes could rise 5–10 percent for 2027.</p>
+<p>For the Nordics … The increase hits first the chip companies that buy the packaging from TSMC, and next those who buy AI accelerators if the cost is passed on. Sferical One in Linköping, built by Wallenberg Investments and Nvidia for just over a billion Swedish kronor and available to partners including Ericsson, Saab, SEB and AstraZeneca, is built on Nvidia technology and could be affected by any expansion. The material contains no indication that any Nordic project is already affected, and the price increase is unconfirmed.</p>
+<p class="news-card__source">Source: <a href="https://tomshardware.com/tech-industry/semiconductors/tsmc-reportedly-weighs-20-percent-cowos-price-increase-as-nvidia-blackwell-and-rubin-chips-put-pressure-on-packaging-capacity-equipment-lead-times-stretch-to-eight-months">Tom's Hardware</a>, <a href="https://www.cioanalytics.se/artikel/2026/10/wallenbergs-nya-ai-superdator-invigs/">CIO Analytics</a></p>]]></description>
+    </item>
+    <item>
+      <title>About half of the Norwegian developers in kode24's survey feel pressured to use AI</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-omkring-halften-av-de-svarande-norska-utvecklarna-i</guid>
+      <pubDate>Sat, 31 Oct 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Roughly every second responding Norwegian developer does not feel more well-being with AI, and about half feel pressured to use it, according to kode24's salary and well-being survey. The figures are highlighted in a column by kode24 editor-in-chief Ole Petter Baugerød Stokke on October 23.</p>
+<p>The survey's free-text answers describe reduced job satisfaction when AI agents write the code, a heavier workload and what kode24 calls "AI coercion" (KI-tvang). One anonymous developer describes an existential crisis lasting several months, and Elise Kristiansen argues that agentic coding rewards mediocrity. A researcher Stokke refers to says that autonomy over one's own work raises the chance of being satisfied with AI use. The survey is kode24's own and not necessarily representative, and the material gives no number of respondents.</p>
+<p>For the Nordics … The result comes from Norway, but the question concerns the whole region. At the same time, DNB is cutting about 400 positions in its technology division, according to our item of October 28. Employers that introduce AI requirements in developer teams will have to weigh well-being and autonomy, not just speed. It belongs in the dialogue between employers and unions, in Norway at Tekna and NHO and in Sweden at Unionen and Sveriges Ingenjörer; the material contains no statement from them on the survey.</p>
+<p class="news-card__source">Source: <a href="https://www.kode24.no/artikkel/ki-tok-koden-fra-koderne-na-savner-de-den/276301">kode24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Reddit CEO: Google's AI Mode sends no traffic – over a million fewer Google referrals a week on average</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-reddits-vd-googles-ai-mode-skickar-ingen-trafik</guid>
+      <pubDate>Sat, 31 Oct 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Reddit CEO Steve Huffman says Google's AI Mode sends no traffic onward, and Reddit has lost on average over a million weekly referrals from Google search in October, according to reporting in outlets including The Verge and Axios. Huffman also plans a mostly logged-in experience to reduce scraping.</p>
+<p>Meanwhile Alphabet's quarterly report on October 28 showed search revenue growing 12 percent to $63.3 billion, against 17 percent in the second quarter and 19 percent in the first, and that Google is expanding ads in AI Mode globally. Huffman's figures are relayed through summaries of the reporting, not from Google's own account of traffic flows, and according to the material Google has not responded to them.</p>
+<p>For the Nordics … Nordic media groups such as Schibsted, Bonnier and Aller, which publishes kode24, may depend on search traffic, and the mechanism Reddit describes could in that case hit them in a similar way. The material contains no Nordic traffic data and no information on how the expansion of ads in AI Mode affects Nordic markets, so this is a question to follow rather than an established situation.</p>
+<p class="news-card__source">Source: <a href="https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic">The Verge</a>, <a href="https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito">Axios</a>, <a href="https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/">TechCrunch</a></p>]]></description>
+    </item>
     <item>
       <title>China proposes export controls on advanced AI models, agents and chip designs</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-30</link>
@@ -979,67 +1028,6 @@
 <p>The result is reported in a preprint (arXiv 2610.10705) and is a step toward distributed quantum computing, where several smaller quantum computers are linked together. What has been shown is only the link between a trapped ion and a silicon vacancy. That the architecture works with neutral atoms and superconducting systems, via so-called transducers that convert microwaves to light, is an expectation and has not been demonstrated. The press release lacks figures on fidelity and distance, and “world-first” is IonQ’s own characterization. IonQ is developing the link under DARPA’s HARQ program and has sold systems to the University of Maryland and South Korea’s SDT.</p>
 <p>For the Nordics: Several of the largest Nordic quantum projects are built on superconducting qubits, the very platform where IonQ’s link has not yet been shown. Chalmers and the Wallenberg Centre for Quantum Technology (WACQT) are building a Swedish quantum computer with superconducting circuits, and Finland’s IQM makes superconducting processors. How several such machines can be linked together is therefore relevant here too, but that part remains to be shown.</p>
 <p class="news-card__source">Source: <a href="https://ionq.com/news/ionq-demonstrates-world-first-quantum-memory-enhanced-interconnect-for-distributed-quantum-applications">IonQ</a>, <a href="https://thequantuminsider.com/2026/10/09/ionq-1000-entanglement-events-per-second-quantum-interconnect/">The Quantum Insider</a>, <a href="https://chalmers.se/en/centres/wacqt/research/research-in-quantum-computing-and-simulation">Chalmers (WACQT)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Mistral launches Large 4 – a trillion-parameter model with open weights promised by the end of October</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-11</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-mistral-lanserar-large-4-biljonmodell-med-oppna-vikter</guid>
-      <pubDate>Sun, 11 Oct 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>On October 6, Mistral AI released Mistral Large 4, a multimodal model with roughly one trillion parameters, of which 52 billion are active per token. The model is available as a public preview in Mistral Studio, and the company promises to release the weights by the end of the month.</p>
-<p>Mistral says the model was trained from scratch on 3,800 Nvidia Grace Blackwell GPUs in its own data centers in Europe. Pricing is $1.36 per million input tokens and $4.18 per million output tokens. The performance figures come from Mistral itself: 82 percent on a test in which vulnerabilities must be reproduced and patched, and 61.7 percent on the DeepSWE v1.1 coding benchmark. In a human coding evaluation from Surge AI, the model ranks second of five, behind Claude Opus 5. The license is not stated. According to TechCrunch, the launch follows French President Macron’s talk of “a third way in AI,” and Mistral positions the model as an alternative both to closed models and to open models that often come from China.</p>
-<p>For the Nordics: since February, Mistral has said it is investing €1.2 billion in AI data centers in Sweden together with EcoDataCenter, with the facility planned to open in 2027. It is not yet clear whether Large 4 will run there. Open weights would let banks such as SEB and DNB, and public agencies, run the model on their own infrastructure, which matters to IMY and Datatilsynet when personal data must be kept within the EU/EEA and under the organization’s own control. The license terms will decide how far that goes.</p>
-<p class="news-card__source">Source: <a href="https://mistral.ai/news/mistral-large-4/">Mistral AI</a>, <a href="https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/">TechCrunch</a>, <a href="https://www.vktr.com/ai-news/mistral-commits-12b-to-swedish-ai-data-centers-in-sovereignty-push/">VKTR</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norway’s government and the social partners sign a letter of intent on responsible AI at work</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-11</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-norska-regeringen-och-arbetslivets-parter-tecknar-avsiktsavtal-om</guid>
-      <pubDate>Sun, 11 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>On October 2, the Norwegian government and the social partners signed a letter of intent on the responsible introduction and use of AI in working life. Prime Minister Jonas Gahr Støre and Minister of Digitalisation Torgeir Micaelsen sat down with NHO, KS, Virke and Spekter on the employer side and LO, Unio, Akademikerne and YS on the employee side.</p>
-<p>The agreement is meant to base the introduction of AI on the Norwegian working-life model, and the parties share responsibility for using existing laws and agreements so that AI is introduced safely and fairly. A coordination group with all the parties will prioritize topics and organize the work. Micaelsen says AI must not become a technology that people fear and avoid using, and that Norway and Europe should develop more language models of their own alongside commercial ones. On October 5, digi.no reported that the government will replace the first national AI strategy, from 2020, with a new one, expected in the first half of 2027.</p>
-<p>For the Nordics: the agreement covers Norwegian working life, but the three-party model, with the state, NHO and LO at the same table, offers a point of comparison for Sweden, where the corresponding parties include Svenskt Näringsliv, LO, TCO and Saco. It is a statement of intent, and the sources reviewed contain no binding rules or deadlines. Micaelsen says the rapid development of advanced AI models challenges security, privacy and safety in new ways; for privacy matters, Datatilsynet is the supervisory authority.</p>
-<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/regjeringa-og-partane-i-arbeidslivet-inngar-ki-avtale/id3173698/">Regjeringen.no</a>, <a href="https://www.digi.no/kunstig-intelligens/ny-arbeidslivsavtale-om-ki-skal-ivareta-ansattes-rettigheter/7142704">digi.no</a>, <a href="https://www.digi.no/kunstig-intelligens/norges-ki-strategi-er-fra-2020-na-skal-den-skrives-pa-nytt/7143602">digi.no (AI-strategin)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic updates its usage policy – bans sustained, pointless cruelty toward Claude</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-11</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-anthropic-uppdaterar-anvandarpolicyn-forbud-mot-ihallande-meningslos-elakhet</guid>
-      <pubDate>Sun, 11 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>On October 8, Anthropic published an updated usage policy that takes effect on November 12. Among the changes is a ban on sustained and needless abusive or cruel behavior toward the company’s models.</p>
-<p>According to Anthropic the ban applies only to extreme cases in which users repeatedly act cruelly with no discernible purpose, not to ordinary frustration, pushback, dark creative themes or testing. Claude can already end conversations with persistently harmful or abusive users, and that remains the main enforcement tool. The policy also gets a consolidated section on deceptive campaigns, such as fake accounts and fabricated news sites. The elections section is narrowed to deceiving voters or disrupting elections, and the earlier blanket ban on personalized vote and campaign targeting is removed. The weapons ban now explicitly covers guidance and control software for weapons, including arming drones and other autonomous vehicles, and Claude may not be used to decide or recommend who should be investigated, arrested or charged.</p>
-<p>For the Nordics: the rules apply to all users in the region from November 12. The clarification on weapons software and autonomous vehicles matters for the defense industry, where companies such as Saab and Kongsberg build systems with AI components; how the line will be drawn in practice is an open question. The ban on letting Claude decide who is investigated or charged is a limit that agencies such as Polismyndigheten and Kripos need to be aware of if they use the model. Computer Sweden reported on the ban on cruelty toward Claude on October 9.</p>
-<p class="news-card__source">Source: <a href="https://www.anthropic.com/news/2026-usage-policy-update">Anthropic</a>, <a href="https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/">TechCrunch</a>, <a href="https://computersweden.se/article/4233112/anthropic-forbjuder-anvandare-att-vara-elaka-mot-claude.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Uber and Pony.ai to test robotaxis in London within weeks</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-11</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-uber-och-pony-ai-ska-testa-robotaxibilar-i</guid>
-      <pubDate>Sun, 11 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Uber and China’s Pony.ai plan to begin testing Pony.ai’s seventh-generation robotaxis in London within weeks. The companies describe it as a test effort and have not announced a timetable for passenger service.</p>
-<p>The expansion is part of a partnership that in August set a target of deploying more than 2,000 Pony.ai robotaxis in Europe. The setup follows the Zagreb model, where Pony.ai supplies the driving system and vehicles, Croatia’s Verne owns and operates the fleet, and Uber provides access to its ride-hailing platform. Who will own and operate the fleet in London has not been said. Since September 3, Uber has also offered supervised autonomous rides in London with the British company Wayve, with a driver on board. The UK has opened applications for small-scale pilots of automated passenger services, ahead of a full permitting regime expected in the second half of 2027.</p>
-<p>For the Nordics: no Nordic companies are mentioned in the reporting on the London plans. It is an open question how quickly Transportstyrelsen in Sweden and Statens vegvesen in Norway can grant comparable permits for trials, and whether Nordic carmakers such as Volvo Cars become suppliers or competitors to Chinese systems like Pony.ai’s in Europe. Chinese systems on European roads could also raise questions about data flows, an area where IMY and Datatilsynet are supervisory authorities.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/">TechCrunch</a>, <a href="https://runtimewire.com/article/uber-pony-ai-london-robotaxi-tests">RuntimeWire</a></p>]]></description>
-    </item>
-    <item>
-      <title>Schneider Electric to buy PTC for $22.6 billion – building on Norway’s Cognite</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-11</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-11-schneider-electric-koper-ptc-for-22-6-miljarder</guid>
-      <pubDate>Sun, 11 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>On October 5, Schneider Electric agreed to buy software maker PTC in an all-cash deal at $205 per share. That values PTC’s equity at about $22.6 billion, and the boards of both companies have unanimously approved the deal.</p>
-<p>Schneider justifies the deal with industrial AI: PTC’s engineering data is to be linked with operational data so that AI agents get the context they need. The group already owns AVEVA and agreed in June to buy Cognite at an enterprise value of $3.1 billion. CEO Olivier Blum speaks of a digital thread for the next generation of industrial AI. The deal requires approval from PTC shareholders and regulators and is expected to close by the third quarter of 2027.</p>
-<p>For the Nordics: Cognite is a Norwegian software company focused on industrial AI, and Aker, TCV and Accel are among the sellers. Schneider’s combination of AVEVA, Cognite and PTC could affect how much of Nordic industry’s data and design tooling ends up with a single supplier. That matters to industrial groups such as AB Volvo, Saab and Kongsberg as they choose platforms for industrial AI, and it is an open question for competition authorities, including Norway’s Konkurransetilsynet.</p>
-<p class="news-card__source">Source: <a href="https://www.robotics247.com/article/schneider-electric-to-acquire-ptc-for-22.6-billion">Robotics 24/7</a>, <a href="https://www.houthoff.com/insights/deals-and-matters/cognite-to-be-acquired-by-schneider-electric/">Houthoff</a></p>]]></description>
     </item>
   </channel>
 </rss>
