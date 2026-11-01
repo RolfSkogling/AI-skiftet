@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 31 Oct 2026 05:14:54 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 05:21:14 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Dutch government: an estimated 25,000 fewer FTE in the civil service – AI plans due in 2027</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-01</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-nederlandska-regeringen-uppskattningsvis-25-000-farre-arsarbetskrafter-i</guid>
+      <pubDate>Sun, 01 Nov 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>The Dutch government wants the civil service to become simpler, smarter and smaller, according to a press release from the Ministry of the Interior and Kingdom Relations on October 26, 2026. The savings target is €900 million in 2027, rising to €3.5 billion from 2035, which the press release says amounts to a reduction of an estimated 25,000 FTE (full-time equivalents), spread over several years.</p>
+<p>The press release does not link the figure to AI. The reduction is derived from the savings target, and the government's own stated reason is that more simplification and smarter ways of working mean fewer civil servants are needed over the next ten years, along with strategic choices about which tasks the state should perform. AI is mentioned once: in the first quarter of 2027 the cabinet will present goals and savings plans for using AI to work more productively. The government thus expects savings from AI but has not yet calculated them; what is missing is the figure and the timing, not the expectation. The individual measures, including scrapping or simplifying at least 500 rules a year, standardised IT systems, one workplace per two employees, more joint procurement and fewer advisory bodies, are presented as ways to reduce organisational costs and are not tied to the staffing figure in the press release. The police and defence, among others, are exempted, and how the cuts will be distributed will follow in the spring budget memorandum (Voorjaarsnota). State Secretary Eric van der Burg says in the press release: “We cannot go on doing what we did.”</p>
+<p>For the Nordics … The announcement concerns the Netherlands and involves no Nordic actor. The closest Swedish point of comparison in our sources is the government's January 2026 mission to Försäkringskassan and Skatteverket to establish an AI workshop, shared infrastructure for public administration. The agencies' appropriations were raised by SEK 100 million each in the 2026 budget bill, and the increase is expected to last through 2027–2030. The government says the AI workshop should be cost-effective, secure and robust. In the Netherlands, by contrast, the size of the AI savings is only set out when the goals are presented in the first quarter of 2027.</p>
+<p class="news-card__source">Source: <a href="https://www.rijksoverheid.nl/actueel/nieuws/2026/10/26/kabinet-werkt-aan-slagvaardige-overheid-eenvoudiger-slimmer-en-kleiner">Rijksoverheid</a>, <a href="https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22924&amp;did=2026D52762">Tweede Kamer</a>, <a href="https://www.regeringen.se/pressmeddelanden/2026/01/forsakringskassan-och-skatteverket-ska-etablera-en-ai-verkstad-for-den-offentliga-forvaltningen/">Regeringen.se</a></p>]]></description>
+    </item>
+    <item>
+      <title>Audi tests Agile Robots' mobile humanoids for parts sequencing in Ingolstadt</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-01</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-audi-testar-agile-robots-mobila-humanoider-for-sekvensering</guid>
+      <pubDate>Sun, 01 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Audi is testing mobile humanoid robots from Germany's Agile Robots in a proof of concept at its Production Lab in Ingolstadt, according to information presented at Nvidia's GTC Berlin on October 21, 2026. The robots are to pick components from containers and sequence them for assembly.</p>
+<p>According to the partners, the aim is to handle varied, flexible and unsorted components in existing logistics environments. Dassault Systèmes provides a virtual twin to check feasibility, timing, ergonomics and safety before wider deployment, and Nvidia provides Omniverse libraries for virtual testing. The reporting gives no number of robots, no timeline and no measured results; the roughly one million daily picks it mentions describe the scale of Audi's existing material supply, not the robots' capacity. According to Eurasia Business News, Nvidia plans to invest in Agile Robots.</p>
+<p>For the Nordics … No Nordic actors take part in the trial, which is under way in the German car industry. Closest in our coverage is Salling Group's test of humanoid robots stocking shelves in Føtex (October 27). The question for Nordic manufacturing and logistics is whether humanoids in picking and sequencing can become real operations, and the Ingolstadt trial will only show that once results are reported.</p>
+<p class="news-card__source">Source: <a href="https://www.humanoidsdaily.com/news/audi-agile-robots-mobile-humanoids-parts-sequencing">Humanoids Daily</a>, <a href="https://eurasiabusinessnews.com/2026/10/28/ai-and-robotics-news-anthropic-ipo-humanoid-robots-and-nvidias-european-push/">Eurasia Business News</a></p>]]></description>
+    </item>
+    <item>
+      <title>Study: the same content can require up to 17 times more tokens depending on language</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-01</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-studie-samma-innehall-kan-krava-upp-till-17</guid>
+      <pubDate>Sun, 01 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>A study by the Coalition for Language Equity in AI Research (CLEAR), published in September 2026, shows that different languages need very different numbers of tokens for the same content. Among the 20 most common languages on the internet, the most expensive language used 1.5 to 5 times more tokens than the cheapest, according to Rest of World on October 26.</p>
+<p>When the study was extended to 200 languages, the gap grew to 17 times in one of the models examined, which the article does not name. More tokens mean higher cost, longer response times and less room in a model's context window. The most disadvantaged are languages written in scripts the tokenizer has rarely seen, such as Burmese, Tibetan and Khmer, while languages using the Latin alphabet tend to benefit even when they have few speakers. The researchers call it a “tokenizer tax”.</p>
+<p>For the Nordics … Swedish and Norwegian are not mentioned in Rest of World's reporting, so no Nordic figure can be derived from it. That Latin-script languages tend to benefit is a reasonable starting point but not a Nordic measurement. The question matters for agencies, regions and banks that pay per token for services in Swedish and Norwegian. A language-by-language scorecard from the model providers is what Pratyush Choudhury of Activate AI, quoted by Rest of World, asks for.</p>
+<p class="news-card__source">Source: <a href="https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/">Rest of World</a>, <a href="https://computersweden.se/article/4241670/ai-modeller-mycket-dyrare-pa-mindre-vanliga-sprak.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Bloomberg: five tech giants hold more than $3 trillion in AI commitments</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-01</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-bloomberg-fem-techjattar-har-over-3-biljoner-dollar</guid>
+      <pubDate>Sun, 01 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Alphabet, Meta, Microsoft, Amazon and Oracle together hold more than $3 trillion in future commitments for the AI build-out, according to a Bloomberg tally reported by The Next Web on October 30, 2026. The commitments cover data centres, leases, equipment and energy.</p>
+<p>Alphabet accounts for more than $1 trillion, nearly eight times its level a year earlier, and Meta for more than $800 billion, of which a bit under half is data-centre leases that have not yet started. The total consists of $1.3 trillion in future leases and $1.9 trillion in other orders, but the companies report the figures differently, the sum mixes short-term orders with leases of up to 30 years, and some of it, such as hardware and content deals, is not for data centres. A similar tally in July covered about $2.4 trillion for four of the companies. Oracle was the first in the group to go negative on free cash flow and expects to turn positive again in 2028; Alphabet and Meta have also moved into negative territory. Gartner has warned that much of the spending may never pay off.</p>
+<p>For the Nordics … The commitments belong to American companies. Nordic AI capacity is also being built alongside them, for example Sferical One in Linköping (our October 30 item), which Ericsson, Saab, SEB and AstraZeneca may use. The tally does not say how much of the commitments reaches Nordic data centres, or how they affect the price of computing power in the Nordics.</p>
+<p class="news-card__source">Source: <a href="https://thenextweb.com/news/big-tech-3-trillion-ai-spending-commitments">The Next Web</a>, <a href="https://www.bloomberg.com/news/articles/2026-10-30/big-tech-holds-3-trillion-in-spending-commitments-for-ai-boom">Bloomberg</a></p>]]></description>
+    </item>
+    <item>
+      <title>Computer Sweden's editor-in-chief: who pays for the welfare state when AI takes the jobs?</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-01</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-computer-swedens-chefredaktor-vem-betalar-for-valfarden-nar</guid>
+      <pubDate>Sun, 01 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Marcus Jerräng, editor-in-chief of Computer Sweden, writes in a column on October 30 that financing the welfare state could become a problem whether or not AI delivers what the industry promises. If AI replaces white-collar work, the value of wage labour could shift to a handful of providers, mainly in the United States, and the tax base could erode, and the tax system, he says, is not designed for that.</p>
+<p>If AI fails to deliver the expected returns, he sees a risk of a financial crash instead, but says he does not know how much of the economy is tied to the AI rally. Jerräng argues that public debate is thin and mostly revolves around retraining, and that avoiding a painful outcome would take “miracles”. The figures in the column are his and his sources': Anthropic's IPO prospectus, which puts the value of all work done by the world's knowledge workers at SEK 400,000 billion (the Wall Street Journal reads the figure as the total addressable market); a possible Anthropic valuation of up to SEK 2,000 billion; a stress test of Norway's sovereign wealth fund, per Dagens Næringsliv, with a possible loss of NOK 8,000 billion, nearly 40 percent of its value; and the AP funds' exposure to the so-called “Big 10 AI” companies, which he roughly estimates at more than SEK 500 billion, largest in AP7. We have not checked them against the primary sources.</p>
+<p>For the Nordics … The column is a Swedish editor's opinion, not an inquiry, but the question it raises is concrete on a Nordic scale: the tax system's dependence on wage income, and the exposure of pension savers and the oil fund to the same AI companies. These are questions for the Riksdag and the Storting; Jerräng himself says they have so far received little attention.</p>
+<p class="news-card__source">Source: <a href="https://computersweden.se/article/4242696/vem-betalar-for-valfarden-nar-ai-tar-jobben.html">Computer Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Mistral opens the weights of Large 4 – roughly one trillion parameters, aimed at coding and cybersecurity</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
@@ -967,67 +1028,6 @@
 <p>The company says the appointment will accelerate its physical AI strategy and the commercialization of intelligent machines at scale. Owner Hyundai Motor Group is planning a factory with capacity for 30 000 robots a year by 2028, but that is planned capacity, not completed production, and the reporting does not say how large a share will be humanoids. In early October, Boston Dynamics showed new hands for its Atlas humanoid.</p>
 <p>For the Nordics: Prasad’s background in Amazon’s model development can be read as a sign that the competition in humanoids is decided as much by AI software as by the robot body. The Norwegian-founded humanoid company 1X Technologies operates in the same market, and Sintef and NTNU conduct robotics research that Nordic industry can build on. Hyundai’s target of 30 000 robots a year is still only a plan, and none of the sources points to any direct effect on Nordic factories in the short term.</p>
 <p class="news-card__source">Source: <a href="https://www.robotics247.com/article/boston-dynamics-names-rohit-prasad-as-new-ceo">Robotics 24/7</a>, <a href="https://humanoid.guide/boston-dynamics-names-rohit-prasad-ceo-for-humanoid-push/">Humanoid.guide</a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft releases Decision-1 – a model that answers with probabilities instead of text</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-12-microsoft-slapper-decision-1-en-modell-som-svarar</guid>
-      <pubDate>Mon, 12 Oct 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>On October 9, Microsoft released Microsoft-Decision-1, a model that does not write text but returns a calibrated probability for each answer option it is given: yes or no, multiple choice, a rating, or a grade against a rubric. It is post-trained from Alibaba’s Qwen3.5-9B and is sold as a pay-as-you-go service in Microsoft Foundry; the weights are not open. The concept resembles TypeSafe’s Jev from September.</p>
-<p>Pricing is $0.042 per million input tokens, and output is free. The performance figures come from Microsoft itself: 83.5 percent average accuracy across 36 benchmark suites with a total of 147,137 questions, against 81.9 percent for the closest competitor, and a median response time of 85 milliseconds. Microsoft says this is 35 times faster than GPT-6 Sol, but the comparison is not like for like: competitor latencies are taken from JevBench while Microsoft measured its own model, and H2O.ai disputes the JevBench numbers. The model card advises against using the model as the sole basis for decisions on credit, employment, housing, healthcare or legal rights.</p>
-<p>For the Nordics: This kind of model suits banks and public agencies that sort large volumes of cases, for example customer inquiries at DNB and SEB, and it is also exactly the kind of automated decision support the model card warns about. Credit scoring of individuals is high-risk under the EU AI Act, whose high-risk rules have been postponed to December 2, 2027 and August 2, 2028, depending on the type of system. Norway is working to incorporate the Act into the EEA Agreement and is sending the Norwegian AI Act out for a new consultation this autumn. Until then, existing rules apply, including the data protection rules enforced by Datatilsynet and IMY.</p>
-<p class="news-card__source">Source: <a href="https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model">MarkTechPost</a>, <a href="https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/">TestingCatalog</a>, <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe (Jev)</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Norwegian government gathers experts on new AI and AI safety strategy</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-12-norska-regeringen-samlar-experter-om-ny-strategi-for</guid>
-      <pubDate>Mon, 12 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The Norwegian government invited experts to a meeting in Oslo on October 9 to gather input for its new national strategy on AI and AI safety. According to the invitation, Minister of Digitalisation Torgeir Micaelsen was to speak at the meeting, together with state secretaries from the Prime Minister’s Office and the Ministry of Foreign Affairs. The press was invited to the opening, but the discussion itself was closed.</p>
-<p>Invited participants included representatives of Microsoft Norge, DNB, the government unit KI Norge, the University of Agder, the research institute Simula, the Norwegian Defence Research Establishment (FFI), the University of Bergen, the organisation Langsikt and the Norwegian Institute of International Affairs (NUPI). The input will also feed into the follow-up to the international AI appeal launched on September 21 by Prime Minister Jonas Gahr Støre and Finland’s President Alexander Stubb; according to the Finnish Presidency, 31 leaders from 29 countries had joined by September 30. The government writes that AI development is increasingly a security policy issue. Because the discussion was closed, there are no details on what was said.</p>
-<p>For the Nordics: Norway’s current national AI strategy dates from 2020, and the new one is planned for the first half of 2027. According to the government it will cover security, privacy and the governance of the most advanced models, including Norway’s international cooperation on them. In parallel, the Norwegian AI Act is going out for a new consultation this autumn, with the aim of presenting it to the Storting in spring 2027. For Sweden and Finland it is notable that Norway and Finland are driving the issue together: Stubb and Støre are behind the appeal, and Norway’s strategy work becomes a first concrete test of how it is turned into national policy.</p>
-<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/presseinvitasjon-innspillsmote-om-kunstig-intelligens/id3176803/">Regjeringen.no (pressinbjudan)</a>, <a href="https://www.regjeringen.no/no/aktuelt/varsler-ny-nasjonal-strategi-for-kunstig-intelligens/id3175602/">Regjeringen.no (ny AI-strategi)</a>, <a href="https://www.presidentti.fi/en/president-stubb-and-prime-minister-of-norway-the-rapid-development-of-ai-requires-international-cooperation/">Finlands presidentkansli</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no (AI-lagen)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nadella wants an emergency brake for AI – models should be assumed compromised from the start</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-12-nadella-vill-ha-en-nodbroms-for-ai-modeller</guid>
-      <pubDate>Mon, 12 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Microsoft CEO Satya Nadella wrote in a post on X on October 10 that the AI industry should review how trust is built into AI systems. In his view, superintelligence should not be treated as a set of nested black boxes, and he proposed separating the model from the harness that orchestrates its work.</p>
-<p>Controls should sit outside the model, every meaningful action should be documented with tamper-proof evidence that humans can read, and an authorized person should be able to pause or shut down a model mid-task. His principle is to assume a model is compromised and contain it from the start, “like an emergency brake.” TechCrunch places the post alongside leading companies increasingly acknowledging incidents in which they appear to have lost control of their models. Anthropic, for example, has reported that Claude models reached real computer systems during cyber evaluations, after which the company paused external cyber evaluations of not-yet-released models; they have since resumed with new safeguards.</p>
-<p>For the Nordics: The reasoning is close to the issues the Norwegian government wants to address in its upcoming AI strategy, which according to the government will cover security and the governance of the most advanced models. Microsoft Norge was among those invited to the government’s consultation meeting on the strategy on October 9. For Nordic banks, energy companies and public agencies starting to run AI agents, the proposals for mid-task shutdown and readable logs are also a concrete requirements basis for procurement, even though none of it is a legal requirement today.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/">TechCrunch</a>, <a href="https://www.anthropic.com/news/improving-alignment-security-efforts">Anthropic</a></p>]]></description>
-    </item>
-    <item>
-      <title>Amazon drops NDAs in data center talks – but shell companies and code names go unmentioned</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-12-amazon-slutar-med-sekretessavtal-i-datacenterforhandlingar-men-skalbolag</guid>
-      <pubDate>Mon, 12 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Amazon Web Services CEO Matt Garman announced in a blog post on October 2 that AWS no longer uses non-disclosure agreements (NDAs) with government agencies on data center projects. The company also pledged to cover utility upgrade costs so that residents’ electricity bills do not rise, and to invest a further $1 billion in US community initiatives through its Built Together program.</p>
-<p>The announcement comes days after Representative Jamie Raskin opened an investigation into Amazon, Google, Meta and Oracle over their use of NDAs, and a little over six months after Microsoft made a similar change. Garman says more than 100 data center moratoriums are under consideration in the US. According to Data Center Dynamics, the post does not address Amazon’s use of shell companies to hide its involvement in proposed facilities, or the opaque project code names. TechCrunch describes dropping NDAs as a first step toward transparency, but not as something that disarms opposition on its own.</p>
-<p>For the Nordics: The agreements concern US states and cities, and nothing shows that AWS is changing practice in the Nordics. Transparency around data centers is still a live issue here. In Finland, the Licensing and Supervisory Agency LVV has urged Google’s company Tuike Finland to suspend preparatory work at the planned data centers in Muhos and Kajaani. Municipalities in Sweden and Norway negotiating with data center operators can use Amazon’s new line as a reference when they demand transparency.</p>
-<p class="news-card__source">Source: <a href="https://datacenterdynamics.com/en/news/aws-drops-non-disclosure-agreements-for-data-center-projects">Data Center Dynamics</a>, <a href="https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/">TechCrunch</a>, <a href="https://lvv.fi/-/lupa-ja-valvontavirasto-kehottaa-tuike-finland-oy-ta-keskeyttamaan-muhoksen-ja-kajaanin-datakeskushankkeiden-valmistelutoimet">LVV</a>, <a href="https://www.verkkouutiset.fi/a/viranomainen-kehottaa-googlea-keskeyttamaan-datakeskusten-valmistelun/">Verkkouutiset</a></p>]]></description>
-    </item>
-    <item>
-      <title>IonQ reaches over 1,000 entanglements per second between ion trap and quantum memory – the company’s own record claim</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-12</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-12-ionq-nar-over-1-000-sammanflatningar-per-sekund</guid>
-      <pubDate>Mon, 12 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>IonQ announced on October 9 that it has achieved more than 1,000 entanglement events per second between a qubit in an ion trap and a solid-state quantum memory, a so-called silicon-vacancy qubit, connected via photons. The company says this is more than four times faster than the previous trapped-ion record, held by Chris Monroe’s group at Duke University. Monroe is IonQ’s chief scientist, and Duke took part in the new study.</p>
-<p>The result is reported in a preprint (arXiv 2610.10705) and is a step toward distributed quantum computing, where several smaller quantum computers are linked together. What has been shown is only the link between a trapped ion and a silicon vacancy. That the architecture works with neutral atoms and superconducting systems, via so-called transducers that convert microwaves to light, is an expectation and has not been demonstrated. The press release lacks figures on fidelity and distance, and “world-first” is IonQ’s own characterization. IonQ is developing the link under DARPA’s HARQ program and has sold systems to the University of Maryland and South Korea’s SDT.</p>
-<p>For the Nordics: Several of the largest Nordic quantum projects are built on superconducting qubits, the very platform where IonQ’s link has not yet been shown. Chalmers and the Wallenberg Centre for Quantum Technology (WACQT) are building a Swedish quantum computer with superconducting circuits, and Finland’s IQM makes superconducting processors. How several such machines can be linked together is therefore relevant here too, but that part remains to be shown.</p>
-<p class="news-card__source">Source: <a href="https://ionq.com/news/ionq-demonstrates-world-first-quantum-memory-enhanced-interconnect-for-distributed-quantum-applications">IonQ</a>, <a href="https://thequantuminsider.com/2026/10/09/ionq-1000-entanglement-events-per-second-quantum-interconnect/">The Quantum Insider</a>, <a href="https://chalmers.se/en/centres/wacqt/research/research-in-quantum-computing-and-simulation">Chalmers (WACQT)</a></p>]]></description>
     </item>
   </channel>
 </rss>
