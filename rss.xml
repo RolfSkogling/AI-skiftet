@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 05:19:20 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 05:19:26 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Marvell köper optikbolaget Lumentum i aktiebaserad affär värd omkring 100 miljarder dollar</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-marvell-koper-optikbolaget-lumentum-i-aktiebaserad-affar-vard</guid>
+      <pubDate>Tue, 03 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Marvell Technology köper optikbolaget Lumentum i en uteslutande aktiebaserad affär. Avtalet är daterat den 1 november 2026 och offentliggjordes den 2 november. Varje Lumentum-aktie byts mot 4,5 Marvell-aktier, och enligt bolagens FAQ ger det ett transaktionsvärde på omkring 100 miljarder dollar.</p>
+<p>Marvells aktieägare får omkring 67 procent av det sammanslagna bolaget och Lumentums omkring 33 procent, och Marvell ska utse tre Lumentum-ledamöter till sin styrelse. Affären väntas ta 12–18 månader och kräver godkännande från aktieägare och myndigheter; slutdatum är den 1 november 2027 men kan flyttas fram till den 1 augusti 2028 om tillstånd dröjer. Lumentums vd skriver i ett mejl till personalen att bolagen vill täcka AI-uppkoppling från dagens länkar mellan och inom datacenter till framtida länkar närmare chippen. Brytavgifterna är stora: Marvell betalar 5,8 miljarder dollar och Lumentum 2,9 miljarder dollar i vissa fall, och Marvell betalar dessutom 3,2 miljarder dollar i vissa regulatoriska avbrottsscenarier. Enligt AI Weekly rapporterade Bloomberg om förhandlingarna redan den 28 oktober, då Lumentum steg 11 procent och Marvell föll över 8 procent. Nvidia är både kund och aktieägare i Lumentum med en investering på 2 miljarder dollar.</p>
+<p>För Norden … Källorna nämner inga nordiska parter i affären. Om byggen som den svenska AI-superdatorn Sferical One eller norska datacenter får färre och större leverantörer av optik säger varken bolagen eller rapporteringen något, så det är en öppen fråga snarare än en slutsats. Affären väntas slutföras inom 12–18 månader, och avtalet tillåter förlängning till augusti 2028 om myndighetstillstånd dröjer; först därefter blir frågan verklig för nordiska inköpare.</p>
+<p class="news-card__source">Källa: <a href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526443871/d152890d425.htm">Lumentum/Marvell (SEC Form 425)</a>, <a href="https://www.sec.gov/Archives/edgar/data/0001835632/000119312526442717/d352474d8k.htm">Marvell (SEC Form 8-K)</a>, <a href="https://aiweekly.co/alerts/marvell-in-advanced-talks-to-acquire-ai-optics-maker-lumentum">AI Weekly (Bloomberg)</a>, <a href="https://www.trendforce.com/news/?p=65896">TrendForce</a></p>]]></description>
+    </item>
+    <item>
+      <title>Ericsson lanserar system som upptäcker drönare via befintliga 5G-nät</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-ericsson-lanserar-system-som-upptacker-dronare-via-befintliga</guid>
+      <pubDate>Tue, 03 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Ericsson lanserade den 2 november 2026 ISAC System, ett system som upptäcker och följer drönare över stora områden med hjälp av befintliga 5G-nät. Det kan även identifiera objekt som inte är uppkopplade mot nätet och riktar sig till försvar, myndigheter och operatörer av kritisk infrastruktur.</p>
+<p>Systemet analyserar hur radiosignaler studsar mot objekt och använder flera basstationer för att se målet från olika vinklar, vilket förbättrar positionering och täckning. I validerade tester följde det mikrodrönare på avstånd i kilometerskala med tredimensionell positionering; prestandan beror enligt Ericsson på målets egenskaper, flygprofil, terräng och konfiguration. Artificiell intelligens nämns som en av flera komponenter vid sidan av 5G-radio, edge computing och signalbehandling, men vad den gör beskrivs inte. Systemet är tänkt att komplettera radar och andra sensorer, inte ersätta dem. Mindre kommersiella pilotprojekt med enbart avkänning väntas börja 2027 och bredare utrullning från 2028. Tester har gjorts med AT&amp;T i Arlington i Texas, med Erillisverkot i Helsingfors och, tillsammans med ett akustiskt system, med Asseco och Play i Polen.</p>
+<p>För Norden … Ericsson är svenskt, och Erillisverkot i Finland har visat hur flera 5G-master kan användas för drönarförsvar och allmän säkerhet. Källorna nämner inga svenska eller norska pilotkunder. Om svenska myndigheter som Myndigheten för civilt försvar och Försvarsmakten, eller motsvarande norska myndigheter, kommer att pröva tekniken för kustövervakning och skydd av kritisk infrastruktur är inget Ericsson har sagt, så det är en öppen fråga. Nyheten är ett exempel på att Ericsson nu riktar mobilnäten mot säkerhetsmarknaden, med kommersiella piloter tidigast 2027.</p>
+<p class="news-card__source">Källa: <a href="https://borsvarlden.com/artiklar/ericsson-lanserar-teknik-for-dronardetektering-via-mobilnat">Börsvärlden (Finwire)</a>, <a href="https://www.tribuneindia.com/news/business/ericsson-introduces-5g-based-drone-detection-system-commercial-pilots-planned-for-2027/amp/?utm=relatedarticles">The Tribune (ANI)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Alphabet lånar 6 miljarder euro mitt i AI-satsningen, dagar efter börsraset</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-alphabet-lanar-6-miljarder-euro-mitt-i-ai</guid>
+      <pubDate>Tue, 03 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Alphabet började den 2 november 2026 sälja euroobligationer på 6 miljarder euro enligt The Next Web. Pengarna ska användas till allmänna företagsändamål, vilket kan inkludera återbetalning av skulder; lånet tas mitt i kraftigt ökade AI-investeringar. Lånet består av sju delar, en med rörlig och sex med fast ränta, med löptider på mellan två och 19 år, och orderböckerna översteg 17 miljarder euro enligt Reuters, som The Next Web hänvisar till.</p>
+<p>Försäljningen kommer dagar efter att Alphabets aktie föll 12,64 procent den 29 oktober, vilket enligt Fox Business, som hänvisar till Wall Street Journal, raderade omkring 500 miljarder dollar i börsvärde. Tredje kvartalets intäkter på 127,6 miljarder dollar (+25 procent) låg under förväntningarna, tillväxten i sökannonser sjönk till 12 procent från 17 procent kvartalet innan och kvartalets investeringar var omkring 51,4 miljarder dollar. Investeringsprognosen för 2026 är 195–205 miljarder dollar och investeringarna väntas öka kraftigt 2027. Google Cloud mer än fördubblade intäkterna till 30,7 miljarder dollar, men finanschefen Anat Ashkenazi varnade för tryck på molnverksamhetens marginaler på kort sikt. The Next Web uppger även framtida leasingbetalningar på 130,5 miljarder dollar som ännu inte ligger i balansräkningen.</p>
+<p>För Norden … Varken The Next Web eller Fox Business nämner några nordiska köpare av obligationen. Det som är relevant här är kostnadssidan: när ett av världens största molnbolag lånar för att bygga datacenter och investerare reagerar hårt på kapitalbehovet, är det en öppen fråga om det på sikt påverkar priset på molnkapacitet för nordiska kunder. Källorna säger inget om det.</p>
+<p class="news-card__source">Källa: <a href="https://thenextweb.com/news/alphabet-6bn-euro-bond-sale-ai-debt">The Next Web</a>, <a href="https://www.foxbusiness.com/markets/google-parent-alphabet-suffers-nearly-500b-wall-street-wipeout-amid-ai-spending-fears">Fox Business</a></p>]]></description>
+    </item>
+    <item>
+      <title>SUSE skär ner cirka tio procent av personalen med hänvisning till AI – Squarespace tar bort 19 procent</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-03</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-suse-skar-ner-cirka-tio-procent-av-personalen</guid>
+      <pubDate>Tue, 03 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>Linuxbolaget SUSE meddelade personalen den 2 november 2026 att omkring tio procent av de ungefär 1 900 anställda ska bort, med automation och AI som motiv. Samma dag bekräftade webbplatsbyggaren Squarespace att cirka 19 procent av den globala personalen, omkring 300 personer, försvinner.</p>
+<p>SUSE:s vd Dirk-Peter van Leeuwen skriver i memot att moderna verktyg redan förändrar de dagliga arbetsflödena och att bolagets organisation och kostnadsbas måste ändras. Berörda ska få besked senast den 4 november, personalrepresentanter utses dagen därpå och enskilda samtal börjar veckan efter; strategin för räkenskapsåret 2027 presenteras den 16 november. Vilka roller och länder som berörs har inte uppgetts. Squarespace beskriver neddragningen som en omstrukturering för att förenkla verksamheten och skärpa prioriteringarna, enligt talespersonen Jeff Seedman, och nämner inte AI som orsak. TechCrunch tar i sin text upp konkurrensen från AI-drivna webbplatsbyggare, så kallad vibe-coding, som bakgrund, men drar ingen uttrycklig slutsats om att den är orsaken; bolaget själv anger inte det.</p>
+<p>För Norden … SUSE ägs av EQT, ett svenskt riskkapitalbolag, enligt The Register. Källorna säger inget om nedskärningar i Sverige eller Norge, så om Norden berörs är oklart. Fallet är ändå ett exempel på att AI uttryckligen anges som motiv i en omstrukturering hos ett bolag med svensk ägare, vilket gör det relevant för svenska och norska fack och arbetsgivare som diskuterar AI-motiverade uppsägningar.</p>
+<p class="news-card__source">Källa: <a href="https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950">The Register</a>, <a href="https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees">TechCrunch</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI släpper GPT-Rosalind-6 – biologimodell som bara når granskade användare</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-02</link>
@@ -979,55 +1028,6 @@
 <p>I steget ska ett verifieringsteam hos DARPA testa om varje bolags design kan byggas som planerat och fungera som avsett, med fysiska tester av bland annat kvantprocessorer, styrelektronik och avkodningsprogramvara. Programmet ska avgöra om någon kan bygga en användbar kvantdator till 2033, där användbar betyder att beräkningsvärdet överstiger kostnaden. DARPA betonar enligt The Next Web att programmet inte är en tävling och inte utser vinnare. Atom Computing uppger att steget kan ge finansiering på upp till 300 miljoner dollar, och Quantum Computing Report anger samma tak för Diraq och IonQ; för IBM anges ingen siffra. DARPA har utvärderat fler än 20 bolag sedan starten i mitten av 2024. Micah Stoutimore, som leder programmet, säger att Stage C är ”där vi börjar gå från planer till bevis”.</p>
 <p>För Norden: Ingen nordisk aktör finns bland de sex bolagen i Stage C. Däremot sålde Atom Computing 2025 en kvantdator till QuNorth, ett nordiskt initiativ finansierat av Danmarks EIFO och Novo Nordisk Fonden, enligt The Next Web, så en av Stage C-deltagarnas teknik finns redan i Norden. Enligt Quantum Computing Report utvärderar DARPA IBM:s färdplan mot 2029 (Starling, 200 logiska kubitar) och Diraq siktar på användbar skala 2031, tidtabeller som nordiska finansiärer som Vinnova och Forskningsrådet kan jämföra med egna satsningar, till exempel Wallenberg Centre for Quantum Technology vid Chalmers.</p>
 <p class="news-card__source">Källa: <a href="https://quantumcomputingreport.com/darpa-selects-atom-computing-diraq-ibm-and-ionq-for-final-stage-c-verification-under-quantum-benchmarking-initiative/">Quantum Computing Report</a>, <a href="https://thenextweb.com/news/darpa-quantum-computer-atom-computing-ibm-ionq-diraq-stage-c">The Next Web</a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft visar Maia 300 – eget AI-chip för resonemangsmodeller ska minska beroendet av Nvidia</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-microsoft-visar-maia-300-eget-ai-chip-for</guid>
-      <pubDate>Wed, 14 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Microsoft presenterade den 12 oktober Maia 300, tredje generationen av bolagets egenutvecklade AI-chip, avsett för inferens med resonemangsmodeller och agenter. Chipet ska enligt Microsoft bli den primära inferenslösningen för bolagets egna produkter och tjänster och tas i bruk efter årsskiftet. Enligt The Verge, som Computerworld citerar, ska det minska beroendet av Nvidia och AMD.</p>
-<p>Scott Guthrie, Microsofts chef för moln och AI, säger att bolaget räknar med att Maia 300 ger 40 procent fler tokens per megawatt än ”ledande GPU-baserade system”, men varken jämförelsesystem eller testförhållanden anges, så siffran är en leverantörsuppgift som ännu inte kan kontrolleras. Microsoft säger att Azure Maia-familjen ska skalas upp till flera gigawatt från 2027. Föregångaren Maia 200 lanserades i januari 2026 och kör i dag arbetsbelastningar för Copilot, och GitHub Copilot och Microsoft Foundry väntas följa före årets slut. Uppgifter om tillverkningsteknik, minneskonfiguration och prestanda i absoluta tal saknas i de källor vi läst.</p>
-<p>För Norden: Ingen av källorna anger var Maia 300 ska driftsättas eller om kunder kan välja hårdvara. Svenska och norska företag som använder Copilot eller Foundry kan på sikt få sin inferens körd på Microsofts eget kisel. Om effektivitetsuppgiften håller kan den vara relevant där elkapaciteten begränsar datacenterbyggen, men en eventuell kostnadsvinst når nordiska kunder bara om Microsoft för den vidare i prissättningen, vilket ingen av källorna säger något om.</p>
-<p class="news-card__source">Källa: <a href="https://www.computerworld.com/article/4234722/microsoft-unveils-new-maia-300-ai-chip.html">Computerworld</a>, <a href="https://computersweden.se/article/4234196/microsoft-visar-upp-nya-ai-chippet-maia-300.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Character.AI ansöker om konkursskydd – Disney lägger första bud på delar av bolaget</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-character-ai-ansoker-om-konkursskydd-disney-lagger-forsta</guid>
-      <pubDate>Wed, 14 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Chatbotplattformen Character.AI meddelade den 12 oktober att den ansökt om konkursskydd enligt Chapter 11 i USA och har kommit överens om att sälja vissa tillgångar till Disney för 20 miljoner dollar. Disney är så kallad stalking horse-budgivare, vilket innebär att andra intressenter kan lägga konkurrerande bud.</p>
-<p>Enligt TechCrunch ska plattformen vara igång under det domstolsövervakade försäljningsförfarandet, som väntas avslutas i november eller början av december, och hittas ingen köpare ska tjänsten avvecklas. Disney får enligt samma uppgifter också en icke-exklusiv, evig licens till tekniken, och flera tidigare medarbetare, bland dem förre vd:n Karandeep Singh Anand, har gått till Disney. Vd:n Colin Adams hänvisar till rättsliga, regulatoriska och operativa motvindar. Bolaget har stämts i flera mål om säkerheten i sina AI-sällskap och har förbjudit minderåriga, och Google betalade 2024 2,7 miljarder dollar för licens till bolagets modeller, varefter grundarna återvände till Google.</p>
-<p>För Norden: Ingen av källorna anger hur många nordiska användare tjänsten har. EU:s AI-förordning kräver sedan 2 augusti 2026 att användare informeras när de interagerar med ett AI-system, men målen mot Character.AI gäller säkerhet för unga användare snarare än märkning. Frågan för nordiska föräldrar och skolor är vad som händer med användardata och chatthistorik när en plattform säljs ut i delar, och ingen av källorna säger något om det.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/">TechCrunch</a>, <a href="https://www.fastcompany.com/91622790/character-ai-bankrupt-chatbot-platform-sell-disney">Fast Company</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nature Will presenterar Natura-1 – grundmodell med 50 miljarder parametrar för robothänder</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-nature-will-presenterar-natura-1-grundmodell-med-50</guid>
-      <pubDate>Wed, 14 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Fysisk-AI-labbet Nature Will, med kontor i San Francisco, presenterade den 13 oktober Natura-1, en grundmodell med 50 miljarder parametrar och mixture-of-experts-arkitektur för styrning av robothänder. Modellen är enligt bolaget förtränad på ungefär en miljon timmar egocentrisk video av människors händer, tränad gemensamt på språk, bild, video och handling, och styr med en reglerslinga på 100 millisekunder, vilket Forbes beskriver som långsammare än önskvärt för fingerfärdig manipulation.</p>
-<p>Resultaten är bolagets egna. Natura-1 får 53,4 poäng (Base) och 59,1 (Agentic) i bolagets eget test över tolv förmågor på fingerfärdiga robothänder, och de jämförda modellerna fick inga poäng på den plattformen. På en separat gripdonsplattform fick π0.5 13,5 poäng och GPT-6-Astra 16,7, så poängen är inte jämförbara rakt av. Bolaget kallar modellen en ”research preview” och nämner varken öppna vikter, API eller pris, och Forbes påpekar att modellen bara styr händer, inte gång eller balans, och att jämförelser och oberoende tester ännu saknas.</p>
-<p>För Norden: Ingen av källorna nämner nordiska partner eller nordisk tillgång till modellen. Blir den tillgänglig är frågan för svensk och norsk industri om den fungerar utanför laboratoriet, vilket ännu inte prövats oberoende. Tills dess är Natura-1 en leverantörsuppgift utan oberoende belägg.</p>
-<p class="news-card__source">Källa: <a href="https://www.forbes.com/sites/johnkoetsier/2026/10/13/startup-releases-50-billion-parameter-physical-general-foundation-model-for-instant-robot-intelligence/">Forbes</a>, <a href="https://www.naturewill.com/blog/natura-1">Nature Will</a></p>]]></description>
-    </item>
-    <item>
-      <title>Svenskar frågar hellre AI än chefen – var sjätte föredrar AI när de inte vill störa någon</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-14</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-14-svenskar-fragar-hellre-ai-an-chefen-var-sjatte</guid>
-      <pubDate>Wed, 14 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Enligt en Norstat-undersökning som Advania Sverige kommenterat i ett pressmeddelande föredrar 57 procent av svenska anställda att fråga AI när de behöver snabba svar på jobbet. Computer Sweden rapporterade resultaten den 7 oktober.</p>
-<p>Undersökningen gjordes 17 april–8 maj 2026 i Norstats webbpanel bland 1 011 anställda i åldern 18–70 år, varav 32 procent i offentlig och 67 procent i privat sektor. Andelen som föredrar AI för snabba svar är 61 procent bland män, 68 procent i övre Norrland och 68 procent bland höginkomsttagare, men delgruppernas storlek redovisas inte. 31 procent vänder sig till AI när de känner sig osäkra, fler kvinnor (34 procent) än män (27 procent). 16 procent föredrar AI framför att fråga kollegor eller chef när de inte vill störa någon och 7 procent för känsliga frågor. 17 procent uppger att AI påverkat stora organisatoriska beslut i viss eller hög grad under det senaste året. Det rör sig om självrapporterade svar, inte uppmätt användning.</p>
-<p>För Norden: Magnus Wemby, HR-chef på Advania Sverige, säger att AI håller på att bli en naturlig kollega som sänker tröskeln för obekväma frågor, men att arbetsgivare måste vara uppmärksamma om tekniken ersätter dialogen med chef och kollegor. Undersökningen gäller bara Sverige, och motsvarande norska siffror redovisas inte. Frågan för svenska arbetsgivare och fackliga organisationer är hur AI-stödda beslut ska dokumenteras och vilka verktyg som är tillåtna, och ingen av källorna redovisar några sådana riktlinjer.</p>
-<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4231821/svenskarna-fragar-hellre-ai-an-chefen.html">Computer Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
