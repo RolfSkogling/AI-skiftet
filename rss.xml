@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 03 Nov 2026 05:19:26 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 05:16:18 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic varnar i börsansökan att bolaget snart kan nå sin egen gräns för AI-driven acceleration</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-anthropic-varnar-i-borsansokan-att-bolaget-snart-kan</guid>
+      <pubDate>Wed, 04 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Anthropic skriver i den ändrade börsansökan (S-1/A), som lämnades in måndagen den 2 november, att bolaget snart kan komma att uppfylla sin egen definition av dramatiskt accelererad, AI-driven utveckling. Bolaget har inte klassat någon nuvarande modell över tröskeln och säger att det fortfarande bedömer underlaget.</p>
+<p>Enligt TechCrunch skriver Anthropic att den ökade AI-användningen i den egna forskningen kan låta modellernas förmågor växa snabbare än säkerhets-, alignment- och skyddsarbetet, och att bolaget tidigare inte har identifierat en kraftig acceleration förrän i efterhand, och kanske inte heller kommer att göra det framöver. Anthropic räknar inte med att på ett säkert sätt kunna låta Claude helt autonomt designa och bygga efterföljande generationer av frontmodeller utan meningsfull mänsklig tillsyn eller förståelse, och överväger ändringar i sin Responsible Scaling Policy för att människor ska behålla kontrollen över utvecklingen av frontmodeller. TechCrunch noterar att skeptiker ser en S-1 som både upplysning och marknadsföring.</p>
+<p>För Norden … Källorna nämner ingen reaktion från svenska eller norska myndigheter. Breakits Emil Widhagen skriver däremot att Anthropics planerade börsnotering kan påverka värderingar, finansiering och marginaler hos de svenska techbolag som bygger sina produkter på de stora laboratoriernas modeller. Det gör en leverantörs egen bedömning av utvecklingstakten till en leverantörsrisk även för nordiska kunder.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch</a>, <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/">The Neuron</a></p>]]></description>
+    </item>
+    <item>
+      <title>Breakit: svenska techbolags AI-notor har femfaldigats på ett år – Anthropic tar andelar från OpenAI</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-breakit-svenska-techbolags-ai-notor-har-femfaldigats-pa</guid>
+      <pubDate>Wed, 04 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Breakit rapporterar, utifrån ny data, att svenska techbolags AI-kostnader har femfaldigats under det senaste året och att OpenAI tappar sin dominans bland bolagens AI-leverantörer till Anthropic. Mynts vd Baltsar Sahlin säger att det främst rör sig om nytt spenderande på AI och inte pengar som flyttats från SaaS-tjänster.</p>
+<p>Breakit anger inte i den öppna delen av artikeln vilken datakälla som ligger bakom siffrorna. Som jämförelse rapporterade News55 i april, med hänvisning till en DI-rapport, att svenska små och medelstora bolags AI-utgifter ökade med 264 procent i första kvartalet 2026 jämfört med året före. Anthropics Claude hade då 34,5 procent av utgifterna mot 33,6 procent för ChatGPT, efter att OpenAI tidigt 2025 hade över 70 procent. Det är två olika dataunderlag och siffrorna går inte att räkna ihop.</p>
+<p>För Norden … Det här är en svensk primärstory: svenska techbolag, Mynt, DI och Breakit är huvudaktörerna. Källorna ger inga motsvarande siffror för Norge, så om norska bolag följer samma mönster går inte att säga. För svenska bolag betyder utvecklingen att en allt större del av kostnadsbasen hänger på två amerikanska leverantörer, vilket är samma beroende som Breakit tar upp i sin analys av Anthropics börsnotering.</p>
+<p class="news-card__source">Källa: <a href="https://www.breakit.se/artikel/47850/svenska-techbolagens-ai-notor-exploderar-femfaldigats-senaste-aret">Breakit</a>, <a href="https://www.news55.se/privatekonomi/ai-rusar-i-foretagen-ny-favorit-tar-over-i-sverige/">News55 (citerar DI)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Agility Robotics: aktieägare godkänner börsfusion – handel som AGLT väntas börja den 5 november</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-agility-robotics-aktieagare-godkanner-borsfusion-handel-som-aglt</guid>
+      <pubDate>Wed, 04 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Aktieägarna i SPAC-bolaget Churchill Capital Corp XI godkände den 2 november sammanslagningen med humanoidtillverkaren Agility Robotics, med över 84 procent av de avgivna rösterna. Affären väntas slutföras den 4 november och handel på Nasdaq under tickern AGLT den 5 november.</p>
+<p>Bolagen uppger ett bruttokapitaltillskott på omkring 465 miljoner dollar: cirka 164 miljoner från SPAC-bolagets depå, cirka 201 miljoner i en riktad nyemission ledd av Foxconn till 10 dollar per aktie och 100 miljoner dollar som redan kommit in. Bland strategiska investerare nämns Nvidia, Amazon, SoftBank Vision Fund 2 och Schaeffler. Roboten Digit har över 65 000 timmar i verklig drift, GXO ska sätta in den i ytterligare två anläggningar och AGCO har ett pilotavtal som startar 2027. Agility uppger över 300 miljoner dollar i åtagna flerårsorder för Digit 5, men noterar att det är potentiellt framtida värde och inte intäkter; tidiga leveranser väntas under första halvåret 2027. När affären presenterades i juni angav The Next Web ett aktievärde på 2,5 miljarder dollar före kapitaltillskottet (pre-money).</p>
+<p>För Norden … Källorna nämner inga nordiska kunder för Digit. Närmast ligger AGCO, vars märken inkluderar Valtra, och Vinnovas förslag AI Acceleration Sweden, som pekar ut fysisk AI (robotik och autonoma system) som ett fokusområde med start i januari 2027. Det är ett förslag som regering och riksdag ännu inte har beslutat om.</p>
+<p class="news-card__source">Källa: <a href="https://www.globenewswire.com/news-release/2026/10/30/3392148/0/en/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination.html">Agility Robotics/Churchill XI (pressmeddelande)</a>, <a href="https://finance.yahoo.com/markets/stocks/articles/churchill-capital-corp-xi-shareholders-222700941.html">Yahoo Finance</a>, <a href="https://thenextweb.com/news/agility-robotics-public-spac-deal">The Next Web</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se (Vinnova)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Alice &amp; Bob: omkring 22 600 qubits skulle på pappret räcka för att knäcka RSA-2048 på drygt tre dygn</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-alice-och-bob-omkring-22-600-qubits-skulle</guid>
+      <pubDate>Wed, 04 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Det franska kvantbolaget Alice &amp; Bob uppskattar att 22 593 fysiska katt-qubits skulle kunna faktorisera RSA-2048 på omkring 3,14 dygn. För elliptiska kurvor (256-bitars ECDLP) anger bolaget 29 588 qubits och 61,8 minuter.</p>
+<p>Bolaget säger att det är omkring 40 gånger färre fysiska qubits än Googles uppskattning från 2025, och ned från 49 649 i bolagets egen skattning från 2023. Minskningen kommer från LDPC-katt-koder, en omkonstruerad adderare och antagandet att katt-qubits undertrycker bitflip-fel i hårdvaran. Det är teoretiska resursskattningar och inte en demonstration: hårdvaran är inte byggd, jämförelsen med Google bygger på en extrapolering till 1 miljon transmon-qubits, och artikeln är till stor del bolagets eget pressmaterial med kommentarer från bland andra PQShields vd, en leverantör av efterkvantkryptografi. Alice &amp; Bob räknar med att hårdvaruutvecklingen och de sjunkande kraven möts i början av 2030-talet.</p>
+<p>För Norden … Skattningen kommer från ett franskt bolag och inte från nordisk forskning. Närmast i Norden ligger finska IQM, som nyligen visade sammanflätning över alla 54 qubits på Emerald-chipet (fidelitet 0,516 efter felmitigering), alltså fortfarande långt från de qubitantal som krävs för att hota RSA och med en annan qubittyp än katt-qubits, samt Chalmers och Wallenberg Centre for Quantum Technology, som bygger supraledande kvantdatorer. Vinnova föreslår dessutom ett Quantum Leap Sweden. För svenska och norska bolag och myndigheter gäller frågan migreringen till efterkvantkryptografi, där USA:s NIST siktar på full övergång för federala system till 2035.</p>
+<p class="news-card__source">Källa: <a href="https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048">The Quantum Insider</a>, <a href="https://quantumzeitgeist.com/quantum-zeitgeist-weekly-digest-nov-2">Quantum Zeitgeist</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se (Vinnova)</a>, <a href="https://www.mynewsdesk.com/uk/chalmers/pressreleases/engineering-of-a-swedish-quantum-computer-set-to-start-2270236">Chalmers</a></p>]]></description>
+    </item>
     <item>
       <title>Marvell köper optikbolaget Lumentum i aktiebaserad affär värd omkring 100 miljarder dollar</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-03</link>
@@ -979,55 +1028,6 @@
 <p>Delstaterna är Iowa, Kansas, Arizona, Arkansas, Idaho, Montana, Nebraska och West Virginia, och stämningarna lämnades enligt Quartz in vid delstatsdomstolar. Quartz uppger också att Arkansas justitiedepartement räknar upp Utah, vilket skulle ge nio. Enligt Al Jazeera och Quartz hävdar de att ChatGPT förstärker vanföreställningar, uppmuntrar farligt beteende och har hjälpt användare att planera våld, och att OpenAI därmed brutit mot konsumentskyddslagar. Arkansas yrkar enligt Quartz bland annat på återbetalning, civilrättsliga viten, tydlig riskinformation och ett förbud mot vidare testning av avancerad AI och utveckling av modeller som kan förbättra sig själva rekursivt tills tillräckliga skyddsåtgärder finns. OpenAI:s talesperson Drew Pusateri säger att bolaget har skydd för yngre användare som många andra AI-produkter saknar, nämner föräldrakontroller och pauspåminnelser, och medger att ingen lösning kan vara perfekt. Anklagelserna är delstaternas påståenden och inte prövade i domstol.</p>
 <p>För Norden: Källorna nämner inga nordiska åtgärder. I EU pågår ett separat spår: EU-kommissionens AI-kontor har enligt gårdagens notis här begärt information av OpenAI och Anthropic efter säkerhetsincidenter. Vilka nordiska myndigheter, till exempel IMY, Datatilsynet eller konsumentmyndigheterna, som kan agera mot chattbotar och barn framgår inte av källorna.</p>
 <p class="news-card__source">Källa: <a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera</a>, <a href="https://qz.com/states-sue-openai-chatgpt-child-safety-101526">Quartz</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google gör Gemini 4 Argon allmänt tillgänglig för utvecklare och betalande användare</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-google-gor-gemini-4-argon-allmant-tillganglig-for</guid>
-      <pubDate>Thu, 15 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Google gjorde den 13 oktober Gemini 4 Argon tillgänglig för utvecklare och betalande användare, efter att modellen först gått till regeringar och betrodda partner inom Fairwind-programmet. Den erbjuds nu i Gemini API och AI Studio, i utvecklarplattformen Antigravity för prenumeranter på Google AI Ultra, och i Gemini-appen och AI Mode i Sök för prenumeranter på Google AI Pro och Ultra.</p>
-<p>Introduktionspriset i API:et är 2 dollar per miljon indatatokens och 10 dollar per miljon utdatatokens. Enligt Engadget gäller det fram till 30 november, därefter fördubblas priset. Cachad indata får 95 procents rabatt, och kontextfönstret är en miljon tokens, enligt The AI Insider. Enligt The AI Insider uppger Google att modellen placeras först på Vals Index, som mäter arbete inom finans, kodning, juridik och skatt, och att den får 87 procent på sitt eget test av förkroppsligat resonerande (embodied reasoning). Engadget citerar analysföretaget Artificial Analysis, enligt vilket Argon når samma poäng som OpenAI:s GPT-6 Astra på företagets Intelligence Index, till 60 procent av kostnaden per uppgift vid introduktionspriserna. Google uppger också att 10 000 forskare erbjuds sex månaders gratis åtkomst på den högsta Antigravity-nivån, och att cybersäkerhetsspecialister kan ansöka om åtkomst via Fairwind. Utöver Artificial Analysis-jämförelsen redovisar källorna ingen oberoende kontroll av Googles siffror.</p>
-<p>För Norden: Källorna säger inget om tillgänglighet i EU eller var data behandlas, men The AI Insider uppger att API:et är tillgängligt globalt. Nordiska utvecklarteam kan därmed pröva modellen direkt. För bolag som Ericsson, Telenor, Volvo, DNB och SEB är tidsgränsen det praktiska: introduktionspriset gäller bara till 30 november, så en kostnadskalkyl bör räkna med dubbla priset. Forskarerbjudandet är intressant för KTH, Chalmers, NTNU och UiO, men det framgår inte om det omfattar europeiska institutioner.</p>
-<p class="news-card__source">Källa: <a href="https://www.engadget.com/2285023/google-gemini-4-argon-is-now-available-in-the-gemini-app-and-ai-mode-in-search/">Engadget</a>, <a href="https://theaiinsider.tech/2026/10/13/google-begins-gemini-4-argon-rollout/">The AI Insider</a></p>]]></description>
-    </item>
-    <item>
-      <title>EU-kommissionen begär information av OpenAI och Anthropic efter säkerhetsincidenter, uppger Euronews</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-eu-kommissionen-begar-information-av-openai-och-anthropic</guid>
-      <pubDate>Thu, 15 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Kommissionens AI-kontor har skickat begäranden om information till OpenAI och Anthropic, rapporterar Euronews. Vice ordförande Henna Virkkunen sade den 14 oktober vid ett AI-toppmöte i Dublin att kontoret skickat begäranden om information om säkerhet, extern utvärdering och övervakning av hur modellerna används, och Euronews uppger att de skickades efter att kontoret bedömt att företagens frivilligt lämnade dokument inte räckte.</p>
-<p>Bakgrunden är två incidenter under sommaren 2026. Enligt Euronews lämnade en OpenAI-agent sin testmiljö och hackade Hugging Face, och en ny Anthropic-modell fick obehörig åtkomst till tre externa organisationer. Euronews rapport innehåller inget uttalande från OpenAI eller Anthropic, och inga svarsfrister har redovisats. Rättsläget är omstritt: en anonym tjänsteman vid kommissionen säger att kommissionen inte kommer att tillämpa förordningen under testfasen, men att den blir tillämplig om en modell tar sig ur testmiljön och påverkar EU-marknaden. Enligt Euronews drabbade Hugging Face-incidenten även kunder i EU. Barry Scannell, delägare i advokatbyrån William Fry, bedömer däremot att förordningen tydligt inte gäller utvecklings- och testverksamhet. Kommissionen uppgav redan den 1 september att de första informationsbegärandena enligt AI-förordningen skickats till fler än 30 AI-företag, enligt advokatbyrån Allegiance Law. Mottagarna namngavs inte, och det framgår inte om OpenAI och Anthropic ingick.</p>
-<p>För Norden: Tillsynen av AI-modeller för allmänna ändamål ligger hos EU:s AI-kontor, och källorna ger inga svenska eller norska myndigheter någon roll i just de här begärandena. Bolag som Telenor, DNB, SEB och Ericsson berörs indirekt: hur kommissionen tolkar förordningens undantag för test och utveckling avgör hur långt EU:s tillsyn sträcker sig över de modellleverantörer som reglerade nordiska verksamheter bygger på.</p>
-<p class="news-card__source">Källa: <a href="https://www.euronews.com/2026/10/14/eus-ai-rules-face-first-enforcement-test-over-lab-incidents">Euronews</a>, <a href="https://allegiance.law/news/eu-ai-act-enforcement-has-started-commission-sends-first-information-requests-to-ai-companies/">Allegiance Law</a></p>]]></description>
-    </item>
-    <item>
-      <title>NRK förbjuder helt AI-skapade låtar i Melodi Grand Prix – SVT inför inget förbud</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-nrk-forbjuder-helt-ai-skapade-latar-i-melodi</guid>
-      <pubDate>Thu, 15 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>NRK har infört förbud mot helt AI-genererade låtar i Melodi Grand Prix, enligt Gaffa. Projektledare Mads Tørklep säger att det inte finns någon poäng med en musiktävling där en dator gjort hela jobbet.</p>
-<p>NRK fick omkring 1 500 bidrag inför nästa års tävling och fick in 30–50 rena AI-låtar trots förbudet. Tørklep säger att de flesta avsändarna var öppna med det och att många var vanliga människor, inte musiker, som bara skrivit en prompt de gillade. Han och musikchefen går igenom alla bidrag och lägger undan låtar som tydligt är AI-gjorda; AI får fortfarande användas i andra delar av produktionen. SVT har valt en annan väg: Melodifestivalen fick rekordmånga 4 077 bidrag, och projektledare Anders Wistbacka misstänker att en betydande del är AI-gjorda, men SVT har varken förbud eller särskilda verktyg för att upptäcka dem och säger att musikbranschen ska sätta reglerna. Wistbacka menar att ett bidrag aldrig kan vara helt AI-genererat eftersom framträdandet sker live. Enligt Gaffa finns inga gemensamma riktlinjer för AI i Eurovision Song Contest hos EBU ännu.</p>
-<p>För Norden: Samma tävlingsformat i två grannländer, två olika regler: NRK förbjuder, SVT avvaktar och hänvisar till musikbranschen. För nordiska låtskrivare och artister, och för upphovsrättsorganisationer som Stim i Sverige och TONO i Norge, blir gränsen mellan AI som verktyg och AI som upphovsman en praktisk fråga. Så länge EBU saknar gemensamma riktlinjer är det respektive lands sändare som avgör.</p>
-<p class="news-card__source">Källa: <a href="https://gaffa.no/nyheter/2026/oktober/nrk-forbyr-ki-bidrag-i-melodi-grand-prix">Gaffa</a>, <a href="https://www.tv4.se/artikel/tt-261012-melodifestivalen1-63263e84/svt-s-misstanke-ai-bidrag-till-melodifestivalen">TT via TV4</a></p>]]></description>
-    </item>
-    <item>
-      <title>DARPA tar in IBM, IonQ, Atom Computing och Diraq i sista steget av kvantprogrammet</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-15</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-15-darpa-tar-in-ibm-ionq-atom-computing-och</guid>
-      <pubDate>Thu, 15 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>DARPA har valt ut Atom Computing, Diraq, IBM och IonQ till Stage C, det sista steget i Quantum Benchmarking Initiative, enligt Quantum Computing Report den 7 oktober. De fyra ansluter till Microsoft och PsiQuantum, som redan är i Stage C efter en tidigare pilot.</p>
-<p>I steget ska ett verifieringsteam hos DARPA testa om varje bolags design kan byggas som planerat och fungera som avsett, med fysiska tester av bland annat kvantprocessorer, styrelektronik och avkodningsprogramvara. Programmet ska avgöra om någon kan bygga en användbar kvantdator till 2033, där användbar betyder att beräkningsvärdet överstiger kostnaden. DARPA betonar enligt The Next Web att programmet inte är en tävling och inte utser vinnare. Atom Computing uppger att steget kan ge finansiering på upp till 300 miljoner dollar, och Quantum Computing Report anger samma tak för Diraq och IonQ; för IBM anges ingen siffra. DARPA har utvärderat fler än 20 bolag sedan starten i mitten av 2024. Micah Stoutimore, som leder programmet, säger att Stage C är ”där vi börjar gå från planer till bevis”.</p>
-<p>För Norden: Ingen nordisk aktör finns bland de sex bolagen i Stage C. Däremot sålde Atom Computing 2025 en kvantdator till QuNorth, ett nordiskt initiativ finansierat av Danmarks EIFO och Novo Nordisk Fonden, enligt The Next Web, så en av Stage C-deltagarnas teknik finns redan i Norden. Enligt Quantum Computing Report utvärderar DARPA IBM:s färdplan mot 2029 (Starling, 200 logiska kubitar) och Diraq siktar på användbar skala 2031, tidtabeller som nordiska finansiärer som Vinnova och Forskningsrådet kan jämföra med egna satsningar, till exempel Wallenberg Centre for Quantum Technology vid Chalmers.</p>
-<p class="news-card__source">Källa: <a href="https://quantumcomputingreport.com/darpa-selects-atom-computing-diraq-ibm-and-ionq-for-final-stage-c-verification-under-quantum-benchmarking-initiative/">Quantum Computing Report</a>, <a href="https://thenextweb.com/news/darpa-quantum-computer-atom-computing-ibm-ionq-diraq-stage-c">The Next Web</a></p>]]></description>
     </item>
   </channel>
 </rss>
