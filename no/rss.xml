@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 04 Nov 2026 05:16:18 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 05:20:18 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Saab viser egenutviklede KI-agenter for luftkamp – flytestet på Gripen E</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-saab-visar-egenutvecklade-ai-agenter-for-luftstrid-testade</guid>
+      <pubDate>Thu, 05 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Saab har presentert egenutviklede KI-agenter for luftkamp som ifølge selskapet er flytestet på en Gripen E. Peter Nilsson, sjef for Advanced Programs i Saabs flyvirksomhet, sa på en briefing 30. oktober at testene så langt hovedsakelig har gjelt strid utenfor visuell rekkevidde, og at agentene kan samarbeide med en pilot eller operere fra et eget ubemannet fartøy.</p>
+<p>Ifølge Aviation International News har agentene fløyet på Gripen E-testflyet i omtrent to år, og Saab vurderer dem som klare for operativ bruk – det som gjenstår er kundens evne til å ta dem imot. Agentene utvikles i programmet AI Fighter Pilot Academy og trenes på beregningsanlegget Sferical AI i Linköping, bygget på 1 152 Nvidia GB300-grafikkprosessorer. Saab opplyser at én times simulert flyging kan kjøres en milliard ganger på den tiden et CPU-basert oppsett rekker å kjøre den 1 200 ganger. Tallene er Saabs egne og ikke uavhengig verifisert, og kildene oppgir verken agentenes navn, hvor langt de har kommet utover strid utenfor visuell rekkevidde, eller hvordan menneskelig kontroll skal ordnes.</p>
+<p>For Norden … Dette er en svensk sak med Saab som hovedaktør: kunden er ifølge AIN Försvarets materielverk (FMV) og flyvåpenet, og Sferical AI eies delvis av Saab, Ericsson og AstraZeneca. Nilsson sier selv at utplassering kan ta alt fra måneder til et ensifret antall år, avhengig av hvor raskt kunden kan ta imot agentene; kildene inneholder ingen tidsplan eller beslutning fra FMV eller flyvåpenet. Norge omtales ikke i kildene.</p>
+<p class="news-card__source">Kilde: <a href="https://breakingdefense.com/2026/11/swedens-saab-launches-family-of-ai-agents-for-future-aircraft-projects/">Breaking Defense</a>, <a href="https://ainonline.com/aviation-news/defense/2026-11-03/saab-lifts-lid-ai-fighter-agent-development">Aviation International News</a></p>]]></description>
+    </item>
+    <item>
+      <title>EU-rådgiver: Geminis svar kan krenke pressutgivernes rettigheter</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-eu-radgivare-geminis-svar-kan-gora-intrang-i</guid>
+      <pubDate>Thu, 05 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Generaladvokat Maciej Szpunar i EU-domstolen la 3. november frem sitt forslag til avgjørelse i sak C-250/25, der ungarske Like Company har saksøkt Google Ireland over chatboten Gemini. Ifølge Szpunar kan pressutgiverretten etter artikkel 15 i direktivet om opphavsrett i det digitale indre marked krenkes på to måter: hvis chatboten omgår en betalingsmur eller en sperre mot roboter, eller hvis et svar gjengir artikkelens særegne oppbygning og formuleringer så tett at leseren kan hoppe over originalen.</p>
+<p>Forslaget er ikke bindende, men ifølge RTÉ følger domstolen som regel generaladvokatens linje og ventes å dømme i løpet av de kommende månedene. Spørsmålene om trening bør ifølge Szpunar avvises, men han mener at trening i prinsippet dekkes av unntaket for tekst- og datautvinning, blant annet dersom tilgangen er lovlig og rettighetshaverne ikke har forbeholdt seg rettighetene i maskinlesbar form. Ifølge Szpunar kan fakta brukes fritt, men parafrasering er ikke automatisk tillatt. PPC Land vurderer at veiledningen taler mot Like Company, blant annet fordi bare én setning fra artikkelen går igjen i Geminis svar; den endelige vurderingen gjør den ungarske domstolen. Google skriver ifølge RTÉ at det noterer seg generaladvokatens syn om at EU-retten tillater KI-trening på offentlig tilgjengelig informasjon.</p>
+<p>For Norden … Den danske regjeringen la frem merknader i saken og deltok i den muntlige forhandlingen; ifølge PPC Land hevdet den at tekst- og datautvinning gjelder analyse av store datamengder snarere enn modelltrening, et skille Szpunar ikke anså som avgjørende. Kildene nevner verken Sverige eller Norge. I en egen sak har Oslo tingrett midlertidig stanset Metas nye vilkår etter en begjæring fra ti norske mediehus; avgjørelsen er foreløpig og avgjør ikke om vilkårene er lovlige.</p>
+<p class="news-card__source">Kilde: <a href="https://www.rte.ie/news/2026/1103/1597874-eu-court-backs-publishers-google/">RTÉ</a>, <a href="https://ppc.land/googles-gemini-can-infringe-press-rights-in-2-ways-eu-court-adviser-says/">PPC Land</a>, <a href="https://ppc.land/norwegian-court-temporarily-blocks-metas-new-terms-after-10-media-groups-sue/">PPC Land (Meta/Oslo)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Revolut: egenhostede modeller med åpne vekter har kuttet kostnadene til KI-koding med rundt 90 prosent</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-revolut-egenhostade-oppna-modeller-har-kapat-kostnaden-for</guid>
+      <pubDate>Thu, 05 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Fintech-selskapet Revolut har gjort egenhostede modeller med åpne vekter til standard for KI-koding i stedet for hovedsakelig å bruke kommersielle tjenester som Claude. Ifølge Revolut, slik The Register refererer fra et foredrag på konferansen AI Engineer i New York i oktober, ble verktøyene rullet ut til rundt 2 000 ingeniører, og inferenskostnaden for KI-koding falt med omtrent 90 prosent på under ett år.</p>
+<p>Revolut startet med GLM-5.1 fra Z.ai og kjører nå GLM-5.3 på 56 Nvidia B200-grafikkprosessorer. Selskapet oppgir 0,30 dollar per million tokens ved egenhosting av GLM-5.1, omtrent en tidel av kostnaden for OpenAIs Codex eller Anthropics Claude Code. Forbeholdene er at GLM er tekstbasert, så bildespørsmål går til andre modeller, og at modellen krever rundt 380 GB grafikkminne bare for vektene. Samme dag meldte Computer Sweden at Gartner mener åpne modeller kan ta 90 prosent av oppgavene i bedrifters KI-agenter innen 2030, til omtrent en fjerdedel av kostnaden for de billigste lukkede modellene, men at de av og til trenger flere forsøk. Moonshot har dessuten publisert vektene til Kimi K3.1 Pro (2,8 billioner parametere, 104 milliarder aktive per token); sammenligningene med Claude Opus 5.5 i modellkortet er Moonshots egne.</p>
+<p>For Norden … Hovedkildene nevner ingen nordiske selskaper, og Revolut er britisk. Kostnadsspørsmålet er likevel konkret: Breakit meldte nylig at svenske teknologiselskapers KI-regninger er femdoblet på ett år. Det indiske nettstedet DevBytes skrev i mai at svenske Grunden AI AB har åpnet registrering for en førproduksjonstjeneste for inferens med GLM-5.1 for utviklere og myndigheter innen EU; opplysningen er ikke bekreftet mot noe primærdokument. Revolut-representanten David Abitbol mener ifølge The Register at personvernrisikoen ved kinesiske åpne modeller først og fremst gjelder tilgang via API-er som kjører fra Kina, ikke drift i egen regi eller regional sky; det er hans vurdering, og kildene nevner ingen vurdering fra Datatilsynet eller IMY.</p>
+<p class="news-card__source">Kilde: <a href="https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345">The Register</a>, <a href="https://computersweden.se/article/4243948/gartner-oppna-ai-modeller-kan-gora-90-procent-av-jobbet-till-ett-lagre-pris.html">Computer Sweden</a>, <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Hugging Face (Moonshot)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Quint Computing henter 9,1 millioner euro for å redusere overheaden ved kvantefeilretting</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-05</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-quint-computing-tar-in-9-1-miljoner-euro</guid>
+      <pubDate>Thu, 05 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Tyske Quint Computing, en spin-off fra Friedrich-Alexander-Universität Erlangen-Nürnberg, har hentet en seed-runde på 9,1 millioner euro ledet av Vsquared Ventures, i tillegg til et EIC Pathfinder-tilskudd på 2,2 millioner euro. Selskapet, grunnlagt i oktober 2025 og en del av Munich Quantum Valley, bygger superledende kvanteprosessorer og sikter mot å redusere den fysiske overheaden ved feilretting med inntil en faktor 100.</p>
+<p>Tilnærmingen bygger på kontinuerlig elektrisk styring som stabiliserer enkeltelementer i kretsen mot støy, noe selskapet sier reduserer både varmelasten i kryostaten og antall ledninger. Til sammenligning anslås en kommersielt nyttig maskin basert på overflatekoden å trenge rundt én million fysiske qubits, mot 105 for Googles Willow, skriver Tech Funding News. Faktor 100 er selskapets eget utsagn og ikke uavhengig verifisert. Quint har ti ansatte og pilottester med Bosch, BASF og Boehringer Ingelheim.</p>
+<p>For Norden … Mikko Möttönen, medgründer av IQM og QMill, deltok i runden; kildene knytter ellers ikke runden til noe nordisk selskap. Nordisk kvanteaktivitet finnes blant annet ved Chalmers og Wallenberg Centre for Quantum Technology (WACQT). Quint er tysk, så runden sier i seg selv ingenting om nordisk finansiering eller teknologi.</p>
+<p class="news-card__source">Kilde: <a href="https://quantumcomputingreport.com/quint-computing-secures-e9-1m-10-2m-usd-seed-round-to-scale-hardware-level-quantum-error-correction/">Quantum Computing Report</a>, <a href="https://techfundingnews.com/quint-computing-9-1m-quantum-error-correction">Tech Funding News</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic advarer i børssøknaden om at selskapet snart kan nå sin egen grense for KI-drevet akselerasjon</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-04</link>
@@ -979,55 +1028,6 @@
 <p>Ifølge News-Medical, som gjengir studiens tall, var oddsen blant de 8 709 av 101 243 pasientene med påvisbart brunt fett 58 prosent lavere for type 2-diabetes og 47 prosent lavere for kronisk iskemisk hjertesykdom, og påvisbart brunt fett var også knyttet til lavere odds for depressive episoder og angstlidelser. Pasienter som brukte angiotensinreseptorblokkere, hadde høyere aktivitet i brunt fett. Blodtrykksmedisinen losartan økte aktiviteten i dyrkede brunfettceller og energiforbruket hos mus mens kroppsvekten var uendret, men effekten hos mennesker er ikke testet. Studien er retrospektiv og viser sammenhenger, ikke årsak og virkning.</p>
 <p>For Norden: Kildene nevner ingen nordisk part, så dette er en vurdering. Materialet kommer fra kreftpasienter som er undersøkt med PET-CT, og kan ikke overføres direkte til svenske eller norske pasienter, og losartans effekt på brunt fett hos mennesker gjenstår å vise i kliniske studier. Nordens brede helseregistre gjør prospektive oppfølginger tenkelige, men det er en mulighet og ikke noe kildene rapporterer.</p>
 <p class="news-card__source">Kilde: <a href="https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat">NIH</a>, <a href="https://www.news-medical.net/news/20261015/AI-study-of-101000-patients-links-brown-fat-to-heart-and-mental-health.aspx">News-Medical</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI fjerner GPT-4o og GPT-4.1 fra API-et 14. januar 2027</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-openai-stanger-gpt-4o-och-gpt-4-1</guid>
-      <pubDate>Fri, 16 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI meddelte 14. oktober at GPT-4o, GPT-4o mini, GPT-4.1 og GPT-4.1 mini fjernes fra API-et 14. januar 2027. Selskapet peker utviklere mot gpt-6-luna som erstatter, og finjusterte versjoner følger samme tidsplan som basismodellene.</p>
-<p>Ifølge daily.dev er varselet om lag tre måneder, selv om OpenAI etter egen policy skal gi minst seks måneders varsel for generelt tilgjengelige modeller. Selvbetjent finjustering opphører 6. januar 2027. Å bytte modell-ID er ikke nok, skriver samme kilde: gpt-6-luna har som standard middels resonneringsnivå, funksjonskall via Chat Completions fungerer bare når reasoning_effort er satt til none, og når resonnering slås på, deaktiveres parametere som temperature og top_p. Luna koster 0,10 dollar per million inndatatokens og 0,50 dollar per million utdatatokens med et kontekstvindu på 1,05 millioner tokens, men over 272 000 inndatatokens stiger prisen for hele forespørselen. OpenAIs dokumentasjon oppgir dessuten at den eldre versjonen gpt-4o-2024-05-13 og modellen gpt-4.1-nano stenges allerede 23. oktober 2026, ifølge en melding fra april.</p>
-<p>For Norden: Kildene sier ingenting om nordiske kunder, så dette er en konsekvensvurdering og ikke et rapportert faktum. Svenske og norske team som har bygget kundeservice, interne assistenter eller finjusterte modeller på GPT-4o eller GPT-4.1, har knappe tre måneder på seg til å migrere og teste på nytt. Virksomheter som har dokumentert en bestemt modell i en personvernkonsekvensvurdering eller i sitt KI-register før tilsyn fra IMY eller Datatilsynet, kan måtte oppdatere dokumentasjonen når modellen byttes.</p>
-<p class="news-card__source">Kilde: <a href="https://developers.openai.com/api/docs/deprecations">OpenAI</a>, <a href="https://daily.dev/posts/openai-promised-developers-six-months-notice-gpt-4o-users-got-three--srbz67kxw">daily.dev</a></p>]]></description>
-    </item>
-    <item>
-      <title>EDPB: Produsenter av smartbriller kan ikke legge ansvaret over på brukeren</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-edpb-tillverkare-av-smarta-glasogon-kan-inte-lagga</guid>
-      <pubDate>Fri, 16 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Det europeiske personvernrådet EDPB publiserte 13. oktober en foreløpig, ikke-bindende uttalelse om smartbriller med kamera og mikrofon. Produsenter og leverandører av tilhørende KI-tjenester kan ifølge rådet ikke stole på at brukeren informerer folk i nærheten for å oppfylle sine egne GDPR-plikter.</p>
-<p>Om brukeren er behandlingsansvarlig avhenger av bruken: privat bruk kan omfattes av unntaket for personlig bruk, som skal tolkes snevert, mens publisering på en offentlig konto eller yrkesmessig eller politisk bruk gjør brukeren ansvarlig. Produsenten eller KI-leverandøren kan være ansvarlig alene eller sammen med brukeren, og når leverandøren analyserer kamerabildet for å svare på et spørsmål fra brukeren om omgivelsene, er leverandøren behandlingsansvarlig. EDPB vil ha tydelige opptaksindikatorer som er vanskelige å slå av, for eksempel lysdioder og lydsignaler, samt dataminimering, geofencing på sensitive steder og personvernvennlige standardinnstillinger som sløring av omkringståendes identitet. Leder Anu Talus sier at folk fortjener “tydelige advarsler, ikke skjulte overraskelser”.</p>
-<p>For Norden: Den norske regjeringen vil ifølge Al Jazeera innføre et midlertidig forbud mot smartbriller på enkelte offentlige steder, og Oslo har allerede forbudt kamerabriller i skolen. Uttalelsen peker ut produsentene som ansvarlige, mens den norske debatten til nå har handlet om forbud mot steder og salg. I Sverige publiserte IMY 14. oktober en egen nyhet om uttalelsen.</p>
-<p class="news-card__source">Kilde: <a href="https://www.europrivacy.org/en/news/2026-10-13/edpb-publishes-statement-data-protection-challenges-smart-glasses">Europrivacy</a>, <a href="https://ppc.land/edpb-says-smart-glasses-makers-cant-rely-on-wearers-to-meet-gdpr-duties/">PPC Land</a>, <a href="https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when">Al Jazeera</a>, <a href="https://www.imy.se/nyheter/">IMY</a></p>]]></description>
-    </item>
-    <item>
-      <title>Ombyggingen av datasenteret i Mo i Rana til KI-anlegg er i gang</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-konverteringen-av-datacentret-i-mo-i-rana-till</guid>
-      <pubDate>Fri, 16 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Det børsnoterte selskapet VivoPower meddelte 12. oktober at byggearbeidet er startet for å bygge om datasenteret i Mo i Rana i Nord-Norge til et KI-anlegg med 40 megawatt i første fase. Selskapet kjøpte det driftende anlegget 21. april 2026.</p>
-<p>Ifølge Bebeez, som oppgir kapasiteten til 42 megawatt, kjøpte VivoPower anlegget av Cowa, og det ble bygget i 2018 av Bitfury som kryptovalutagruve. VivoPower har valgt en ikke navngitt leietaker, som selskapet kaller en “global AI industry leader”, som foretrukket leietaker, men leieavtalene er ikke klare. Kontrakten for mekanisk og elektrisk utstyr skal ifølge selskapet tildeles snart, det oppgis ingen tidspunkt for driftsstart, og 30 megawatt av det eksisterende anlegget er meldt inn til nettbalanseringstjenester. Selskapet vurderer om spillvarmen kan gjenbrukes, men det finnes ingen avtaler. Størrelsen på investeringen og kraftkilden oppgis ikke, og opplysningene kommer i hovedsak fra selskapets egen pressemelding.</p>
-<p>For Norden: Entreprenørene er norske, Øijord &amp; Aanes Entreprenørforretning for grunnarbeider, TH Blikk og IMTAS, mens selskapet er notert på Nasdaq og leietakeren er ukjent. Ombyggingen skjer mens datasenter er et hett tema i Norge: NVE venter at norske datasentre mer enn fordobler strømforbruket sitt innen 2030, ifølge en tidligere notis her. Hvordan anlegget påvirker strømnettet i Nordland, går ikke fram av kildene.</p>
-<p class="news-card__source">Kilde: <a href="https://www.globenewswire.com/news-release/2026/10/12/3378855/0/en/vivopower-mobilizes-construction-of-40mw-ai-data-center-conversion-in-mo-i-rana-norway.html">GlobeNewswire (VivoPower)</a>, <a href="https://bebeez.eu/2026/10/13/vivopower-starts-construction-at-42mw-mo-i-rana-data-center-in-norway/">Bebeez</a></p>]]></description>
-    </item>
-    <item>
-      <title>Åtte amerikanske delstater saksøker OpenAI – ChatGPT beskyldes for å skade barn og unge</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-16</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-16-atta-amerikanska-delstater-stammer-openai-chatgpt-anklagas-for</guid>
-      <pubDate>Fri, 16 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Åtte amerikanske delstater inngav 14. oktober søksmål mot OpenAI og hevder at ChatGPT er markedsført som trygg selv om tjenesten er utformet for å bekrefte brukere og etterligne følelsesmessig kontakt. Florida var først ute med et søksmål, i juni.</p>
-<p>Delstatene er Iowa, Kansas, Arizona, Arkansas, Idaho, Montana, Nebraska og West Virginia, og søksmålene ble ifølge Quartz inngitt ved delstatsdomstoler. Quartz oppgir også at Arkansas' justisdepartement regner opp Utah, noe som ville gjøre ni. Ifølge Al Jazeera og Quartz hevder de at ChatGPT forsterker vrangforestillinger, oppmuntrer til farlig atferd og har hjulpet brukere med å planlegge vold, og at OpenAI dermed har brutt forbrukervernlover. Arkansas krever ifølge Quartz blant annet tilbakebetaling, sivilrettslige bøter, tydelig risikoinformasjon og et forbud mot videre testing av avansert KI og utvikling av modeller som kan forbedre seg selv rekursivt til tilstrekkelige sikkerhetstiltak finnes. OpenAIs talsperson Drew Pusateri sier at selskapet har vern for yngre brukere som mange andre KI-produkter mangler, nevner foreldrekontroll og pausepåminnelser, og innrømmer at ingen løsning kan være perfekt. Anklagene er delstatenes påstander og ikke prøvd i retten.</p>
-<p>For Norden: Kildene nevner ingen nordiske tiltak. I EU går et eget spor: EU-kommisjonens KI-kontor har ifølge gårsdagens notis her bedt OpenAI og Anthropic om informasjon etter sikkerhetshendelser. Hvilke nordiske myndigheter, for eksempel IMY, Datatilsynet eller forbrukermyndighetene, som kan gripe inn mot chatboter og barn, går ikke fram av kildene.</p>
-<p class="news-card__source">Kilde: <a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera</a>, <a href="https://qz.com/states-sue-openai-chatgpt-child-safety-101526">Quartz</a></p>]]></description>
     </item>
   </channel>
 </rss>
