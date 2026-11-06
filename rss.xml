@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 05 Nov 2026 05:20:18 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 05:20:20 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI släpper GPT-6 Cyber – klassad som ”Critical” och öppen bara för godkända kunder</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-06-openai-slapper-gpt-6-cyber-klassad-som-critical</guid>
+      <pubDate>Fri, 06 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>OpenAI lanserade den 5 november GPT-6 Cyber, en modell avsedd för sårbarhetsforskning, framtagning av exploits och förslag på rättelser. OpenAI har själva klassat den som ”Critical” i cyberkategorin i sitt Preparedness Framework, och tillgången är till en början begränsad till utvalda, godkända Daybreak Red-kunder via API och Codex, med tillgång för alla Daybreak Red-kunder utlovad under de kommande veckorna.</p>
+<p>Siffrorna kommer från OpenAI och inte från oberoende tester. På bolagets ExploitGym-test fick GPT-6 Cyber 48,5 procent mot 32,1 procent för föregångaren GPT-5.6 Cyber, och i OpenAI:s eget gränstest höll sig modellen utan särskilda säkerhetsinstruktioner inom tillåtna ramar i 99,93 procent av fallen (94,49 procent för föregångaren); OpenAI har inte beskrivit vad som hände i de återstående 0,07 procenten. I Firefox hittade forskare 81 tidigare okända sårbarheter, som Mozilla enligt OpenAI har börjat åtgärda. I en automatiserad körning mot Linuxkärnan reproducerade modellen 1 724 sårbarheter och byggde fungerande exploits för 948, till en kostnad på omkring 1,2 miljoner dollar, eller cirka 1 279 dollar per exploit; 304 kritiska fynd har rapporterats till underhållarna. Enligt The Decoder har Epoch AI visat att en öppen GLM-modell hade kunnat utnyttja kända men ännu inte åtgärdade Firefox-sårbarheter, vilket tyder på att förmågan inte är begränsad till slutna modeller.</p>
+<p>För Norden … Ingen av källorna nämner Norden, så det som följer är en bedömning och inte rapporterade fakta. Linuxkärnan körs i servrar, teleutrustning och molntjänster över hela världen, så fynden rör även nordiska miljöer. Det praktiska är hastigheten på säkerhetsuppdateringar: Enligt The Neuron krävde angreppen i OpenAI:s experiment ett befintligt fotfäste på målmaskinen, men när en modell enligt OpenAI kan bygga fungerande lokala rättighetseskaleringar för omkring 1 279 dollar styck kan tiden mellan upptäckt och utnyttjande krympa. Hur Sveriges CERT-SE och Norges Nasjonal sikkerhetsmyndighet (NSM) ska förhålla sig till den här modellklassen tar källorna inte upp.</p>
+<p class="news-card__source">Källa: <a href="https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855">The Register</a>, <a href="https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/">The Decoder</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026">The Neuron</a></p>]]></description>
+    </item>
+    <item>
+      <title>SCB: 49 procent av svenska företag med minst tio anställda använde AI under 2026</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-06-scb-49-procent-av-svenska-foretag-med-minst</guid>
+      <pubDate>Fri, 06 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Statistiska centralbyrån (SCB) publicerade den 5 november en ny undersökning om it-användning i företag: 49 procent av de svenska företagen med minst tio anställda använde artificiell intelligens under 2026. Det är 14 procentenheter mer än året före, enligt Computer Sweden.</p>
+<p>Användningen ökar med företagets storlek: 45 procent bland företag med 10–49 anställda, 65 procent bland dem med 50–249 och 85 procent bland dem med minst 250. Av de företag som använder AI gör 58 procent det för mer än ett ändamål. Vanligast är marknadsföring och försäljning (55 procent) samt administrativa processer och verksamhetsstyrning (52 procent); minst vanligt är logistik (7 procent). Enligt Computer Sweden varnar SCB för att 2026 års undersökning omfattar fler branscher och använder en ny näringsgrensindelning, så ökningen på 14 procentenheter är inte nödvändigtvis en jämförelse av likvärdiga urval. Siffrorna mäter användning, inte nytta eller produktivitet.</p>
+<p>För Norden … Det här är en svensk nyhet med SCB som avsändare. Gapet mellan små och stora företag – 45 mot 85 procent – är den sortens siffra som matar den svenska debatten om hur småföretag ska hänga med, där myndigheter som Vinnova och Tillväxtverket ofta är inblandade; källorna redovisar ingen reaktion från någon av dem. Norska siffror ingår inte i källorna, och en direkt jämförelse med Norge kräver samma definition av AI-användning.</p>
+<p class="news-card__source">Källa: <a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/forskning-och-det-digitala-samhallet/det-digitala-samhallet/it-anvandning-i-foretag/">SCB</a>, <a href="https://computersweden.se/article/4245131/halften-av-de-svenska-foretagen-anvander-ai.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>USA-valet: väljarna avvisade nya datacenter i 40 av 41 lokala omröstningar, uppger The Decoder</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-06-usa-valet-valjarna-avvisade-nya-datacenter-i-40</guid>
+      <pubDate>Fri, 06 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Väljare i USA avvisade nya datacenter i 40 av 41 lokala omröstningar i samband med mellanårsvalet den 3 november, enligt The Decoder. Demokraterna vann kongressen och flera guvernörsposter, och den 5 november föll Nasdaq med mer än 5 procent medan teknikaktier tappade över 2 biljoner dollar i marknadsvärde, enligt NPR, som uppger att investerare pekar på oro för skärpt AI-reglering.</p>
+<p>OpenAI svarade med frivilliga åtaganden för framtida anläggningar som bolaget själv äger och driver: inga sekretessavtal i samtal med lokala myndigheter (med undantag för affärshemligheter och säkerhet), full betalning av el och nätförstärkningar, begränsad effektförbrukning under toppar samt redovisning av byggplaner, bullerstudier och vattenanvändning. Många av OpenAI:s anläggningar ägs av partner som Oracle och omfattas därför kanske inte. Data Center Watch uppger att 45 projekt värda 88 miljarder dollar stoppades av lokalt motstånd under andra kvartalet 2026. Källorna redovisar ingen konkret reglering på federal nivå; kopplingen mellan valresultatet och börsfallet är investerarnas tolkning.</p>
+<p>För Norden … Källorna handlar om USA och nämner inga nordiska projekt. Det som kan bli relevant är att både Norge och Sverige marknadsför billig, fossilfri el till datacenter – till exempel projektet Stargate Norway i Narvik som OpenAI annonserade 2025, vars nuvarande status källorna inte tar upp – och att lokal acceptans för vattenåtgång och nätkapacitet kan bli en fråga även här. Statnett i Norge och Svenska kraftnät i Sverige driver stamnäten; inget i källorna tyder på en motsvarande folkomröstning i Norden.</p>
+<p class="news-card__source">Källa: <a href="https://the-decoder.com/after-midterm-rout-openai-tries-to-win-over-communities-it-needs-for-ai-expansion/">The Decoder</a>, <a href="https://kpbs.org/news/economy/2026/11/05/fears-about-an-ai-crackdown-after-midterms-sparks-a-2-trillion-rout-in-tech-stocks">NPR (via KPBS)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic: Claude var med och tog fram första 3D-strukturen av en vaultpartikel från prokaryoter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-06</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-06-anthropic-claude-var-med-och-tog-fram-forsta</guid>
+      <pubDate>Fri, 06 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Anthropic redovisade den 4 november ett forskningsprojekt där Claude hjälpte ett team att bestämma den första tredimensionella strukturen av en vaultpartikel från prokaryoter, enligt bolagets egen beskrivning. Vaults upptäcktes 1986 och deras funktion är fortfarande okänd; resultatet har skickats in som preprint till bioRxiv men är ännu inte publicerat där och inte granskat av andra forskare.</p>
+<p>Partikeln L05 kommer från en bakteriofag och byggs av 96 kopior av ett protein, mot 78 i däggdjurens vaults; den mäter omkring 54 × 45 nanometer och rymmer cirka 25 procent mer volym än däggdjurens. Claude sökte i en databas med omkring 15 miljarder förutsagda proteiner efter släktingar, utformade DNA-konstruktioner, föreslog en isoleringsmetod som enligt teamet kortade reningen från cirka tre dygn till omkring 90 minuter och körde cryo-EM-bearbetningen i en intern uppsättning med flera agenter – 34 timmar för en första modell och ungefär en vecka för de slutliga kartorna. Teamet redovisar också fel: ett tillsatsämne i odlingsmediet försvårade upptaget av DNA och kostade ungefär två veckor, och ett tidigt steg gav en felaktig karta. Teamet har hittills bara framställt de här vaultpartiklarna i E. coli och har inte prövat om de bildas i de bakterier och fager där de förekommer naturligt, och bearbetningen krävde hundratals grafikprocessorer, fler än många akademiska labb har tillgång till.</p>
+<p>För Norden … Källorna nämner inga nordiska forskare. Strukturbiologi med cryo-EM bedrivs i Norden bland annat vid SciLifeLab i Stockholm, och beräkningsresurser som Wallenberg-finansierade Berzelius vid NSC i Linköping är den sortens kapacitet som arbetsflödet efterfrågar. Att hundratals grafikprocessorer behövdes tyder på att tillgången till beräkning kan bli en flaskhals för nordiska labb; inget i underlaget säger att någon nordisk grupp planerar något liknande.</p>
+<p class="news-card__source">Källa: <a href="https://www.anthropic.com/research/investigating-vault-particles-with-claude">Anthropic</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026">The Neuron</a></p>]]></description>
+    </item>
     <item>
       <title>Saab visar egenutvecklade AI-agenter för luftstrid – testade i flygning på Gripen E</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-05</link>
@@ -978,56 +1027,6 @@
 <p>Första etappen på 95 MW ska vara i drift sent 2027, med en utbyggnad på 325 MW som mål för 2028, om myndigheterna godkänner det, och 420 MW vid full utbyggnad. Projektet beräknas ge omkring 2 000 byggjobb och 215 permanenta tjänster, med ett slutet kylsystem och batterilager på flera hundra megawattimmar. Nova Scotias NDP-ledare Claudia Chender har efterlyst reglering, och ett konsortium kopplat till Membertou First Nation förhandlar om en möjlig ägarandel.</p>
 <p>För Norden: Etableringen visar hur AI-bolagen söker kraft och mark utanför USA, och nordiska orter som Luleå och Mo i Rana, där ett datacenter nu byggs om till AI-anläggning, konkurrerar om samma typ av investeringar. Frågor om elnät, förnybar kraft och lokal nytta, som också Svenska kraftnät och Statnett hanterar, avgör vilka etableringar som blir av. Källorna säger inget om Norden, så kopplingen är en bedömning.</p>
 <p class="news-card__source">Källa: <a href="https://globalnews.ca/news/12105095/everwind-nova-scotia-data-centre/">Global News</a>, <a href="https://money.usnews.com/investing/news/articles/2026-10-16/anthropic-signs-lease-for-first-canadian-data-center">US News/Reuters</a></p>]]></description>
-    </item>
-    <item>
-      <title>Meta släpper Muse Spark Open – öppna vikter för modell med 816 miljarder parametrar</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-17-meta-slapper-muse-spark-open-oppna-vikter-for</guid>
-      <pubDate>Sat, 17 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Meta Superintelligence Labs släppte den 15 oktober vikterna till Muse Spark Open, en multimodal modell med 816 miljarder parametrar, varav 42 miljarder är aktiva per anrop, och ett kontextfönster på en miljon tokens. Meta kallar den den mest kapabla amerikanska öppenviktsmodellen hittills.</p>
-<p>Modellen släpps under Metas egen Muse-licens med begränsade kommersiella villkor, som enligt Meta låter många utvecklare använda den gratis. Meta säger att den kan köras på två Apple Mac Studio med M5 Ultra via ramverket MLX. Vikterna går att ladda ned från bland annat Hugging Face, Amazon SageMaker, Google Cloud Model Garden och Microsoft Foundry, och API:er finns hos bland andra Together AI, Fireworks AI, Groq och OpenRouter. Metas egna jämförelser har inte granskats oberoende.</p>
-<p>För Norden: Källorna säger inget om nordiska användare, så det här är en konsekvensbedömning och inte ett rapporterat faktum. Öppna vikter gör det möjligt för svenska och norska organisationer att köra modellen i egen drift eller hos en europeisk molnleverantör, vilket kan vara relevant för myndigheter och regioner som av dataskyddsskäl inte vill skicka uppgifter till ett amerikanskt API och som står under tillsyn av IMY respektive Datatilsynet. Licensen har dock begränsade kommersiella villkor, så villkoren bör läsas innan modellen byggs in i en produkt.</p>
-<p class="news-card__source">Källa: <a href="https://research.meta.ai/blog/muse-spark-open">Meta</a>, <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-16-2026/">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Sferical One presenterad i Stockholm – delad AI-superdator för AstraZeneca, Ericsson, Saab och SEB</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-17-sferical-one-presenterad-i-stockholm-delad-ai-superdator</guid>
-      <pubDate>Sat, 17 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Sferical AI presenterade den 15 oktober superdatorn Sferical One i Stockholm, en delad Nvidia-baserad plattform för AI-utveckling som grundarna AstraZeneca, Ericsson, Saab, SEB och Wallenberg Investments ska använda tillsammans med partnern SKF. Systemet har körts sedan sensommaren, så ceremonin var en formell presentation.</p>
-<p>Enligt Nvidias tekniska översikt består anläggningen av 16 rack med 1 152 GPU:er baserade på Nvidias DGX GB300-teknik, och bolagen planerar att bygga tjänster på Nvidias öppna Nemotron-modeller. AstraZeneca siktar på läkemedelsforskning, Ericsson på AI-modeller för telenät, Saab på försvarsteknik och simulering, SEB på dataanalys och mjukvaruutveckling och SKF på prediktivt underhåll och kvalitetskontroll. Nvidias vd Jensen Huang och vice statsminister och energi- och näringsminister Ebba Busch deltog. Sferical AI:s vd Jenny Nordlöw beskriver den som en plattform där bolagen kan träna och köra AI-modeller under egen kontroll, men Nordisk Post påpekar att projektet fortfarande är beroende av teknik från ett amerikanskt bolag och att nyttan ännu inte är bevisad i stor skala.</p>
-<p>För Norden: Det här är en nordisk primärnyhet. AstraZeneca, Ericsson, Saab, SEB och Wallenberg Investments går samman om en gemensam beräkningsplattform för att träna och köra AI-modeller, medan beroendet av Nvidia kvarstår. Källorna säger inget om externa kunder eller om andra nordiska länder, så det återstår att se om plattformen öppnas för fler än grundarna.</p>
-<p class="news-card__source">Källa: <a href="https://www.nordiskpost.com/2026/10/16/sweden-nvidia-ai-supercomputer-sferical-one/">Nordisk Post</a>, <a href="https://www.tv4.se/artikel/tt-261009-nvidia1-b9855ec3/ai-jatten-nvidias-vd-till-sverige">TV4/TT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Registerstudie: nyutexaminerade med AI-exponerade utbildningar har svårare att etablera sig</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-17-registerstudie-nyutexaminerade-med-ai-exponerade-utbildningar-har-svarare</guid>
-      <pubDate>Sat, 17 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Tillväxtanalys och Uppsala universitet visade den 30 september i en registerstudie att nyutexaminerade med AI-exponerade utbildningar har svårare att etablera sig på arbetsmarknaden än andra nyutexaminerade. Deras arbetsinkomster har utvecklats sämre, och andelen som arbetar i de mest AI-exponerade företagen har minskat.</p>
-<p>Studien bygger på registerdata fram till sommaren 2026. Arbetsmarknaden i stort visar enligt forskarna inga tecken på någon stor omvandling, och rörligheten är ovanligt låg, särskilt i de AI-exponerade delarna av ekonomin. I företag som använder AI har produktiviteten ökat. Medförfattaren Oskar Nordström Skans, professor vid Uppsala universitet, säger enligt SvD att ingen jättestor omvandling syns i nuläget men att det gått lite trögare för dem med universitetsexamen; orsakssambandet är osäkert. Doktoranden Leo Sokolow Romin kallar utvecklingen oroande om den fortsätter.</p>
-<p>För Norden: Det här är en svensk primärnyhet med ett norskt exempel. Den 6 oktober meddelade DNB att banken kan minska arbetsstyrkan med cirka 400 heltidstjänster; vd Kjerstin Braathen säger att AI förändrar sättet banken arbetar på och ser betydande effektivitetsvinster. Studien omfattar inte DNB eller Norge, och källorna anger inte hur stor del av DNB:s minskning som beror på AI.</p>
-<p class="news-card__source">Källa: <a href="https://via.tt.se/pressmeddelande/4572940/tuffare-arbetsmarknad-for-nyutexaminerade-med-ai-exponerade-utbildningar?lang=sv">Tillväxtanalys via TT</a>, <a href="https://www.cioanalytics.se/artikel/2026/10/ai-ritar-om-kompetenskartan-men-jobben-forsvinner-inte-annu/">CIO Analytics (SvD)</a></p>]]></description>
-    </item>
-    <item>
-      <title>AI-analys av PET-skanningar från över 100 000 patienter kopplar brunt fett till lägre förekomst av typ 2-diabetes och hjärtsjukdom</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-17</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-17-ai-analys-av-pet-skanningar-fran-over-100</guid>
-      <pubDate>Sat, 17 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>En studie i Nature, som den amerikanska hälsomyndigheten NIH presenterade den 14 oktober, har med AI analyserat PET-CT-skanningar från över 100 000 vuxna cancerpatienter och kopplat detekterbart brunt fett till lägre förekomst av flera sjukdomar. Forskargruppen leds av Paul Cohen vid Rockefeller University.</p>
-<p>Enligt News-Medical, som återger studiens siffror, var oddsen bland de 8 709 av 101 243 patienter som hade detekterbart brunt fett 58 procent lägre för typ 2-diabetes och 47 procent lägre för kronisk ischemisk hjärtsjukdom, och detekterbart brunt fett var även kopplat till lägre odds för depressiva episoder och ångestsyndrom. Patienter som tog angiotensinreceptorblockerare hade högre aktivitet i brunt fett. Blodtrycksläkemedlet losartan ökade aktiviteten i odlade brunfettceller och energiförbrukningen hos möss, medan kroppsvikten var oförändrad, men effekten hos människor har inte testats. Studien är retrospektiv och visar samband, inte orsak och verkan.</p>
-<p>För Norden: Källorna nämner ingen nordisk part, så det här är en bedömning. Materialet kommer från cancerpatienter som undersökts med PET-CT och kan inte rakt av överföras till svenska eller norska patienter, och losartans effekt på brunt fett hos människor återstår att visa i kliniska studier. Nordens breda hälsoregister gör prospektiva uppföljningar tänkbara, men det är en möjlighet och inget som källorna rapporterar.</p>
-<p class="news-card__source">Källa: <a href="https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat">NIH</a>, <a href="https://www.news-medical.net/news/20261015/AI-study-of-101000-patients-links-brown-fat-to-heart-and-mental-health.aspx">News-Medical</a></p>]]></description>
     </item>
   </channel>
 </rss>
