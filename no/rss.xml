@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 05:20:20 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 05:17:41 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Artificial Analysis gjør 60 prosent av testene private – Mistral Large 4 faller fra 38 til 25 poeng</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-artificial-analysis-gor-60-procent-av-testerna-privata</guid>
+      <pubDate>Sat, 07 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Artificial Analysis publiserte 27. oktober versjon 5 av Intelligence Index, der 60 prosent av testene nå er private; i versjon 4.2 var andelen 40 prosent. Claude Opus 5.5 ligger øverst med 58 poeng, foran GPT-6 Astra (57), GPT-6.1 Sol (55) og Gemini 4 Argon (50).</p>
+<p>Poengene for de åpne modellene falt kraftig da indeksen ble byttet: DeepSeek V4.1 Flash og GLM-5.3 gikk fra 45 til 32, og de beste modellene med publiserte vekter ligger nå 26 poeng etter Opus 5.5. Artificial Analysis’ egen oppsummering oppgir i stedet gapet mellom åpne og lukkede modeller til 12 poeng, men det tallet regner med Kimi K3.1 Pro (46 poeng), hvis vekter ennå ikke er publisert. Mistral Large 4 Preview faller fra 38 poeng ifølge modellkortet til 25, under Claude Haiku 5.5 (36). Ifølge ActuIA er modellene uendret, og Artificial Analysis forklarer ikke fallet; nettstedet kobler det til det nye testgrunnlaget med mange private tester, men kan ikke fordele effekten på enkelttester uten resultater per test.</p>
+<p>For Norden … Kildene nevner ingen nordiske aktører, så det som følger er en vurdering. Den som anskaffer eller driftsetter modeller i Norge og Sverige – for eksempel kommuner, regioner og selskaper som Telenor og DNB – har hittil kunnet sammenligne poeng mellom åpne og lukkede modeller. Når 60 prosent av testene er private, blir tallet vanskeligere å etterprøve, og for Mistral som europeisk alternativ er 25 poeng et annet utgangspunkt enn 38. Det lar seg ikke avgjøre om fallet speiler faktisk ytelse eller bare et nytt testgrunnlag.</p>
+<p class="news-card__source">Kilde: <a href="https://www.actuia.com/en/news/mistral-large-4-drops-from-38-to-25-on-new-artificial-analysis-index/">ActuIA</a>, <a href="https://aiweekly.co/alerts/artificial-analysis-intelligence-index-v5-widens-open-vs-closed-model-gap-to-12">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Finske IQM melder rekordordre på 42,2 millioner euro – største kontrakt kommer fra LUMI AI Factory</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-finska-iqm-redovisar-rekordorder-pa-42-2-miljoner</guid>
+      <pubDate>Sat, 07 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Det finske kvantedatamaskinselskapet IQM la 5. november fram tredje kvartal: omsetningen økte 51 prosent til 8,9 millioner euro, nye ordrer utgjorde 42,2 millioner euro, og ordrebeholdningen var 102,5 millioner euro ved utgangen av september, 52 prosent mer enn ved årsskiftet. Årsprognosen på 42–47 millioner euro i omsetning og 65–75 millioner euro i ordrer ble opprettholdt.</p>
+<p>Den største enkeltkontrakten, verdt 33 millioner euro, gjelder en Halocene-datamaskin til CSCs LUMI AI Factory i Kajaani, som ifølge IQM skal bli Europas første superledende kvantedatamaskin med logiske qubits; ordren ble kunngjort i juli, og installasjonen oppgis til 2027. Administrerende direktør Jan Goetz sier at selskapets første demonstratorer for feilkorrigering er planlagt i 2027. Nettotapet ble 152,6 millioner euro, hvorav 127,1 millioner euro var en kostnad for børsnoteringen i juli, og kassen var 260,4 millioner euro. IQM har solgt 31 kvantedatamaskiner og levert 17, og inntektene følger kundenes godkjenninger, noe som kan flytte omsetning mellom kvartaler.</p>
+<p>For Norden … Dette er først og fremst en nordisk sak: IQM er finsk, og kontrakten gjelder LUMI i Kajaani, en europeisk superdatamaskin med flere nordiske land blant partnerne. Kildene sammenligner ikke med andre nordiske kvantesatsinger, som Chalmers og Wallenberg Centre for Quantum Technology i Sverige, og nevner ingen svensk eller norsk kunde. Ifølge finansdirektør Jan Kürschner kom all omsetning i kvartalet fra kommersielle kontrakter, uten offentlig støtte eller tilskudd.</p>
+<p class="news-card__source">Kilde: <a href="https://thequantuminsider.com/2026/11/05/iqm-books-e42-2-million-in-orders-as-quarterly-revenue-rises-51-in-q3-2026/">The Quantum Insider</a>, <a href="https://quantumcomputingreport.com/iqm-quantum-computers-reports-q3-2026-results-backlog-expands-to-e102-5m-q3-revenue-up-51-and-fy-2026-guidance-reaffirmed/">Quantum Computing Report</a>, <a href="https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/">The Quantum Insider</a></p>]]></description>
+    </item>
+    <item>
+      <title>MIT: GPT-6 Astra redigerte vektene i en liten Qwen-modell direkte – matteresultatet steg fra 7,9 til 48,1 prosent</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-mit-gpt-6-astra-redigerade-en-liten-qwen</guid>
+      <pubDate>Sat, 07 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Forskere ved MIT CSAIL lot OpenAIs GPT-6 Astra lese og redigere vektene i språkmodellen Qwen3.5-0.8B direkte, uten gradientbasert trening, ifølge VentureBeat og et forskningsblogginnlegg fra 2. november. Endringen berørte rundt 0,016 prosent av vektene og løftet resultatet på mattetesten MATH-500 fra 7,9 til 48,1 prosent.</p>
+<p>Det beste forsøket krevde 158 dialogrunder og 80 Python-kjøringer over 20,3 timer, hvorav 4,7 timer var venting under et driftsavbrudd. Forbedringen kom hovedsakelig av at modellen sluttet å gjenta seg – andelen svar som traff tokengrensen falt fra 93,0 til 33,1 prosent – og ikke nødvendigvis av ny matematisk evne, og på Gemma 3 270M ga metoden ingen påvist forbedring. Forskerne har ikke vist noen selvforsterkende syklus, og VentureBeat oppgir ikke om arbeidet er fagfellevurdert. PauseAIs administrerende direktør Maxime Fournes kaller forskningsretningen fryktelig hensynsløs og advarer om at resultatet, hvis det er ekte, kan akselerere utviklingen kraftig; ifølge VentureBeat viser ikke forsøkene de følgene han forutser.</p>
+<p>For Norden … Ingen av kildene nevner nordiske aktører, så det som følger er en vurdering. Forskergrupper som arbeider med åpne modeller, for eksempel ved KTH, Chalmers eller NTNU, kan i prinsippet granske og justere vekter på tilsvarende måte, men resultatet gjelder en modell med 0,8 milliarder parametere og er ikke vist i større skala. Det er ett enkeltforsøk fra et amerikansk forskerlag, omtalt på en blogg.</p>
+<p class="news-card__source">Kilde: <a href="https://venturebeat.com/ai/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance">VentureBeat</a>, <a href="https://neuralbuddies.com/p/ai-news-recap-november-6-2026">NeuralBuddies</a></p>]]></description>
+    </item>
+    <item>
+      <title>Googles skoleplan: AI av som standard, men skoler som slår av AI mister også Search</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-googles-skolplan-ai-av-som-standard-men-skolor</guid>
+      <pubDate>Sat, 07 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Google kunngjorde 3. november at selskapets AI-verktøy, blant annet Gemini, NotebookLM og Gemini i Classroom, neste år skal være avslått for K-12-elever (den amerikanske betegnelsen for skoleårene før høyere utdanning) til skolens administrator slår dem på. Skoler som slår av AI helt, mister ifølge Google også tilgangen til Google Search.</p>
+<p>Googles utdanningssjef Chris Phillips sa ifølge TechCrunch til The New York Times at Search og AI er dypt integrert, og skrev i et blogginnlegg at målet er å gi skoleledere kontroll over hvordan AI brukes. Beskjeden kom samtidig som Google lanserte Guided Learning, en AI-veileder, i skoler. Kritikere peker på at AI-chatboter kan undergrave læring ved å gi ferdige svar. Nærmere informasjon til skolene er lovet i løpet av de neste månedene.</p>
+<p>For Norden … Ifølge Fox29 starter Google med et pilotprosjekt i utvalgte amerikanske skoler; kildene sier ikke om endringen senere gjelder utenfor USA, og nevner ingen nordiske skolemyndigheter, så det som følger er en vurdering. Norske skoleeiere og svenske skoleaktører som bruker Googles skoleplattformer, kan komme til å stå overfor det samme valget, og Utdanningsdirektoratet i Norge og Skolverket i Sverige er veiledende myndigheter for AI i undervisningen. En skole som av personvernhensyn vil slå av AI, ville, hvis reglene gjaldt her, samtidig miste søket.</p>
+<p class="news-card__source">Kilde: <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a>, <a href="https://www.fox29.com/news/google-cut-search-access-schools-completely-block-new-ai-tools.amp">Fox29</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI slipper GPT-6 Cyber – vurdert som «Critical» og åpen bare for godkjente kunder</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-06</link>
@@ -965,68 +1014,6 @@
 <p>Altman begrunnet formen med at verden er bygget for mennesker, og sa at robotens styringssystem, «hjernen», er viktigere enn kroppen. OpenAI har ikke sagt hva demoen skal vise, hvordan roboten skal se ut eller når utenforstående får tilgang til en. Selskapets karrieresider viser 27 ledige stillinger innen robotikk, og utlysningene peker på egenutviklede aktuatorer og på roller innen produksjon og leverandørkjede. På kort sikt vil selskapet ha generelle roboter som hjelper fagarbeidere med å bygge infrastruktur.</p>
 <p>For Norden: Kildene sier ingenting om Norden, så dette er en vurdering. Det norskgrunnlagte humanoidselskapet 1X Technologies opererer i samme marked og danske Universal Robots i et nærliggende, og Sintef og NTNU driver robotikkforskning. At OpenAI går inn i maskinvare styrker bildet av at konkurransen avgjøres av AI-programvaren like mye som av kroppen, noe som er et spørsmål for nordisk industri, som er en stor kjøper av robotikk.</p>
 <p class="news-card__source">Kilder: <a href="https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/">Engadget</a>, <a href="https://aiweekly.co/ai-news-today">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>DeepSeek oppdaterer V4.1-Flash og åpner søke-API for 0,75 dollar per tusen kall</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-deepseek-uppdaterar-v4-1-flash-och-oppnar-sok</guid>
-      <pubDate>Sun, 18 Oct 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>DeepSeek ga 17. oktober ut V4.1-Flash-1017, en ny etteropplæringsversjon av V4.1-Flash som er tilgjengelig i selskapets app, på nettet og i API-et, der den heter deepseek-flash. Modellen er en MoE-modell med et kontekstvindu på én million tokens, og selskapet åpner samtidig søke- og hente-API-er for 0,75 dollar per tusen vellykkede kall.</p>
-<p>Ifølge DeepSeeks egne tall slår 1017 den forrige versjonen på alle rapporterte tester, med 2,0 til 11,1 poeng, og får 77,0 på DeepSWE mot 74,0 for Claude Opus 5. Opus 5 leder likevel fortsatt på blant annet Terminal-Bench 4.0 (51,8 mot 42,3) og HLE uten verktøy (56,3 mot 42,6). Tallene kommer fra selskapet selv og er ikke uavhengig verifisert, og kildene er uenige om vektene for akkurat 1017-versjonen er åpne – vektene for septemberversjonen er MIT-lisensiert.</p>
-<p>For Norden: Kildene sier ingenting om nordiske brukere, så dette er en konsekvensvurdering og ikke et rapportert faktum. Lav pris og lang kontekst kan friste norske og svenske utviklere, men et API hos et kinesisk selskap reiser spørsmål om hvilke personopplysninger som forlater EU/EØS, der Datatilsynet og IMY er tilsynsmyndigheter. Er vektene åpne, kan modellen i stedet kjøres i egen drift eller hos en nordisk eller europeisk leverandør; lisensen bør sjekkes før den bygges inn i et produkt.</p>
-<p class="news-card__source">Kilde: <a href="https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/">MarkTechPost</a>, <a href="https://aiweekly.co/alerts/deepseek-opens-v41-flash-1017-weights-and-075-search-api">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI publiserte hundrevis av matematikkmanuskripter fra en uutgitt modell – granskingen har knapt begynt</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-openai-publicerade-hundratals-matematikmanuskript-fran-en-oslappt-modell</guid>
-      <pubDate>Sun, 18 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>OpenAI publiserte 6. oktober 722 matematiske manuskripter, som ifølge opplysninger er produsert av en intern frontmodell som fikk om lag 4 000 problemer å jobbe med. 15. oktober kunngjorde Simons Foundation et initiativ for å granske og bygge videre på AI-produserte resultater, der OpenAI bidrar med 5 millioner dollar.</p>
-<p>Resultatene er på ulike stadier av verifisering: OpenAI deler formaliseringer i bevisverktøyet Lean for mange av bevisene, men ikke alle, og ifølge opplysninger ble tre manuskripter trukket tilbake etter en fortegnsfeil mens 14 ble revidert. Det mest omtalte resultatet ligger nær Riemann-hypotesen, men er ikke et bevis for selve hypotesen. Flere matematikere har ifølge The Verge sagt at en full gjennomgang kan ta år. Simons-initiativet er et partnerskap mellom Simons Foundation, Anthropic og OpenAI og utgjør ifølge stiftelsen til sammen 15 millioner dollar i finansiering og ressurser; hvor mye Anthropic bidrar med er ikke oppgitt.</p>
-<p>For Norden: Kildene sier ingenting om Norden, så dette er en vurdering. Spørsmålet om hvordan maskinprodusert matematikk skal granskes når også nordiske matematikkmiljøer, blant annet ved KTH, Chalmers, Universitetet i Oslo og NTNU. I Norge deles Abelprisen ut av Det Norske Videnskaps-Akademi, noe som gjør vurderingen av AI-produserte bevis til et spørsmål også for norske prisinstitusjoner. Hvordan norske Forskningsrådet og svenske Vetenskapsrådet skal se på AI-assisterte resultater i søknader er fortsatt åpent, og vi vet ikke om resultatene holder.</p>
-<p class="news-card__source">Kilde: <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI</a>, <a href="https://inyheter.no/16/10/2026/openai-med-mulig-matematisk-gjennombrudd-ville-gitt-fields-medalje/">iNyheter</a>, <a href="https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/">Simons Foundation</a></p>]]></description>
-    </item>
-    <item>
-      <title>Vinnova foreslår AI-program med minst én milliard kroner i 2027 – regjeringen har ikke bestemt seg</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-vinnova-foreslar-ai-program-med-minst-en-miljard</guid>
-      <pubDate>Sun, 18 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Vinnova la 12. oktober fram rapporten Färdplaner för strategiska tekniker (Veikart for strategiske teknologier), der myndigheten foreslår sju statlige akselerasjonsprogrammer: AI, 6G, halvledere, kvanteteknologi, materialer og produksjon, bioteknologi og romteknologi. AI-programmet, AI Acceleration Sweden, foreslås å starte i januar 2027 med minst 1 milliard svenske kroner i statlig finansiering det første året.</p>
-<p>De øvrige programmene foreslås normalt å få minst 200 millioner kroner i året fra 2028 og minst 1 milliard kroner i statlige midler fra 2032. Vinnova foreslår også et nasjonalt investeringsfond med 75 milliarder kroner i statlig kapital og opptil 150 milliarder i garantier, og at de statlige FoU-investeringene når minst 1 prosent av BNP i 2030 (0,77 prosent i 2024). Dette er forslag: pengene er ennå ikke vedtatt av regjeringen.</p>
-<p>For Norden: Forslaget gjelder Sverige. Kildene nevner ingen enkeltmiljøer, men etter vår vurdering berøres blant andre Chalmers og WACQT (Wallenberg Centre for Quantum Technology), KTH og RISE, samt Wallenbergstiftelsenes AI- og kvantesatsinger, blant annet WASP. Beslutningen ligger hos regjeringen og til syvende og sist Riksdagen. Forskningsrådet i Norge og tilsvarende danske og finske aktører får et sammenligningspunkt når egne AI- og kvantesatsinger diskuteres.</p>
-<p class="news-card__source">Kilde: <a href="https://www.newsoresund.se/innovationsmyndigheten-vinnova-vill-miljardsatsa-pa-sju-tekniker-ai-forst-ut/">News Øresund</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">Hurbra</a></p>]]></description>
-    </item>
-    <item>
-      <title>Venstre vil gi skattefradrag til bedrifter som kompetanseutvikler i stedet for å erstatte ansatte med KI</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-venstre-vill-ge-skatteavdrag-till-foretag-som-kompetensutvecklar</guid>
-      <pubDate>Sun, 18 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Venstre vil innføre en skattefradragsordning, kalt Kompetansefunn, for bedrifter som satser på de ansattes kompetanse i stedet for å erstatte dem med KI. Forslaget ble lagt fram av partileder Guri Melby i forbindelse med Venstres landskonferanse i Lillestrøm lørdag 17. oktober, ifølge Adressa/NTB.</p>
-<p>Tanken er å endre regnestykket slik at omskolering og nye arbeidsoppgaver blir mer lønnsomt enn å bytte ut ansatte med KI. Melby pekte på at mange av jobbene som forsvinner er inngangsjobber, og advarte om at bedriftene om ti år mangler seniorer hvis juniorene forsvinner nå. Adressa nevner DNB og Posten Bring som eksempler på kutt der KI oppgis som en medvirkende årsak; DNB meldte 6. oktober at banken kutter 400 årsverk når teknologi- og tjenestedivisjonen omorganiseres.</p>
-<p>For Norden: Dette er et partiforslag og ikke vedtatt politikk, men det berører et spørsmål som pågår i hele Norden. Finansforbundet har stilt spørsmål ved om kuttene kan gjennomføres ordentlig før nyttår, og forslaget setter lys på hvordan gevinstene av KI skal fordeles mellom eiere, kunder og ansatte, et spørsmål som angår Stortinget, NHO og LO. Vi har ikke sett et tilsvarende forslag i Sverige.</p>
-<p class="news-card__source">Kilde: <a href="https://www.adressa.no/nyheter/innenriks/i/n9n3gx/venstre-vil-redde-jobber-fra-ki-kutt-foreslaar-beloenning">Adressa</a>, <a href="https://www.fagbladet.no/nyheter/ki-tar-over-jobben-dnb-varsler-omstilling-og-kutter-400-arsverk/760199">Fagbladet</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic leier kapasitet i EverWinds datasenter i Nova Scotia – selskapets første i Canada</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-anthropic-hyr-kapacitet-i-everwinds-datacenter-i-nova</guid>
-      <pubDate>Sun, 18 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Anthropic har bekreftet en langtidsavtale om å leie kapasitet i EverWinds planlagte datasenter i Point Tupper i Nova Scotia, selskapets første datasenter i Canada. EverWind oppgir at investeringen er på 10 milliarder kanadiske dollar, hvorav 8 milliarder til datasenteret og 2 milliarder til vindkraft på land.</p>
-<p>Første trinn på 95 MW skal være i drift sent i 2027, med en utvidelse på 325 MW som mål for 2028, med forbehold om myndighetsgodkjenning, og 420 MW ved full utbygging. Prosjektet ventes å gi rundt 2 000 byggejobber og 215 faste stillinger, med et lukket kjølesystem og batterilager på flere hundre megawattimer. Nova Scotias NDP-leder Claudia Chender har etterlyst regulering, og et konsortium knyttet til Membertou First Nation forhandler om en mulig eierandel.</p>
-<p>For Norden: Etableringen viser hvordan AI-selskapene søker kraft og areal utenfor USA, og nordiske steder som Luleå og Mo i Rana, der et datasenter nå bygges om til AI-anlegg, konkurrerer om samme type investeringer. Spørsmål om strømnett, fornybar kraft og lokal nytte, som også Svenska kraftnät og Statnett håndterer, avgjør hvilke etableringer som blir noe av. Kildene sier ingenting om Norden, så koblingen er en vurdering.</p>
-<p class="news-card__source">Kilde: <a href="https://globalnews.ca/news/12105095/everwind-nova-scotia-data-centre/">Global News</a>, <a href="https://money.usnews.com/investing/news/articles/2026-10-16/anthropic-signs-lease-for-first-canadian-data-center">US News/Reuters</a></p>]]></description>
     </item>
   </channel>
 </rss>
