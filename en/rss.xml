@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 06 Nov 2026 05:20:20 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 05:17:41 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Artificial Analysis makes 60 percent of its tests private – Mistral Large 4 falls from 38 to 25 points</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-artificial-analysis-gor-60-procent-av-testerna-privata</guid>
+      <pubDate>Sat, 07 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Artificial Analysis released version 5 of its Intelligence Index on October 27, with 60 percent of the tests now private; in version 4.2 the share was 40 percent. Claude Opus 5.5 leads with 58 points, ahead of GPT-6 Astra (57), GPT-6.1 Sol (55) and Gemini 4 Argon (50).</p>
+<p>Scores for open models fell sharply when the index changed: DeepSeek V4.1 Flash and GLM-5.3 went from 45 to 32, and the best models with published weights now trail Opus 5.5 by 26 points. Artificial Analysis’s own summary instead puts the gap between open and closed models at 12 points, but that figure counts Kimi K3.1 Pro (46 points), whose weights have not yet been published. Mistral Large 4 Preview drops from 38 points on its model card to 25, below Claude Haiku 5.5 (36). According to ActuIA the models are unchanged and Artificial Analysis does not explain the drop; the outlet links it to the new test mix with many private tests but says the effect of individual tests cannot be separated without per-test scores.</p>
+<p>For the Nordics … None of the sources mention Nordic actors, so what follows is an assessment. Anyone procuring or running models in Sweden and Norway – municipalities, regions and companies such as Telenor and DNB, for example – has so far been able to compare scores between open and closed models. When 60 percent of the tests are private, the figure is harder to scrutinize, and for Mistral as a European alternative 25 points is a different starting point than 38. It cannot be determined whether the drop reflects real performance or just a new test basis.</p>
+<p class="news-card__source">Source: <a href="https://www.actuia.com/en/news/mistral-large-4-drops-from-38-to-25-on-new-artificial-analysis-index/">ActuIA</a>, <a href="https://aiweekly.co/alerts/artificial-analysis-intelligence-index-v5-widens-open-vs-closed-model-gap-to-12">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Finland’s IQM reports record orders of €42.2 million – largest contract comes from the LUMI AI Factory</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-finska-iqm-redovisar-rekordorder-pa-42-2-miljoner</guid>
+      <pubDate>Sat, 07 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Finnish quantum computer maker IQM reported its third quarter on November 5: revenue rose 51 percent to €8.9 million, new orders came to €42.2 million, and the order backlog stood at €102.5 million at the end of September, 52 percent more than at the start of the year. Full-year guidance of €42–47 million in revenue and €65–75 million in orders was maintained.</p>
+<p>The largest single contract, worth €33 million, is for a Halocene computer for CSC’s LUMI AI Factory in Kajaani, which IQM says will become Europe’s first superconducting quantum computer with logical qubits; the order was announced in July and installation is given as 2027. CEO Jan Goetz says the company’s first error-correction demonstrators are planned for 2027. The net loss was €152.6 million, of which €127.1 million was a cost of the July stock-market listing, and cash stood at €260.4 million. IQM has sold 31 quantum computers and delivered 17, and revenue follows customer acceptance, which can shift sales between quarters.</p>
+<p>For the Nordics … This is first and foremost a Nordic story: IQM is Finnish and the contract concerns LUMI in Kajaani, a European supercomputer with several Nordic countries among its partners. The sources do not compare IQM with other Nordic quantum efforts, such as Chalmers and the Wallenberg Centre for Quantum Technology in Sweden, and name no Swedish or Norwegian customer. According to CFO Jan Kürschner, all revenue in the quarter came from commercial contracts, with no public support or grants.</p>
+<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/11/05/iqm-books-e42-2-million-in-orders-as-quarterly-revenue-rises-51-in-q3-2026/">The Quantum Insider</a>, <a href="https://quantumcomputingreport.com/iqm-quantum-computers-reports-q3-2026-results-backlog-expands-to-e102-5m-q3-revenue-up-51-and-fy-2026-guidance-reaffirmed/">Quantum Computing Report</a>, <a href="https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/">The Quantum Insider</a></p>]]></description>
+    </item>
+    <item>
+      <title>MIT: GPT-6 Astra edited a small Qwen model’s weights directly – math score rose from 7.9 to 48.1 percent</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-mit-gpt-6-astra-redigerade-en-liten-qwen</guid>
+      <pubDate>Sat, 07 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Researchers at MIT CSAIL let OpenAI’s GPT-6 Astra read and edit the weights of the language model Qwen3.5-0.8B directly, without gradient-based training, according to VentureBeat and a research blog post from November 2. The change touched about 0.016 percent of the weights and lifted the score on the MATH-500 math test from 7.9 to 48.1 percent.</p>
+<p>The best attempt took 158 conversational turns and 80 Python runs over 20.3 hours, of which 4.7 hours was waiting out a service outage. The improvement came mainly from the model ceasing to repeat itself – the share of answers hitting the token limit fell from 93.0 to 33.1 percent – and not necessarily from new mathematical ability, and on Gemma 3 270M the method gave no established improvement. The researchers have not shown a self-reinforcing cycle, and VentureBeat does not say whether the work has been peer reviewed. PauseAI CEO Maxime Fournes calls the research direction terribly reckless and warns that the result, if real, could massively accelerate progress; according to VentureBeat, the experiments do not show the consequences he predicts.</p>
+<p>For the Nordics … None of the sources mention Nordic actors, so what follows is an assessment. Research groups working with open models, for example at KTH, Chalmers or NTNU, could in principle inspect and adjust weights in a similar way, but the result concerns a model with 0.8 billion parameters and has not been shown at larger scale. It is a single experiment by a US team, reported on a blog.</p>
+<p class="news-card__source">Source: <a href="https://venturebeat.com/ai/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance">VentureBeat</a>, <a href="https://neuralbuddies.com/p/ai-news-recap-november-6-2026">NeuralBuddies</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google’s school plan: AI off by default, but schools that switch off AI lose Search too</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-07</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-07-googles-skolplan-ai-av-som-standard-men-skolor</guid>
+      <pubDate>Sat, 07 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Google announced on November 3 that its AI tools, including Gemini, NotebookLM and Gemini in Classroom, will be switched off next year for K-12 students (the US term for the school years before college) until the school’s administrator turns them on. Schools that switch off AI entirely will, according to Google, also lose access to Google Search.</p>
+<p>Google’s education VP Chris Phillips told The New York Times, according to TechCrunch, that Search and AI are deeply integrated, and wrote in a blog post that the aim is to give school leaders control over how AI is used. The announcement came as Google launched Guided Learning, an AI tutor, in schools. Critics point out that AI chatbots can undermine learning by giving ready-made answers. Further details for schools are promised in the coming months.</p>
+<p>For the Nordics … According to Fox29, Google is starting with a pilot in select US schools; the sources do not say whether the change will later apply outside the US and name no Nordic school authorities, so what follows is an assessment. Swedish school operators and Norwegian school owners that use Google’s school platforms could face the same choice, and Skolverket in Sweden and the Directorate for Education and Training (Utdanningsdirektoratet) in Norway are the guiding authorities on AI in teaching. A school that wants to switch off AI for data-protection reasons would, if the rules applied here, lose search at the same time.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a>, <a href="https://www.fox29.com/news/google-cut-search-access-schools-completely-block-new-ai-tools.amp">Fox29</a></p>]]></description>
+    </item>
     <item>
       <title>OpenAI releases GPT-6 Cyber – rated “Critical” and open only to approved customers</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-06</link>
@@ -965,68 +1014,6 @@
 <p>Altman justified the form by saying the world is built for people, and said the robot's control system, its “brain”, matters more than the body. OpenAI has not said what the demo will show, what the robot will look like or when outsiders will get access to one. The company's careers page lists 27 robotics openings, and the postings point to custom-built actuators and to roles in manufacturing and supply chain. In the short term the company wants general-purpose robots that help skilled workers build infrastructure.</p>
 <p>For the Nordics: The sources say nothing about the Nordics, so this is an assessment. The Norwegian-founded humanoid company 1X Technologies operates in the same market and Denmark's Universal Robots in an adjacent one, and Sintef and NTNU conduct robotics research. OpenAI's move into hardware strengthens the picture that competition is decided by the AI software as much as by the body, which is a question for Nordic manufacturing, a large buyer of robotics.</p>
 <p class="news-card__source">Sources: <a href="https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/">Engadget</a>, <a href="https://aiweekly.co/ai-news-today">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>DeepSeek updates V4.1-Flash and opens a search API at $0.75 per thousand calls</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-deepseek-uppdaterar-v4-1-flash-och-oppnar-sok</guid>
-      <pubDate>Sun, 18 Oct 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>DeepSeek released V4.1-Flash-1017 on October 17, a new post-training version of V4.1-Flash available in the company's app, on the web and through its API, where it is called deepseek-flash. The model is a mixture-of-experts system with a one-million-token context window, and the company is opening search and fetch APIs at $0.75 per thousand successful requests.</p>
-<p>By DeepSeek's own figures, 1017 beats the earlier version on all reported benchmarks, by 2.0 to 11.1 points, and scores 77.0 on DeepSWE against 74.0 for Claude Opus 5. Opus 5 still leads on, among others, Terminal-Bench 4.0 (51.8 vs. 42.3) and HLE without tools (56.3 vs. 42.6). The figures come from the company itself and are not independently verified, and the sources differ on whether the weights for the 1017 version specifically are open – the weights for the September version are MIT-licensed.</p>
-<p>For the Nordics: The sources say nothing about Nordic users, so this is an assessment of consequences, not a reported fact. Low prices and long context may appeal to Swedish and Norwegian developers, but an API run by a Chinese company raises questions about which personal data leaves the EU/EEA, where IMY and Datatilsynet are the supervisory authorities. If the weights are open, the model can instead be run in-house or at a Nordic or European provider; the license should be checked before building it into a product.</p>
-<p class="news-card__source">Source: <a href="https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/">MarkTechPost</a>, <a href="https://aiweekly.co/alerts/deepseek-opens-v41-flash-1017-weights-and-075-search-api">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI publishes hundreds of math manuscripts from an unreleased model – review has barely begun</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-openai-publicerade-hundratals-matematikmanuskript-fran-en-oslappt-modell</guid>
-      <pubDate>Sun, 18 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>OpenAI published 722 mathematical manuscripts on October 6, reportedly produced by an internal frontier model that was given about 4,000 problems to work on. On October 15 the Simons Foundation announced an initiative to examine and build on AI-produced results, to which OpenAI is contributing $5 million.</p>
-<p>The results are at different stages of verification: OpenAI shares formalizations in the Lean proof assistant for many of the proofs but not all, and three manuscripts were reportedly withdrawn after a sign error while 14 were revised. The most talked-about result lies close to the Riemann hypothesis but is not a proof of the hypothesis itself. Several mathematicians have told The Verge that a full review could take years. The Simons initiative is a partnership between the Simons Foundation, Anthropic and OpenAI and totals $15 million in funding and resources, according to the foundation; how much Anthropic contributes has not been disclosed.</p>
-<p>For the Nordics: The sources say nothing about the Nordics, so this is an assessment. The question of how machine-produced mathematics should be reviewed also reaches Nordic mathematics departments, including at KTH, Chalmers, the University of Oslo and NTNU. In Norway the Abel Prize is awarded by the Norwegian Academy of Science and Letters, which makes the assessment of AI-produced proofs a question for Norwegian prize institutions too. How the Research Council of Norway and the Swedish Research Council will treat AI-assisted results in grant applications is still open, and we do not know whether the results hold.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">OpenAI</a>, <a href="https://inyheter.no/16/10/2026/openai-med-mulig-matematisk-gjennombrudd-ville-gitt-fields-medalje/">iNyheter</a>, <a href="https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/">Simons Foundation</a></p>]]></description>
-    </item>
-    <item>
-      <title>Vinnova proposes an AI programme with at least one billion kronor in 2027 – government has not decided</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-vinnova-foreslar-ai-program-med-minst-en-miljard</guid>
-      <pubDate>Sun, 18 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>On October 12 Vinnova presented the report Roadmaps for Strategic Technologies (Färdplaner för strategiska tekniker), in which the agency proposes seven state acceleration programmes: AI, 6G, semiconductors, quantum technology, materials and production, biotechnology and space technology. The AI programme, AI Acceleration Sweden, is proposed to start in January 2027 with at least SEK 1 billion in state funding in its first year.</p>
-<p>The other programmes would normally receive at least SEK 200 million a year from 2028 and at least SEK 1 billion in state funds from 2032. Vinnova also proposes a national investment fund with SEK 75 billion in state capital and up to SEK 150 billion in guarantees, and that state R&D investment reach at least 1 percent of GDP in 2030 (0.77 percent in 2024). These are proposals: the money has not yet been decided by the government.</p>
-<p>For the Nordics: The proposal concerns Sweden. The sources name no individual institutions, but in our assessment it affects, among others, Chalmers and WACQT (Wallenberg Centre for Quantum Technology), KTH and RISE, as well as the Wallenberg foundations' AI and quantum efforts, including WASP. The decision rests with the government and ultimately the Riksdag. The Research Council of Norway and counterparts in Denmark and Finland get a point of comparison when their own AI and quantum investments are discussed.</p>
-<p class="news-card__source">Source: <a href="https://www.newsoresund.se/innovationsmyndigheten-vinnova-vill-miljardsatsa-pa-sju-tekniker-ai-forst-ut/">News Øresund</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">Hurbra</a></p>]]></description>
-    </item>
-    <item>
-      <title>Venstre wants tax relief for companies that upskill staff instead of replacing them with AI</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-venstre-vill-ge-skatteavdrag-till-foretag-som-kompetensutvecklar</guid>
-      <pubDate>Sun, 18 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Norway's Venstre party wants to introduce a tax deduction scheme, called Kompetansefunn, for companies that invest in their employees' skills instead of replacing them with AI. The proposal was put forward by party leader Guri Melby in connection with Venstre's national conference in Lillestrøm on Saturday, October 17, according to Adressa/NTB.</p>
-<p>The idea is to change the calculation so that retraining and new tasks become more profitable than swapping staff for AI. Melby pointed out that many of the jobs disappearing are entry-level positions, and warned that if juniors disappear now, companies will lack senior staff in ten years. Adressa cites DNB and Posten Bring as examples of cuts where AI is given as a contributing factor; on October 6 DNB announced that the bank is cutting 400 full-time positions as its technology and services division is reorganized.</p>
-<p>For the Nordics: This is a party proposal and not decided policy, but it touches on an issue under way across the Nordics. Finansforbundet has questioned whether the cuts can be carried out properly before New Year, and the proposal highlights how the gains from AI should be shared between owners, customers and employees, a question that concerns the Storting, NHO and LO. We have not seen a corresponding proposal in Sweden.</p>
-<p class="news-card__source">Source: <a href="https://www.adressa.no/nyheter/innenriks/i/n9n3gx/venstre-vil-redde-jobber-fra-ki-kutt-foreslaar-beloenning">Adressa</a>, <a href="https://www.fagbladet.no/nyheter/ki-tar-over-jobben-dnb-varsler-omstilling-og-kutter-400-arsverk/760199">Fagbladet</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic leases capacity in EverWind's Nova Scotia data centre – its first in Canada</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-18</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-18-anthropic-hyr-kapacitet-i-everwinds-datacenter-i-nova</guid>
-      <pubDate>Sun, 18 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Anthropic has confirmed a long-term lease for capacity in EverWind's planned data centre at Point Tupper in Nova Scotia, the company's first data centre in Canada. EverWind says the investment totals C$10 billion, of which C$8 billion is for the data centre and C$2 billion for onshore wind power.</p>
-<p>The first 95 MW phase is due to be operating in late 2027, with a 325 MW expansion targeted for 2028, subject to regulatory approval, and 420 MW at full build-out. The project is expected to create around 2,000 construction jobs and 215 permanent positions, with a closed-loop cooling system and several hundred megawatt-hours of battery storage. Nova Scotia NDP leader Claudia Chender has called for regulation, and a consortium linked to Membertou First Nation is negotiating a possible ownership stake.</p>
-<p>For the Nordics: The development shows how AI companies are seeking power and land outside the United States, and Nordic places such as Luleå and Mo i Rana, where a data centre is now being converted into an AI facility, compete for the same kind of investment. Questions about the grid, renewable power and local benefit, which Svenska kraftnät and Statnett also handle, decide which projects get built. The sources say nothing about the Nordics, so the connection is an assessment.</p>
-<p class="news-card__source">Source: <a href="https://globalnews.ca/news/12105095/everwind-nova-scotia-data-centre/">Global News</a>, <a href="https://money.usnews.com/investing/news/articles/2026-10-16/anthropic-signs-lease-for-first-canadian-data-center">US News/Reuters</a></p>]]></description>
     </item>
   </channel>
 </rss>
