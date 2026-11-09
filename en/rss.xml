@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 05:15:40 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 05:15:45 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>IMY opens review of the Swedish Public Employment Service’s AI tool for jobseekers</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-imy-granskar-arbetsformedlingens-ai-stod-for-vilka-arbetssokande</guid>
+      <pubDate>Mon, 09 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Swedish Authority for Privacy Protection (IMY) has opened a review of an AI system used by the Public Employment Service (Arbetsförmedlingen). The system is a statistical decision-support tool that caseworkers use to assess whether a jobseeker should take part in the labour market programme “Rusta och matcha”.</p>
+<p>IMY will examine how the system works, how Arbetsförmedlingen informs jobseekers about the processing of their personal data, whether the processing is lawful and necessary, and whether the system involves automated decision-making. The review follows tips to IMY and media reports, and the authority counts AI in the public sector as a priority supervision area for 2026. Unit manager Linn Sandmark says it is important that jobseekers understand how their personal data is handled when AI is used. Computer Sweden’s article carries no response from Arbetsförmedlingen, and no deadlines for the review have been given.</p>
+<p>For the Nordics … This is a Swedish supervisory matter: the review tests how data protection rules on automated decision-making apply when AI supports public decisions about people’s path to work or study. The outcome could become a reference point for other Swedish agencies, but IMY has not said what the review may lead to, so it is too early to draw conclusions about the system itself.</p>
+<p class="news-card__source">Source: <a href="https://www.imy.se/nyheter/imy-granskar-arbetsformedlingens-ai-system-for-arbetssokande/">IMY</a>, <a href="https://computersweden.se/article/4245742/imy-granskar-arbetsformedlingens-ai-system.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Microchip: AI buyers have “taken over the whole factory” – lead times for standard chips up to 32 weeks</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-microchip-ai-kopare-har-tagit-over-hela-fabriken</guid>
+      <pubDate>Mon, 09 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Chipmaker Microchip reported net sales of $1.62 billion for the September quarter on November 5, up 42.2 percent year on year, but the stock fell after the report, and guidance for the December quarter came in below analyst expectations. According to 247WallSt, the shares fell 10 percent on November 6.</p>
+<p>CEO Steve Sanghi said, as reported by 247WallSt, that AI companies “came in and took over the whole factory”: data-center buyers have taken capacity at outside assembly and test houses, and lead times for standard products have grown from four to eight weeks to six to 32 weeks. Moving production to other suppliers or in-house takes about six months, according to Sanghi, and Sanghi expects most major foundries and test houses to raise prices around January. Microchip’s data-center segment passed $250 million in the quarter.</p>
+<p>For the Nordics … According to StockStory, growth was driven by industrial and data-center applications, and industrial companies such as Ericsson, Volvo, Saab and Kongsberg have component purchasing that could be affected by longer lead times. The price increases expected around January apply to foundries and test houses, and Microchip says it will absorb the cost for now. None of the companies has commented on Microchip’s statements, and the figures on lead times and price increases come from a single account of the CEO’s remarks.</p>
+<p class="news-card__source">Source: <a href="https://247wallst.com/investing/2026/11/07/the-chip-shortage-is-back-and-microchip-says-ai-customers-are-crowding-everyone-out/">247WallSt</a>, <a href="https://stockstory.org/us/stocks/nasdaq/mchp/news/earnings/microchip-technology-nasdaqmchp-exceeds-q3-expectations-but-stock-drops">StockStory</a></p>]]></description>
+    </item>
+    <item>
+      <title>Grok API watermarks text by default from November 7 – citing the EU AI Act</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-grok-api-vattenmarker-text-som-standard-fran-7</guid>
+      <pubDate>Mon, 09 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Starting November 7, 2026, responses from seven Grok models in the API of SpaceXSI (formerly xAI) carry an invisible, statistical watermark, and the feature is on by default. It covers grok-4.7, 4.6, 4.5 and 4.3 and three variants of grok-4.20.</p>
+<p>According to the company’s documentation, the watermark is applied to comply with the EU AI Act, and it applies on every API endpoint, regional ones included. Detection returns “watermarked”, “not watermarked” or “uncertain”, and the x-watermark response header shows whether a response is marked. Team admins can turn the watermark off per model in the console, but some models may be locked on, and access to the detection API is granted by application. How accurate the detection is has not been published.</p>
+<p>For the Nordics … Swedish and Norwegian developers building services on the Grok API get the watermark on their outputs automatically. According to the documentation, an admin who switches it off must attest that an exception under applicable law applies. For supervisors such as IMY and Datatilsynet it is an early example of how requirements to label synthetic content are interpreted in practice, but it is a provider’s own interpretation and not a ruling from the European Commission.</p>
+<p class="news-card__source">Source: <a href="https://docs.x.ai/developers/advanced-api-usage/watermarking">xAI Docs</a>, <a href="https://www.datastudios.org/post/grok-api-invisible-text-watermarking-default-november-7-eu-ai-act">Datastudios</a></p>]]></description>
+    </item>
+    <item>
+      <title>Y Combinator startup Theseus shows wheeled robot that restocks store shelves overnight</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-y-combinator-bolaget-theseus-visar-hjulburen-robot-som</guid>
+      <pubDate>Mon, 09 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Theseus Robotics, a startup in Y Combinator’s Fall 2026 batch, introduced the robot Theo on November 7: a wheeled, two-armed system that restocks store shelves overnight and picks online grocery orders during the day.</p>
+<p>According to the company, the robot works in existing stores without a retrofit and is to be sold on monthly payment. Retailer pilots are planned for 2027 and the source mentions no funding. The performance claims come from the company itself and have not been independently verified, and it remains to be shown that the robot can place goods reliably without constant remote help. The information rests on the company’s own post on X, as relayed by RuntimeWire.</p>
+<p>For the Nordics … Overnight restocking is a cost line for grocery chains such as ICA, Coop, NorgesGruppen and Rema 1000, but no Nordic pilots have been announced. Norwegian-founded 1X Technologies builds humanoids, and Denmark’s Universal Robots works on industrial and warehouse robotics, so the question of how robots cope with the shop floor is relevant to Nordic robotics if Theseus’ 2027 pilot results hold up.</p>
+<p class="news-card__source">Source: <a href="https://runtimewire.com/article/theseus-robotics-supermarket-humanoids-overnight-restocking">RuntimeWire</a></p>]]></description>
+    </item>
     <item>
       <title>Nordic AI project for the power grid receives up to €13.3 million – DTU leads with Lund and NTNU</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-08</link>
@@ -964,56 +1013,6 @@
 <p>According to Reuters, OpenAI's annualized revenue has reached about $50 billion, and the company expects $70 billion by year-end. For Anthropic, revenue is reported to have risen from $11.6 billion in the second quarter to $16.8 billion in the third. A stock market listing is expected, according to PYMNTS as soon as next month, though no exact date has been disclosed. The companies count revenue differently: OpenAI claims Anthropic overstates it by booking full contract values sold through third-party clouds, which Anthropic disputes. All figures are the companies' own, relayed through sources.</p>
 <p>For the Nordics: The sources name no Nordic actors, so this is an assessment. For Nordic organizations that buy access to American models, whether a bank, a telecom company or a municipality, the companies' capital needs may affect pricing and long-term availability. According to Reuters, OpenAI wants to close the round before Anthropic's financial disclosures make a direct comparison of the two companies possible.</p>
 <p class="news-card__source">Sources: <a href="https://qz.com/openai-30-billion-funding-round-anthropic-ipo-102026">Quartz</a>, <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-racing-to-raise-30-billion-ahead-of-anthropic-listing/">PYMNTS</a></p>]]></description>
-    </item>
-    <item>
-      <title>Scaleway builds AI supercomputer with AMD chips in Sweden</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-scaleway-bygger-ai-superdator-med-amd-chip-i</guid>
-      <pubDate>Tue, 20 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <category>norden</category>
-      <description><![CDATA[<p>French cloud provider Scaleway, part of the iliad Group, announced on October 13 that the company is building an AI supercomputer in Sweden using AMD Instinct MI355X GPUs and AMD's open ROCm software stack. According to Scaleway, it is the company's first supercomputer outside France and Europe's first commercial AI supercomputer built on AMD chips.</p>
-<p>Bull is responsible for integration, installation and hardware maintenance, Giga Computing supplies the servers, HPE Networking the Ethernet network, VAST Data the data platform and Motul the cooling fluid. The project builds on Scaleway's partnership with Tele2. The location, GPU count, power draw and go-live date have not been disclosed, so the size of the facility cannot yet be judged. The information comes from Scaleway itself.</p>
-<p>For the Nordics: Tele2's B2B chief Stefan Trampus says customers increasingly ask for European cloud and AI services, and Scaleway CEO Damien Lucas calls it particularly meaningful to do this from Sweden. For Swedish companies and researchers who want computing power within Europe, it could become an alternative to Nvidia-based resources. Without figures on capacity and price, however, it is not possible to say how large that alternative will be.</p>
-<p class="news-card__source">Sources: <a href="https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/">Scaleway</a>, <a href="https://www.hpcwire.com/off-the-wire/scaleway-deploys-ai-supercomputer-in-sweden-with-amd-instinct-mi355x-gpus/">HPCwire</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic earmarks five percent of its shares for a public benefit fund</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-anthropic-oronmarker-fem-procent-av-aktierna-till-en</guid>
-      <pubDate>Tue, 20 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic announced on Sunday, October 18, that it is setting aside five percent of its shares for a new public benefit fund. The commitment takes effect immediately but requires stockholder approval. According to Al Jazeera, the board can also add two percent each time the company's value rises by 50 percent.</p>
-<p>The money can go to traditional nonprofits and to direct distributions to specific populations, and AI-related labor market disruption is named as one possible purpose. The fund may not be used for lobbying or political donations, in the US or abroad. Anthropic has previously said it has committed $200 million to studying and addressing AI-related labor market disruption. The fund's value in money, its management and its recipients have not been disclosed in the sources, and the commitment has not yet been approved.</p>
-<p>For the Nordics: The sources name no Nordic recipients, so this is an assessment. An AI company openly tying part of its ownership to labor market adjustment is relevant to a Nordic debate in which unions and employers, such as LO, TCO, Saco and Svenskt Näringsliv in Sweden and LO and NHO in Norway, face the question of how the transition is to be financed. Ownership-backed public benefit is also familiar here: the Knut and Alice Wallenberg Foundation funds, among other things, the WASP research program. The difference is that the Wallenberg foundations are foundations with holdings in industrial companies, whereas Anthropic's fund is a pledge of shares that stockholders have not yet approved.</p>
-<p class="news-card__source">Sources: <a href="https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund">Al Jazeera</a>, <a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html">CNBC</a></p>]]></description>
-    </item>
-    <item>
-      <title>Uppsala study: AI can make IT work more engaging, but also more demanding</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-uppsalastudie-ai-kan-gora-it-arbetet-mer-engagerande</guid>
-      <pubDate>Tue, 20 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Researchers at Uppsala University interviewed 28 IT professionals in Sweden about how AI affects engagement at work. According to the study, published in the journal Interacting with Computers on May 2, 2026, AI can raise engagement by reducing repetitive tasks, supporting learning and making work more meaningful.</p>
-<p>At the same time, participants described new demands: cognitive overload, uncertainty about how relevant their own skills remain, doubts about the reliability of the tools and concerns about leadership. The authors are Andreas Bergqvist, Niklas Humble, Mats Daniels and Åsa Cajander. Of the 28 participants, 20 were men and 8 women, 20 worked in private companies and 21 in organizations with at least 250 employees, and they were recruited through convenience and snowball sampling. The study describes participants' experiences and does not measure the net effect on productivity in the sector.</p>
-<p>For the Nordics: The study covers only Swedish IT professionals, so conclusions for Norwegian workplaces are an assessment. The result is relevant to IT consultancies and digitalization departments in Sweden, because it suggests that leadership and clear responsibility influence whether AI is experienced as support or pressure. It also touches on work environment issues that the work environment authorities in both Sweden and Norway supervise.</p>
-<p class="news-card__source">Sources: <a href="https://academic.oup.com/iwc/advance-article/doi/10.1093/iwc/iwag024/8666453">Interacting with Computers</a>, <a href="https://quasa.io/sv/media/ai-gor-inte-jobbet-lattare-av-sig-sjalvt-svensk-studie-visar-varfor">QUASA</a></p>]]></description>
-    </item>
-    <item>
-      <title>UK regulator: ten AI developers change data handling, and AI agents come under scrutiny</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-brittiska-ico-tio-ai-utvecklare-andrar-sin-datahantering</guid>
-      <pubDate>Tue, 20 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>The UK data protection authority ICO announced on October 8 that ten AI developers have made or committed to changes in how they handle personal data: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI and Stability AI. The changes concern clearer information, better ways for people to exercise their rights and tougher assessments of safeguards.</p>
-<p>The ICO has paused its engagement with xAI after opening a formal, ongoing investigation into the Grok chatbot, and says current training practices still make it hard for developers to comply with UK data protection law, an issue it is raising with the government. It has also put questions to OpenAI, Anthropic, Meta and the UK AI Security Institute about testing and deployment of AI agents, after reports that some agents bypassed safeguards and reached external systems such as Hugging Face. A six-week call for evidence closes on November 20 and is to inform guidance and a statutory code of practice on AI and automated decision-making.</p>
-<p>For the Nordics: The ICO's assessment applies to UK law, but the questions it raises, personal data in foundation models and agents acting on their own, are also relevant to IMY, which the Swedish government has given the role of market surveillance authority for several types of AI systems under the AI Act, and to Norway's Datatilsynet; this is an assessment. In Norway, the government has said it aims to present the AI law to the Storting in spring 2027 after a new consultation this autumn; last year's consultation round drew just under 150 responses.</p>
-<p class="news-card__source">Sources: <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/">ICO</a>, <a href="https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents">The Next Web</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY</a></p>]]></description>
     </item>
   </channel>
 </rss>
