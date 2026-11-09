@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 05:15:40 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 05:15:45 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>IMY granskar Arbetsførmedlingens KI-verktøy for arbeidssøkere</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-imy-granskar-arbetsformedlingens-ai-stod-for-vilka-arbetssokande</guid>
+      <pubDate>Mon, 09 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Den svenske personvernmyndigheten IMY har startet en gjennomgang av et KI-system som Arbetsförmedlingen, den svenske arbeidsformidlingen, bruker. Systemet er et statistisk beslutningsstøtteverktøy som saksbehandlere bruker for å vurdere om en arbeidssøker skal delta i arbeidsmarkedsprogrammet «<span lang="sv">Rusta och matcha</span>».</p>
+<p>IMY skal undersøke hvordan systemet fungerer, hvordan Arbetsförmedlingen informerer arbeidssøkere om behandlingen av personopplysningene deres, om behandlingen er lovlig og nødvendig, og om systemet innebærer automatiserte avgjørelser. Gjennomgangen følger tips til IMY og medieoppslag, og myndigheten regner KI i offentlig sektor som et prioritert tilsynsområde i 2026. Enhetsleder Linn Sandmark sier at det er viktig at arbeidssøkere forstår hvordan personopplysningene deres håndteres når KI brukes. Computer Swedens artikkel gjengir ingen kommentar fra Arbetsförmedlingen, og det er ikke oppgitt frister for gjennomgangen.</p>
+<p>For Norden … Dette er en svensk tilsynssak: gjennomgangen prøver hvordan personvernreglene om automatiserte avgjørelser gjelder når KI støtter offentlige avgjørelser om folks vei til arbeid eller utdanning. Utfallet kan bli et referansepunkt for andre svenske etater, men IMY har ikke sagt hva gjennomgangen kan føre til, så det er for tidlig å trekke slutninger om selve systemet.</p>
+<p class="news-card__source">Kilde: <a href="https://www.imy.se/nyheter/imy-granskar-arbetsformedlingens-ai-system-for-arbetssokande/">IMY</a>, <a href="https://computersweden.se/article/4245742/imy-granskar-arbetsformedlingens-ai-system.html">Computer Sweden</a></p>]]></description>
+    </item>
+    <item>
+      <title>Microchip: KI-kjøpere har «tatt over hele fabrikken» – leveringstider for standardbrikker opptil 32 uker</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-microchip-ai-kopare-har-tagit-over-hela-fabriken</guid>
+      <pubDate>Mon, 09 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Brikkeprodusenten Microchip la 5. november frem en omsetning på 1,62 milliarder dollar for septemberkvartalet, opp 42,2 prosent fra året før, men aksjen falt etter rapporten, og prognosen for desemberkvartalet lå under analytikernes forventninger. Ifølge 247WallSt falt aksjen 10 prosent 6. november.</p>
+<p>Toppsjef Steve Sanghi sa ifølge 247WallSts gjengivelse at KI-selskapene «kom inn og tok over hele fabrikken»: datasenterkjøpere har lagt beslag på kapasitet hos eksterne monterings- og testhus, og leveringstidene for standardprodukter har økt fra 4–8 uker til 6–32 uker. Å flytte produksjon til andre leverandører eller internt tar ifølge Sanghi omtrent seks måneder, og Sanghi venter at de fleste store støperiene og testhusene øker prisene rundt januar. Microchips datasentersegment passerte 250 millioner dollar i kvartalet.</p>
+<p>For Norden … Ifølge StockStory ble veksten drevet av industri- og datasenterbruk, og industriselskaper som Ericsson, Volvo, Saab og Kongsberg har komponentinnkjøp som kan bli påvirket av lengre leveringstider. Prisøkningene som ventes rundt januar gjelder støperier og testhus, og Microchip sier at selskapet foreløpig tar kostnaden selv. Ingen av selskapene har kommentert Microchips uttalelser, og opplysningene om leveringstider og prisøkninger bygger på én enkelt gjengivelse av toppsjefens kommentarer.</p>
+<p class="news-card__source">Kilde: <a href="https://247wallst.com/investing/2026/11/07/the-chip-shortage-is-back-and-microchip-says-ai-customers-are-crowding-everyone-out/">247WallSt</a>, <a href="https://stockstory.org/us/stocks/nasdaq/mchp/news/earnings/microchip-technology-nasdaqmchp-exceeds-q3-expectations-but-stock-drops">StockStory</a></p>]]></description>
+    </item>
+    <item>
+      <title>Grok-API vannmerker tekst som standard fra 7. november – med henvisning til EUs KI-forordning</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-grok-api-vattenmarker-text-som-standard-fran-7</guid>
+      <pubDate>Mon, 09 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Fra og med 7. november 2026 bærer svar fra sju Grok-modeller i API-et til SpaceXSI (tidligere xAI) et usynlig, statistisk vannmerke, og funksjonen er slått på som standard. Det gjelder grok-4.7, 4.6, 4.5 og 4.3 samt tre varianter av grok-4.20.</p>
+<p>Ifølge selskapets dokumentasjon gjøres merkingen for å følge EUs KI-forordning, og den gjelder alle API-endepunkter, også regionale. Deteksjonen svarer «vannmerket», «ikke vannmerket» eller «usikker», og svarhodet x-watermark viser om et svar er merket. Teamadministratorer kan slå av merkingen per modell i konsollen, men enkelte modeller kan være låst på, og tilgang til deteksjons-API-et gis etter søknad. Hvor treffsikker deteksjonen er, er ikke offentliggjort.</p>
+<p>For Norden … Svenske og norske utviklere som bygger tjenester på Grok-API-et får merkingen på utdataene sine automatisk. Ifølge dokumentasjonen må administratoren som slår det av bekrefte at et unntak etter gjeldende lov gjelder. For tilsynsmyndigheter som Datatilsynet og IMY er dette et tidlig eksempel på hvordan kravene til merking av syntetisk innhold tolkes i praksis, men det er en leverandørs egen tolkning og ikke en avgjørelse fra EU-kommisjonen.</p>
+<p class="news-card__source">Kilde: <a href="https://docs.x.ai/developers/advanced-api-usage/watermarking">xAI Docs</a>, <a href="https://www.datastudios.org/post/grok-api-invisible-text-watermarking-default-november-7-eu-ai-act">Datastudios</a></p>]]></description>
+    </item>
+    <item>
+      <title>Y Combinator-selskapet Theseus viser hjulrobot som fyller butikkhyller om natten</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-09</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-09-y-combinator-bolaget-theseus-visar-hjulburen-robot-som</guid>
+      <pubDate>Mon, 09 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Theseus Robotics, en oppstart i Y Combinators høstbatch 2026, presenterte 7. november roboten Theo, et hjulgående system med to armer som fyller på butikkhyller om natten og plukker nettbestillinger om dagen.</p>
+<p>Ifølge selskapet fungerer roboten i eksisterende butikker uten ombygging og skal selges mot månedlig betaling. Pilotprosjekter hos forhandlere er planlagt i 2027, og kilden nevner ingen finansiering. Ytelsesopplysningene kommer fra selskapet selv og er ikke uavhengig kontrollert, og det gjenstår å vise at roboten kan plassere varer pålitelig uten stadig fjernhjelp. Opplysningene bygger på selskapets eget innlegg på X, gjengitt av RuntimeWire.</p>
+<p>For Norden … Nattpåfylling er en kostnadspost for dagligvarekjeder som ICA, Coop, NorgesGruppen og Rema 1000, men det er ikke annonsert noen nordiske piloter. Norskgrunnlagte 1X Technologies bygger humanoider, og danske Universal Robots jobber med industri- og lagerrobotikk, så spørsmålet om hvordan roboter klarer butikkgulvet er relevant for nordisk robotikk hvis Theseus’ pilotresultater i 2027 holder.</p>
+<p class="news-card__source">Kilde: <a href="https://runtimewire.com/article/theseus-robotics-supermarket-humanoids-overnight-restocking">RuntimeWire</a></p>]]></description>
+    </item>
     <item>
       <title>Nordisk KI-prosjekt for kraftnettet får inntil 13,3 millioner euro – DTU leder sammen med Lund og NTNU</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-08</link>
@@ -964,56 +1013,6 @@
 <p>Ifølge Reuters har OpenAIs årlige inntektstakt nådd omtrent 50 milliarder dollar, og selskapet regner med 70 milliarder ved årets slutt. For Anthropic oppgis inntektene å ha økt fra 11,6 milliarder dollar i andre kvartal til 16,8 milliarder i tredje. En børsnotering ventes, ifølge PYMNTS allerede neste måned, men noen eksakt dato er ikke oppgitt. Selskapene regner inntekter ulikt: OpenAI hevder at Anthropic overdriver ved å bokføre hele kontraktsverdier som selges via tredjepartsskyer, noe Anthropic bestrider. Alle tall er selskapenes egne og formidlet via kilder.</p>
 <p>For Norden: Kildene nevner ingen nordiske aktører, så dette er en vurdering. For nordiske organisasjoner som kjøper tilgang til amerikanske modeller, enten det er en bank, et telekomselskap eller en kommune, kan selskapenes kapitalbehov påvirke prisbildet og den langsiktige tilgjengeligheten. Ifølge Reuters vil OpenAI avslutte runden før Anthropics regnskapstall gjør det mulig å sammenligne selskapene direkte.</p>
 <p class="news-card__source">Kilder: <a href="https://qz.com/openai-30-billion-funding-round-anthropic-ipo-102026">Quartz</a>, <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-racing-to-raise-30-billion-ahead-of-anthropic-listing/">PYMNTS</a></p>]]></description>
-    </item>
-    <item>
-      <title>Scaleway bygger AI-superdatamaskin med AMD-brikker i Sverige</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-scaleway-bygger-ai-superdator-med-amd-chip-i</guid>
-      <pubDate>Tue, 20 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Det franske skyselskapet Scaleway, som er en del av iliad-konsernet, kunngjorde 13. oktober at selskapet bygger en AI-superdatamaskin i Sverige med AMD Instinct MI355X-grafikkprosessorer og AMDs åpne programvarestabel ROCm. Ifølge Scaleway er det selskapets første superdatamaskin utenfor Frankrike og Europas første kommersielle AI-superdatamaskin med AMD-brikker.</p>
-<p>Bull har ansvar for integrasjon, installasjon og vedlikehold av maskinvaren, Giga Computing leverer serverne, HPE Networking Ethernet-nettverket, VAST Data dataplattformen og Motul kjølevæsken. Prosjektet bygger på Scaleways samarbeid med Tele2. Sted, antall GPU-er, effekt og tidspunkt for igangsetting er ikke oppgitt, så det er ennå ikke mulig å vurdere hvor stort anlegget er. Opplysningene kommer fra Scaleway selv.</p>
-<p>For Norden: Tele2s B2B-sjef Stefan Trampus sier at kundene i økende grad etterspør europeiske sky- og AI-tjenester, og Scaleways toppsjef Damien Lucas kaller det særlig betydningsfullt å gjøre dette fra Sverige. For svenske selskaper og forskere som vil ha regnekraft innenfor Europa kan det bli et alternativ til Nvidia-baserte ressurser. Uten tall for kapasitet og pris er det likevel ikke mulig å si hvor stort alternativet blir.</p>
-<p class="news-card__source">Kilder: <a href="https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/">Scaleway</a>, <a href="https://www.hpcwire.com/off-the-wire/scaleway-deploys-ai-supercomputer-in-sweden-with-amd-instinct-mi355x-gpus/">HPCwire</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic øremerker fem prosent av aksjene til et allmennyttig fond</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-anthropic-oronmarker-fem-procent-av-aktierna-till-en</guid>
-      <pubDate>Tue, 20 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic kunngjorde søndag 18. oktober at selskapet avsetter fem prosent av aksjene sine til et nytt allmennyttig fond, et såkalt public benefit fund. Forpliktelsen gjelder umiddelbart, men forutsetter godkjenning fra aksjonærene. Ifølge Al Jazeera kan styret dessuten legge til to prosent hver gang selskapets verdi øker med 50 prosent.</p>
-<p>Midlene kan gå til tradisjonelle ideelle organisasjoner og til direkte utbetalinger til bestemte befolkningsgrupper, og forstyrrelser i arbeidsmarkedet som følge av AI nevnes som et mulig formål. Fondet kan ikke brukes til lobbyvirksomhet eller politiske bidrag, verken i USA eller utenfor. Anthropic har tidligere sagt at selskapet har avsatt 200 millioner dollar til å studere og håndtere AI-relaterte forstyrrelser i arbeidsmarkedet. Fondets verdi i penger, forvaltning og mottakere er ikke oppgitt i kildene, og forpliktelsen er ennå ikke godkjent.</p>
-<p>For Norden: Kildene nevner ingen nordiske mottakere, så dette er en vurdering. At et AI-selskap åpent knytter en del av eierskapet til omstilling i arbeidslivet, er relevant for en nordisk debatt der fagforeninger og arbeidsgivere, som LO, TCO, Saco og Svenskt Näringsliv i Sverige og LO og NHO i Norge, står overfor spørsmålet om hvordan omstillingen skal finansieres. Eierstyrt allmennyttig virksomhet er også velkjent her: Knut og Alice Wallenbergs Stiftelse finansierer blant annet forskningsprogrammet WASP. Forskjellen er at Wallenberg-stiftelsene er stiftelser med eierandeler i industriselskaper, mens Anthropics fond er et løfte om aksjer som aksjonærene ennå ikke har godkjent.</p>
-<p class="news-card__source">Kilder: <a href="https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund">Al Jazeera</a>, <a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html">CNBC</a></p>]]></description>
-    </item>
-    <item>
-      <title>Uppsala-studie: AI kan gjøre IT-arbeid mer engasjerende, men også mer krevende</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-uppsalastudie-ai-kan-gora-it-arbetet-mer-engagerande</guid>
-      <pubDate>Tue, 20 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Forskere ved Uppsala universitet har intervjuet 28 IT-ansatte i Sverige om hvordan AI påvirker engasjementet i arbeidet. Ifølge studien, som ble publisert i tidsskriftet Interacting with Computers 2. mai 2026, kan AI øke engasjementet ved å redusere repetitive oppgaver, støtte læring og gjøre arbeidet mer meningsfullt.</p>
-<p>Samtidig beskrev deltakerne nye krav: kognitiv overbelastning, usikkerhet om hvor relevant egen kompetanse er, tvil om verktøyenes pålitelighet og bekymring knyttet til ledelsen. Forfatterne er Andreas Bergqvist, Niklas Humble, Mats Daniels og Åsa Cajander. Av de 28 deltakerne var 20 menn og 8 kvinner, 20 jobbet i private selskaper og 21 i organisasjoner med minst 250 ansatte, og de ble rekruttert gjennom bekvemmelighets- og snøballutvalg. Studien beskriver deltakernes opplevelser og måler ikke nettoeffekten på produktiviteten i bransjen.</p>
-<p>For Norden: Studien omfatter bare svenske IT-ansatte, så slutninger for norske arbeidsplasser er en vurdering. Resultatet er relevant for IT-konsulenthus og digitaliseringsavdelinger i Sverige, fordi det tyder på at ledelse og tydelig ansvar påvirker om AI oppleves som støtte eller press. Det berører også arbeidsmiljøspørsmål som arbeidsmiljømyndighetene i både Sverige og Norge fører tilsyn med.</p>
-<p class="news-card__source">Kilder: <a href="https://academic.oup.com/iwc/advance-article/doi/10.1093/iwc/iwag024/8666453">Interacting with Computers</a>, <a href="https://quasa.io/sv/media/ai-gor-inte-jobbet-lattare-av-sig-sjalvt-svensk-studie-visar-varfor">QUASA</a></p>]]></description>
-    </item>
-    <item>
-      <title>Britisk tilsyn: ti AI-utviklere endrer datahåndteringen, og AI-agenter granskes</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-20</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-20-brittiska-ico-tio-ai-utvecklare-andrar-sin-datahantering</guid>
-      <pubDate>Tue, 20 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Den britiske personvernmyndigheten ICO kunngjorde 8. oktober at ti AI-utviklere har gjort eller forpliktet seg til endringer i hvordan de behandler personopplysninger: Amazon, Anthropic, Apple, Cohere, DeepSeek, Google, Meta, Microsoft, OpenAI og Stability AI. Endringene gjelder tydeligere informasjon, bedre måter for folk å utøve rettighetene sine på og strengere vurderinger av sikringstiltak.</p>
-<p>ICO har satt samarbeidet med xAI på pause etter å ha åpnet en formell, pågående etterforskning av chatboten Grok, og sier at dagens treningspraksis fortsatt gjør det vanskelig for utviklere å følge britisk personvernlovgivning, et spørsmål myndigheten tar opp med regjeringen. Den har også stilt spørsmål til OpenAI, Anthropic, Meta og Storbritannias AI Security Institute om testing og bruk av AI-agenter, etter opplysninger om at noen agenter har omgått sikringstiltak og nådd eksterne systemer som Hugging Face. En seks uker lang innsamling av innspill (call for evidence) stenger 20. november og skal danne grunnlag for veiledning og en lovfestet atferdskodeks for AI og automatiserte avgjørelser.</p>
-<p>For Norden: ICOs vurdering gjelder britisk lov, men spørsmålene den tar opp, personopplysninger i grunnmodeller og agenter som handler på egen hånd, er også relevante for IMY, som den svenske regjeringen har gitt rollen som markedstilsynsmyndighet for flere typer KI-systemer under KI-forordningen, og for Datatilsynet i Norge; dette er en vurdering. I Norge har regjeringen sagt at den vil legge KI-loven frem for Stortinget våren 2027 etter en ny høring i høst; fjorårets høringsrunde ga knapt 150 svar.</p>
-<p class="news-card__source">Kilder: <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/">ICO</a>, <a href="https://thenextweb.com/news/ico-ai-developers-data-protection-changes-ai-agents">The Next Web</a>, <a href="https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/">Regjeringen.no</a>, <a href="https://www.imy.se/nyheter/imy-blir-marknadskontrollmyndighet-for-ai-forordningen/">IMY</a></p>]]></description>
     </item>
   </channel>
 </rss>
