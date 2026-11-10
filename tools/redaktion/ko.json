@@ -15,7 +15,58 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [],
+  "ko": [
+    {
+      "id": "anthropic-fable-mythos-5-2-2026-11",
+      "tidigast": "2026-11-10",
+      "senast": "2026-11-17",
+      "kategori": "modeller",
+      "norden": false,
+      "dubblettnyckel": [
+        "Fable 5.2",
+        "Mythos 5.2",
+        "claude-fable-5-2",
+        "FrontierCode 2.0"
+      ],
+      "vinkel": "Anthropic uppgraderade den 9 november 2026 sina två tyngsta modeller, Claude Fable 5.2 och Claude Mythos 5.2. Notisen ska göra tre saker. (1) Återge vad som faktiskt är nytt mot 5.1: upp till 30 procent snabbare utmatning, lägre tokenpris, ett nytt valfritt snabbläge som kostar dubbelt, och förbättringar på kodning, resonemang och vision. (2) Hålla isär de två namnen. Det är SAMMA underliggande modell, och skillnaden ligger i spärrlagret: Fable har cyber- och biosäkerhetsspärrar och är därför allmänt tillgänglig, medan Mythos kräver granskning via Anthropics verifieringsprogram. Formulera det som spärrlager, inte som 'samma kapacitet' — Anthropic utpekar själv Mythos som den mer kapabla för cybersäkerhetsarbete just därför att Fable spärrar det, så den kapacitet användaren faktiskt når skiljer sig även om modellen är samma. (3) Skilja belagt från bolagets egen marknadsföring. Alla sifferkolumner i jämförelsetabellen är Anthropics egna mätningar av både sina egna och konkurrenternas modeller, körda på OLIKA effort-nivåer, och demonstrationerna från förhandstestningen är bolagets egna rapporter utan oberoende granskning. Den distinktionen är hela hantverket i den här notisen. Vinkel för svensk läsare: Anthropic rekommenderar uttryckligen INTE sin starkaste modell som förstahandsval — Opus 5.5 pekas ut som normalvalet för det mesta av kodnings- och kunskapsarbete, med byte uppåt till Fable eller Mythos eller nedåt till Sonnet 5.5 och Haiku 5.5 beroende på uppgiftens omfattning. Att ett labb aktivt styr bort från sin dyraste modell är ovanligt i branschens kommunikation och värt att notera.",
+      "maste_med": [
+        "Datum: annonserat den 9 november 2026 av Anthropic. Modell-id för utvecklare: claude-fable-5-2.",
+        "Claude Fable 5.2 och Claude Mythos 5.2 är samma underliggande modell. Skillnaden ligger i spärrarna: Fable har cyber- och biosäkerhetsspärrar, vilket enligt Anthropic är det som gör den tillgänglig för alla användare, medan Mythos kräver ansökan och granskning via Anthropics Life Sciences- respektive Cyber Verification-program. Claude Enterprise-kunder kan dessutom nå Mythos 5.2 via tjänsten Claude Security utan medlemskap i verifieringsprogrammen.",
+        "Pris: 8 USD per miljon inmatade tokens och 40 USD per miljon utmatade tokens — lägre än föregående generation. Anthropic skriver 'lägre pris' utan procenttal.",
+        "Nytt valfritt snabbläge som enligt Anthropic snabbar upp tokengenereringen upp till 2,5 gånger, till 16 USD per miljon inmatade och 80 USD per miljon utmatade tokens — alltså dubbla tokenpriset. Snabbläget finns på Claude Code, Claude Platform, Claude-modeller på Google Cloud och Microsoft Foundry (Anthropic hosted); för Mythos 5.2 endast för organisationer i verifieringsprogrammen.",
+        "Utmatningen är enligt Anthropic upp till 30 procent snabbare än Fable 5.1 och Mythos 5.1.",
+        "Förbättringar anges inom kodning, resonemang och vision.",
+        "Anthropics egen jämförelsetabell, med effort-nivåerna utskrivna eftersom jämförelsen inte är effort-matchad: FrontierCode 2.0 49,1 procent för Fable 5.2 vid Xhigh effort, mot 32,4 procent för Fable 5.1 och 45,5 procent för Opus 5.5; Gemini 4 Carbon ligger på 41,1 procent vid Medium effort. FrontierSWE v2 69,9 procent för Fable 5.2 mot 56,3 för Fable 5.1, 62,3 för Opus 5.5, 65,5 för GPT-6 Astra och 61,2 för Gemini 4 Carbon. Ange att samtliga tal är Anthropics egna mätningar.",
+        "Anthropics egen användningsrekommendation: för det mesta av kodnings- och kunskapsarbete börja med Opus 5.5, och byta uppåt till Fable eller Mythos eller nedåt till Sonnet 5.5 eller Haiku 5.5 beroende på omfattning och komplexitet. Fable 5.2 kan också fungera som Advisor (där Haiku-, Sonnet- och Opus-modeller konsulterar den) eller Orchestrator (där den delegerar enklare uppgifter till mindre modeller).",
+        "Säkerhet enligt Anthropic: förhandstestning med nyframtagna utvärderingar för beteenden som sandlådeflykt; bolaget bedömer att högriskerna från felriktning förblir låga och att modellen presterade lika bra som eller bättre än deras senaste modeller på de flesta alignment-mått; Fable 5.2:s cyber- och biospärrar beskrivs som lika robusta som 5.1:s men med färre onödiga blockeringar; starkaste skyddet så här långt mot destillationsattacker. Systemkortet är publicerat på https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+        "Tillgänglighet enligt annonssidan: Fable 5.2 finns 'på alla plattformar', uttryckligen inklusive Amazon Web Services, Google Cloud och Microsoft Azure, samt på Claude Platform. Anthropic ger samtidigt extra Fable-användning till prenumeranter på behöriga betalplaner under lanseringsveckan. OBSERVERA GRÄNSEN MOT FÖRBUDSLISTAN: plannamnen Pro och Team får skrivas ENBART i detta kampanjsammanhang — att Fable ingår i upp till 50 procent av veckoanvändningsgränsen för Pro-planer och standardplatser på Team — och aldrig som en uppräkning av vilka plannivåer modellen finns på. Annonssidan räknar inte upp plannivåer."
+      ],
+      "far_inte_pastas": [
+        "Att prissänkningen är 20 procent. Procenttalet står inte på Anthropics annonssida — det kommer från presstäckning som räknar mot en tidigare prisnivå. Utelämna talet, eller skriv uttryckligen att pressen anger cirka 20 procent och att Anthropic själv bara skriver 'lägre pris'.",
+        "Att Fable 5.2 'blockerar 55 procent färre förfrågningar'. Siffran finns inte på annonssidan. Anthropic skriver att spärrarna är lika robusta som 5.1:s men ger färre onödiga blockeringar — utan procenttal.",
+        "Att Fable 5.2 slår konkurrenterna rakt över, är bäst i världen, eller satt rekord. Det är direkt falskt enligt Anthropics EGEN tabell: på AutomationBench ligger Gemini 4 Carbon på 53,9 procent mot Fable 5.2:s 51,4. Konkurrenternas tal är dessutom Anthropics egna mätningar vid olika effort-nivåer.",
+        "Att jämföra två tal ur tabellen utan att ange effort-nivå. Jämförelsen är inte effort-matchad — Fable 5.2 redovisas på Xhigh, Gemini 4 Carbon på Medium, och Max och High effort förekommer också. Ett tal utan sin effort-nivå är i den här tabellen ett missvisande tal.",
+        "Att formaliseringen av Fermats stora sats på 30 timmar, de tre elektronikkonstruktionerna eller de två lösta problemen i svarta håls fysik är oberoende granskade eller publicerade resultat. Det är Anthropics egna rapporter från förhandstestning. Får återges som bolagets uppgift, aldrig som fastställt resultat.",
+        "Att Mythos 5.2 hittar fler sårbarheter än Opus 5.5 som ett fastställt resultat. Anthropic anger själv i fotnot att talen är råa fynd från EN testares granskning, och att sårbarhetsidentifiering på bolagets egna utvärderingar ligger ungefär i nivå med Opus 5.5. Återges talet måste båda förbehållen med.",
+        "Att sandlådesiffrorna gäller Fable 5.2. Anthropics tal om sandlådeflykt avser Mythos 5.2. Skriv inte om Fable 5.2.",
+        "Att Mythos 5.2 är tillgänglig för allmänheten eller går att köpa. Den kräver ansökan och granskning, med Claude Security för Enterprise som enda dokumenterade undantag.",
+        "Att släppet är kopplat till en börsnotering, eller är ett svar på rekursiv självförbättring. Båda ramarna kommer från presstäckning — IPO-ramen från CNBC, som ligger i källistan — inte från Anthropics annonssida. Formulera som pressens tolkning med namngivet medium ur källistan, eller utelämna.",
+        "Att modellen är 'säkrare' än tidigare modeller rakt av. Anthropic skriver att den presterade lika bra eller bättre på DE FLESTA alignment-mått — inte på alla.",
+        "Att Fable 5.2 ingår på gratisnivån, eller att den är tillgänglig på en uppräknad lista av plannivåer. Annonssidan säger 'alla plattformar'. Pro och Team får nämnas, men bara i kampanjsammanhanget enligt sista punkten i maste_med — inte som en lista över var modellen finns.",
+        "Att Fable 5.2 är billigare per uppgift. Per token är den fortfarande dyrare än Opus 5.5, och snabbläget fördubblar tokenpriset. Varje kostnadsslutsats måste ange vilka effort-nivåer som jämförs."
+      ],
+      "norden_stycke": "Ingen nordisk primärvinkel finns i släppet. Stycke 3 bör i stället ta den praktiska konsekvensen för nordiska användare, och göra kalkylen rätt: tokenpriset sjunker, men snabbläget kostar dubbelt och Fable ligger per token fortfarande över Opus 5.5 — sänkningen är alltså ingen generell kostnadssänkning. Anthropics eget råd att använda Opus 5.5 som normalval och byta upp vid behov är en konkret rekommendation för den som kör modellen i produktion. Tillgängligheten via Google Cloud och Microsoft Azure är relevant för nordiska organisationer som redan ligger i de molnen; notera att snabbläget på Microsoft-sidan kräver Foundry, inte Azure generellt.",
+      "kallor": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://www.anthropic.com/document/claude-fable-5-2-mythos-5-2-system-card",
+        "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+        "https://thenextweb.com/news/claude-fable-5-2-mythos-5-2-anthropic-launch-price"
+      ],
+      "underlag": "Ingen lokal underlagsfil. Allt som behövs står i posten. Annonssidan hämtades och lästes 2026-11-10, inklusive Availability-avsnittet och fotnoterna; samtliga tal och namnformer i maste_med är hämtade därifrån. Systemkortet är INTE läst — påståenden som bara finns där får inte skrivas.",
+      "lagd": "2026-11-10",
+      "lagd_av": "Cowork-session 2026-11-10, efter att Rolf påtalat att släppet 2026-11-09 missades av körningen samma morgon (commit 2026-11-10T03:18:59Z). Posten lades som del av felanalysen av frontmodell-vakten. VAD SOM ÄR PRIMÄRVERIFIERAT: samtliga tal, namnformer, effort-nivåer, plattformsuppgifter och fotnotsförbehåll i maste_med och far_inte_pastas är lästa direkt på annonssidan https://www.anthropic.com/claude-fable-and-mythos-5-2 i den här sessionen, inklusive Availability-avsnittet och fotnot 2. Modell-id claude-fable-5-2 likaså. VAD SOM INTE ÄR PRIMÄRVERIFIERAT: (1) Systemkortet är inte läst — URL:en svarar 200 via omdirigering till en PDF, men innehållet är inte granskat, så inget som bara finns där får skrivas. (2) Uppgiften att Claude Enterprise-kunder når Mythos 5.2 via Claude Security står på annonssidan men är inte verifierad mot produktsidan. (3) IPO-inramningen vilar enbart på CNBC. (4) Effort-nivån för Opus 5.5:s 45,5 procent på FrontierCode 2.0 är INTE utläst ur tabellen — sidan använder Max, Xhigh, High och Medium på olika rader, och vilken som gäller just det talet är obekräftat. Skriv därför inte den nivån; ange bara att jämförelsen inte är effort-matchad. (5) Hela posten vilar på en enda läsning av annonssidan 2026-11-10."
+    }
+  ],
   "publicerat": [
     {
       "id": "jev-typesafe-2026-09",
