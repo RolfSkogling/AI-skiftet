@@ -7,8 +7,44 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 05:15:45 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 05:18:04 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google launches TPU 8tx for protected AI workloads and 8i Max with double the compute density</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-10</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-10-google-lanserar-tpu-8tx-for-skyddad-ai-korning</guid>
+      <pubDate>Tue, 10 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Google has unveiled two new systems in its eighth-generation TPU lineup: TPU 8tx, which the company says is optimized for secure and confidential inference, and TPU 8i Max, which combines two TPU 8i chips on a single package.</p>
+<p>TPU 8tx is built on the same silicon as the TPU 8t training chip, is paired with fifth-generation AMD EPYC host CPUs and targets regulated companies and governments that run their own models and agents alongside sensitive data. Google says security is built into the hardware layer so that data and model weights stay protected while in use, but it names no encryption method. According to Google, TPU 8i Max offers double the compute, double the SRAM and double the HBM bandwidth of TPU 8i and fits in the same rack footprint. Google’s post gives no availability or pricing, and the performance figures are the company’s own.</p>
+<p>For the Nordics … TPU 8tx is the one to watch. Google targets regulated companies and governments – in the Nordics that corresponds to, for example, banks such as SEB, Nordea and DNB and hospitals such as Karolinska and Sahlgrenska. For them, the protection of data during processing decides what can run in the cloud. Google gives neither a date nor locations for availability, so whether the systems can run in EU regions is an open question for Nordic procurers.</p>
+<p class="news-card__source">Source: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/">Google</a>, <a href="https://www.theverge.com/ai-artificial-intelligence/1029670/google-announced-two-new-versions-of-its-eighth-gen-ai-chips">The Verge</a></p>]]></description>
+    </item>
+    <item>
+      <title>FT: Anthropic takes over $3.4 billion of gas generators</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-10</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-10-ft-anthropic-tar-over-gasgeneratorer-for-3-4</guid>
+      <pubDate>Tue, 10 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>According to the Financial Times, Anthropic has signed a $3.4 billion deal for gas-fired generators with a combined capacity of 1.7 gigawatts. The agreement was reportedly signed in late September and became public on November 8.</p>
+<p>The generators were originally ordered from Caterpillar by OnePWR Solutions, a power supplier in San Antonio, Texas, which according to the FT lacked the funds to complete the purchase. Anthropic first planned to buy electricity from OnePWR but instead took over the orders and the installation work, without acquiring the company. The details come from a single anonymous source. Neither Anthropic nor OnePWR has been willing to comment, and The Next Web has not independently confirmed them. Where the generators will be used is not known. The news comes as Anthropic prepares a stock market listing; an amended IPO filing reportedly shows commitments of $895 billion, almost all for compute and infrastructure.</p>
+<p>For the Nordics … the point is that access to power increasingly decides how fast AI can be built out. An AI company securing its own gas-fired power shows that electricity supply is a time-critical factor. Sweden and Norway have plenty of hydropower, but to compete with available, fossil-free capacity, Svenska kraftnät and Statnett must be able to connect new load as fast as demand grows.</p>
+<p class="news-card__source">Source: <a href="https://thenextweb.com/news/anthropic-3-4bn-gas-generators-onepwr-ft">The Next Web</a>, <a href="https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0">Financial Times</a></p>]]></description>
+    </item>
+    <item>
+      <title>Tencent launches flagship model Hy4 with image understanding and computer control</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-10</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-10-tencent-lanserar-flaggskeppsmodellen-hy4-med-bildtolkning-och-datorstyrning</guid>
+      <pubDate>Tue, 10 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>On November 4, Tencent presented its new flagship model Hy4, which the company says can interpret images and operate computers through both the command line and graphical interfaces. According to Tencent, the model weights and system cards are due within days, a promise made on November 4 that we have not been able to see fulfilled.</p>
+<p>Tencent says the hallucination rate has fallen from 12.95% to 7.2% and that errors from unsupported assumptions dropped from 23.1% to 5.6% compared with the preview version. The company says material on exploiting software vulnerabilities was kept out of training and that the model is weaker than leading models at designing biological experiments. All figures are Tencent’s own internal measurements. API pricing is about $0.90 per million input tokens and $2.70 per million output tokens. Tencent’s chief AI scientist Yao Shunyu warned last Saturday at an event in Hong Kong, according to the South China Morning Post, that AI models may soon be able to cause harm in biology and said biology risks could be harder to manage than cyber risks.</p>
+<p>For the Nordics … the open weights are what will decide it. Swedish and Norwegian companies can already reach Hy4 through intermediary services such as OpenRouter, where traffic according to the model page goes to Tencent Cloud, and a Chinese model raises questions for security-sensitive players such as Saab and Kongsberg, and data flows to Chinese cloud services are a GDPR matter for IMY and Datatilsynet. Only once the final version’s weights and safety report are out can the model be run locally and audited.</p>
+<p class="news-card__source">Source: <a href="https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/">Tencent</a>, <a href="https://thenextweb.com/news/tencent-yao-shunyu-ai-biology-risk-hy4">The Next Web</a></p>]]></description>
+    </item>
     <item>
       <title>IMY opens review of the Swedish Public Employment Service’s AI tool for jobseekers</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-09</link>
@@ -964,55 +1000,6 @@
 <p>The number of closed Jira issues and completed epics, which the authors use as a measure of shipped features, did not change significantly, and employment at the companies did not fall. Time from pull request to merge rose 49 percent, and the number of revisions roughly doubled. Digi.no reported on the study on October 19 under a headline saying the coding gain stops at 30 percent, but the 30 percent refers to generated lines of code, not total productivity. The data ends in March 2026 and so does not cover later agent generations, and this summary relies on AI Weekly, which cites Ars Technica.</p>
 <p>For the Nordics: The study has no Nordic data, so this is an assessment. If review is the bottleneck, review capacity decides what AI coding delivers in Nordic development organizations, for example at Ericsson, Spotify or Telenor, where codebases are large. For the labor market, the unchanged employment figure runs against the fears otherwise voiced, but it covers a period that ends in March 2026.</p>
 <p class="news-card__source">Sources: <a href="https://aiweekly.co/alerts/harvard-study-ai-coding-agents-lift-code-30-shipped-output-flat">AI Weekly</a>, <a href="https://www.digi.no/kunstig-intelligens/kodegevinst-fra-ki-stopper-ved-30-prosent-slar-ny-studie-fast/7147662">Digi.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Ericsson, KTH and Singapore's NTU to develop AI for trustworthy 6G positioning</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-21-ericsson-kth-och-ntu-i-singapore-ska-ta</guid>
-      <pubDate>Wed, 21 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Ericsson, KTH Royal Institute of Technology and Nanyang Technological University (NTU) in Singapore are starting a research project on trustworthy positioning in 6G networks, Ericsson announced on October 19 during a Singaporean state visit to Sweden. The project combines established positioning methods with AI and automated antenna calibration.</p>
-<p>The aim is reliable positioning where satellite navigation struggles, such as indoors and in environments without a direct line of sight, so that robots, drones and other physical AI systems can be used in areas including healthcare, logistics, ports and manufacturing. The AI methods are to be tested in real 5G and 6G environments in Sweden and Singapore. According to Vinnova's project page, the work uses graph neural networks to determine whether there is a line of sight, and robotic reference units will validate the results. The dates differ between the sources: Ericsson says the project starts in November 2026, while Vinnova's page lists a period from November 2025 to July 2027.</p>
-<p>For the Nordics: This is primarily a Swedish story. Ericsson coordinates, KTH leads, according to Ericsson, AI and algorithm development, with Professor Karl H Johansson quoted in the announcement, and Vinnova funds the project with just under SEK 3 million according to its project page. For Swedish industry using robots and autonomous systems, from ports to manufacturing, precise indoor positioning is a prerequisite that today's satellite systems do not solve. The results are research, not a finished product.</p>
-<p class="news-card__source">Sources: <a href="https://www.ericsson.com/en/news/2026/10/ericsson-partners-with-leading-technology-institutions-on-6g">Ericsson</a>, <a href="https://www.vinnova.se/en/p/trustworthy-6g-positioning-in-complex-environments-a-data-driven-approach">Vinnova</a></p>]]></description>
-    </item>
-    <item>
-      <title>Quantinuum says logical error rate is about ten times lower with color code on Helios</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-21-quantinuum-logisk-felfrekvens-ungefar-tio-ganger-lagre-med</guid>
-      <pubDate>Wed, 21 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Quantinuum announced on October 19 that its Helios computer has reached 99.9995 percent logical fidelity with a color code, equivalent to five errors per million. The company says the error rate is roughly ten times lower than its own record from September and roughly 100 times lower than the best published result on other hardware, from Google Quantum AI.</p>
-<p>The record figure concerns a logical memory, a qubit held through repeated error-correction rounds, not logical operations. According to a review by PostQuantum, the distance-7 figure rests on three logical failures in 29,000 runs, decoding was done offline, the paper was not peer reviewed at announcement, and logical two-qubit operations at distance 7 were not run. According to PostQuantum's reading of a figure in the paper, an error-correction round takes about 0.2 seconds on Helios, against roughly 1.1 microseconds per cycle on Google's Willow, so the machine is much slower in wall-clock time. Quantinuum itself says the results were achieved under experimental conditions and may not replicate at larger scale. The goal is a fault-tolerant computer, Apollo, by 2029.</p>
-<p>For the Nordics: Several of the largest Nordic quantum efforts are built on a different technology than Quantinuum's trapped ions. The Wallenberg Centre for Quantum Technology (WACQT) at Chalmers and Finland's IQM work with superconducting qubits. The comparison with Google's superconducting system is therefore the one that concerns them, but Quantinuum's advantage in error rate has to be weighed against the much lower speed. The sources name no Nordic actors, so this is an assessment.</p>
-<p class="news-card__source">Sources: <a href="https://www.quantinuum.com/press-releases/quantinuum-breaks-error-correction-world-record-by-10x-validating-its-leading-path-to-fault-tolerant-quantum-computing-by-2029">Quantinuum</a>, <a href="https://postquantum.com/industry-news/quantinuum-color-code-helios/">PostQuantum</a></p>]]></description>
-    </item>
-    <item>
-      <title>DHS bans DeepSeek across US civilian agencies, with immediate removal</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-21-dhs-forbjuder-deepseek-i-usa-s-civila-myndigheter</guid>
-      <pubDate>Wed, 21 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>The US Department of Homeland Security (DHS) has ordered civilian federal agencies to stop buying DeepSeek products and to immediately remove those already in use, according to a notice published in the Federal Register on October 20. The order covers DeepSeek's parent company Hangzhou DeepSeek Artificial Intelligence and its affiliates and, according to BleepingComputer, third-party products built with DeepSeek technology.</p>
-<p>Agencies can request exceptions, and according to BleepingComputer CISA reviews the applications. The sources give a 60-day limit but describe it differently: within 60 days of the order's issuance (BleepingComputer) and 60 days in advance (CyberScoop). DHS justifies the decision by saying DeepSeek stores data on servers in China and that Chinese law can give the state access to it. According to CyberScoop the order is a DHS letter dated June 26 and has applied for months, while BleepingComputer does not mention that date and writes that DHS is now taking regulatory action, so the issue date is unclear. The order does not apply to private or consumer use, and it is unclear whether it covers open model weights run locally.</p>
-<p>For the Nordics: The Storting and the Riksdag took different paths in early 2025. According to Altinget, the Storting blocked DeepSeek on members' phones and computers after word from Norway's National Security Authority (NSM), while the Riksdag allowed its use. The Swedish government replied in February 2025 that it is not possible to legislate to ban a particular app, because the Instrument of Government requires laws to be general, and that each agency is responsible for which services may be used. The sources here do not show the current situation.</p>
-<p class="news-card__source">Sources: <a href="https://cyberscoop.com/dhs-bans-deepseek-federal-agencies/">CyberScoop</a>, <a href="https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/">BleepingComputer</a>, <a href="https://www.altinget.dk/embedsvaerk/artikel/trods-forbud-hos-nordiske-naboer-tillader-sveriges-parlament-brugen-af-kinesisk-ai-chatrobot">Altinget</a>, <a href="https://data.riksdagen.se/dokument/HC12801.html">Riksdagen</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI reportedly rushes to raise $30 billion ahead of Anthropic's listing</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-21</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-21-openai-jagar-30-miljarder-dollar-infor-anthropics-borsnotering</guid>
-      <pubDate>Wed, 21 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>OpenAI is seeking to raise about $30 billion in a new funding round that could value the company above $1.4 trillion, up from $852 billion in March, Reuters reports, citing unnamed sources. Existing investors including SoftBank and MGX are reportedly negotiating to join. Neither OpenAI nor SoftBank has commented, and no terms are final.</p>
-<p>According to Reuters, OpenAI's annualized revenue has reached about $50 billion, and the company expects $70 billion by year-end. For Anthropic, revenue is reported to have risen from $11.6 billion in the second quarter to $16.8 billion in the third. A stock market listing is expected, according to PYMNTS as soon as next month, though no exact date has been disclosed. The companies count revenue differently: OpenAI claims Anthropic overstates it by booking full contract values sold through third-party clouds, which Anthropic disputes. All figures are the companies' own, relayed through sources.</p>
-<p>For the Nordics: The sources name no Nordic actors, so this is an assessment. For Nordic organizations that buy access to American models, whether a bank, a telecom company or a municipality, the companies' capital needs may affect pricing and long-term availability. According to Reuters, OpenAI wants to close the round before Anthropic's financial disclosures make a direct comparison of the two companies possible.</p>
-<p class="news-card__source">Sources: <a href="https://qz.com/openai-30-billion-funding-round-anthropic-ipo-102026">Quartz</a>, <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-racing-to-raise-30-billion-ahead-of-anthropic-listing/">PYMNTS</a></p>]]></description>
     </item>
   </channel>
 </rss>
