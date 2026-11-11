@@ -15,7 +15,8 @@
     "kallor": "URL:er att faktakontrollera mot",
     "underlag": "lokal researchfil hos Rolf. Körningen kan INTE läsa den — allt som behövs ska stå i posten."
   },
-  "ko": [
+  "ko": [],
+  "publicerat": [
     {
       "id": "anthropic-fable-mythos-5-2-2026-11",
       "tidigast": "2026-11-10",
@@ -64,10 +65,10 @@
       ],
       "underlag": "Ingen lokal underlagsfil. Allt som behövs står i posten. Annonssidan hämtades och lästes 2026-11-10, inklusive Availability-avsnittet och fotnoterna; samtliga tal och namnformer i maste_med är hämtade därifrån. Systemkortet är INTE läst — påståenden som bara finns där får inte skrivas.",
       "lagd": "2026-11-10",
-      "lagd_av": "Cowork-session 2026-11-10, efter att Rolf påtalat att släppet 2026-11-09 missades av körningen samma morgon (commit 2026-11-10T03:18:59Z). Posten lades som del av felanalysen av frontmodell-vakten. VAD SOM ÄR PRIMÄRVERIFIERAT: samtliga tal, namnformer, effort-nivåer, plattformsuppgifter och fotnotsförbehåll i maste_med och far_inte_pastas är lästa direkt på annonssidan https://www.anthropic.com/claude-fable-and-mythos-5-2 i den här sessionen, inklusive Availability-avsnittet och fotnot 2. Modell-id claude-fable-5-2 likaså. VAD SOM INTE ÄR PRIMÄRVERIFIERAT: (1) Systemkortet är inte läst — URL:en svarar 200 via omdirigering till en PDF, men innehållet är inte granskat, så inget som bara finns där får skrivas. (2) Uppgiften att Claude Enterprise-kunder når Mythos 5.2 via Claude Security står på annonssidan men är inte verifierad mot produktsidan. (3) IPO-inramningen vilar enbart på CNBC. (4) Effort-nivån för Opus 5.5:s 45,5 procent på FrontierCode 2.0 är INTE utläst ur tabellen — sidan använder Max, Xhigh, High och Medium på olika rader, och vilken som gäller just det talet är obekräftat. Skriv därför inte den nivån; ange bara att jämförelsen inte är effort-matchad. (5) Hela posten vilar på en enda läsning av annonssidan 2026-11-10."
-    }
-  ],
-  "publicerat": [
+      "lagd_av": "Cowork-session 2026-11-10, efter att Rolf påtalat att släppet 2026-11-09 missades av körningen samma morgon (commit 2026-11-10T03:18:59Z). Posten lades som del av felanalysen av frontmodell-vakten. VAD SOM ÄR PRIMÄRVERIFIERAT: samtliga tal, namnformer, effort-nivåer, plattformsuppgifter och fotnotsförbehåll i maste_med och far_inte_pastas är lästa direkt på annonssidan https://www.anthropic.com/claude-fable-and-mythos-5-2 i den här sessionen, inklusive Availability-avsnittet och fotnot 2. Modell-id claude-fable-5-2 likaså. VAD SOM INTE ÄR PRIMÄRVERIFIERAT: (1) Systemkortet är inte läst — URL:en svarar 200 via omdirigering till en PDF, men innehållet är inte granskat, så inget som bara finns där får skrivas. (2) Uppgiften att Claude Enterprise-kunder når Mythos 5.2 via Claude Security står på annonssidan men är inte verifierad mot produktsidan. (3) IPO-inramningen vilar enbart på CNBC. (4) Effort-nivån för Opus 5.5:s 45,5 procent på FrontierCode 2.0 är INTE utläst ur tabellen — sidan använder Max, Xhigh, High och Medium på olika rader, och vilken som gäller just det talet är obekräftat. Skriv därför inte den nivån; ange bara att jämförelsen inte är effort-matchad. (5) Hela posten vilar på en enda läsning av annonssidan 2026-11-10.",
+      "publicerad": "2026-11-11",
+      "commit": "dc8701bf7a754978088f4268f0879df836335a9c"
+    },
     {
       "id": "jev-typesafe-2026-09",
       "tidigast": "2026-09-19",
