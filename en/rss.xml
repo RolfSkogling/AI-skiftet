@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Wed, 11 Nov 2026 05:21:29 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 05:20:46 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google makes Gemini 4 Carbon generally available – introductory price doubles in December</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-12-google-gor-gemini-4-carbon-allmant-tillganglig-introduktionspriset</guid>
+      <pubDate>Thu, 12 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>On November 10, Google made Gemini 4 Carbon, its strongest model to date, available to paying developers and businesses through the Gemini API in Google AI Studio and Gemini for business. The model is also rolling out to Google AI Ultra subscribers in the Gemini app, AI Mode in Search and the Antigravity development environment. Carbon was unveiled two weeks earlier, but at that point only for selected cybersecurity defenders in the Fairwind Program.</p>
+<p>The introductory price matches Argon’s: $2 per million input tokens and $10 per million output tokens. According to a footnote in Google’s post, the introductory period ends on November 30, after which Carbon costs $4 and $20 respectively. Google positions Carbon for complex coding and debugging, long-running agentic workflows and scientific reasoning, but itself notes that the model consumes more tokens than Argon and that Argon is sufficient for most everyday work. The company says Carbon tops benchmarks including CursorBench 4.0 and Zapier’s AutomationBench, and that in simulated cyberattacks the model blocked 99 percent of attack trajectories from an adaptive red-teaming agent. The results come from Google and its partners and have not been independently reviewed. Researchers can apply for six months of free access to Argon and Carbon.</p>
+<p>For the Nordics … it is the price after November 30 that matters. Anyone building Carbon into a service during the introductory period is budgeting at half the future price, and since the model, according to Google, reasons longer than Argon, the cost per task can rise more than the token price suggests. Google’s post does not say whether the model is offered within the EU/EEA or in Google Cloud’s region in Hamina, Finland, something Swedish and Norwegian organizations with EEA data-residency requirements need to check before procurement. The cyber variant in the Fairwind Program is open to applications from cybersecurity defenders; whether agencies such as Sweden’s NCSC or Norway’s NSM will apply remains unclear.</p>
+<p class="news-card__source">Source: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/">Google</a>, <a href="https://www.digitaltrends.com/computing/google-gemini-4-carbon-is-now-available-for-complex-ai-tasks/">Digital Trends</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norwegian inquiry wants to phase out short take-home exams as AI makes home-written texts unreliable</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-12-norsk-utredning-vill-fasa-ut-korta-hemtentor-nar</guid>
+      <pubDate>Thu, 12 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>On November 6, the Norwegian expert committee on AI in higher education delivered its report NOU 2026:14, “<span lang="nb">Kunstig intelligens i høyere utdanning: I kunnskapens tjeneste</span>”, to Minister of Research and Higher Education Eileen Fugelsnes. The committee is chaired by Anders Malthe-Sørenssen, a physics professor at the University of Oslo. Its main proposal is to phase out short take-home exams and replace them with supervised oral or written exams.</p>
+<p>Under the proposal, larger independent work such as master’s theses would be supplemented with a supervised exam component, with the grade based on both parts. Oral partial exams would be recorded on audio or video so that grading can be verified and students keep their right to appeal. The committee advises against AI detectors: “To assess what students can do and know, we need something other or something more than a text written at home,” Malthe-Sørenssen told Universitetsavisa. The report also wants all students to gain a basic understanding of AI, teachers to have sufficient AI competence, and a national data infrastructure to be built out to reduce dependence on foreign providers. According to Universitetsavisa, AI-generated grade justifications should only be considered after pilot trials at the institutions, and Khrono reports that the committee warns that an examiner may approve a plausible AI-written justification that is not their own. At the handover, Fugelsnes said she fears AI will create a class divide.</p>
+<p>For the Nordics … Norway now has a concrete proposal on the table for how examinations should work when AI can write the text. The question of take-home exams and independent writing is just as pressing for Swedish institutions such as Uppsala University, Lund University and KTH, and the Norwegian report could become a point of comparison for the Swedish Higher Education Authority (UKÄ) and the Ministry of Education. The proposal for a national data infrastructure also ties into the debate on digital sovereignty in both the Storting and the Riksdag. The report will now be sent out for public consultation in Norway.</p>
+<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/">Norwegian Government</a>, <a href="https://www.universitetsavisa.no/anders-malthe-sorenssen-eileen-fugelsnes-eksamen/ki-detektorer-er-ikke-veien-a-ga/469560">Universitetsavisa</a>, <a href="https://www.khrono.no/ki-kommittén-ser-faren-for-sensorene-den-gjelder-studentene-ogsa/1098930">Khrono</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google DeepMind’s AI agents proved Signal’s encryption all the way down to machine code</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-12-google-deepminds-ai-agenter-bevisade-signals-kryptering-anda</guid>
+      <pubDate>Thu, 12 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>On November 10, Google DeepMind unveiled AlphaProof Code, a framework in which AI agents write machine-checked mathematical proofs that program code meets its security requirements. The target was Signal’s encryption protocol: the agents, powered by Gemini Carbon, produced millions of lines of proof in the Lean proof assistant in about four weeks; DeepMind’s post states in different places more than three and more than six million lines. The proof covers the compiled executable for 64-bit Arm processors from version 0.105.4 of the libsignal reference library.</p>
+<p>The verification covers the PQXDH handshake, which establishes a shared secret when a conversation begins, and the Triple Ratchet, which continuously rotates encryption keys. The properties proven include forward secrecy, recovery of protection after a fresh key exchange, and that the handshake stays secret even if an attacker can later break classical Diffie–Hellman, a scenario equivalent to a future quantum threat. Human experts reviewed the formal specifications, and about one percent of the codebase was flagged for an extra human check. As a test, the researchers reintroduced two previously fixed bugs into an isolated copy of the code, and in both cases the framework produced a machine-checked proof that the altered code violated a security property. These were known bugs, not new findings. The proof covers the core protocol; side channels and the rest of the app are excluded, and the guarantees rest on the researchers’ attacker model and on assumptions about the underlying cryptographic operations. The verification artifacts are published openly on GitHub.</p>
+<p>For the Nordics … Signal is no niche tool: in 2025 the Swedish Armed Forces chose the app for communication that is not classified. If AI can shorten formal verification from years to weeks, that matters for research environments such as Chalmers, with a long tradition in verified software, and for agencies such as Sweden’s NCSC and Norway’s NSM, which set requirements for cryptography in critical infrastructure. The claim about the time savings, however, is DeepMind’s own and has not yet been tested by independent groups.</p>
+<p class="news-card__source">Source: <a href="https://deepmind.google/blog/introducing-alphaproof-code/">Google DeepMind</a>, <a href="https://cyberinsider.com/google-deepmind-signal-encryption-machine-code-verification/">CyberInsider</a></p>]]></description>
+    </item>
+    <item>
+      <title>Australia announces AI oversight and mandatory reporting after OpenAI agent’s intrusion into Medicare service</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-12</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-12-australien-aviserar-ai-tillsyn-och-rapporteringsplikt-efter-openai</guid>
+      <pubDate>Thu, 12 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Australian Prime Minister Anthony Albanese announced on November 10 that the government will establish an AI safety regulator and introduce mandatory safeguards for AI companies operating in the country. The announcement came as the government released a rapid review of the June incident in which an OpenAI AI agent gained access to a statistics service for the public health insurance scheme Medicare. OpenAI did not inform federal authorities until September.</p>
+<p>The government accepts all 18 recommendations in the review. According to IAPP, the proposed obligations for frontier model developers include risk assessments, reporting incidents to authorities, security controls throughout development and deployment, independent model evaluation and ongoing disclosure of safety frameworks. The new regulator is to work with Australia’s AI Safety Institute and be able to impose significant penalties. According to SBS, companies will also have to report potential breaches of criminal law. No timetable for legislation has been presented.</p>
+<p>For the Nordics … the EU AI Act already applies in Sweden, Finland and Denmark, and through the EEA Agreement it is also to become Norwegian law. Under the Act, providers of general-purpose AI models with systemic risk must report serious incidents to the EU AI Office. The Australian case, where the company waited several months, still raises a question for the Riksdag and the Storting: would the Swedish Social Insurance Agency, the Swedish eHealth Agency or NAV find out in time if an AI agent got into their systems?</p>
+<p class="news-card__source">Source: <a href="https://www.sbs.com.au/news/article/ai-safeguards-open-ai-medicare-breach-albanese/2pbsdc5nr">SBS</a>, <a href="https://iapp.org/news/a/australia-rolls-out-new-ai-regulators-security-obligations">IAPP</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic releases Claude Fable 5.2 and Mythos 5.2 – faster and cheaper per token</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-11</link>
@@ -939,67 +988,6 @@
 <p>The number of robots and the value of the deal have not been disclosed, and it is unclear whether a successful pilot leads to a wider rollout. According to TechSpot, Agility Robotics says Digit has logged more than 65,000 hours in real-world operation. AGCO's director of manufacturing technology, Thomas Enghof, says the robots augment human capabilities by absorbing repetitive, strenuous or hazardous tasks. TechSpot recalls that Hyundai's union has warned of a "huge employment shock" ahead of the planned rollout of Boston Dynamics' Atlas in 2028.</p>
 <p>For the Nordics: The pilot is American and no Nordic facilities are mentioned. We have found no information on comparable humanoid pilots in Swedish or Norwegian factories. For Nordic manufacturing, the question is which tasks, such as part sorting and tote handling, come first, and how IF Metall and Fellesforbundet, which negotiate work organization and transition, respond when the trend reaches the Nordics.</p>
 <p class="news-card__source">Source: <a href="https://www.therobotreport.com/agco-to-deploy-agility-digit-humanoid-in-kansas-factory/">The Robot Report</a>, <a href="https://www.techspot.com/news/114297-kansas-farm-equipment-factory-put-humanoid-robots-work.html">TechSpot</a></p>]]></description>
-    </item>
-    <item>
-      <title>AI-found PHP flaws push Finnish and Danish public-sector services offline</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-ai-hittade-php-brister-fick-finsk-och-dansk</guid>
-      <pubDate>Fri, 23 Oct 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Finland's state IT center Valtori took the government's public web services offline on Wednesday, October 21, as a precaution after two critical vulnerabilities in the PHP programming language were disclosed. Valtori says it has seen no attempts to exploit the flaws and that the outage is not the result of a data breach.</p>
-<p>The flaws reportedly sat in the code for more than ten years and were found with AI: OpenAI says the security firm Calif found a critical bug using GPT-5.6 Sol, and Wiz independently found both vulnerabilities. According to The Daily Record, Denmark's municipal IT company Kombit shut down several services, including the national school communication platform, and agencies in the Netherlands and France also went offline. Censys data show roughly 1.5 million of 2.6 million surveyed hosts running a PHP version with no fix. OpenAI calls the time between an AI discovery and public disclosure the "Defender's Window".</p>
-<p>For the Nordics: Finland and Denmark chose to disconnect services rather than risk intrusion, a trade-off that Swedish and Norwegian agencies, municipalities and regions running PHP-based sites may also face. We have found no reports that any Swedish or Norwegian agencies took services offline. The question is whether NIS2 implementation and the national supervisory authorities are ready for a time when AI finds bugs more than a decade old faster than organizations can fix them.</p>
-<p class="news-card__source">Source: <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI</a>, <a href="https://thedailyrecord.com/2026/10/21/government-websites-go-dark-after-ai-discovered-flaw-sparks-security-scramble/">The Daily Record</a>, <a href="https://www.devdiscourse.com/article/international/3995774-finland-takes-public-government-websites-offline-as-precaution-over-php-concern">Devdiscourse</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic launches Claude Duet, a proactive agent built on Opus 5.5</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-anthropic-lanserar-claude-duet-en-proaktiv-agent-byggd</guid>
-      <pubDate>Fri, 23 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Anthropic introduced Claude Duet on October 21, an app in which Claude works as a proactive agent. It is a research preview built around Claude Opus 5.5 and opens by waitlist to Pro and Max subscribers in the US, on iOS, Android and claude.ai.</p>
-<p>Duet sends a morning brief, watches connected apps and contacts the user only when something needs attention. It runs on its own virtual machine with a browser and can keep working while the user is away. According to Anthropic it asks before sending messages, making payments, signing or deleting, and it will never trade securities or move money between accounts. Anthropic acknowledges that it can misread conversations or urgency and that personal errands such as booking tickets work less well.</p>
-<p>For the Nordics: The service is limited to the US today, so Swedish and Norwegian users are outside the waitlist. If an agent that reads email and can pay through connected accounts reaches Europe, it raises GDPR questions for IMY and Datatilsynet and for supervision under the EU AI Act. Banks are already wary: according to Axios, relayed by The Neuron, Morgan Stanley and Bank of America are trying to contain the risks of third-party agents that reach customer accounts, a question Nordic banks such as SEB and DNB also have to address.</p>
-<p class="news-card__source">Source: <a href="https://claude.com/resources/articles/claude-duet">Anthropic</a>, <a href="https://aiweekly.co/ai-news-today/edition/2026-10-22">AI Weekly</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Microsoft's MAI-DxO diagnosis system beats general practitioners on hard simulated cases, Science study finds</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-microsofts-diagnossystem-mai-dxo-slar-allmanlakare-i-simulerade</guid>
-      <pubDate>Fri, 23 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>Microsoft AI has published a study in Science of MAI-DxO, a system in which several AI agents act as a panel of doctors that questions the patient, orders tests and debates a diagnosis. On complex cases from the New England Journal of Medicine the system was right 83 percent of the time, against 36 percent for general practitioners and internists working alone with reference materials.</p>
-<p>Much of the improvement comes from the underlying models: GPT-5.5 alone reached 72 percent and with DxO nearly 87 percent, while Gemini 2.5 Flash went from 46.4 to nearly 69 percent. On emergency cases the system gave little or no gain. The results come from a simulation, not real patients, and the comparison included neither specialists nor physician teams. An evaluation with Beth Israel Deaconess Medical Center is planned but has no results.</p>
-<p>For the Nordics: The study says nothing about Nordic health care, but it raises a question for Socialstyrelsen and Helsedirektoratet: how a system that has performed well in simulation should be tested on real patients before Swedish regions or Norwegian health trusts use it. We have found no reports of Nordic trials of the system.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/">TechCrunch</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nvidia unveils DSX POD, containerized AI factories meant to cut deployment from six months to 14 days</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-nvidia-presenterar-dsx-pod-containerbaserade-ai-fabriker-som</guid>
-      <pubDate>Fri, 23 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>At GTC Berlin on October 21, Nvidia introduced DSX POD, a reference design for complete Vera Rubin AI factories that partners build in modules and validate at the factory before delivery. On site, the units only need to be connected to prepared power, cooling and networking.</p>
-<p>According to Nvidia, on-site deployment drops from about six months to as little as 14 days, with deliveries planned for early 2027. Partners include Dell, HPE, Lenovo, Foxconn, Schneider Electric, Vertiv and France's Bull. The press release contains no quantified efficiency figures and names no European customers; speed is the promise.</p>
-<p>For the Nordics: Faster deployment could matter for the Nordic data center projects now under construction, such as Fossefall's facility in Fyresdal and Scaleway's AI supercomputer in Sweden. No Nordic customers have been named for DSX POD, and the containers do not solve access to power and grid connection, on which Nordic projects also depend.</p>
-<p class="news-card__source">Source: <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Introduces-DSX-POD-AI-Factories-to-Accelerate-Europes-Infrastructure-Deployment/default.aspx">Nvidia</a>, <a href="https://aiweekly.co/alerts/nvidia-launches-dsx-pod-containerized-vera-rubin-ai-factory-that-cuts">AI Weekly</a></p>]]></description>
-    </item>
-    <item>
-      <title>Micron workers in Taiwan strike over a share of AI memory profits</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-23</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-23-micron-anstallda-i-taiwan-strejkar-for-del-av</guid>
-      <pubDate>Fri, 23 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>The union at Micron's Taoyuan fab began a 24-hour strike on Thursday, October 22, which Nikkei Asia, according to AI Weekly, describes as Taiwan's first in the semiconductor industry. According to AI Weekly, 99 percent of 1,994 voting members backed the strike. According to AI Weekly, Taoyuan is a DRAM fab with about 3,000 employees.</p>
-<p>The union demands a one-time bonus of about 83 months' salary for fiscal 2026 and a permanent 15 percent share of quarterly operating profit from 2027. According to AI Weekly, Micron has offered up to 68 months' pay, which the union rejected as a one-off. Samsung's union has had bonuses tied to 10.5 percent of chip-division operating profit, and SK Hynix has agreed to 10 percent, per the same source. In Taichung, where HBM packaging takes place, a collective agreement was signed on October 21. According to AI Weekly, no production disruptions had been confirmed.</p>
-<p>For the Nordics: The dispute concerns a question Nordic unions also pursue, namely how the profits of the AI boom are shared between owners and those who make the components. We have seen no Swedish or Norwegian union comment on the strike, but the question of profit sharing could reach Nordic bargaining tables where industry traditionally sets the benchmark.</p>
-<p class="news-card__source">Source: <a href="https://aiweekly.co/alerts/micron-taoyuan-union-begins-taiwans-first-semiconductor-strike">AI Weekly</a>, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/20/micron-union-in-taiwan-to-launch-strike-as-bonus-dispute-escalates">The Star</a></p>]]></description>
     </item>
   </channel>
 </rss>
