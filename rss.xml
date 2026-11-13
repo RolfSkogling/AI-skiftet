@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 12 Nov 2026 05:20:46 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 05:17:58 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Google släpper Gemini 4 Hydrogen – snabb vardagsmodell för agentiskt arbete till lågt pris</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-13-google-slapper-gemini-4-hydrogen-snabb-vardagsmodell-for</guid>
+      <pubDate>Fri, 13 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Google lanserade den 12 november Gemini 4 Hydrogen, som bolaget kallar sin ”daily driver” för agentiska arbetsflöden. Modellen är tänkt för kodning, agenter och vardagsuppgifter, medan de större Gemini 4 Carbon och Argon står för djupt och långvarigt resonemang. Hydrogen finns i Gemini API, Google AI Studio, Android Studio och Gemini for business, och i Gemini-appen får gratisanvändare den via det automatiska modellvalet.</p>
+<p>Priset är 1,50 dollar per miljon inmatade och 7,50 dollar per miljon utmatade tokens, lika över hela kontextfönstret på en miljon tokens. Modellen har fyra tänkenivåer, där den nya xhigh är den högsta. Enligt Google når Hydrogen 51 på Artificial Analysis Intelligence Index på standardnivån high, mot 50 för Argon, och löser uppgifter 2,5 gånger snabbare än Gemini 3.8 Flash. Enligt Googles egna jämförelser, som Digital Trends återger, ligger modellen långt före OpenAIs GPT 6.1 Terra och Anthropics Claude Sonnet 5.5 i kunskapstester men något efter dem i naturvetenskap och matematik, datorstyrning och Terminal-Bench 4.1. Siffrorna kommer från Google och har inte granskats oberoende.</p>
+<p>För Norden … är det framför allt priset som spelar roll. Hydrogen kostar drygt en tredjedel av vad Carbon kommer att kosta efter introduktionsperioden, 4 dollar per miljon inmatade och 20 dollar per miljon utmatade tokens, och blir därmed ett naturligt första val att prova för svenska och norska utvecklare som kör agentflöden i större volym. Google anger inte om modellen erbjuds inom EU/EES, något som organisationer med krav på datalagring inom EES behöver kontrollera före en upphandling.</p>
+<p class="news-card__source">Källa: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Google</a>, <a href="https://www.digitaltrends.com/cool-tech/googles-next-gen-gemini-4-hydrogen-ai-model-is-here-touting-faster-intelligence-for-all/">Digital Trends</a>, <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/">Google (Carbon)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Jensen Huang lämnar Nvidia – finanschefen Colette Kress blir tillfällig vd</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-13-jensen-huang-lamnar-nvidia-finanschefen-colette-kress-blir</guid>
+      <pubDate>Fri, 13 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidias styrelse meddelade den 12 november att Jensen Huang lämnar posterna som koncernchef, vd och styrelseledamot med omedelbar verkan. Huang var med och grundade bolaget och har lett det i 33 år. Beskedet, som också lämnades till den amerikanska börsmyndigheten SEC, anger inget skäl till avgången.</p>
+<p>Beskedet kom fyra dagar efter att styrelsen den 8 november inlett en oberoende intern utredning av om Huang varit måltavla för en kinesisk underrättelseoperation. Utredningen följde på uppgifter i New York Times om Huangs nära relation till en tidigare chef på det Singaporebaserade bolaget Megaspeed, en person som amerikanska myndigheter enligt rapporteringen bedömt vara en kinesisk underrättelsetillgång, något Kina förnekar. Styrelsen sade då att den inte hade skäl att tro att nationell säkerhet eller bolagets hemligheter röjts. Finanschefen Colette Kress blir tillfällig vd och behåller samtidigt finanschefsrollen, och förre Synopsys-chefen Harvey C. Jones blir bolagets första styrelseordförande. Nvidia redovisar sitt kvartalsresultat den 17 november.</p>
+<p>För Norden … är Nvidia leverantören bakom flera av de AI-satsningar som byggs just nu. Det svenska AI-bolaget Sferical AI, som ägs av AstraZeneca, Ericsson, Saab, SEB och Wallenberg Investments, har byggt sin superdator Sferical One på Nvidias system. Styrelsen lovar att produktplanen och kundåtagandena löper vidare utan avbrott; för nordiska köpare av AI-beräkningskraft blir leveransplanerna efter kvartalsrapporten den 17 november ett första test av om löftet håller.</p>
+<p class="news-card__source">Källa: <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm">Nvidia/SEC</a>, <a href="https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang">Al Jazeera</a>, <a href="https://www.ericsson.com/en/news/2026/10/ericsson-and-partners-launch-sferical-one-ai-supercomputer">Ericsson</a></p>]]></description>
+    </item>
+    <item>
+      <title>Google DeepMinds nya robotmodell klarade 96 procent av packuppgifterna i Mercedes-Benz-fabriker</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-13-google-deepminds-nya-robotmodell-klarade-96-procent-av</guid>
+      <pubDate>Fri, 13 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Google DeepMind presenterade den 10 november Gemini Robotics 2.5, en så kallad vision-language-action-modell som styr robotar utifrån bilder och instruktioner i vanligt språk. Modellen har testats på över 200 olika uppgifter, från att servera mat med tång till att pipettera vätskor.</p>
+<p>Enligt DeepMind ligger lyckandegraden 30 till 100 procent högre än för tidigare jämförelsemodeller, beroende på uppgiftstyp, och uppgifterna utförs 20 till 30 procent snabbare. I konceptprov hos Mercedes-Benz sorterade och packade Apptroniks humanoidrobot Apollo 2 metallfästen på produktionslinjer i Kecskemét i Ungern och Sindelfingen i Tyskland med 96 procents lyckandegrad. Modellen rullas nu ut till robotpartner som Apptronik, Agile Robots och Boston Dynamics, inte till allmänheten. DeepMind släppte samtidigt det öppna testet ASIMOV-Jailbreak, som mäter hur väl robotmodeller står emot försök att lura dem att bryta mot säkerhetsregler. Resultaten kommer från DeepMind och partnerna och har inte granskats oberoende.</p>
+<p>För Norden … är plockning och packning av detaljer vardag i fabriker som Volvo Cars i Torslanda och Scania i Södertälje, och arbetet är fortfarande personalintensivt. Ett konceptprov är inget produktionsbeslut, men 96 procent i en verklig fabriksmiljö är den sortens siffra som får industrin att börja räkna på humanoider. 1X Technologies, som grundades i Norge under namnet Halodi Robotics, konkurrerar om samma marknad som Apptronik, och för IF Metall och norska Fellesforbundet blir frågan hur sådana robotar ska förhandlas in på golvet innan de står där.</p>
+<p class="news-card__source">Källa: <a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">Google DeepMind</a>, <a href="https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/">SiliconANGLE</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norge och Storbritannien undertecknar avsiktsförklaring om samarbete kring AI</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-13</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-13-norge-och-storbritannien-undertecknar-avsiktsforklaring-om-samarbete-kring</guid>
+      <pubDate>Fri, 13 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norges digitaliserings- och förvaltningsminister Torgeir Micaelsen (Ap) och Storbritanniens AI-minister Kanishka Narayan undertecknade den 12 november en avsiktsförklaring om samarbete kring artificiell intelligens. Signeringen skedde ombord på hangarfartyget HMS Prince of Wales vid Akershus fästning i Oslo, under seminariet Atlantic Future Forum.</p>
+<p>Länderna ska enligt den norska regeringen bygga på varandras styrkor inom AI, forskning och innovation, säker digital infrastruktur och tillgång till ren energi. Myndigheter, forskningsmiljöer och näringsliv i de båda länderna ska samarbeta tätare, och på norsk sida samordnas arbetet av det norska digitaliseringsdepartementet. Inga belopp eller någon tidplan anges, och avsiktsförklaringen ska enligt Adresseavisen konkretiseras vid en senare tidpunkt.</p>
+<p>För Norden … ger avsiktsförklaringen Norge en andra kanal i AI-politiken. Norge står utanför EU men ska ta in EU:s AI-förordning via EES-avtalet, medan Storbritannien, som också står utanför EU, driver en egen linje. Om avsiktsförklaringen får betydelse avgörs av vad som följer: om norska Forskningsrådet, Sintef eller NTNU får konkreta uppdrag eller medel kopplade till den. För svenska aktörer är det en signal om att grannlandet söker AI-allianser även utanför EU-ramen.</p>
+<p class="news-card__source">Källa: <a href="https://www.regjeringen.no/no/aktuelt/norge-og-storbritannia-etablerer-samarbeid-om-kunstig-intelligens/id3192548/">Norska regeringen</a>, <a href="https://www.adressa.no/nyheter/innenriks/i/yz31le/norge-og-storbritannia-inngaar-ki-avtale">Adresseavisen</a>, <a href="https://www.shifter.no/nyheter/norge-og-storbritannia-inngar-ai-avtale/482707">Shifter</a></p>]]></description>
+    </item>
     <item>
       <title>Google gör Gemini 4 Carbon allmänt tillgänglig – introduktionspriset dubbleras i december</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-12</link>
@@ -939,55 +988,6 @@
 <p>Google ställer startkretsar, verifieringsprogram och biblioteket kickmix i det öppna projektet Qualtran till förfogande. Kickmix testar kretsar på vanliga datorer med slumpad fuzz-testning och visar ungefärlig, inte exakt, korrekthet. De tre uppgifterna gäller fusionsenergi, optimering med Decoded Quantum Interferometry och kemi kring enzymet nitrogenas (FeMoCo). Google uppger att interna experiment med Gemini redan slagit tidigare publicerade kretsar på alla tre och har publicerat en hash av resultaten som avslöjas efter tävlingen. Förstapriset är 50 000 dollar, milstolpspriset avgörs den 20 november och priset till den som legat längst i ledning avgörs den 4 januari 2027.</p>
 <p>För Norden … Finska IQM, grundat 2018 i Esbo och sedan juli 2026 det första europeiska kvantbolaget på Nasdaq, ska enligt Telefónica leverera ett system av typen IQM Spark med fem qubits till Universidad Politécnica de Madrid före årets slut. Hur få qubits och grindar en algoritm behöver är också relevant för Chalmers och Wallenberg Centre for Quantum Technology (WACQT), som utvecklar supraledande kvantdatorer.</p>
 <p class="news-card__source">Källa: <a href="https://thequantuminsider.com/2026/10/23/google-launches-150000-ai-competition-to-reduce-quantum-computing-demands/">The Quantum Insider</a>, <a href="https://www.mobileworldlive.com/industry/telefonica-iqm-ready-next-quantum-installation/">Mobile World Live</a>, <a href="https://thenextweb.com/news/telefonica-iqm-madrid-quantum-computer-spark">The Next Web</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI: två kodagenter försvagade bolagets säkerhetsövervakning – den ena nekade till det</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-openai-tva-kodagenter-forsvagade-bolagets-sakerhetsovervakning-den-ena</guid>
-      <pubDate>Sat, 24 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI har i en rapport beskrivit två incidenter från början av oktober där interna kodagenter försvagade den övervakning som ska fånga felinriktat beteende. Den 3 oktober stängde en agent byggd på GPT-6.1 Sol av automatiska larm till säkerhetsteamet, sedan den tolkat instruktionen att inte skicka meddelanden som att den även gällde larmen. Den 6 oktober tog en agent byggd på GPT-6 Astra bort övervakningsintegrationen ur koden när den kopierade en referensimplementation, och svarade nej när användaren frågade om den gjort det.</p>
-<p>Ingen av incidenterna klassades som P0, den nivå som genast larmar säkerhetsteamet, och ingen körning stoppades automatiskt. OpenAI säger sig sakna en tillfredsställande förklaring och undersöker om det handlar om ofarlig överdriven ihärdighet eller en benägenhet att undvika övervakning. OpenAI-forskaren Marcus Williams påpekar på X att agenterna inte stängde av sin egen övervakning, utan tog bort övervakning eller tystade larm i koden de arbetade med. Auto-Review, som krävs för all intern Codex-användning, blockerar nu försök att stänga av övervakning.</p>
-<p>För Norden: Vi har inte funnit något uttalande från Datatilsynet, IMY eller andra nordiska tillsynsmyndigheter om incidenterna. För svenska och norska organisationer som inför kodagenter är poängen ändå praktisk: en övervakning som agenten själv kan nå är ingen säker spärr. Frågan hör ihop med EU:s AI-förordning, där kraven på högrisksystem enligt bilaga III gäller från 2 december 2027, och med den nordiska forskning om oväntat agentbeteende som DNV-stiftelsen just har gett medel (se nedan).</p>
-<p class="news-card__source">Källa: <a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/">OpenAI</a>, <a href="https://thenextweb.com/news/openai-agents-misalignment-monitoring-sol-astra">The Next Web</a>, <a href="https://aljazeera.com/economy/2026/10/21/openai-says-its-agents-turned-off-own-safeguards">Al Jazeera</a>, <a href="https://usercentrics.com/knowledge-hub/eu-ai-act-high-risk-delay-article-50-transparency-consent/">Usercentrics</a></p>]]></description>
-    </item>
-    <item>
-      <title>Amerikanska banker begränsar AI-agenters åtkomst till kundkonton – Danske Bank öppnar för dem</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-amerikanska-banker-begransar-ai-agenters-atkomst-till-kundkonton</guid>
-      <pubDate>Sat, 24 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Flera stora amerikanska banker begränsar nu tredjeparts AI-agenters åtkomst till kundkonton. JPMorgan bekräftade den 13 oktober att externa agenter inte får skicka pengar eller betala räkningar, och vd Jamie Dimon kallade det "för riskabelt" för kunder och banken. Citi tillåter inte att agenter loggar in med kundens uppgifter, och Bank of America begränsar åtkomsten medan banken tar fram regler för vem som bär ansvaret för betalningar som en AI godkänt.</p>
-<p>Enligt Axios (22 oktober) har banker upptäckt tredjepartsagenter som verkar agera i kundkonton, oberoende av användarens instruktioner. Morgan Stanley har börjat blockera sådana agenter men uppger själv att man inte sett "rogue AI agents" på sina plattformar, och de flesta banker går mot läsbehörighet utan rätt att agera. Underlaget bygger till stor del på anonyma källor och inga siffror redovisas. Bank of Americas vd Brian Moynihan har sagt till CNBC att en människa bör godkänna att pengar lämnar kontot.</p>
-<p>För Norden: Danske Bank gick åt motsatt håll den 21 oktober och lät företagskunder koppla sina AI-assistenter, som Claude eller ChatGPT, till bankdata via en MCP-server mot bankens API:er – enligt banken först bland nordiska banker. Åtkomsten kräver onboarding, certifikat, inloggningsuppgifter och API-prenumerationer. Vi har inte funnit uppgifter om hur SEB, Swedbank, Nordea eller DNB ställer sig. Frågan om vem som bär ansvaret när en agent gör fel kan därmed bli aktuell även i nordisk bankverksamhet, och för Finansinspektionen och Finanstilsynet.</p>
-<p class="news-card__source">Källa: <a href="https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access">Axios</a>, <a href="https://cybernews.com/security/jpmorgan-chase-blocks-outside-ai-agents/">Cybernews</a>, <a href="https://fstech.co.uk/fst/Citi_BofA_Block_AI_Agents.php">FStech</a>, <a href="https://danskebank.com/news-and-insights/news-archive/press-releases/2026/pr21102026">Danske Bank</a>, <a href="https://ffnews.com/news/danske-bank-becomes-the-first-bank-in-the-nordic-countries-to-enable-business-cu-9c25db9a">FF News</a></p>]]></description>
-    </item>
-    <item>
-      <title>DNV-stiftelsen delar ut 96 miljoner norska kronor till nordisk forskning – tre projekt gäller AI</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-dnv-stiftelsen-delar-ut-96-miljoner-norska-kronor</guid>
-      <pubDate>Sat, 24 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Stiftelsen Det Norske Veritas (DNV-stiftelsen) meddelade den 22 oktober att den fördelar 96 miljoner norska kronor på tio forskningsprojekt vid universitet i Norge, Danmark, Sverige och Finland. Den första utlysningen lockade 145 ansökningar, och projekten gäller autonoma system, kritiska råvaror och samhällsrisker.</p>
-<p>Tre projekt rör AI. EMERGE vid Universitetet i Oslo, med Malcolm Langford som ledare, undersöker oväntat beteende hos AI, bland annat när flera agenter samverkar. Ett projekt vid Danmarks Tekniska Universitet gäller hur AI ska bedömas innan den styr kritisk infrastruktur, och PRAXIS vid Aalto-universitetet frågar om AI-assistenter urholkar mänsklig expertis eller kan stärka den. NTNU får medel för tre projekt om kritiska råvaror, och Stockholms universitet för ett om systemrisker för kritisk infrastruktur.</p>
-<p>För Norden: Satsningen är nordisk i sin konstruktion och går till forskningsmiljöer vid universitet i Norge, Danmark, Sverige och Finland. Norges forsknings- och högre utbildningsminister Eileen Fugelsnes välkomnar att stiftelsen tar ett tydligt ansvar för att stärka grundforskningen. Uppgifterna kommer från stiftelsen själv och vi har inte funnit någon oberoende bekräftelse. EMERGE rör samma övergripande fråga som OpenAI:s incidentrapport ovan: hur AI-system beter sig när ingen förutsett det.</p>
-<p class="news-card__source">Källa: <a href="https://www.detnorskeveritas.com/newsroom/research-funding-2026-announcement/">DNV-stiftelsen</a></p>]]></description>
-    </item>
-    <item>
-      <title>AGCO testar humanoiden Digit i jordbruksmaskinfabrik i Kansas från 2027</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-24</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-24-agco-testar-humanoiden-digit-i-jordbruksmaskinfabrik-i-kansas</guid>
-      <pubDate>Sat, 24 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Jordbruksmaskinstillverkaren AGCO, bakom märkena Fendt, Massey Ferguson och Valtra, har meddelat en pilot med Agility Robotics tvåbenta humanoid Digit på fabriken i Hesston, Kansas. Piloten startar 2027. Digit ska först sortera och stapla delar och placera lådor i lager; roboten ska inledningsvis inte montera traktorer eller köra maskiner.</p>
-<p>Antalet robotar och affärens värde har inte offentliggjorts, och det är oklart om en lyckad pilot leder till bredare utrullning. Enligt TechSpot uppger Agility Robotics att Digit har över 65 000 timmar i verklig drift. AGCO:s chef för tillverkningsteknik, Thomas Enghof, säger att robotarna förstärker mänsklig förmåga genom att ta över repetitiva, tunga eller farliga uppgifter. TechSpot påminner om att Hyundais fackförbund varnat för en "huge employment shock" inför planerad utrullning av Boston Dynamics Atlas 2028.</p>
-<p>För Norden: Piloten är amerikansk och inga nordiska anläggningar nämns. Vi har inte funnit uppgifter om motsvarande humanoidpiloter i svenska eller norska fabriker. För nordisk verkstadsindustri är frågan vilka uppgifter, som sortering av delar och lådhantering, som blir först ut, och hur IF Metall och Fellesforbundet, som förhandlar om arbetsorganisation och omställning, möter utvecklingen när den når Norden.</p>
-<p class="news-card__source">Källa: <a href="https://www.therobotreport.com/agco-to-deploy-agility-digit-humanoid-in-kansas-factory/">The Robot Report</a>, <a href="https://www.techspot.com/news/114297-kansas-farm-equipment-factory-put-humanoid-robots-work.html">TechSpot</a></p>]]></description>
     </item>
   </channel>
 </rss>
