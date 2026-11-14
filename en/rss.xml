@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 05:17:58 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 05:19:58 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Norway appoints expert group to assess AI threats to national security</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-14-norge-tillsatter-expertgrupp-som-ska-bedoma-ai-hot</guid>
+      <pubDate>Sat, 14 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norway’s Minister of Digitalisation and Public Governance, Torgeir Micaelsen, has appointed a fast-track expert group to assess how artificial intelligence could threaten Norway’s security. The group is led by Olav Lysne, a professor at Oslomet and director of the research centre Simulamet, and held its first meeting on November 13.</p>
+<p>The group will analyse the security and geopolitical consequences of rapid AI development, which AI-driven threats Norway should prioritise in the short and long term, and how the country can help ensure safe AI models at home and internationally. It will also examine how Norway can use its strengths in the AI value chain to position itself. According to Digi, the government is also taking the most extreme scenarios seriously, from biological weapons to technology that gets completely out of control. The advice is due by March 1 and will feed into a new national AI strategy and a revision of the national security strategy. “A prerequisite for our success is up-to-date knowledge and sound expert advice,” Micaelsen said, according to NTB.</p>
+<p>For the Nordics … this is a Norwegian story first and foremost. Lysne previously chaired the government’s expert group on national control over digital infrastructure, and the new group comes a day after Norway and the UK signed a letter of intent on AI cooperation. In Sweden, the government has instead given the responsibility to the National Cyber Security Centre at FRA, which in July was tasked with coordinating cybersecurity work related to AI. Norway is thus opting for a broader analysis that also covers geopolitics and model safety, while the Swedish track has so far focused mainly on cybersecurity.</p>
+<p class="news-card__source">Source: <a href="https://www.regjeringen.no/no/aktuelt/skal-vurdere-konsekvensen-av-ki-for-grunnleggende-sikkerhetsinteresser/id3192830/">Norwegian government</a>, <a href="https://www.regjeringen.no/no/aktuelt/norge-og-storbritannia-etablerer-samarbeid-om-kunstig-intelligens/id3192548/">Norwegian government (UK agreement)</a>, <a href="https://www.adressa.no/nyheter/innenriks/i/lMAEb9/ekspertgruppe-skal-vurdere-ki-trusler">NTB/Adresseavisen</a>, <a href="https://www.digi.no/kunstig-intelligens/skal-forberede-norge-pa-ki-trusler/7184250">Digi.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic heads for IPO with more than $900 billion in compute commitments</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-14-anthropic-gar-till-borsen-med-ataganden-for-datorkraft</guid>
+      <pubDate>Sat, 14 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Anthropic has set a price range of $70–78 per share for its Nasdaq IPO, according to an amended prospectus filed on November 10. The offering comprises 825 million shares, and at the top of the range the company would be valued at up to $1.404 trillion on a fully diluted basis, and trading is expected to begin on November 19 under the ticker ANT.</p>
+<p>The prospectus shows how expensive the race is: Anthropic has compute and infrastructure commitments of $900.9 billion, of which about $70.7 billion falls due within twelve months of September 30. In the first nine months of the year, revenue was $33.2 billion and the net loss $104 billion. At the same time, AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC are set to buy $26 billion of non-voting shares at the IPO price, with Google and Nvidia putting in $10 billion each. The founders retain 50.1 percent of the voting power, and the Long-Term Benefit Trust elects a majority of the board. According to Bloomberg, as reported by Stock Analysis, the offering was already oversubscribed several times over by November 11, and final pricing is expected on November 18.</p>
+<p>For the Nordics … Norway’s sovereign wealth fund is indirectly affected: it holds stakes in several of the companies now buying in, including Nvidia, Microsoft and Alphabet. For Swedish and Norwegian organisations using Claude, the listing means the supplier’s finances and commitments will be publicly scrutinised quarter by quarter, which is relevant in procurements that assess a supplier’s financial staying power. Sweden’s Government Offices blocked web access to Claude and ChatGPT on official computers in October, but some staff still have access to both models through the Intric platform.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/">TechCrunch</a>, <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm">SEC (prospekt)</a>, <a href="https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/">Stock Analysis/Bloomberg</a></p>]]></description>
+    </item>
+    <item>
+      <title>Atom Computing secures up to $100 million from US Commerce Department for fault-tolerant quantum computers</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-14-atom-computing-far-upp-till-100-miljoner-dollar</guid>
+      <pubDate>Sat, 14 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>US quantum company Atom Computing announced on November 13 that its agreement with the US Department of Commerce for up to $100 million has been finalised. The money is meant to speed up development towards fault-tolerant, utility-scale quantum computers and follows a letter of intent the company announced in May.</p>
+<p>The funds will go to in-house technology development, expanded testing and engineering infrastructure, and work with suppliers. Atom Computing builds quantum computers from neutral atoms held in place by laser light and says it was first with a platform of more than 1,000 qubits. According to the company, it is also the only neutral-atom company in Stage C, the final stage of DARPA’s Quantum Benchmarking Initiative, where funding can reach $300 million. The claims about technical milestones come from the company itself and have not been independently verified.</p>
+<p>For the Nordics … there is a direct link: Atom Computing’s first commercial on-premises quantum computer was sold in 2025 to QuNorth, a Nordic initiative funded by Denmark’s EIFO and the Novo Nordisk Foundation. The US government funding strengthens the supplier behind that machine, while Chalmers and the Wallenberg Centre for Quantum Technology are building their own superconducting quantum computer in Sweden.</p>
+<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/11/13/atom-computing-finalizes-100-million-u-s-department-of-commerce-rd-award">The Quantum Insider</a>, <a href="https://atom-computing.com/atom-computing-announces-letter-of-intent-with-u-s-department-of-commerce-for-100-million-to-accelerate-path-to-fault-tolerant-utility-scale-quantum-computing/">Atom Computing</a>, <a href="https://quantumcomputingreport.com/atom-computing-reaches-300-million-funding-milestone-to-deploy-fault-tolerant-neutral-atom-hardware/">Quantum Computing Report</a></p>]]></description>
+    </item>
+    <item>
+      <title>Breach at AI provider Fireworks exposed chat logs from Notion’s AI assistant</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-14</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-14-intrang-hos-ai-leverantoren-fireworks-exponerade-chattloggar-fran</guid>
+      <pubDate>Sat, 14 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Notion says chat transcripts from its AI assistant have fallen into attackers’ hands after a breach at its subcontractor Fireworks AI, which runs open AI models for businesses. Fewer than one percent of Notion workspaces are affected, according to Notion’s security advisory of November 9.</p>
+<p>According to BleepingComputer, the attackers got in via a cloud provider that Fireworks uses for its development machines, and accessed billing information, resource metadata and incomplete model weights and datasets for some customers. For Notion, the data consisted of transcripts used for its Insights feature; most lacked any indication of which user or workspace they came from. Notion disconnected Fireworks on November 3, has switched off Insights and is urging affected customers to rotate passwords and API keys pasted into Notion AI. It is Fireworks’ second security incident in a short time: in early October, API keys were stolen by a group that, according to the company, resells unauthorised access to language models.</p>
+<p>For the Nordics … the case shows that an AI feature in a well-known work tool can pass data on to suppliers the customer never signed a direct contract with. Swedish and Norwegian organisations using Notion or similar tools have reason to review which sub-processors the tools’ AI features rely on. Under the GDPR, the data controller must as a rule report a personal data breach to IMY in Sweden or Datatilsynet in Norway within 72 hours.</p>
+<p class="news-card__source">Source: <a href="https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor-nov9">Notion</a>, <a href="https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/">TechCrunch</a>, <a href="https://bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack">BleepingComputer</a></p>]]></description>
+    </item>
     <item>
       <title>Google releases Gemini 4 Hydrogen – a fast, low-cost everyday model for agentic work</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-13</link>
@@ -950,44 +999,6 @@
 <p>The announcement came at Nvidia’s GTC in Berlin on October 21. Finland’s Elisa ran voice, mobile data and video analytics in parallel on Nvidia ARC in a 5G field trial described as a European first, with commercial AI-RAN services as the goal for 2027. Deutsche Telekom has validated the platform in labs in Bonn and Oulu, BT plans a trial in its commercial network in Birmingham in 2027, and nearly 20 operators have announced AI-RAN collaborations with Nokia and Nvidia. The claims come from the vendors; Light Reading notes that the milestone rests on Nokia’s own account, and according to Nokia the next steps are more spectrum bands and AI workloads.</p>
 <p>For the Nordics … The platform builds on software from Finland’s Nokia, with Elisa as a Nordic operator in field trials. For Ericsson, Nokia’s main competitor, that is a challenge – though T-Mobile reported AI-driven beamforming with Ericsson in a 5G network in New York the day before, according to Light Reading. Telia, Telenor and Tele2 are not mentioned in the press release. The question for them is whether radio network computing will run on general-purpose GPU servers or on dedicated radio hardware.</p>
 <p class="news-card__source">Source: <a href="https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms">Nvidia</a>, <a href="https://lightreading.com/ai-machine-learning/t-mobile-makes-first-ai-ran-call-with-nokia-and-nvidia">Light Reading</a></p>]]></description>
-    </item>
-    <item>
-      <title>Swedish Government Offices block ChatGPT and Claude on staff computers from Monday</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-regeringskansliet-sparrar-chatgpt-och-claude-pa-tjanstedatorerna-fran</guid>
-      <pubDate>Sun, 25 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The Swedish Government Offices (Regeringskansliet) will from Monday 26 October cut access to the web interfaces for ChatGPT and Claude from its work computers. The decision was reported by Sveriges Radio Ekot and confirmed by the Government Offices to SVT.</p>
-<p>Staff are pointed to Microsoft Copilot, which the Government Offices has approved after raising its security, and keep access to the ChatGPT and Claude language models through Intric. Digitalisation director Mikael Wettercrantz wrote in an intranet comment that using AI services without an agreement could have “implications for our information security”, according to Computer Sweden. According to Ekot, the Swedish Tax Agency (Skatteverket) and the National Board of Institutional Care (Statens institutionsstyrelse) have introduced similar blocks, and the Enforcement Authority (Kronofogden) may follow.</p>
-<p>For the Nordics … The decision shows where Swedish central government draws the line: not at AI itself, but at services without an agreement. The procured environments Intric and Copilot become the approved route. It may become a benchmark for other agencies, municipalities and regions facing the same trade-off between usability and information security.</p>
-<p class="news-card__source">Source: <a href="https://svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet">SVT</a>, <a href="https://computersweden.se/article/4239687/regeringskansliet-sparrar-chat-gpt-och-claude.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Sweden commits 50 million euros to EU AI gigafactories through a node linked to Finland</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-sverige-binder-50-miljoner-euro-i-eu-s</guid>
-      <pubDate>Sun, 25 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>The Swedish government has authorised the Swedish Tax Agency (Skatteverket) to enter the joint procurement agreement with the EuroHPC Joint Undertaking. With the Riksdag's approval of Sweden's participation, the agency can confirm the country's role in the next phase of work on European AI gigafactories.</p>
-<p>Sweden will buy computing capacity and support a Swedish node connected to an AI gigafactory in Finland, with a total commitment of 50 million euros over five years. Participating member states co-finance the procurement in return for access to the capacity, which the public sector, research and innovation will be able to use. The Riksdag decision also lets the government, or an authority it designates, make financial commitments in the form of computing-capacity contracts. Civil Affairs Minister Erik Slottner says: “By cooperating with Finland, we can strengthen our independence from other continents.” The figures come from the government's press release.</p>
-<p>For the Nordics … Sweden gets no gigafactory of its own but a node linked to the Finnish one, and it is the Tax Agency that enters the procurement agreement for computing power. The press release does not say how the capacity will be shared between Swedish public-sector users and research environments.</p>
-<p class="news-card__source">Source: <a href="https://regeringen.se/pressmeddelanden/2026/10/nasta-steg-i-satsningen-pa-europeiska-ai-gigafabriker">Government of Sweden (22 October)</a>, <a href="https://regeringen.se/pressmeddelanden/2026/07/sverige-och-eu-tar-forsta-steg-mot-ai-gigafabriker/">Government of Sweden (30 July)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Google Quantum AI launches a $150,000 contest to shrink quantum circuits with AI</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-25</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-25-google-quantum-ai-utlyser-tavling-om-150-000</guid>
-      <pubDate>Sun, 25 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Google Quantum AI has launched a Kaggle competition with $150,000 in prizes in which participants use AI to reduce the number of qubits and gates that useful quantum circuits require. Smaller circuits could lower the hardware and error-correction demands of practical algorithms.</p>
-<p>Google provides starting circuits, verification programs and kickmix, a library within the open-source Qualtran project. Kickmix tests circuits on conventional computers using randomised fuzz testing and establishes approximate, not exact, correctness. The three tasks cover fusion energy, optimisation with Decoded Quantum Interferometry, and chemistry around the nitrogenase enzyme (FeMoCo). Google says internal experiments with Gemini have already beaten previously reported circuits on all three, and has published a hash of the results to be revealed after the competition. First prize is $50,000, the mid-competition milestone prize is decided on 20 November, and the prize for the longest-running leader on 4 January 2027.</p>
-<p>For the Nordics … Finnish IQM, founded in 2018 in Espoo and since July 2026 the first European quantum company listed on Nasdaq, is to deliver an IQM Spark system with five qubits to the Universidad Politécnica de Madrid before the end of the year, according to Telefónica. How few qubits and gates an algorithm needs is also relevant to Chalmers and the Wallenberg Centre for Quantum Technology (WACQT), which develops superconducting quantum computers.</p>
-<p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/10/23/google-launches-150000-ai-competition-to-reduce-quantum-computing-demands/">The Quantum Insider</a>, <a href="https://www.mobileworldlive.com/industry/telefonica-iqm-ready-next-quantum-installation/">Mobile World Live</a>, <a href="https://thenextweb.com/news/telefonica-iqm-madrid-quantum-computer-spark">The Next Web</a></p>]]></description>
     </item>
   </channel>
 </rss>
