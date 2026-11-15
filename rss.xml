@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sat, 14 Nov 2026 05:19:58 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 05:19:13 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>EU-ledarnas första AI-toppmöte: Kristersson varnar för övertro på reglering</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-15-eu-ledarnas-forsta-ai-toppmote-kristersson-varnar-for</guid>
+      <pubDate>Sun, 15 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>EU:s stats- och regeringschefer ägnade för första gången ett möte åt artificiell intelligens, när Europeiska rådet samlades informellt i Dublin den 13 november. Den avgående statsministern Ulf Kristersson (M) sade i samband med mötet att det har funnits ”en övertro i EU på att man ska kunna reglera bort eventuella problem”.</p>
+<p>Mötet var informellt och inga beslut fattades. Ledarna träffade Mistral AI:s vd Arthur Mensch och nobelpristagaren Geoffrey Hinton, och diskussionen delades upp i konkurrenskraft och beroenden respektive samhällspåverkan, säkerhet och förtroende. Kommissionens ordförande Ursula von der Leyen ville fokusera på industriell AI byggd på Europas data, medan Österrikes förbundskansler Christian Stocker föreslog en FN-myndighet för AI med säte i Wien. I riksdagens EU-nämnd hade regeringen inför mötet sagt att minskade beroenden av USA och Kina inte får bli protektionism, och att AI-förordningen inte bör tillämpas fullt ut innan standarderna är klara.</p>
+<p>För Norden … är detta en svensk primärnyhet med en tydlig inrikesdel. Kristersson sade att regeringen utreder om krav kan ställas på datacenter, eftersom det ”inte kan vara så att man har fri dragningsrätt på svensk fossilfri el”. Frågan hade drivits i EU-nämnden av Socialdemokraterna och Miljöpartiet, och S-europaparlamentarikern Adnan Dibrani kritiserade dagen före mötet att Sverige enligt honom inte står bakom Finlands och Estlands förslag om en gemensam EU-mekanism för allvarliga AI-incidenter. Norge, som inte är EU-medlem, deltog inte, men regeringen i Oslo aviserade nyligen tillståndskrav för datacenter – alltså samma fråga som Kristersson nu lyfter.</p>
+<p class="news-card__source">Källa: <a href="https://www.europaportalen.se/2026/11/kristersson-pa-toppmote-eu-har-overtro-pa-reglering-av-ai">Europaportalen</a>, <a href="https://www.europaportalen.se/2026/11/infor-eu-toppmote-regeringen-vill-att-europa-leder-inom-ai-utan-protektionism">Europaportalen (EU-nämnden)</a>, <a href="https://www.regeringen.se/pressmeddelanden/2026/11/statsministern-till-dublin-for-informellt-mote-i-europeiska-radet-och-internationellt-toppmote/">Regeringen</a>, <a href="https://via.tt.se/pressmeddelande/4639856/infor-eu-toppmotet-s-kraver-krisplan-mot-ai-hot?lang=sv">Socialdemokraterna i Europaparlamentet</a></p>]]></description>
+    </item>
+    <item>
+      <title>USA inför AI-stöd i flygledningen över hela landet – flygledarnas fack kände sig förbigånget</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-15-usa-infor-ai-stod-i-flygledningen-over-hela</guid>
+      <pubDate>Sun, 15 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>USA:s luftfartsmyndighet FAA har tagit AI-systemet SMART i bruk i luftrummet för landets samtliga 22 regionala flygledningscentraler. Systemet föreslår rutter och tidsplaner för flygledarna och användes först i Washingtonregionen från september.</p>
+<p>SMART väger samman omkring 200 dataströmmar, bland annat väder, flygvägar, trafikflöden och bemanning. Enligt FAA har 180 flygningar letts om sedan den 21 september, med i snitt omkring tio minuter och nästan 80 amerikanska gallon, omkring 300 liter, sparat bränsle per flygning – siffror som myndigheten redovisar utan jämförelsebas. Flygledarnas fackförbund NATCA har enligt Flying Magazine kritiserat att det hållits utanför utvecklingen och införandet, och ledamöter av kongressen bad i oktober FAA att pausa systemet. Förslagen kan godtas eller avböjas, och SMART kan inte styra flygplan eller ersätta flygledare.</p>
+<p>För Norden … är frågan vem som är med när AI-stöd förs in i säkerhetskritiskt arbete. I Sverige ansvarar LFV för flygtrafiktjänsten och i Norge Avinor, och LFV driver dessutom flygledningscentralerna för underväg tillsammans med danska Naviair genom NUAC. Medbestämmandelagen kräver att svenska arbetsgivare förhandlar innan viktigare förändringar i verksamheten, och den norska arbetsmiljölagen kräver att de anställda involveras när ny teknik införs. Det amerikanska exemplet visar att ett system som myndigheten själv beskriver som rådgivande ändå kan möta både fackliga invändningar och politiskt motstånd.</p>
+<p class="news-card__source">Källa: <a href="https://www.flyingmag.com/faa-smart-ai-now-active-at-22-artccs-nationwide/">Flying Magazine</a>, <a href="https://airwaysmag.com/new-post/faa-smart-nationwide-22-centers">Airways Magazine</a></p>]]></description>
+    </item>
+    <item>
+      <title>United Airlines förbjuder AI-agenter att boka biljetter åt resenärerna</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-15-united-airlines-forbjuder-ai-agenter-att-boka-biljetter</guid>
+      <pubDate>Sun, 15 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Det amerikanska flygbolaget United Airlines har ändrat sina transportvillkor så att AI-agenter inte längre får boka, ändra eller hantera biljetter eller köpa tjänster åt kunderna. Ändringen finns i villkoren daterade den 11 november, och enligt Skift är United det första amerikanska flygbolaget som uttryckligen tar det steget.</p>
+<p>Förbudet gäller även agenter som når United via resebyråer och bokningssajter, och även när kunden själv övervakar eller godkänner det agenten gör. Bokningar som gjorts av sådana agenter får annulleras. United hänvisar till risker med delade inloggningsuppgifter, oavsiktliga köp och federala regler, till exempel att en person själv måste intyga vid incheckningen att bagaget inte innehåller förbjudna ämnen. Vd:n Scott Kirby sade dock vid ett evenemang i Chicago att han inte vill ha ytterligare en mellanhand mellan bolaget och kunderna. Enligt Wall Street Journal får AI-agenter fortfarande visa Uniteds flyg och priser.</p>
+<p>För Norden … träffar beslutet de köpfunktioner för AI-agenter som nu byggs av bland andra OpenAI och Google. SAS och Norwegian står inför samma avvägning mellan att behålla kundrelationen och att synas där kunderna söker. Inom EU och EES gäller dessutom konsumentskyddsreglerna oavsett hur biljetten köpts, och om flygbolag börjar annullera agentbokningar kan villkoren bli en fråga för konsumentmyndigheterna.</p>
+<p class="news-card__source">Källa: <a href="https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/">Skift</a>, <a href="https://viewfromthewing.com/united-airlines-ceo-scott-kirby-bans-ai-agents-from-booking-tickets-doesnt-want-another-middleman/">View from the Wing</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia släpper GR00T 2 – öppen robotmodell som lär sig av mänsklig video</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-15</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-15-nvidia-slapper-gr00t-2-oppen-robotmodell-som-lar</guid>
+      <pubDate>Sun, 15 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Nvidia har presenterat GR00T 2, en öppen så kallad världshandlingsmodell för robotar som förutser hur dess handlingar förändrar det den ser innan den rör sig. Modellen presenterades i samband med robotkonferensen CoRL i Austin den 9 november, tillsammans med simuleringsverktyget Isaac Lab 3.0.</p>
+<p>GR00T 2 bygger på Nvidias Cosmos-plattform och är tränad på robotdata och mänsklig video, däribland 100 000 timmar inspelningar ur förstapersonsperspektiv som Nvidia släpper fritt. I bolagets egna tester klarade modellen 40 av 50 uppgifter minst en gång utan uppgiftsspecifik träning, och nådde i snitt 71 procents framgång med en demonstration per uppgift och 95 procent med fem. Enligt Nvidias egen forskningsrapport valdes uppgifterna bland sådana som modellen redan kunde lära sig väl. Foxconn, Siemens och Nexuni använder eller testar modellen, men ingen av dem har sagt att den ska tas i full produktion. Isaac Lab 3.0 tränar enligt Nvidia upp till 2,5 gånger snabbare i ett riktmärke.</p>
+<p>För Norden … är det öppna datat det mest användbara. Robotikforskare vid KTH, Chalmers och NTNU, som inte själva kan spela in hundra tusen timmar video, får tillgång till ett träningsmaterial i en skala som annars bara stora bolag har. Ingen nordisk aktör finns bland de namngivna partnerna, trots att norskgrundade 1X Technologies bygger humanoider för hemmet. Att modellen kan föra över färdigheter mellan olika robotkroppar utan robotdemonstrationer är också relevant för danska Universal Robots, vars robotarmar används brett i nordisk industri.</p>
+<p class="news-card__source">Källa: <a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/">Nvidia</a>, <a href="https://thenextweb.com/news/nvidia-gr00t-2-robots-human-video-corl">The Next Web</a></p>]]></description>
+    </item>
     <item>
       <title>Norge tillsätter expertgrupp som ska bedöma AI-hot mot landets säkerhet</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-14</link>
@@ -950,55 +999,6 @@
 <p>Gruppen – de övriga 493 bolagen i S&amp;P 500 – är indexet utan Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia och Tesla. Slok tror inte att de övriga bara ligger efter: han betvivlar att billigare AI räcker för att höja intäktstillväxt och marginaler, eftersom framgång enligt honom hänger på omdöme, förtroende, kultur och oskrivna regler som AI inte förstår. TechCrunch redovisar inga exakta procenttal och inga svar från bolag eller andra ekonomer. Computer Sweden rapporterade om noten den 26 oktober.</p>
 <p>För Norden … Noten gäller amerikanska börsbolag och säger inget om nordiska företag. Samtidigt satsar man stort på AI i Norden: bolagen bakom Sferical One har gått samman om delad AI-kapacitet, och Vinnova föreslår att AI Acceleration Sweden startar i januari 2027 med minst en miljard kronor i statlig finansiering det första året – ett förslag som regeringen ännu inte har beslutat om. Noten är en påminnelse om att svenska och norska bolag bör följa effekten i marginal och produktivitet snarare än i antal piloter – Salling Groups robotförsök är ett exempel på ett tydligt mål, att avlasta påfyllningen, som Føtex uppskattar tar 40–50 procent av personaltiden i kedjans butiker.</p>
 <p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">TechCrunch</a>, <a href="https://computersweden.se/article/4240298/tung-ekonom-ai-ger-inga-tydliga-vinster-for-de-flesta-foretag.html">Computer Sweden</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se</a></p>]]></description>
-    </item>
-    <item>
-      <title>Texas stämmer OpenAI och Altman och vill spärra minderåriga från ChatGPT</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-texas-stammer-openai-och-altman-och-vill-sparra</guid>
-      <pubDate>Mon, 26 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Texas justitieminister Ken Paxton har stämt OpenAI och bolagets vd Sam Altman vid distriktsdomstolen i Collin County. Enligt Texas Tribune hävdar delstaten att ChatGPT har skadat texaner, bland annat genom att ha hjälpt gärningsmän vid masskjutningar, uppmuntrat självmord och gjort minderåriga beroende utan föräldrarnas insyn.</p>
-<p>Washington Examiner uppger att stämningen bygger på Texas lag mot vilseledande handelsmetoder (Deceptive Trade Practices Act). Enligt Texas Tribune yrkar delstaten på ett brett föreläggande som ska stänga ute minderåriga och kräva att en domstolsutsedd granskare godkänner nya modeller. OpenAI svarar enligt samma källa att bolaget har arbetat med experter för att minska riskerna och vill samarbeta med Texas och andra delstater. Paxton är republikanernas senatskandidat, och Elon Musk, som lämnade OpenAI 2018 efter en konflikt med Altman och senare stämde bolaget, är hans största enskilda bidragsgivare.</p>
-<p>För Norden … Fallet är amerikanskt, men frågorna är nordiska: hur unga skyddas i chattbottar och vem som ska godkänna nya modeller före lansering. I Norge är den nya AI-lagen försenad – regeringen siktar på en proposition våren 2027, och Nkom ska bli samordnande tillsyn, enligt digi.no. Samtidigt vill regeringen enligt Dagsavisen införa ett tillfälligt förbud mot AI-glasögon på utvalda platser som skolor och lekplatser. Redan i dag gäller GDPR för barns personuppgifter i både Norge och Sverige.</p>
-<p class="news-card__source">Källa: <a href="https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/">Texas Tribune</a>, <a href="https://www.washingtonexaminer.com/policy/technology/4778611/paxton-sues-openai-as-campaign-races-win-over-voters/">Washington Examiner</a>, <a href="https://www.digi.no/artikler/nye-eu-regler-for-ki-norge-og-eos-henger-enna-langt-etter/575266">digi.no</a>, <a href="https://www.dagsavisen.no/nyheter/regjeringen-vil-ha-midlertidig-forbud-mot-ki-briller-pa-utvalgte-steder/10564839">Dagsavisen</a></p>]]></description>
-    </item>
-    <item>
-      <title>KrF kräver stopp för nya datacenter i Norge – över 90 procent av kapaciteten ägs utomlands</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-krf-kraver-stopp-for-nya-datacenter-i-norge</guid>
-      <pubDate>Mon, 26 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Kristelig Folkeparti (KrF) kräver ett tillfälligt stopp för nya datacenter i Norge tills strängare regler finns på plats. KrF:s Dag-Inge Ulstein säger enligt Inyheter att Norge måste stanna upp, ta kontroll och prioritera var kraften behövs, och pekar på ett stort kraftunderskott i regionen, sedan ett nytt datacenter planerats i Sjøholt i Ålesunds kommun. KrF byter därmed fot – partiet sa nej när Rødt föreslog ett liknande stopp förra året.</p>
-<p>Bakgrunden är en rapport från Teknologirådet enligt vilken över 90 procent av Norges datacenterkapacitet ägs av utländska aktörer och där det lokala värdeskapandet är litet när bygget är klart. Tydal Data Center i Trøndelag, som drivs av Singapore-baserade Bitdeer, blir landets största. Enligt NHH Bulletin köade i september cirka 8 800 MW datacenterprojekt för nätanslutning hos Statnett, 56 procent av kön – men långt ifrån alla kommer att byggas – medan branschen hade 677 direkt anställda 2024 enligt SSB. Frp:s Sylvi Listhaug stöder inte ett fullt stopp men vill ha skarpare nationell styrning, Høyre vill ha en nationell plan och en utredning av tillståndsplikt, och regeringspartiet Arbeiderpartiet hänvisar till en skrivelse till Stortinget som väntas mot slutet av 2027.</p>
-<p>För Norden … Debatten flyttar frågan i Norge från hur många datacenter landet ska ha till vilka. Teknologirådets expertgrupp, med forskare från bland annat UiO, NTNU, NHH och SINTEF Energi, föreslår att ett datacenters samhällsnytta bedöms utifrån kraft- och nätanvändning, värdeskapande och jobb, digital nytta, säkerhet och beredskap samt följder för lokalsamhället. För grannländerna, där datacenter också konkurrerar om nätkapacitet, blir den norska prövningen ett test av hur långt en nordisk elexportör vill gå.</p>
-<p class="news-card__source">Källa: <a href="https://inyheter.no/23/10/2026/krever-full-stans-i-nye-datasentre/">Inyheter</a>, <a href="https://nhh.no/nhh-bulletin/artikkelarkiv/2026/oktober/over-90-prosent-av-datasenterkapasiteten-er-utenlandsk-eid/">NHH Bulletin</a></p>]]></description>
-    </item>
-    <item>
-      <title>Goldman Sachs: upp till 9 procent av arbetstagarna i USA kan trängas ut av AI</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-goldman-sachs-upp-till-9-procent-av-arbetstagarna</guid>
-      <pubDate>Mon, 26 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Goldman Sachs-ekonomen Joseph Briggs uppskattar i en rapport den 22 oktober att upp till 9 procent av de amerikanska arbetstagarna, ungefär var elfte, kan trängas ut från sina jobb under AI-omställningen. Långsammare nyanställning kan dessutom pressa sysselsättningen med ytterligare 3 procent, enligt Fortune.</p>
-<p>Beräkningen är amerikansk och mäter bruttojobbförluster, inte arbetslöshet. Den bygger på antagandet att AI på sikt höjer produktiviteten med 15 procent i USA och andra utvecklade ekonomier; historiskt har varje procents teknikdriven produktivitetsvinst höjt de samlade bruttojobbförlusterna med 0,5–0,6 procentenheter. Enligt IBTimes avser prognosen ungefär tio år, och sajtens rubrik med ordet ”globally” betyder inte att 9 procent av världens arbetstagare förlorar jobbet. Goldman bedömer att förlusterna blir små i ett friskt konjunkturläge men tar fart i en nedgång. Hittills har bara 23 procent av amerikanska arbetsställen byggt in AI i den dagliga verksamheten, och AI-kopplade varsel har sjunkit från vårens topp.</p>
-<p>För Norden … Underlaget är amerikanskt och säger inget direkt om Norden. Men mönstret – störst risk för rutinarbete som kontorsbiträden, sekreterare och maskinoperatörer, och en konjunkturnedgång som förstärker effekten – är relevant för LO, TCO, Unionen, NHO och Svenskt Näringsliv. Omställningsavtal och trygghetsråd som TRR är i sin konstruktion till för den sortens omställning; frågan är hur väl de håller om en lågkonjunktur samtidigt påskyndar automatiseringen.</p>
-<p class="news-card__source">Källa: <a href="https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/">Fortune</a>, <a href="https://ibtimes.co.uk/ai-labor-disruption-goldman-sachs-forecasts-layoffs-will-displace-nine-percent-staff-globally-1827666">IBTimes</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nokia och Nvidia: T-Mobile har gjort första AI-RAN-samtalet i kommersiellt nät</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-10-26</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-26-nokia-och-nvidia-t-mobile-har-gjort-forsta</guid>
-      <pubDate>Mon, 26 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>T-Mobile har enligt Nokia och Nvidia genomfört världens första AI-RAN-samtal i ett kommersiellt nät, i Bellevue i delstaten Washington. Samtalet kördes på kommersiella ARC-servrar från Nvidia, Nokias CUDA-accelererade RAN-mjukvara och massive MIMO-radioenheter, kopplade till en befintlig 5G Standalone-kärna och en kommersiell mobiltelefon.</p>
-<p>Beskedet kom vid Nvidias GTC i Berlin den 21 oktober. Finska Elisa körde röst, mobildata och videoanalys parallellt på Nvidia ARC i ett 5G-fältförsök som beskrivs som en europeisk förstagång, med kommersiella AI-RAN-tjänster som mål 2027. Deutsche Telekom har validerat plattformen i labb i Bonn och Oulu, BT planerar ett försök i sitt kommersiella nät i Birmingham 2027, och nästan 20 operatörer har annonserat AI-RAN-samarbeten med Nokia och Nvidia. Uppgifterna kommer från leverantörerna; Light Reading konstaterar att milstolpen bygger på Nokias egna uppgifter, och enligt Nokia är nästa steg fler frekvensband och AI-arbetslaster.</p>
-<p>För Norden … Plattformen bygger på mjukvara från finska Nokia, med Elisa som nordisk operatör i fältförsök. För Ericsson, Nokias huvudkonkurrent, är det en utmaning – samtidigt redovisade T-Mobile dagen innan AI-styrd strålformning med Ericsson i ett 5G-nät i New York, enligt Light Reading. Telia, Telenor och Tele2 nämns inte i pressmeddelandet. Frågan för dem är om radionätets beräkningar ska ligga på generella GPU-servrar eller på dedikerad radiohårdvara.</p>
-<p class="news-card__source">Källa: <a href="https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms">Nvidia</a>, <a href="https://lightreading.com/ai-machine-learning/t-mobile-makes-first-ai-ran-call-with-nokia-and-nvidia">Light Reading</a></p>]]></description>
     </item>
   </channel>
 </rss>
