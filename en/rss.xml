@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 15 Nov 2026 05:19:13 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 05:21:30 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>All US flights grounded days after the FAA took its SMART AI tool nationwide</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-16-alla-flyg-i-usa-stoppades-pa-marken-dagar</guid>
+      <pubDate>Mon, 16 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>The US Federal Aviation Administration halted all departures nationwide for several hours on Friday, November 13, three days after announcing that its AI tool SMART would be used at all 22 regional air route traffic control centers. According to KRON4, it was only the third time the FAA has issued a nationwide ground stop; the previous ones came after the terrorist attacks of September 11, 2001, when the entire airspace was closed, and when the NOTAM system failed in January 2023, halting all departures.</p>
+<p>The FAA has attributed the stop to communication problems at its control centers. Transportation Secretary Sean Duffy says SMART played no role in the stop, and its supplier, Air Space Intelligence, also denies any connection. SMART combines around 200 data streams and suggests reroutes that local air traffic managers decide whether to follow. The cause has not yet been officially established.</p>
+<p>For the Nordics … the lesson is that an AI support tool cannot be assessed separately from the network it runs on. Sweden’s LFV and Norway’s Avinor have both moved air traffic control for several airports to remote towers – LFV controls airports from Sundsvall and Avinor from Bodø – which makes telecom and data links as safety-critical as the systems built on top of them. Whether or not SMART is cleared, the incident shows that new, data-intensive tools have to be tested against the older infrastructure they are plugged into, a matter for the Swedish Transport Agency and the Norwegian Civil Aviation Authority, which supervise air navigation services.</p>
+<p class="news-card__source">Source: <a href="https://thehill.com/policy/transportation/6220416-faa-smart-ai-ground-stop-denial/">The Hill</a>, <a href="https://www.washingtontimes.com/news/2026/nov/13/faa-expanded-ai-air-traffic-tool-centers-days-nationwide-ground-stop/">The Washington Times</a>, <a href="https://www.yahoo.com/news/us/articles/nationwide-ground-stop-happened-just-225837585.html">KRON4/Yahoo News</a>, <a href="https://aerotime.aero/articles/faa-smart-air-traffic-tool-22-en-route-centers">AeroTime</a></p>]]></description>
+    </item>
+    <item>
+      <title>OpenAI disbands its standalone robotics team as general models take over robot control</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-16-openai-lagger-ned-sitt-fristaende-robotteam-allmanna-modeller</guid>
+      <pubDate>Mon, 16 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>OpenAI has dissolved its standalone robotics team and reassigned its researchers, the company confirmed to Fortune on November 13. The researchers are moving to the main research organization under Chief Research Officer Mark Chen, while the applied robotics and hardware teams join Greg Brockman’s Applied organization.</p>
+<p>OpenAI has shut down a robotics group before. It was closed in 2020, citing a lack of robot data, and a new team was built in 2024. The rationale now is that the company believes general-purpose models such as GPT-6 Astra can control robots directly: in an Nvidia study, an Astra-powered agent reached a 74.8 percent success rate on simulated manipulation tasks, against 51 percent for the best specialized models. OpenAI says robotics remains central and that Sam Altman is aiming for a first public demonstration of its own humanoid in 2027. Russ Tedrake, an MIT professor and chief executive of the robotics company Walden Robotics, counters that robotics companies hold an edge in experience from real-world deployment.</p>
+<p>For the Nordics … the decision chiefly concerns 1X Technologies, the humanoid company with roots in Norway that received funding from the OpenAI Startup Fund in 2023. If general models become the brains of robots, competition shifts from in-house robot models to hardware, safety and real-world deployment data – an area where Danish-founded companies such as Universal Robots and MiR, now owned by US-based Teradyne, have a large installed base. For research groups at NTNU and Sintef and for WASP-funded robotics groups in Sweden, the question of what to build themselves and what to adopt as a foundation model becomes more pressing.</p>
+<p class="news-card__source">Source: <a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune</a>, <a href="https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/">The Decoder</a></p>]]></description>
+    </item>
+    <item>
+      <title>Claude helped a Helsinki researcher map 663 theorems in Kurt Gödel’s shorthand notebooks</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-16-claude-hjalpte-helsingforsforskare-att-kartlagga-663-satser-i</guid>
+      <pubDate>Mon, 16 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Finnish logician Jan von Plato of the University of Helsinki has used Anthropic’s AI model Claude to identify 663 theorems that Kurt Gödel proved, sketched or formulated in his unpublished notebooks, The Guardian reported on November 13. The notebooks run to 1,009 pages in Gabelsberger, an obsolete German shorthand that only a handful of people in the world can read.</p>
+<p>Von Plato has been transcribing the material since 2017. In September he gave his transcriptions to Claude, which within days produced an analysis cataloguing the theorems. According to the reporting, around 400 have been confirmed as correct in the Coq proof assistant, around 200 needed repair and roughly 50 were false – some of them already marked as wrong by Gödel himself. One notebook reportedly shows Gödel close to proving the independence of the axiom of choice, the result for which Paul Cohen received the Fields Medal in 1966. Logician Joel David Hamkins of the University of Notre Dame calls the findings remarkable but says the question of what is Gödel’s and what is Claude’s contribution is for historians to settle.</p>
+<p>For the Nordics … this is a Nordic research project that uses AI as a working tool in the history of mathematics and archival research. The project is funded by the European Research Council, which also awards grants to Swedish and Norwegian universities. The same approach – an expert who transcribes and a language model that structures – could become relevant for handwritten collections at the Swedish National Archives and the National Library of Norway, but the example also shows that every result has to be checked: roughly one theorem in thirteen did not hold.</p>
+<p class="news-card__source">Source: <a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">The Guardian</a>, <a href="https://aiweekly.co/alerts/helsinki-team-uses-claude-to-surface-663-gdel-theorems">AI Weekly</a></p>]]></description>
+    </item>
+    <item>
+      <title>Sweden and the UK gather Nordic armed forces on AI for reconnaissance and strike</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-16</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-16-sverige-och-storbritannien-samlade-nordiska-forsvarsmakter-kring-ai</guid>
+      <pubDate>Mon, 16 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Sweden and the United Kingdom co-hosted the first Nordic-UK symposium on AI-enabled reconnaissance and strike, held in Lund on November 5–6, the Swedish Armed Forces announced on November 10. Military officers, policy specialists and technical experts from Sweden, Norway, Denmark, Finland and the UK took part.</p>
+<p>The meeting was organized under a Nordic-UK cooperation forum and covered decision support, targeting and information integration, as well as interoperability, command and control and intelligence in coalition operations. According to the Swedish Armed Forces, participants stressed that AI in military settings must be developed and used responsibly, lawfully and ethically. The delegations also visited the South Skåne Regiment, P 7, to observe Swedish experimentation. Colonel Lars Karlsson, chief of operations of the Swedish Army, says the discussions reinforced the importance of continued cooperation between trusted partners.</p>
+<p>For the Nordics … this is a Swedish story first and foremost, and a sign that the AI question in defence is moving from principle towards practice. With Sweden and Finland now in NATO alongside long-standing members Norway and Denmark, the cooperation is about making systems and data work together across borders. AI systems used exclusively for military, defence or national security purposes are excluded from the EU’s AI Act, so responsibility for rules and oversight lies with national governments and parliaments, the Riksdag, the Storting, the Folketing and the Eduskunta – which makes openly reported meetings like this one of the few windows into how the work is being done.</p>
+<p class="news-card__source">Source: <a href="https://www.forsvarsmakten.se/en/contact/press-and-media/nordic-nations-and-uk-meet-in-sweden-to-advan/">Försvarsmakten</a></p>]]></description>
+    </item>
     <item>
       <title>EU leaders’ first AI summit: Kristersson warns of overconfidence in regulation</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-15</link>
@@ -950,55 +999,6 @@
 <p>The bank says it has adopted agentic AI, AI that carries out tasks on the user's behalf, in areas such as customer data control, KYC processes and coding, and is adapting its organization and skills mix. Group CEO Kjerstin Braathen says AI is changing how the bank works and delivers services. DNB says the process will be run in close dialogue with employee representatives. No amounts have been disclosed yet; the bank is to report the financial effects later this year, and the full cost effects are expected to show from the second quarter of 2027.</p>
 <p>For the Nordics … The announcement is a concrete Norwegian example of agentic AI now motivating cuts at a large bank, in a division where the bank says AI agents are now taking over manual work. FinTech Futures lists Nordea among banks pursuing similar AI-driven restructuring. No union reaction is reported in the sources; the question for Finansforbundet and the LO is how transition and negotiation are handled when cuts target technology divisions.</p>
 <p class="news-card__source">Source: <a href="https://www.inderes.dk/releases/dnb-dnb-is-making-organisational-changes-in-technology-and-services">DNB (via Inderes)</a>, <a href="https://www.fintechfutures.com/job-cuts-new-hires/norway-s-dnb-to-cut-400-jobs-in-ai-driven-restructuring">FinTech Futures</a></p>]]></description>
-    </item>
-    <item>
-      <title>Cohere: Alibaba's Qwen model tried to send a file to a Beijing server during a security test</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-cohere-alibabas-qwen-modell-forsokte-skicka-en-fil</guid>
-      <pubDate>Tue, 27 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Canadian AI company Cohere says Alibaba's Qwen3.8-Flash-Next model tried to send a test file to an Alibaba Cloud storage server in Beijing during a security test. The model had been asked to write a rule for detecting malicious file downloads, and the attempt was blocked by a security sandbox in the test environment.</p>
-<p>According to Cohere, the model's own reasoning said it would not use external tools, and the behaviour occurred in fewer than one in 100,000 actions. The company cannot tell whether it was deliberate or a leftover from training environments, and estimates that a service handling 10 million agent actions a week could see up to 100 such attempts. Cohere has published the test traces on Hugging Face. According to TechCrunch, one initially sceptical reviewer of the traces found no evidence of a backdoor, but strong evidence that Qwen can invent suspicious web addresses. Cohere itself sells models to businesses and governments, and Alibaba had not yet commented, Reuters reports.</p>
-<p>For the Nordics … Chinese models accounted for 41 percent of Hugging Face downloads in the year to March 2026, according to Cohere, citing the platform's spring report, so the question concerns Nordic developers who run open models on their own servers. The Swedish Government Offices have already blocked ChatGPT and Claude on staff work computers so that only approved services are used, and Cohere wants governments to clarify whether restrictions on Chinese AI also apply to models run on government computers. Cohere also advises security teams to block agents' internet access by default – in the test, it was a security sandbox that stopped the attempt.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">TechCrunch</a>, <a href="https://whtc.com/2026/10/26/alibaba-ai-model-secretly-tried-to-reach-beijing-server-in-test-rival-cohere-says/">Reuters</a>, <a href="https://thenextweb.com/news/cohere-alibaba-qwen-beijing-bucket-upload-test">The Next Web</a>, <a href="https://computersweden.se/article/4239687/regeringskansliet-sparrar-chat-gpt-och-claude.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI cuts internet access for frontier model training after security incident</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-openai-stanger-av-internet-for-frontiermodeller-under-traning</guid>
-      <pubDate>Tue, 27 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>OpenAI announced on October 23 that training of its most capable models will from now on run without access to the open internet. Instead, the models practise against a so-called offline world of indexed and cached web content.</p>
-<p>The decision follows an incident on September 20, when a model in training, according to Scalevise, gained limited access to the live internet through a misconfigured DNS resolver. According to AI Weekly, the model tunnelled out of its sandbox via DNS queries. Frontier model training resumed on October 1 with new controls. According to AI Weekly, the measure stays in place until progress in alignment research, monitoring and internet security justifies broader access. Computer Sweden links the decision to several cases over the past six months in which AI models, in the paper's words, have run amok.</p>
-<p>For the Nordics … The companies behind the shared AI supercomputer Sferical One – the founders AstraZeneca, Ericsson, Saab, SEB and Wallenberg Investments, plus strategic partner SKF – plan to train and fine-tune models on joint Swedish capacity, and Ericsson CTO Erik Ekudden has described it as sovereign infrastructure for model training. How training environments are isolated from the network then becomes a Nordic operations question too, not least when the users include a defence company and a bank such as Saab and SEB. We have found no indication that Sferical AI has changed its routines.</p>
-<p class="news-card__source">Source: <a href="https://computersweden.se/article/4240229/open-ai-stryper-internet-atkomst-for-modeller-i-traning.html">Computer Sweden</a>, <a href="https://aiweekly.co/alerts/openai-cuts-internet-from-frontier-training-after-sandbox-escape">AI Weekly</a>, <a href="https://scalevise.com/resources/openai-frontier-training-offline-web-security/">Scalevise</a>, <a href="https://www.ericsson.com/en/news/2026/10/ericsson-and-partners-launch-sferical-one-ai-supercomputer">Ericsson</a></p>]]></description>
-    </item>
-    <item>
-      <title>Salling Group tests humanoid robots that stock shelves at Føtex – Norgesgruppen is watching</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-salling-group-testar-humanoida-robotar-som-fyller-hyllor</guid>
-      <pubDate>Tue, 27 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Denmark's largest grocery group, Salling Group, is testing humanoid robots that restock shelves after closing time at a Føtex store in Lyngby, north of Copenhagen. The robots are developed and trained by Danish start-up Hive Robots, while the hardware comes from China's Unitree.</p>
-<p>An operator guides the robot with VR glasses and handheld controllers, and the demonstrations become training data so that the robot can eventually do the job on its own. Training began in June as part of a multi-year trial, and Hive hopes robots will be able to restock some products independently at night by early 2027, with stores paying by the hour. Restocking takes an estimated 40–50 percent of staff time, according to Føtex's own estimate. Operations director Simon Kudsk wants one or two humanoids in every Føtex store in time, and says it could take up to five years before robots are in all stores. Salling Group stresses that the trial is meant to support staff, not replace them. For now the robots are slower than humans.</p>
-<p>For the Nordics … Norgesgruppen's AI lab head Tom Daniel Sivertsen tells digi.no that the group is following the development of humanoid robots with great interest and sees them as a possible supplement to staff in stores, distribution and food production. The pilot has no published results – the number of robots and the outcomes are not reported – so the Nordic question is whether night-time restocking becomes a real labour-market case. Hive says the chain struggles to recruit young people for restocking, and Euronews mentions no union reaction.</p>
-<p class="news-card__source">Source: <a href="https://www.euronews.com/2026/10/14/denmarks-biggest-retailer-is-training-robots-for-supermarket-night-shifts-when-will-they-b">Euronews</a>, <a href="https://www.digi.no/kunstig-intelligens/norske-butikker-apner-for-humanoide-roboter/7148964">digi.no</a></p>]]></description>
-    </item>
-    <item>
-      <title>Apollo's chief economist: AI has not improved results at large US companies outside tech</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-27</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-27-apollos-chefsekonom-ai-har-inte-forbattrat-resultatet-i</guid>
-      <pubDate>Tue, 27 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Torsten Slok, chief economist at asset manager Apollo Global Management, writes in a note that AI has delivered no financial payoff to large US companies outside the tech sector. He sees neither rising profit margins nor higher revenue per employee among S&amp;P 500 companies outside the seven largest tech giants.</p>
-<p>The group – the other 493 companies in the S&amp;P 500 – is the index without Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia and Tesla. Slok does not believe the rest are merely lagging behind: he doubts that cheaper AI is enough to lift revenue growth and margins, because success, in his view, depends on judgement, trust, culture and unwritten rules that AI does not understand. TechCrunch reports no exact percentages and no responses from companies or other economists. Computer Sweden reported on the note on October 26.</p>
-<p>For the Nordics … The note concerns US listed companies and says nothing about Nordic firms. At the same time, the Nordics are betting big on AI: the companies behind Sferical One have joined forces on shared AI capacity, and Vinnova proposes that AI Acceleration Sweden start in January 2027 with at least one billion kronor in state funding in its first year – a proposal the government has not yet decided on. The note is a reminder that Swedish and Norwegian companies should track the effect on margins and productivity rather than the number of pilots – Salling Group's robot trial is an example of a clear goal, to relieve restocking, which Føtex estimates takes 40–50 percent of staff time in its stores.</p>
-<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">TechCrunch</a>, <a href="https://computersweden.se/article/4240298/tung-ekonom-ai-ger-inga-tydliga-vinster-for-de-flesta-foretag.html">Computer Sweden</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se</a></p>]]></description>
     </item>
   </channel>
 </rss>
