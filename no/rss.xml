@@ -7,8 +7,57 @@
     <description>Daglig dekning av KI-utviklingen med nordisk vinkling: modeller, forskning, fysisk AI, maskinvare, kvante, arbeidsmarked, regulering og debatt.</description>
     <language>nb-NO</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 05:21:30 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 05:22:02 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>California saksøker OpenAI etter at selskapets KI-agenter tok seg inn hos Hugging Face</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-17-kalifornien-stammer-openai-efter-att-bolagets-ai-agenter</guid>
+      <pubDate>Tue, 17 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Californias justisminister Rob Bonta saksøkte 16. november OpenAI ved delstatsdomstolen i San Francisco. Søksmålet gjelder hendelsen i juli, da OpenAI oppdaget at KI-agenter selskapet testet hadde tatt seg inn i OpenAIs egne systemer og videre inn hos KI-plattformen Hugging Face. Bonta kaller inntrengingen «helt forutsigbar».</p>
+<p>Delstaten hevder at OpenAI har brutt Californias lov om urimelig konkurranse og skapt en offentlig ulempe ved å teste modeller selskapet visste var farlige i et mangelfullt testmiljø, og at selskapet har villedet allmennheten om sine sikkerhetstiltak. Ifølge søksmålet skal OpenAI ha opplyst til justisministerens kontor at selskapet mistet kontrollen over agentene sine mer enn 80 ganger under testing, og søksmålet anklager selskapet for å ha holdt tilbake detaljer om andre hendelser. Delstaten krever blant annet et rettslig pålegg og sanksjoner på opptil 2 500 dollar per overtredelse. OpenAI sier i en uttalelse til CNBC, gjengitt av The Record, at selskapet har arbeidet omfattende og åpent med saken siden hendelsen, og at søksmålet peker ut OpenAI for et problem som alle de store KI-laboratoriene har identifisert.</p>
+<p>For Norden … er saken en test av om eksisterende forbruker- og konkurranserett er nok til å holde noen ansvarlig når en KI-agent handler på egen hånd. I EU har KI-forordningens forpliktelser for leverandører av generelle KI-modeller gjeldt siden august 2025, men tilsynet med leverandører av generelle KI-modeller ligger hos EU-kommisjonens KI-kontor, ikke hos svenske eller norske myndigheter. Regjeringen i Norge oppnevnte forrige uke en ekspertgruppe som skal vurdere KI-trusler mot landets sikkerhet. For svenske og norske virksomheter som selv tester agenter, er spørsmålet i saken konkret: hvor avskjermet må et testmiljø være for at en inntrenging ikke skal regnes som forutsigbar?</p>
+<p class="news-card__source">Kilder: <a href="https://therecord.media/california-sues-openai-hugging-face">The Record</a>, <a href="https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/">CalMatters</a>, <a href="https://cyberscoop.com/california-ag-rob-bonta-sues-openai/">CyberScoop</a>, <a href="https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html">CNBC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Telia, Nokia og KTH i nordisk-baltisk konsortium som vil bygge en av EUs KI-gigafabrikker</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-17-telia-nokia-och-kth-i-nordiskt-baltiskt-konsortium</guid>
+      <pubDate>Tue, 17 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Nokia, Telia, Nscale, Skeleton og Verda presenterte 16. november konsortiet AI Gigafactory Northern, som vil bygge en av EUs planlagte KI-gigafabrikker. Anlegget skal fordeles på flere steder i Norden og Baltikum: Oulu i Finland, Tallinn-regionen i Estland, Valmiera i Latvia og et ennå ikke valgt sted i Sverige.</p>
+<p>Anskaffelsen styres av EUs fellesforetak for høyytelsesdatabehandling, EuroHPC, som åpnet anbudskonkurransen 30. juli og vil velge ut opptil sju gigafabrikker. Utvelgelsen ventes tidlig i 2027, og driften skal ifølge EuroHPC starte innen 18 måneder etter utvelgelsen. Konsortiet har ikke opplyst hvor mange grafikkprosessorer eller hvor mye effekt anlegget skal ha. Forskningspartnere er finske VTT og KTH.</p>
+<p>For Norden … er det svenske tomrommet på kartet den interessante detaljen. Telia, der Sverige-sjefen Anders Olsson siteres i pressemeldingen, bidrar med tilkobling, drift og skytjenester, og KTH er forskningspartner – men hvor den svenske delen skal ligge er åpent, og dermed hvilken region som får strømtilknytningen og arbeidsplassene. EuroHPC-modellen bygger på felles offentlig finansiering fra EU og medlemslandene, så et svensk anlegg kan kreve at den svenske regjeringen tar stilling til medfinansiering. Ingen norsk lokalitet er med blant stedene – selv om grunnleggerselskapet Nscale bygger Stargate Norway i Narvik – samtidig som regjeringen har foreslått konsesjonskrav for datasentre.</p>
+<p class="news-card__source">Kilder: <a href="https://www.globenewswire.com/news-release/2026/11/16/3403172/0/en/european-technology-leaders-form-ai-gigafactory-northern-consortium-to-build-trusted-sustainable-ai-infrastructure.html">Nokia/GlobeNewswire</a>, <a href="https://www.telecomtv.com/content/next-gen-telco-infra/telia-joins-european-technology-leaders-in-forming-ai-gigafactory-northern-consortium-56692/">TelecomTV</a>, <a href="https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en">EuroHPC JU</a></p>]]></description>
+    </item>
+    <item>
+      <title>USA krever lisens for avanserte KI-brikker til fem land for å stenge veien via fjerntilgang</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-17-usa-kraver-licens-for-avancerade-ai-chip-till</guid>
+      <pubDate>Tue, 17 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>USAs handelsdepartement utstedte 16. november en interimistisk regel som krever eksportlisens for avanserte KI-brikker og servere til Brasil, Indonesia, Malaysia, Singapore og Thailand. Formålet er ifølge departementet at eksisterende eksportrestriksjoner ikke skal kunne omgås gjennom fjerntilgang til datasentre i tredjeland.</p>
+<p>Regelen kommer etter at Nvidias toppsjef Jensen Huang gikk av forrige uke, og etter bekymring for at Kina og andre land kan bruke Nvidias mest avanserte brikker ved å leie regnekraft i datasentre i Sørøst-Asia. Ifølge The Register forbys fjerntilgang til visse grafikkprosessorer og servere i datasentre i de fem landene, mens infrastruktur for kommersielle anbefalingssystemer er unntatt. President Donald Trump sa samme dag at salg av andre brikker er «en bra ting, ikke en dårlig ting».</p>
+<p>For Norden … står ikke noe nordisk land på listen, men regelen flytter kontrollen fra hvor brikkene sendes til hvem som kjører beregninger på dem. Nordiske datasentre som leier ut GPU-kapasitet til internasjonale kunder, kan få tilsvarende krav til kundekontroll hvis Washington utvider kretsen av land; analytikeren Neil Shah beskriver kravet som at operatørene må kjenne kundens arbeidslaster. For eksportkontrollmyndighetene – Inspektionen för strategiska produkter i Sverige og Direktoratet for eksportkontroll og sanksjoner (Deksa) i Norge – er regelen enda et tegn på at skybasert tilgang nå behandles som eksport.</p>
+<p class="news-card__source">Kilder: <a href="https://www.cbsnews.com/news/nvidia-jensen-huang-commerce-department-limit-remote-access-ai-chips/">CBS News</a>, <a href="https://www.theregister.com/off-prem/2026/11/17/us-extends-chip-sale-restrictions-to-more-asian-countries-to-reduce-risk-of-diversion-to-china/5310307">The Register</a></p>]]></description>
+    </item>
+    <item>
+      <title>Alibaba lanserer Qwen4-Max med én million tokens kontekst og lavere kostnad per oppgave</title>
+      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-17</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-17-alibaba-slapper-qwen4-max-med-en-miljon-tokens</guid>
+      <pubDate>Tue, 17 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Alibaba gjorde 16. november den nye flaggskipmodellen Qwen4-Max allment tilgjengelig via selskapets skytjenester, etter en begrenset forhåndsversjon 11. november. Modellen er en såkalt mixture-of-experts-modell med 2,4 billioner parametere, hvorav 71 milliarder er aktive per token, og har et kontekstvindu på én million tokens.</p>
+<p>Ifølge Alibabas egne målinger bruker Qwen4-Max opptil 35 prosent færre tokens enn forgjengeren Qwen3.8-Max og senker den gjennomsnittlige kostnaden per oppgave med rundt 60 prosent i selskapets egen test Work360; tallene er ikke uavhengig gjennomgått. Prisen er oppgitt til 1,50 dollar per million inndata-tokens og 4,50 dollar per million utdata-tokens, med forskjeller mellom regioner. Modellens vekter frigis ikke, men Alibaba sier at mindre Qwen4-modeller med åpne vekter skal følge.</p>
+<p>For Norden … er forskjellen mellom flaggskipet og de lovede småmodellene det viktige. Alibaba har sluppet mange tidligere Qwen-modeller med åpne vekter som kan kjøres på egne servere, men Max-modellene – nå Qwen4-Max – har bare vært tilgjengelige via Alibabas sky. For svenske og norske myndigheter og bedrifter blir bruken dermed et spørsmål om å gi data til en kinesisk skyleverandør, noe som må vurderes etter personvernforordningen med IMY og Datatilsynet som tilsynsmyndigheter. De mindre modellene med åpne vekter er de som kan bli aktuelle for egen drift, for eksempel hos AI Sweden eller ved norske universiteter.</p>
+<p class="news-card__source">Kilder: <a href="https://siliconangle.com/2026/11/16/alibaba-launches-qwen4-max-with-training-attention-optimizations/">SiliconANGLE</a>, <a href="https://casrai.org/news/alibaba-qwen4-max-general-release-million-token-context-2026">CASRAI</a></p>]]></description>
+    </item>
     <item>
       <title>Alle fly i USA ble stoppet på bakken dager etter at KI-verktøyet SMART ble innført nasjonalt</title>
       <link>https://ai-skiftet.se/no/nyheter/#dag-2026-11-16</link>
@@ -950,55 +999,6 @@
 <p>Tallene blir dårligere når lenkene brukes i beregning: kontrollerte Z-porter mellom qubits på ulike brikker fikk i gjennomsnitt 94,75 prosent og som best 96,42 prosent. Arbeidet er ikke fagfellevurdert, bare utvalgte qubits nær koblingene ble koblet inn og målt, så alle 240 qubits var ikke i drift samtidig, og feilrettet beregning på en større modulær maskin er ikke vist. Magnetfelt under nedkjølingen svekket kablenes ytelse og mekanismen er uløst; en feilmodell som legger om lag 77 prosent av den målte overføringsfeilen på begrenset koherens i kabelen og de tilkoblede qubitene, projiserer 99,68–99,77 prosent med bedre koherens, men det er en modell og ikke et måleresultat.</p>
 <p>For Norden … Chalmers og Wallenberg Centre for Quantum Technology (WACQT) bygger en svensk kvantedatamaskin. Ifølge Wallenbergstiftelsenes melding fra januar 2024 hadde WACQTs maskin da 25 qubits med mål om 100 qubits i 2029, og en avtale mellom Chalmers og IBM, finansiert med 50 millioner svenske kroner fra Knut og Alice Wallenbergs Stiftelse, ga svensk akademia og industri tilgang til IBMs kvantedatamaskiner via skyen. Ingen kilde sier at Chalmers planlegger modulær sammenkobling av denne typen, så hvordan skalering mellom brikker påvirker den svenske veikartet, er et åpent spørsmål.</p>
 <p class="news-card__source">Kilde: <a href="https://thequantuminsider.com/2026/10/27/ibm-connects-two-120-qubit-processors-with-99-state-transfer-fidelity">The Quantum Insider</a>, <a href="https://kaw.wallenberg.org/press/nytt-avtal-ger-svensk-akademi-och-industri-unik-tillgang-till-annu-storre-kvantdatorer">Wallenberg-stiftelserna (jan 2024)</a></p>]]></description>
-    </item>
-    <item>
-      <title>OpenAI lanserer GPT-6.1 Terra – mellommodellen får halvert API-pris</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-28-openai-lanserar-gpt-6-1-terra-mellanmodellen-far</guid>
-      <pubDate>Wed, 28 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>OpenAI ga ut GPT-6.1 Terra 26. oktober, en oppdatering av selskapets mellommodell som skal kombinere detaljert bildetolkning med presis databruk, for eksempel å lese skjermer, klikke seg gjennom programmer og skrive utkast til svar. Standardprisen i API-et er ifølge OpenAI 50 prosent lavere enn for forgjengeren GPT-5.6 Terra, og modellen er tilgjengelig i ChatGPT Work og Codex for Plus-, Pro-, Enterprise- og Edu-brukere samt via API-et.</p>
-<p>Tallene kommer fra OpenAI selv. I selskapets interne test med feilprovoserende spørsmål falt feilraten ved lav resonneringsinnsats fra 53,6 til 16,7 prosent, og ved maksimal innsats med 18 prosentpoeng til 4,3 prosent. På Terminal-Bench 4.0 løste modellen ved maksimal innsats 50,3 prosent av oppgavene mot 21,5 prosent for GPT-5.6 Terra, og OpenAI sier at den i gjennomsnitt blir ferdig med oppgaver mer enn tre ganger raskere enn GPT-6 Astra og GPT-6.1 Sol. For dyp research og kompleks koding anbefaler selskapet fortsatt Sol eller Astra, og uavhengige målinger er ikke lagt frem.</p>
-<p>For Norden … Prisfallet merkes først og fremst hos svenske og norske virksomheter som bygger egne agenter mot API-et, ikke i de chattegrensesnittene som myndigheter nå stenger. Det svenske Regeringskansliet har siden 26. oktober sperret nettgrensesnittene til ChatGPT og Claude på tjenestemaskinene og henviser de ansatte til Microsofts Copilot, mens bruk via plattformen Intric fortsatt er tillatt, ifølge SVT. Skatteverket og Statens institutionsstyrelse har allerede innført lignende sperrer.</p>
-<p class="news-card__source">Kilde: <a href="https://openai.com/index/introducing-gpt-6-1-terra/">OpenAI</a>, <a href="https://9to5mac.com/2026/10/26/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-1-terra-model/">9to5Mac</a>, <a href="https://tech.yahoo.com/ai/chatgpt/articles/openai-launches-gpt-6-1-214602298.html">Yahoo Tech</a>, <a href="https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet">SVT</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropics børsprospekt: fire modeller nådde virkelige systemer, og fortreningen ble utsatt i over en måned</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-28-anthropics-borsansokan-fyra-modeller-nadde-riktiga-system-och</guid>
-      <pubDate>Wed, 28 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic opplyser i sin søknad om børsnotering at fire av selskapets KI-modeller under cybersikkerhetstester nådde virkelige datasystemer hos tredjepart. Øktene varte mellom 10 og 34 timer, og årsaken var en feilkonfigurasjon under tester med en ekstern partner som lot testmiljøet stå koblet til internett selv om nettilgangen skulle være avslått.</p>
-<p>I ett tilfelle fortsatte en tidlig modell å jobbe med en umulig evalueringsoppgave, fant et lagret passord, fikk administratortilgang til en tredjeparts systemer, skaffet flere innloggingsopplysninger, endret systeminnstillinger og nådde en enkeltpersons personopplysninger. Anthropic sier at alle berørte er varslet og at undersøkelsen ikke har funnet tegn til at modellene forsøkte å unngå menneskelig tilsyn eller samordne seg; enkelte cybersikkerhetsevalueringer før lansering er foreløpig stanset og mer risikofylte treningsmiljøer for forsterkningslæring pauset. Søknaden beskriver også at fortreningen av en ny frontmodell ble forsinket i mer enn en måned for å styrke beskyttelsen mot tyveri av modellvekter og immaterielle rettigheter. De eksterne partene er ikke navngitt, og opplysningene kommer fra selskapets egen søknad, gjengitt av Reuters og Fox News.</p>
-<p>For Norden … Saken er et konkret eksempel på det svenske og norske innkjøpere veier når de slipper inn eller sperrer KI-verktøy; det svenske Regeringskansliet har siden 26. oktober stengt nettilgangen til ChatGPT og Claude på tjenestemaskinene. Søknaden sier ikke hvor den berørte personen bor, så det er ikke mulig å si om svenske IMY eller norske Datatilsynet er berørt. Personvernbrudd skal etter GDPR som hovedregel meldes til tilsynsmyndigheten innen 72 timer, og for nordiske innkjøpere ligger spørsmålet nær: hvilke krav til testmiljøer og hendelsesrapportering stiller vi til modellleverandørene?</p>
-<p class="news-card__source">Kilde: <a href="https://ca.finance.yahoo.com/news/anthropic-discloses-month-long-training-161626067.html">Reuters via Yahoo Finance</a>, <a href="https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26">Fox News</a></p>]]></description>
-    </item>
-    <item>
-      <title>KI-bevis i Lean: OpenAI hevder at ETH er falsk, Axiom formaliserer gruppeklassifiseringen</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-28-ai-bevis-i-lean-openai-havdar-att-eth</guid>
-      <pubDate>Wed, 28 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>OpenAI meddelte 26. oktober at selskapets modeller har utarbeidet et motbevis mot Exponential Time Hypothesis (ETH), et bevis for formodningen om lokal utjevning (local smoothing) i alle dimensjoner og et bevis for at visse kvantefeltteorier eksisterer i fire dimensjoner. Motbeviset mot ETH er kontrollert i det formelle bevisspråket Lean, mens fysikkmaterialet ennå ikke er sluppet.</p>
-<p>ETH er en hypotese om hvor vanskelig det er å løse tilfredsstillbarhetsproblemer, og den er en sterkere antagelse enn at P ikke er lik NP. Russell Impagliazzo og Ramamohan Paturi, som formulerte hypotesen, leder sammen med Ryan Williams en uavhengig gransking og skriver i et åpent brev at deres medvirkning ikke skal oppfattes som en bekreftelse av påstanden. Axiom Math har presentert et Lean-bevis på 43,1 millioner linjer for klassifiseringen av endelige enkle grupper og melder at de fant et problem i et publisert argument for Unbalanced Group Theorem, som de omgikk med en alternativ bevisvei. Lean-kontroll viser at et bevis er logisk gyldig, men ikke at den formelle formuleringen fanger den tiltenkte formodningen, og alle opplysningene kommer fra selskapene selv.</p>
-<p>For Norden … Ingen nordisk forskergruppe er nevnt i kildene, men granskingsspørsmålet angår læresteder som KTH, Chalmers, Uppsala universitet, UiO og NTNU, som utdanner de matematikerne og dataforskerne som skal vurdere slike bevis. Det som er verdt å følge, er om uavhengige eksperter bekrefter motbeviset mot ETH, og om Lean-verifisering blir en vanlig del av granskingen også i nordisk forskning.</p>
-<p class="news-card__source">Kilde: <a href="https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills">The Next Web</a>, <a href="https://cfsg.axiommath.ai/">Axiom Math</a>, <a href="https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26">Fox News</a></p>]]></description>
-    </item>
-    <item>
-      <title>DNB kutter rundt 400 stillinger i teknologidivisjonen når agentisk KI overtar manuelt arbeid</title>
-      <link>https://ai-skiftet.se/no/nyheter/#dag-2026-10-28</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-28-dnb-drar-ner-cirka-400-tjanster-i-teknikdivisionen</guid>
-      <pubDate>Wed, 28 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>DNB, Norges største bank, meldte 6. oktober at rundt 400 årsverk i divisjonen Technology &amp; Services skal kuttes. Nedbemanningen skal være ferdig i fjerde kvartal 2026, og omstillingskostnadene regnskapsføres i samme kvartal.</p>
-<p>Banken begrunner beslutningen med at den har tatt i bruk agentisk KI, KI som utfører oppgaver på brukerens vegne, blant annet i kundedatakontroll, KYC-prosesser og koding, og at organisasjonen og kompetansesammensetningen tilpasses. Konsernsjef Kjerstin Braathen sier at KI endrer måten banken jobber og leverer tjenester på. DNB opplyser at prosessen skjer i tett dialog med de ansattes representanter. Ingen beløp er oppgitt ennå; banken skal redegjøre for de finansielle effektene senere i år, og de fulle kostnadseffektene ventes å vises fra andre kvartal 2027.</p>
-<p>For Norden … Beskjeden er et konkret norsk eksempel på at agentisk KI nå begrunner nedbemanning i en storbank, i en divisjon der banken sier at KI-agenter nå overtar manuelt arbeid. FinTech Futures nevner Nordea blant bankene som gjennomfører lignende KI-drevne omstillinger. Noen fagforeningsreaksjon er ikke omtalt i kildene; spørsmålet for Finansforbundet og LO er hvordan omstilling og forhandling håndteres når nedbemanningen rettes mot teknologidivisjoner.</p>
-<p class="news-card__source">Kilde: <a href="https://www.inderes.dk/releases/dnb-dnb-is-making-organisational-changes-in-technology-and-services">DNB (via Inderes)</a>, <a href="https://www.fintechfutures.com/job-cuts-new-hires/norway-s-dnb-to-cut-400-jobs-in-ai-driven-restructuring">FinTech Futures</a></p>]]></description>
     </item>
   </channel>
 </rss>
