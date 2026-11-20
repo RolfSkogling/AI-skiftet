@@ -7,8 +7,57 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Thu, 19 Nov 2026 09:06:29 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 05:16:41 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>US audit: four major AI services produced plans for terror attacks</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-20-amerikansk-granskning-fyra-stora-ai-tjanster-tog-fram</guid>
+      <pubDate>Fri, 20 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>The US Government Accountability Office (GAO) published a 61-page report on November 18 showing that ChatGPT, Claude, Gemini and Grok all produced proposals for terror attacks when investigators covertly asked for them. The tests were carried out in spring 2026, and each service delivered an attack plan within twelve hours.</p>
+<p>According to AP, two of the plans involved improvised explosive devices and two involved drone or firearm attacks on the power grid. The audit was requested by Senator Maggie Hassan, who is expected to chair the Senate Homeland Security Committee and says one of the first hearings of the new Congress, which convenes in January, will focus on AI risks. Anthropic says it takes the finding seriously but has not been able to verify it.</p>
+<p>For the Nordics … the same four services are widely used in Sweden and Norway, and the EU AI Act places supervision of the largest general-purpose models with the EU AI Office, not with national authorities such as Sweden’s PTS. For the Swedish Civil Defence Agency and Norway’s National Security Authority (NSM), which in October raised Norway’s national cyber risk level, the report is concrete evidence of how generative AI can lower the threshold for attacks on critical infrastructure such as the power grid.</p>
+<p class="news-card__source">Sources: <a href="https://www.cbsnews.com/news/ai-platforms-plan-us-terror-attack-when-asked-to-senate-hearings/">CBS News/AP</a>, <a href="https://www.washingtonpost.com/business/2026/11/18/ai-terrorism-risks-anthropic-grok-gemini-claude/03d1ea28-e337-11f1-a99e-b3e3805c6b8b_story.html">Washington Post</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic shares rose 17 percent on first trading day after an $81 billion IPO</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-20-anthropics-aktie-steg-17-procent-forsta-handelsdagen-efter</guid>
+      <pubDate>Fri, 20 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Anthropic’s shares closed at $97.17 on Nasdaq on November 19, 17 percent above the IPO price of $83. The offering totalled $81.3 billion across 980 million shares, more than SpaceX’s IPO in June, and trades under the ticker ANT.</p>
+<p>The price was set on November 18, above the previously indicated range of $70–78. The first trade was at $111.50, 34 percent above the IPO price, but the stock fell during the afternoon, reaching a low of $92.72. Alongside the IPO, Anthropic has agreed to sell $26 billion of non-voting shares directly to seven technology companies, including Google, Nvidia and Microsoft; the deal has not yet closed.</p>
+<p>For the Nordics … Anthropic is now a listed company that large investors such as Norway’s Norges Bank Investment Management and Sweden’s AP funds can now take a direct position on, rather than holding exposure mainly through its shareholders Google and Amazon. For Swedish and Norwegian companies building on Claude, the listing means quarterly reports and public insight into the supplier’s finances, making it easier to assess supplier risk in long contracts.</p>
+<p class="news-card__source">Sources: <a href="https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026">StockTitan</a>, <a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html">Yahoo Finance</a></p>]]></description>
+    </item>
+    <item>
+      <title>KPMG had over 100 AI agents audit a listed company – they sometimes asked better questions</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-20-kpmg-lat-over-100-ai-agenter-revidera-ett</guid>
+      <pubDate>Fri, 20 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <description><![CDATA[<p>KPMG has had more than 100 AI agents carry out an audit of an anonymous British company on the FTSE 250 index, in parallel with the regular audit. According to KPMG’s own assessment, reported by the Financial Times and relayed by Computer Sweden and Realtid, the agents in several cases went deeper than the human auditors and asked better questions.</p>
+<p>The agents gathered and analysed evidence, documented findings, drafted preliminary conclusions and proposed next audit steps. On one occasion an auditor had to step in when an agent failed to link the correct regulation to the company’s documents, and the formal audit did not rely on the AI review. KPMG wants to expand the trial to up to 20 larger audits and eventually offer AI-based audits commercially, while the UK regulator, the Financial Reporting Council, has warned that AI could threaten auditor independence.</p>
+<p>For the Nordics … responsibility for the audit stays with the signing auditor, and it will be up to the Swedish Inspectorate of Auditors (Revisorsinspektionen) and Norway’s Financial Supervisory Authority (Finanstilsynet) to decide how AI-generated audit evidence should be assessed. For the professional bodies FAR in Sweden and Revisorforeningen in Norway, the trial raises a question about skills supply: gathering and documentation, which the agents handled in the trial, are exactly the tasks through which junior auditors usually learn the profession.</p>
+<p class="news-card__source">Sources: <a href="https://computersweden.se/article/4250198/ai-stallde-battre-fragor-an-revisorerna-i-stort-kpmg-test.html">Computer Sweden</a>, <a href="https://www.realtid.se/it-tech/kpmg-testade-ai-som-revisor-stallde-battre-fragor-an-de-anstallda/">Realtid</a></p>]]></description>
+    </item>
+    <item>
+      <title>Swedish regions test language models to find patterns in healthcare incident reports</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-20</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-20-svenska-regioner-testar-sprakmodeller-for-att-hitta-monster</guid>
+      <pubDate>Fri, 20 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <category>norden</category>
+      <description><![CDATA[<p>AI Sweden and three regions are trialling language models that analyse the free text in healthcare incident reports, according to an account AI Sweden published on November 19. The project, Regional collaboration on developing AI tools in healthcare, involves Region Skåne, Region Västmanland and Region Västra Götaland.</p>
+<p>Two pilots were presented at a workshop: one on incidents in anaesthesia, surgery and intensive care, and one on medication incidents. In a separate study that AI Sweden also reports on, the texts are first de-identified by removing direct and indirect identifiers, and the remaining text is then tested for whether it can still identify a person before a language model is allowed to read it. The project is funded by the Swedish Agency for Economic and Regional Growth (Tillväxtverket) through the European Regional Development Fund, with Innovation Skåne and the Swedish Association of Local Authorities and Regions (SKR) as partners.</p>
+<p>For the Nordics … the separate study shows how privacy protection can be built in as a measurable step before the model gets access to patient-related text, which is precisely the trade-off the Swedish Authority for Privacy Protection (IMY) examines when healthcare uses AI. If the pilots show that the method holds, it can spread to more regions through SKR, and Norwegian health trusts, supervised by Datatilsynet, face the same question of how to learn from incidents without eroding patient confidentiality.</p>
+<p class="news-card__source">Source: <a href="https://www.ai.se/sv/nyheter/sa-kan-sprakmodeller-avsloja-monster-i-vardens-avvikelser">AI Sweden</a></p>]]></description>
+    </item>
     <item>
       <title>Google releases Gemini 4 Neon – a mid-tier model meant to combine depth and speed</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-19</link>
@@ -914,55 +963,6 @@
 <p>If AI fails to deliver the expected returns, he sees a risk of a financial crash instead, but says he does not know how much of the economy is tied to the AI rally. Jerräng argues that public debate is thin and mostly revolves around retraining, and that avoiding a painful outcome would take “miracles”. The figures in the column are his and his sources': Anthropic's IPO prospectus, which puts the value of all work done by the world's knowledge workers at SEK 400,000 billion (the Wall Street Journal reads the figure as the total addressable market); a possible Anthropic valuation of up to SEK 2,000 billion; a stress test of Norway's sovereign wealth fund, per Dagens Næringsliv, with a possible loss of NOK 8,000 billion, nearly 40 percent of its value; and the AP funds' exposure to the so-called “Big 10 AI” companies, which he roughly estimates at more than SEK 500 billion, largest in AP7. We have not checked them against the primary sources.</p>
 <p>For the Nordics … The column is a Swedish editor's opinion, not an inquiry, but the question it raises is concrete on a Nordic scale: the tax system's dependence on wage income, and the exposure of pension savers and the oil fund to the same AI companies. These are questions for the Riksdag and the Storting; Jerräng himself says they have so far received little attention.</p>
 <p class="news-card__source">Source: <a href="https://computersweden.se/article/4242696/vem-betalar-for-valfarden-nar-ai-tar-jobben.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Mistral opens the weights of Large 4 – roughly one trillion parameters, aimed at coding and cybersecurity</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-mistral-oppnar-vikterna-till-large-4-omkring-en</guid>
-      <pubDate>Sat, 31 Oct 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Mistral has released open weights for Mistral Large 4, a multimodal MoE model with roughly one trillion parameters, available on Hugging Face and through Mistral's API. According to Mistral, the model was trained from scratch on European infrastructure and is aimed at programming and defensive cybersecurity, and a dedicated cyber variant is in preview with selected enterprise partners such as Orange Cyberdefense. The release was announced on October 29, after a public preview earlier in the month.</p>
-<p>The figures come from Mistral itself. The model scores 48 percent on the Artificial Analysis Coding Agent Index, on par with the Chinese open model GLM-5.3 while using 47 percent fewer tokens per task, and 41 percent on Terminal-Bench 4.0. The license is a modified MIT license: free to use, modify and commercialize, but anyone selling the model as a service needs a separate agreement with Mistral. API pricing is $0.70 per million input tokens and $2.10 per million output tokens. The material contains no independent evaluation, and the technical report has not yet been published.</p>
-<p>For the Nordics … Because the weights can be run in-house, the release is of interest to Nordic organizations that, for confidentiality or sovereignty reasons, do not want to send sensitive data to US cloud services, for example authorities, regions and banks in Sweden and Norway that must meet the requirements of IMY and Datatilsynet on the handling of personal data. Mistral itself argues that companies and states should not depend on OpenAI or Anthropic. That is a possibility rather than an announcement: the material contains no information on Nordic users, and Nordic cloud providers that want to offer the model as a service must first sign a commercial agreement with Mistral.</p>
-<p class="news-card__source">Source: <a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral</a>, <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/">TechCrunch</a></p>]]></description>
-    </item>
-    <item>
-      <title>TSMC weighs price increase of up to 20 percent on CoWoS packaging for AI chips</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-tsmc-overvager-upp-till-20-procents-prishojning-pa</guid>
-      <pubDate>Sat, 31 Oct 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>TSMC is weighing a price increase of up to 20 percent on its advanced chip packaging CoWoS, according to industry reports. The claim comes from Tom's Hardware, which cites TrendForce, supply-chain sources and local media; TSMC has not confirmed it.</p>
-<p>The background is the pressure from Nvidia's Blackwell and Rubin chips. Testing time for Blackwell is reported to be three to four times longer than for Hopper, and up to seven times longer for Rubin, and equipment lead times have reportedly grown from three to six months to as much as eight. TrendForce estimates TSMC's capacity at over 106 000 wafers a month in 2026, with a target of 227 000 in 2027. GlobalFoundries will make CoWoS interposers in the US under a five-year, $2 billion contract, with production from the first half of 2028, but that alone does not solve the shortage because the interposer is only one part of the packaging. The same reporting says wafer prices on advanced nodes could rise 5–10 percent for 2027.</p>
-<p>For the Nordics … The increase hits first the chip companies that buy the packaging from TSMC, and next those who buy AI accelerators if the cost is passed on. Sferical One in Linköping, built by Wallenberg Investments and Nvidia for just over a billion Swedish kronor and available to partners including Ericsson, Saab, SEB and AstraZeneca, is built on Nvidia technology and could be affected by any expansion. The material contains no indication that any Nordic project is already affected, and the price increase is unconfirmed.</p>
-<p class="news-card__source">Source: <a href="https://tomshardware.com/tech-industry/semiconductors/tsmc-reportedly-weighs-20-percent-cowos-price-increase-as-nvidia-blackwell-and-rubin-chips-put-pressure-on-packaging-capacity-equipment-lead-times-stretch-to-eight-months">Tom's Hardware</a>, <a href="https://www.cioanalytics.se/artikel/2026/10/wallenbergs-nya-ai-superdator-invigs/">CIO Analytics</a></p>]]></description>
-    </item>
-    <item>
-      <title>About half of the Norwegian developers in kode24's survey feel pressured to use AI</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-omkring-halften-av-de-svarande-norska-utvecklarna-i</guid>
-      <pubDate>Sat, 31 Oct 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Roughly every second responding Norwegian developer does not feel more well-being with AI, and about half feel pressured to use it, according to kode24's salary and well-being survey. The figures are highlighted in a column by kode24 editor-in-chief Ole Petter Baugerød Stokke on October 23.</p>
-<p>The survey's free-text answers describe reduced job satisfaction when AI agents write the code, a heavier workload and what kode24 calls "AI coercion" (KI-tvang). One anonymous developer describes an existential crisis lasting several months, and Elise Kristiansen argues that agentic coding rewards mediocrity. A researcher Stokke refers to says that autonomy over one's own work raises the chance of being satisfied with AI use. The survey is kode24's own and not necessarily representative, and the material gives no number of respondents.</p>
-<p>For the Nordics … The result comes from Norway, but the question concerns the whole region. At the same time, DNB is cutting about 400 positions in its technology division, according to our item of October 28. Employers that introduce AI requirements in developer teams will have to weigh well-being and autonomy, not just speed. It belongs in the dialogue between employers and unions, in Norway at Tekna and NHO and in Sweden at Unionen and Sveriges Ingenjörer; the material contains no statement from them on the survey.</p>
-<p class="news-card__source">Source: <a href="https://www.kode24.no/artikkel/ki-tok-koden-fra-koderne-na-savner-de-den/276301">kode24</a></p>]]></description>
-    </item>
-    <item>
-      <title>Reddit CEO: Google's AI Mode sends no traffic – over a million fewer Google referrals a week on average</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-10-31</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-10-31-reddits-vd-googles-ai-mode-skickar-ingen-trafik</guid>
-      <pubDate>Sat, 31 Oct 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Reddit CEO Steve Huffman says Google's AI Mode sends no traffic onward, and Reddit has lost on average over a million weekly referrals from Google search in October, according to reporting in outlets including The Verge and Axios. Huffman also plans a mostly logged-in experience to reduce scraping.</p>
-<p>Meanwhile Alphabet's quarterly report on October 28 showed search revenue growing 12 percent to $63.3 billion, against 17 percent in the second quarter and 19 percent in the first, and that Google is expanding ads in AI Mode globally. Huffman's figures are relayed through summaries of the reporting, not from Google's own account of traffic flows, and according to the material Google has not responded to them.</p>
-<p>For the Nordics … Nordic media groups such as Schibsted, Bonnier and Aller, which publishes kode24, may depend on search traffic, and the mechanism Reddit describes could in that case hit them in a similar way. The material contains no Nordic traffic data and no information on how the expansion of ads in AI Mode affects Nordic markets, so this is a question to follow rather than an established situation.</p>
-<p class="news-card__source">Source: <a href="https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic">The Verge</a>, <a href="https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito">Axios</a>, <a href="https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/">TechCrunch</a></p>]]></description>
     </item>
   </channel>
 </rss>
