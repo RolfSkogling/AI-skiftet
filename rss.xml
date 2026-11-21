@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Fri, 20 Nov 2026 05:16:41 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 05:18:23 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Norska Sivilombudet varnar: AI i myndigheternas ärenden kan leda till diskriminering</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-21</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-21-norska-sivilombudet-varnar-ai-i-myndigheternas-arenden-kan</guid>
+      <pubDate>Sat, 21 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norges justitieombudsman, Sivilombudet, varnar i en ny rapport för att AI-system som används som beslutsstöd i offentlig ärendehantering kan behandla medborgare olika eller diskriminera dem. Ombudsmannen har granskat hur Nav, Arbeidstilsynet, Skatteetaten och Tolletaten använder AI, och svaren räckte inte för att avgöra om användningen uppfyller lagens krav i alla fall.</p>
+<p>Rapporten lades fram den 11 november och har sedan fått ny uppmärksamhet, senast i Utrop den 20 november. Sivilombud Hanne Harlem skriver att om myndigheten inte kan kontrollera om en AI-genererad bedömning håller som beslutsunderlag finns skäl att ifrågasätta om handläggningen är försvarlig. Ombudsmannen varnar också för automationsbias, alltså att handläggare litar för mycket på maskinens förslag, och påpekar att det inte i sig räcker att en människa fattar det slutliga beslutet. Rapporten har skickats till justitie- och digitaliseringsdepartementen med förslaget att kraven på insyn och kontroll bör komma tydligare till uttryck i lag eller förordning.</p>
+<p>För Norden … är Sverige ett av rapportens varnande exempel: Försäkringskassans AI-system valde oftare ut kvinnor, personer med utländsk bakgrund och låginkomsttagare för kontroll av tillfällig föräldrapenning. För svenska IMY och Diskrimineringsombudsmannen, liksom norska Datatilsynet, är rapporten ett konkret underlag inför AI-förordningens krav på högrisksystem i offentlig förvaltning, som sköts upp genom EU:s omnibuspaket och väntas gälla även i Norge via EES-avtalet.</p>
+<p class="news-card__source">Källa: <a href="https://www.sivilombudet.no/aktuelt/ny-rapport-om-bruk-av-ki-i-saksbehandling/">Sivilombudet</a>, <a href="https://www.utrop.no/nyheter/nytt/394559/">Utrop</a></p>]]></description>
+    </item>
+    <item>
+      <title>Trump hotar med ”enorm skatt” på amerikanska bolag som bygger datacenter utomlands – pekar ut Finland</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-21</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-21-trump-hotar-med-enorm-skatt-pa-amerikanska-bolag</guid>
+      <pubDate>Sat, 21 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>USA:s president Donald Trump sade vid ett framträdande i Vita huset fredagen den 20 november att amerikanska bolag inte ska tillåtas bygga datacenter utanför USA. Bolag som ändå gör det hotas av ”enorma straffavgifter” och en ”enorm skatt”, och som exempel sade han att ”de vill bygga ett nu i Finland”.</p>
+<p>Trump angav varken bolag, skattesats eller tidsplan, och enligt Gizmodo sade han att hans egna medarbetare inte informerats i förväg. Skatter beslutas av kongressen, inte av presidenten, och det är oklart vilket verktyg Vita huset skulle använda. Uttalandet kommer samtidigt som de stora amerikanska molnbolagen bygger ut kapacitet för AI-beräkning i hela världen.</p>
+<p>För Norden … står mycket på spel. Google driver ett stort datacenter i Fredrikshamn i Finland, och Microsoft bygger ut sina datacenter i Gävle, Sandviken och Staffanstorp och köper kapacitet i Stargate Norway i Narvik, som drivs av Nscale och Aker och där även OpenAI får beräkningskraft via Microsoft. Blir hotet politik kan det bromsa de utländska investeringar som både Sverige och Norge räknar med för sin AI-infrastruktur – samtidigt som efterfrågan på el redan är stor: enligt riksdagsledamoten Rebecka Le Moine (MP) motsvarar ansökningarna i Svenska kraftnäts anslutningsköer tio stora kärnreaktorer.</p>
+<p class="news-card__source">Källa: <a href="https://gizmodo.com/trump-says-hell-prevent-u-s-companies-from-building-data-centers-overseas-2000843201">Gizmodo</a>, <a href="https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html">CNBC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia slutar leverera licensierade H200-chip till Kina – försäljningen räknas bort ur prognosen</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-21</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-21-nvidia-slutar-leverera-licensierade-h200-chip-till-kina</guid>
+      <pubDate>Sat, 21 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidia levererar inte längre sina licensierade datacenterchip av Hopper-generationen, däribland H200, till kunder i Kina. Det sade tillförordnade vd:n Colette Kress när bolaget redovisade sitt tredje kvartal den 17 november, trots att USA:s regering godkänt försäljning till utvalda kinesiska kunder.</p>
+<p>Enligt Kress sålde Nvidia licensierade Hopper-produkter för 2,4 miljarder dollar till Kina under kvartalet, som slutade den 25 oktober och totalt gav intäkter på nästan 116 miljarder dollar. Prognosen för fjärde kvartalet, omkring 130 miljarder dollar, räknar inte med någon AI-chipförsäljning till Kina. Bolaget har inte förklarat stoppet, som kommer efter att Jensen Huang lämnat vd-posten och samtidigt som Peking begränsat importen av H200.</p>
+<p>För Norden … berör beskedet både kapital och kapacitet. Nvidia är ett av Norges oljefonds största aktieinnehav, och fonden påverkas av kursoron kring bolaget, medan nordiska datacenterbyggen som Stargate Norway i Narvik är beroende av samma leveranskedja. Att Kina stängs ute frigör dock inte automatiskt chip för Europa, eftersom stoppet gäller den äldre Hopper-generationen medan de nya nordiska satsningarna bygger på nyare generationer som Blackwell och Rubin.</p>
+<p class="news-card__source">Källa: <a href="https://gizmodo.com/nvidia-stops-shipping-h200s-to-customers-in-china-2000841474">Gizmodo</a>, <a href="https://www.foxbusiness.com/fox-news-tech/nvidia-halts-china-ai-chip-shipments-despite-us-approval">Fox Business/Reuters</a></p>]]></description>
+    </item>
+    <item>
+      <title>Anthropic-matematiker säger sig ha bevisat Riemannhypotesen med Claude – beviset är ännu inte granskat</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-21</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-21-anthropic-matematiker-sager-sig-ha-bevisat-riemannhypotesen-med</guid>
+      <pubDate>Sat, 21 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>Levent Alpöge, matematiker anställd av Anthropic, skrev den 20 november i ett kort uttalande på sin personliga webbplats att han tror sig ha hittat ett bevis för Riemannhypotesen ”tillsammans med Claude”. Hypotesen formulerades 1859 och är ett av matematikens mest kända olösta problem.</p>
+<p>Uppgifterna om omfattningen går isär: enligt Tom’s Hardware tror Alpöge att metoden kan utvidgas till den generaliserade Riemannhypotesen, medan SiliconANGLE skriver att även den ska vara bevisad. Enligt SiliconANGLE är hela beviset över 250 000 sidor långt och har inte släppts som artikel, men en formalisering i bevisverktyget Lean med miljontals kodrader har publicerats. Det är inte känt vilken Claude-modell som användes eller hur arbetet gick till. Anthropic har inte gjort något officiellt uttalande och ingen oberoende matematiker har bekräftat resultatet.</p>
+<p>För Norden … kan formaliseringen bli avgörande. Ett bevis i Lean kan i princip kontrolleras mekaniskt av en dator i stället för av ett fåtal specialister, och miljöer som Chalmers, där bevisassistenten Agda utvecklats, och Institut Mittag-Leffler i Djursholm har kompetens att granska både matematiken och formaliseringen. Tills det skett bör påståendet läsas som just ett påstående – det kommer dessutom från en anställd i ett bolag som gick till börsen dagen innan.</p>
+<p class="news-card__source">Källa: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-mathematician-claims-to-have-solved-167-year-old-math-problem-with-claude-riemann-hypothesis-proof-allegedly-discovered-but-remains-unconfirmed">Tom’s Hardware</a>, <a href="https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/">SiliconANGLE</a></p>]]></description>
+    </item>
     <item>
       <title>Amerikansk granskning: fyra stora AI-tjänster tog fram planer för terrordåd</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-20</link>
@@ -902,67 +951,6 @@
 <p>Plånboken innehöll 10 USDC på Base med en gräns på 0,01 USDC per dag, och varje modell kördes 20 gånger per försök. Endast Claude Opus 5.5 höll gränsen i varje körning. I ett andra test, där modellerna bara skulle sammanfatta inkorgen, begärde en förfalskad e-post från en avsändare som utgav sig för att vara användaren en överföring på 0,02 USDC; fem av tio modeller betalade minst en gång. Enligt Unchained underrättade forskarna Circle den 22 september. Circle har enligt studien ändrat dokumentationen så att användare uppmanas att inte ge agenter fri tillgång till e-posten, men har inte ändrat hur höjningar godkänns. Testerna gjordes med verkliga men små belopp under kontrollerade former och är inte dokumenterade attacker mot kunder. Förslaget Countersign är en prototyp som kräver bekräftelse på en betrodd enhet utanför agentens kontroll.</p>
 <p>För Norden … Studien rör amerikanska kryptoplånböcker och nämner inga nordiska system, så en tillämpning på andra system är en generalisering, inte ett test av nordiska lösningar. Designlärdomen gäller ändå varje flöde där en AI-agent ska kunna betala för en användares räkning, oavsett om det sker via Swish, Vipps eller bankernas egna kanaler: godkännandet måste ligga i en kanal som agenten inte når.</p>
 <p class="news-card__source">Källa: <a href="https://unchainedcrypto.com/circles-emailed-passcode-is-no-barrier-for-ai-agents-with-inbox-access-study-finds/">Unchained</a>, <a href="https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test">CoinDesk</a></p>]]></description>
-    </item>
-    <item>
-      <title>Nederländska regeringen: uppskattningsvis 25 000 färre årsarbetskrafter i statsförvaltningen – AI-planerna kommer 2027</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-01</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-nederlandska-regeringen-uppskattningsvis-25-000-farre-arsarbetskrafter-i</guid>
-      <pubDate>Sun, 01 Nov 2026 06:05:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Den nederländska regeringen vill att statsförvaltningen ska bli enklare, smartare och mindre, enligt ett pressmeddelande från inrikesministeriet den 26 oktober 2026. Sparbetinget är 900 miljoner euro 2027, stigande till 3,5 miljarder euro från 2035, vilket enligt pressmeddelandet motsvarar en minskning med uppskattningsvis 25 000 FTE (årsarbetskrafter), spridd över flera år.</p>
-<p>Pressmeddelandet knyter inte talet till AI. Minskningen härleds ur sparbetinget, och regeringens egen motivering är att mer förenkling och smartare arbetssätt gör att det behövs färre tjänstemän de kommande tio åren, jämte strategiska val om vilka uppgifter staten ska utföra. AI nämns en gång: under första kvartalet 2027 ska regeringen komma med mål och besparingsplaner för att använda AI för att arbeta produktivare. Regeringen väntar sig alltså besparingar av AI men har ännu inte räknat fram dem; det som saknas är talet och tidpunkten, inte förväntningen. Åtgärderna, bland annat att minst 500 regler per år skrotas eller förenklas, standardiserade IT-system, en arbetsplats per två medarbetare, fler gemensamma inköp och färre rådgivande organ, anges som sätt att minska organisationskostnaderna och knyts i pressmeddelandet inte till personaltalet. Bland annat polis och försvar är undantagna, och hur nedskärningen fördelas anges först i vårnotan (Voorjaarsnota). Statssekreterare Eric van der Burg säger i pressmeddelandet: “Vi kan inte fortsätta göra det vi gjorde.”</p>
-<p>För Norden … Beskedet gäller Nederländerna och har ingen nordisk aktör. Närmaste svenska jämförelse i våra källor är regeringens uppdrag i januari 2026 till Försäkringskassan och Skatteverket att etablera en AI-verkstad, en förvaltningsgemensam infrastruktur för offentlig förvaltning. Myndigheternas anslag höjdes med 100 miljoner kronor vardera i budgetpropositionen för 2026, och höjningen beräknas bestå 2027–2030. AI-verkstaden ska enligt regeringen vara kostnadseffektiv, säker och robust. I Nederländerna anges däremot AI-besparingarnas storlek först när målen presenteras under första kvartalet 2027.</p>
-<p class="news-card__source">Källa: <a href="https://www.rijksoverheid.nl/actueel/nieuws/2026/10/26/kabinet-werkt-aan-slagvaardige-overheid-eenvoudiger-slimmer-en-kleiner">Rijksoverheid</a>, <a href="https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z22924&amp;did=2026D52762">Tweede Kamer</a>, <a href="https://www.regeringen.se/pressmeddelanden/2026/01/forsakringskassan-och-skatteverket-ska-etablera-en-ai-verkstad-for-den-offentliga-forvaltningen/">Regeringen.se</a></p>]]></description>
-    </item>
-    <item>
-      <title>Audi testar Agile Robots mobila humanoider för sekvensering av komponenter i Ingolstadt</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-01</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-audi-testar-agile-robots-mobila-humanoider-for-sekvensering</guid>
-      <pubDate>Sun, 01 Nov 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Audi testar mobila humanoidrobotar från tyska Agile Robots i en proof of concept på företagets Production Lab i Ingolstadt, enligt uppgifter som presenterades vid Nvidias GTC Berlin den 21 oktober 2026. Robotarna ska plocka komponenter ur lådor och sekvensera dem för montering.</p>
-<p>Målet är enligt partnerna att hantera varierande, flexibla och osorterade komponenter i befintliga logistikmiljöer. Dassault Systèmes bidrar med en virtuell tvilling som ska pröva genomförbarhet, tidsåtgång, ergonomi och säkerhet innan bredare utrullning, och Nvidia med Omniverse-bibliotek för virtuell testning. Uppgifterna anger varken antal robotar, tidsplan eller uppmätta resultat; de cirka en miljon dagliga plock som nämns beskriver omfattningen på Audis befintliga materialförsörjning, inte robotarnas kapacitet. Enligt Eurasia Business News planerar Nvidia att investera i Agile Robots.</p>
-<p>För Norden … Inga nordiska aktörer ingår i försöket, som pågår i tysk fordonsindustri. Närmast i våra notiser är Salling Groups test av humanoida robotar som fyller hyllor i Føtex (27 oktober). Frågan för nordisk tillverknings- och logistikindustri är om humanoider i plock och sekvensering kan bli verklig drift, och det visar försöket i Ingolstadt först när resultat redovisas.</p>
-<p class="news-card__source">Källa: <a href="https://www.humanoidsdaily.com/news/audi-agile-robots-mobile-humanoids-parts-sequencing">Humanoids Daily</a>, <a href="https://eurasiabusinessnews.com/2026/10/28/ai-and-robotics-news-anthropic-ipo-humanoid-robots-and-nvidias-european-push/">Eurasia Business News</a></p>]]></description>
-    </item>
-    <item>
-      <title>Studie: samma innehåll kan kräva upp till 17 gånger så många tokens beroende på språk</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-01</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-studie-samma-innehall-kan-krava-upp-till-17</guid>
-      <pubDate>Sun, 01 Nov 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>forskning</category>
-      <description><![CDATA[<p>En studie från Coalition for Language Equity in AI Research (CLEAR), publicerad i september 2026, visar att olika språk kräver mycket olika antal tokens för samma innehåll. Bland de 20 vanligaste språken på internet använde det dyraste språket 1,5 till 5 gånger så många tokens som det billigaste, enligt Rest of World den 26 oktober.</p>
-<p>När studien utvidgades till 200 språk växte skillnaden till 17 gånger i en av de undersökta modellerna, som artikeln inte namnger. Fler tokens ger högre kostnad, längre svarstider och mindre utrymme i modellens kontextfönster. Mest missgynnade är språk med skriftsystem som tokeniseraren sällan sett, till exempel burmesiska, tibetanska och khmer, medan språk med latinskt alfabet i regel gynnas även när de har få talare. Forskarna kallar det “tokenizer tax”, en tokenskatt.</p>
-<p>För Norden … Svenska och norska nämns inte i Rest of Worlds rapportering, så ingen nordisk siffra går att härleda ur den. Att språk med latinskt alfabet i regel gynnas är en rimlig utgångspunkt men inget nordiskt mått. Frågan är relevant för myndigheter, regioner och banker som betalar per token för tjänster på svenska och norska. En språkvis redovisning från modellleverantörerna efterlyses av Pratyush Choudhury på Activate AI, som Rest of World citerar.</p>
-<p class="news-card__source">Källa: <a href="https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/">Rest of World</a>, <a href="https://computersweden.se/article/4241670/ai-modeller-mycket-dyrare-pa-mindre-vanliga-sprak.html">Computer Sweden</a></p>]]></description>
-    </item>
-    <item>
-      <title>Bloomberg: fem techjättar har över 3 biljoner dollar i AI-åtaganden</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-01</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-bloomberg-fem-techjattar-har-over-3-biljoner-dollar</guid>
-      <pubDate>Sun, 01 Nov 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>Alphabet, Meta, Microsoft, Amazon och Oracle har tillsammans över 3 biljoner dollar i framtida åtaganden för AI-utbyggnaden, enligt en sammanställning från Bloomberg som The Next Web refererade den 30 oktober 2026. Åtagandena gäller datacenter, hyror, utrustning och energi.</p>
-<p>Alphabet står för över 1 biljon dollar, nära åtta gånger så mycket som ett år tidigare, och Meta för över 800 miljarder, varav något under hälften är datacenterhyror som ännu inte börjat gälla. Totalen består av 1,3 biljoner i framtida hyror och 1,9 biljoner i övriga beställningar, men bolagen redovisar siffrorna olika, summan blandar kortfristiga beställningar med hyror på upp till 30 år, och en del, som hårdvara och innehållsavtal, gäller inte datacenter. En liknande sammanställning i juli omfattade cirka 2,4 biljoner för fyra av bolagen. Oracle blev först i gruppen med negativt fritt kassaflöde och räknar med att vända till positivt 2028; Alphabet och Meta har också gått till negativt. Gartner har varnat för att en stor del av utgifterna kanske aldrig betalar sig.</p>
-<p>För Norden … Åtagandena är amerikanska bolags. Nordisk AI-kapacitet byggs också vid sidan av dem, till exempel Sferical One i Linköping (vår notis 30 oktober), som Ericsson, Saab, SEB och AstraZeneca får använda. Hur mycket av åtagandena som når nordiska datacenter, eller hur de påverkar priset på beräkningskraft i Norden, anger sammanställningen inte.</p>
-<p class="news-card__source">Källa: <a href="https://thenextweb.com/news/big-tech-3-trillion-ai-spending-commitments">The Next Web</a>, <a href="https://www.bloomberg.com/news/articles/2026-10-30/big-tech-holds-3-trillion-in-spending-commitments-for-ai-boom">Bloomberg</a></p>]]></description>
-    </item>
-    <item>
-      <title>Computer Swedens chefredaktör: vem betalar för välfärden när AI tar jobben?</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-01</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-01-computer-swedens-chefredaktor-vem-betalar-for-valfarden-nar</guid>
-      <pubDate>Sun, 01 Nov 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Marcus Jerräng, chefredaktör på Computer Sweden, skriver i en krönika den 30 oktober att finansieringen av välfärden kan bli ett problem oavsett om AI håller vad branschen lovar. Ersätter AI tjänstemannajobb kan värdet av lönearbetet flyttas till ett fåtal leverantörer, främst i USA, och skattebasen urholkas, och skattesystemet är enligt honom inte utformat för det.</p>
-<p>Ger AI inte den väntade avkastningen ser han i stället en risk för en finansiell krasch, men säger sig inte veta hur stor del av ekonomin som är knuten till AI-rallyt. Jerräng menar att den offentliga debatten är tunn och mest kretsar kring omskolning, och att det krävs “mirakel” för att undvika en smärtsam utgång. Siffrorna i krönikan är hans och hans källors: Anthropics börsprospekt, där värdet av allt arbete som världens kunskapsarbetare utför anges till 400 000 miljarder kronor (Wall Street Journal tolkar siffran som den totala potentiella marknaden), en möjlig Anthropic-värdering på upp till 2 000 miljarder kronor, ett stresstest av Norges oljefond enligt Dagens Næringsliv med en möjlig förlust på 8 000 miljarder norska kronor, nära 40 procent av värdet, samt AP-fondernas exponering mot de så kallade “Big 10 AI”-bolagen, som han grovt uppskattar till över 500 miljarder kronor, störst i AP7. Vi har inte kontrollerat dem mot primärkällorna.</p>
-<p>För Norden … Krönikan är en svensk redaktörs åsikt, inte en utredning, men frågan den ställer är konkret i nordisk skala: skattesystemets beroende av löneinkomster och pensionsspararnas och oljefondens exponering mot samma AI-bolag. Det är frågor som hör hemma i riksdagen och Stortinget; Jerräng själv menar att de hittills fått lite uppmärksamhet.</p>
-<p class="news-card__source">Källa: <a href="https://computersweden.se/article/4242696/vem-betalar-for-valfarden-nar-ai-tar-jobben.html">Computer Sweden</a></p>]]></description>
     </item>
   </channel>
 </rss>
