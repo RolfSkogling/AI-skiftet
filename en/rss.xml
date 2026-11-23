@@ -7,8 +7,70 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Sun, 22 Nov 2026 10:08:08 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 06:21:41 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic gives outside evaluators employee-level access to its frontier models</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-23-anthropic-ger-externa-granskare-insyn-pa-anstallningsliknande-niva</guid>
+      <pubDate>Mon, 23 Nov 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic says in a post dated November 22 that a team from the evaluation organisation METR is being given employee-like access to assess the company’s systems. It adds that early conversations are under way with other organisations.</p>
+<p>The arrangement gives reviewers more than an external red team normally gets: access from the inside rather than a finished interface alone. METR is behind the measurements of model task horizons covered here yesterday. Which parts of the stack the access covers, and what the reviewers may publish, is not set out in the announcement.</p>
+<p>For the Nordics, independent evaluation sits close to the function the AI Act’s systemic-risk rules place on the providers of the most capable models — and it has to be carried out somewhere. Supervision of those models sits with the EU’s AI Office, and neither Sweden’s IMY nor Norway’s Datatilsynet has an evaluation lab of its own. The expertise sits instead at KTH, Chalmers, RISE, Sintef and NTNU. If access at this level becomes the norm among vendors, the question for Swedish and Norwegian universities is whether they want to be evaluators or readers of other people’s evaluations.</p>
+<p class="news-card__source">Source: <a href="https://www.anthropic.com/news">Anthropic</a>, <a href="https://www.anthropic.com/news">Anthropic Newsroom</a></p>]]></description>
+    </item>
+    <item>
+      <title>Error correction becomes the quantum bottleneck – and decoding moves to GPUs</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-23-felkorrigeringen-blir-kvantdatorernas-flaskhals-och-avkodningen-flyttar-till</guid>
+      <pubDate>Mon, 23 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>kvant</category>
+      <description><![CDATA[<p>Three announcements in a week point to the same place: what is slowing quantum computers is not the number of qubits but keeping up with working out which errors have occurred. Nvidia, IBM and Fermilab presented a decoding algorithm that Nvidia says can speed up error-correction research by up to 13,000 times.</p>
+<p>IBM and AMD at the same time open-sourced Pelagos, a GPU-driven tool for testing decoders at scale, at the SC26 supercomputing conference on November 17. Harvard disclosed on November 20 a 12 million dollar award from the US Department of Energy for AI-designed error correction aimed at chemistry and materials calculations, to be tested on hardware at Harvard, MIT and QuEra. The figure of 13,000 times is Nvidia’s own and refers to research throughput, not a running machine.</p>
+<p>For the Nordics, decoding is the part of the quantum stack the region already works in. Chalmers presented a method in September aimed at exactly this bottleneck in qubit error protection, and runs the Wallenberg centre WACQT, a multi-billion-kronor programme running to the end of the decade, including a testbed for Swedish industry built on a copy of its 25-qubit machine. Finland’s IQM, covered here on November 18, is selling the path from 150 to more than a thousand qubits — and every step along it makes the decoding load heavier. If decoders become GPU-dependent, part of the cost of the Swedish and Finnish quantum programmes moves from the cryostat to the data hall.</p>
+<p class="news-card__source">Source: <a href="https://www.hpcwire.com/off-the-wire/ibm-and-amd-accelerate-quantum-error-correction-decoding-at-scale/">HPCwire</a>, <a href="https://siliconangle.com/2026/11/05/ibm-amd-and-oak-ridge-join-forces-to-launch-quantum-computing-error-correction-platform/">SiliconANGLE</a>, <a href="https://www.intelligenthq.com/nvidia-ibm-and-fermilab-join-forces-to-advance-quantum-computing-with-13000x-faster-error-correction-research/">IntelligentHQ</a>, <a href="https://forskning.se/2026/09/10/snabbare-vag-till-kvantdatorer-som-raknar-ratt/">forskning.se</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norwegian journalists get AI payments before Christmas – Sweden is studying the same model</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-23-norska-journalister-far-ai-ersattning-pa-kontot-fore</guid>
+      <pubDate>Mon, 23 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Norway’s culture ministry has granted 45 million Norwegian kroner in compensation to rights holders in the press and current-affairs media, so that the National Library may train language models on Norwegian newspaper content. Payments to journalists are being made before Christmas.</p>
+<p>The agreement is between the National Library and the country’s newspapers. The National Library states that the state pays 45 million kroner a year for two years with index adjustment, while the state budget’s own wording described the sum as a 2026 budget item — the sources do not resolve that difference. The money is split evenly between authors and publishers, and only those who produced text qualify, since the model is trained on text alone. Journalisten.no reports a few thousand kroner per person, with a ceiling of around 10,000 kroner at Aftenposten and Fjuken.</p>
+<p>For the Nordics this is one of the first Nordic agreements in which training data has been priced and compensation is now being paid out, and the figure becomes the reference point in the next negotiation. Journalisten.se reports that a similar scheme is being studied in Sweden, and that the Swedish Union of Journalists is taking part in the work around the Swedish language-model programme. For Schibsted, TT and Swedish media houses the decision shifts the question from whether copyright should be compensated to what an article is worth as training data — and Norway has now set a number to start from.</p>
+<p class="news-card__source">Source: <a href="https://www.journalisten.no/historisk-ki-avtale-gir-norske-journalister-flere-tusen-pa-konto-for-jul/689160">Journalisten.no</a>, <a href="https://www.journalisten.se/nyheter/norska-journalister-far-tusentals-kronor-i-ai-ersattning-sverige-utreder-fragan/">Journalisten.se</a>, <a href="https://www.nb.no/pressemeldinger/nasjonalbiblioteket-inngar-historisk-avtale-med-landets-aviser-om-innhold-til-kunstig-intelligens/">Nasjonalbiblioteket</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidia broadens the Isaac platform – ABB wires the simulation into RobotStudio</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-23-nvidia-breddar-isaac-plattformen-abb-kopplar-in-simuleringen</guid>
+      <pubDate>Mon, 23 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>fysisk-ai</category>
+      <description><![CDATA[<p>Nvidia has expanded its Isaac robotics platform with new simulation frameworks, training tools, datasets and a reference humanoid. ABB Robotics says it is integrating Omniverse libraries into RobotStudio HyperReality for virtual commissioning.</p>
+<p>The rest of the ecosystem is named too: Schaeffler, Franka Robotics and Denmark’s Universal Robots contribute to or use the platform. The Isaac GR00T reference humanoid, which Nvidia presented in June on a Unitree body with Jetson Thor compute on board, is to ship from Unitree in late 2026. Virtual commissioning means the cell is run in simulation before it is built — a tooling layer, not a new robot.</p>
+<p>For the Nordics, robot ownership sits with engineering industry, and ABB’s robotics business has a long history in Västerås. Universal Robots in Odense sells cobots and its sister company MiR autonomous mobile robots to the same customers. If virtual commissioning becomes standard, part of the changeover work moves from the floor into a model: the same SMED logic that applies today, but with different skills behind it. Norwegian-founded 1X says its NEO humanoid ships to developers in December, which makes the Nordics both buyer and builder in the same wave.</p>
+<p class="news-card__source">Source: <a href="https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/">Robotics &amp; Automation News</a>, <a href="https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data">Nvidia</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norway’s FFI: treat language models as an insider threat – while using them</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-23</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-23-ffi-sprakmodeller-bor-hanteras-som-ett-insiderhot-och</guid>
+      <pubDate>Mon, 23 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <category>norden</category>
+      <description><![CDATA[<p>The Norwegian Defence Research Establishment concludes in a new report that large language models should be treated as an insider threat, that is, a trusted actor that can be turned against the organisation. The institute uses the models itself.</p>
+<p>The report names three weaknesses: what the model has learned cannot be fully inspected, it can be redirected through what it is fed, and its answers are not fully reliable. Researcher Johan Vik Mathisen stresses that there is no dividing line between instruction and data in what the model reads, and argues for hard limits at system level — isolation and flow control — rather than trust in the model. Chief scientist Gudmund Grov says testing cannot guarantee security. The recommendation is risk assessment before deployment, limited scope of action for agents, and human oversight before critical and irreversible actions.</p>
+<p>For the Nordics the conclusion is written for the defence sector but applies to any organisation that turns an agent loose on its own systems. The inability to separate instruction from data is the same weakness that makes prompt injection possible. For Sweden’s Armed Forces and MSB and Norway’s NSM, FFI’s framing also supplies vocabulary that security work already has: an insider threat is handled with permissions, logging and separation of duties, not with trust.</p>
+<p class="news-card__source">Source: <a href="https://www.kode24.no/artikkel/ffi-bruker-ki-men-anser-dem-som-innsidetrusler/277807">kode24</a>, <a href="https://www.dagsavisen.no/nyheter/ffi-gevinsten-ved-sprakmodeller-ma-veies-mot-sikkerhetsrisikoen/10627402">Dagsavisen</a>, <a href="https://www.ffi.no/aktuelt/arrangementer/sikkerhet-i-kunstig-intelligens">FFI</a></p>]]></description>
+    </item>
     <item>
       <title>Norwegian debate: how much of companies’ AI job cuts is really due to AI?</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-22</link>
@@ -914,55 +976,6 @@
 <p>The company says this is about 40 times fewer physical qubits than Google’s 2025 estimate, and down from 49,649 in its own 2023 estimate. The reduction comes from LDPC-cat codes, a redesigned adder and the assumption that cat qubits suppress bit-flip errors in hardware. These are theoretical resource estimates and not a demonstration: the hardware is not built, the comparison with Google rests on an extrapolation to 1 million transmon qubits, and the article is largely the company’s own press material with comments from, among others, the CEO of PQShield, a post-quantum cryptography vendor. Alice &amp; Bob expects hardware progress and falling requirements to meet in the early 2030s.</p>
 <p>For the Nordics … The estimate comes from a French company and not from Nordic research. Closest in the Nordics are Finland’s IQM, which recently showed entanglement across all 54 qubits on its Emerald chip (fidelity 0.516 with error mitigation), still far from the qubit counts needed to threaten RSA and with a different qubit type than cat qubits, and Chalmers and the Wallenberg Centre for Quantum Technology, which build superconducting quantum computers. Vinnova also proposes a Quantum Leap Sweden. For Swedish and Norwegian companies and agencies the question is migration to post-quantum cryptography, where US NIST aims for full migration of federal systems by 2035.</p>
 <p class="news-card__source">Source: <a href="https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048">The Quantum Insider</a>, <a href="https://quantumzeitgeist.com/quantum-zeitgeist-weekly-digest-nov-2">Quantum Zeitgeist</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se (Vinnova)</a>, <a href="https://www.mynewsdesk.com/uk/chalmers/pressreleases/engineering-of-a-swedish-quantum-computer-set-to-start-2270236">Chalmers</a></p>]]></description>
-    </item>
-    <item>
-      <title>Marvell buys optics maker Lumentum in all-stock deal worth about $100 billion</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-marvell-koper-optikbolaget-lumentum-i-aktiebaserad-affar-vard</guid>
-      <pubDate>Tue, 03 Nov 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>hardvara</category>
-      <description><![CDATA[<p>Marvell Technology is buying optics maker Lumentum in an all-stock deal. The agreement is dated November 1, 2026 and was disclosed on November 2. Each Lumentum share converts into 4.5 Marvell shares, which the companies’ FAQ puts at a transaction value of about $100 billion.</p>
-<p>Marvell shareholders will own about 67 percent of the combined company and Lumentum holders about 33 percent, and Marvell will appoint three Lumentum-designated directors to its board. The deal is expected to take 12–18 months and needs shareholder and regulatory approval; the outside date is November 1, 2027 but can be extended to August 1, 2028 if approvals are pending. Lumentum’s CEO writes in an email to staff that the companies want to cover AI connectivity from today’s links between and within data centers to future links closer to the chips. The break fees are large: Marvell pays $5.8 billion and Lumentum $2.9 billion in certain circumstances, and Marvell also pays $3.2 billion in certain regulatory termination scenarios. According to AI Weekly, Bloomberg reported on the talks on October 28, when Lumentum rose 11 percent and Marvell fell more than 8 percent. Nvidia is both a customer and a shareholder in Lumentum, with a $2 billion investment.</p>
-<p>For the Nordics … The sources name no Nordic parties to the deal. Whether builds such as Sweden’s AI supercomputer Sferical One or Norwegian data centers will face fewer and larger optics suppliers is not addressed by the companies or the reporting, so it is an open question rather than a conclusion. The deal is expected to close within 12–18 months, and the agreement allows an extension to August 2028 if regulatory approvals are pending; only then does the question become real for Nordic buyers.</p>
-<p class="news-card__source">Source: <a href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526443871/d152890d425.htm">Lumentum/Marvell (SEC Form 425)</a>, <a href="https://www.sec.gov/Archives/edgar/data/0001835632/000119312526442717/d352474d8k.htm">Marvell (SEC Form 8-K)</a>, <a href="https://aiweekly.co/alerts/marvell-in-advanced-talks-to-acquire-ai-optics-maker-lumentum">AI Weekly (Bloomberg)</a>, <a href="https://www.trendforce.com/news/?p=65896">TrendForce</a></p>]]></description>
-    </item>
-    <item>
-      <title>Ericsson launches system that detects drones over existing 5G networks</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-ericsson-lanserar-system-som-upptacker-dronare-via-befintliga</guid>
-      <pubDate>Tue, 03 Nov 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <category>norden</category>
-      <description><![CDATA[<p>On November 2, 2026, Ericsson announced the ISAC System, which detects and tracks drones over large areas using existing 5G networks. It can also identify objects that are not connected to the network, and targets defense, public safety and critical infrastructure operators.</p>
-<p>The system analyzes how radio signals reflect off objects and uses several network sites to view a target from different angles, which improves positioning and coverage. In validated tests it tracked micro drones at kilometer-scale distances with three-dimensional positioning; Ericsson says performance depends on the target’s characteristics and flight profile, terrain and configuration. Artificial intelligence is listed as one of several components alongside 5G radios, edge computing and signal processing, but what it does is not described. The system is meant to complement radar and other sensors, not replace them. Small-scale commercial sensing-only pilots are expected to begin in 2027 and wider deployment from 2028. Tests have been run with AT&amp;T in Arlington, Texas, with Erillisverkot in Helsinki and, alongside an acoustic system, with Asseco and Play in Poland.</p>
-<p>For the Nordics … Ericsson is Swedish, and Finland’s Erillisverkot has shown how several 5G sites can support counter-drone and public safety operations. The sources name no Swedish or Norwegian pilot customers. Whether Swedish authorities such as the Civil Defence Agency (MCF) and the Armed Forces, or corresponding Norwegian authorities, will test the technology for coastal monitoring and protection of critical infrastructure is not something Ericsson has said, so it is an open question. The news shows Ericsson now pointing mobile networks at the security market, with commercial pilots at the earliest in 2027.</p>
-<p class="news-card__source">Source: <a href="https://borsvarlden.com/artiklar/ericsson-lanserar-teknik-for-dronardetektering-via-mobilnat">Börsvärlden (Finwire)</a>, <a href="https://www.tribuneindia.com/news/business/ericsson-introduces-5g-based-drone-detection-system-commercial-pilots-planned-for-2027/amp/?utm=relatedarticles">The Tribune (ANI)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Alphabet borrows €6 billion amid its AI push, days after the stock rout</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-alphabet-lanar-6-miljarder-euro-mitt-i-ai</guid>
-      <pubDate>Tue, 03 Nov 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>infrastruktur</category>
-      <description><![CDATA[<p>On November 2, 2026, Alphabet began selling €6 billion of euro bonds according to The Next Web. The proceeds are for general corporate purposes, which may include repaying debt; the borrowing comes amid sharply higher AI spending. The offering has seven parts, one floating-rate and six fixed-rate notes, with maturities of two to 19 years, and orders exceeded €17 billion, per Reuters, cited by The Next Web.</p>
-<p>The sale comes days after Alphabet’s stock fell 12.64 percent on October 29, which Fox Business, citing the Wall Street Journal, says wiped out about $500 billion in market value. Third-quarter revenue of $127.6 billion (up 25 percent) fell short of expectations, search advertising growth slowed to 12 percent from 17 percent the previous quarter, and quarterly capital spending was about $51.4 billion. The 2026 capital-spending guidance is $195–205 billion, and spending is projected to increase significantly in 2027. Google Cloud more than doubled revenue to $30.7 billion, but CFO Anat Ashkenazi warned of near-term pressure on cloud margins. The Next Web also cites $130.5 billion in future lease payments not yet on the balance sheet.</p>
-<p>For the Nordics … Neither The Next Web nor Fox Business names any Nordic buyers of the bond. What matters here is the cost side: when one of the world’s largest cloud companies borrows to build data centers and investors react sharply to the capital need, it is an open question whether this over time affects cloud capacity prices for Nordic customers. The sources say nothing about that.</p>
-<p class="news-card__source">Source: <a href="https://thenextweb.com/news/alphabet-6bn-euro-bond-sale-ai-debt">The Next Web</a>, <a href="https://www.foxbusiness.com/markets/google-parent-alphabet-suffers-nearly-500b-wall-street-wipeout-amid-ai-spending-fears">Fox Business</a></p>]]></description>
-    </item>
-    <item>
-      <title>SUSE cuts about ten percent of staff citing AI – Squarespace removes 19 percent</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-03</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-03-suse-skar-ner-cirka-tio-procent-av-personalen</guid>
-      <pubDate>Tue, 03 Nov 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>arbetsmarknad</category>
-      <description><![CDATA[<p>Linux company SUSE told staff on November 2, 2026 that about ten percent of its roughly 1,900 employees will go, citing automation and AI. The same day, website builder Squarespace confirmed that about 19 percent of its global workforce, around 300 people, is being cut.</p>
-<p>In the memo, SUSE CEO Dirk-Peter van Leeuwen writes that modern tooling is already changing daily workflows and that the company’s organization and cost base need to change. Affected staff will be told by November 4, employee representatives nominated the following day and one-to-one meetings begin the week after; the FY2027 strategy is presented on November 16. Which roles and countries are affected has not been disclosed. Squarespace describes the cuts as a restructuring to simplify operations and sharpen priorities, according to spokesperson Jeff Seedman, and does not cite AI as the cause. TechCrunch, in its report, treats competition from AI-driven website builders, so-called vibe-coding, as background, but draws no explicit conclusion that it is the cause; the company itself does not say so.</p>
-<p>For the Nordics … SUSE is owned by EQT, a Swedish private equity firm, according to The Register. The sources say nothing about cuts in Sweden or Norway, so whether the Nordics are affected is unclear. The case is still an example of AI being named explicitly as a motive in a restructuring at a company with a Swedish owner, which makes it relevant to Swedish and Norwegian unions and employers discussing AI-motivated layoffs.</p>
-<p class="news-card__source">Source: <a href="https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950">The Register</a>, <a href="https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees">TechCrunch</a></p>]]></description>
     </item>
   </channel>
 </rss>
