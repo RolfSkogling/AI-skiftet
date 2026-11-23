@@ -242,7 +242,7 @@ details.menu[open]>summary{color:var(--accent)}
     <section class="news-section" id="nyheter" aria-labelledby="nyheter-rubrik">
       <div class="sect-head">
         <h2 id="nyheter-rubrik">Nyheter</h2>
-        <time datetime="2026-11-22"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">22 november 2026</span></time>
+        <time datetime="2026-11-23"><span class="sect-updated__label">Senast uppdaterat</span> <span class="sect-updated__date">23 november 2026</span></time>
       </div>
       <p class="sect-intro">Daglig bevakning av AI-utvecklingen — modeller, forskning, fysisk AI, hårdvara, kvantdatorer, arbetsmarknad, reglering och debatt.</p>
     <div class="strip news-audio" aria-label="Följ och lyssna">
@@ -276,6 +276,80 @@ details.menu[open]>summary{color:var(--accent)}
       <button type="button" class="filter-btn filter-tag" data-filter="debatt" aria-pressed="false">Debatt</button>
     </div>
     <div class="news-list" id="newsList">
+      <div class="day news-date-group" id="dag-2026-11-23" data-date="2026-11-23">
+      <p class="day__label news-date">23 november 2026</p>
+      <article class="item news-card" data-tags="modeller">
+        <div class="item__tags news-card__tags"><span class="tag tag--modeller news-card__tag news-card__tag--modeller">Modeller</span></div>
+        <h3><a href="https://www.anthropic.com/news">Anthropic ger externa granskare insyn på anställningsliknande nivå i sina frontmodeller</a></h3>
+        <p class="item__ingress">Anthropic skriver i ett inlägg daterat den 22 november att ett team från utvärderingsorganisationen METR får tillgång på anställningsliknande nivå för att granska bolagets system.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Anthropic skriver i ett inlägg daterat den 22 november att ett team från utvärderingsorganisationen METR får tillgång på anställningsliknande nivå för att granska bolagets system. Bolaget uppger också att tidiga samtal förs med fler organisationer.</p>
+          <p>Upplägget ger granskarna mer än vad ett externt red team normalt får: tillgång inifrån i stället för enbart ett färdigt gränssnitt. METR står bakom den mätserie över modellernas uppgiftshorisont som refererades här i går. Vilka delar av stacken tillgången omfattar, och vad granskarna får publicera, framgår inte av meddelandet.</p>
+          <p>För Norden ligger oberoende granskning nära den funktion som AI-förordningens regler om systemrisk lägger på leverantörerna av de mest kapabla modellerna &mdash; och den ska utföras någonstans. Tillsynen över de modellerna ligger hos EU:s AI-byrå, och varken IMY eller norska Datatilsynet har egna utvärderingslabb. Kompetensen finns i stället på KTH, Chalmers, RISE, Sintef och NTNU. Blir insyn på den här nivån normen hos leverantörerna är frågan för svenska och norska lärosäten om de vill vara granskare eller läsare av andras granskningar.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.anthropic.com/news">Anthropic</a>, <a href="https://www.anthropic.com/news">Anthropic Newsroom</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="kvant">
+        <div class="item__tags news-card__tags"><span class="tag tag--kvant news-card__tag news-card__tag--kvant">Kvant</span></div>
+        <h3><a href="https://www.hpcwire.com/off-the-wire/ibm-and-amd-accelerate-quantum-error-correction-decoding-at-scale/">Felkorrigeringen blir kvantdatorernas flaskhals &ndash; och avkodningen flyttar till GPU:er</a></h3>
+        <p class="item__ingress">Tre besked inom en vecka pekar mot samma punkt: det som bromsar kvantdatorerna är inte antalet qubits utan att hinna räkna ut vilka fel som uppstått.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Tre besked inom en vecka pekar mot samma punkt: det som bromsar kvantdatorerna är inte antalet qubits utan att hinna räkna ut vilka fel som uppstått. Nvidia, IBM och Fermilab presenterade en avkodningsalgoritm som enligt Nvidia kan snabba upp forskning på felkorrigering upp till 13&nbsp;000 gånger.</p>
+          <p>IBM och AMD öppnade samtidigt källkoden för Pelagos, ett GPU-drivet verktyg för att testa avkodare i stor skala, på superdatorkonferensen SC26 den 17 november. Harvard redovisade den 20 november ett anslag på 12 miljoner dollar från det amerikanska energidepartementet för AI-konstruerad felkorrigering riktad mot kemi- och materialberäkningar, som ska provas på hårdvara vid Harvard, MIT och QuEra. Talet 13&nbsp;000 gånger är Nvidias eget och gäller forskningsgenomströmning, inte en körande maskin.</p>
+          <p>För Norden är avkodning den del av kvantstacken regionen redan arbetar i. Chalmers presenterade i september en metod som angriper just flaskhalsen i felskyddet för kvantbitar, och driver Wallenbergcentrumet WACQT, en miljardsatsning som löper till slutet av decenniet, med en testbädd för svensk industri byggd på en kopia av Chalmers 25-qubitsdator. Finska IQM, som var med här den 18 november, säljer vägen från 150 till över tusen qubits &mdash; och varje steg på den vägen gör avkodningsbördan större. Blir avkodarna GPU-beroende flyttas en del av den svenska och finska kvantsatsningens kostnad från kryostaten till datorhallen.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.hpcwire.com/off-the-wire/ibm-and-amd-accelerate-quantum-error-correction-decoding-at-scale/">HPCwire</a>, <a href="https://siliconangle.com/2026/11/05/ibm-amd-and-oak-ridge-join-forces-to-launch-quantum-computing-error-correction-platform/">SiliconANGLE</a>, <a href="https://www.intelligenthq.com/nvidia-ibm-and-fermilab-join-forces-to-advance-quantum-computing-with-13000x-faster-error-correction-research/">IntelligentHQ</a>, <a href="https://forskning.se/2026/09/10/snabbare-vag-till-kvantdatorer-som-raknar-ratt/">forskning.se</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="arbetsmarknad norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--arbetsmarknad news-card__tag news-card__tag--arbetsmarknad">Arbetsmarknad</span></div>
+        <h3><a href="https://www.journalisten.no/historisk-ki-avtale-gir-norske-journalister-flere-tusen-pa-konto-for-jul/689160">Norska journalister får AI-ersättning på kontot före jul &ndash; Sverige utreder motsvarande</a></h3>
+        <p class="item__ingress">Norska kulturdepartementet har beviljat 45 miljoner norska kronor i ersättning till rättighetshavare i press- och aktualitetsmedier, för att Nasjonalbiblioteket ska få träna språkmodeller på norskt tidningsinnehåll.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Norska kulturdepartementet har beviljat 45 miljoner norska kronor i ersättning till rättighetshavare i press- och aktualitetsmedier, för att Nasjonalbiblioteket ska få träna språkmodeller på norskt tidningsinnehåll. Utbetalningarna till journalisterna sker före jul.</p>
+          <p>Avtalet gäller mellan Nasjonalbiblioteket och landets tidningar. Nasjonalbiblioteket uppger att staten betalar 45 miljoner norska kronor om året i två år med indexreglering, medan statsbudgetens egen formulering beskrev beloppet som en budgetpost för 2026 &mdash; källorna reder inte ut skillnaden. Summan delas lika mellan upphovsmän och utgivare, och bara den som producerat text omfattas, eftersom modellen enbart tränas på text. Journalisten.no uppger belopp på några tusen norska kronor per person, med ett tak kring 10&nbsp;000 kronor på Aftenposten och Fjuken.</p>
+          <p>För Norden är det här ett av de första nordiska avtalen där träningsdata prissatts och ersättning nu betalas ut, och talet blir referenspunkt i nästa förhandling. Journalisten.se uppger att ett liknande system utreds i Sverige, och att Journalistförbundet deltar i arbetet kring den svenska språkmodellsatsningen. För Schibsted, TT och svenska mediehus flyttar beskedet frågan från om upphovsrätten ska ersättas till vad en artikel är värd som träningsdata &mdash; och Norge har nu satt ett tal att utgå från.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.journalisten.no/historisk-ki-avtale-gir-norske-journalister-flere-tusen-pa-konto-for-jul/689160">Journalisten.no</a>, <a href="https://www.journalisten.se/nyheter/norska-journalister-far-tusentals-kronor-i-ai-ersattning-sverige-utreder-fragan/">Journalisten.se</a>, <a href="https://www.nb.no/pressemeldinger/nasjonalbiblioteket-inngar-historisk-avtale-med-landets-aviser-om-innhold-til-kunstig-intelligens/">Nasjonalbiblioteket</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="fysisk-ai">
+        <div class="item__tags news-card__tags"><span class="tag tag--fysisk-ai news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
+        <h3><a href="https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/">Nvidia breddar Isaac-plattformen &ndash; ABB kopplar in simuleringen i RobotStudio</a></h3>
+        <p class="item__ingress">Nvidia har utökat sin Isaac-plattform för robotik med nya simuleringsramverk, träningsverktyg, dataset och en referenshumanoid.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Nvidia har utökat sin Isaac-plattform för robotik med nya simuleringsramverk, träningsverktyg, dataset och en referenshumanoid. ABB Robotics uppger att bolaget integrerar Omniverse-bibliotek i RobotStudio HyperReality för virtuell driftsättning.</p>
+          <p>Resten av ekosystemet namnges också: Schaeffler, Franka Robotics och danska Universal Robots bidrar till eller använder plattformen. Referenshumanoiden Isaac GR00T, som Nvidia presenterade i juni på en Unitree-kropp med Jetson Thor-beräkning ombord, ska levereras från Unitree i slutet av 2026. Virtuell driftsättning betyder att cellen körs i simulering innan den byggs &mdash; det är en verktygsnivå, inte en ny robot.</p>
+          <p>För Norden sitter robotägandet i verkstadsindustrin, och ABB:s robotverksamhet har lång historia i Västerås. Universal Robots i Odense säljer cobots och systerbolaget MiR autonoma mobila robotar till samma kunder. Blir virtuell driftsättning standard flyttas en del av ställtidsarbetet från golvet in i en modell: samma SMED-logik som gäller i dag, men med en annan kompetens bakom. Norskgrundade 1X uppger att humanoiden NEO levereras till utvecklare i december, vilket gör Norden till både köpare och byggare i samma våg.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://roboticsandautomationnews.com/2026/11/22/nvidia-expands-isaac-robotics-platform-with-new-humanoid-and-ai-development-tools/107472/">Robotics &amp; Automation News</a>, <a href="https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data">Nvidia</a></p>
+          </div>
+        </details>
+      </article>
+      <article class="item news-card" data-tags="debatt norden">
+        <div class="item__tags news-card__tags"><span class="tag tag--debatt news-card__tag news-card__tag--debatt">Debatt</span></div>
+        <h3><a href="https://www.kode24.no/artikkel/ffi-bruker-ki-men-anser-dem-som-innsidetrusler/277807">FFI: språkmodeller bör hanteras som ett insiderhot &ndash; och institutet använder dem själv</a></h3>
+        <p class="item__ingress">Forsvarets forskningsinstitutt slår i en ny rapport fast att stora språkmodeller bör behandlas som ett insiderhot, alltså en betrodd aktör som kan vändas mot verksamheten. Institutet använder själv modellerna.</p>
+        <details>
+          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
+          <div class="item__full">
+          <p>Forsvarets forskningsinstitutt slår i en ny rapport fast att stora språkmodeller bör behandlas som ett insiderhot, alltså en betrodd aktör som kan vändas mot verksamheten. Institutet använder själv modellerna.</p>
+          <p>Rapporten pekar ut tre svagheter: det modellen lärt sig går inte att granska fullt ut, den kan styras om genom det den får in, och svaren är inte fullt tillförlitliga. Forskaren Johan Vik Mathisen framhåller att det inte finns någon skiljelinje mellan instruktion och data i det modellen läser, och förordar hårda gränser på systemnivå &mdash; isolering och flödeskontroll &mdash; i stället för tillit till modellen. Chefsforskaren Gudmund Grov säger att testning inte kan garantera säkerhet. Rekommendationen är riskbedömning före införande, begränsat handlingsutrymme för agenter och mänsklig kontroll före kritiska och irreversibla åtgärder.</p>
+          <p>För Norden är slutsatsen skriven för försvarssektorn men gäller varje organisation som släpper en agent mot sina egna system. Att instruktion och data inte går att skilja åt är samma svaghet som gör promptinjektion möjlig. För Försvarsmakten, MSB och NSM ger FFI:s formulering dessutom en begreppsapparat som redan finns i säkerhetsarbetet: ett insiderhot hanteras med behörigheter, loggning och arbetsdelning, inte med förtroende.</p>
+          <p class="item__source news-card__source">Källa: <a href="https://www.kode24.no/artikkel/ffi-bruker-ki-men-anser-dem-som-innsidetrusler/277807">kode24</a>, <a href="https://www.dagsavisen.no/nyheter/ffi-gevinsten-ved-sprakmodeller-ma-veies-mot-sikkerhetsrisikoen/10627402">Dagsavisen</a>, <a href="https://www.ffi.no/aktuelt/arrangementer/sikkerhet-i-kunstig-intelligens">FFI</a></p>
+          </div>
+        </details>
+      </article>
+      </div>
+
       <div class="day news-date-group" id="dag-2026-11-22" data-date="2026-11-22">
         <p class="day__label news-date">22 november 2026</p>
       <article class="item news-card" data-tags="arbetsmarknad norden">
@@ -616,65 +690,7 @@ details.menu[open]>summary{color:var(--accent)}
         </details>
       </article>
       </div>
-      <div class="day news-date-group" id="dag-2026-11-16" data-date="2026-11-16">
-        <p class="day__label news-date">16 november 2026</p>
-      <article class="item news-card" data-tags="infrastruktur">
-        <div class="item__tags news-card__tags"><span class="tag tag--infrastruktur news-card__tag news-card__tag--infrastruktur">Infrastruktur</span></div>
-        <h3><a href="https://thehill.com/policy/transportation/6220416-faa-smart-ai-ground-stop-denial/">Alla flyg i USA stoppades på marken dagar efter att AI-verktyget SMART infördes nationellt</a></h3>
-        <p class="item__ingress">USA:s luftfartsmyndighet FAA stoppade alla avgångar i hela landet under flera timmar fredagen den 13 november, tre dagar efter att myndigheten meddelat att AI-verktyget SMART skulle användas i samtliga 22 regionala&hellip;</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>USA:s luftfartsmyndighet FAA stoppade alla avgångar i hela landet under flera timmar fredagen den 13 november, tre dagar efter att myndigheten meddelat att AI-verktyget SMART skulle användas i samtliga 22 regionala flygledningscentraler. Enligt KRON4 är det bara tredje gången FAA utfärdar ett landsomfattande flygstopp; de tidigare kom efter terrorattackerna den 11 september 2001, då hela luftrummet stängdes, och när NOTAM-systemet havererade i januari 2023, då inga avgångar tilläts.</p>
-          <p>FAA har förklarat stoppet med kommunikationsproblem vid flygledningscentralerna. Transportminister Sean Duffy säger att SMART inte spelade någon roll i stoppet, och leverantören Air Space Intelligence förnekar också ett samband. SMART väger samman omkring 200 dataströmmar och föreslår omledningar som lokala chefer vid flygledningen avgör om de ska följa. Orsaken är ännu inte officiellt fastställd.</p>
-          <p>För Norden &hellip; är lärdomen att ett AI-stöd inte kan bedömas skilt från nätet det körs i. LFV i Sverige och Avinor i Norge har båda flyttat flygledningen för flera flygplatser till fjärrstyrda torn &ndash; LFV styr flygplatser från Sundsvall och Avinor från Bodø &ndash; vilket gör tele- och dataförbindelserna lika säkerhetskritiska som systemen ovanpå dem. Oavsett om SMART frias eller inte visar händelsen att nya, dataintensiva verktyg måste provas mot den äldre infrastruktur de kopplas in i, en fråga för Transportstyrelsen och norska Luftfartstilsynet, som har tillsyn över flygtrafiktjänsten.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://thehill.com/policy/transportation/6220416-faa-smart-ai-ground-stop-denial/">The Hill</a>, <a href="https://www.washingtontimes.com/news/2026/nov/13/faa-expanded-ai-air-traffic-tool-centers-days-nationwide-ground-stop/">The Washington Times</a>, <a href="https://www.yahoo.com/news/us/articles/nationwide-ground-stop-happened-just-225837585.html">KRON4/Yahoo News</a>, <a href="https://aerotime.aero/articles/faa-smart-air-traffic-tool-22-en-route-centers">AeroTime</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="fysisk-ai">
-        <div class="item__tags news-card__tags"><span class="tag tag--fysisk-ai news-card__tag news-card__tag--fysisk-ai">Fysisk AI</span></div>
-        <h3><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">OpenAI lägger ned sitt fristående robotteam &ndash; allmänna modeller ska styra robotarna</a></h3>
-        <p class="item__ingress">OpenAI har upplöst sitt fristående robotteam och fördelat forskarna på andra delar av bolaget, bekräftade företaget för Fortune den 13 november.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>OpenAI har upplöst sitt fristående robotteam och fördelat forskarna på andra delar av bolaget, bekräftade företaget för Fortune den 13 november. Forskarna flyttas till huvudforskningen under forskningschefen Mark Chen, medan de tillämpade robot- och hårdvaruteamen går till Greg Brockmans Applied-organisation.</p>
-          <p>OpenAI har tidigare lagt ned en robotgrupp. Den lades ned 2020 med hänvisning till brist på robotdata, och ett nytt team byggdes upp 2024. Motiveringen nu är att bolaget anser att allmänna modeller som GPT-6 Astra kan styra robotar direkt: i en Nvidia-studie nådde en Astra-driven agent 74,8 procent lyckade försök på simulerade manipulationsuppgifter, mot 51 procent för de bästa specialiserade modellerna. OpenAI säger att robotik fortfarande är centralt och att Sam Altman siktar på en första offentlig demonstration av en egen humanoid 2027. Russ Tedrake, professor vid MIT och vd för robotbolaget Walden Robotics, invänder att robotbolag har ett försprång i erfarenhet från verklig drift.</p>
-          <p>För Norden &hellip; berör beslutet främst 1X Technologies, humanoidbolaget med rötter i Norge som 2023 fick finansiering från OpenAI:s startupfond. Om allmänna modeller blir robotarnas hjärnor flyttas konkurrensen från egna robotmodeller till hårdvara, säkerhet och data från verklig drift &ndash; ett område där danskgrundade bolag som Universal Robots och MiR, i dag ägda av amerikanska Teradyne, har en stor installerad bas. För forskningsmiljöer vid NTNU och Sintef och för WASP-finansierade robotgrupper i Sverige blir frågan om vad som ska byggas själv och vad som ska tas in som grundmodell mer angelägen.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune</a>, <a href="https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/">The Decoder</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="forskning">
-        <div class="item__tags news-card__tags"><span class="tag tag--forskning news-card__tag news-card__tag--forskning">Forskning</span></div>
-        <h3><a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">Claude hjälpte Helsingforsforskare att kartlägga 663 satser i Kurt Gödels stenografiska anteckningar</a></h3>
-        <p class="item__ingress">Den finländske logikern Jan von Plato vid Helsingfors universitet har med hjälp av Anthropics AI-modell Claude hittat 663 satser som Kurt Gödel bevisade, skisserade eller formulerade i sina opublicerade anteckningsböcker&hellip;</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Den finländske logikern Jan von Plato vid Helsingfors universitet har med hjälp av Anthropics AI-modell Claude hittat 663 satser som Kurt Gödel bevisade, skisserade eller formulerade i sina opublicerade anteckningsböcker, rapporterade The Guardian den 13 november. Anteckningarna omfattar 1&nbsp;009 sidor på Gabelsberger, en utdöd tysk stenografi som bara en handfull personer i världen kan läsa.</p>
-          <p>Von Plato har transkriberat materialet sedan 2017. I september gav han sina transkriptioner till Claude, som på några dagar levererade en analys som katalogiserade satserna. Enligt rapporteringen har omkring 400 av dem bekräftats som korrekta i bevisassistenten Coq, omkring 200 behövde justeras och ett femtiotal var felaktiga &ndash; en del av dem hade Gödel själv markerat som felaktiga. En av anteckningsböckerna ska visa att Gödel var nära att bevisa att urvalsaxiomet är oberoende, det resultat som gav Paul Cohen Fieldsmedaljen 1966. Logikern Joel David Hamkins vid University of Notre Dame kallar fynden anmärkningsvärda men säger att frågan om vad som är Gödels och vad som är Claudes bidrag får avgöras av historiker.</p>
-          <p>För Norden &hellip; är detta ett nordiskt forskningsprojekt som använder AI som arbetsverktyg i matematikhistoria och arkivforskning. Projektet finansieras av Europeiska forskningsrådet, ERC, som också delar ut anslag till svenska och norska lärosäten. Samma arbetssätt &ndash; en expert som transkriberar och en språkmodell som strukturerar &ndash; kan bli aktuellt för handskrivna samlingar hos Riksarkivet och norska Nasjonalbiblioteket, men exemplet visar också att varje resultat måste kontrolleras: ungefär var trettonde sats höll inte.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">The Guardian</a>, <a href="https://aiweekly.co/alerts/helsinki-team-uses-claude-to-surface-663-gdel-theorems">AI Weekly</a></p>
-          </div>
-        </details>
-      </article>
-      <article class="item news-card" data-tags="reglering norden">
-        <div class="item__tags news-card__tags"><span class="tag tag--reglering news-card__tag news-card__tag--reglering">Reglering</span></div>
-        <h3><a href="https://www.forsvarsmakten.se/en/contact/press-and-media/nordic-nations-and-uk-meet-in-sweden-to-advan/">Sverige och Storbritannien samlade nordiska försvarsmakter kring AI för spaning och bekämpning</a></h3>
-        <p class="item__ingress">Sverige och Storbritannien stod värdar för det första nordisk-brittiska symposiet om AI-stödd spaning och bekämpning, som hölls i Lund den 5&ndash;6 november, meddelade Försvarsmakten den 10 november.</p>
-        <details>
-          <summary><span class="more">Läs hela notisen</span><span class="less">Fäll ihop</span></summary>
-          <div class="item__full">
-          <p>Sverige och Storbritannien stod värdar för det första nordisk-brittiska symposiet om AI-stödd spaning och bekämpning, som hölls i Lund den 5&ndash;6 november, meddelade Försvarsmakten den 10 november. Militärer, policyexperter och tekniska specialister från Sverige, Norge, Danmark, Finland och Storbritannien deltog.</p>
-          <p>Mötet arrangerades inom ett nordisk-brittiskt samarbetsforum och handlade om beslutsstöd, målval och informationsintegration, men också om interoperabilitet, ledning och underrättelser i koalitionsoperationer. Enligt Försvarsmakten betonade deltagarna att AI i militära sammanhang ska utvecklas och användas ansvarsfullt, lagligt och etiskt. Delegationerna besökte även Södra skånska regementet, P 7, för att se svenska försök. Överste Lars Karlsson, operationschef vid armén, säger att diskussionerna förstärkte vikten av fortsatt samarbete mellan betrodda partner.</p>
-          <p>För Norden &hellip; är detta en svensk primärnyhet som är ett tecken på att AI-frågan i försvaret rör sig från princip mot praktik. Med Sverige och Finland i Nato tillsammans med de gamla medlemmarna Norge och Danmark handlar samarbetet om att system och data ska fungera tillsammans över gränserna. AI-system som uteslutande används för militära ändamål, försvar eller nationell säkerhet är undantagna från EU:s AI-förordning, så ansvaret för regler och kontroll ligger hos de nationella regeringarna och parlamenten, riksdagen, Stortinget, Folketinget och Eduskunta &ndash; vilket gör öppet redovisade möten som detta till en av få möjligheter till insyn i hur arbetet bedrivs.</p>
-          <p class="item__source news-card__source">Källa: <a href="https://www.forsvarsmakten.se/en/contact/press-and-media/nordic-nations-and-uk-meet-in-sweden-to-advan/">Försvarsmakten</a></p>
-          </div>
-        </details>
-      </article>
-      </div>
+      
 
 <!-- LATEST-ANALYSES-PREV-START (raderna [2]-[3]. Kort [1] ligger i toppen,
            se LATEST-ANALYSES-1. Roteras BADA vid ny essa - se E2.) -->
