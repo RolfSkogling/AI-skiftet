@@ -7,8 +7,57 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Mon, 23 Nov 2026 06:21:41 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 07:50:32 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>Anthropic släpper Claude Ship – AI-agenter som får godkänna rutinändringar i kod</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-24-anthropic-slapper-claude-ship-ai-agenter-som-far</guid>
+      <pubDate>Tue, 24 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>modeller</category>
+      <description><![CDATA[<p>Anthropic lanserade på måndagen Claude Ship, en uppsättning AI-agenter som granskar, rättar och godkänner rutinmässiga kodändringar. Det nya i paketet är inte granskningen – den fanns redan i Code Review – utan att en agent kan ge själva godkännandet, utifrån en policy som utvecklingslaget skriver som en fil i kodförrådet.</p>
+<p>Paketet består av tre delar. Code Review är allmänt tillgänglig, medan PR Steward och Claude Approvals är i betaversion. PR Steward tar hand om fallerande CI-kontroller, mergekonflikter och synpunkter från Code Review, andra granskningsverktyg eller kollegor, och kommenterar efter varje push vad den ändrat och hur ändringen kan rullas tillbaka. Den är uttryckligen konstruerad för att inte själv godkänna eller slå samman en ändring. Claude Approvals prövar i stället ändringen mot policyfilen, och laget kan låta den väga in olika signaler – bland annat Code Reviews fynd och egna klassificerare som laget formulerar på naturligt språk. Anthropic rekommenderar att godkännandedelen först körs i ett läge där den bara observerar, och att laget börjar med ett enda kodförråd och sätter en månadsgräns för kostnaden.</p>
+<p>För Norden är det godkännandesteget som väger tyngst. Nav och Norsk Helsenett hör till de norska aktörer som redan låter utvecklare använda AI i kodarbetet, enligt kode24, och i sådan verksamhet ställs normalt krav på spårbarhet i vem som godkänt en ändring. Claude Approvals flyttar det avgörandet till en policyfil i kodförrådet. Anthropic säger att laget behåller kontrollen över var verktyget körs, vilket granskningsdjup som används och vilka ändringar som lyfts till en människa – men var gränsen går blir därmed en inställning som kan ändras, inte en rutin som någon måste bryta.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a>, <a href="https://claude.com/resources/articles/introducing-claude-ship">Anthropic</a>, <a href="https://www.kode24.no/artikkel/bruker-millioner-pa-ki-ingen-vet-noyaktig-effekt/278112">kode24</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norsk offentlig sektor lade 31 miljoner norska kronor på AI – effekten går inte att mäta</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-24-norsk-offentlig-sektor-lade-31-miljoner-norska-kronor</guid>
+      <pubDate>Tue, 24 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>arbetsmarknad</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Fem norska offentliga aktörer har hittills i år lagt 31 miljoner norska kronor på AI till sina egna anställda, och det är utvecklarna som använder mest. kode24, som rapporterade summan den 16 november, följde upp den 19 november med att ingen av aktörerna kan lämna exakta siffror på vad användningen ger tillbaka.</p>
+<p>I Norsk Helsenett uppgår summan till 5,7 miljoner norska kronor, och omkring 150 utvecklare och systemingenjörer har i snitt gjort av med omkring 12 700 norska kronor var bara på GitHub Copilot under året. Harald Venes, som leder det gemensamma tjänstecentret, säger att de flesta utvecklare använder AI till kodhjälp och att resten är nattliga körningar och annan prompting. I Nav använder 4 000 anställda M365 Copilot, och sedan oktober har 11 procent börjat använda AI till kodgranskning, enligt tal från Nav. Plattformsutvecklaren Hans Kristian Flaatten säger att den mest mätbara effekten så här långt är nöjda anställda.</p>
+<p>För Norden är det här frågan som kommer före alla andra. Digitaliserings- og forvaltningsdepartementet begärde in synpunkter på en ny nationell AI-strategi med sista svarsdag den 20 november, och DNB har kopplat en personalminskning på 400 heltidstjänster till ökad AI-användning utan att fördela minskningen mellan AI och andra förändringar i arbetssättet. Om de aktörer som mäter mest noggrant ändå inte kan sätta ett tal på avkastningen, blir varje sparbeting som vilar på AI ett antagande snarare än en beräkning. Finansforbundet har invänt mot just att AI blir en generell motivering, och kode24 har i en separat artikel pekat på att de som skär ned med AI som skäl ofta anställer tillbaka – med förlust.</p>
+<p class="news-card__source">Källa: <a href="https://www.kode24.no/artikkel/bruker-millioner-pa-ki-ingen-vet-noyaktig-effekt/278112">kode24</a>, <a href="https://www.finansforbundet.no/folk-og-fag/forbundsnytt/dnb-kutter-400-arsverk-for-fort/">Finansforbundet</a>, <a href="https://www.regjeringen.no/no/aktuelt/ber-om-innspill-til-nasjonal-strategi-for-kunstig-intelligens/id3186522/">regjeringen.no</a></p>]]></description>
+    </item>
+    <item>
+      <title>Nvidias styrelse tar tillbaka Jensen Huang som vd elva dagar efter avgången</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-24-nvidias-styrelse-tar-tillbaka-jensen-huang-som-vd</guid>
+      <pubDate>Tue, 24 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>hardvara</category>
+      <description><![CDATA[<p>Nvidias styrelse återinsatte på måndagen Jensen Huang som vd, president och styrelseledamot med omedelbar verkan. Han avgick den 12 november, och beslutet att ta tillbaka honom var enhälligt.</p>
+<p>Enligt det pressmeddelande som Nvidia lämnade in till den amerikanska finansinspektionen SEC träder beslutet i kraft omedelbart, och finanschefen Colette Kress, som varit tillförordnad vd, fortsätter som finansdirektör. Styrelsen skriver att den tagit emot synpunkter från höga nivåer inom den amerikanska regeringen och att den, baserat på dessa synpunkter, är övertygad om att återkomsten inte utgör någon risk för den nationella säkerheten. USA:s president Donald Trump uppgav för CNBC att han talat med Huang på söndagskvällen och att han talat med styrelsen, som han säger sig ha övertalat. En kommitté av oberoende styrelseledamöter ska föra den pågående utredningen till slut. Senator Elizabeth Warren har kallat beslutet vårdslöst.</p>
+<p>För Norden är Nvidia inte en leverantör bland flera. CNBC rapporterade den 19 augusti, enligt två anonyma källor, att bolaget erbjudit sig att sammanföra nordiska datacenteroperatörer med företag som har Nvidia-GPU:er och behöver kapacitet, och flera av de AI-anläggningar som nu byggs i Sverige, Norge och Finland vilar på bolagets acceleratorer. Den 16 november utfärdade dessutom amerikanska BIS en interimistisk slutregel som kräver licens när ett datacenter levererar beräkningskraft till företag i Kina och andra restriktionsländer, och som inför licenskrav för Indonesien, Malaysia, Singapore, Thailand och Brasilien. Inget nordiskt land finns på listan. När bolagsstyrningen hos den leverantör som de nordiska AI-anläggningarna i praktiken är beroende av kan påverkas av samtal från Vita huset blir det ändå en planeringsrisk för projekt som sträcker sig över flera år.</p>
+<p class="news-card__source">Källa: <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm">Nvidia via SEC</a>, <a href="https://www.nbcnews.com/tech/tech-news/nvidia-reinstates-jensen-huang-rcna610864">NBC News</a>, <a href="https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/">TechCrunch</a></p>]]></description>
+    </item>
+    <item>
+      <title>FN-samtalen om autonoma vapen slutar utan förhandlingsmandat – frågan skjuts till 2028</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-24</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-24-fn-samtalen-om-autonoma-vapen-slutar-utan-forhandlingsmandat</guid>
+      <pubDate>Tue, 24 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>CCW:s sjunde översynskonferens i Genève avslutades natten till den 21 november med ett mandat att utarbeta ett möjligt instrument om autonoma vapensystem till 2028 – men utan mandat att förhandla fram ett bindande avtal.</p>
+<p>Expertgruppen ska arbeta vidare under 2027 och 2028. Kompromissen lämnar frågan om framtida reglering ska vara rättsligt bindande obesvarad. Norsk Folkehjelp, som är styrelsemedlem i kampanjen Stop Killer Robots, uppger att 98 av konventionens 128 medlemsstater vill se nya bindande regler, men konsensuskravet gör att en enda stat kan blockera ett utfall. Flera stora vapenproducerande länder motsatte sig ett snabbt bindande avtal, bland dem USA. Konferensens ordförande kallade uppgörelsen en betydande prestation för humanitär nedrustning, medan Stop Killer Robots beskrev mandatet som urvattnat.</p>
+<p>För Norden är Norges linje att driva bindande reglering inom CCW-ramen snarare än genom en separat förbudstraktat. Regeringen har som uttalat mål att få fram ett rättsligt bindande instrument inom konventionen, och utrikesministern har beskrivit CCW som Norges föredragna ram – vilket är just den ram som nu sköt frågan två år framåt. Norsk Folkehjelp, som följde mötet från Genève, menar att resultatet inte ger den reglering av autonoma vapen som behövs. För svensk och norsk försvarsindustri, där Saab och Kongsberg utvecklar system med autonoma funktioner, innebär utfallet att de närmaste två åren styrs av nationell rätt och folkrättens allmänna regler, inte av ett särskilt protokoll.</p>
+<p class="news-card__source">Källa: <a href="https://www.swissinfo.ch/eng/international-geneva/rules-for-killer-robots-talks-end-with-a-minimal-consensus/92416572">SWI swissinfo.ch</a>, <a href="https://kommunikasjon.ntb.no/pressemelding/19150173/forhandlinger-om-autonome-vapen-gikk-pa-en-smell-i-geneve-i-natt-vi-far-ikke-nodvendig-regulering-av-drapsroboter-med-dette-resultatet-sier-norsk-folkehjelp?lang=no">Norsk Folkehjelp</a>, <a href="https://www.stortinget.no/globalassets/pdf/innstillinger/stortinget/2024-2025/inns-202425-443s-vedlegg.pdf">Stortinget</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic ger externa granskare insyn på anställningsliknande nivå i sina frontmodeller</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-23</link>
@@ -927,55 +976,6 @@
 <p>Ansatsen bygger på kontinuerlig elektrisk styrning som stabiliserar enskilda kretselement mot brus, vilket enligt bolaget minskar både värmelasten i kryostaten och antalet ledningar. Som jämförelse uppskattas en kommersiellt användbar maskin baserad på ytkoden kräva omkring en miljon fysiska qubits, mot 105 för Googles Willow, skriver Tech Funding News. Faktor 100 är bolagets eget påstående och inte oberoende verifierat. Quint har tio anställda och pilottester med Bosch, BASF och Boehringer Ingelheim.</p>
 <p>För Norden … Mikko Möttönen, medgrundare till IQM och QMill, deltog i rundan; källorna kopplar inte rundan till något nordiskt bolag i övrigt. Nordisk kvantverksamhet finns bland annat vid Chalmers och Wallenberg Centre for Quantum Technology (WACQT). Quint är tyskt, så rundan säger i sig inget om nordisk finansiering eller teknik.</p>
 <p class="news-card__source">Källa: <a href="https://quantumcomputingreport.com/quint-computing-secures-e9-1m-10-2m-usd-seed-round-to-scale-hardware-level-quantum-error-correction/">Quantum Computing Report</a>, <a href="https://techfundingnews.com/quint-computing-9-1m-quantum-error-correction">Tech Funding News</a></p>]]></description>
-    </item>
-    <item>
-      <title>Anthropic varnar i börsansökan att bolaget snart kan nå sin egen gräns för AI-driven acceleration</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-anthropic-varnar-i-borsansokan-att-bolaget-snart-kan</guid>
-      <pubDate>Wed, 04 Nov 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>debatt</category>
-      <description><![CDATA[<p>Anthropic skriver i den ändrade börsansökan (S-1/A), som lämnades in måndagen den 2 november, att bolaget snart kan komma att uppfylla sin egen definition av dramatiskt accelererad, AI-driven utveckling. Bolaget har inte klassat någon nuvarande modell över tröskeln och säger att det fortfarande bedömer underlaget.</p>
-<p>Enligt TechCrunch skriver Anthropic att den ökade AI-användningen i den egna forskningen kan låta modellernas förmågor växa snabbare än säkerhets-, alignment- och skyddsarbetet, och att bolaget tidigare inte har identifierat en kraftig acceleration förrän i efterhand, och kanske inte heller kommer att göra det framöver. Anthropic räknar inte med att på ett säkert sätt kunna låta Claude helt autonomt designa och bygga efterföljande generationer av frontmodeller utan meningsfull mänsklig tillsyn eller förståelse, och överväger ändringar i sin Responsible Scaling Policy för att människor ska behålla kontrollen över utvecklingen av frontmodeller. TechCrunch noterar att skeptiker ser en S-1 som både upplysning och marknadsföring.</p>
-<p>För Norden … Källorna nämner ingen reaktion från svenska eller norska myndigheter. Breakits Emil Widhagen skriver däremot att Anthropics planerade börsnotering kan påverka värderingar, finansiering och marginaler hos de svenska techbolag som bygger sina produkter på de stora laboratoriernas modeller. Det gör en leverantörs egen bedömning av utvecklingstakten till en leverantörsrisk även för nordiska kunder.</p>
-<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch</a>, <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Breakit: svenska techbolags AI-notor har femfaldigats på ett år – Anthropic tar andelar från OpenAI</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-breakit-svenska-techbolags-ai-notor-har-femfaldigats-pa</guid>
-      <pubDate>Wed, 04 Nov 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Breakit rapporterar, utifrån ny data, att svenska techbolags AI-kostnader har femfaldigats under det senaste året och att OpenAI tappar sin dominans bland bolagens AI-leverantörer till Anthropic. Mynts vd Baltsar Sahlin säger att det främst rör sig om nytt spenderande på AI och inte pengar som flyttats från SaaS-tjänster.</p>
-<p>Breakit anger inte i den öppna delen av artikeln vilken datakälla som ligger bakom siffrorna. Som jämförelse rapporterade News55 i april, med hänvisning till en DI-rapport, att svenska små och medelstora bolags AI-utgifter ökade med 264 procent i första kvartalet 2026 jämfört med året före. Anthropics Claude hade då 34,5 procent av utgifterna mot 33,6 procent för ChatGPT, efter att OpenAI tidigt 2025 hade över 70 procent. Det är två olika dataunderlag och siffrorna går inte att räkna ihop.</p>
-<p>För Norden … Det här är en svensk primärstory: svenska techbolag, Mynt, DI och Breakit är huvudaktörerna. Källorna ger inga motsvarande siffror för Norge, så om norska bolag följer samma mönster går inte att säga. För svenska bolag betyder utvecklingen att en allt större del av kostnadsbasen hänger på två amerikanska leverantörer, vilket är samma beroende som Breakit tar upp i sin analys av Anthropics börsnotering.</p>
-<p class="news-card__source">Källa: <a href="https://www.breakit.se/artikel/47850/svenska-techbolagens-ai-notor-exploderar-femfaldigats-senaste-aret">Breakit</a>, <a href="https://www.news55.se/privatekonomi/ai-rusar-i-foretagen-ny-favorit-tar-over-i-sverige/">News55 (citerar DI)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Agility Robotics: aktieägare godkänner börsfusion – handel som AGLT väntas börja den 5 november</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-agility-robotics-aktieagare-godkanner-borsfusion-handel-som-aglt</guid>
-      <pubDate>Wed, 04 Nov 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <description><![CDATA[<p>Aktieägarna i SPAC-bolaget Churchill Capital Corp XI godkände den 2 november sammanslagningen med humanoidtillverkaren Agility Robotics, med över 84 procent av de avgivna rösterna. Affären väntas slutföras den 4 november och handel på Nasdaq under tickern AGLT den 5 november.</p>
-<p>Bolagen uppger ett bruttokapitaltillskott på omkring 465 miljoner dollar: cirka 164 miljoner från SPAC-bolagets depå, cirka 201 miljoner i en riktad nyemission ledd av Foxconn till 10 dollar per aktie och 100 miljoner dollar som redan kommit in. Bland strategiska investerare nämns Nvidia, Amazon, SoftBank Vision Fund 2 och Schaeffler. Roboten Digit har över 65 000 timmar i verklig drift, GXO ska sätta in den i ytterligare två anläggningar och AGCO har ett pilotavtal som startar 2027. Agility uppger över 300 miljoner dollar i åtagna flerårsorder för Digit 5, men noterar att det är potentiellt framtida värde och inte intäkter; tidiga leveranser väntas under första halvåret 2027. När affären presenterades i juni angav The Next Web ett aktievärde på 2,5 miljarder dollar före kapitaltillskottet (pre-money).</p>
-<p>För Norden … Källorna nämner inga nordiska kunder för Digit. Närmast ligger AGCO, vars märken inkluderar Valtra, och Vinnovas förslag AI Acceleration Sweden, som pekar ut fysisk AI (robotik och autonoma system) som ett fokusområde med start i januari 2027. Det är ett förslag som regering och riksdag ännu inte har beslutat om.</p>
-<p class="news-card__source">Källa: <a href="https://www.globenewswire.com/news-release/2026/10/30/3392148/0/en/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination.html">Agility Robotics/Churchill XI (pressmeddelande)</a>, <a href="https://finance.yahoo.com/markets/stocks/articles/churchill-capital-corp-xi-shareholders-222700941.html">Yahoo Finance</a>, <a href="https://thenextweb.com/news/agility-robotics-public-spac-deal">The Next Web</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se (Vinnova)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Alice &amp; Bob: omkring 22 600 qubits skulle på pappret räcka för att knäcka RSA-2048 på drygt tre dygn</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-04</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-04-alice-och-bob-omkring-22-600-qubits-skulle</guid>
-      <pubDate>Wed, 04 Nov 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Det franska kvantbolaget Alice &amp; Bob uppskattar att 22 593 fysiska katt-qubits skulle kunna faktorisera RSA-2048 på omkring 3,14 dygn. För elliptiska kurvor (256-bitars ECDLP) anger bolaget 29 588 qubits och 61,8 minuter.</p>
-<p>Bolaget säger att det är omkring 40 gånger färre fysiska qubits än Googles uppskattning från 2025, och ned från 49 649 i bolagets egen skattning från 2023. Minskningen kommer från LDPC-katt-koder, en omkonstruerad adderare och antagandet att katt-qubits undertrycker bitflip-fel i hårdvaran. Det är teoretiska resursskattningar och inte en demonstration: hårdvaran är inte byggd, jämförelsen med Google bygger på en extrapolering till 1 miljon transmon-qubits, och artikeln är till stor del bolagets eget pressmaterial med kommentarer från bland andra PQShields vd, en leverantör av efterkvantkryptografi. Alice &amp; Bob räknar med att hårdvaruutvecklingen och de sjunkande kraven möts i början av 2030-talet.</p>
-<p>För Norden … Skattningen kommer från ett franskt bolag och inte från nordisk forskning. Närmast i Norden ligger finska IQM, som nyligen visade sammanflätning över alla 54 qubits på Emerald-chipet (fidelitet 0,516 efter felmitigering), alltså fortfarande långt från de qubitantal som krävs för att hota RSA och med en annan qubittyp än katt-qubits, samt Chalmers och Wallenberg Centre for Quantum Technology, som bygger supraledande kvantdatorer. Vinnova föreslår dessutom ett Quantum Leap Sweden. För svenska och norska bolag och myndigheter gäller frågan migreringen till efterkvantkryptografi, där USA:s NIST siktar på full övergång för federala system till 2035.</p>
-<p class="news-card__source">Källa: <a href="https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048">The Quantum Insider</a>, <a href="https://quantumzeitgeist.com/quantum-zeitgeist-weekly-digest-nov-2">Quantum Zeitgeist</a>, <a href="https://hurbra.se/vinnova-ai-6g-kvantteknik-12-oktober-2026/">HurBra.se (Vinnova)</a>, <a href="https://www.mynewsdesk.com/uk/chalmers/pressreleases/engineering-of-a-swedish-quantum-computer-set-to-start-2270236">Chalmers</a></p>]]></description>
     </item>
   </channel>
 </rss>
