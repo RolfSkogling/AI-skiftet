@@ -7,8 +7,69 @@
     <description>Daglig bevakning av AI-utvecklingen med nordisk vinkel: modeller, forskning, fysisk AI, hardvara, kvant, arbetsmarknad, reglering och debatt.</description>
     <language>sv-SE</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 07:50:32 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:45:08 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI: GPT-6-modeller designade proteiner som band i labbet – specialverktyg filtrerade urvalet</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-openai-gpt-6-modeller-designade-proteiner-som-band</guid>
+      <pubDate>Wed, 25 Nov 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>OpenAI publicerade den 24 november resultat där bolagets GPT-6-modeller tagit fram proteiner som band sina måltavlor i laboratorietester. Av 322 så kallade minibindare mot fem målproteiner gav 35, alltså 10,9 procent, utslag för bindning.</p>
+<p>Själva designen gjordes enligt bolaget med resonemang och kod, utan att modellerna anropade specialiserade biologimodeller för att generera förslagen. Men urvalet filtrerades med etablerade verktyg som Boltz-2 och ESMFold2, och sekvenserna till labbkandidaterna kom från SolubleMPNN. Labbkandidaterna togs fram med en förhandsversion av GPT-6.2, och labbarbetet utfördes av forskningspartnern Onava. När modellerna i stället fick rita om antikroppsloopar mot receptorn IL-4Rα band 128 av 182 varianter, och i ett tredje försök band 75 av 88 nya sekvenser mot proteinet MDM2. OpenAI skriver själv att resultaten ännu inte visar att modellerna kan ta fram nya bindare helt på egen hand, att bindning bara är första steget före specificitet, stabilitet och säkerhet, och att helstrukturprediktion fortfarande är en tydlig svaghet. Inga affinitetsvärden redovisas, och arbetet ligger som preprint utan oberoende granskning.</p>
+<p>För Norden går frågan rakt in i regionens life science. Frågan går till miljöer som AstraZeneca i Göteborg, Novo Nordisk i Danmark, DTU och SciLifeLab: kan en allmän modell delvis ersätta de specialiserade verktygen ändras kalkylen för vilka licenser ett nordiskt labb behöver. OpenAI:s egen brasklapp pekar samtidigt i motsatt riktning: det var specialmodellerna som sorterade kandidaterna före labbet, och den rollen består. För nordiska forskningsfinansiärer är det skillnaden mellan att byta verktyg och att lägga till ett.</p>
+<p class="news-card__source">Källa: <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">OpenAI</a>, <a href="https://www.unite.ai/openai-reports-gpt-6-designs-proteins-with-reasoning-and-code/">Unite.AI</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norska universitet skriver egna regler mot AI-glasögon – NTNU-utkast vill stänga av studenter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-norska-universitet-skriver-egna-regler-mot-ai-glasogon</guid>
+      <pubDate>Wed, 25 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Flera norska lärosäten arbetar med egna regler mot AI-glasögon medan den nationella lagen dröjer. NTNU har ett utkast som förbjuder all användning av smarta glasögon och dold inspelning med kroppsnära teknik.</p>
+<p>Utkastet, som NTNU ännu inte har beslutat om, innebär disciplinära åtgärder för anställda som använder smarta glasögon i arbetet oavsett var arbetet utförs – också hemifrån – medan studenter som använder dem eller spelar in i smyg kan stängas av från campus. Vilka åtgärder som avses och vilken rättslig grund de vilar på står inte i utkastet. Direktör Bjørn Haugstad pekar på personuppgifter, inspelningar som lagras i moln som NTNU inte kontrollerar, upphovsrätt och risken att materialet används för att träna AI. Høgskulen på Vestlandet och Universitetet i Agder väntas landa i en hållning inom kort, Universitetet i Bergen har inte avgjort om egna regler behövs, och Universitetet i Oslo hänvisar till befintliga regler om inspelning. Regeringens aviserade tillfälliga förbud mot AI-glasögon och kroppsnära teknik på utvalda platser ligger längre fram: statssekreterare Ola Helmich Borchgrevink Pedersen uppger att lagförslaget siktar på Stortinget under våren 2027, och vill inte säga om lärosätena omfattas. Expertgruppen som ska se på frågan är ännu inte utsedd.</p>
+<p>För Norden är detta andra gången på två månader som norska aktörer agerar före lagstiftaren: Forbrukerrådet krävde i oktober stopp för försäljningen av AI-glasögon. I samma månad slog EU:s dataskyddsstyrelse EDPB fast att tillverkarna inte kan lägga ansvaret på bäraren. Samma fråga ligger nu hos svenska lärosäten och svenska arbetsgivare, där tentamen, patientmöten och fabriksgolv har samma inspelningsproblem, och hos IMY och Datatilsynet, som får avgöra vad kroppsnära inspelning kräver av den som bär utrustningen. Går lagförslaget igenom får svenska lärosäten och tillsynsmyndigheter en norsk reglering att förhålla sig till.</p>
+<p class="news-card__source">Källa: <a href="https://www.khrono.no/foreslar-disiplinaerstraff-for-bruk-av-smartbriller-ogsa-utenfor-campus/1101787">Khrono</a>, <a href="https://www.universitetsavisa.no/universiteter-jobber-med-forbud-mot-ki-briller/470414">Universitetsavisa/NTB</a></p>]]></description>
+    </item>
+    <item>
+      <title>Tidal börjar radera helt AI-genererade låtar den 9 december</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-tidal-borjar-radera-helt-ai-genererade-latar-den</guid>
+      <pubDate>Wed, 25 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>Strömningstjänsten Tidal ska blockera och ta bort musik som är helt genererad med AI, och borttagningen börjar den 9 december. Enligt TechCrunch ska drygt 29 miljoner spår vara borta vid årsskiftet, och omkring 80 000 till 85 000 nya uppladdningar avvisas per dag.</p>
+<p>Tidal uppger att 27 miljoner spår, 6,3 procent av katalogen, är helt AI-genererade och att 96 procent av dem inte har en enda strömning. Mer än 43 procent av allt som laddats upp de senaste 90 dagarna var AI-genererat. Musik där AI använts som hjälpmedel får ligga kvar; det är de helt maskingenererade spåren som stoppas, och distributörer får inte längre leverera dem. Hur upptäckten ska gå till beskriver Tidal inte, och någon ordning för att överklaga en borttagning redovisas inte heller. Deezer filtrerar bort AI-musik ur rekommendationerna och säljer sin detektering vidare, medan Spotify och YouTube Music märker spåren i stället för att plocka bort dem.</p>
+<p>För Norden träffar beslutet mitt i den svenska strömningsekonomin. Spotify i Stockholm har valt märkning framför borttagning, och skillnaden avgör hur stor del av utbetalningarna som går till maskingenererat material. Upphovsrättsorganisationerna STIM i Sverige, TONO i Norge och Koda i Danmark fördelar ersättning per strömning, så varje spår som rensas bort flyttar pengar tillbaka till katalogens övriga artister. Att 96 procent av de berörda spåren saknar strömningar helt visar samtidigt hur liten den omfördelningen blir i kronor.</p>
+<p class="news-card__source">Källa: <a href="https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/">TechCrunch</a>, <a href="https://www.musicbusinessworldwide.com/tidal-bans-fully-ai-generated-music-from-its-platform/">Music Business Worldwide</a></p>]]></description>
+    </item>
+    <item>
+      <title>New York stoppar AI-chattleksaker i fem år – 15 000 dollar per dag i böter</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-new-york-stoppar-ai-chattleksaker-i-fem-ar</guid>
+      <pubDate>Wed, 25 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>Delstaten New York inför ett femårigt stopp för leksaker med inbyggda AI-chattbotar. Guvernör Kathy Hochul skrev under lagen tisdagen den 24 november, mitt i julhandeln, och förbudet börjar gälla 90 dagar efter underskriften.</p>
+<p>Förbudet omfattar tillverkning, distribution och försäljning av leksaker som för samtal med barn – talande gosedjur, dockor och robotar – och en överträdelse kan kosta 15 000 dollar per dag, med delstatens åklagarmyndighet, attorney general, som tillsynsmyndighet. Bakom lagen står senatorn Andrew Gounardes och ledamoten Rebecca Kassay, som hänvisar till en rapport från Common Sense Media om att leksakerna kan tränga undan barnens relationer till familj och vänner. Hochul tog själv upp roboten Miko 3, som enligt en granskare vid Common Sense Media uppmanade till att hoppa ut genom ett fönster. Kalifornien har nyligen vidtagit liknande åtgärder och Pennsylvania överväger ett eget stopp. Hur tillsynen ska gå till i butik är inte beskrivet.</p>
+<p>För Norden ligger samma leksaker i hyllorna just nu. EU:s AI-förordning kräver märkning och förbjuder system som utnyttjar barns sårbarhet, men något försäljningsstopp för AI-leksaker finns inte, och kraven på fristående högrisksystem är uppskjutna till december 2027 i Digital Omnibus-överenskommelsen. Konsumentverket i Sverige och Forbrukerrådet i Norge, som i oktober krävde stopp för AI-glasögon, har därmed en delstatslag att peka på medan julhandeln pågår – men inget eget verktyg som tar en leksak ur hyllan.</p>
+<p class="news-card__source">Källa: <a href="https://www.fox5ny.com/news/new-york-bans-ai-chatbot-toys-kathy-hochul-holiday-shopping">Fox 5 New York</a>, <a href="https://wamc.org/2026-11-24/new-york-bans-ai-chatbot-toys">WAMC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Dell säljer AI-servrar för 22 miljarder dollar på ett kvartal – orderboken på 132 miljarder</title>
+      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-dell-saljer-ai-servrar-for-22-miljarder-dollar</guid>
+      <pubDate>Wed, 25 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Dell redovisade på tisdagen ett kvartal där intäkterna dubblerades till 54,9 miljarder dollar, en ökning med 103 procent. AI-servrar stod för 22 miljarder dollar och orderboken för AI-servrar låg på 132,3 miljarder.</p>
+<p>Bolaget tog in AI-order för 60,2 miljarder dollar under kvartalet och 180 miljarder de senaste fyra kvartalen, och höjde heltårsprognosen till 202 miljarder dollar i intäkter, varav 78 miljarder i AI-servrar – mer än tre gånger föregående år. Styrelsen utvidgade återköpsprogrammet med 25 miljarder dollar. Jeff Clarke sade i genomgången att efterfrågan på infrastruktur fortsatt överstiger tillgången, och att gapet mellan komponenttillgång och slutefterfrågan vidgas in i nästa år. Kundbasen beskrivs som neoclouds, statliga projekt och företag, med över 7 500 kunder i bolagets AI-fabrikserbjudande och två till tre statliga projekt i nästan varje större land. Aktien föll nära 12 procent under handelsdagen, före rapporten, och steg omkring 4 procent i efterhandeln.</p>
+<p>För Norden är raden om statliga projekt den intressanta. Sverige bygger superdatorn Sferical One med Ericsson, AstraZeneca, Saab, SEB och Wallenberg Investments, och Telia, Nokia och KTH ingår i det nordisk-baltiska konsortium som vill bygga en av EU:s AI-gigafabriker – alla beroende av samma knappa komponenter som Dell beskriver. Vidgas gapet in i 2027 blir inköpen dyrare för nordiska datacenterprojekt: AI-servrar har enligt Computer Sweden redan blivit upp till 45 procent dyrare trots tecknade avtal.</p>
+<p class="news-card__source">Källa: <a href="https://investors.delltechnologies.com/_assets/_89e9d1cb2fc1be4c6ed302d35e1514c6/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf">Dell Technologies</a>, <a href="https://www.investing.com/news/company-news/dell-q3-fy27-slides-revenue-doubles-ai-backlog-hits-132b-93CH-5049313">Investing.com</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic släpper Claude Ship – AI-agenter som får godkänna rutinändringar i kod</title>
       <link>https://ai-skiftet.se/nyheter/#dag-2026-11-24</link>
@@ -927,55 +988,6 @@
 <p>Partikeln L05 kommer från en bakteriofag och byggs av 96 kopior av ett protein, mot 78 i däggdjurens vaults; den mäter omkring 54 × 45 nanometer och rymmer cirka 25 procent mer volym än däggdjurens. Claude sökte i en databas med omkring 15 miljarder förutsagda proteiner efter släktingar, utformade DNA-konstruktioner, föreslog en isoleringsmetod som enligt teamet kortade reningen från cirka tre dygn till omkring 90 minuter och körde cryo-EM-bearbetningen i en intern uppsättning med flera agenter – 34 timmar för en första modell och ungefär en vecka för de slutliga kartorna. Teamet redovisar också fel: ett tillsatsämne i odlingsmediet försvårade upptaget av DNA och kostade ungefär två veckor, och ett tidigt steg gav en felaktig karta. Teamet har hittills bara framställt de här vaultpartiklarna i E. coli och har inte prövat om de bildas i de bakterier och fager där de förekommer naturligt, och bearbetningen krävde hundratals grafikprocessorer, fler än många akademiska labb har tillgång till.</p>
 <p>För Norden … Källorna nämner inga nordiska forskare. Strukturbiologi med cryo-EM bedrivs i Norden bland annat vid SciLifeLab i Stockholm, och beräkningsresurser som Wallenberg-finansierade Berzelius vid NSC i Linköping är den sortens kapacitet som arbetsflödet efterfrågar. Att hundratals grafikprocessorer behövdes tyder på att tillgången till beräkning kan bli en flaskhals för nordiska labb; inget i underlaget säger att någon nordisk grupp planerar något liknande.</p>
 <p class="news-card__source">Källa: <a href="https://www.anthropic.com/research/investigating-vault-particles-with-claude">Anthropic</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Saab visar egenutvecklade AI-agenter för luftstrid – testade i flygning på Gripen E</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-saab-visar-egenutvecklade-ai-agenter-for-luftstrid-testade</guid>
-      <pubDate>Thu, 05 Nov 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Saab har presenterat egenutvecklade AI-agenter för luftstrid som enligt bolaget har testats i flygning på en Gripen E. Peter Nilsson, chef för Advanced Programs på Saabs flygverksamhet, sade vid en briefing den 30 oktober att testerna hittills främst gällt strid bortom visuell räckvidd och att agenterna kan arbeta tillsammans med en pilot eller fungera i en egen obemannad farkost.</p>
-<p>Enligt Aviation International News har agenterna flugit på Gripen E-testflygplanet i ungefär två år, och Saab bedömer dem som redo för operativ användning – det som återstår är kundens förmåga att ta emot dem. Agenterna utvecklas i programmet AI Fighter Pilot Academy och tränas på beräkningsanläggningen Sferical AI i Linköping, som bygger på 1 152 Nvidia GB300-grafikprocessorer. Saab uppger att en timmes simulerad flygning kan köras en miljard gånger på den tid en CPU-baserad uppsättning hinner köra den 1 200 gånger. Siffrorna är Saabs egna och inte oberoende verifierade, och källorna anger varken agenternas namn, hur långt de kommit utöver strid bortom visuell räckvidd eller hur mänsklig kontroll ska se ut.</p>
-<p>För Norden … Det här är en svensk nyhet med Saab som huvudaktör: kunden är enligt AIN Försvarets materielverk (FMV) och flygvapnet, och Sferical AI ägs delvis av Saab, Ericsson och AstraZeneca. Nilsson säger själv att utplaceringen kan ta allt från månader till ett ensiffrigt antal år, beroende på hur snabbt kunden kan ta emot agenterna; någon tidplan eller något beslut från FMV eller flygvapnet finns inte i källorna.</p>
-<p class="news-card__source">Källa: <a href="https://breakingdefense.com/2026/11/swedens-saab-launches-family-of-ai-agents-for-future-aircraft-projects/">Breaking Defense</a>, <a href="https://ainonline.com/aviation-news/defense/2026-11-03/saab-lifts-lid-ai-fighter-agent-development">Aviation International News</a></p>]]></description>
-    </item>
-    <item>
-      <title>EU-rådgivare: Geminis svar kan göra intrång i pressutgivarnas rättigheter</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-eu-radgivare-geminis-svar-kan-gora-intrang-i</guid>
-      <pubDate>Thu, 05 Nov 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>EU-domstolens generaladvokat Maciej Szpunar lämnade den 3 november sitt förslag till avgörande i mål C-250/25, där ungerska Like Company har stämt Google Ireland över chattboten Gemini. Enligt Szpunar kan pressutgivares rättighet enligt artikel 15 i direktivet om upphovsrätt på den digitala inre marknaden kränkas på två sätt: om chattboten kringgår en betalvägg eller en spärr mot botar, eller om ett svar så nära återger artikelns särskilda uppbyggnad och formuleringar att läsaren kan hoppa över originalet.</p>
-<p>Förslaget är inte bindande, men domstolen följer enligt RTÉ oftast generaladvokatens linje och väntas döma under de kommande månaderna. Träningsfrågorna bör enligt Szpunar avvisas, men han anser att träning i princip omfattas av undantaget för text- och datautvinning, bland annat om åtkomsten är laglig och rättighetshavarna inte har förbehållit sig rätten i maskinläsbar form. Enligt Szpunar är fakta fria att använda, men parafras är inte automatiskt tillåten. PPC Land bedömer att vägledningen talar emot Like Company, bland annat eftersom bara en mening ur artikeln återkommer i Geminis svar; den slutliga bedömningen gör den ungerska domstolen. Google skriver enligt RTÉ att man noterar att generaladvokaten anser att EU-rätten tillåter AI-träning på offentligt tillgänglig information.</p>
-<p>För Norden … Danmarks regering lämnade synpunkter i målet och deltog i förhandlingen; den menade enligt PPC Land att text- och datautvinning avser analys av stora datamängder snarare än modellträning, en åtskillnad Szpunar inte såg som avgörande. Källorna nämner varken Sverige eller Norge. I ett separat ärende har Oslo tingrett tillfälligt stoppat Metas nya villkor efter en begäran från tio norska mediehus; beslutet är interimistiskt och avgör inte om villkoren är lagliga.</p>
-<p class="news-card__source">Källa: <a href="https://www.rte.ie/news/2026/1103/1597874-eu-court-backs-publishers-google/">RTÉ</a>, <a href="https://ppc.land/googles-gemini-can-infringe-press-rights-in-2-ways-eu-court-adviser-says/">PPC Land</a>, <a href="https://ppc.land/norwegian-court-temporarily-blocks-metas-new-terms-after-10-media-groups-sue/">PPC Land (Meta/Oslo)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Revolut: egenhostade öppna modeller har kapat kostnaden för AI-kodning med cirka 90 procent</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-revolut-egenhostade-oppna-modeller-har-kapat-kostnaden-for</guid>
-      <pubDate>Thu, 05 Nov 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Fintechbolaget Revolut har gjort egenhostade modeller med öppna vikter till standard för AI-kodning i stället för att främst använda kommersiella tjänster som Claude. Enligt Revolut, som The Register refererar från ett föredrag på konferensen AI Engineer i New York i oktober, rullades verktygen ut till omkring 2 000 ingenjörer och inferenskostnaden för AI-kodning föll med cirka 90 procent på under ett år.</p>
-<p>Revolut började med GLM-5.1 från Z.ai och kör nu GLM-5.3 på 56 Nvidia B200-grafikprocessorer. Bolaget anger 0,30 dollar per miljon tokens vid egenhosting av GLM-5.1, ungefär en tiondel av kostnaden för OpenAIs Codex eller Anthropics Claude Code. Förbehållen är att GLM är textbaserad, så bildfrågor går till andra modeller, och att modellen kräver omkring 380 GB grafikminne bara för vikterna. Samma dag rapporterade Computer Sweden att Gartner bedömer att öppna modeller kan sköta 90 procent av uppgifterna i företagens AI-agenter till 2030, till ungefär en fjärdedel av kostnaden för de billigaste slutna modellerna, men att de ibland behöver flera försök. Moonshot har dessutom publicerat vikterna till Kimi K3.1 Pro (2,8 biljoner parametrar, 104 miljarder aktiva per token); jämförelserna med Claude Opus 5.5 i modellkortet är Moonshots egna.</p>
-<p>För Norden … Huvudkällorna nämner inga nordiska bolag, och Revolut är brittiskt. Kostnadsfrågan är ändå konkret här: Breakit rapporterade nyligen att svenska techbolags AI-notor har femfaldigats på ett år. Den indiska sajten DevBytes skrev i maj att svenska Grunden AI AB öppnat registrering för en förproduktionstjänst för inferens med GLM-5.1, riktad till utvecklare och myndigheter inom EU; uppgiften har inte kunnat bekräftas mot något primärdokument. Revolut-företrädaren David Abitbol menar enligt The Register att integritetsrisken med kinesiska öppna modeller främst gäller åtkomst via API:er som körs från Kina, inte drift i egen regi eller regionalt moln; det är hans bedömning, och källorna nämner ingen prövning hos IMY eller Datatilsynet.</p>
-<p class="news-card__source">Källa: <a href="https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345">The Register</a>, <a href="https://computersweden.se/article/4243948/gartner-oppna-ai-modeller-kan-gora-90-procent-av-jobbet-till-ett-lagre-pris.html">Computer Sweden</a>, <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Hugging Face (Moonshot)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Quint Computing tar in 9,1 miljoner euro för att minska kvantfelrättningens overhead</title>
-      <link>https://ai-skiftet.se/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-quint-computing-tar-in-9-1-miljoner-euro</guid>
-      <pubDate>Thu, 05 Nov 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Tyska Quint Computing, en avknoppning från Friedrich-Alexander-Universität Erlangen-Nürnberg, har tagit in en seedrunda på 9,1 miljoner euro ledd av Vsquared Ventures, och dessutom ett EIC Pathfinder-anslag på 2,2 miljoner euro. Bolaget, grundat i oktober 2025 och en del av Munich Quantum Valley, bygger supraledande kvantprocessorer och siktar på att minska den fysiska overheaden för felrättning med upp till en faktor 100.</p>
-<p>Ansatsen bygger på kontinuerlig elektrisk styrning som stabiliserar enskilda kretselement mot brus, vilket enligt bolaget minskar både värmelasten i kryostaten och antalet ledningar. Som jämförelse uppskattas en kommersiellt användbar maskin baserad på ytkoden kräva omkring en miljon fysiska qubits, mot 105 för Googles Willow, skriver Tech Funding News. Faktor 100 är bolagets eget påstående och inte oberoende verifierat. Quint har tio anställda och pilottester med Bosch, BASF och Boehringer Ingelheim.</p>
-<p>För Norden … Mikko Möttönen, medgrundare till IQM och QMill, deltog i rundan; källorna kopplar inte rundan till något nordiskt bolag i övrigt. Nordisk kvantverksamhet finns bland annat vid Chalmers och Wallenberg Centre for Quantum Technology (WACQT). Quint är tyskt, så rundan säger i sig inget om nordisk finansiering eller teknik.</p>
-<p class="news-card__source">Källa: <a href="https://quantumcomputingreport.com/quint-computing-secures-e9-1m-10-2m-usd-seed-round-to-scale-hardware-level-quantum-error-correction/">Quantum Computing Report</a>, <a href="https://techfundingnews.com/quint-computing-9-1m-quantum-error-correction">Tech Funding News</a></p>]]></description>
     </item>
   </channel>
 </rss>

@@ -7,8 +7,69 @@
     <description>Daily coverage of AI from a Nordic vantage point: models, research, physical AI, hardware, quantum, labour market, regulation and debate.</description>
     <language>en</language>
     <copyright>© 2026 Rolf Skogling</copyright>
-    <lastBuildDate>Tue, 24 Nov 2026 07:50:32 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 05:45:08 +0200</lastBuildDate>
     <generator>tools/feeds/build_news_rss.py</generator>
+    <item>
+      <title>OpenAI: GPT-6 models designed proteins that bound in the lab – specialist tools did the filtering</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-openai-gpt-6-modeller-designade-proteiner-som-band</guid>
+      <pubDate>Wed, 25 Nov 2026 06:05:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>forskning</category>
+      <description><![CDATA[<p>OpenAI published results on November 24 in which its GPT-6 models produced proteins that bound their targets in laboratory tests. Of 322 so-called minibinders against five target proteins, 35, or 10.9 percent, showed evidence of binding.</p>
+<p>The design itself was done with reasoning and code, the company says, without the models calling specialised biology models to generate the candidates. The selection was nonetheless filtered with established tools such as Boltz-2 and ESMFold2, and the sequences for the lab candidates came from SolubleMPNN. The lab candidates were produced with a pre-release version of GPT-6.2, and the laboratory work was carried out by the research partner Onava. When the models were instead asked to redesign antibody loops against the IL-4Rα receptor, 128 of 182 variants bound, and in a third experiment 75 of 88 new sequences bound the MDM2 protein. OpenAI writes itself that the results do not yet show that the models can produce new binders entirely on their own, that binding is only the first step before specificity, stability and safety, and that full-structure prediction remains a clear weakness. No affinity values are reported, and the work is a preprint without independent review.</p>
+<p>For the Nordics the question lands squarely in the region's life sciences. The question goes to environments such as AstraZeneca in Gothenburg, Novo Nordisk in Denmark, DTU and SciLifeLab: if a general model can partly replace the specialised tools, the calculation of which licences a Nordic lab needs changes. OpenAI's own caveat points the other way: it was the specialist models that sorted the candidates before the lab, and that role remains. For Nordic research funders, that is the difference between swapping a tool and adding one.</p>
+<p class="news-card__source">Source: <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">OpenAI</a>, <a href="https://www.unite.ai/openai-reports-gpt-6-designs-proteins-with-reasoning-and-code/">Unite.AI</a></p>]]></description>
+    </item>
+    <item>
+      <title>Norwegian universities draft their own rules against AI glasses – NTNU text would exclude students</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-norska-universitet-skriver-egna-regler-mot-ai-glasogon</guid>
+      <pubDate>Wed, 25 Nov 2026 06:04:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <category>norden</category>
+      <description><![CDATA[<p>Several Norwegian universities are drafting their own rules against AI glasses while national legislation is delayed. NTNU has a draft that bans all use of smart glasses and covert recording with body-worn technology.</p>
+<p>The draft, which NTNU has not yet adopted, provides for disciplinary measures against employees who use smart glasses at work regardless of where that work is done – including from home – while students who use them or record covertly can be excluded from campus. Which measures are meant, and the legal basis for them, is not stated in the draft. Director Bjørn Haugstad points to personal data, recordings stored in clouds NTNU does not control, copyright, and the risk that the material is used to train AI. Høgskulen på Vestlandet and the University of Agder are expected to settle on a position shortly, the University of Bergen has not decided whether separate rules are needed, and the University of Oslo refers to existing rules on recording. The government's announced temporary ban on AI glasses and body-worn technology in selected places lies further off: state secretary Ola Helmich Borchgrevink Pedersen says the bill is aimed at the Storting during the spring of 2027, and will not say whether universities are covered. The expert group that is to examine the question has not yet been appointed.</p>
+<p>For the Nordics this is the second time in two months that Norwegian actors have moved ahead of the legislator: the Consumer Council demanded a halt to sales of AI glasses in October. In the same month the EU data protection board, the EDPB, ruled that manufacturers cannot place the responsibility on the wearer. The same question now sits with Swedish universities and Swedish employers, where exams, patient consultations and factory floors pose the same recording problem, and with IMY and Datatilsynet, which will have to decide what body-worn recording requires of the person wearing the equipment. If the bill passes, Swedish universities and supervisory authorities will have Norwegian rules to measure themselves against.</p>
+<p class="news-card__source">Source: <a href="https://www.khrono.no/foreslar-disiplinaerstraff-for-bruk-av-smartbriller-ogsa-utenfor-campus/1101787">Khrono</a>, <a href="https://www.universitetsavisa.no/universiteter-jobber-med-forbud-mot-ki-briller/470414">Universitetsavisa/NTB</a></p>]]></description>
+    </item>
+    <item>
+      <title>Tidal starts deleting fully AI-generated tracks on December 9</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-tidal-borjar-radera-helt-ai-genererade-latar-den</guid>
+      <pubDate>Wed, 25 Nov 2026 06:03:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>debatt</category>
+      <description><![CDATA[<p>The streaming service Tidal is to block and remove music that is entirely generated with AI, and the removals start on December 9. According to TechCrunch, more than 29 million tracks are to be gone by the end of the year, and some 80,000 to 85,000 new uploads will be rejected per day.</p>
+<p>Tidal says 27 million tracks, 6.3 percent of the catalogue, are fully AI-generated, and that 96 percent of them have not a single stream. More than 43 percent of everything uploaded over the past 90 days was AI-generated. Music where AI has been used as an aid may stay; it is the fully machine-generated tracks that are stopped, and distributors may no longer deliver them. Tidal does not describe how detection will work, nor is any process for appealing a removal set out. Deezer filters AI music out of recommendations and sells its detection tools to others, while Spotify and YouTube Music label the tracks instead of taking them down.</p>
+<p>For the Nordics the decision lands in the middle of the Swedish streaming economy. Spotify in Stockholm has chosen labelling over removal, and the difference decides how much of the payouts goes to machine-generated material. The collecting societies STIM in Sweden, TONO in Norway and Koda in Denmark distribute money per stream, so every track cleared out moves money back to the rest of the catalogue's artists. That 96 percent of the affected tracks have no streams at all also shows how small that redistribution is in cash.</p>
+<p class="news-card__source">Source: <a href="https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/">TechCrunch</a>, <a href="https://www.musicbusinessworldwide.com/tidal-bans-fully-ai-generated-music-from-its-platform/">Music Business Worldwide</a></p>]]></description>
+    </item>
+    <item>
+      <title>New York halts AI chatbot toys for five years – $15,000 per day in fines</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-new-york-stoppar-ai-chattleksaker-i-fem-ar</guid>
+      <pubDate>Wed, 25 Nov 2026 06:02:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>reglering</category>
+      <description><![CDATA[<p>The state of New York is imposing a five-year halt on toys with built-in AI chatbots. Governor Kathy Hochul signed the law on Tuesday, November 24, in the middle of the holiday shopping season, and the ban takes effect 90 days after signing.</p>
+<p>The ban covers the manufacture, distribution and sale of toys that hold conversations with children – talking stuffed animals, dolls and robots – and a violation can cost $15,000 per day, with the state attorney general as the enforcing authority. The law is carried by Senator Andrew Gounardes and Assemblymember Rebecca Kassay, who cite a Common Sense Media report finding that the toys can crowd out children's relationships with family and friends. Hochul herself raised the Miko 3 robot, which according to a Common Sense Media researcher suggested jumping out of a window. California has recently taken similar action and Pennsylvania is considering a halt of its own. How the rules are to be enforced in shops is not described.</p>
+<p>For the Nordics the same toys are on the shelves right now. The EU AI Act requires labelling and prohibits systems that exploit children's vulnerability, but there is no sales ban on AI toys, and the requirements for standalone high-risk systems have been postponed to December 2027 under the Digital Omnibus agreement. Sweden's Konsumentverket and Norway's Consumer Council, which demanded a halt to AI glasses in October, therefore have a state law to point to while the holiday season runs – but no instrument of their own for taking a toy off the shelf.</p>
+<p class="news-card__source">Source: <a href="https://www.fox5ny.com/news/new-york-bans-ai-chatbot-toys-kathy-hochul-holiday-shopping">Fox 5 New York</a>, <a href="https://wamc.org/2026-11-24/new-york-bans-ai-chatbot-toys">WAMC</a></p>]]></description>
+    </item>
+    <item>
+      <title>Dell sells $22 billion of AI servers in one quarter – backlog at $132 billion</title>
+      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-25</link>
+      <guid isPermaLink="false">ai-skiftet-notis-2026-11-25-dell-saljer-ai-servrar-for-22-miljarder-dollar</guid>
+      <pubDate>Wed, 25 Nov 2026 06:01:00 +0200</pubDate>
+      <dc:creator>Rolf Skogling</dc:creator>
+      <category>infrastruktur</category>
+      <description><![CDATA[<p>Dell reported on Tuesday a quarter in which revenue doubled to $54.9 billion, up 103 percent. AI servers accounted for $22 billion, and the AI server backlog stood at $132.3 billion.</p>
+<p>The company took $60.2 billion of AI orders during the quarter and $180 billion over the past four quarters, and raised its full-year outlook to $202 billion in revenue, of which $78 billion in AI servers – more than three times last year. The board increased the share repurchase authorisation by $25 billion. Jeff Clarke said on the call that infrastructure demand continues to outpace supply, and that the gap between component supply and end demand is widening into next year. The customer base is described as neoclouds, sovereign projects and enterprises, with more than 7,500 customers for the company's AI factory offering and two to three sovereign projects in nearly every major country. The share fell close to 12 percent during the trading day, before the report, and rose about 4 percent in after-hours trading.</p>
+<p>For the Nordics it is the line about sovereign projects that matters. Sweden is building the Sferical One supercomputer with Ericsson, AstraZeneca, Saab, SEB and Wallenberg Investments, and Telia, Nokia and KTH are part of the Nordic-Baltic consortium that wants to build one of the EU's AI gigafactories – all dependent on the same scarce components Dell describes. If the gap widens into 2027, procurement becomes more expensive for Nordic data centre projects: AI servers have already become up to 45 percent more expensive despite signed contracts, according to Computer Sweden.</p>
+<p class="news-card__source">Source: <a href="https://investors.delltechnologies.com/_assets/_89e9d1cb2fc1be4c6ed302d35e1514c6/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf">Dell Technologies</a>, <a href="https://www.investing.com/news/company-news/dell-q3-fy27-slides-revenue-doubles-ai-backlog-hits-132b-93CH-5049313">Investing.com</a></p>]]></description>
+    </item>
     <item>
       <title>Anthropic launches Claude Ship – AI agents allowed to approve routine code changes</title>
       <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-24</link>
@@ -927,55 +988,6 @@
 <p>The particle, L05, comes from a bacteriophage and is built from 96 copies of one protein, against 78 in mammalian vaults; it measures about 54 × 45 nanometres and encloses roughly 25 percent more volume than the mammalian version. Claude searched a database of about 15 billion predicted proteins for relatives, designed DNA constructs, proposed an isolation method that the team says cut purification from about three days to about 90 minutes, and ran the cryo-EM processing in an internal multi-agent setup – 34 hours for a first model and about a week for the final maps. The team also reports errors: an additive in the growth medium hampered DNA uptake and cost about two weeks, and an early step produced a flawed map. The team has so far produced these vault particles only in E. coli, without testing whether they form in the bacteria and phages where they occur naturally, and the processing required hundreds of GPUs, more than many academic labs have access to.</p>
 <p>For the Nordics … The sources name no Nordic researchers. Structural biology with cryo-EM is carried out in the Nordics at, among others, SciLifeLab in Stockholm, and computing resources such as the Wallenberg-funded Berzelius at NSC in Linköping are the kind of capacity the workflow calls for. That hundreds of GPUs were needed suggests that access to compute may become a bottleneck for Nordic labs; nothing in the material says any Nordic group is planning something similar.</p>
 <p class="news-card__source">Source: <a href="https://www.anthropic.com/research/investigating-vault-particles-with-claude">Anthropic</a>, <a href="https://theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026">The Neuron</a></p>]]></description>
-    </item>
-    <item>
-      <title>Saab unveils in-house AI agents for air combat – flight-tested on the Gripen E</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-saab-visar-egenutvecklade-ai-agenter-for-luftstrid-testade</guid>
-      <pubDate>Thu, 05 Nov 2026 06:04:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>fysisk-ai</category>
-      <category>norden</category>
-      <description><![CDATA[<p>Saab has presented in-house AI agents for air combat that, according to the company, have been tested in flight on a Gripen E. Peter Nilsson, head of Advanced Programs at Saab’s aeronautics business, said at an October 30 briefing that testing has so far focused mainly on beyond-visual-range combat and that the agents can work alongside a pilot or operate from their own uncrewed vehicle.</p>
-<p>According to Aviation International News, the agents have flown on the Gripen E test aircraft for about two years, and Saab considers them ready for operational use – what remains is the customer’s ability to absorb them. Development runs under the AI Fighter Pilot Academy program, with training on the Sferical AI compute facility in Linköping, built on 1,152 Nvidia GB300 GPUs. Saab says a one-hour simulated flight can be run a billion times in the time a CPU-based setup would run it 1,200 times. The figures are Saab’s own and not independently verified, and the sources give neither the agents’ names, how far they have progressed beyond beyond-visual-range combat, nor how human control is to be arranged.</p>
-<p>For the Nordics … This is a Swedish story with Saab as the main actor: according to AIN the customer is the Swedish Defence Materiel Administration (FMV) and the Air Force, and Sferical AI is partly owned by Saab, Ericsson and AstraZeneca. Nilsson himself says deployment could take “months, or single digits of years” depending on how quickly the customer can absorb the agents; the sources contain no timeline or decision from FMV or the Air Force.</p>
-<p class="news-card__source">Source: <a href="https://breakingdefense.com/2026/11/swedens-saab-launches-family-of-ai-agents-for-future-aircraft-projects/">Breaking Defense</a>, <a href="https://ainonline.com/aviation-news/defense/2026-11-03/saab-lifts-lid-ai-fighter-agent-development">Aviation International News</a></p>]]></description>
-    </item>
-    <item>
-      <title>EU court adviser: Gemini’s answers may infringe press publishers’ rights</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-eu-radgivare-geminis-svar-kan-gora-intrang-i</guid>
-      <pubDate>Thu, 05 Nov 2026 06:03:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>reglering</category>
-      <description><![CDATA[<p>Advocate General Maciej Szpunar of the EU Court of Justice delivered his opinion on November 3 in case C-250/25, in which Hungary’s Like Company has sued Google Ireland over the Gemini chatbot. Szpunar says the press publishers’ right under Article 15 of the Copyright in the Digital Single Market Directive can be infringed in two ways: if the chatbot circumvents a paywall or a block on bots, or if an answer reproduces an article’s distinctive structure and wording so closely that a reader can skip the original.</p>
-<p>The opinion is not binding, but according to RTÉ the court usually follows the Advocate General’s line and is expected to rule “in the coming months”. Szpunar advises that the training questions be found inadmissible, but takes the view that training is in principle covered by the text and data mining exception, among other things where access is lawful and rightholders have not reserved their rights in machine-readable form. According to Szpunar, facts are free to use, but paraphrase is not automatically permitted. PPC Land assesses that the guidance weighs against Like Company, partly because only one sentence from the article reappears in Gemini’s answer; the final assessment rests with the Hungarian court. Google told RTÉ it acknowledges the Advocate General’s view that EU law permits AI training on publicly available information.</p>
-<p>For the Nordics … The Danish government submitted observations in the case and attended the hearing; according to PPC Land it argued that text and data mining means big-data analysis rather than model training, a distinction Szpunar did not find decisive. The sources mention neither Sweden nor Norway. In a separate matter, the Oslo District Court has temporarily blocked Meta’s new terms after a request from ten Norwegian media houses; the decision is interim and does not settle whether the terms are lawful.</p>
-<p class="news-card__source">Source: <a href="https://www.rte.ie/news/2026/1103/1597874-eu-court-backs-publishers-google/">RTÉ</a>, <a href="https://ppc.land/googles-gemini-can-infringe-press-rights-in-2-ways-eu-court-adviser-says/">PPC Land</a>, <a href="https://ppc.land/norwegian-court-temporarily-blocks-metas-new-terms-after-10-media-groups-sue/">PPC Land (Meta/Oslo)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Revolut says self-hosted open-weight models cut its AI coding costs by about 90 percent</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-revolut-egenhostade-oppna-modeller-har-kapat-kostnaden-for</guid>
-      <pubDate>Thu, 05 Nov 2026 06:02:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>modeller</category>
-      <description><![CDATA[<p>Fintech company Revolut has made self-hosted open-weight models the default for AI coding instead of relying mainly on commercial services such as Claude. According to Revolut, as The Register reports from a talk at the AI Engineer conference in New York in October, the tools were rolled out to about 2,000 engineers and inference costs for AI coding fell by roughly 90 percent in under a year.</p>
-<p>Revolut started with GLM-5.1 from Z.ai and now serves GLM-5.3 on 56 Nvidia B200 GPUs. The company puts self-hosted GLM-5.1 at $0.30 per million tokens, about a tenth of the cost of OpenAI’s Codex or Anthropic’s Claude Code. The caveats are that GLM is text-only, so vision queries go to other models, and that the model needs about 380 GB of GPU memory for the weights alone. The same day, Computer Sweden reported that Gartner expects open models to handle 90 percent of the tasks in company AI agents by 2030 at roughly a quarter of the cost of the cheapest closed models, though they sometimes need several attempts. Moonshot has also published the weights of Kimi K3.1 Pro (2.8 trillion parameters, 104 billion active per token); the comparisons with Claude Opus 5.5 in the model card are Moonshot’s own.</p>
-<p>For the Nordics … The main sources name no Nordic companies, and Revolut is British. The cost question is concrete here all the same: Breakit recently reported that Swedish tech companies’ AI bills have quintupled in a year. The Indian site DevBytes wrote in May that Sweden’s Grunden AI AB had opened registration for a pre-production inference service running GLM-5.1 for developers and public authorities within the EU; the claim has not been confirmed against any primary document. Revolut’s David Abitbol argues, per The Register, that the privacy risk with Chinese open models mainly concerns accessing them via APIs running out of China, not running them in-house or in a regional cloud; that is his assessment, and the sources mention no review by IMY or Datatilsynet.</p>
-<p class="news-card__source">Source: <a href="https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345">The Register</a>, <a href="https://computersweden.se/article/4243948/gartner-oppna-ai-modeller-kan-gora-90-procent-av-jobbet-till-ett-lagre-pris.html">Computer Sweden</a>, <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Hugging Face (Moonshot)</a></p>]]></description>
-    </item>
-    <item>
-      <title>Quint Computing raises €9.1 million to cut quantum error-correction overhead</title>
-      <link>https://ai-skiftet.se/en/nyheter/#dag-2026-11-05</link>
-      <guid isPermaLink="false">ai-skiftet-notis-2026-11-05-quint-computing-tar-in-9-1-miljoner-euro</guid>
-      <pubDate>Thu, 05 Nov 2026 06:01:00 +0200</pubDate>
-      <dc:creator>Rolf Skogling</dc:creator>
-      <category>kvant</category>
-      <description><![CDATA[<p>Germany’s Quint Computing, a spin-out from Friedrich-Alexander-Universität Erlangen-Nürnberg, has raised a €9.1 million seed round led by Vsquared Ventures, plus a €2.2 million EIC Pathfinder grant. The company, founded in October 2025 and part of Munich Quantum Valley, builds superconducting quantum processors and aims to cut the physical overhead of error correction by up to a factor of 100.</p>
-<p>The approach relies on continuous electrical control that stabilizes individual circuit elements against noise, which the company says reduces both the heat load in the cryostat and the number of wires. For comparison, a commercially useful machine based on the surface code is commonly estimated to need about a million physical qubits, versus 105 for Google’s Willow, according to Tech Funding News. The factor of 100 is the company’s own claim and not independently verified. Quint has ten employees and pilot tests with Bosch, BASF and Boehringer Ingelheim.</p>
-<p>For the Nordics … Mikko Möttönen, co-founder of IQM and QMill, took part in the round; the sources tie the round to no Nordic company otherwise. Nordic quantum activity includes Chalmers and the Wallenberg Centre for Quantum Technology (WACQT). Quint is German, so the round says nothing in itself about Nordic funding or technology.</p>
-<p class="news-card__source">Source: <a href="https://quantumcomputingreport.com/quint-computing-secures-e9-1m-10-2m-usd-seed-round-to-scale-hardware-level-quantum-error-correction/">Quantum Computing Report</a>, <a href="https://techfundingnews.com/quint-computing-9-1m-quantum-error-correction">Tech Funding News</a></p>]]></description>
     </item>
   </channel>
 </rss>
